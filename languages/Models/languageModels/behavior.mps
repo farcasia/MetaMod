@@ -163,9 +163,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -1696,6 +1693,11 @@
               </node>
             </node>
             <node concept="3clFbH" id="5udWXWX_JgL" role="3cqZAp" />
+            <node concept="3SKdUt" id="2QDb_cZUxZo" role="3cqZAp">
+              <node concept="3SKdUq" id="2QDb_cZUBU1" role="3SKWNk">
+                <property role="3SKdUp" value="We collect the named basic models defined directly in the structure model." />
+              </node>
+            </node>
             <node concept="1DcWWT" id="5udWXWX_N4a" role="3cqZAp">
               <node concept="3clFbS" id="5udWXWX_N4c" role="2LFqv$">
                 <node concept="3clFbJ" id="5udWXWX_S1n" role="3cqZAp">
@@ -1799,6 +1801,11 @@
               </node>
             </node>
             <node concept="3clFbH" id="5udWXWX_0uh" role="3cqZAp" />
+            <node concept="3SKdUt" id="2QDb_cZUHWR" role="3cqZAp">
+              <node concept="3SKdUq" id="2QDb_cZUHYR" role="3SKWNk">
+                <property role="3SKdUp" value="We collect the named basic models defined in the sub-structures of the structure model." />
+              </node>
+            </node>
             <node concept="1DcWWT" id="5udWXWX_634" role="3cqZAp">
               <node concept="3clFbS" id="5udWXWX_636" role="2LFqv$">
                 <node concept="3clFbF" id="5udWXWX_ghF" role="3cqZAp">
@@ -1859,6 +1866,77 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="2QDb_cZTMe1" role="3cqZAp" />
+            <node concept="3SKdUt" id="2QDb_cZUQFI" role="3cqZAp">
+              <node concept="3SKdUq" id="2QDb_cZUWAn" role="3SKWNk">
+                <property role="3SKdUp" value="We collect the named basic models defined in the reused structures of the structure model." />
+              </node>
+            </node>
+            <node concept="1DcWWT" id="2QDb_cZTQ9G" role="3cqZAp">
+              <node concept="3clFbS" id="2QDb_cZTQ9I" role="2LFqv$">
+                <node concept="3clFbF" id="2QDb_cZTZKW" role="3cqZAp">
+                  <node concept="2OqwBi" id="2QDb_cZU0vi" role="3clFbG">
+                    <node concept="37vLTw" id="2QDb_cZTZKU" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5udWXWX$KHP" resolve="namedBasicModels" />
+                    </node>
+                    <node concept="X8dFx" id="2QDb_cZU4YH" role="2OqNvi">
+                      <node concept="2OqwBi" id="2QDb_cZUm84" role="25WWJ7">
+                        <node concept="2OqwBi" id="2QDb_cZUjbh" role="2Oq$k0">
+                          <node concept="2OqwBi" id="2QDb_cZU91j" role="2Oq$k0">
+                            <node concept="2OqwBi" id="2QDb_cZU6k8" role="2Oq$k0">
+                              <node concept="37vLTw" id="2QDb_cZU5DG" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2QDb_cZTQ9J" resolve="reusedSM" />
+                              </node>
+                              <node concept="3TrEf2" id="2QDb_cZU7Pt" role="2OqNvi">
+                                <ref role="3Tt5mk" to="v0yp:7zWtwVwpdQQ" />
+                              </node>
+                            </node>
+                            <node concept="2qgKlT" id="2QDb_cZUa3K" role="2OqNvi">
+                              <ref role="37wK5l" to="tpcu:3fifI_xCJOQ" resolve="getScope" />
+                              <node concept="2OqwBi" id="2QDb_cZUdqA" role="37wK5m">
+                                <node concept="35c_gC" id="2QDb_cZUbph" role="2Oq$k0">
+                                  <ref role="35c_gD" to="v0yp:7zWtwVwpd$b" resolve="NamedBasicModel" />
+                                </node>
+                                <node concept="FGMqu" id="2QDb_cZUf6W" role="2OqNvi" />
+                              </node>
+                              <node concept="10Nm6u" id="2QDb_cZUhOk" role="37wK5m" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="2QDb_cZUjXX" role="2OqNvi">
+                            <ref role="37wK5l" to="o8zo:3fifI_xCtP7" resolve="getAvailableElements" />
+                            <node concept="10Nm6u" id="2QDb_cZUlL7" role="37wK5m" />
+                          </node>
+                        </node>
+                        <node concept="v3k3i" id="2QDb_cZUnM9" role="2OqNvi">
+                          <node concept="chp4Y" id="2QDb_cZUpEA" role="v3oSu">
+                            <ref role="cht4Q" to="v0yp:7zWtwVwpd$b" resolve="NamedBasicModel" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWsn" id="2QDb_cZTQ9J" role="1Duv9x">
+                <property role="TrG5h" value="reusedSM" />
+                <node concept="3Tqbb2" id="2QDb_cZTUTx" role="1tU5fm">
+                  <ref role="ehGHo" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedSM" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2QDb_cZTX0j" role="1DdaDG">
+                <node concept="2OqwBi" id="2QDb_cZTV$i" role="2Oq$k0">
+                  <node concept="13iPFW" id="2QDb_cZTVv0" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="2QDb_cZTVQ3" role="2OqNvi">
+                    <ref role="3TtcxE" to="v0yp:7zWtwVwpdT4" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="2QDb_cZTZvU" role="2OqNvi">
+                  <node concept="chp4Y" id="2QDb_cZTZCu" role="v3oSu">
+                    <ref role="cht4Q" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedSM" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbH" id="5udWXWX__uq" role="3cqZAp" />
             <node concept="3cpWs6" id="5udWXWX_AGK" role="3cqZAp">
               <node concept="2ShNRf" id="5udWXWX_Cm8" role="3cqZAk">
@@ -1885,11 +1963,6 @@
         <node concept="3clFbH" id="5udWXWX$KsI" role="3cqZAp" />
         <node concept="3clFbJ" id="5udWXWX$Kbe" role="3cqZAp">
           <node concept="3clFbS" id="5udWXWX$Kbg" role="3clFbx">
-            <node concept="3SKdUt" id="5udWXWX_ZVf" role="3cqZAp">
-              <node concept="3SKdUq" id="5udWXWX_ZVw" role="3SKWNk">
-                <property role="3SKdUp" value="We are ignoring the relations where at least one of the ends is of type BasicModel and not NamedBasicModel." />
-              </node>
-            </node>
             <node concept="3cpWs8" id="5udWXWX_ZUt" role="3cqZAp">
               <node concept="3cpWsn" id="5udWXWX_ZUw" role="3cpWs9">
                 <property role="TrG5h" value="namedRelations" />
@@ -1903,6 +1976,17 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2QDb_cZVxBZ" role="3cqZAp" />
+            <node concept="3SKdUt" id="2QDb_cZVFcp" role="3cqZAp">
+              <node concept="3SKdUq" id="5udWXWX_ZVw" role="3SKWNk">
+                <property role="3SKdUp" value="We are ignoring the relations where at least one of the ends is of type BasicModel and not NamedBasicModel." />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="2QDb_cZVPH4" role="3cqZAp">
+              <node concept="3SKdUq" id="2QDb_cZVU$$" role="3SKWNk">
+                <property role="3SKdUp" value="We collect the named relations defined directly in the structure model." />
               </node>
             </node>
             <node concept="3clFbF" id="5udWXWXA0d9" role="3cqZAp">
@@ -1947,33 +2031,12 @@
                 </node>
               </node>
             </node>
-            <node concept="3SKdUt" id="6uuPbCAfsQK" role="3cqZAp">
-              <node concept="3SKWN0" id="6uuPbCAfsQV" role="3SKWNk">
-                <node concept="3clFbF" id="6uuPbCAdPqy" role="3SKWNf">
-                  <node concept="2OqwBi" id="6uuPbCAdRKq" role="3clFbG">
-                    <node concept="37vLTw" id="6uuPbCAdPqw" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5udWXWX_ZUw" resolve="namedRelations" />
-                    </node>
-                    <node concept="X8dFx" id="6uuPbCAdWft" role="2OqNvi">
-                      <node concept="2OqwBi" id="6uuPbCAe0xS" role="25WWJ7">
-                        <node concept="2OqwBi" id="6uuPbCAdXsj" role="2Oq$k0">
-                          <node concept="13iPFW" id="6uuPbCAdXiH" role="2Oq$k0" />
-                          <node concept="3Tsc0h" id="6uuPbCAdYy9" role="2OqNvi">
-                            <ref role="3TtcxE" to="v0yp:7zWtwVwpdT4" />
-                          </node>
-                        </node>
-                        <node concept="v3k3i" id="6uuPbCAe4bs" role="2OqNvi">
-                          <node concept="chp4Y" id="6uuPbCAe4Rz" role="v3oSu">
-                            <ref role="cht4Q" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
+            <node concept="3clFbH" id="5udWXWXB3jV" role="3cqZAp" />
+            <node concept="3SKdUt" id="2QDb_cZVZoq" role="3cqZAp">
+              <node concept="3SKdUq" id="2QDb_cZW4vg" role="3SKWNk">
+                <property role="3SKdUp" value="We collect the named relations defined in the sub-structures of the structure model." />
               </node>
             </node>
-            <node concept="3clFbH" id="5udWXWXB3jV" role="3cqZAp" />
             <node concept="1DcWWT" id="5udWXWXB4f8" role="3cqZAp">
               <node concept="3clFbS" id="5udWXWXB4fa" role="2LFqv$">
                 <node concept="3clFbF" id="5udWXWXB9Xj" role="3cqZAp">
@@ -2030,6 +2093,77 @@
                 <node concept="v3k3i" id="5udWXWXB9H2" role="2OqNvi">
                   <node concept="chp4Y" id="5udWXWXB9Pa" role="v3oSu">
                     <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2QDb_cZVj75" role="3cqZAp" />
+            <node concept="3SKdUt" id="2QDb_cZWn3M" role="3cqZAp">
+              <node concept="3SKdUq" id="2QDb_cZWrU$" role="3SKWNk">
+                <property role="3SKdUp" value="We collect the named relations defined in the reused structures of the structure model." />
+              </node>
+            </node>
+            <node concept="1DcWWT" id="2QDb_cZVc2o" role="3cqZAp">
+              <node concept="3clFbS" id="2QDb_cZVc2q" role="2LFqv$">
+                <node concept="3clFbF" id="2QDb_cZW7IH" role="3cqZAp">
+                  <node concept="2OqwBi" id="2QDb_cZW7II" role="3clFbG">
+                    <node concept="37vLTw" id="2QDb_cZW7IJ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5udWXWX_ZUw" resolve="namedRelations" />
+                    </node>
+                    <node concept="X8dFx" id="2QDb_cZW7IK" role="2OqNvi">
+                      <node concept="2OqwBi" id="2QDb_cZW7IL" role="25WWJ7">
+                        <node concept="2OqwBi" id="2QDb_cZW7IM" role="2Oq$k0">
+                          <node concept="2OqwBi" id="2QDb_cZW7IN" role="2Oq$k0">
+                            <node concept="2OqwBi" id="2QDb_cZW9rj" role="2Oq$k0">
+                              <node concept="37vLTw" id="2QDb_cZW8LA" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2QDb_cZVc2r" resolve="reusedSM" />
+                              </node>
+                              <node concept="3TrEf2" id="2QDb_cZWajL" role="2OqNvi">
+                                <ref role="3Tt5mk" to="v0yp:7zWtwVwpdQQ" />
+                              </node>
+                            </node>
+                            <node concept="2qgKlT" id="2QDb_cZW7IP" role="2OqNvi">
+                              <ref role="37wK5l" to="tpcu:3fifI_xCJOQ" resolve="getScope" />
+                              <node concept="2OqwBi" id="2QDb_cZW7IQ" role="37wK5m">
+                                <node concept="35c_gC" id="2QDb_cZW7IR" role="2Oq$k0">
+                                  <ref role="35c_gD" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
+                                </node>
+                                <node concept="FGMqu" id="2QDb_cZW7IS" role="2OqNvi" />
+                              </node>
+                              <node concept="10Nm6u" id="2QDb_cZW7IT" role="37wK5m" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="2QDb_cZW7IU" role="2OqNvi">
+                            <ref role="37wK5l" to="o8zo:3fifI_xCtP7" resolve="getAvailableElements" />
+                            <node concept="10Nm6u" id="2QDb_cZW7IV" role="37wK5m" />
+                          </node>
+                        </node>
+                        <node concept="v3k3i" id="2QDb_cZW7IW" role="2OqNvi">
+                          <node concept="chp4Y" id="2QDb_cZW7IX" role="v3oSu">
+                            <ref role="cht4Q" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWsn" id="2QDb_cZVc2r" role="1Duv9x">
+                <property role="TrG5h" value="reusedSM" />
+                <node concept="3Tqbb2" id="2QDb_cZVpaX" role="1tU5fm">
+                  <ref role="ehGHo" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedSM" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2QDb_cZVrnF" role="1DdaDG">
+                <node concept="2OqwBi" id="2QDb_cZVq0h" role="2Oq$k0">
+                  <node concept="13iPFW" id="2QDb_cZVpST" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="2QDb_cZVqdr" role="2OqNvi">
+                    <ref role="3TtcxE" to="v0yp:7zWtwVwpdT4" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="2QDb_cZVtL1" role="2OqNvi">
+                  <node concept="chp4Y" id="2QDb_cZVtT_" role="v3oSu">
+                    <ref role="cht4Q" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedSM" />
                   </node>
                 </node>
               </node>
