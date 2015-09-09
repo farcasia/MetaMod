@@ -1,0 +1,8 @@
+workspace.xml
+build.properties
+
+# Ignore all directories containing generated
+# java classes and java source files
+classes_gen
+source_gen
+source_gen.caches

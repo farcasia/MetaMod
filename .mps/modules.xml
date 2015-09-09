@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/LambdaCalculus/LambdaCalculus.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Models/Models.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Modules/Modules.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/BasicMetaMod/BasicMetaMod.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/LambdaCalculusSolution/LambdaCalculusSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ModelsSolution/ModelsSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ModulesSolution/ModulesSolution.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
