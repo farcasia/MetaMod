@@ -509,10 +509,7 @@
       <node concept="3clFbS" id="6uuPbCA2FGj" role="3clF47">
         <node concept="34ab3g" id="6uuPbCA3xsC" role="3cqZAp">
           <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="6uuPbCAaYHS" role="34bqiv">
-            <node concept="Xl_RD" id="6uuPbCA3xsD" role="3uHU7B">
-              <property role="Xl_RC" value="We are getting the named relations for source with scope " />
-            </node>
+          <node concept="3cpWs3" id="4IND2wwPvQV" role="34bqiv">
             <node concept="2OqwBi" id="6uuPbCAaYT5" role="3uHU7w">
               <node concept="2OqwBi" id="6uuPbCAaYT6" role="2Oq$k0">
                 <node concept="13iPFW" id="6uuPbCAaYT7" role="2Oq$k0" />
@@ -530,6 +527,19 @@
               <node concept="liA8E" id="6uuPbCAaYTd" role="2OqNvi">
                 <ref role="37wK5l" to="o8zo:3fifI_xCtP7" resolve="getAvailableElements" />
                 <node concept="10Nm6u" id="6uuPbCAaYTe" role="37wK5m" />
+              </node>
+            </node>
+            <node concept="3cpWs3" id="6uuPbCAaYHS" role="3uHU7B">
+              <node concept="3cpWs3" id="4IND2wwPvj2" role="3uHU7B">
+                <node concept="37vLTw" id="4IND2wwPvnp" role="3uHU7w">
+                  <ref role="3cqZAo" node="6uuPbCA2SDC" resolve="namedBasicModel" />
+                </node>
+                <node concept="Xl_RD" id="6uuPbCA3xsD" role="3uHU7B">
+                  <property role="Xl_RC" value="We are getting the named relations for source " />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="4IND2wwPw63" role="3uHU7w">
+                <property role="Xl_RC" value=" with scope " />
               </node>
             </node>
           </node>
