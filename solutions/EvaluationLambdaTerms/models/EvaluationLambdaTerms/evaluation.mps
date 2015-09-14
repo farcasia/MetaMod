@@ -20,6 +20,7 @@
         <child id="7362364337458526851" name="left" index="3B56no" />
         <child id="7362364337458526853" name="right" index="3B56nu" />
       </concept>
+      <concept id="7362364337458504598" name="LambdaCalculus.structure.LambdaTerm" flags="ng" index="3B6VNd" />
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
       <concept id="8717972784948764160" name="Models.structure.RefToNamedRel" flags="ng" index="2oAawe">
@@ -54,12 +55,6 @@
     <property role="TrG5h" value="EvaluationModel" />
     <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
     <node concept="3B6VN3" id="4IND2wwRwGl" role="2oAaxa">
-      <node concept="2oAaW5" id="4IND2wwU_jy" role="3B56nu">
-        <property role="TrG5h" value="B2" />
-        <node concept="2oAaXF" id="4IND2wwU_jC" role="2oAawq">
-          <ref role="2oAaID" node="3Ky4PoV$Gq2" resolve="BM" />
-        </node>
-      </node>
       <node concept="3B6VN2" id="4IND2wwTDgc" role="3B56no">
         <node concept="3B6VN0" id="4IND2wwTDgl" role="3B56nf">
           <ref role="3B56nS" node="4IND2wwTDgg" resolve="x" />
@@ -68,6 +63,7 @@
           <property role="TrG5h" value="x" />
         </node>
       </node>
+      <node concept="3B6VNd" id="4IND2wwWzKx" role="3B56nu" />
     </node>
     <node concept="2oAaUZ" id="4IND2wwTDgv" role="2oAaxa">
       <property role="TrG5h" value="rel" />
