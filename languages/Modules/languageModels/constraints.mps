@@ -126,23 +126,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7zWtwVwoP_Z" role="3cqZAp" />
-        <node concept="3clFbJ" id="7zWtwVwohYy" role="3cqZAp">
-          <node concept="3clFbS" id="7zWtwVwohY$" role="3clFbx">
-            <node concept="3cpWs6" id="7zWtwVwoiQC" role="3cqZAp">
-              <node concept="3clFbT" id="7zWtwVwoiTV" role="3cqZAk">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbC" id="7zWtwVwoiwT" role="3clFbw">
-            <node concept="28GBK8" id="7zWtwVwoiAn" role="3uHU7w">
-              <ref role="28H3Ia" to="9lyo:6oGnPI1e3Ek" />
-              <ref role="28GBKb" to="9lyo:6oGnPI1dYep" resolve="LambdaAbstraction" />
-            </node>
-            <node concept="oXsJc" id="7zWtwVwoi4c" role="3uHU7B" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="2DitZGYpYRA" role="3cqZAp" />
         <node concept="3cpWs6" id="2DitZGYpZ00" role="3cqZAp">
           <node concept="3clFbT" id="2DitZGYpZ5E" role="3cqZAk">
             <property role="3clFbU" value="true" />
