@@ -411,7 +411,7 @@
       <node concept="P$JXv" id="20nTeIl4Qh0" role="lGtFl">
         <node concept="TZ5HA" id="20nTeIl4Qh1" role="TZ5H$">
           <node concept="1dT_AC" id="20nTeIl4Qh2" role="1dT_Ay">
-            <property role="1dT_AB" value="This method should not modify the model itself." />
+            <property role="1dT_AB" value="This method should not modify the element itself." />
           </node>
         </node>
         <node concept="x79VA" id="20nTeIl4Qh3" role="x79VK">
