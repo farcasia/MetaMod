@@ -2024,6 +2024,17 @@
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="callByName" />
       <ref role="13i0hy" to="22fv:20nTeIl4end" resolve="callByName" />
+      <node concept="37vLTG" id="20nTeIla_iy" role="3clF46">
+        <property role="TrG5h" value="equivalences" />
+        <node concept="3rvAFt" id="20nTeIla_iz" role="1tU5fm">
+          <node concept="3Tqbb2" id="20nTeIla_i$" role="3rvSg0">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+          <node concept="3Tqbb2" id="20nTeIla_i_" role="3rvQeY">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="20nTeIl77Ai" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl77Ap" role="3clF47">
         <node concept="3cpWs8" id="20nTeIl7dMS" role="3cqZAp">
@@ -2083,6 +2094,9 @@
                     </node>
                     <node concept="2qgKlT" id="20nTeIl7GaV" role="2OqNvi">
                       <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+                      <node concept="37vLTw" id="20nTeIla_Vk" role="37wK5m">
+                        <ref role="3cqZAo" node="20nTeIla_iy" resolve="equivalences" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2783,6 +2797,17 @@
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="callByName" />
       <ref role="13i0hy" to="22fv:20nTeIl4end" resolve="callByName" />
+      <node concept="37vLTG" id="20nTeIlamvS" role="3clF46">
+        <property role="TrG5h" value="equivalences" />
+        <node concept="3rvAFt" id="20nTeIlamvT" role="1tU5fm">
+          <node concept="3Tqbb2" id="20nTeIlamvU" role="3rvSg0">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+          <node concept="3Tqbb2" id="20nTeIlamvV" role="3rvQeY">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="20nTeIl6_Sd" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl6_Sk" role="3clF47">
         <node concept="3cpWs8" id="20nTeIl6_Ut" role="3cqZAp">
@@ -2812,6 +2837,9 @@
               </node>
               <node concept="2qgKlT" id="20nTeIl6AQG" role="2OqNvi">
                 <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+                <node concept="37vLTw" id="20nTeIlamyZ" role="37wK5m">
+                  <ref role="3cqZAo" node="20nTeIlamvS" resolve="equivalences" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="20nTeIl6A5X" role="37vLTJ">
@@ -2835,6 +2863,9 @@
               </node>
               <node concept="2qgKlT" id="20nTeIl6BP7" role="2OqNvi">
                 <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+                <node concept="37vLTw" id="20nTeIlam_d" role="37wK5m">
+                  <ref role="3cqZAo" node="20nTeIlamvS" resolve="equivalences" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="20nTeIl6AVA" role="37vLTJ">
@@ -2858,6 +2889,9 @@
               </node>
               <node concept="2qgKlT" id="20nTeIl6D11" role="2OqNvi">
                 <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+                <node concept="37vLTw" id="20nTeIlamBr" role="37wK5m">
+                  <ref role="3cqZAo" node="20nTeIlamvS" resolve="equivalences" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="20nTeIl6BWv" role="37vLTJ">
@@ -3159,6 +3193,17 @@
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="callByName" />
       <ref role="13i0hy" to="22fv:20nTeIl4end" resolve="callByName" />
+      <node concept="37vLTG" id="20nTeIlafeG" role="3clF46">
+        <property role="TrG5h" value="equivalences" />
+        <node concept="3rvAFt" id="20nTeIlafeH" role="1tU5fm">
+          <node concept="3Tqbb2" id="20nTeIlafeI" role="3rvSg0">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+          <node concept="3Tqbb2" id="20nTeIlafeJ" role="3rvQeY">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="20nTeIl6rO4" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl6rOb" role="3clF47">
         <node concept="3cpWs8" id="20nTeIl6rP5" role="3cqZAp">
@@ -3188,6 +3233,9 @@
               </node>
               <node concept="2qgKlT" id="20nTeIl6xen" role="2OqNvi">
                 <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+                <node concept="37vLTw" id="20nTeIlafh$" role="37wK5m">
+                  <ref role="3cqZAo" node="20nTeIlafeG" resolve="equivalences" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="20nTeIl6wmG" role="37vLTJ">
@@ -3211,6 +3259,9 @@
               </node>
               <node concept="2qgKlT" id="20nTeIl6yfM" role="2OqNvi">
                 <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+                <node concept="37vLTw" id="20nTeIlafka" role="37wK5m">
+                  <ref role="3cqZAo" node="20nTeIlafeG" resolve="equivalences" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="20nTeIl6xmo" role="37vLTJ">
@@ -3576,6 +3627,17 @@
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="callByName" />
       <ref role="13i0hy" to="22fv:20nTeIl4end" resolve="callByName" />
+      <node concept="37vLTG" id="20nTeIl9Ds2" role="3clF46">
+        <property role="TrG5h" value="equivalences" />
+        <node concept="3rvAFt" id="20nTeIl9Ds3" role="1tU5fm">
+          <node concept="3Tqbb2" id="20nTeIl9Ds4" role="3rvSg0">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+          <node concept="3Tqbb2" id="20nTeIl9Ds5" role="3rvQeY">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="20nTeIl6nn9" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl6nng" role="3clF47">
         <node concept="3cpWs8" id="20nTeIl6qi9" role="3cqZAp">
@@ -3605,6 +3667,9 @@
               </node>
               <node concept="2qgKlT" id="20nTeIl6rfK" role="2OqNvi">
                 <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+                <node concept="37vLTw" id="20nTeIlaf3x" role="37wK5m">
+                  <ref role="3cqZAo" node="20nTeIl9Ds2" resolve="equivalences" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="20nTeIl6qtu" role="37vLTJ">
@@ -3741,6 +3806,17 @@
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="callByName" />
       <ref role="13i0hy" to="22fv:20nTeIl4end" resolve="callByName" />
+      <node concept="37vLTG" id="20nTeIlafpY" role="3clF46">
+        <property role="TrG5h" value="equivalences" />
+        <node concept="3rvAFt" id="20nTeIlafpZ" role="1tU5fm">
+          <node concept="3Tqbb2" id="20nTeIlafq0" role="3rvSg0">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+          <node concept="3Tqbb2" id="20nTeIlafq1" role="3rvQeY">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="20nTeIl6zD5" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl6zD6" role="3clF47">
         <node concept="3cpWs8" id="20nTeIl6zD7" role="3cqZAp">
@@ -3788,6 +3864,9 @@
               </node>
               <node concept="2qgKlT" id="20nTeIl6zDk" role="2OqNvi">
                 <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+                <node concept="37vLTw" id="20nTeIlafsZ" role="37wK5m">
+                  <ref role="3cqZAo" node="20nTeIlafpY" resolve="equivalences" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="20nTeIl6zDl" role="37vLTJ">
@@ -3801,6 +3880,20 @@
           </node>
         </node>
         <node concept="3clFbH" id="20nTeIl6zDo" role="3cqZAp" />
+        <node concept="3clFbF" id="20nTeIlafAS" role="3cqZAp">
+          <node concept="37vLTI" id="20nTeIlafWM" role="3clFbG">
+            <node concept="37vLTw" id="20nTeIlag0w" role="37vLTx">
+              <ref role="3cqZAo" node="20nTeIl6zD8" resolve="nBasicModel" />
+            </node>
+            <node concept="3EllGN" id="20nTeIlafQ7" role="37vLTJ">
+              <node concept="13iPFW" id="20nTeIlafT_" role="3ElVtu" />
+              <node concept="37vLTw" id="20nTeIlafAQ" role="3ElQJh">
+                <ref role="3cqZAo" node="20nTeIlafpY" resolve="equivalences" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="20nTeIlafvB" role="3cqZAp" />
         <node concept="3cpWs6" id="20nTeIl6zDp" role="3cqZAp">
           <node concept="37vLTw" id="20nTeIl6zDq" role="3cqZAk">
             <ref role="3cqZAo" node="20nTeIl6zD8" resolve="nBasicModel" />
@@ -3822,11 +3915,22 @@
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="callByName" />
       <ref role="13i0hy" to="22fv:20nTeIl4end" resolve="callByName" />
+      <node concept="37vLTG" id="20nTeIlag63" role="3clF46">
+        <property role="TrG5h" value="equivalences" />
+        <node concept="3rvAFt" id="20nTeIlag64" role="1tU5fm">
+          <node concept="3Tqbb2" id="20nTeIlag65" role="3rvSg0">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+          <node concept="3Tqbb2" id="20nTeIlag66" role="3rvQeY">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="20nTeIl6Hit" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl6Hiu" role="3clF47">
         <node concept="3cpWs8" id="20nTeIl6Hiv" role="3cqZAp">
           <node concept="3cpWsn" id="20nTeIl6Hiw" role="3cpWs9">
-            <property role="TrG5h" value="relation" />
+            <property role="TrG5h" value="nRelation" />
             <node concept="3Tqbb2" id="20nTeIl6Hix" role="1tU5fm">
               <ref role="ehGHo" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
             </node>
@@ -3850,7 +3954,7 @@
             </node>
             <node concept="2OqwBi" id="20nTeIl6Hud" role="37vLTJ">
               <node concept="37vLTw" id="20nTeIl6HqP" role="2Oq$k0">
-                <ref role="3cqZAo" node="20nTeIl6Hiw" resolve="relation" />
+                <ref role="3cqZAo" node="20nTeIl6Hiw" resolve="nRelation" />
               </node>
               <node concept="3TrcHB" id="20nTeIl6HWX" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -3869,11 +3973,14 @@
               </node>
               <node concept="2qgKlT" id="20nTeIl6HiG" role="2OqNvi">
                 <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+                <node concept="37vLTw" id="20nTeIlaga9" role="37wK5m">
+                  <ref role="3cqZAo" node="20nTeIlag63" resolve="equivalences" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="20nTeIl6HiH" role="37vLTJ">
               <node concept="37vLTw" id="20nTeIl6HiI" role="2Oq$k0">
-                <ref role="3cqZAo" node="20nTeIl6Hiw" resolve="relation" />
+                <ref role="3cqZAo" node="20nTeIl6Hiw" resolve="nRelation" />
               </node>
               <node concept="3TrEf2" id="20nTeIl6HiJ" role="2OqNvi">
                 <ref role="3Tt5mk" to="v0yp:7zWtwVwpdSB" />
@@ -3892,11 +3999,14 @@
               </node>
               <node concept="2qgKlT" id="20nTeIl6HiQ" role="2OqNvi">
                 <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+                <node concept="37vLTw" id="20nTeIlagcU" role="37wK5m">
+                  <ref role="3cqZAo" node="20nTeIlag63" resolve="equivalences" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="20nTeIl6HiR" role="37vLTJ">
               <node concept="37vLTw" id="20nTeIl6HiS" role="2Oq$k0">
-                <ref role="3cqZAo" node="20nTeIl6Hiw" resolve="relation" />
+                <ref role="3cqZAo" node="20nTeIl6Hiw" resolve="nRelation" />
               </node>
               <node concept="3TrEf2" id="20nTeIl6HiT" role="2OqNvi">
                 <ref role="3Tt5mk" to="v0yp:7zWtwVwpdSD" />
@@ -3915,11 +4025,14 @@
               </node>
               <node concept="2qgKlT" id="20nTeIl6Hj0" role="2OqNvi">
                 <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+                <node concept="37vLTw" id="20nTeIlagfF" role="37wK5m">
+                  <ref role="3cqZAo" node="20nTeIlag63" resolve="equivalences" />
+                </node>
               </node>
             </node>
             <node concept="2OqwBi" id="20nTeIl6Hj1" role="37vLTJ">
               <node concept="37vLTw" id="20nTeIl6Hj2" role="2Oq$k0">
-                <ref role="3cqZAo" node="20nTeIl6Hiw" resolve="relation" />
+                <ref role="3cqZAo" node="20nTeIl6Hiw" resolve="nRelation" />
               </node>
               <node concept="3TrEf2" id="20nTeIl6Hj3" role="2OqNvi">
                 <ref role="3Tt5mk" to="v0yp:7zWtwVwpdSG" />
@@ -3928,9 +4041,23 @@
           </node>
         </node>
         <node concept="3clFbH" id="20nTeIl6Hj4" role="3cqZAp" />
+        <node concept="3clFbF" id="20nTeIlagsq" role="3cqZAp">
+          <node concept="37vLTI" id="20nTeIlahdF" role="3clFbG">
+            <node concept="37vLTw" id="20nTeIlahjl" role="37vLTx">
+              <ref role="3cqZAo" node="20nTeIl6Hiw" resolve="nRelation" />
+            </node>
+            <node concept="3EllGN" id="20nTeIlah54" role="37vLTJ">
+              <node concept="13iPFW" id="20nTeIlah8W" role="3ElVtu" />
+              <node concept="37vLTw" id="20nTeIlagso" role="3ElQJh">
+                <ref role="3cqZAo" node="20nTeIlag63" resolve="equivalences" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="20nTeIlagij" role="3cqZAp" />
         <node concept="3cpWs6" id="20nTeIl6Hj5" role="3cqZAp">
           <node concept="37vLTw" id="20nTeIl6Hj6" role="3cqZAk">
-            <ref role="3cqZAo" node="20nTeIl6Hiw" resolve="relation" />
+            <ref role="3cqZAo" node="20nTeIl6Hiw" resolve="nRelation" />
           </node>
         </node>
       </node>
@@ -3949,6 +4076,17 @@
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="callByName" />
       <ref role="13i0hy" to="22fv:20nTeIl4end" resolve="callByName" />
+      <node concept="37vLTG" id="20nTeIlaieq" role="3clF46">
+        <property role="TrG5h" value="equivalences" />
+        <node concept="3rvAFt" id="20nTeIlaier" role="1tU5fm">
+          <node concept="3Tqbb2" id="20nTeIlaies" role="3rvSg0">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+          <node concept="3Tqbb2" id="20nTeIlaiet" role="3rvQeY">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="20nTeIl8pNq" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl8pNr" role="3clF47">
         <node concept="3cpWs8" id="20nTeIl8pNs" role="3cqZAp">
@@ -4026,6 +4164,9 @@
                     </node>
                     <node concept="2qgKlT" id="20nTeIl8pNS" role="2OqNvi">
                       <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+                      <node concept="37vLTw" id="20nTeIlaiRU" role="37wK5m">
+                        <ref role="3cqZAo" node="20nTeIlaieq" resolve="equivalences" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -4042,6 +4183,20 @@
             <node concept="13iPFW" id="20nTeIl8pNW" role="2Oq$k0" />
             <node concept="3Tsc0h" id="20nTeIl8pNX" role="2OqNvi">
               <ref role="3TtcxE" to="v0yp:7zWtwVwpdT4" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="20nTeIlaiYF" role="3cqZAp" />
+        <node concept="3clFbF" id="20nTeIlakfl" role="3cqZAp">
+          <node concept="37vLTI" id="20nTeIlaleL" role="3clFbG">
+            <node concept="37vLTw" id="20nTeIlalmE" role="37vLTx">
+              <ref role="3cqZAo" node="20nTeIl8pNt" resolve="nStructureModel" />
+            </node>
+            <node concept="3EllGN" id="20nTeIlal5l" role="37vLTJ">
+              <node concept="13iPFW" id="20nTeIlal5v" role="3ElVtu" />
+              <node concept="37vLTw" id="20nTeIlakfj" role="3ElQJh">
+                <ref role="3cqZAo" node="20nTeIlaieq" resolve="equivalences" />
+              </node>
             </node>
           </node>
         </node>
@@ -4070,6 +4225,17 @@
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="callByName" />
       <ref role="13i0hy" to="22fv:20nTeIl4end" resolve="callByName" />
+      <node concept="37vLTG" id="20nTeIlamfb" role="3clF46">
+        <property role="TrG5h" value="equivalences" />
+        <node concept="3rvAFt" id="20nTeIlamfc" role="1tU5fm">
+          <node concept="3Tqbb2" id="20nTeIlamfd" role="3rvSg0">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+          <node concept="3Tqbb2" id="20nTeIlamfe" role="3rvQeY">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="20nTeIl8wmr" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl8wmy" role="3clF47">
         <node concept="3cpWs6" id="20nTeIl8wn6" role="3cqZAp">
@@ -4121,6 +4287,17 @@
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="callByName" />
       <ref role="13i0hy" to="22fv:20nTeIl4end" resolve="callByName" />
+      <node concept="37vLTG" id="20nTeIlamhv" role="3clF46">
+        <property role="TrG5h" value="equivalences" />
+        <node concept="3rvAFt" id="20nTeIlamhw" role="1tU5fm">
+          <node concept="3Tqbb2" id="20nTeIlamhx" role="3rvSg0">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+          <node concept="3Tqbb2" id="20nTeIlamhy" role="3rvQeY">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="20nTeIl8w_r" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl8w_y" role="3clF47">
         <node concept="3cpWs6" id="20nTeIl8wA2" role="3cqZAp">
@@ -4172,6 +4349,17 @@
       <property role="13i0iv" value="false" />
       <property role="TrG5h" value="callByName" />
       <ref role="13i0hy" to="22fv:20nTeIl4end" resolve="callByName" />
+      <node concept="37vLTG" id="20nTeIlamjN" role="3clF46">
+        <property role="TrG5h" value="equivalences" />
+        <node concept="3rvAFt" id="20nTeIlamjO" role="1tU5fm">
+          <node concept="3Tqbb2" id="20nTeIlamjP" role="3rvSg0">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+          <node concept="3Tqbb2" id="20nTeIlamjQ" role="3rvQeY">
+            <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="20nTeIl8wOx" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl8wOC" role="3clF47">
         <node concept="3cpWs6" id="20nTeIl8wP8" role="3cqZAp">
