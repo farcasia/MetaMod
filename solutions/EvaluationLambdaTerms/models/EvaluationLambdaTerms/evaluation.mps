@@ -130,11 +130,11 @@
             <property role="TrG5h" value="x" />
           </node>
           <node concept="3B6VN2" id="1vxM8_O__pR" role="3B56nf">
-            <node concept="3B6VN0" id="1vxM8_O__q0" role="3B56nf">
-              <ref role="3B56nS" node="4IND2wwWzQJ" resolve="x" />
-            </node>
             <node concept="3B6VN1" id="1vxM8_O__pV" role="3B56n9">
               <property role="TrG5h" value="y" />
+            </node>
+            <node concept="3B6VN0" id="1vxM8_OC8UQ" role="3B56nf">
+              <ref role="3B56nS" node="4IND2wwWzQJ" resolve="x" />
             </node>
           </node>
         </node>
@@ -233,6 +233,23 @@
       <node concept="3B6VN2" id="1vxM8_O__q6" role="kdsPW">
         <node concept="2oAaTp" id="1vxM8_O__qn" role="3B56nf">
           <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
+          <node concept="2oAaUZ" id="20nTeIkK$ve" role="2oAaxa">
+            <property role="TrG5h" value="someName" />
+            <node concept="2oAawe" id="20nTeIkRHOM" role="2oAawy">
+              <ref role="2oAawc" node="3Ky4PoV$GpT" resolve="Relation" />
+            </node>
+            <node concept="2oAaSB" id="20nTeIkRHOP" role="2oAawB">
+              <node concept="2oAaXF" id="20nTeIkRHOV" role="2oAawq">
+                <ref role="2oAaID" node="3Ky4PoV$Gq2" resolve="BM" />
+              </node>
+            </node>
+            <node concept="2oAaW5" id="20nTeIkK$vm" role="2oAawD">
+              <property role="TrG5h" value="RM" />
+              <node concept="2oAaXF" id="20nTeIkRHOJ" role="2oAawq">
+                <ref role="2oAaID" node="3Ky4PoV$Gq2" resolve="BM" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3B6VN1" id="1vxM8_O__q8" role="3B56n9">
           <property role="TrG5h" value="x" />
