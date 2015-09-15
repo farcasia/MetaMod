@@ -101,7 +101,6 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
-      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
@@ -239,10 +238,15 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="20nTeIl9YZy" role="3cqZAp" />
-        <node concept="3cpWs6" id="20nTeIl5aKL" role="3cqZAp">
-          <node concept="37vLTw" id="20nTeIl5yT4" role="3cqZAk">
-            <ref role="3cqZAo" node="20nTeIl5xp0" resolve="module" />
+        <node concept="3clFbH" id="20nTeIl_QZJ" role="3cqZAp" />
+        <node concept="3cpWs6" id="20nTeIl_RdM" role="3cqZAp">
+          <node concept="2OqwBi" id="20nTeIl_RoR" role="3cqZAk">
+            <node concept="37vLTw" id="20nTeIl_RiF" role="2Oq$k0">
+              <ref role="3cqZAo" node="20nTeIl5xp0" resolve="module" />
+            </node>
+            <node concept="3TrEf2" id="20nTeIl_RN6" role="2OqNvi">
+              <ref role="3Tt5mk" to="2mcz:2DitZGYpVE7" />
+            </node>
           </node>
         </node>
       </node>
@@ -504,9 +508,19 @@
       <node concept="3Tm1VV" id="20nTeIl5$zs" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl5$zz" role="3clF47">
         <node concept="3cpWs6" id="20nTeIl5$$7" role="3cqZAp">
-          <node concept="2OqwBi" id="20nTeIl5$A0" role="3cqZAk">
-            <node concept="13iPFW" id="20nTeIl5$$m" role="2Oq$k0" />
-            <node concept="1$rogu" id="20nTeIl5$Jd" role="2OqNvi" />
+          <node concept="2OqwBi" id="20nTeIl_QaT" role="3cqZAk">
+            <node concept="2OqwBi" id="20nTeIl5$A0" role="2Oq$k0">
+              <node concept="13iPFW" id="20nTeIl5$$m" role="2Oq$k0" />
+              <node concept="3TrEf2" id="20nTeIl_PYT" role="2OqNvi">
+                <ref role="3Tt5mk" to="2mcz:2DitZGYpVEh" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="20nTeIl_QzV" role="2OqNvi">
+              <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
+              <node concept="37vLTw" id="20nTeIl_QAl" role="37wK5m">
+                <ref role="3cqZAo" node="20nTeIla4jo" resolve="equivalences" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

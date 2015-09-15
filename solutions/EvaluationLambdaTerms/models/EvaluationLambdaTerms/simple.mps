@@ -77,7 +77,18 @@
       <node concept="2oAaVg" id="20nTeIl_OBB" role="3B56nu">
         <property role="TrG5h" value="SubStructure" />
       </node>
-      <node concept="kdsPF" id="20nTeIl_OB$" role="3B56no">
+      <node concept="3B6VN2" id="20nTeIlA2iw" role="3B56no">
+        <node concept="3B6VN0" id="20nTeIlA2iD" role="3B56nf">
+          <ref role="3B56nS" node="20nTeIlA2i$" resolve="x" />
+        </node>
+        <node concept="3B6VN1" id="20nTeIlA2i$" role="3B56n9">
+          <property role="TrG5h" value="x" />
+        </node>
+      </node>
+    </node>
+    <node concept="3B6VN3" id="20nTeIlAHIl" role="2oAaxa">
+      <node concept="2oAaTp" id="20nTeIlAHIY" role="3B56nu" />
+      <node concept="kdsPF" id="20nTeIlAHIB" role="3B56no">
         <ref role="kdsPE" node="20nTeIl_O_n" resolve="SomeName" />
       </node>
     </node>
