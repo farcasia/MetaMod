@@ -247,11 +247,8 @@
             <ref role="2oAaID" node="3Ky4PoV$Gq2" resolve="BM" />
           </node>
         </node>
-        <node concept="2oAaW5" id="6QPRDxNDNHO" role="2oAawD">
-          <property role="TrG5h" value="VarDef" />
-          <node concept="2oAaXF" id="4IND2wwKfvG" role="2oAawq">
-            <ref role="2oAaID" node="3Ky4PoV$Gq2" resolve="BM" />
-          </node>
+        <node concept="2oAaXF" id="20nTeIlUgPe" role="2oAawD">
+          <ref role="2oAaID" node="6QPRDxNDNHy" resolve="VarDef" />
         </node>
       </node>
     </node>
