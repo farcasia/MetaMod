@@ -3778,12 +3778,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="20nTeIl6qac" role="3cqZAp" />
-        <node concept="3SKdUt" id="20nTeIl6qem" role="3cqZAp">
-          <node concept="3SKdUq" id="20nTeIl6qi6" role="3SKWNk">
-            <property role="3SKdUp" value="Otherwise, nothing to do" />
-          </node>
-        </node>
       </node>
       <node concept="37vLTG" id="20nTeIl6nnr" role="3clF46">
         <property role="TrG5h" value="element" />
