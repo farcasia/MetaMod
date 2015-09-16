@@ -245,6 +245,7 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
@@ -3201,17 +3202,23 @@
             <node concept="3clFbH" id="2QDb_cZQ_A2" role="3cqZAp" />
             <node concept="3cpWs8" id="20nTeIlO2z8" role="3cqZAp">
               <node concept="3cpWsn" id="20nTeIlO2zb" role="3cpWs9">
-                <property role="TrG5h" value="metamodel" />
+                <property role="TrG5h" value="sm" />
                 <node concept="3Tqbb2" id="20nTeIlO2zc" role="1tU5fm">
                   <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
                 </node>
-                <node concept="2YIFZM" id="20nTeIlO2zd" role="33vP2m">
-                  <ref role="1Pybhc" to="z64h:1vxM8_OCb4Z" resolve="UtilityMethods" />
-                  <ref role="37wK5l" to="z64h:20nTeIkHf6L" resolve="searchNearestMetamodel" />
-                  <node concept="1PxgMI" id="20nTeIlO2ze" role="37wK5m">
-                    <ref role="1PxNhF" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
-                    <node concept="EsrRn" id="20nTeIlO3CD" role="1PxMeX" />
+                <node concept="2OqwBi" id="7naV5dywQxl" role="33vP2m">
+                  <node concept="2OqwBi" id="7naV5dywKtv" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7naV5dywGgR" role="2Oq$k0">
+                      <node concept="EsrRn" id="7naV5dywFjT" role="2Oq$k0" />
+                      <node concept="z$bX8" id="7naV5dywIcw" role="2OqNvi" />
+                    </node>
+                    <node concept="v3k3i" id="7naV5dywOfp" role="2OqNvi">
+                      <node concept="chp4Y" id="7naV5dywPj4" role="v3oSu">
+                        <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                      </node>
+                    </node>
                   </node>
+                  <node concept="1yVyf7" id="7naV5dywScQ" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -3226,7 +3233,7 @@
               </node>
               <node concept="2OqwBi" id="20nTeIlO7DM" role="3clFbw">
                 <node concept="37vLTw" id="20nTeIlO6_Y" role="2Oq$k0">
-                  <ref role="3cqZAo" node="20nTeIlO2zb" resolve="metamodel" />
+                  <ref role="3cqZAo" node="20nTeIlO2zb" resolve="sm" />
                 </node>
                 <node concept="3w_OXm" id="20nTeIlO8Rr" role="2OqNvi" />
               </node>
@@ -3240,7 +3247,7 @@
                 </node>
                 <node concept="2OqwBi" id="2QDb_cZQ11u" role="33vP2m">
                   <node concept="37vLTw" id="20nTeIlO9Th" role="2Oq$k0">
-                    <ref role="3cqZAo" node="20nTeIlO2zb" resolve="metamodel" />
+                    <ref role="3cqZAo" node="20nTeIlO2zb" resolve="sm" />
                   </node>
                   <node concept="2qgKlT" id="2QDb_cZQ1AL" role="2OqNvi">
                     <ref role="37wK5l" to="z64h:6uuPbCA2FGh" resolve="getNamedRelationsWithSourceBM" />

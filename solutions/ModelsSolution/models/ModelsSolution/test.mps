@@ -122,14 +122,14 @@
         <node concept="2oAawe" id="4IND2wwKfvw" role="2oAawy">
           <ref role="2oAawc" node="3Ky4PoV$GpT" resolve="Relation" />
         </node>
-        <node concept="2oAaXF" id="4IND2wwKg$R" role="2oAawD">
-          <ref role="2oAaID" node="6QPRDxNDNHy" resolve="VarDef" />
-        </node>
         <node concept="2oAaW5" id="4IND2wwPtE1" role="2oAawB">
           <property role="TrG5h" value="Var" />
           <node concept="2oAaXF" id="4IND2wwQskv" role="2oAawq">
             <ref role="2oAaID" node="3Ky4PoV$Gq2" resolve="BM" />
           </node>
+        </node>
+        <node concept="2oAaXF" id="7naV5dywp6$" role="2oAawD">
+          <ref role="2oAaID" node="6QPRDxNDNHy" resolve="VarDef" />
         </node>
       </node>
     </node>
