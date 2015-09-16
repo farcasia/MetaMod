@@ -55,6 +55,9 @@
       <concept id="8717972784948762981" name="Models.structure.RefToNamedBM" flags="ng" index="2oAaXF">
         <reference id="8717972784948764071" name="ref" index="2oAaID" />
       </concept>
+      <concept id="8717972784948763026" name="Models.structure.RefToNamedSM" flags="ng" index="2oAaYs">
+        <reference id="8717972784948764086" name="ref" index="2oAaIS" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -65,6 +68,12 @@
   <node concept="2oAaVg" id="20nTeIleX7j">
     <property role="TrG5h" value="Test" />
     <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
+    <node concept="2oAaVg" id="20nTeIlKiph" role="2oAaxa">
+      <property role="TrG5h" value="SubS0" />
+    </node>
+    <node concept="2oAaVg" id="20nTeIlKiq5" role="2oAaxa">
+      <property role="TrG5h" value="SubS1" />
+    </node>
     <node concept="kds5u" id="20nTeIl_O_n" role="2oAaxa">
       <property role="TrG5h" value="SomeName" />
       <node concept="3B6VN2" id="20nTeIl_O_o" role="kdsPW">
@@ -90,9 +99,57 @@
       </node>
     </node>
     <node concept="3B6VN3" id="20nTeIlAHIl" role="2oAaxa">
-      <node concept="2oAaTp" id="20nTeIlAHIY" role="3B56nu" />
+      <node concept="2oAaTp" id="20nTeIlAHIY" role="3B56nu">
+        <node concept="3B6VN3" id="20nTeIlKinm" role="2oAaxa">
+          <node concept="2oAaYs" id="20nTeIlKiqz" role="3B56nu">
+            <ref role="2oAaIS" node="20nTeIlKiq5" resolve="SubS1" />
+          </node>
+          <node concept="3B6VN3" id="20nTeIlKinv" role="3B56no">
+            <node concept="2oAaYs" id="20nTeIlKiqw" role="3B56nu">
+              <ref role="2oAaIS" node="20nTeIlKiph" resolve="SubS0" />
+            </node>
+            <node concept="3B6VN2" id="20nTeIlKinC" role="3B56no">
+              <node concept="3B6VN2" id="20nTeIlKinL" role="3B56nf">
+                <node concept="2oAaTp" id="20nTeIlKinU" role="3B56nf">
+                  <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
+                  <node concept="3B6VN0" id="20nTeIlKinX" role="2oAaxa">
+                    <ref role="3B56nS" node="20nTeIlKinG" resolve="x" />
+                  </node>
+                  <node concept="3B6VN0" id="20nTeIlKio2" role="2oAaxa">
+                    <ref role="3B56nS" node="20nTeIlKinP" resolve="y" />
+                  </node>
+                </node>
+                <node concept="3B6VN1" id="20nTeIlKinP" role="3B56n9">
+                  <property role="TrG5h" value="y" />
+                </node>
+              </node>
+              <node concept="3B6VN1" id="20nTeIlKinG" role="3B56n9">
+                <property role="TrG5h" value="x" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="kdsPF" id="20nTeIlAHIB" role="3B56no">
         <ref role="kdsPE" node="20nTeIl_O_n" resolve="SomeName" />
+      </node>
+    </node>
+    <node concept="3B6VN3" id="20nTeIlKixM" role="2oAaxa">
+      <node concept="2oAaYs" id="20nTeIlKiyK" role="3B56nu">
+        <ref role="2oAaIS" node="20nTeIlKiq5" resolve="SubS1" />
+      </node>
+      <node concept="3B6VN3" id="20nTeIlKiyk" role="3B56no">
+        <node concept="2oAaYs" id="20nTeIlKiyH" role="3B56nu">
+          <ref role="2oAaIS" node="20nTeIlKiph" resolve="SubS0" />
+        </node>
+        <node concept="3B6VN2" id="20nTeIlKiyx" role="3B56no">
+          <node concept="kdsPF" id="20nTeIlKiyE" role="3B56nf">
+            <ref role="kdsPE" node="20nTeIl_O_n" resolve="SomeName" />
+          </node>
+          <node concept="3B6VN1" id="20nTeIlKiy_" role="3B56n9">
+            <property role="TrG5h" value="x" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -146,7 +203,7 @@
             <node concept="2oAawe" id="20nTeIkUOY4" role="2oAawy">
               <ref role="2oAawc" node="3Ky4PoV$GpT" resolve="Relation" />
             </node>
-            <node concept="2oAaXF" id="20nTeIkUOY1" role="2oAawD">
+            <node concept="2oAaXF" id="20nTeIlCLYi" role="2oAawD">
               <ref role="2oAaID" node="20nTeIkK$vm" resolve="RM" />
             </node>
             <node concept="2oAaSB" id="20nTeIkUOYc" role="2oAawB">
