@@ -83,5 +83,9 @@
       <ref role="20lvS9" node="2DitZGYpVq_" resolve="Module" />
     </node>
   </node>
+  <node concept="1TIwiD" id="20nTeIlLSeL">
+    <property role="TrG5h" value="LambdaApplication" />
+    <ref role="1TJDcQ" to="9lyo:6oGnPI1dYeo" resolve="LambdaApplication" />
+  </node>
 </model>
 

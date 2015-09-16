@@ -18,6 +18,7 @@
       <concept id="3049631818650729104" name="Modules.structure.RefToModule" flags="ng" index="kdsPF">
         <reference id="3049631818650729105" name="ref" index="kdsPE" />
       </concept>
+      <concept id="2312568634159367089" name="Modules.structure.LambdaApplication" flags="ng" index="2PO6tq" />
     </language>
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" name="LambdaCalculus">
       <concept id="7362364337458504603" name="LambdaCalculus.structure.RefToBoundVariable" flags="ng" index="3B6VN0">
@@ -134,19 +135,19 @@
         <ref role="kdsPE" node="20nTeIl_O_n" resolve="SomeName" />
       </node>
     </node>
-    <node concept="3B6VN3" id="20nTeIlKixM" role="2oAaxa">
-      <node concept="2oAaYs" id="20nTeIlKiyK" role="3B56nu">
+    <node concept="2PO6tq" id="20nTeIlM9PA" role="2oAaxa">
+      <node concept="2oAaYs" id="20nTeIlM9Se" role="3B56nu">
         <ref role="2oAaIS" node="20nTeIlKiq5" resolve="SubS1" />
       </node>
-      <node concept="3B6VN3" id="20nTeIlKiyk" role="3B56no">
-        <node concept="2oAaYs" id="20nTeIlKiyH" role="3B56nu">
+      <node concept="2PO6tq" id="20nTeIlM9Q8" role="3B56no">
+        <node concept="2oAaYs" id="20nTeIlM9Sb" role="3B56nu">
           <ref role="2oAaIS" node="20nTeIlKiph" resolve="SubS0" />
         </node>
-        <node concept="3B6VN2" id="20nTeIlKiyx" role="3B56no">
-          <node concept="kdsPF" id="20nTeIlKiyE" role="3B56nf">
+        <node concept="3B6VN2" id="20nTeIlM9RZ" role="3B56no">
+          <node concept="kdsPF" id="20nTeIlM9S8" role="3B56nf">
             <ref role="kdsPE" node="20nTeIl_O_n" resolve="SomeName" />
           </node>
-          <node concept="3B6VN1" id="20nTeIlKiy_" role="3B56n9">
+          <node concept="3B6VN1" id="20nTeIlM9S3" role="3B56n9">
             <property role="TrG5h" value="x" />
           </node>
         </node>
