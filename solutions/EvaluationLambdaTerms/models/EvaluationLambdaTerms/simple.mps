@@ -228,6 +228,47 @@
         <ref role="2oAawc" node="3Ky4PoV$GpT" resolve="Relation" />
       </node>
     </node>
+    <node concept="2oAaUa" id="20nTeIlVX4w" role="2oAaxa">
+      <node concept="2PO6tq" id="20nTeIlVX65" role="2oAawy">
+        <node concept="2oAaYs" id="20nTeIlVX6q" role="3B56nu">
+          <ref role="2oAaIS" node="20nTeIl_OBB" resolve="SubStructure" />
+        </node>
+        <node concept="3B6VN2" id="20nTeIlVX6e" role="3B56no">
+          <node concept="2oAawe" id="20nTeIlVX6n" role="3B56nf">
+            <ref role="2oAawc" node="3Ky4PoV$GpT" resolve="Relation" />
+          </node>
+          <node concept="3B6VN1" id="20nTeIlVX6i" role="3B56n9">
+            <property role="TrG5h" value="x" />
+          </node>
+        </node>
+      </node>
+      <node concept="2PO6tq" id="20nTeIlVX6x" role="2oAawB">
+        <node concept="2oAaW5" id="20nTeIlVX6H" role="3B56nu">
+          <property role="TrG5h" value="X" />
+          <node concept="2oAaXF" id="20nTeIlVX6N" role="2oAawq">
+            <ref role="2oAaID" node="3Ky4PoV$Gq2" resolve="BM" />
+          </node>
+        </node>
+        <node concept="kdsPF" id="20nTeIlVX6E" role="3B56no">
+          <ref role="kdsPE" node="20nTeIl_O_n" resolve="SomeName" />
+        </node>
+      </node>
+      <node concept="3B6VN3" id="20nTeIlVX5B" role="2oAawD">
+        <node concept="2oAaXF" id="20nTeIlVX62" role="3B56nu">
+          <ref role="2oAaID" node="3Ky4PoV$Gq2" resolve="BM" />
+        </node>
+        <node concept="3B6VN2" id="20nTeIlVX5K" role="3B56no">
+          <node concept="2oAaSB" id="20nTeIlVX5T" role="3B56nf">
+            <node concept="3B6VN0" id="20nTeIlVX5Z" role="2oAawq">
+              <ref role="3B56nS" node="20nTeIlVX5O" resolve="x" />
+            </node>
+          </node>
+          <node concept="3B6VN1" id="20nTeIlVX5O" role="3B56n9">
+            <property role="TrG5h" value="x" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2oAaVg" id="5v3N1I1qnA3">
     <property role="TrG5h" value="BasicMetaMod" />

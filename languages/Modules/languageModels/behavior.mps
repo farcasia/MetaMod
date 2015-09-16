@@ -64,7 +64,6 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -93,10 +92,6 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
-      </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -128,11 +123,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
-      <concept id="1226359078165" name="jetbrains.mps.lang.smodel.structure.LinkRefExpression" flags="nn" index="28GBK8">
-        <reference id="1226359078166" name="conceptDeclaration" index="28GBKb" />
-        <reference id="1226359192215" name="linkDeclaration" index="28H3Ia" />
-      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -548,41 +538,6 @@
       </node>
       <node concept="3Tm1VV" id="20nTeIl5$zs" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl5$zz" role="3clF47">
-        <node concept="3clFbJ" id="20nTeIlAXTw" role="3cqZAp">
-          <node concept="3clFbS" id="20nTeIlAXTy" role="3clFbx">
-            <node concept="3cpWs6" id="20nTeIlAYk0" role="3cqZAp">
-              <node concept="2OqwBi" id="20nTeIlAZlW" role="3cqZAk">
-                <node concept="2OqwBi" id="20nTeIlAYRp" role="2Oq$k0">
-                  <node concept="2OqwBi" id="20nTeIlAYnG" role="2Oq$k0">
-                    <node concept="13iPFW" id="20nTeIlAYlk" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="20nTeIlAYEG" role="2OqNvi">
-                      <ref role="3Tt5mk" to="2mcz:2DitZGYpVEh" />
-                    </node>
-                  </node>
-                  <node concept="3TrEf2" id="20nTeIlAZ5_" role="2OqNvi">
-                    <ref role="3Tt5mk" to="2mcz:2DitZGYpVE7" />
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="20nTeIlAZGu" role="2OqNvi">
-                  <ref role="37wK5l" to="22fv:20nTeIl4end" resolve="callByName" />
-                  <node concept="37vLTw" id="20nTeIlAZKj" role="37wK5m">
-                    <ref role="3cqZAo" node="20nTeIla4jo" resolve="equivalences" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbC" id="20nTeIlAYhM" role="3clFbw">
-            <node concept="28GBK8" id="20nTeIlAYit" role="3uHU7w">
-              <ref role="28GBKb" to="9lyo:6oGnPI1dYeo" resolve="LambdaApplication" />
-              <ref role="28H3Ia" to="9lyo:6oGnPI1e3E3" />
-            </node>
-            <node concept="2OqwBi" id="20nTeIlAXWd" role="3uHU7B">
-              <node concept="13iPFW" id="20nTeIlAXTH" role="2Oq$k0" />
-              <node concept="25OxAV" id="20nTeIlAYen" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="20nTeIl5$$7" role="3cqZAp">
           <node concept="2OqwBi" id="20nTeIlAJqZ" role="3cqZAk">
             <node concept="13iPFW" id="20nTeIlAJpg" role="2Oq$k0" />
