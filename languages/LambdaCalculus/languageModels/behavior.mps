@@ -581,6 +581,23 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="20nTeIl4LQC" role="3cqZAp">
+          <node concept="3cpWsn" id="20nTeIl4LQF" role="3cpWs9">
+            <property role="TrG5h" value="right" />
+            <node concept="3Tqbb2" id="20nTeIl4LQA" role="1tU5fm">
+              <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+            </node>
+            <node concept="2OqwBi" id="20nTeIl4Mdr" role="33vP2m">
+              <node concept="2OqwBi" id="20nTeIl4LTa" role="2Oq$k0">
+                <node concept="13iPFW" id="20nTeIl4LRw" role="2Oq$k0" />
+                <node concept="3TrEf2" id="20nTeIl4M2v" role="2OqNvi">
+                  <ref role="3Tt5mk" to="9lyo:6oGnPI1e3E5" />
+                </node>
+              </node>
+              <node concept="1$rogu" id="20nTeIl4MlE" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="20nTeIl4JTV" role="3cqZAp" />
         <node concept="3clFbJ" id="20nTeIl4JVO" role="3cqZAp">
           <node concept="3clFbS" id="20nTeIl4JVQ" role="3clFbx">
@@ -590,24 +607,6 @@
                 <property role="Xl_RC" value="We do make the replacements!" />
               </node>
             </node>
-            <node concept="3cpWs8" id="20nTeIl4LQC" role="3cqZAp">
-              <node concept="3cpWsn" id="20nTeIl4LQF" role="3cpWs9">
-                <property role="TrG5h" value="right" />
-                <node concept="3Tqbb2" id="20nTeIl4LQA" role="1tU5fm">
-                  <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
-                </node>
-                <node concept="2OqwBi" id="20nTeIl4Mdr" role="33vP2m">
-                  <node concept="2OqwBi" id="20nTeIl4LTa" role="2Oq$k0">
-                    <node concept="13iPFW" id="20nTeIl4LRw" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="20nTeIl4M2v" role="2OqNvi">
-                      <ref role="3Tt5mk" to="9lyo:6oGnPI1e3E5" />
-                    </node>
-                  </node>
-                  <node concept="1$rogu" id="20nTeIl4MlE" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="20nTeIl4MmP" role="3cqZAp" />
             <node concept="3clFbF" id="20nTeIl4Mps" role="3cqZAp">
               <node concept="2OqwBi" id="20nTeIl4Mrf" role="3clFbG">
                 <node concept="2qgKlT" id="20nTeIl4MHr" role="2OqNvi">
@@ -699,14 +698,8 @@
               </node>
               <node concept="3clFbF" id="20nTeIl4KWM" role="3cqZAp">
                 <node concept="37vLTI" id="20nTeIl4L8k" role="3clFbG">
-                  <node concept="2OqwBi" id="20nTeIl4Lv4" role="37vLTx">
-                    <node concept="2OqwBi" id="20nTeIl4LaY" role="2Oq$k0">
-                      <node concept="13iPFW" id="20nTeIl4L9f" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="20nTeIl4LkK" role="2OqNvi">
-                        <ref role="3Tt5mk" to="9lyo:6oGnPI1e3E5" />
-                      </node>
-                    </node>
-                    <node concept="1$rogu" id="20nTeIl4LBi" role="2OqNvi" />
+                  <node concept="37vLTw" id="20nTeIlAVpd" role="37vLTx">
+                    <ref role="3cqZAo" node="20nTeIl4LQF" resolve="right" />
                   </node>
                   <node concept="2OqwBi" id="20nTeIl4KYs" role="37vLTJ">
                     <node concept="37vLTw" id="20nTeIl4KWK" role="2Oq$k0">

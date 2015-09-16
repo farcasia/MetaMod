@@ -9,6 +9,9 @@
   <imports />
   <registry>
     <language id="ae311dd6-db78-4e5e-a31b-7988fcde0010" name="Modules">
+      <concept id="3049631818650728102" name="Modules.structure.ModuleComposite" flags="ng" index="kds5t">
+        <child id="3049631818650729077" name="modules" index="kdsQe" />
+      </concept>
       <concept id="3049631818650728101" name="Modules.structure.Module" flags="ng" index="kds5u">
         <child id="3049631818650729095" name="defines" index="kdsPW" />
       </concept>
@@ -111,6 +114,50 @@
         <property role="TrG5h" value="BM" />
         <node concept="2oAaXF" id="3dUSd7MbGcq" role="2oAawq">
           <ref role="2oAaID" node="3Ky4PoV$Gq2" resolve="BM" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="kds5t" id="4IND2wwW$fO">
+    <property role="TrG5h" value="SeparateDefinitions" />
+    <node concept="kds5u" id="1vxM8_O__q5" role="kdsQe">
+      <property role="TrG5h" value="Def0" />
+      <node concept="3B6VN2" id="1vxM8_O__q6" role="kdsPW">
+        <node concept="2oAaTp" id="1vxM8_O__qn" role="3B56nf">
+          <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
+          <node concept="2oAaUZ" id="20nTeIkK$ve" role="2oAaxa">
+            <property role="TrG5h" value="someName" />
+            <node concept="2oAawe" id="20nTeIkRHOM" role="2oAawy">
+              <ref role="2oAawc" node="3Ky4PoV$GpT" resolve="Relation" />
+            </node>
+            <node concept="2oAaSB" id="20nTeIkRHOP" role="2oAawB">
+              <node concept="2oAaXF" id="20nTeIkRHOV" role="2oAawq">
+                <ref role="2oAaID" node="3Ky4PoV$Gq2" resolve="BM" />
+              </node>
+            </node>
+            <node concept="2oAaW5" id="20nTeIkK$vm" role="2oAawD">
+              <property role="TrG5h" value="RM" />
+              <node concept="2oAaXF" id="20nTeIkRHOJ" role="2oAawq">
+                <ref role="2oAaID" node="3Ky4PoV$Gq2" resolve="BM" />
+              </node>
+            </node>
+          </node>
+          <node concept="2oAaUa" id="20nTeIkUOXF" role="2oAaxa">
+            <node concept="2oAawe" id="20nTeIkUOY4" role="2oAawy">
+              <ref role="2oAawc" node="3Ky4PoV$GpT" resolve="Relation" />
+            </node>
+            <node concept="2oAaXF" id="20nTeIkUOY1" role="2oAawD">
+              <ref role="2oAaID" node="20nTeIkK$vm" resolve="RM" />
+            </node>
+            <node concept="2oAaSB" id="20nTeIkUOYc" role="2oAawB">
+              <node concept="2oAaXF" id="20nTeIkUOYi" role="2oAawq">
+                <ref role="2oAaID" node="3Ky4PoV$Gq2" resolve="BM" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3B6VN1" id="1vxM8_O__q8" role="3B56n9">
+          <property role="TrG5h" value="x" />
         </node>
       </node>
     </node>
