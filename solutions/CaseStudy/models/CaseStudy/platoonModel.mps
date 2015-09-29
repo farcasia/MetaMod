@@ -51,6 +51,9 @@
         </node>
         <node concept="2oAaW5" id="16zLRPqV7Uo" role="2oAawD">
           <property role="TrG5h" value="LV0" />
+          <node concept="2oAaXF" id="16zLRPr3ba9" role="2oAawq">
+            <ref role="2oAaID" to="qs18:16zLRPqV0ni" resolve="LeadVehicle" />
+          </node>
         </node>
         <node concept="2oAawe" id="16zLRPqV7HT" role="2oAawy">
           <ref role="2oAawc" to="qs18:16zLRPqSrCX" resolve="followsRoute" />
@@ -59,6 +62,9 @@
       <node concept="2oAaUa" id="16zLRPqV7O_" role="2oAaxa">
         <node concept="2oAaW5" id="16zLRPqV7Ul" role="2oAawB">
           <property role="TrG5h" value="Platoon0" />
+          <node concept="2oAaXF" id="16zLRPr3bab" role="2oAawq">
+            <ref role="2oAaID" to="qs18:16zLRPqV0oY" resolve="Platoon" />
+          </node>
         </node>
         <node concept="2oAaXF" id="16zLRPqV7Pa" role="2oAawD">
           <ref role="2oAaID" node="16zLRPqV7Uo" resolve="LV0" />
