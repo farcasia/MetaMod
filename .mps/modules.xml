@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/Models/Models.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Modules/Modules.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/BasicMetaMod/BasicMetaMod.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/CaseStudy/CaseStudy.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/EvaluationLambdaTerms/EvaluationLambdaTerms.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/LambdaCalculusSolution/LambdaCalculusSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ModelsSolution/ModelsSolution.msd" folder="" />
