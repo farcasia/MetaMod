@@ -2803,25 +2803,7 @@
   <node concept="13h7C7" id="1vxM8_OAUwJ">
     <ref role="13h7C2" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
     <node concept="13hLZK" id="1vxM8_OAUwK" role="13h7CW">
-      <node concept="3clFbS" id="1vxM8_OAUwL" role="2VODD2">
-        <node concept="3clFbF" id="1vxM8_OAUMA" role="3cqZAp">
-          <node concept="37vLTI" id="1vxM8_OB5H2" role="3clFbG">
-            <node concept="2ShNRf" id="1vxM8_OB5In" role="37vLTx">
-              <node concept="3zrR0B" id="1vxM8_OBb6u" role="2ShVmc">
-                <node concept="3Tqbb2" id="1vxM8_OBb6w" role="3zrR0E">
-                  <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="1vxM8_OAV8r" role="37vLTJ">
-              <node concept="13iPFW" id="1vxM8_OAUM_" role="2Oq$k0" />
-              <node concept="3TrEf2" id="1vxM8_OB5FB" role="2OqNvi">
-                <ref role="3Tt5mk" to="v0yp:7zWtwVwpdSG" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="1vxM8_OAUwL" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="20nTeIl6_Sc" role="13h7CS">
       <property role="13i0it" value="false" />

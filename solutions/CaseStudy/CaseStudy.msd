@@ -8,6 +8,7 @@
   <sourcePath />
   <usedLanguages>
     <usedLanguage>ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</usedLanguage>
+    <usedLanguage>b6269b38-266c-4c72-855f-f9773fac7a5c(LambdaCalculus)</usedLanguage>
   </usedLanguages>
   <languageVersions>
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" fqName="LambdaCalculus" version="0" />
