@@ -71,9 +71,6 @@
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -121,7 +118,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -192,12 +188,6 @@
     </language>
     <language id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes">
       <concept id="8077936094962911282" name="jetbrains.mps.lang.scopes.structure.ParentScope" flags="nn" index="iy90A" />
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -901,13 +891,6 @@
       <property role="TrG5h" value="getRepresentativesNamedBMs" />
       <node concept="3Tm1VV" id="6uuPbC_XXdK" role="1B3o_S" />
       <node concept="3clFbS" id="6uuPbC_XXdL" role="3clF47">
-        <node concept="34ab3g" id="6uuPbCA10JU" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="6uuPbCA10JW" role="34bqiv">
-            <property role="Xl_RC" value="We are getting the representatives for NamedBasicModels." />
-          </node>
-        </node>
-        <node concept="3clFbH" id="6uuPbCA112z" role="3cqZAp" />
         <node concept="3cpWs8" id="6uuPbC_Yn18" role="3cqZAp">
           <node concept="3cpWsn" id="6uuPbC_Yn1b" role="3cpWs9">
             <property role="TrG5h" value="uniqueNamesNamedBM" />
@@ -1007,21 +990,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="6uuPbC_YFrM" role="3cqZAp" />
-        <node concept="34ab3g" id="6uuPbCA0YYm" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="6uuPbCA0Zqu" role="34bqiv">
-            <node concept="2OqwBi" id="6uuPbCA0ZNj" role="3uHU7w">
-              <node concept="37vLTw" id="6uuPbCA0Z$O" role="2Oq$k0">
-                <ref role="3cqZAo" node="6uuPbC_Yn1b" resolve="uniqueNamesNamedBM" />
-              </node>
-              <node concept="T8wYR" id="6uuPbCA10q1" role="2OqNvi" />
-            </node>
-            <node concept="Xl_RD" id="6uuPbCA0YYo" role="3uHU7B">
-              <property role="Xl_RC" value="Let's see the values " />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6uuPbCA0Yy_" role="3cqZAp" />
         <node concept="3cpWs6" id="6uuPbC_YI6L" role="3cqZAp">
           <node concept="2OqwBi" id="6uuPbC_YIGV" role="3cqZAk">
             <node concept="37vLTw" id="6uuPbC_YIiR" role="2Oq$k0">
@@ -1041,44 +1009,6 @@
       <property role="TrG5h" value="getNamedRelationsWithSourceBM" />
       <node concept="3Tm1VV" id="6uuPbCA2FGi" role="1B3o_S" />
       <node concept="3clFbS" id="6uuPbCA2FGj" role="3clF47">
-        <node concept="34ab3g" id="6uuPbCA3xsC" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="4IND2wwPvQV" role="34bqiv">
-            <node concept="2OqwBi" id="6uuPbCAaYT5" role="3uHU7w">
-              <node concept="2OqwBi" id="6uuPbCAaYT6" role="2Oq$k0">
-                <node concept="13iPFW" id="6uuPbCAaYT7" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6uuPbCAaYT8" role="2OqNvi">
-                  <ref role="37wK5l" to="tpcu:3fifI_xCJOQ" resolve="getScope" />
-                  <node concept="2OqwBi" id="6uuPbCAaYT9" role="37wK5m">
-                    <node concept="35c_gC" id="6uuPbCAaYTa" role="2Oq$k0">
-                      <ref role="35c_gD" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
-                    </node>
-                    <node concept="FGMqu" id="6uuPbCAaYTb" role="2OqNvi" />
-                  </node>
-                  <node concept="10Nm6u" id="6uuPbCAaYTc" role="37wK5m" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6uuPbCAaYTd" role="2OqNvi">
-                <ref role="37wK5l" to="o8zo:3fifI_xCtP7" resolve="getAvailableElements" />
-                <node concept="10Nm6u" id="6uuPbCAaYTe" role="37wK5m" />
-              </node>
-            </node>
-            <node concept="3cpWs3" id="6uuPbCAaYHS" role="3uHU7B">
-              <node concept="3cpWs3" id="4IND2wwPvj2" role="3uHU7B">
-                <node concept="37vLTw" id="4IND2wwPvnp" role="3uHU7w">
-                  <ref role="3cqZAo" node="6uuPbCA2SDC" resolve="namedBasicModel" />
-                </node>
-                <node concept="Xl_RD" id="6uuPbCA3xsD" role="3uHU7B">
-                  <property role="Xl_RC" value="We are getting the named relations for source " />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="4IND2wwPw63" role="3uHU7w">
-                <property role="Xl_RC" value=" with scope " />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6uuPbCA3x6X" role="3cqZAp" />
         <node concept="3cpWs8" id="6uuPbCA2WjK" role="3cqZAp">
           <node concept="3cpWsn" id="6uuPbCA2WjN" role="3cpWs9">
             <property role="TrG5h" value="namedRelationsWithSourceBM" />
@@ -1319,18 +1249,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="6uuPbCA2XXq" role="3cqZAp" />
-        <node concept="34ab3g" id="6uuPbCA9Lt6" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="6uuPbCA9MaJ" role="34bqiv">
-            <node concept="37vLTw" id="6uuPbCA9MkZ" role="3uHU7w">
-              <ref role="3cqZAo" node="6uuPbCA2WjN" resolve="namedRelationsWithSourceBM" />
-            </node>
-            <node concept="Xl_RD" id="6uuPbCA9LP1" role="3uHU7B">
-              <property role="Xl_RC" value="Let's see the values for named relations with source " />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6uuPbCA9L8J" role="3cqZAp" />
         <node concept="3cpWs6" id="6uuPbCA2Yb_" role="3cqZAp">
           <node concept="37vLTw" id="6uuPbCA2Yqt" role="3cqZAk">
             <ref role="3cqZAo" node="6uuPbCA2WjN" resolve="namedRelationsWithSourceBM" />
@@ -1351,34 +1269,6 @@
       <property role="TrG5h" value="getNamedRelationsWithTargetBM" />
       <node concept="3Tm1VV" id="6uuPbCA3hTc" role="1B3o_S" />
       <node concept="3clFbS" id="6uuPbCA3hTd" role="3clF47">
-        <node concept="34ab3g" id="6uuPbCA9M$r" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="6uuPbCAaZc1" role="34bqiv">
-            <node concept="Xl_RD" id="6uuPbCA9M$s" role="3uHU7B">
-              <property role="Xl_RC" value="We are getting the named relations for target with scope " />
-            </node>
-            <node concept="2OqwBi" id="6uuPbCAaZn6" role="3uHU7w">
-              <node concept="2OqwBi" id="6uuPbCAaZn7" role="2Oq$k0">
-                <node concept="13iPFW" id="6uuPbCAaZn8" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6uuPbCAaZn9" role="2OqNvi">
-                  <ref role="37wK5l" to="tpcu:3fifI_xCJOQ" resolve="getScope" />
-                  <node concept="2OqwBi" id="6uuPbCAaZna" role="37wK5m">
-                    <node concept="35c_gC" id="6uuPbCAaZnb" role="2Oq$k0">
-                      <ref role="35c_gD" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
-                    </node>
-                    <node concept="FGMqu" id="6uuPbCAaZnc" role="2OqNvi" />
-                  </node>
-                  <node concept="10Nm6u" id="6uuPbCAaZnd" role="37wK5m" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6uuPbCAaZne" role="2OqNvi">
-                <ref role="37wK5l" to="o8zo:3fifI_xCtP7" resolve="getAvailableElements" />
-                <node concept="10Nm6u" id="6uuPbCAaZnf" role="37wK5m" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6uuPbCA9Moz" role="3cqZAp" />
         <node concept="3cpWs8" id="6uuPbCA3hTe" role="3cqZAp">
           <node concept="3cpWsn" id="6uuPbCA3hTf" role="3cpWs9">
             <property role="TrG5h" value="namedRelationsWithTargetBM" />
@@ -1619,18 +1509,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="6uuPbCA9MY4" role="3cqZAp" />
-        <node concept="34ab3g" id="6uuPbCA9NaL" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="6uuPbCA9Nyq" role="34bqiv">
-            <node concept="37vLTw" id="6uuPbCA9NGE" role="3uHU7w">
-              <ref role="3cqZAo" node="6uuPbCA3hTf" resolve="namedRelationsWithTargetBM" />
-            </node>
-            <node concept="Xl_RD" id="6uuPbCA9NaN" role="3uHU7B">
-              <property role="Xl_RC" value="Let's see the values for named relations with target" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6uuPbCA3hTY" role="3cqZAp" />
         <node concept="3cpWs6" id="6uuPbCA3hTZ" role="3cqZAp">
           <node concept="37vLTw" id="6uuPbCA3hU0" role="3cqZAk">
             <ref role="3cqZAo" node="6uuPbCA3hTf" resolve="namedRelationsWithTargetBM" />
@@ -2435,17 +2313,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="20nTeIkY4Ej" role="3cqZAp" />
-            <node concept="34ab3g" id="20nTeIl24Kz" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="20nTeIl2d0Q" role="34bqiv">
-                <node concept="37vLTw" id="20nTeIl2d1J" role="3uHU7w">
-                  <ref role="3cqZAo" node="20nTeIkWjos" resolve="modules" />
-                </node>
-                <node concept="Xl_RD" id="20nTeIl24K_" role="3uHU7B">
-                  <property role="Xl_RC" value="We do return modules " />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs6" id="20nTeIkWnxP" role="3cqZAp">
               <node concept="2ShNRf" id="20nTeIkWnyN" role="3cqZAk">
                 <node concept="1pGfFk" id="20nTeIkWqXk" role="2ShVmc">
