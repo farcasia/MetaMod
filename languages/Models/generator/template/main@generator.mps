@@ -295,6 +295,15 @@
     <node concept="1puMqW" id="2QDb_d0267B" role="1puA0r">
       <ref role="1puQsG" node="2QDb_d01Yud" resolve="Flatten" />
     </node>
+    <node concept="avzCv" id="6za56b2CTRo" role="avys_">
+      <node concept="3clFbS" id="6za56b2CTRp" role="2VODD2">
+        <node concept="3clFbF" id="6za56b2D2J1" role="3cqZAp">
+          <node concept="3clFbT" id="6za56b2D2J0" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1pmfR0" id="2QDb_d01Yud">
     <property role="TrG5h" value="Flatten" />
@@ -2074,15 +2083,6 @@
     </node>
     <node concept="1puMqW" id="20nTeIlcB0l" role="1puA0r">
       <ref role="1puQsG" node="20nTeIlbMT_" resolve="EvaluateLambdaTerms" />
-    </node>
-    <node concept="avzCv" id="16zLRPr3doB" role="avys_">
-      <node concept="3clFbS" id="16zLRPr3doC" role="2VODD2">
-        <node concept="3clFbF" id="16zLRPr3drJ" role="3cqZAp">
-          <node concept="3clFbT" id="16zLRPr3drI" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
 </model>

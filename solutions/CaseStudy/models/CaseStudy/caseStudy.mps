@@ -58,8 +58,8 @@
         <node concept="2oAaW5" id="16zLRPqSrDO" role="2oAawB">
           <property role="TrG5h" value="Vehicle" />
         </node>
-        <node concept="2oAaW5" id="16zLRPqV0nl" role="2oAawD">
-          <property role="TrG5h" value="LeadVehicle" />
+        <node concept="2oAaXF" id="6za56b2C7yK" role="2oAawD">
+          <ref role="2oAaID" node="16zLRPqV0ni" resolve="LeadVehicle" />
         </node>
       </node>
     </node>
