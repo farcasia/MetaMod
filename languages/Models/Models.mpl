@@ -4,6 +4,9 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/languageModels" />
     </modelRoot>
+    <modelRoot contentPath="${module}" type="java_classes">
+      <sourceRoot path="${module}/graphviz-java-api-1.0-SNAPSHOT.jar" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
@@ -55,7 +58,12 @@
       <mapping-priorities />
     </generator>
   </generators>
-  <sourcePath />
+  <stubModelEntries>
+    <stubModelEntry path="${module}/graphviz-java-api-1.0-SNAPSHOT.jar" />
+  </stubModelEntries>
+  <sourcePath>
+    <source path="${mps_home}/plugins" />
+  </sourcePath>
   <dependencies>
     <dependency reexport="false">9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
