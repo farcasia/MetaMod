@@ -34,28 +34,34 @@
   </registry>
   <node concept="2oAaVg" id="7nF4KJrVITE">
     <property role="TrG5h" value="Core" />
+    <node concept="2oAaW5" id="7nF4KJrVITL" role="2oAaxa">
+      <property role="TrG5h" value="Relation" />
+    </node>
+    <node concept="2oAaW5" id="7nF4KJrVIU8" role="2oAaxa">
+      <property role="TrG5h" value="Concept" />
+    </node>
     <node concept="2oAaUZ" id="7nF4KJrVITF" role="2oAaxa">
       <property role="TrG5h" value="conformsTo" />
-      <node concept="2oAaW5" id="7nF4KJrVITO" role="2oAawB">
-        <property role="TrG5h" value="Relation" />
+      <node concept="2oAaXF" id="VQwemteJs5" role="2oAawB">
+        <ref role="2oAaID" node="7nF4KJrVITL" resolve="Relation" />
       </node>
-      <node concept="2oAaW5" id="7nF4KJrVITL" role="2oAawD">
-        <property role="TrG5h" value="Relation" />
+      <node concept="2oAaXF" id="VQwemteXdV" role="2oAawD">
+        <ref role="2oAaID" node="7nF4KJrVITL" resolve="Relation" />
       </node>
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVITW" role="2oAaxa">
       <property role="TrG5h" value="conformsTo" />
-      <node concept="2oAaW5" id="7nF4KJrVIUb" role="2oAawB">
-        <property role="TrG5h" value="Element" />
+      <node concept="2oAaXF" id="VQwemteXeV" role="2oAawB">
+        <ref role="2oAaID" node="7nF4KJrVIU8" resolve="Concept" />
       </node>
-      <node concept="2oAaW5" id="7nF4KJrVIU8" role="2oAawD">
-        <property role="TrG5h" value="Element" />
+      <node concept="2oAaXF" id="VQwemteXeR" role="2oAawD">
+        <ref role="2oAaID" node="7nF4KJrVIU8" resolve="Concept" />
       </node>
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVIUH" role="2oAaxa">
       <property role="TrG5h" value="src" />
       <node concept="2oAaXF" id="7nF4KJrVIV4" role="2oAawB">
-        <ref role="2oAaID" node="7nF4KJrVIU8" resolve="Element" />
+        <ref role="2oAaID" node="7nF4KJrVIU8" resolve="Concept" />
       </node>
       <node concept="2oAaXF" id="7nF4KJrVIV1" role="2oAawD">
         <ref role="2oAaID" node="7nF4KJrVITL" resolve="Relation" />
@@ -64,7 +70,7 @@
     <node concept="2oAaUZ" id="7nF4KJrVIVi" role="2oAaxa">
       <property role="TrG5h" value="tgt" />
       <node concept="2oAaXF" id="7nF4KJrVIVB" role="2oAawB">
-        <ref role="2oAaID" node="7nF4KJrVIU8" resolve="Element" />
+        <ref role="2oAaID" node="7nF4KJrVIU8" resolve="Concept" />
       </node>
       <node concept="2oAaXF" id="7nF4KJrVIV$" role="2oAawD">
         <ref role="2oAaID" node="7nF4KJrVITL" resolve="Relation" />
@@ -73,16 +79,25 @@
   </node>
   <node concept="2oAaVg" id="7nF4KJrVIVS">
     <property role="TrG5h" value="ExtendedCore" />
-    <node concept="2oAaYs" id="7nF4KJrVIVT" role="2oAaxa">
+    <node concept="2oAaYs" id="VQwemthaRc" role="2oAaxa">
       <ref role="2oAaIS" node="7nF4KJrVITE" resolve="Core" />
+    </node>
+    <node concept="2oAaW5" id="7nF4KJrVIW8" role="2oAaxa">
+      <property role="TrG5h" value="Group" />
+    </node>
+    <node concept="2oAaW5" id="7nF4KJrVIWb" role="2oAaxa">
+      <property role="TrG5h" value="Term" />
+    </node>
+    <node concept="2oAaW5" id="VQwemteXjt" role="2oAaxa">
+      <property role="TrG5h" value="Subtyping" />
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVIVY" role="2oAaxa">
       <property role="TrG5h" value="contains" />
-      <node concept="2oAaW5" id="7nF4KJrVIWb" role="2oAawB">
-        <property role="TrG5h" value="Term" />
+      <node concept="2oAaXF" id="VQwemteXfV" role="2oAawD">
+        <ref role="2oAaID" node="7nF4KJrVIW8" resolve="Group" />
       </node>
-      <node concept="2oAaW5" id="7nF4KJrVIW8" role="2oAawD">
-        <property role="TrG5h" value="Group" />
+      <node concept="2oAaXF" id="VQwemteXgH" role="2oAawB">
+        <ref role="2oAaID" node="7nF4KJrVIWb" resolve="Term" />
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVIWk" role="2oAaxa">
@@ -98,7 +113,7 @@
         <ref role="2oAaID" node="7nF4KJrVIWb" resolve="Term" />
       </node>
       <node concept="2oAaXF" id="7nF4KJrVIX0" role="2oAawD">
-        <ref role="2oAaID" node="7nF4KJrVIU8" resolve="Element" />
+        <ref role="2oAaID" node="7nF4KJrVIU8" resolve="Concept" />
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVIXi" role="2oAaxa">
@@ -113,8 +128,8 @@
       <node concept="2oAaXF" id="7nF4KJrVJ4J" role="2oAawB">
         <ref role="2oAaID" node="7nF4KJrVITL" resolve="Relation" />
       </node>
-      <node concept="2oAaW5" id="7nF4KJrVJ4D" role="2oAawD">
-        <property role="TrG5h" value="Inheritance" />
+      <node concept="2oAaXF" id="VQwemteXjM" role="2oAawD">
+        <ref role="2oAaID" node="VQwemteXjt" resolve="Subtyping" />
       </node>
     </node>
   </node>
