@@ -319,11 +319,8 @@
       <node concept="3F1sOY" id="7zWtwVwpdUu" role="3EZMnx">
         <ref role="1NtTu8" to="v0yp:7zWtwVwpdSB" />
       </node>
-      <node concept="3F0ifn" id="7zWtwVwpdUc" role="3EZMnx">
-        <property role="3F0ifm" value="inherits" />
-      </node>
       <node concept="3F0ifn" id="1vxM8_OxnRm" role="3EZMnx">
-        <property role="3F0ifm" value="from" />
+        <property role="3F0ifm" value="is a" />
       </node>
       <node concept="3F1sOY" id="7zWtwVwpdUp" role="3EZMnx">
         <ref role="1NtTu8" to="v0yp:7zWtwVwpdSD" />
@@ -520,7 +517,7 @@
                   <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
                 </node>
                 <node concept="3F0ifn" id="20nTeIlQCG9" role="3EZMnx">
-                  <property role="3F0ifm" value="grouping {" />
+                  <property role="3F0ifm" value="group {" />
                 </node>
               </node>
               <node concept="3EZMnI" id="20nTeIlQCGa" role="3EZMnx">
@@ -588,7 +585,7 @@
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             </node>
             <node concept="3F0ifn" id="20nTeIlQCIq" role="3EZMnx">
-              <property role="3F0ifm" value="grouping {" />
+              <property role="3F0ifm" value="group {" />
             </node>
           </node>
           <node concept="3EZMnI" id="20nTeIlQCIr" role="3EZMnx">
@@ -765,7 +762,7 @@
               </node>
               <node concept="3EZMnI" id="20nTeIlQCqc" role="3EZMnx">
                 <node concept="3F0ifn" id="2ZZRdXAFMv2" role="3EZMnx">
-                  <property role="3F0ifm" value="grouping {" />
+                  <property role="3F0ifm" value="group {" />
                 </node>
                 <node concept="3EZMnI" id="2ZZRdXAFMv3" role="3EZMnx">
                   <node concept="l2Vlx" id="2ZZRdXAFMv4" role="2iSdaV" />
@@ -837,7 +834,7 @@
             </node>
             <node concept="3EZMnI" id="20nTeIlQCsZ" role="3EZMnx">
               <node concept="3F0ifn" id="20nTeIlQCt0" role="3EZMnx">
-                <property role="3F0ifm" value="grouping {" />
+                <property role="3F0ifm" value="group {" />
               </node>
               <node concept="3EZMnI" id="20nTeIlQCt1" role="3EZMnx">
                 <node concept="l2Vlx" id="20nTeIlQCt2" role="2iSdaV" />
