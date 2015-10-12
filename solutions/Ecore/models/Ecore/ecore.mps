@@ -68,8 +68,8 @@
       </node>
       <node concept="2oAaUZ" id="VQwemthcRk" role="2oAaxa">
         <property role="TrG5h" value="name" />
-        <node concept="2oAaXF" id="VQwemthcR$" role="2oAawB">
-          <ref role="2oAaID" node="VQwemthcQL" resolve="EClass" />
+        <node concept="2oAaXF" id="VQwemt_Gnm" role="2oAawB">
+          <ref role="2oAaID" node="VQwemthcSo" resolve="String" />
         </node>
         <node concept="2oAaXF" id="VQwemthcRx" role="2oAawD">
           <ref role="2oAaID" node="VQwemthcQL" resolve="EClass" />
@@ -1450,7 +1450,7 @@
     <property role="TrG5h" value="RouteEcoreMM" />
     <ref role="19kf5F" node="VQwemtjYD0" resolve="Ecore" />
     <node concept="2oAaVg" id="VQwemtk3vJ" role="2oAaxa">
-      <property role="TrG5h" value="RouteOfCommands" />
+      <property role="TrG5h" value="RouteWithCommands" />
       <node concept="2oAaW5" id="VQwemtk3j4" role="2oAaxa">
         <property role="TrG5h" value="Command" />
         <node concept="2oAaXF" id="VQwemtk3kx" role="2oAawq">
@@ -1463,12 +1463,6 @@
           <ref role="2oAaID" node="VQwemthcQL" resolve="EClass" />
         </node>
       </node>
-      <node concept="2oAaW5" id="VQwemtk1V8" role="2oAaxa">
-        <property role="TrG5h" value="nameRoute" />
-        <node concept="2oAaXF" id="VQwemtk1Vj" role="2oAawq">
-          <ref role="2oAaID" node="VQwemthcQQ" resolve="EAttribute" />
-        </node>
-      </node>
       <node concept="2oAaW5" id="VQwemtk49p" role="2oAaxa">
         <property role="TrG5h" value="String" />
         <node concept="2oAaXF" id="VQwemtk4ai" role="2oAawq">
@@ -1476,9 +1470,15 @@
         </node>
       </node>
       <node concept="2oAaW5" id="VQwemtk4dl" role="2oAaxa">
-        <property role="TrG5h" value="nameAttrRoute" />
+        <property role="TrG5h" value="name" />
         <node concept="2oAaXF" id="VQwemtk4ek" role="2oAawq">
           <ref role="2oAaID" node="VQwemthcSo" resolve="String" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="VQwemtk1V8" role="2oAaxa">
+        <property role="TrG5h" value="nameRoute" />
+        <node concept="2oAaXF" id="VQwemtk1Vj" role="2oAawq">
+          <ref role="2oAaID" node="VQwemthcQQ" resolve="EAttribute" />
         </node>
       </node>
       <node concept="2oAaUZ" id="VQwemtk47x" role="2oAaxa">
@@ -1495,7 +1495,7 @@
       </node>
       <node concept="2oAaUa" id="VQwemtk4bh" role="2oAaxa">
         <node concept="2oAaXF" id="VQwemtk4em" role="2oAawB">
-          <ref role="2oAaID" node="VQwemtk4dl" resolve="nameAttrRoute" />
+          <ref role="2oAaID" node="VQwemtk4dl" resolve="name" />
         </node>
         <node concept="2oAaXF" id="VQwemtk4ci" role="2oAawD">
           <ref role="2oAaID" node="VQwemtk1V8" resolve="nameRoute" />
@@ -1676,6 +1676,14 @@
           <ref role="2oAaID" node="VQwemthcQL" resolve="EClass" />
         </node>
       </node>
+      <node concept="2oAaZ9" id="VQwemtlMrx" role="2oAaxa">
+        <node concept="2oAaXF" id="VQwemtlMsj" role="2oAawB">
+          <ref role="2oAaID" node="VQwemtk1U3" resolve="Command" />
+        </node>
+        <node concept="2oAaXF" id="VQwemtlMsg" role="2oAawD">
+          <ref role="2oAaID" node="VQwemtk1Ug" resolve="TurnCommand" />
+        </node>
+      </node>
       <node concept="2oAaW5" id="VQwemtk2uq" role="2oAaxa">
         <property role="TrG5h" value="M2MTurnCommandInheritsCommand" />
         <node concept="2oAaXF" id="VQwemtk2vb" role="2oAawq">
@@ -1788,6 +1796,14 @@
         <property role="TrG5h" value="ForwardCommand" />
         <node concept="2oAaXF" id="VQwemtk1UE" role="2oAawq">
           <ref role="2oAaID" node="VQwemthcQL" resolve="EClass" />
+        </node>
+      </node>
+      <node concept="2oAaZ9" id="VQwemtlMsY" role="2oAaxa">
+        <node concept="2oAaXF" id="VQwemtlMtK" role="2oAawB">
+          <ref role="2oAaID" node="VQwemtk35v" resolve="Command" />
+        </node>
+        <node concept="2oAaXF" id="VQwemtlMtH" role="2oAawD">
+          <ref role="2oAaID" node="VQwemtk1Ux" resolve="ForwardCommand" />
         </node>
       </node>
       <node concept="2oAaW5" id="VQwemtk2HD" role="2oAaxa">
