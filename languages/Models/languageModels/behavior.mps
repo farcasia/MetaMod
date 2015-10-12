@@ -6895,7 +6895,7 @@
                         <node concept="liA8E" id="7nF4KJrNprN" role="2OqNvi">
                           <ref role="37wK5l" to="e2lb:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
                           <node concept="Xl_RD" id="7nF4KJrNprO" role="37wK5m">
-                            <property role="Xl_RC" value="_BM" />
+                            <property role="Xl_RC" value="_Concept" />
                           </node>
                         </node>
                       </node>
