@@ -66,7 +66,7 @@
     </language>
   </registry>
   <node concept="2oAaVg" id="16zLRPqV7FY">
-    <property role="TrG5h" value="PlatoonLegos" />
+    <property role="TrG5h" value="PlatoonLegosA" />
     <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
     <node concept="kds5u" id="6za56b2C7$B" role="2oAaxa">
       <property role="TrG5h" value="VehicleSequenceInPlatoon" />
@@ -183,41 +183,49 @@
           <ref role="2oAaID" node="2crcr0rdoxE" resolve="FollowVehicle" />
         </node>
       </node>
-      <node concept="2jq5PB" id="3Fwq8PQepto" role="2oAaxa" />
-      <node concept="2PO6tq" id="6za56b2ClCP" role="2oAaxa">
-        <node concept="2PO6tq" id="6za56b2ClBc" role="3B56no">
-          <node concept="2PO6tq" id="6za56b2Cl_N" role="3B56no">
-            <node concept="kdsPF" id="6za56b2ClAi" role="3B56no">
-              <ref role="kdsPE" node="6za56b2C7$B" resolve="VehicleSequenceInPlatoon" />
-            </node>
-            <node concept="2oAaXF" id="3Fwq8PQepv1" role="3B56nu">
-              <ref role="2oAaID" node="6za56b2ClAl" resolve="FollowLego0" />
-            </node>
-          </node>
-          <node concept="2oAaXF" id="3Fwq8PQepv3" role="3B56nu">
-            <ref role="2oAaID" node="6za56b2ClBV" resolve="LeadLego" />
-          </node>
+      <node concept="2jq5PB" id="3Fwq8PQg48f" role="2oAaxa" />
+      <node concept="2oAaUa" id="3Fwq8PQg49S" role="2oAaxa">
+        <node concept="2oAaXF" id="3Fwq8PQg49T" role="2oAawB">
+          <ref role="2oAaID" node="6za56b2ClBV" resolve="LeadLego" />
         </node>
-        <node concept="2oAaXF" id="3Fwq8PQepv5" role="3B56nu">
-          <ref role="2oAaID" node="6za56b2ClDK" resolve="LegoPlatoon" />
+        <node concept="2oAaXF" id="3Fwq8PQg49U" role="2oAawD">
+          <ref role="2oAaID" node="6za56b2ClAl" resolve="FollowLego0" />
+        </node>
+        <node concept="2oAawe" id="3Fwq8PQg49V" role="2oAawy">
+          <ref role="2oAawc" node="16zLRPqSrE2" resolve="frontRunner" />
         </node>
       </node>
-      <node concept="2PO6tq" id="6za56b2Gr3N" role="2oAaxa">
-        <node concept="2oAaXF" id="3Fwq8PQepvK" role="3B56nu">
+      <node concept="2oAaUa" id="3Fwq8PQg49W" role="2oAaxa">
+        <node concept="2oAaXF" id="3Fwq8PQg49X" role="2oAawB">
           <ref role="2oAaID" node="6za56b2ClDK" resolve="LegoPlatoon" />
         </node>
-        <node concept="2PO6tq" id="6za56b2Gr3Q" role="3B56no">
-          <node concept="2oAaXF" id="3Fwq8PQepvF" role="3B56nu">
-            <ref role="2oAaID" node="6za56b2ClAl" resolve="FollowLego0" />
-          </node>
-          <node concept="2PO6tq" id="6za56b2Gr3T" role="3B56no">
-            <node concept="kdsPF" id="6za56b2Gr3W" role="3B56no">
-              <ref role="kdsPE" node="6za56b2C7$B" resolve="VehicleSequenceInPlatoon" />
-            </node>
-            <node concept="2oAaXF" id="3Fwq8PQepvB" role="3B56nu">
-              <ref role="2oAaID" node="6za56b2Gr3U" resolve="FollowLego1" />
-            </node>
-          </node>
+        <node concept="2oAaXF" id="3Fwq8PQg49Y" role="2oAawD">
+          <ref role="2oAaID" node="6za56b2ClAl" resolve="FollowLego0" />
+        </node>
+        <node concept="2oAawe" id="3Fwq8PQg49Z" role="2oAawy">
+          <ref role="2oAawc" node="16zLRPqSrFk" resolve="inPlatoon" />
+        </node>
+      </node>
+      <node concept="2oAaUa" id="3Fwq8PQg4b$" role="2oAaxa">
+        <node concept="2oAaXF" id="3Fwq8PQg4b_" role="2oAawB">
+          <ref role="2oAaID" node="6za56b2ClAl" resolve="FollowLego0" />
+        </node>
+        <node concept="2oAaXF" id="3Fwq8PQg4bA" role="2oAawD">
+          <ref role="2oAaID" node="6za56b2Gr3U" resolve="FollowLego1" />
+        </node>
+        <node concept="2oAawe" id="3Fwq8PQg4bB" role="2oAawy">
+          <ref role="2oAawc" node="16zLRPqSrE2" resolve="frontRunner" />
+        </node>
+      </node>
+      <node concept="2oAaUa" id="3Fwq8PQg4bC" role="2oAaxa">
+        <node concept="2oAaXF" id="3Fwq8PQg4bD" role="2oAawB">
+          <ref role="2oAaID" node="6za56b2ClDK" resolve="LegoPlatoon" />
+        </node>
+        <node concept="2oAaXF" id="3Fwq8PQg4bE" role="2oAawD">
+          <ref role="2oAaID" node="6za56b2Gr3U" resolve="FollowLego1" />
+        </node>
+        <node concept="2oAawe" id="3Fwq8PQg4bF" role="2oAawy">
+          <ref role="2oAawc" node="16zLRPqSrFk" resolve="inPlatoon" />
         </node>
       </node>
     </node>
@@ -437,7 +445,7 @@
     <node concept="2oAaVg" id="6za56b2Gr6J" role="2oAaxa">
       <property role="TrG5h" value="ApplicationLegosComp" />
       <node concept="2oAaYs" id="6za56b2Gr6L" role="2oAaxa">
-        <ref role="2oAaIS" node="16zLRPqV7FY" resolve="PlatoonLegos" />
+        <ref role="2oAaIS" node="16zLRPqV7FY" resolve="PlatoonLegosA" />
       </node>
       <node concept="2oAaYs" id="6za56b2Gr6Q" role="2oAaxa">
         <ref role="2oAaIS" node="16zLRPqV7GA" resolve="PA_to_PCLegos" />
@@ -929,6 +937,327 @@
         </node>
         <node concept="2oAaXF" id="3Fwq8PQekO7" role="2oAawD">
           <ref role="2oAaID" node="6za56b2Gsw1" resolve="MaxSpeed" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2oAaVg" id="3Fwq8PQg2Ua">
+    <property role="TrG5h" value="PlatoonLegosE" />
+    <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
+    <node concept="2oAaVg" id="3Fwq8PQg33b" role="2oAaxa">
+      <property role="TrG5h" value="LeadVehicleE" />
+      <node concept="2oAaW5" id="3Fwq8PQg33c" role="2oAaxa">
+        <property role="TrG5h" value="LeadLego" />
+        <node concept="2oAaXF" id="3Fwq8PQg33d" role="2oAawq">
+          <ref role="2oAaID" node="2crcr0rdoxB" resolve="LeadVehicle" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="3Fwq8PQg33e" role="2oAaxa">
+        <property role="TrG5h" value="PA_to_PC" />
+        <node concept="2oAaXF" id="3Fwq8PQg33f" role="2oAawq">
+          <ref role="2oAaID" node="16zLRPqV0cH" resolve="Route" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="3Fwq8PQg33g" role="2oAaxa">
+        <property role="TrG5h" value="LegoPlatoon" />
+        <node concept="2oAaXF" id="3Fwq8PQg33h" role="2oAawq">
+          <ref role="2oAaID" node="16zLRPqV0cE" resolve="Platoon" />
+        </node>
+      </node>
+      <node concept="2jq5PB" id="3Fwq8PQg33i" role="2oAaxa" />
+      <node concept="2oAaUa" id="3Fwq8PQg33j" role="2oAaxa">
+        <node concept="2oAawe" id="3Fwq8PQg33k" role="2oAawy">
+          <ref role="2oAawc" node="16zLRPqSrCX" resolve="followsRoute" />
+        </node>
+        <node concept="2oAaXF" id="3Fwq8PQg33l" role="2oAawD">
+          <ref role="2oAaID" node="3Fwq8PQg33c" resolve="LeadLego" />
+        </node>
+        <node concept="2oAaXF" id="3Fwq8PQg33m" role="2oAawB">
+          <ref role="2oAaID" node="3Fwq8PQg33e" resolve="PA_to_PC" />
+        </node>
+      </node>
+      <node concept="2oAaUa" id="3Fwq8PQg33n" role="2oAaxa">
+        <node concept="2oAawe" id="3Fwq8PQg33o" role="2oAawy">
+          <ref role="2oAawc" node="16zLRPqSrFk" resolve="inPlatoon" />
+        </node>
+        <node concept="2oAaXF" id="3Fwq8PQg33p" role="2oAawD">
+          <ref role="2oAaID" node="3Fwq8PQg33c" resolve="LeadLego" />
+        </node>
+        <node concept="2oAaXF" id="3Fwq8PQg33q" role="2oAawB">
+          <ref role="2oAaID" node="3Fwq8PQg33g" resolve="LegoPlatoon" />
+        </node>
+      </node>
+    </node>
+    <node concept="2jq5PB" id="3Fwq8PQg33r" role="2oAaxa" />
+    <node concept="2oAaVg" id="3Fwq8PQg33s" role="2oAaxa">
+      <property role="TrG5h" value="FollowingVehiclesE" />
+      <node concept="2oAaW5" id="3Fwq8PQg33t" role="2oAaxa">
+        <property role="TrG5h" value="FollowLego0" />
+        <node concept="2oAaXF" id="3Fwq8PQg33u" role="2oAawq">
+          <ref role="2oAaID" node="2crcr0rdoxE" resolve="FollowVehicle" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="3Fwq8PQg33v" role="2oAaxa">
+        <property role="TrG5h" value="LeadLego" />
+        <node concept="2oAaXF" id="3Fwq8PQg33w" role="2oAawq">
+          <ref role="2oAaID" node="2crcr0rdoxB" resolve="LeadVehicle" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="3Fwq8PQg33x" role="2oAaxa">
+        <property role="TrG5h" value="LegoPlatoon" />
+        <node concept="2oAaXF" id="3Fwq8PQg33y" role="2oAawq">
+          <ref role="2oAaID" node="16zLRPqV0cE" resolve="Platoon" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="3Fwq8PQg33z" role="2oAaxa">
+        <property role="TrG5h" value="FollowLego1" />
+        <node concept="2oAaXF" id="3Fwq8PQg33$" role="2oAawq">
+          <ref role="2oAaID" node="2crcr0rdoxE" resolve="FollowVehicle" />
+        </node>
+      </node>
+      <node concept="2jq5PB" id="3Fwq8PQg33_" role="2oAaxa" />
+      <node concept="2oAaTp" id="3Fwq8PQg3yy" role="2oAaxa">
+        <node concept="2oAaW5" id="3Fwq8PQg3zm" role="2oAaxa">
+          <property role="TrG5h" value="FollowLego0" />
+          <node concept="2oAaXF" id="3Fwq8PQg3zn" role="2oAawq">
+            <ref role="2oAaID" node="2crcr0rdoxE" resolve="FollowVehicle" />
+          </node>
+        </node>
+        <node concept="2oAaW5" id="3Fwq8PQg3zo" role="2oAaxa">
+          <property role="TrG5h" value="LeadLego" />
+          <node concept="2oAaXF" id="3Fwq8PQg3zp" role="2oAawq">
+            <ref role="2oAaID" node="2crcr0rdoxB" resolve="LeadVehicle" />
+          </node>
+        </node>
+        <node concept="2oAaW5" id="3Fwq8PQg3zq" role="2oAaxa">
+          <property role="TrG5h" value="LegoPlatoon" />
+          <node concept="2oAaXF" id="3Fwq8PQg3zr" role="2oAawq">
+            <ref role="2oAaID" node="16zLRPqV0cE" resolve="Platoon" />
+          </node>
+        </node>
+        <node concept="2jq5PB" id="3Fwq8PQg3zy" role="2oAaxa" />
+        <node concept="2oAaUa" id="3Fwq8PQg35B" role="2oAaxa">
+          <node concept="2oAaXF" id="3Fwq8PQg37t" role="2oAawB">
+            <ref role="2oAaID" node="3Fwq8PQg3zo" resolve="LeadLego" />
+          </node>
+          <node concept="2oAaXF" id="3Fwq8PQg37q" role="2oAawD">
+            <ref role="2oAaID" node="3Fwq8PQg3zm" resolve="FollowLego0" />
+          </node>
+          <node concept="2oAawe" id="3Fwq8PQg35E" role="2oAawy">
+            <ref role="2oAawc" node="16zLRPqSrE2" resolve="frontRunner" />
+          </node>
+        </node>
+        <node concept="2oAaUa" id="3Fwq8PQg35F" role="2oAaxa">
+          <node concept="2oAaXF" id="3Fwq8PQg37z" role="2oAawB">
+            <ref role="2oAaID" node="3Fwq8PQg3zq" resolve="LegoPlatoon" />
+          </node>
+          <node concept="2oAaXF" id="3Fwq8PQg37w" role="2oAawD">
+            <ref role="2oAaID" node="3Fwq8PQg3zm" resolve="FollowLego0" />
+          </node>
+          <node concept="2oAawe" id="3Fwq8PQg35I" role="2oAawy">
+            <ref role="2oAawc" node="16zLRPqSrFk" resolve="inPlatoon" />
+          </node>
+        </node>
+        <node concept="2jq5PB" id="3Fwq8PQg3zE" role="2oAaxa" />
+      </node>
+      <node concept="2oAaTp" id="3Fwq8PQg3_x" role="2oAaxa">
+        <node concept="2oAaW5" id="3Fwq8PQg3AA" role="2oAaxa">
+          <property role="TrG5h" value="FollowLego0" />
+          <node concept="2oAaXF" id="3Fwq8PQg3AB" role="2oAawq">
+            <ref role="2oAaID" node="2crcr0rdoxE" resolve="FollowVehicle" />
+          </node>
+        </node>
+        <node concept="2oAaW5" id="3Fwq8PQg3AE" role="2oAaxa">
+          <property role="TrG5h" value="LegoPlatoon" />
+          <node concept="2oAaXF" id="3Fwq8PQg3AF" role="2oAawq">
+            <ref role="2oAaID" node="16zLRPqV0cE" resolve="Platoon" />
+          </node>
+        </node>
+        <node concept="2oAaW5" id="3Fwq8PQg3AG" role="2oAaxa">
+          <property role="TrG5h" value="FollowLego1" />
+          <node concept="2oAaXF" id="3Fwq8PQg3AH" role="2oAawq">
+            <ref role="2oAaID" node="2crcr0rdoxE" resolve="FollowVehicle" />
+          </node>
+        </node>
+        <node concept="2jq5PB" id="3Fwq8PQg3B_" role="2oAaxa" />
+        <node concept="2oAaUa" id="3Fwq8PQg38w" role="2oAaxa">
+          <node concept="2oAaXF" id="3Fwq8PQg39k" role="2oAawB">
+            <ref role="2oAaID" node="3Fwq8PQg3AA" resolve="FollowLego0" />
+          </node>
+          <node concept="2oAaXF" id="3Fwq8PQg39h" role="2oAawD">
+            <ref role="2oAaID" node="3Fwq8PQg3AG" resolve="FollowLego1" />
+          </node>
+          <node concept="2oAawe" id="3Fwq8PQg38z" role="2oAawy">
+            <ref role="2oAawc" node="16zLRPqSrE2" resolve="frontRunner" />
+          </node>
+        </node>
+        <node concept="2oAaUa" id="3Fwq8PQg38$" role="2oAaxa">
+          <node concept="2oAaXF" id="3Fwq8PQg39q" role="2oAawB">
+            <ref role="2oAaID" node="3Fwq8PQg3AE" resolve="LegoPlatoon" />
+          </node>
+          <node concept="2oAaXF" id="3Fwq8PQg39n" role="2oAawD">
+            <ref role="2oAaID" node="3Fwq8PQg3AG" resolve="FollowLego1" />
+          </node>
+          <node concept="2oAawe" id="3Fwq8PQg38B" role="2oAawy">
+            <ref role="2oAawc" node="16zLRPqSrFk" resolve="inPlatoon" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2oAaVg" id="3Fwq8PQg41e">
+    <property role="TrG5h" value="PlatoonLegos" />
+    <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
+    <node concept="kds5u" id="3Fwq8PQg44R" role="2oAaxa">
+      <property role="TrG5h" value="VehicleSequenceInPlatoon" />
+      <node concept="3B6VN2" id="3Fwq8PQg44S" role="kdsPW">
+        <node concept="3B6VN2" id="3Fwq8PQg44T" role="3B56nf">
+          <node concept="3B6VN2" id="3Fwq8PQg44U" role="3B56nf">
+            <node concept="2oAaTp" id="3Fwq8PQg44V" role="3B56nf">
+              <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
+              <node concept="2oAaUa" id="3Fwq8PQg44W" role="2oAaxa">
+                <node concept="3B6VN0" id="3Fwq8PQg44X" role="2oAawB">
+                  <ref role="3B56nS" node="3Fwq8PQg455" resolve="FrontVehicle" />
+                </node>
+                <node concept="3B6VN0" id="3Fwq8PQg44Y" role="2oAawD">
+                  <ref role="3B56nS" node="3Fwq8PQg456" resolve="Vehicle" />
+                </node>
+                <node concept="2oAawe" id="3Fwq8PQg44Z" role="2oAawy">
+                  <ref role="2oAawc" node="16zLRPqSrE2" resolve="frontRunner" />
+                </node>
+              </node>
+              <node concept="2oAaUa" id="3Fwq8PQg450" role="2oAaxa">
+                <node concept="3B6VN0" id="3Fwq8PQg451" role="2oAawB">
+                  <ref role="3B56nS" node="3Fwq8PQg454" resolve="Platoon" />
+                </node>
+                <node concept="3B6VN0" id="3Fwq8PQg452" role="2oAawD">
+                  <ref role="3B56nS" node="3Fwq8PQg456" resolve="Vehicle" />
+                </node>
+                <node concept="2oAawe" id="3Fwq8PQg453" role="2oAawy">
+                  <ref role="2oAawc" node="16zLRPqSrFk" resolve="inPlatoon" />
+                </node>
+              </node>
+            </node>
+            <node concept="3B6VN1" id="3Fwq8PQg454" role="3B56n9">
+              <property role="TrG5h" value="Platoon" />
+            </node>
+          </node>
+          <node concept="3B6VN1" id="3Fwq8PQg455" role="3B56n9">
+            <property role="TrG5h" value="FrontVehicle" />
+          </node>
+        </node>
+        <node concept="3B6VN1" id="3Fwq8PQg456" role="3B56n9">
+          <property role="TrG5h" value="Vehicle" />
+        </node>
+      </node>
+    </node>
+    <node concept="2jq5PB" id="3Fwq8PQg457" role="2oAaxa" />
+    <node concept="2oAaVg" id="3Fwq8PQg458" role="2oAaxa">
+      <property role="TrG5h" value="LeadVehicleA" />
+      <node concept="2oAaW5" id="3Fwq8PQg459" role="2oAaxa">
+        <property role="TrG5h" value="LeadLego" />
+        <node concept="2oAaXF" id="3Fwq8PQg45a" role="2oAawq">
+          <ref role="2oAaID" node="2crcr0rdoxB" resolve="LeadVehicle" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="3Fwq8PQg45b" role="2oAaxa">
+        <property role="TrG5h" value="PA_to_PC" />
+        <node concept="2oAaXF" id="3Fwq8PQg45c" role="2oAawq">
+          <ref role="2oAaID" node="16zLRPqV0cH" resolve="Route" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="3Fwq8PQg45d" role="2oAaxa">
+        <property role="TrG5h" value="LegoPlatoon" />
+        <node concept="2oAaXF" id="3Fwq8PQg45e" role="2oAawq">
+          <ref role="2oAaID" node="16zLRPqV0cE" resolve="Platoon" />
+        </node>
+      </node>
+      <node concept="2jq5PB" id="3Fwq8PQg45f" role="2oAaxa" />
+      <node concept="2oAaUa" id="3Fwq8PQg45g" role="2oAaxa">
+        <node concept="2oAawe" id="3Fwq8PQg45h" role="2oAawy">
+          <ref role="2oAawc" node="16zLRPqSrCX" resolve="followsRoute" />
+        </node>
+        <node concept="2oAaXF" id="3Fwq8PQg45i" role="2oAawD">
+          <ref role="2oAaID" node="3Fwq8PQg459" resolve="LeadLego" />
+        </node>
+        <node concept="2oAaXF" id="3Fwq8PQg45j" role="2oAawB">
+          <ref role="2oAaID" node="3Fwq8PQg45b" resolve="PA_to_PC" />
+        </node>
+      </node>
+      <node concept="2oAaUa" id="3Fwq8PQg45k" role="2oAaxa">
+        <node concept="2oAawe" id="3Fwq8PQg45l" role="2oAawy">
+          <ref role="2oAawc" node="16zLRPqSrFk" resolve="inPlatoon" />
+        </node>
+        <node concept="2oAaXF" id="3Fwq8PQg45m" role="2oAawD">
+          <ref role="2oAaID" node="3Fwq8PQg459" resolve="LeadLego" />
+        </node>
+        <node concept="2oAaXF" id="3Fwq8PQg45n" role="2oAawB">
+          <ref role="2oAaID" node="3Fwq8PQg45d" resolve="LegoPlatoon" />
+        </node>
+      </node>
+    </node>
+    <node concept="2jq5PB" id="3Fwq8PQg45o" role="2oAaxa" />
+    <node concept="2oAaVg" id="3Fwq8PQg45p" role="2oAaxa">
+      <property role="TrG5h" value="FollowingVehiclesA" />
+      <node concept="2oAaW5" id="3Fwq8PQg45q" role="2oAaxa">
+        <property role="TrG5h" value="FollowLego0" />
+        <node concept="2oAaXF" id="3Fwq8PQg45r" role="2oAawq">
+          <ref role="2oAaID" node="2crcr0rdoxE" resolve="FollowVehicle" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="3Fwq8PQg45s" role="2oAaxa">
+        <property role="TrG5h" value="LeadLego" />
+        <node concept="2oAaXF" id="3Fwq8PQg45t" role="2oAawq">
+          <ref role="2oAaID" node="2crcr0rdoxB" resolve="LeadVehicle" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="3Fwq8PQg45u" role="2oAaxa">
+        <property role="TrG5h" value="LegoPlatoon" />
+        <node concept="2oAaXF" id="3Fwq8PQg45v" role="2oAawq">
+          <ref role="2oAaID" node="16zLRPqV0cE" resolve="Platoon" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="3Fwq8PQg45w" role="2oAaxa">
+        <property role="TrG5h" value="FollowLego1" />
+        <node concept="2oAaXF" id="3Fwq8PQg45x" role="2oAawq">
+          <ref role="2oAaID" node="2crcr0rdoxE" resolve="FollowVehicle" />
+        </node>
+      </node>
+      <node concept="2jq5PB" id="3Fwq8PQg45y" role="2oAaxa" />
+      <node concept="2PO6tq" id="3Fwq8PQg45z" role="2oAaxa">
+        <node concept="2PO6tq" id="3Fwq8PQg45$" role="3B56no">
+          <node concept="2PO6tq" id="3Fwq8PQg45_" role="3B56no">
+            <node concept="kdsPF" id="3Fwq8PQg45A" role="3B56no">
+              <ref role="kdsPE" node="3Fwq8PQg44R" resolve="VehicleSequenceInPlatoon" />
+            </node>
+            <node concept="2oAaXF" id="3Fwq8PQg45B" role="3B56nu">
+              <ref role="2oAaID" node="3Fwq8PQg45q" resolve="FollowLego0" />
+            </node>
+          </node>
+          <node concept="2oAaXF" id="3Fwq8PQg45C" role="3B56nu">
+            <ref role="2oAaID" node="3Fwq8PQg45s" resolve="LeadLego" />
+          </node>
+        </node>
+        <node concept="2oAaXF" id="3Fwq8PQg45D" role="3B56nu">
+          <ref role="2oAaID" node="3Fwq8PQg45u" resolve="LegoPlatoon" />
+        </node>
+      </node>
+      <node concept="2PO6tq" id="3Fwq8PQg45E" role="2oAaxa">
+        <node concept="2oAaXF" id="3Fwq8PQg45F" role="3B56nu">
+          <ref role="2oAaID" node="3Fwq8PQg45u" resolve="LegoPlatoon" />
+        </node>
+        <node concept="2PO6tq" id="3Fwq8PQg45G" role="3B56no">
+          <node concept="2oAaXF" id="3Fwq8PQg45H" role="3B56nu">
+            <ref role="2oAaID" node="3Fwq8PQg45q" resolve="FollowLego0" />
+          </node>
+          <node concept="2PO6tq" id="3Fwq8PQg45I" role="3B56no">
+            <node concept="kdsPF" id="3Fwq8PQg45J" role="3B56no">
+              <ref role="kdsPE" node="3Fwq8PQg44R" resolve="VehicleSequenceInPlatoon" />
+            </node>
+            <node concept="2oAaXF" id="3Fwq8PQg45K" role="3B56nu">
+              <ref role="2oAaID" node="3Fwq8PQg45w" resolve="FollowLego1" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
