@@ -2196,8 +2196,8 @@
       </node>
       <node concept="2oAaW5" id="VQwemtk5zw" role="2oAaxa">
         <property role="TrG5h" value="B_turn_C_Left_side" />
-        <node concept="2oAawe" id="VQwemtk5zB" role="2oAawq">
-          <ref role="2oAawc" node="VQwemtk2EI" resolve="side" />
+        <node concept="2oAaXF" id="4KCs5oxF8zE" role="2oAawq">
+          <ref role="2oAaID" node="VQwemtk1Vx" resolve="side" />
         </node>
       </node>
       <node concept="2oAaW5" id="VQwemtk5zL" role="2oAaxa">
@@ -2213,8 +2213,8 @@
         <node concept="2oAaXF" id="VQwemtk5$n" role="2oAawD">
           <ref role="2oAaID" node="VQwemtk5zw" resolve="B_turn_C_Left_side" />
         </node>
-        <node concept="2oAawe" id="VQwemtk5$q" role="2oAawy">
-          <ref role="2oAawc" node="VQwemtk47x" resolve="value" />
+        <node concept="2oAawe" id="4KCs5oxG89E" role="2oAawy">
+          <ref role="2oAawc" node="VQwemtk4eP" resolve="value" />
         </node>
       </node>
       <node concept="2oAaUa" id="VQwemtk5$H" role="2oAaxa">

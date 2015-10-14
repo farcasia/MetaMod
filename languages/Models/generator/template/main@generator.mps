@@ -531,6 +531,43 @@
               </node>
             </node>
             <node concept="3clFbH" id="2QDb_d051xh" role="3cqZAp" />
+            <node concept="1DcWWT" id="4KCs5oxImK3" role="3cqZAp">
+              <node concept="3clFbS" id="4KCs5oxImK5" role="2LFqv$">
+                <node concept="3clFbF" id="4KCs5oxIp1L" role="3cqZAp">
+                  <node concept="2YIFZM" id="4KCs5oxIp5S" role="3clFbG">
+                    <ref role="1Pybhc" to="z64h:4IND2wwM2PW" resolve="HelperClassScripts" />
+                    <ref role="37wK5l" to="z64h:4KCs5oxIiKl" resolve="treatNamedBasiModels" />
+                    <node concept="37vLTw" id="4KCs5oxIsVl" role="37wK5m">
+                      <ref role="3cqZAo" node="2QDb_d05OId" resolve="equivalences" />
+                    </node>
+                    <node concept="37vLTw" id="4KCs5oxIsYH" role="37wK5m">
+                      <ref role="3cqZAo" node="4KCs5oxImK6" resolve="nbm" />
+                    </node>
+                    <node concept="37vLTw" id="4KCs5oxIt5m" role="37wK5m">
+                      <ref role="3cqZAo" node="2QDb_d02iR5" resolve="root" />
+                    </node>
+                    <node concept="37vLTw" id="4KCs5oxKauP" role="37wK5m">
+                      <ref role="3cqZAo" node="2QDb_d051Q2" resolve="nRoot" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWsn" id="4KCs5oxImK6" role="1Duv9x">
+                <property role="TrG5h" value="nbm" />
+                <node concept="3Tqbb2" id="4KCs5oxInxe" role="1tU5fm">
+                  <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedBasicModel" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4KCs5oxInO2" role="1DdaDG">
+                <node concept="37vLTw" id="4KCs5oxInJk" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2QDb_d02iR5" resolve="root" />
+                </node>
+                <node concept="2qgKlT" id="4KCs5oxIoi7" role="2OqNvi">
+                  <ref role="37wK5l" to="z64h:4KCs5oxGzkm" resolve="getNamedBasicModels" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="4KCs5oxIEYE" role="3cqZAp" />
             <node concept="1DcWWT" id="2QDb_d03onS" role="3cqZAp">
               <node concept="3clFbS" id="2QDb_d03onU" role="2LFqv$">
                 <node concept="3clFbF" id="6za56b2GXuS" role="3cqZAp">
@@ -567,7 +604,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="6za56b2L5QY" role="3cqZAp" />
+            <node concept="3clFbH" id="4KCs5oxIkyS" role="3cqZAp" />
             <node concept="3SKdUt" id="7nF4KJrZU7B" role="3cqZAp">
               <node concept="3SKWN0" id="7nF4KJrZU7H" role="3SKWNk">
                 <node concept="3clFbF" id="6za56b2L7hO" role="3SKWNf">
@@ -745,49 +782,47 @@
                         <node concept="3x8VRR" id="2QDb_d06yy9" role="2OqNvi" />
                       </node>
                     </node>
-                    <node concept="3clFbH" id="4IND2wwNgxY" role="3cqZAp" />
-                    <node concept="3clFbF" id="4IND2wwNfNo" role="3cqZAp">
-                      <node concept="2YIFZM" id="4IND2wwNfQq" role="3clFbG">
-                        <ref role="37wK5l" to="z64h:4IND2wwNbIt" resolve="setConformSourceOrTargetRel" />
+                    <node concept="3clFbH" id="4KCs5oxLbaE" role="3cqZAp" />
+                    <node concept="3clFbF" id="4KCs5oxLbca" role="3cqZAp">
+                      <node concept="2YIFZM" id="4KCs5oxLbcb" role="3clFbG">
+                        <ref role="37wK5l" to="z64h:4IND2wwNbIt" resolve="setConformsTo" />
                         <ref role="1Pybhc" to="z64h:4IND2wwM2PW" resolve="HelperClassScripts" />
-                        <node concept="2OqwBi" id="4IND2wwNfTr" role="37wK5m">
-                          <node concept="37vLTw" id="4IND2wwNfQZ" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4KCs5oxLbhU" role="37wK5m">
+                          <node concept="37vLTw" id="4KCs5oxLbeL" role="2Oq$k0">
                             <ref role="3cqZAo" node="2QDb_d06ckW" resolve="nRelation" />
                           </node>
-                          <node concept="3TrEf2" id="4IND2wwNg2I" role="2OqNvi">
+                          <node concept="3TrEf2" id="4KCs5oxLbse" role="2OqNvi">
                             <ref role="3Tt5mk" to="v0yp:7zWtwVwpdSB" />
                           </node>
                         </node>
-                        <node concept="37vLTw" id="4IND2wwNg5Z" role="37wK5m">
+                        <node concept="37vLTw" id="4KCs5oxLbcd" role="37wK5m">
                           <ref role="3cqZAo" node="2QDb_d05OId" resolve="equivalences" />
                         </node>
-                        <node concept="37vLTw" id="4IND2wwNgmi" role="37wK5m">
+                        <node concept="37vLTw" id="4KCs5oxLbce" role="37wK5m">
                           <ref role="3cqZAo" node="2QDb_d06yJm" resolve="metamodelRoot" />
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbH" id="4IND2wwNg_B" role="3cqZAp" />
-                    <node concept="3clFbF" id="4IND2wwNgud" role="3cqZAp">
-                      <node concept="2YIFZM" id="4IND2wwNgue" role="3clFbG">
+                    <node concept="3clFbF" id="4KCs5oxLbuD" role="3cqZAp">
+                      <node concept="2YIFZM" id="4KCs5oxLbuE" role="3clFbG">
+                        <ref role="37wK5l" to="z64h:4IND2wwNbIt" resolve="setConformsTo" />
                         <ref role="1Pybhc" to="z64h:4IND2wwM2PW" resolve="HelperClassScripts" />
-                        <ref role="37wK5l" to="z64h:4IND2wwNbIt" resolve="setConformSourceOrTargetRel" />
-                        <node concept="2OqwBi" id="4IND2wwNguf" role="37wK5m">
-                          <node concept="37vLTw" id="4IND2wwNgug" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4KCs5oxLbDx" role="37wK5m">
+                          <node concept="37vLTw" id="4KCs5oxLbAo" role="2Oq$k0">
                             <ref role="3cqZAo" node="2QDb_d06ckW" resolve="nRelation" />
                           </node>
-                          <node concept="3TrEf2" id="4IND2wwNhnw" role="2OqNvi">
+                          <node concept="3TrEf2" id="4KCs5oxLbNP" role="2OqNvi">
                             <ref role="3Tt5mk" to="v0yp:7zWtwVwpdSD" />
                           </node>
                         </node>
-                        <node concept="37vLTw" id="4IND2wwNgui" role="37wK5m">
+                        <node concept="37vLTw" id="4KCs5oxLbuG" role="37wK5m">
                           <ref role="3cqZAo" node="2QDb_d05OId" resolve="equivalences" />
                         </node>
-                        <node concept="37vLTw" id="4IND2wwNguj" role="37wK5m">
+                        <node concept="37vLTw" id="4KCs5oxLbuH" role="37wK5m">
                           <ref role="3cqZAo" node="2QDb_d06yJm" resolve="metamodelRoot" />
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbH" id="4IND2wwNgra" role="3cqZAp" />
                   </node>
                   <node concept="3cpWsn" id="2QDb_d06ckW" role="1Duv9x">
                     <property role="TrG5h" value="nRelation" />
@@ -811,7 +846,48 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="16zLRPqN5DR" role="3cqZAp" />
+                <node concept="3clFbH" id="4KCs5oxKmy5" role="3cqZAp" />
+                <node concept="1DcWWT" id="4KCs5oxKmNP" role="3cqZAp">
+                  <node concept="3clFbS" id="4KCs5oxKmNR" role="2LFqv$">
+                    <node concept="3clFbF" id="4KCs5oxKrlx" role="3cqZAp">
+                      <node concept="2YIFZM" id="4KCs5oxKrlz" role="3clFbG">
+                        <ref role="37wK5l" to="z64h:4IND2wwNbIt" resolve="setConformsTo" />
+                        <ref role="1Pybhc" to="z64h:4IND2wwM2PW" resolve="HelperClassScripts" />
+                        <node concept="37vLTw" id="4KCs5oxKro8" role="37wK5m">
+                          <ref role="3cqZAo" node="4KCs5oxKmNS" resolve="bm" />
+                        </node>
+                        <node concept="37vLTw" id="4KCs5oxKrlB" role="37wK5m">
+                          <ref role="3cqZAo" node="2QDb_d05OId" resolve="equivalences" />
+                        </node>
+                        <node concept="37vLTw" id="4KCs5oxKrlC" role="37wK5m">
+                          <ref role="3cqZAo" node="2QDb_d06yJm" resolve="metamodelRoot" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWsn" id="4KCs5oxKmNS" role="1Duv9x">
+                    <property role="TrG5h" value="bm" />
+                    <node concept="3Tqbb2" id="4KCs5oxKmY$" role="1tU5fm">
+                      <ref role="ehGHo" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="4KCs5oxKoOY" role="1DdaDG">
+                    <node concept="2OqwBi" id="4KCs5oxKnlt" role="2Oq$k0">
+                      <node concept="37vLTw" id="4KCs5oxKngj" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2QDb_d06syL" resolve="nRoot" />
+                      </node>
+                      <node concept="3Tsc0h" id="4KCs5oxKnFS" role="2OqNvi">
+                        <ref role="3TtcxE" to="v0yp:7zWtwVwpdT4" />
+                      </node>
+                    </node>
+                    <node concept="v3k3i" id="4KCs5oxKr9O" role="2OqNvi">
+                      <node concept="chp4Y" id="4KCs5oxKrcw" role="v3oSu">
+                        <ref role="cht4Q" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="4KCs5oxKsnJ" role="3cqZAp" />
                 <node concept="3clFbF" id="4IND2wwH5n3" role="3cqZAp">
                   <node concept="2OqwBi" id="4IND2wwH5Pm" role="3clFbG">
                     <node concept="2OqwBi" id="4IND2wwH5s0" role="2Oq$k0">
