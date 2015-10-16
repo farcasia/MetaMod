@@ -237,6 +237,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -1323,6 +1324,34 @@
       <node concept="OXEIz" id="VQwemtBIlK" role="P5bDN">
         <node concept="UkePV" id="VQwemtBIsu" role="OY2wv">
           <ref role="Ul1FP" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="325Ffw" id="5f6xL2kTUv9">
+    <property role="TrG5h" value="TestFunctions" />
+    <ref role="1chiOs" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+    <node concept="2PxR9H" id="5f6xL2kTUva" role="2QnnpI">
+      <node concept="2Py5lD" id="5f6xL2kTUvb" role="2PyaAO">
+        <property role="2PWKIB" value="ctrl+alt" />
+        <property role="2PWKIS" value="VK_WINDOWS" />
+      </node>
+      <node concept="2PzhpH" id="5f6xL2kTUvc" role="2PL9iG">
+        <node concept="3clFbS" id="5f6xL2kTUvd" role="2VODD2">
+          <node concept="34ab3g" id="5f6xL2kTU$W" role="3cqZAp">
+            <property role="35gtTG" value="warn" />
+            <node concept="3cpWs3" id="5f6xL2kTUNF" role="34bqiv">
+              <node concept="2OqwBi" id="5f6xL2kTUSm" role="3uHU7w">
+                <node concept="0GJ7k" id="5f6xL2kTUNZ" role="2Oq$k0" />
+                <node concept="2qgKlT" id="5f6xL2kTWNH" role="2OqNvi">
+                  <ref role="37wK5l" to="z64h:3HBHAq6KAUe" resolve="getRepresentativeRelations" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="5f6xL2kTU$Y" role="3uHU7B">
+                <property role="Xl_RC" value="Result of representative relations " />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
