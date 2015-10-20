@@ -15,6 +15,7 @@
       <concept id="3049631818650729104" name="Modules.structure.RefToModule" flags="ng" index="kdsPF">
         <reference id="3049631818650729105" name="ref" index="kdsPE" />
       </concept>
+      <concept id="256752499123956591" name="Modules.structure.LambdaApplicationArg" flags="ng" index="2yUw1A" />
       <concept id="2312568634159367089" name="Modules.structure.LambdaApplication" flags="ng" index="2PO6tq" />
     </language>
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" name="LambdaCalculus">
@@ -360,25 +361,27 @@
             <ref role="2oAaID" node="6za56b2Grhz" resolve="Left" />
           </node>
         </node>
-        <node concept="2PO6tq" id="6za56b2Grkk" role="2oAaxa">
-          <node concept="2PO6tq" id="6za56b2Grj2" role="3B56no">
-            <node concept="2PO6tq" id="6za56b2GrhV" role="3B56no">
-              <node concept="2oAaXF" id="3Fwq8PQeph8" role="3B56nu">
+        <node concept="2yUw1A" id="egaKAxx7R7" role="2oAaxa">
+          <property role="TrG5h" value="Route" />
+          <node concept="2oAaXF" id="egaKAxx7RS" role="3B56nu">
+            <ref role="2oAaID" node="6za56b2GrMj" resolve="PA_to_PC" />
+          </node>
+          <node concept="2yUw1A" id="egaKAxx7PG" role="3B56no">
+            <property role="TrG5h" value="PrevCommand" />
+            <node concept="2oAaXF" id="egaKAxx7Ql" role="3B56nu">
+              <ref role="2oAaID" node="6za56b2GrMe" resolve="PA_to_PB" />
+            </node>
+            <node concept="2yUw1A" id="egaKAxx7l2" role="3B56no">
+              <property role="TrG5h" value="Command" />
+              <node concept="2oAaXF" id="egaKAxx7s$" role="3B56nu">
                 <ref role="2oAaID" node="6za56b2Grhs" resolve="PB_turn_PC" />
               </node>
-              <node concept="kdsPF" id="6za56b2Gril" role="3B56no">
+              <node concept="kdsPF" id="egaKAxx7sx" role="3B56no">
                 <ref role="kdsPE" node="6za56b2GrcH" resolve="CommandAfterCommandInRoute" />
               </node>
             </node>
-            <node concept="2oAaXF" id="3Fwq8PQepid" role="3B56nu">
-              <ref role="2oAaID" node="6za56b2GrMe" resolve="PA_to_PB" />
-            </node>
-          </node>
-          <node concept="2oAaXF" id="3Fwq8PQepiF" role="3B56nu">
-            <ref role="2oAaID" node="6za56b2GrMj" resolve="PA_to_PC" />
           </node>
         </node>
-        <node concept="2jq5PB" id="3Fwq8PQepdv" role="2oAaxa" />
       </node>
       <node concept="2jq5PB" id="3Fwq8PQepdL" role="2oAaxa" />
       <node concept="2oAaTp" id="6za56b2GsoH" role="2oAaxa">

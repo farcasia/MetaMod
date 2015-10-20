@@ -87,5 +87,12 @@
     <property role="TrG5h" value="LambdaApplication" />
     <ref role="1TJDcQ" to="9lyo:6oGnPI1dYeo" resolve="LambdaApplication" />
   </node>
+  <node concept="1TIwiD" id="egaKAxuyHJ">
+    <property role="TrG5h" value="LambdaApplicationArg" />
+    <ref role="1TJDcQ" node="20nTeIlLSeL" resolve="LambdaApplication" />
+    <node concept="PrWs8" id="egaKAxvbLZ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
