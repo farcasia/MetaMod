@@ -16,7 +16,6 @@
         <reference id="3049631818650729105" name="ref" index="kdsPE" />
       </concept>
       <concept id="256752499123956591" name="Modules.structure.LambdaApplicationArg" flags="ng" index="2yUw1A" />
-      <concept id="2312568634159367089" name="Modules.structure.LambdaApplication" flags="ng" index="2PO6tq" />
     </language>
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" name="LambdaCalculus">
       <concept id="7362364337458504603" name="LambdaCalculus.structure.RefToBoundVariable" flags="ng" index="3B6VN0">
@@ -421,22 +420,25 @@
             <ref role="2oAaID" node="6za56b2Gspq" resolve="200" />
           </node>
         </node>
-        <node concept="2PO6tq" id="6za56b2Gsqf" role="2oAaxa">
-          <node concept="2PO6tq" id="6za56b2Gsqi" role="3B56no">
-            <node concept="2PO6tq" id="6za56b2Gsql" role="3B56no">
-              <node concept="2oAaXF" id="3Fwq8PQepjR" role="3B56nu">
+        <node concept="2yUw1A" id="3D9PtCDRVvJ" role="2oAaxa">
+          <property role="TrG5h" value="Route" />
+          <node concept="2oAaXF" id="3D9PtCDRVBC" role="3B56nu">
+            <ref role="2oAaID" node="6za56b2Gsqg" resolve="PA_to_PC" />
+          </node>
+          <node concept="2yUw1A" id="3D9PtCDRVuk" role="3B56no">
+            <property role="TrG5h" value="PrevCommand" />
+            <node concept="2oAaXF" id="3D9PtCDRVuX" role="3B56nu">
+              <ref role="2oAaID" node="6za56b2Gsqj" resolve="PB_turn_PC" />
+            </node>
+            <node concept="2yUw1A" id="3D9PtCDRHFC" role="3B56no">
+              <property role="TrG5h" value="Command" />
+              <node concept="2oAaXF" id="3D9PtCDRHG8" role="3B56nu">
                 <ref role="2oAaID" node="6za56b2Gspj" resolve="PB_to_PC" />
               </node>
-              <node concept="kdsPF" id="6za56b2Gsqo" role="3B56no">
+              <node concept="kdsPF" id="3D9PtCDRHG5" role="3B56no">
                 <ref role="kdsPE" node="6za56b2GrcH" resolve="CommandAfterCommandInRoute" />
               </node>
             </node>
-            <node concept="2oAaXF" id="3Fwq8PQepkk" role="3B56nu">
-              <ref role="2oAaID" node="6za56b2Gsqj" resolve="PB_turn_PC" />
-            </node>
-          </node>
-          <node concept="2oAaXF" id="3Fwq8PQepkL" role="3B56nu">
-            <ref role="2oAaID" node="6za56b2Gsqg" resolve="PA_to_PC" />
           </node>
         </node>
       </node>
@@ -1229,39 +1231,45 @@
         </node>
       </node>
       <node concept="2jq5PB" id="3Fwq8PQg45y" role="2oAaxa" />
-      <node concept="2PO6tq" id="3Fwq8PQg45z" role="2oAaxa">
-        <node concept="2PO6tq" id="3Fwq8PQg45$" role="3B56no">
-          <node concept="2PO6tq" id="3Fwq8PQg45_" role="3B56no">
-            <node concept="kdsPF" id="3Fwq8PQg45A" role="3B56no">
-              <ref role="kdsPE" node="3Fwq8PQg44R" resolve="VehicleSequenceInPlatoon" />
-            </node>
-            <node concept="2oAaXF" id="3Fwq8PQg45B" role="3B56nu">
-              <ref role="2oAaID" node="3Fwq8PQg45q" resolve="FollowLego0" />
-            </node>
-          </node>
-          <node concept="2oAaXF" id="3Fwq8PQg45C" role="3B56nu">
+      <node concept="2yUw1A" id="3D9PtCDRVTn" role="2oAaxa">
+        <property role="TrG5h" value="Platoon" />
+        <node concept="2oAaXF" id="3D9PtCDRVUb" role="3B56nu">
+          <ref role="2oAaID" node="3Fwq8PQg45u" resolve="LegoPlatoon" />
+        </node>
+        <node concept="2yUw1A" id="3D9PtCDRVRN" role="3B56no">
+          <property role="TrG5h" value="FrontVehicle" />
+          <node concept="2oAaXF" id="3D9PtCDRVSv" role="3B56nu">
             <ref role="2oAaID" node="3Fwq8PQg45s" resolve="LeadLego" />
           </node>
-        </node>
-        <node concept="2oAaXF" id="3Fwq8PQg45D" role="3B56nu">
-          <ref role="2oAaID" node="3Fwq8PQg45u" resolve="LegoPlatoon" />
-        </node>
-      </node>
-      <node concept="2PO6tq" id="3Fwq8PQg45E" role="2oAaxa">
-        <node concept="2oAaXF" id="3Fwq8PQg45F" role="3B56nu">
-          <ref role="2oAaID" node="3Fwq8PQg45u" resolve="LegoPlatoon" />
-        </node>
-        <node concept="2PO6tq" id="3Fwq8PQg45G" role="3B56no">
-          <node concept="2oAaXF" id="3Fwq8PQg45H" role="3B56nu">
-            <ref role="2oAaID" node="3Fwq8PQg45q" resolve="FollowLego0" />
-          </node>
-          <node concept="2PO6tq" id="3Fwq8PQg45I" role="3B56no">
-            <node concept="kdsPF" id="3Fwq8PQg45J" role="3B56no">
+          <node concept="2yUw1A" id="3D9PtCDRVQq" role="3B56no">
+            <property role="TrG5h" value="Vehicle" />
+            <node concept="2oAaXF" id="3D9PtCDRVQX" role="3B56nu">
+              <ref role="2oAaID" node="3Fwq8PQg45q" resolve="FollowLego0" />
+            </node>
+            <node concept="kdsPF" id="3D9PtCDRVQU" role="3B56no">
               <ref role="kdsPE" node="3Fwq8PQg44R" resolve="VehicleSequenceInPlatoon" />
             </node>
-            <node concept="2oAaXF" id="3Fwq8PQg45K" role="3B56nu">
+          </node>
+        </node>
+      </node>
+      <node concept="2yUw1A" id="3D9PtCDRVVx" role="2oAaxa">
+        <property role="TrG5h" value="Platoon" />
+        <node concept="2oAaXF" id="3D9PtCDRVVy" role="3B56nu">
+          <ref role="2oAaID" node="3Fwq8PQg45u" resolve="LegoPlatoon" />
+        </node>
+        <node concept="2yUw1A" id="3D9PtCDRVVz" role="3B56no">
+          <property role="TrG5h" value="FrontVehicle" />
+          <node concept="2yUw1A" id="3D9PtCDRVV_" role="3B56no">
+            <property role="TrG5h" value="Vehicle" />
+            <node concept="2oAaXF" id="3D9PtCDRVW_" role="3B56nu">
               <ref role="2oAaID" node="3Fwq8PQg45w" resolve="FollowLego1" />
             </node>
+            <node concept="kdsPF" id="3D9PtCDRVVB" role="3B56no">
+              <ref role="kdsPE" node="3Fwq8PQg44R" resolve="VehicleSequenceInPlatoon" />
+            </node>
+          </node>
+          <node concept="2oAaXF" id="3D9PtCDRVWE" role="3B56nu">
+            <ref role="2oAaID" node="3Fwq8PQg45q" resolve="FollowLego0" />
           </node>
         </node>
       </node>
