@@ -67,14 +67,14 @@
   </registry>
   <node concept="2oAaVg" id="16zLRPqV7FY">
     <property role="TrG5h" value="PlatoonLegosA" />
-    <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
+    <ref role="19kf5F" node="16zLRPqUZX7" resolve="PlatoonMain" />
     <node concept="kds5u" id="6za56b2C7$B" role="2oAaxa">
       <property role="TrG5h" value="VehicleSequenceInPlatoon" />
       <node concept="3B6VN2" id="6za56b2C7$D" role="kdsPW">
         <node concept="3B6VN2" id="6za56b2C7_m" role="3B56nf">
           <node concept="3B6VN2" id="6za56b2C7_v" role="3B56nf">
             <node concept="2oAaTp" id="6za56b2C7_C" role="3B56nf">
-              <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
+              <ref role="19kf5F" node="16zLRPqUZX7" resolve="PlatoonMain" />
               <node concept="2oAaUa" id="6za56b2C7_H" role="2oAaxa">
                 <node concept="3B6VN0" id="6za56b2C7_S" role="2oAawB">
                   <ref role="3B56nS" node="6za56b2C7_q" resolve="FrontVehicle" />
@@ -113,7 +113,7 @@
     </node>
     <node concept="2jq5PB" id="3Fwq8PQeppM" role="2oAaxa" />
     <node concept="2oAaVg" id="16zLRPqV7Sg" role="2oAaxa">
-      <property role="TrG5h" value="LeadVehicle" />
+      <property role="TrG5h" value="LeadVehicleA" />
       <node concept="2oAaW5" id="16zLRPqV7Uo" role="2oAaxa">
         <property role="TrG5h" value="LeadLego" />
         <node concept="2oAaXF" id="16zLRPr3ba9" role="2oAawq">
@@ -158,7 +158,7 @@
     </node>
     <node concept="2jq5PB" id="3Fwq8PQepqA" role="2oAaxa" />
     <node concept="2oAaVg" id="16zLRPqV7Ih" role="2oAaxa">
-      <property role="TrG5h" value="FollowingVehicles" />
+      <property role="TrG5h" value="FollowingVehiclesA" />
       <node concept="2oAaW5" id="6za56b2ClAl" role="2oAaxa">
         <property role="TrG5h" value="FollowLego0" />
         <node concept="2oAaXF" id="6za56b2ClAo" role="2oAawq">
@@ -232,14 +232,14 @@
   </node>
   <node concept="2oAaVg" id="16zLRPqV7GA">
     <property role="TrG5h" value="PA_to_PCLegos" />
-    <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
+    <ref role="19kf5F" node="16zLRPqUZX7" resolve="PlatoonMain" />
     <node concept="kds5u" id="6za56b2GrcH" role="2oAaxa">
       <property role="TrG5h" value="CommandAfterCommandInRoute" />
       <node concept="3B6VN2" id="6za56b2GrcJ" role="kdsPW">
         <node concept="3B6VN2" id="6za56b2GrcU" role="3B56nf">
           <node concept="3B6VN2" id="6za56b2Grd3" role="3B56nf">
             <node concept="2oAaTp" id="6za56b2Grdc" role="3B56nf">
-              <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
+              <ref role="19kf5F" node="16zLRPqUZX7" resolve="PlatoonMain" />
               <node concept="2oAaUa" id="6za56b2Grfv" role="2oAaxa">
                 <node concept="3B6VN0" id="6za56b2GrfE" role="2oAawB">
                   <ref role="3B56nS" node="6za56b2GrcY" resolve="PrevCommand" />
@@ -445,12 +445,11 @@
     </node>
   </node>
   <node concept="2oAaVg" id="16zLRPqV7GT">
-    <property role="TrG5h" value="ApplicationLegos" />
-    <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
-    <node concept="2oAaVg" id="6za56b2Gr6J" role="2oAaxa">
-      <property role="TrG5h" value="ApplicationLegosComp" />
-      <node concept="2oAaYs" id="6za56b2Gr6L" role="2oAaxa">
-        <ref role="2oAaIS" node="16zLRPqV7FY" resolve="PlatoonLegosA" />
+    <property role="TrG5h" value="LegosMain" />
+    <ref role="19kf5F" node="16zLRPqUZX7" resolve="PlatoonMain" />
+    <node concept="2oAaTp" id="2qLpadFH2ig" role="2oAaxa">
+      <node concept="2oAaYs" id="31P56JJOMU9" role="2oAaxa">
+        <ref role="2oAaIS" node="3Fwq8PQg41e" resolve="PlatoonLegos" />
       </node>
       <node concept="2oAaYs" id="6za56b2Gr6Q" role="2oAaxa">
         <ref role="2oAaIS" node="16zLRPqV7GA" resolve="PA_to_PCLegos" />
@@ -459,85 +458,82 @@
         <ref role="2oAaIS" node="6za56b2Gr7k" resolve="ConstraintsLegos" />
       </node>
     </node>
-    <node concept="2jq5PB" id="3Fwq8PQep3$" role="2oAaxa" />
-    <node concept="2oAaTp" id="6za56b2GsPt" role="2oAaxa">
-      <node concept="2oAaW5" id="6za56b2GsPE" role="2oAaxa">
-        <property role="TrG5h" value="Legos" />
-        <node concept="2oAaXF" id="6za56b2GsPH" role="2oAawq">
-          <ref role="2oAaID" node="16zLRPqUZXG" resolve="Application" />
-        </node>
+    <node concept="2jq5PB" id="2qLpadFH2h2" role="2oAaxa" />
+    <node concept="2oAaW5" id="6za56b2GsPE" role="2oAaxa">
+      <property role="TrG5h" value="Legos" />
+      <node concept="2oAaXF" id="6za56b2GsPH" role="2oAawq">
+        <ref role="2oAaID" node="16zLRPqUZXG" resolve="Main" />
       </node>
-      <node concept="2oAaW5" id="6za56b2GsPL" role="2oAaxa">
-        <property role="TrG5h" value="LegoPlatoon" />
-        <node concept="2oAaXF" id="6za56b2GsPO" role="2oAawq">
-          <ref role="2oAaID" node="16zLRPqV0cE" resolve="Platoon" />
-        </node>
+    </node>
+    <node concept="2oAaW5" id="6za56b2GsPL" role="2oAaxa">
+      <property role="TrG5h" value="LegoPlatoon" />
+      <node concept="2oAaXF" id="6za56b2GsPO" role="2oAawq">
+        <ref role="2oAaID" node="16zLRPqV0cE" resolve="Platoon" />
       </node>
-      <node concept="2oAaW5" id="6za56b2GsQk" role="2oAaxa">
-        <property role="TrG5h" value="PA_to_PC" />
-        <node concept="2oAaXF" id="6za56b2GsQn" role="2oAawq">
-          <ref role="2oAaID" node="16zLRPqV0cH" resolve="Route" />
-        </node>
+    </node>
+    <node concept="2oAaW5" id="6za56b2GsQk" role="2oAaxa">
+      <property role="TrG5h" value="PA_to_PC" />
+      <node concept="2oAaXF" id="6za56b2GsQn" role="2oAawq">
+        <ref role="2oAaID" node="16zLRPqV0cH" resolve="Route" />
       </node>
-      <node concept="2oAaW5" id="6za56b2GsR3" role="2oAaxa">
-        <property role="TrG5h" value="Constraints" />
-        <node concept="2oAaXF" id="6za56b2GsR6" role="2oAawq">
-          <ref role="2oAaID" node="16zLRPqV0cK" resolve="Constraint" />
-        </node>
+    </node>
+    <node concept="2oAaW5" id="6za56b2GsR3" role="2oAaxa">
+      <property role="TrG5h" value="Constraints" />
+      <node concept="2oAaXF" id="6za56b2GsR6" role="2oAawq">
+        <ref role="2oAaID" node="16zLRPqV0cK" resolve="Constraint" />
       </node>
-      <node concept="2jq5PB" id="3Fwq8PQep3Z" role="2oAaxa" />
-      <node concept="2oAaUa" id="6za56b2GsP$" role="2oAaxa">
-        <node concept="2oAawe" id="6za56b2GsPJ" role="2oAawy">
-          <ref role="2oAawc" node="16zLRPqUZXw" resolve="platoon" />
-        </node>
-        <node concept="2oAaXF" id="3Fwq8PQep4E" role="2oAawD">
-          <ref role="2oAaID" node="6za56b2GsPE" resolve="Legos" />
-        </node>
-        <node concept="2oAaXF" id="3Fwq8PQep58" role="2oAawB">
-          <ref role="2oAaID" node="6za56b2GsPL" resolve="LegoPlatoon" />
-        </node>
+    </node>
+    <node concept="2jq5PB" id="3Fwq8PQep3Z" role="2oAaxa" />
+    <node concept="2oAaUa" id="6za56b2GsP$" role="2oAaxa">
+      <node concept="2oAawe" id="6za56b2GsPJ" role="2oAawy">
+        <ref role="2oAawc" node="16zLRPqUZXw" resolve="platoon" />
       </node>
-      <node concept="2oAaUa" id="6za56b2GsPY" role="2oAaxa">
-        <node concept="2oAaXF" id="3Fwq8PQep5c" role="2oAawD">
-          <ref role="2oAaID" node="6za56b2GsPE" resolve="Legos" />
-        </node>
-        <node concept="2oAawe" id="6za56b2GsQi" role="2oAawy">
-          <ref role="2oAawc" node="16zLRPqUZXW" resolve="route" />
-        </node>
-        <node concept="2oAaXF" id="3Fwq8PQep5F" role="2oAawB">
-          <ref role="2oAaID" node="6za56b2GsQk" resolve="PA_to_PC" />
-        </node>
+      <node concept="2oAaXF" id="3Fwq8PQep4E" role="2oAawD">
+        <ref role="2oAaID" node="6za56b2GsPE" resolve="Legos" />
       </node>
-      <node concept="2oAaUa" id="6za56b2GsQB" role="2oAaxa">
-        <node concept="2oAawe" id="6za56b2GsR1" role="2oAawy">
-          <ref role="2oAawc" node="16zLRPqUZYs" resolve="constraints" />
-        </node>
-        <node concept="2oAaXF" id="3Fwq8PQep5J" role="2oAawD">
-          <ref role="2oAaID" node="6za56b2GsPE" resolve="Legos" />
-        </node>
-        <node concept="2oAaXF" id="3Fwq8PQep6U" role="2oAawB">
-          <ref role="2oAaID" node="6za56b2GsR3" resolve="Constraints" />
-        </node>
+      <node concept="2oAaXF" id="3Fwq8PQep58" role="2oAawB">
+        <ref role="2oAaID" node="6za56b2GsPL" resolve="LegoPlatoon" />
+      </node>
+    </node>
+    <node concept="2oAaUa" id="6za56b2GsPY" role="2oAaxa">
+      <node concept="2oAaXF" id="3Fwq8PQep5c" role="2oAawD">
+        <ref role="2oAaID" node="6za56b2GsPE" resolve="Legos" />
+      </node>
+      <node concept="2oAawe" id="6za56b2GsQi" role="2oAawy">
+        <ref role="2oAawc" node="16zLRPqUZXW" resolve="route" />
+      </node>
+      <node concept="2oAaXF" id="3Fwq8PQep5F" role="2oAawB">
+        <ref role="2oAaID" node="6za56b2GsQk" resolve="PA_to_PC" />
+      </node>
+    </node>
+    <node concept="2oAaUa" id="6za56b2GsQB" role="2oAaxa">
+      <node concept="2oAawe" id="6za56b2GsR1" role="2oAawy">
+        <ref role="2oAawc" node="16zLRPqUZYs" resolve="constraints" />
+      </node>
+      <node concept="2oAaXF" id="3Fwq8PQep5J" role="2oAawD">
+        <ref role="2oAaID" node="6za56b2GsPE" resolve="Legos" />
+      </node>
+      <node concept="2oAaXF" id="3Fwq8PQep6U" role="2oAawB">
+        <ref role="2oAaID" node="6za56b2GsR3" resolve="Constraints" />
       </node>
     </node>
   </node>
   <node concept="2oAaVg" id="16zLRPqUZX7">
-    <property role="TrG5h" value="ApplicationPlatoon" />
-    <node concept="2oAaVg" id="16zLRPqV0aJ" role="2oAaxa">
-      <property role="TrG5h" value="Components" />
+    <property role="TrG5h" value="PlatoonMain" />
+    <node concept="2oAaTp" id="2qLpadFH29c" role="2oAaxa">
       <node concept="2oAaYs" id="16zLRPqUZX8" role="2oAaxa">
-        <ref role="2oAaIS" node="16zLRPqKRNb" resolve="PlatoonComp" />
+        <ref role="2oAaIS" node="16zLRPqKRNb" resolve="PlatoonGroup" />
       </node>
       <node concept="2oAaYs" id="16zLRPqUZXd" role="2oAaxa">
-        <ref role="2oAaIS" node="16zLRPqUZX6" resolve="RouteComp" />
+        <ref role="2oAaIS" node="16zLRPqUZX6" resolve="RouteGroup" />
       </node>
       <node concept="2oAaYs" id="16zLRPqUZXm" role="2oAaxa">
-        <ref role="2oAaIS" node="16zLRPqUZXh" resolve="ConstraintsComp" />
+        <ref role="2oAaIS" node="16zLRPqUZXh" resolve="ConstraintsGroup" />
       </node>
     </node>
     <node concept="2jq5PB" id="3Fwq8PQep3g" role="2oAaxa" />
     <node concept="2oAaW5" id="16zLRPqUZXG" role="2oAaxa">
-      <property role="TrG5h" value="Application" />
+      <property role="TrG5h" value="Main" />
     </node>
     <node concept="2oAaW5" id="16zLRPqV0cE" role="2oAaxa">
       <property role="TrG5h" value="Platoon" />
@@ -552,7 +548,7 @@
     <node concept="2oAaUZ" id="16zLRPqUZXw" role="2oAaxa">
       <property role="TrG5h" value="platoon" />
       <node concept="2oAaXF" id="3Fwq8PQekTx" role="2oAawD">
-        <ref role="2oAaID" node="16zLRPqUZXG" resolve="Application" />
+        <ref role="2oAaID" node="16zLRPqUZXG" resolve="Main" />
       </node>
       <node concept="2oAaXF" id="3Fwq8PQekTz" role="2oAawB">
         <ref role="2oAaID" node="16zLRPqV0cE" resolve="Platoon" />
@@ -561,7 +557,7 @@
     <node concept="2oAaUZ" id="16zLRPqUZXW" role="2oAaxa">
       <property role="TrG5h" value="route" />
       <node concept="2oAaXF" id="3Fwq8PQekTB" role="2oAawD">
-        <ref role="2oAaID" node="16zLRPqUZXG" resolve="Application" />
+        <ref role="2oAaID" node="16zLRPqUZXG" resolve="Main" />
       </node>
       <node concept="2oAaXF" id="3Fwq8PQekU_" role="2oAawB">
         <ref role="2oAaID" node="16zLRPqV0cH" resolve="Route" />
@@ -570,7 +566,7 @@
     <node concept="2oAaUZ" id="16zLRPqUZYs" role="2oAaxa">
       <property role="TrG5h" value="constraints" />
       <node concept="2oAaXF" id="3Fwq8PQekTG" role="2oAawD">
-        <ref role="2oAaID" node="16zLRPqUZXG" resolve="Application" />
+        <ref role="2oAaID" node="16zLRPqUZXG" resolve="Main" />
       </node>
       <node concept="2oAaXF" id="3Fwq8PQekVw" role="2oAawB">
         <ref role="2oAaID" node="16zLRPqV0cK" resolve="Constraint" />
@@ -578,7 +574,7 @@
     </node>
   </node>
   <node concept="2oAaVg" id="16zLRPqUZXh">
-    <property role="TrG5h" value="ConstraintsComp" />
+    <property role="TrG5h" value="ConstraintsGroup" />
     <node concept="2oAaW5" id="16zLRPqV032" role="2oAaxa">
       <property role="TrG5h" value="Constraint" />
     </node>
@@ -661,7 +657,7 @@
     </node>
   </node>
   <node concept="2oAaVg" id="16zLRPqKRNb">
-    <property role="TrG5h" value="PlatoonComp" />
+    <property role="TrG5h" value="PlatoonGroup" />
     <node concept="2oAaW5" id="2crcr0rdoy7" role="2oAaxa">
       <property role="TrG5h" value="Vehicle" />
     </node>
@@ -739,7 +735,7 @@
     </node>
   </node>
   <node concept="2oAaVg" id="16zLRPqUZX6">
-    <property role="TrG5h" value="RouteComp" />
+    <property role="TrG5h" value="RouteGroup" />
     <node concept="2oAaW5" id="16zLRPqV06f" role="2oAaxa">
       <property role="TrG5h" value="Command" />
     </node>
@@ -830,7 +826,7 @@
   </node>
   <node concept="2oAaVg" id="6za56b2Gr7k">
     <property role="TrG5h" value="ConstraintsLegos" />
-    <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
+    <ref role="19kf5F" node="16zLRPqUZX7" resolve="PlatoonMain" />
     <node concept="2oAaTp" id="6za56b2GsA1" role="2oAaxa">
       <node concept="2oAaW5" id="6za56b2Gsx6" role="2oAaxa">
         <property role="TrG5h" value="Constraints" />
@@ -950,7 +946,7 @@
   </node>
   <node concept="2oAaVg" id="3Fwq8PQg2Ua">
     <property role="TrG5h" value="PlatoonLegosE" />
-    <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
+    <ref role="19kf5F" node="16zLRPqUZX7" resolve="PlatoonMain" />
     <node concept="2oAaVg" id="3Fwq8PQg33b" role="2oAaxa">
       <property role="TrG5h" value="LeadVehicleE" />
       <node concept="2oAaW5" id="3Fwq8PQg33c" role="2oAaxa">
@@ -1114,14 +1110,14 @@
   </node>
   <node concept="2oAaVg" id="3Fwq8PQg41e">
     <property role="TrG5h" value="PlatoonLegos" />
-    <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
+    <ref role="19kf5F" node="16zLRPqUZX7" resolve="PlatoonMain" />
     <node concept="kds5u" id="3Fwq8PQg44R" role="2oAaxa">
       <property role="TrG5h" value="VehicleSequenceInPlatoon" />
       <node concept="3B6VN2" id="3Fwq8PQg44S" role="kdsPW">
         <node concept="3B6VN2" id="3Fwq8PQg44T" role="3B56nf">
           <node concept="3B6VN2" id="3Fwq8PQg44U" role="3B56nf">
             <node concept="2oAaTp" id="3Fwq8PQg44V" role="3B56nf">
-              <ref role="19kf5F" node="16zLRPqUZX7" resolve="ApplicationPlatoon" />
+              <ref role="19kf5F" node="16zLRPqUZX7" resolve="PlatoonMain" />
               <node concept="2oAaUa" id="3Fwq8PQg44W" role="2oAaxa">
                 <node concept="3B6VN0" id="3Fwq8PQg44X" role="2oAawB">
                   <ref role="3B56nS" node="3Fwq8PQg455" resolve="FrontVehicle" />
@@ -1160,7 +1156,7 @@
     </node>
     <node concept="2jq5PB" id="3Fwq8PQg457" role="2oAaxa" />
     <node concept="2oAaVg" id="3Fwq8PQg458" role="2oAaxa">
-      <property role="TrG5h" value="LeadVehicleA" />
+      <property role="TrG5h" value="LeadVehicle" />
       <node concept="2oAaW5" id="3Fwq8PQg459" role="2oAaxa">
         <property role="TrG5h" value="LeadLego" />
         <node concept="2oAaXF" id="3Fwq8PQg45a" role="2oAawq">
@@ -1205,7 +1201,7 @@
     </node>
     <node concept="2jq5PB" id="3Fwq8PQg45o" role="2oAaxa" />
     <node concept="2oAaVg" id="3Fwq8PQg45p" role="2oAaxa">
-      <property role="TrG5h" value="FollowingVehiclesA" />
+      <property role="TrG5h" value="FollowingVehicles" />
       <node concept="2oAaW5" id="3Fwq8PQg45q" role="2oAaxa">
         <property role="TrG5h" value="FollowLego0" />
         <node concept="2oAaXF" id="3Fwq8PQg45r" role="2oAawq">
