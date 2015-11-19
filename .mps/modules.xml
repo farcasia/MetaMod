@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/Documentation/Documentation.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/LambdaCalculus/LambdaCalculus.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Models/Models.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Modules/Modules.mpl" folder="" />

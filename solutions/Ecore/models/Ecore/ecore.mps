@@ -8,7 +8,34 @@
   </languages>
   <imports />
   <registry>
+    <language id="ae311dd6-db78-4e5e-a31b-7988fcde0010" name="Modules">
+      <concept id="3049631818650728102" name="Modules.structure.ModuleComposite" flags="ng" index="kds5t">
+        <child id="3049631818650729077" name="modules" index="kdsQe" />
+      </concept>
+      <concept id="3049631818650728101" name="Modules.structure.Module" flags="ng" index="kds5u">
+        <child id="3049631818650729095" name="defines" index="kdsPW" />
+      </concept>
+      <concept id="3049631818650729104" name="Modules.structure.RefToModule" flags="ng" index="kdsPF">
+        <reference id="3049631818650729105" name="ref" index="kdsPE" />
+      </concept>
+      <concept id="256752499123956591" name="Modules.structure.LambdaApplicationArg" flags="ng" index="2yUw1A" />
+    </language>
+    <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" name="LambdaCalculus">
+      <concept id="7362364337458504603" name="LambdaCalculus.structure.RefToBoundVariable" flags="ng" index="3B6VN0">
+        <reference id="7362364337458526883" name="ref" index="3B56nS" />
+      </concept>
+      <concept id="7362364337458504602" name="LambdaCalculus.structure.BoundVariable" flags="ng" index="3B6VN1" />
+      <concept id="7362364337458504601" name="LambdaCalculus.structure.LambdaAbstraction" flags="ng" index="3B6VN2">
+        <child id="7362364337458526866" name="boundVariable" index="3B56n9" />
+        <child id="7362364337458526868" name="body" index="3B56nf" />
+      </concept>
+      <concept id="7362364337458504600" name="LambdaCalculus.structure.LambdaApplication" flags="ng" index="3B6VN3">
+        <child id="7362364337458526851" name="left" index="3B56no" />
+        <child id="7362364337458526853" name="right" index="3B56nu" />
+      </concept>
+    </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
+      <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
       <concept id="8717972784948764160" name="Models.structure.RefToNamedRel" flags="ng" index="2oAawe">
         <reference id="8717972784948764162" name="ref" index="2oAawc" />
       </concept>
@@ -66,6 +93,7 @@
       <node concept="2oAaW5" id="VQwemthcSo" role="2oAaxa">
         <property role="TrG5h" value="String" />
       </node>
+      <node concept="2jq5PB" id="4it7xKEMKA4" role="2oAaxa" />
       <node concept="2oAaUZ" id="VQwemthcRk" role="2oAaxa">
         <property role="TrG5h" value="name" />
         <node concept="2oAaXF" id="VQwemt_Gnm" role="2oAawB">
@@ -130,6 +158,7 @@
         </node>
       </node>
     </node>
+    <node concept="2jq5PB" id="3FpTLT88pMe" role="2oAaxa" />
     <node concept="2oAaVg" id="VQwemthcQB" role="2oAaxa">
       <property role="TrG5h" value="ReferencesKernel" />
       <node concept="2oAaW5" id="VQwemtjHCY" role="2oAaxa">
@@ -153,6 +182,7 @@
       <node concept="2oAaW5" id="VQwemtjL_W" role="2oAaxa">
         <property role="TrG5h" value="M2MeReferences" />
       </node>
+      <node concept="2jq5PB" id="4it7xKEMKAy" role="2oAaxa" />
       <node concept="2oAaUZ" id="VQwemtjJWd" role="2oAaxa">
         <property role="TrG5h" value="forEClass" />
         <node concept="2oAaXF" id="VQwemtjLuX" role="2oAawB">
@@ -264,6 +294,7 @@
       <node concept="2oAaW5" id="VQwemtjIhD" role="2oAaxa">
         <property role="TrG5h" value="EJavaObject" />
       </node>
+      <node concept="2jq5PB" id="4it7xKEMKZ6" role="2oAaxa" />
       <node concept="2oAaUZ" id="VQwemtjIcI" role="2oAaxa">
         <property role="TrG5h" value="name" />
         <node concept="2oAaXF" id="VQwemtjIhQ" role="2oAawB">
@@ -364,6 +395,7 @@
         </node>
       </node>
     </node>
+    <node concept="2jq5PB" id="4it7xKEMLuh" role="2oAaxa" />
     <node concept="2oAaVg" id="VQwemtjI3g" role="2oAaxa">
       <property role="TrG5h" value="ReferencesStructuralFeatures" />
       <node concept="2oAaW5" id="VQwemtjINT" role="2oAaxa">
@@ -396,6 +428,7 @@
       <node concept="2oAaW5" id="VQwemtjLZ$" role="2oAaxa">
         <property role="TrG5h" value="M2MeAllStructuralFeature" />
       </node>
+      <node concept="2jq5PB" id="4it7xKEMKZL" role="2oAaxa" />
       <node concept="2oAaVg" id="VQwemtjJxI" role="2oAaxa">
         <property role="TrG5h" value="InheritanceHierarchyStructuralFeatures" />
         <node concept="2oAaW5" id="VQwemtjJBt" role="2oAaxa">
@@ -425,6 +458,7 @@
         <node concept="2oAaW5" id="VQwemtjJB_" role="2oAaxa">
           <property role="TrG5h" value="EAttribute" />
         </node>
+        <node concept="2jq5PB" id="4it7xKEML8U" role="2oAaxa" />
         <node concept="2oAaZ9" id="VQwemtjIY$" role="2oAaxa">
           <node concept="2oAaXF" id="VQwemtjJ0E" role="2oAawB">
             <ref role="2oAaID" node="VQwemtjJBt" resolve="ENamedElement" />
@@ -482,6 +516,7 @@
           </node>
         </node>
       </node>
+      <node concept="2jq5PB" id="4it7xKEML9q" role="2oAaxa" />
       <node concept="2oAaUZ" id="VQwemtjJLZ" role="2oAaxa">
         <property role="TrG5h" value="eType" />
         <node concept="2oAaXF" id="VQwemtjJRj" role="2oAawB">
@@ -519,6 +554,7 @@
         </node>
       </node>
     </node>
+    <node concept="2jq5PB" id="4it7xKEMLaj" role="2oAaxa" />
     <node concept="2oAaVg" id="VQwemtjMwS" role="2oAaxa">
       <property role="TrG5h" value="Attributes" />
       <node concept="2oAaVg" id="VQwemtjM$Z" role="2oAaxa">
@@ -529,6 +565,7 @@
         <node concept="2oAaW5" id="VQwemtjMNs" role="2oAaxa">
           <property role="TrG5h" value="boolean" />
         </node>
+        <node concept="2jq5PB" id="4it7xKEMLdw" role="2oAaxa" />
         <node concept="2oAaUZ" id="VQwemtjMKa" role="2oAaxa">
           <property role="TrG5h" value="ID" />
           <node concept="2oAaXF" id="VQwemtjMQj" role="2oAawB">
@@ -539,6 +576,7 @@
           </node>
         </node>
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLd0" role="2oAaxa" />
       <node concept="2oAaVg" id="VQwemtjM_4" role="2oAaxa">
         <property role="TrG5h" value="ReferencesAttributes" />
         <node concept="2oAaW5" id="VQwemtjMTg" role="2oAaxa">
@@ -556,6 +594,7 @@
         <node concept="2oAaW5" id="VQwemtjNfd" role="2oAaxa">
           <property role="TrG5h" value="M2MeAllAttributes" />
         </node>
+        <node concept="2jq5PB" id="4it7xKEMLdB" role="2oAaxa" />
         <node concept="2oAaUZ" id="VQwemtjMTr" role="2oAaxa">
           <property role="TrG5h" value="eAttributeType" />
           <node concept="2oAaXF" id="VQwemtjMZi" role="2oAawB">
@@ -612,6 +651,7 @@
         </node>
       </node>
     </node>
+    <node concept="2jq5PB" id="4it7xKEMLe0" role="2oAaxa" />
     <node concept="2oAaVg" id="VQwemtjNsO" role="2oAaxa">
       <property role="TrG5h" value="References" />
       <node concept="2oAaVg" id="VQwemtjNuT" role="2oAaxa">
@@ -622,6 +662,7 @@
         <node concept="2oAaW5" id="VQwemtjN_o" role="2oAaxa">
           <property role="TrG5h" value="boolean" />
         </node>
+        <node concept="2jq5PB" id="4it7xKEMLgL" role="2oAaxa" />
         <node concept="2oAaUZ" id="VQwemtjNCF" role="2oAaxa">
           <property role="TrG5h" value="containment" />
           <node concept="2oAaXF" id="VQwemtjNMw" role="2oAawB">
@@ -641,6 +682,7 @@
           </node>
         </node>
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLhq" role="2oAaxa" />
       <node concept="2oAaVg" id="VQwemtjNuY" role="2oAaxa">
         <property role="TrG5h" value="ReferencesReferences" />
         <node concept="2oAaW5" id="VQwemtjO0n" role="2oAaxa">
@@ -658,6 +700,7 @@
         <node concept="2oAaW5" id="VQwemtjOpy" role="2oAaxa">
           <property role="TrG5h" value="M2MeAllContainments" />
         </node>
+        <node concept="2jq5PB" id="4it7xKEMLgV" role="2oAaxa" />
         <node concept="2oAaUZ" id="VQwemtjO3N" role="2oAaxa">
           <property role="TrG5h" value="eOpposite" />
           <node concept="2oAaXF" id="VQwemtjOa_" role="2oAawB">
@@ -758,6 +801,7 @@
       <node concept="2oAaW5" id="VQwemtjQaH" role="2oAaxa">
         <property role="TrG5h" value="M2MeExceptions" />
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLyd" role="2oAaxa" />
       <node concept="2oAaVg" id="VQwemtjOTt" role="2oAaxa">
         <property role="TrG5h" value="InheritanceHierarchyBehavioralFeatures" />
         <node concept="2oAaW5" id="VQwemtjP0P" role="2oAaxa">
@@ -775,6 +819,7 @@
         <node concept="2oAaW5" id="VQwemtjP5p" role="2oAaxa">
           <property role="TrG5h" value="ETypedElement" />
         </node>
+        <node concept="2jq5PB" id="4it7xKEML$6" role="2oAaxa" />
         <node concept="2oAaZ9" id="VQwemtjPd8" role="2oAaxa">
           <node concept="2oAaXF" id="VQwemtjPhc" role="2oAawB">
             <ref role="2oAaID" node="VQwemtjP0P" resolve="EClassifier" />
@@ -800,6 +845,7 @@
           </node>
         </node>
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLzo" role="2oAaxa" />
       <node concept="2oAaUZ" id="VQwemtjP_n" role="2oAaxa">
         <property role="TrG5h" value="eType" />
         <node concept="2oAaXF" id="VQwemtjPHV" role="2oAawB">
@@ -868,13 +914,14 @@
   <node concept="2oAaVg" id="VQwemtjQDR">
     <property role="TrG5h" value="Classifiers" />
     <node concept="2oAaVg" id="VQwemtjQMA" role="2oAaxa">
-      <property role="TrG5h" value="PropertiedClassifiers" />
+      <property role="TrG5h" value="PropertiesClassifiers" />
       <node concept="2oAaW5" id="VQwemtjQRb" role="2oAaxa">
         <property role="TrG5h" value="EClassifier" />
       </node>
       <node concept="2oAaW5" id="VQwemtjQRg" role="2oAaxa">
         <property role="TrG5h" value="String" />
       </node>
+      <node concept="2jq5PB" id="4it7xKEML$m" role="2oAaxa" />
       <node concept="2oAaUZ" id="VQwemtjR0v" role="2oAaxa">
         <property role="TrG5h" value="instanceClassNamed" />
         <node concept="2oAaXF" id="VQwemtjR5c" role="2oAawB">
@@ -885,6 +932,7 @@
         </node>
       </node>
     </node>
+    <node concept="2jq5PB" id="4it7xKEML$t" role="2oAaxa" />
     <node concept="2oAaVg" id="VQwemtjQMF" role="2oAaxa">
       <property role="TrG5h" value="ReferencesClassifiers" />
       <node concept="2oAaW5" id="VQwemtjS1c" role="2oAaxa">
@@ -893,6 +941,7 @@
       <node concept="2oAaW5" id="VQwemtjS6C" role="2oAaxa">
         <property role="TrG5h" value="EClassifier" />
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLAj" role="2oAaxa" />
       <node concept="2oAaVg" id="VQwemtjQMJ" role="2oAaxa">
         <property role="TrG5h" value="ImheritanceHierarchyClassifiers" />
         <node concept="2oAaW5" id="VQwemtjR9I" role="2oAaxa">
@@ -943,6 +992,7 @@
           </node>
         </node>
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLAG" role="2oAaxa" />
       <node concept="2oAaUZ" id="VQwemtjSc6" role="2oAaxa">
         <property role="TrG5h" value="eType" />
         <node concept="2oAaXF" id="VQwemtjShr" role="2oAawB">
@@ -953,6 +1003,7 @@
         </node>
       </node>
     </node>
+    <node concept="2jq5PB" id="4it7xKEMLB6" role="2oAaxa" />
     <node concept="2oAaVg" id="VQwemtjSmT" role="2oAaxa">
       <property role="TrG5h" value="Classes" />
       <node concept="2oAaVg" id="VQwemtjSsg" role="2oAaxa">
@@ -963,6 +1014,7 @@
         <node concept="2oAaW5" id="VQwemtjSxm" role="2oAaxa">
           <property role="TrG5h" value="boolean" />
         </node>
+        <node concept="2jq5PB" id="4it7xKEMLCZ" role="2oAaxa" />
         <node concept="2oAaUZ" id="VQwemtjSxu" role="2oAaxa">
           <property role="TrG5h" value="abstract" />
           <node concept="2oAaXF" id="VQwemtjSAD" role="2oAawB">
@@ -982,6 +1034,7 @@
           </node>
         </node>
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLDK" role="2oAaxa" />
       <node concept="2oAaVg" id="VQwemtjSsl" role="2oAaxa">
         <property role="TrG5h" value="ReferencesClasses" />
         <node concept="2oAaW5" id="VQwemtjSGi" role="2oAaxa">
@@ -1005,6 +1058,7 @@
         <node concept="2oAaW5" id="VQwemtjT1j" role="2oAaxa">
           <property role="TrG5h" value="M2MeAllOperations" />
         </node>
+        <node concept="2jq5PB" id="4it7xKEMLD9" role="2oAaxa" />
         <node concept="2oAaUZ" id="VQwemtjTc4" role="2oAaxa">
           <property role="TrG5h" value="forEClass" />
           <node concept="2oAaXF" id="VQwemtjTcn" role="2oAawB">
@@ -1097,6 +1151,7 @@
         </node>
       </node>
     </node>
+    <node concept="2jq5PB" id="4it7xKEMLEz" role="2oAaxa" />
     <node concept="2oAaVg" id="VQwemtjUaV" role="2oAaxa">
       <property role="TrG5h" value="DataTypes" />
       <node concept="2oAaVg" id="VQwemtjUhM" role="2oAaxa">
@@ -1119,6 +1174,7 @@
         <node concept="2oAaW5" id="VQwemtjUzD" role="2oAaxa">
           <property role="TrG5h" value="EEnumerator" />
         </node>
+        <node concept="2jq5PB" id="4it7xKEMLGw" role="2oAaxa" />
         <node concept="2oAaUZ" id="VQwemtjUJg" role="2oAaxa">
           <property role="TrG5h" value="serializable" />
           <node concept="2oAaXF" id="VQwemtjUV0" role="2oAawB">
@@ -1156,6 +1212,7 @@
           </node>
         </node>
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLGO" role="2oAaxa" />
       <node concept="2oAaVg" id="VQwemtjUhR" role="2oAaxa">
         <property role="TrG5h" value="ReferencesDataTypes" />
         <node concept="2oAaW5" id="VQwemtjWoE" role="2oAaxa">
@@ -1164,6 +1221,7 @@
         <node concept="2oAaW5" id="VQwemtjWoF" role="2oAaxa">
           <property role="TrG5h" value="EEnumLiteral" />
         </node>
+        <node concept="2jq5PB" id="4it7xKEMLHr" role="2oAaxa" />
         <node concept="2oAaVg" id="VQwemtjUhV" role="2oAaxa">
           <property role="TrG5h" value="InheritanceHierarchyDataTypes" />
           <node concept="2oAaW5" id="VQwemtjVAN" role="2oAaxa">
@@ -1217,6 +1275,7 @@
       <node concept="2oAaW5" id="VQwemtjWYS" role="2oAaxa">
         <property role="TrG5h" value="String" />
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLJX" role="2oAaxa" />
       <node concept="2oAaUZ" id="VQwemtjX5h" role="2oAaxa">
         <property role="TrG5h" value="nsURI" />
         <node concept="2oAaXF" id="VQwemtjX5v" role="2oAawB">
@@ -1236,6 +1295,7 @@
         </node>
       </node>
     </node>
+    <node concept="2jq5PB" id="4it7xKEMLJo" role="2oAaxa" />
     <node concept="2oAaVg" id="VQwemtjWSv" role="2oAaxa">
       <property role="TrG5h" value="ReferencesPackagesAndFactories" />
       <node concept="2oAaW5" id="VQwemtjXxH" role="2oAaxa">
@@ -1253,6 +1313,7 @@
       <node concept="2oAaW5" id="VQwemtjXCQ" role="2oAaxa">
         <property role="TrG5h" value="EClassifier" />
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLK7" role="2oAaxa" />
       <node concept="2oAaVg" id="VQwemtjWSz" role="2oAaxa">
         <property role="TrG5h" value="InheritanceHierarchyPackagesAndFactories" />
         <node concept="2oAaW5" id="VQwemtjXc_" role="2oAaxa">
@@ -1284,6 +1345,7 @@
           </node>
         </node>
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLKy" role="2oAaxa" />
       <node concept="2oAaUZ" id="VQwemtjXRu" role="2oAaxa">
         <property role="TrG5h" value="eFactoryInstance" />
         <node concept="2oAaXF" id="VQwemtjXYy" role="2oAawB">
@@ -1326,6 +1388,7 @@
       <node concept="2oAaW5" id="VQwemtjZ6x" role="2oAaxa">
         <property role="TrG5h" value="EStringToStringMapEntry" />
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLJd" role="2oAaxa" />
       <node concept="2oAaUZ" id="VQwemtjYSc" role="2oAaxa">
         <property role="TrG5h" value="source" />
         <node concept="2oAaXF" id="VQwemtjYZn" role="2oAawB">
@@ -1345,6 +1408,7 @@
         </node>
       </node>
     </node>
+    <node concept="2jq5PB" id="4it7xKEMLHH" role="2oAaxa" />
     <node concept="2oAaVg" id="VQwemtjYy3" role="2oAaxa">
       <property role="TrG5h" value="ReferencesAnnotations" />
       <node concept="2oAaW5" id="VQwemtk0ts" role="2oAaxa">
@@ -1359,6 +1423,7 @@
       <node concept="2oAaW5" id="VQwemtk1bw" role="2oAaxa">
         <property role="TrG5h" value="M2MReferences" />
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLIk" role="2oAaxa" />
       <node concept="2oAaVg" id="VQwemtjZE8" role="2oAaxa">
         <property role="TrG5h" value="InheritanceHierarchyAnnotations" />
         <node concept="2oAaW5" id="VQwemtjZLc" role="2oAaxa">
@@ -1387,6 +1452,7 @@
           </node>
         </node>
       </node>
+      <node concept="2jq5PB" id="4it7xKEMLIK" role="2oAaxa" />
       <node concept="2oAaUZ" id="VQwemtk0_a" role="2oAaxa">
         <property role="TrG5h" value="eModelElement" />
         <node concept="2oAaXF" id="VQwemtk0O5" role="2oAawB">
@@ -1451,10 +1517,216 @@
     <ref role="19kf5F" node="VQwemtjYD0" resolve="Ecore" />
     <node concept="2oAaVg" id="VQwemtk3vJ" role="2oAaxa">
       <property role="TrG5h" value="RouteWithCommands" />
-      <node concept="2oAaW5" id="VQwemtk3j4" role="2oAaxa">
-        <property role="TrG5h" value="Command" />
-        <node concept="2oAaXF" id="VQwemtk3kx" role="2oAawq">
+      <node concept="kds5t" id="4it7xKEMLZZ" role="2oAaxa">
+        <property role="TrG5h" value="Patterns" />
+        <node concept="kds5u" id="4it7xKEMM1f" role="kdsQe">
+          <property role="TrG5h" value="StructuralFeatureTypeAndName" />
+          <node concept="3B6VN2" id="4it7xKEMM1g" role="kdsPW">
+            <node concept="3B6VN1" id="4it7xKEMM1i" role="3B56n9">
+              <property role="TrG5h" value="StructuralFeature" />
+            </node>
+            <node concept="3B6VN2" id="4it7xKEMZIe" role="3B56nf">
+              <node concept="3B6VN1" id="4it7xKEMZIg" role="3B56n9">
+                <property role="TrG5h" value="Type" />
+              </node>
+              <node concept="3B6VN2" id="4it7xKEMZJ3" role="3B56nf">
+                <node concept="3B6VN1" id="4it7xKEMZJ5" role="3B56n9">
+                  <property role="TrG5h" value="Name" />
+                </node>
+                <node concept="2oAaTp" id="4it7xKEMM1n" role="3B56nf">
+                  <ref role="19kf5F" node="VQwemtjYD0" resolve="Ecore" />
+                  <node concept="2oAaUZ" id="4it7xKEMM1q" role="2oAaxa">
+                    <property role="TrG5h" value="value" />
+                    <node concept="3B6VN0" id="4it7xKEMZIC" role="2oAawB">
+                      <ref role="3B56nS" node="4it7xKEMZIg" resolve="Type" />
+                    </node>
+                    <node concept="3B6VN0" id="4it7xKEMM1w" role="2oAawD">
+                      <ref role="3B56nS" node="4it7xKEMM1i" resolve="StructuralFeature" />
+                    </node>
+                    <node concept="2oAawe" id="4it7xKEMM1z" role="2oAawy">
+                      <ref role="2oAawc" node="VQwemtjJLZ" resolve="eType" />
+                    </node>
+                  </node>
+                  <node concept="2oAaUa" id="4it7xKEMZJx" role="2oAaxa">
+                    <node concept="3B6VN0" id="4it7xKEMZWD" role="2oAawB">
+                      <ref role="3B56nS" node="4it7xKEMZJ5" resolve="Name" />
+                    </node>
+                    <node concept="3B6VN0" id="4it7xKEMZJI" role="2oAawD">
+                      <ref role="3B56nS" node="4it7xKEMM1i" resolve="StructuralFeature" />
+                    </node>
+                    <node concept="2oAawe" id="4it7xKEMZJL" role="2oAawy">
+                      <ref role="2oAawc" node="VQwemtjIcI" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="kds5u" id="2oX3QL6Q$$z" role="kdsQe">
+          <property role="TrG5h" value="ReferenceConstants" />
+          <node concept="3B6VN2" id="2oX3QL6QMmc" role="kdsPW">
+            <node concept="3B6VN1" id="2oX3QL6QMme" role="3B56n9">
+              <property role="TrG5h" value="Reference" />
+            </node>
+            <node concept="3B6VN2" id="2oX3QL6Q$$_" role="3B56nf">
+              <node concept="3B6VN2" id="2oX3QL6Q$$Z" role="3B56nf">
+                <node concept="3B6VN2" id="2oX3QL6Q$_8" role="3B56nf">
+                  <node concept="3B6VN2" id="2oX3QL6Q$_h" role="3B56nf">
+                    <node concept="2oAaTp" id="2oX3QL6Q$_q" role="3B56nf">
+                      <ref role="19kf5F" node="VQwemtjYD0" resolve="Ecore" />
+                      <node concept="2oAaUa" id="2oX3QL6QMnQ" role="2oAaxa">
+                        <node concept="3B6VN0" id="2oX3QL6QMGE" role="2oAawB">
+                          <ref role="3B56nS" node="2oX3QL6Q$$D" resolve="containment" />
+                        </node>
+                        <node concept="3B6VN0" id="2oX3QL6QMGu" role="2oAawD">
+                          <ref role="3B56nS" node="2oX3QL6QMme" resolve="Reference" />
+                        </node>
+                        <node concept="2oAawe" id="2oX3QL6QMnT" role="2oAawy">
+                          <ref role="2oAawc" node="VQwemthcVH" resolve="containment" />
+                        </node>
+                      </node>
+                      <node concept="2oAaUa" id="2oX3QL6QMnU" role="2oAaxa">
+                        <node concept="3B6VN0" id="2oX3QL6QMGH" role="2oAawB">
+                          <ref role="3B56nS" node="2oX3QL6Q$_3" resolve="lowerbound" />
+                        </node>
+                        <node concept="3B6VN0" id="2oX3QL6QMGx" role="2oAawD">
+                          <ref role="3B56nS" node="2oX3QL6QMme" resolve="Reference" />
+                        </node>
+                        <node concept="2oAawe" id="2oX3QL6QMnX" role="2oAawy">
+                          <ref role="2oAawc" node="VQwemthcWB" resolve="lowerBound" />
+                        </node>
+                      </node>
+                      <node concept="2oAaUa" id="2oX3QL6QMnY" role="2oAaxa">
+                        <node concept="3B6VN0" id="2oX3QL6QMGK" role="2oAawB">
+                          <ref role="3B56nS" node="2oX3QL6Q$_c" resolve="upperbound" />
+                        </node>
+                        <node concept="3B6VN0" id="2oX3QL6QMG$" role="2oAawD">
+                          <ref role="3B56nS" node="2oX3QL6QMme" resolve="Reference" />
+                        </node>
+                        <node concept="2oAawe" id="2oX3QL6QMo1" role="2oAawy">
+                          <ref role="2oAawc" node="VQwemthcXB" resolve="upperBound" />
+                        </node>
+                      </node>
+                      <node concept="2oAaUa" id="2oX3QL6QMo2" role="2oAaxa">
+                        <node concept="3B6VN0" id="2oX3QL6QMGN" role="2oAawB">
+                          <ref role="3B56nS" node="2oX3QL6Q$_l" resolve="ordered" />
+                        </node>
+                        <node concept="3B6VN0" id="2oX3QL6QMGB" role="2oAawD">
+                          <ref role="3B56nS" node="2oX3QL6QMme" resolve="Reference" />
+                        </node>
+                        <node concept="2oAawe" id="2oX3QL6QMo5" role="2oAawy">
+                          <ref role="2oAawc" node="VQwemtjIje" resolve="ordered" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3B6VN1" id="2oX3QL6Q$_l" role="3B56n9">
+                      <property role="TrG5h" value="ordered" />
+                    </node>
+                  </node>
+                  <node concept="3B6VN1" id="2oX3QL6Q$_c" role="3B56n9">
+                    <property role="TrG5h" value="upperbound" />
+                  </node>
+                </node>
+                <node concept="3B6VN1" id="2oX3QL6Q$_3" role="3B56n9">
+                  <property role="TrG5h" value="lowerbound" />
+                </node>
+              </node>
+              <node concept="3B6VN1" id="2oX3QL6Q$$D" role="3B56n9">
+                <property role="TrG5h" value="containment" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="kds5u" id="2oX3QL6R_4l" role="kdsQe">
+          <property role="TrG5h" value="Inheritance" />
+          <node concept="3B6VN2" id="2oX3QL6R_jO" role="kdsPW">
+            <node concept="3B6VN1" id="2oX3QL6R_jQ" role="3B56n9">
+              <property role="TrG5h" value="M2MESuperType" />
+            </node>
+            <node concept="3B6VN2" id="2oX3QL6R_4n" role="3B56nf">
+              <node concept="3B6VN2" id="2oX3QL6R_5d" role="3B56nf">
+                <node concept="2oAaTp" id="2oX3QL6R_5m" role="3B56nf">
+                  <ref role="19kf5F" node="VQwemtjYD0" resolve="Ecore" />
+                  <node concept="2oAaUa" id="2oX3QL6R_jn" role="2oAaxa">
+                    <node concept="3B6VN0" id="2oX3QL6R_mw" role="2oAawB">
+                      <ref role="3B56nS" node="2oX3QL6R_4r" resolve="Inheriting" />
+                    </node>
+                    <node concept="3B6VN0" id="2oX3QL6R_mt" role="2oAawD">
+                      <ref role="3B56nS" node="2oX3QL6R_jQ" resolve="M2MESuperType" />
+                    </node>
+                    <node concept="2oAawe" id="2oX3QL6R_jq" role="2oAawy">
+                      <ref role="2oAawc" node="VQwemtjJWd" resolve="forEClass" />
+                    </node>
+                  </node>
+                  <node concept="2oAaUa" id="2oX3QL6R_jr" role="2oAaxa">
+                    <node concept="3B6VN0" id="2oX3QL6R_mz" role="2oAawD">
+                      <ref role="3B56nS" node="2oX3QL6R_jQ" resolve="M2MESuperType" />
+                    </node>
+                    <node concept="2oAawe" id="2oX3QL6R_jt" role="2oAawy">
+                      <ref role="2oAawc" node="VQwemtjTds" resolve="eSuperTypes" />
+                    </node>
+                    <node concept="3B6VN0" id="2oX3QL6R_mA" role="2oAawB">
+                      <ref role="3B56nS" node="2oX3QL6R_5h" resolve="Inherited" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3B6VN1" id="2oX3QL6R_5h" role="3B56n9">
+                  <property role="TrG5h" value="Inherited" />
+                </node>
+              </node>
+              <node concept="3B6VN1" id="2oX3QL6R_4r" role="3B56n9">
+                <property role="TrG5h" value="Inheriting" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2jq5PB" id="4it7xKEMLYK" role="2oAaxa" />
+      <node concept="2oAaW5" id="VQwemtk49p" role="2oAaxa">
+        <property role="TrG5h" value="String" />
+        <node concept="2oAaXF" id="VQwemtk4ai" role="2oAawq">
           <ref role="2oAaID" node="VQwemthcQL" resolve="EClass" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="VQwemtk4dl" role="2oAaxa">
+        <property role="TrG5h" value="Name" />
+        <node concept="2oAaXF" id="VQwemtk4ek" role="2oAawq">
+          <ref role="2oAaID" node="VQwemthcSo" resolve="String" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="VQwemtk1V8" role="2oAaxa">
+        <property role="TrG5h" value="NameRoute" />
+        <node concept="2oAaXF" id="VQwemtk1Vj" role="2oAawq">
+          <ref role="2oAaID" node="VQwemthcQQ" resolve="EAttribute" />
+        </node>
+      </node>
+      <node concept="2yUw1A" id="4it7xKEN0h8" role="2oAaxa">
+        <property role="TrG5h" value="Name" />
+        <node concept="2oAaXF" id="4it7xKEN0j6" role="3B56nu">
+          <ref role="2oAaID" node="VQwemtk4dl" resolve="Name" />
+        </node>
+        <node concept="2yUw1A" id="4it7xKEN05Q" role="3B56no">
+          <property role="TrG5h" value="Type" />
+          <node concept="2oAaXF" id="4it7xKEN07D" role="3B56nu">
+            <ref role="2oAaID" node="VQwemtk49p" resolve="String" />
+          </node>
+          <node concept="2yUw1A" id="4it7xKEN018" role="3B56no">
+            <property role="TrG5h" value="StructuralFeature" />
+            <node concept="2oAaXF" id="4it7xKEN02M" role="3B56nu">
+              <ref role="2oAaID" node="VQwemtk1V8" resolve="NameRoute" />
+            </node>
+            <node concept="kdsPF" id="4it7xKEN02J" role="3B56no">
+              <ref role="kdsPE" node="4it7xKEMM1f" resolve="StructuralFeatureTypeAndName" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2jq5PB" id="VQwemtDfQL" role="2oAaxa" />
+      <node concept="2oAaW5" id="VQwemtk1Xm" role="2oAaxa">
+        <property role="TrG5h" value="RouteName" />
+        <node concept="2oAaXF" id="VQwemtk1XE" role="2oAawq">
+          <ref role="2oAaID" node="VQwemtjLyI" resolve="M2MeAttributes" />
         </node>
       </node>
       <node concept="2oAaW5" id="VQwemtk1TV" role="2oAaxa">
@@ -1463,51 +1735,10 @@
           <ref role="2oAaID" node="VQwemthcQL" resolve="EClass" />
         </node>
       </node>
-      <node concept="2oAaW5" id="VQwemtk49p" role="2oAaxa">
-        <property role="TrG5h" value="String" />
-        <node concept="2oAaXF" id="VQwemtk4ai" role="2oAawq">
-          <ref role="2oAaID" node="VQwemthcQL" resolve="EClass" />
-        </node>
-      </node>
-      <node concept="2oAaW5" id="VQwemtk4dl" role="2oAaxa">
-        <property role="TrG5h" value="name" />
-        <node concept="2oAaXF" id="VQwemtk4ek" role="2oAawq">
-          <ref role="2oAaID" node="VQwemthcSo" resolve="String" />
-        </node>
-      </node>
-      <node concept="2oAaW5" id="VQwemtk1V8" role="2oAaxa">
-        <property role="TrG5h" value="nameRoute" />
-        <node concept="2oAaXF" id="VQwemtk1Vj" role="2oAawq">
+      <node concept="2oAaW5" id="4it7xKEN0YS" role="2oAaxa">
+        <property role="TrG5h" value="NameRoute" />
+        <node concept="2oAaXF" id="4it7xKEN0YT" role="2oAawq">
           <ref role="2oAaID" node="VQwemthcQQ" resolve="EAttribute" />
-        </node>
-      </node>
-      <node concept="2oAaUZ" id="VQwemtk47x" role="2oAaxa">
-        <property role="TrG5h" value="value" />
-        <node concept="2oAaXF" id="VQwemtk4ak" role="2oAawB">
-          <ref role="2oAaID" node="VQwemtk49p" resolve="String" />
-        </node>
-        <node concept="2oAaXF" id="VQwemtk48s" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk1V8" resolve="nameRoute" />
-        </node>
-        <node concept="2oAawe" id="VQwemtk48v" role="2oAawy">
-          <ref role="2oAawc" node="VQwemtjJLZ" resolve="eType" />
-        </node>
-      </node>
-      <node concept="2oAaUa" id="VQwemtk4bh" role="2oAaxa">
-        <node concept="2oAaXF" id="VQwemtk4em" role="2oAawB">
-          <ref role="2oAaID" node="VQwemtk4dl" resolve="name" />
-        </node>
-        <node concept="2oAaXF" id="VQwemtk4ci" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk1V8" resolve="nameRoute" />
-        </node>
-        <node concept="2oAawe" id="VQwemtk4cl" role="2oAawy">
-          <ref role="2oAawc" node="VQwemthcRK" resolve="name" />
-        </node>
-      </node>
-      <node concept="2oAaW5" id="VQwemtk1Xm" role="2oAaxa">
-        <property role="TrG5h" value="M2MRouteName" />
-        <node concept="2oAaXF" id="VQwemtk1XE" role="2oAawq">
-          <ref role="2oAaID" node="VQwemtjLyI" resolve="M2MeAttributes" />
         </node>
       </node>
       <node concept="2oAaUZ" id="VQwemtk1Ye" role="2oAaxa">
@@ -1516,7 +1747,7 @@
           <ref role="2oAaID" node="VQwemtk1TV" resolve="Route" />
         </node>
         <node concept="2oAaXF" id="VQwemtk1YB" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk1Xm" resolve="M2MRouteName" />
+          <ref role="2oAaID" node="VQwemtk1Xm" resolve="RouteName" />
         </node>
         <node concept="2oAawe" id="VQwemtk1YE" role="2oAawy">
           <ref role="2oAawc" node="VQwemtjLDa" resolve="forEClass" />
@@ -1525,19 +1756,32 @@
       <node concept="2oAaUZ" id="VQwemtk1Z5" role="2oAaxa">
         <property role="TrG5h" value="name" />
         <node concept="2oAaXF" id="VQwemtk1ZB" role="2oAawB">
-          <ref role="2oAaID" node="VQwemtk1V8" resolve="nameRoute" />
+          <ref role="2oAaID" node="VQwemtk1V8" resolve="NameRoute" />
         </node>
         <node concept="2oAaXF" id="VQwemtk1Zy" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk1Xm" resolve="M2MRouteName" />
+          <ref role="2oAaID" node="VQwemtk1Xm" resolve="RouteName" />
         </node>
         <node concept="2oAawe" id="VQwemtk1Z_" role="2oAawy">
           <ref role="2oAawc" node="VQwemtjLGI" resolve="eAttributes" />
         </node>
       </node>
+      <node concept="2jq5PB" id="VQwemtDfRW" role="2oAaxa" />
       <node concept="2oAaW5" id="VQwemtk22e" role="2oAaxa">
         <property role="TrG5h" value="RouteToCommand" />
         <node concept="2oAaXF" id="VQwemtk22G" role="2oAawq">
           <ref role="2oAaID" node="VQwemthcR8" resolve="EReference" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="VQwemtk5Sj" role="2oAaxa">
+        <property role="TrG5h" value="contains" />
+        <node concept="2oAaXF" id="VQwemtk5To" role="2oAawq">
+          <ref role="2oAaID" node="VQwemthcSo" resolve="String" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="VQwemtk3j4" role="2oAaxa">
+        <property role="TrG5h" value="Command" />
+        <node concept="2oAaXF" id="VQwemtk3kx" role="2oAawq">
+          <ref role="2oAaID" node="VQwemthcQL" resolve="EClass" />
         </node>
       </node>
       <node concept="2oAaW5" id="VQwemtk23U" role="2oAaxa">
@@ -1558,83 +1802,77 @@
           <ref role="2oAaID" node="VQwemthcSM" resolve="int" />
         </node>
       </node>
-      <node concept="2oAaW5" id="VQwemtk5Sj" role="2oAaxa">
-        <property role="TrG5h" value="contains" />
-        <node concept="2oAaXF" id="VQwemtk5To" role="2oAawq">
-          <ref role="2oAaID" node="VQwemthcSo" resolve="String" />
-        </node>
-      </node>
-      <node concept="2oAaUZ" id="VQwemtk6kD" role="2oAaxa">
-        <property role="TrG5h" value="command" />
-        <node concept="2oAaXF" id="VQwemtk6lV" role="2oAawB">
-          <ref role="2oAaID" node="VQwemtk3j4" resolve="Command" />
-        </node>
-        <node concept="2oAaXF" id="VQwemtk6lQ" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk22e" resolve="RouteToCommand" />
-        </node>
-        <node concept="2oAawe" id="VQwemtk6lT" role="2oAawy">
-          <ref role="2oAawc" node="VQwemtjJLZ" resolve="eType" />
-        </node>
-      </node>
-      <node concept="2oAaUa" id="VQwemtk5Q0" role="2oAaxa">
-        <node concept="2oAaXF" id="VQwemtk5Tq" role="2oAawB">
+      <node concept="2yUw1A" id="4it7xKEN0_5" role="2oAaxa">
+        <property role="TrG5h" value="Name" />
+        <node concept="2oAaXF" id="4it7xKEN0Cr" role="3B56nu">
           <ref role="2oAaID" node="VQwemtk5Sj" resolve="contains" />
         </node>
-        <node concept="2oAaXF" id="VQwemtk5Ra" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk22e" resolve="RouteToCommand" />
-        </node>
-        <node concept="2oAawe" id="VQwemtk5Rd" role="2oAawy">
-          <ref role="2oAawc" node="VQwemthcUT" resolve="name" />
+        <node concept="2yUw1A" id="4it7xKEN0_7" role="3B56no">
+          <property role="TrG5h" value="Type" />
+          <node concept="2oAaXF" id="4it7xKEN0Co" role="3B56nu">
+            <ref role="2oAaID" node="VQwemtk3j4" resolve="Command" />
+          </node>
+          <node concept="2yUw1A" id="4it7xKEN0_9" role="3B56no">
+            <property role="TrG5h" value="StructuralFeature" />
+            <node concept="2oAaXF" id="4it7xKEN0Cl" role="3B56nu">
+              <ref role="2oAaID" node="VQwemtk22e" resolve="RouteToCommand" />
+            </node>
+            <node concept="kdsPF" id="4it7xKEN0_b" role="3B56no">
+              <ref role="kdsPE" node="4it7xKEMM1f" resolve="StructuralFeatureTypeAndName" />
+            </node>
+          </node>
         </node>
       </node>
-      <node concept="2oAaUa" id="VQwemtk286" role="2oAaxa">
-        <node concept="2oAaXF" id="VQwemtk28V" role="2oAawB">
+      <node concept="2yUw1A" id="2oX3QL6QNm7" role="2oAaxa">
+        <property role="TrG5h" value="ordered" />
+        <node concept="2oAaXF" id="2oX3QL6QNoL" role="3B56nu">
           <ref role="2oAaID" node="VQwemtk23U" resolve="true" />
         </node>
-        <node concept="2oAaXF" id="VQwemtk28S" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk22e" resolve="RouteToCommand" />
-        </node>
-        <node concept="2oAawe" id="VQwemtk28Q" role="2oAawy">
-          <ref role="2oAawc" node="VQwemthcVH" resolve="containment" />
-        </node>
-      </node>
-      <node concept="2oAaUa" id="VQwemtk3Gx" role="2oAaxa">
-        <node concept="2oAaXF" id="VQwemtk3IK" role="2oAawB">
-          <ref role="2oAaID" node="VQwemtk3I1" resolve="0" />
-        </node>
-        <node concept="2oAaXF" id="VQwemtk3Hg" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk22e" resolve="RouteToCommand" />
-        </node>
-        <node concept="2oAawe" id="VQwemtk3Hj" role="2oAawy">
-          <ref role="2oAawc" node="VQwemthcWB" resolve="lowerBound" />
-        </node>
-      </node>
-      <node concept="2oAaUa" id="VQwemtk3Jx" role="2oAaxa">
-        <node concept="2oAaXF" id="VQwemtk3M2" role="2oAawB">
-          <ref role="2oAaID" node="VQwemtk3Ld" resolve="-1" />
-        </node>
-        <node concept="2oAaXF" id="VQwemtk3Km" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk22e" resolve="RouteToCommand" />
-        </node>
-        <node concept="2oAawe" id="VQwemtk3Kp" role="2oAawy">
-          <ref role="2oAawc" node="VQwemthcXB" resolve="upperBound" />
-        </node>
-      </node>
-      <node concept="2oAaUa" id="VQwemtk6h6" role="2oAaxa">
-        <node concept="2oAaXF" id="VQwemtk6io" role="2oAawB">
-          <ref role="2oAaID" node="VQwemtk23U" resolve="true" />
-        </node>
-        <node concept="2oAaXF" id="VQwemtk6ij" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk22e" resolve="RouteToCommand" />
-        </node>
-        <node concept="2oAawe" id="VQwemtk6im" role="2oAawy">
-          <ref role="2oAawc" node="VQwemtjIje" resolve="ordered" />
+        <node concept="2yUw1A" id="2oX3QL6QNft" role="3B56no">
+          <property role="TrG5h" value="upperbound" />
+          <node concept="2oAaXF" id="2oX3QL6QNhZ" role="3B56nu">
+            <ref role="2oAaID" node="VQwemtk3Ld" resolve="-1" />
+          </node>
+          <node concept="2yUw1A" id="2oX3QL6QN8N" role="3B56no">
+            <property role="TrG5h" value="lowerbound" />
+            <node concept="2oAaXF" id="2oX3QL6QNbd" role="3B56nu">
+              <ref role="2oAaID" node="VQwemtk3I1" resolve="0" />
+            </node>
+            <node concept="2yUw1A" id="2oX3QL6QN2t" role="3B56no">
+              <property role="TrG5h" value="containment" />
+              <node concept="2oAaXF" id="2oX3QL6QN4J" role="3B56nu">
+                <ref role="2oAaID" node="VQwemtk23U" resolve="true" />
+              </node>
+              <node concept="2yUw1A" id="2oX3QL6QMWi" role="3B56no">
+                <property role="TrG5h" value="Reference" />
+                <node concept="2oAaXF" id="2oX3QL6QMYr" role="3B56nu">
+                  <ref role="2oAaID" node="VQwemtk22e" resolve="RouteToCommand" />
+                </node>
+                <node concept="kdsPF" id="2oX3QL6QMYo" role="3B56no">
+                  <ref role="kdsPE" node="2oX3QL6Q$$z" resolve="ReferenceConstants" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
+      <node concept="2jq5PB" id="VQwemtDfT8" role="2oAaxa" />
       <node concept="2oAaW5" id="VQwemtk21j" role="2oAaxa">
         <property role="TrG5h" value="M2MRouteCommand" />
         <node concept="2oAaXF" id="VQwemtk21J" role="2oAawq">
           <ref role="2oAaID" node="VQwemtjL_W" resolve="M2MeReferences" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="4it7xKEN0Re" role="2oAaxa">
+        <property role="TrG5h" value="RouteToCommand" />
+        <node concept="2oAaXF" id="4it7xKEN0Rf" role="2oAawq">
+          <ref role="2oAaID" node="VQwemthcR8" resolve="EReference" />
+        </node>
+      </node>
+      <node concept="2oAaW5" id="4it7xKEN0ME" role="2oAaxa">
+        <property role="TrG5h" value="Route" />
+        <node concept="2oAaXF" id="4it7xKEN0MF" role="2oAawq">
+          <ref role="2oAaID" node="VQwemthcQL" resolve="EClass" />
         </node>
       </node>
       <node concept="2oAaUZ" id="VQwemtk2aX" role="2oAaxa">
@@ -1662,6 +1900,7 @@
         </node>
       </node>
     </node>
+    <node concept="2jq5PB" id="4it7xKEN0kA" role="2oAaxa" />
     <node concept="2oAaVg" id="VQwemtk2X$" role="2oAaxa">
       <property role="TrG5h" value="TurnCommand" />
       <node concept="2oAaW5" id="VQwemtk1U3" role="2oAaxa">
@@ -1690,28 +1929,28 @@
           <ref role="2oAaID" node="VQwemtjLux" resolve="M2MeSuperTypes" />
         </node>
       </node>
-      <node concept="2oAaUa" id="VQwemtk2vZ" role="2oAaxa">
-        <node concept="2oAaXF" id="VQwemtk2wX" role="2oAawB">
-          <ref role="2oAaID" node="VQwemtk1Ug" resolve="TurnCommand" />
-        </node>
-        <node concept="2oAaXF" id="VQwemtk2wS" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk2uq" resolve="M2MTurnCommandInheritsCommand" />
-        </node>
-        <node concept="2oAawe" id="VQwemtk2wV" role="2oAawy">
-          <ref role="2oAawc" node="VQwemtjJWd" resolve="forEClass" />
-        </node>
-      </node>
-      <node concept="2oAaUa" id="VQwemtk2xQ" role="2oAaxa">
-        <node concept="2oAaXF" id="VQwemtk2yN" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk2uq" resolve="M2MTurnCommandInheritsCommand" />
-        </node>
-        <node concept="2oAawe" id="VQwemtk2yX" role="2oAawy">
-          <ref role="2oAawc" node="VQwemtjTds" resolve="eSuperTypes" />
-        </node>
-        <node concept="2oAaXF" id="VQwemtk2z0" role="2oAawB">
+      <node concept="2yUw1A" id="2oX3QL6R_FP" role="2oAaxa">
+        <property role="TrG5h" value="Inherited" />
+        <node concept="2oAaXF" id="2oX3QL6R_GP" role="3B56nu">
           <ref role="2oAaID" node="VQwemtk1U3" resolve="Command" />
         </node>
+        <node concept="2yUw1A" id="2oX3QL6R_s8" role="3B56no">
+          <property role="TrG5h" value="Inheriting" />
+          <node concept="2oAaYs" id="2oX3QL6R_t0" role="3B56nu">
+            <ref role="2oAaIS" node="VQwemtk2X$" resolve="TurnCommand" />
+          </node>
+          <node concept="2yUw1A" id="2oX3QL6R_ov" role="3B56no">
+            <property role="TrG5h" value="M2MESuperType" />
+            <node concept="2oAaXF" id="2oX3QL6R_qU" role="3B56nu">
+              <ref role="2oAaID" node="VQwemtk2uq" resolve="M2MTurnCommandInheritsCommand" />
+            </node>
+            <node concept="kdsPF" id="2oX3QL6R_qR" role="3B56no">
+              <ref role="kdsPE" node="2oX3QL6R_4l" resolve="Inheritance" />
+            </node>
+          </node>
+        </node>
       </node>
+      <node concept="2jq5PB" id="2oX3QL6R_Fg" role="2oAaxa" />
       <node concept="2oAaW5" id="VQwemtk1Vx" role="2oAaxa">
         <property role="TrG5h" value="side" />
         <node concept="2oAaXF" id="VQwemtk1VI" role="2oAawq">
@@ -1753,6 +1992,7 @@
           <ref role="2oAawc" node="VQwemthcRK" resolve="name" />
         </node>
       </node>
+      <node concept="2jq5PB" id="2oX3QL6Q$jl" role="2oAaxa" />
       <node concept="2oAaW5" id="VQwemtk2AE" role="2oAaxa">
         <property role="TrG5h" value="M2MTurnCommandSide" />
         <node concept="2oAaXF" id="VQwemtk2B_" role="2oAawq">
@@ -1784,6 +2024,7 @@
         </node>
       </node>
     </node>
+    <node concept="2jq5PB" id="4it7xKEN0nq" role="2oAaxa" />
     <node concept="2oAaVg" id="VQwemtk32z" role="2oAaxa">
       <property role="TrG5h" value="ForwardCommand" />
       <node concept="2oAaW5" id="VQwemtk35v" role="2oAaxa">
@@ -1812,28 +2053,28 @@
           <ref role="2oAaID" node="VQwemtjLux" resolve="M2MeSuperTypes" />
         </node>
       </node>
-      <node concept="2oAaUa" id="VQwemtk2HF" role="2oAaxa">
-        <node concept="2oAaXF" id="VQwemtk2IZ" role="2oAawB">
-          <ref role="2oAaID" node="VQwemtk1Ux" resolve="ForwardCommand" />
-        </node>
-        <node concept="2oAaXF" id="VQwemtk2HH" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk2HD" resolve="M2MForwardCommandInheritsCommand" />
-        </node>
-        <node concept="2oAawe" id="VQwemtk2HI" role="2oAawy">
-          <ref role="2oAawc" node="VQwemtjJWd" resolve="forEClass" />
-        </node>
-      </node>
-      <node concept="2oAaUa" id="VQwemtk2HJ" role="2oAaxa">
-        <node concept="2oAaXF" id="VQwemtk2HK" role="2oAawD">
-          <ref role="2oAaID" node="VQwemtk2HD" resolve="M2MForwardCommandInheritsCommand" />
-        </node>
-        <node concept="2oAawe" id="VQwemtk2HL" role="2oAawy">
-          <ref role="2oAawc" node="VQwemtjTds" resolve="eSuperTypes" />
-        </node>
-        <node concept="2oAaXF" id="VQwemtk2HM" role="2oAawB">
+      <node concept="2yUw1A" id="2oX3QL6R_Iu" role="2oAaxa">
+        <property role="TrG5h" value="Inherited" />
+        <node concept="2oAaXF" id="2oX3QL6R_Iv" role="3B56nu">
           <ref role="2oAaID" node="VQwemtk35v" resolve="Command" />
         </node>
+        <node concept="2yUw1A" id="2oX3QL6R_Iw" role="3B56no">
+          <property role="TrG5h" value="Inheriting" />
+          <node concept="2oAaYs" id="2oX3QL6R_Jh" role="3B56nu">
+            <ref role="2oAaIS" node="VQwemtk32z" resolve="ForwardCommand" />
+          </node>
+          <node concept="2yUw1A" id="2oX3QL6R_Iy" role="3B56no">
+            <property role="TrG5h" value="M2MESuperType" />
+            <node concept="2oAaXF" id="2oX3QL6R_Jk" role="3B56nu">
+              <ref role="2oAaID" node="VQwemtk2HD" resolve="M2MForwardCommandInheritsCommand" />
+            </node>
+            <node concept="kdsPF" id="2oX3QL6R_I$" role="3B56no">
+              <ref role="kdsPE" node="2oX3QL6R_4l" resolve="Inheritance" />
+            </node>
+          </node>
+        </node>
       </node>
+      <node concept="2jq5PB" id="2oX3QL6Q$kG" role="2oAaxa" />
       <node concept="2oAaW5" id="VQwemtk1VY" role="2oAaxa">
         <property role="TrG5h" value="distance" />
         <node concept="2oAaXF" id="VQwemtk1Wd" role="2oAawq">
@@ -1875,6 +2116,7 @@
           <ref role="2oAawc" node="VQwemthcRK" resolve="name" />
         </node>
       </node>
+      <node concept="2jq5PB" id="2oX3QL6Q$lo" role="2oAaxa" />
       <node concept="2oAaW5" id="VQwemtk2KS" role="2oAaxa">
         <property role="TrG5h" value="M2MForwardCommandDistance" />
         <node concept="2oAaXF" id="VQwemtk2KT" role="2oAawq">
@@ -2079,7 +2321,7 @@
       <node concept="2oAaW5" id="VQwemtk3XQ" role="2oAaxa">
         <property role="TrG5h" value="A_to_C_nameRoute" />
         <node concept="2oAaXF" id="VQwemtk3Y1" role="2oAawq">
-          <ref role="2oAaID" node="VQwemtk1V8" resolve="nameRoute" />
+          <ref role="2oAaID" node="VQwemtk1V8" resolve="NameRoute" />
         </node>
       </node>
       <node concept="2oAaW5" id="VQwemtk4HP" role="2oAaxa">
@@ -2091,7 +2333,7 @@
       <node concept="2oAaW5" id="VQwemtk3YT" role="2oAaxa">
         <property role="TrG5h" value="A_to_C_Route_name" />
         <node concept="2oAaXF" id="VQwemtk3Z9" role="2oAawq">
-          <ref role="2oAaID" node="VQwemtk1Xm" resolve="M2MRouteName" />
+          <ref role="2oAaID" node="VQwemtk1Xm" resolve="RouteName" />
         </node>
       </node>
       <node concept="2oAaUa" id="VQwemtk4Hc" role="2oAaxa">
@@ -2191,8 +2433,8 @@
       </node>
       <node concept="2oAaW5" id="VQwemtk5zw" role="2oAaxa">
         <property role="TrG5h" value="B_turn_C_Left_side" />
-        <node concept="2oAawe" id="VQwemtk5zB" role="2oAawq">
-          <ref role="2oAawc" node="VQwemtk2EI" resolve="side" />
+        <node concept="2oAaXF" id="4KCs5oxF8zE" role="2oAawq">
+          <ref role="2oAaID" node="VQwemtk1Vx" resolve="side" />
         </node>
       </node>
       <node concept="2oAaW5" id="VQwemtk5zL" role="2oAaxa">
@@ -2208,8 +2450,8 @@
         <node concept="2oAaXF" id="VQwemtk5$n" role="2oAawD">
           <ref role="2oAaID" node="VQwemtk5zw" resolve="B_turn_C_Left_side" />
         </node>
-        <node concept="2oAawe" id="VQwemtk5$q" role="2oAawy">
-          <ref role="2oAawc" node="VQwemtk47x" resolve="value" />
+        <node concept="2oAawe" id="4KCs5oxG89E" role="2oAawy">
+          <ref role="2oAawc" node="VQwemtk4eP" resolve="value" />
         </node>
       </node>
       <node concept="2oAaUa" id="VQwemtk5$H" role="2oAaxa">
