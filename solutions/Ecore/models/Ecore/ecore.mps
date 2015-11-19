@@ -914,7 +914,7 @@
   <node concept="2oAaVg" id="VQwemtjQDR">
     <property role="TrG5h" value="Classifiers" />
     <node concept="2oAaVg" id="VQwemtjQMA" role="2oAaxa">
-      <property role="TrG5h" value="PropertiedClassifiers" />
+      <property role="TrG5h" value="PropertiesClassifiers" />
       <node concept="2oAaW5" id="VQwemtjQRb" role="2oAaxa">
         <property role="TrG5h" value="EClassifier" />
       </node>
