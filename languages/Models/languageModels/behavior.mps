@@ -210,9 +210,16 @@
       <concept id="1200830824066" name="jetbrains.mps.baseLanguage.closures.structure.YieldStatement" flags="nn" index="2n63Yl">
         <child id="1200830928149" name="expression" index="2n6tg2" />
       </concept>
+      <concept id="1235746970280" name="jetbrains.mps.baseLanguage.closures.structure.CompactInvokeFunctionExpression" flags="nn" index="2Sg_IR">
+        <child id="1235746996653" name="function" index="2SgG2M" />
+        <child id="1235747002942" name="parameter" index="2SgHGx" />
+      </concept>
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+      <concept id="1199711271002" name="jetbrains.mps.baseLanguage.closures.structure.InvokeExpression" flags="nn" index="1knj_d">
+        <child id="1199711344856" name="parameter" index="1kn_Bf" />
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
@@ -8180,6 +8187,409 @@
   </node>
   <node concept="312cEu" id="7nF4KJrH2Ku">
     <property role="TrG5h" value="VisualizeUtilityMethods" />
+    <node concept="2YIFZL" id="2CNdJfw44CG" role="jymVt">
+      <property role="TrG5h" value="writeGIFImage" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2CNdJfw44CJ" role="3clF47">
+        <node concept="3cpWs8" id="7mq2LM7$KMC" role="3cqZAp">
+          <node concept="3cpWsn" id="7mq2LM7$KMD" role="3cpWs9">
+            <property role="TrG5h" value="graph" />
+            <node concept="3uibUv" id="7mq2LM7$KME" role="1tU5fm">
+              <ref role="3uigEE" to="1cio:~GraphViz" resolve="GraphViz" />
+            </node>
+            <node concept="2ShNRf" id="7mq2LM7$KN3" role="33vP2m">
+              <node concept="1pGfFk" id="7mq2LM7_gft" role="2ShVmc">
+                <ref role="37wK5l" to="1cio:~GraphViz.&lt;init&gt;()" resolve="GraphViz" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7nF4KJrIK9x" role="3cqZAp">
+          <node concept="3cpWsn" id="7nF4KJrIK9y" role="3cpWs9">
+            <property role="TrG5h" value="rand" />
+            <node concept="3uibUv" id="7nF4KJrIK9z" role="1tU5fm">
+              <ref role="3uigEE" to="k7g3:~Random" resolve="Random" />
+            </node>
+            <node concept="2ShNRf" id="7nF4KJrIKqK" role="33vP2m">
+              <node concept="1pGfFk" id="7nF4KJrIZgQ" role="2ShVmc">
+                <ref role="37wK5l" to="k7g3:~Random.&lt;init&gt;()" resolve="Random" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7nF4KJrJBBQ" role="3cqZAp">
+          <node concept="3cpWsn" id="7nF4KJrJBBR" role="3cpWs9">
+            <property role="TrG5h" value="graphName" />
+            <node concept="17QB3L" id="7nF4KJrRg6Y" role="1tU5fm" />
+            <node concept="2YIFZM" id="7nF4KJrJHFi" role="33vP2m">
+              <ref role="37wK5l" node="7nF4KJrJCPt" resolve="labelOfCluster" />
+              <ref role="1Pybhc" node="7nF4KJrH2Ku" resolve="VisualizeUtilityMethods" />
+              <node concept="37vLTw" id="2CNdJfw4nYV" role="37wK5m">
+                <ref role="3cqZAo" node="2CNdJfw46Jn" resolve="node" />
+              </node>
+              <node concept="37vLTw" id="7nF4KJrJHFk" role="37wK5m">
+                <ref role="3cqZAo" node="7nF4KJrIK9y" resolve="rand" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7mq2LM7_hgB" role="3cqZAp" />
+        <node concept="3clFbF" id="7mq2LM7_hl7" role="3cqZAp">
+          <node concept="2OqwBi" id="7mq2LM7_lu_" role="3clFbG">
+            <node concept="37vLTw" id="7mq2LM7_hl5" role="2Oq$k0">
+              <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+            </node>
+            <node concept="liA8E" id="7mq2LM7_odK" role="2OqNvi">
+              <ref role="37wK5l" to="1cio:~GraphViz.addln(java.lang.String):void" resolve="addln" />
+              <node concept="2OqwBi" id="7mq2LM7_ofw" role="37wK5m">
+                <node concept="37vLTw" id="7mq2LM7_oen" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+                </node>
+                <node concept="liA8E" id="7mq2LM7_oq$" role="2OqNvi">
+                  <ref role="37wK5l" to="1cio:~GraphViz.start_graph():java.lang.String" resolve="start_graph" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7nF4KJrVg$2" role="3cqZAp">
+          <node concept="2OqwBi" id="7nF4KJrVgKT" role="3clFbG">
+            <node concept="37vLTw" id="7nF4KJrVg$0" role="2Oq$k0">
+              <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+            </node>
+            <node concept="liA8E" id="7nF4KJrVh7p" role="2OqNvi">
+              <ref role="37wK5l" to="1cio:~GraphViz.addln(java.lang.String):void" resolve="addln" />
+              <node concept="3cpWs3" id="7nF4KJrVhCZ" role="37wK5m">
+                <node concept="Xl_RD" id="7nF4KJrVhG8" role="3uHU7w">
+                  <property role="Xl_RC" value=";" />
+                </node>
+                <node concept="3cpWs3" id="7nF4KJrVhfB" role="3uHU7B">
+                  <node concept="Xl_RD" id="7nF4KJrVh8g" role="3uHU7B">
+                    <property role="Xl_RC" value="label=" />
+                  </node>
+                  <node concept="37vLTw" id="7nF4KJrVhpT" role="3uHU7w">
+                    <ref role="3cqZAo" node="7nF4KJrJBBR" resolve="graphName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7nF4KJrFKDi" role="3cqZAp" />
+        <node concept="3clFbF" id="7nF4KJrR4Zi" role="3cqZAp">
+          <node concept="2YIFZM" id="7nF4KJrR56K" role="3clFbG">
+            <ref role="37wK5l" node="7nF4KJrQLf5" resolve="handleRelations" />
+            <ref role="1Pybhc" node="7nF4KJrH2Ku" resolve="VisualizeUtilityMethods" />
+            <node concept="37vLTw" id="2CNdJfw4o6i" role="37wK5m">
+              <ref role="3cqZAo" node="2CNdJfw46Jn" resolve="node" />
+            </node>
+            <node concept="37vLTw" id="7nF4KJrR5$e" role="37wK5m">
+              <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+            </node>
+            <node concept="37vLTw" id="7nF4KJrR5Z6" role="37wK5m">
+              <ref role="3cqZAo" node="7nF4KJrIK9y" resolve="rand" />
+            </node>
+            <node concept="37vLTw" id="7nF4KJrR5ZU" role="37wK5m">
+              <ref role="3cqZAo" node="7nF4KJrJBBR" resolve="graphName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7nF4KJrULJI" role="3cqZAp">
+          <node concept="2YIFZM" id="7nF4KJrUM1o" role="3clFbG">
+            <ref role="1Pybhc" node="7nF4KJrH2Ku" resolve="VisualizeUtilityMethods" />
+            <ref role="37wK5l" node="7nF4KJrSXIT" resolve="handleRefToSMs" />
+            <node concept="37vLTw" id="2CNdJfw4oa6" role="37wK5m">
+              <ref role="3cqZAo" node="2CNdJfw46Jn" resolve="node" />
+            </node>
+            <node concept="37vLTw" id="7nF4KJrUM9V" role="37wK5m">
+              <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+            </node>
+            <node concept="37vLTw" id="7nF4KJrUMa_" role="37wK5m">
+              <ref role="3cqZAo" node="7nF4KJrJBBR" resolve="graphName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7nF4KJrR60C" role="3cqZAp" />
+        <node concept="3clFbF" id="7nF4KJrR6fI" role="3cqZAp">
+          <node concept="2Sg_IR" id="7nF4KJrR6of" role="3clFbG">
+            <node concept="1bVj0M" id="7nF4KJrR6og" role="2SgG2M">
+              <node concept="3clFbS" id="7nF4KJrR6oh" role="1bW5cS">
+                <node concept="1DcWWT" id="7nF4KJrRctV" role="3cqZAp">
+                  <node concept="3cpWsn" id="7nF4KJrRctW" role="1Duv9x">
+                    <property role="TrG5h" value="sm" />
+                    <node concept="3Tqbb2" id="7nF4KJrRc_j" role="1tU5fm">
+                      <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="7nF4KJrRctX" role="2LFqv$">
+                    <node concept="3clFbF" id="7nF4KJrRdxu" role="3cqZAp">
+                      <node concept="2OqwBi" id="7nF4KJrRdz0" role="3clFbG">
+                        <node concept="37vLTw" id="7nF4KJrRdxt" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+                        </node>
+                        <node concept="liA8E" id="7nF4KJrRdMy" role="2OqNvi">
+                          <ref role="37wK5l" to="1cio:~GraphViz.addln(java.lang.String):void" resolve="addln" />
+                          <node concept="2OqwBi" id="7nF4KJrRdUw" role="37wK5m">
+                            <node concept="37vLTw" id="7nF4KJrRdSN" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+                            </node>
+                            <node concept="liA8E" id="7nF4KJrRebQ" role="2OqNvi">
+                              <ref role="37wK5l" to="1cio:~GraphViz.start_subgraph(int):java.lang.String" resolve="start_subgraph" />
+                              <node concept="2OqwBi" id="7nF4KJrRevI" role="37wK5m">
+                                <node concept="37vLTw" id="7nF4KJrRete" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="7nF4KJrIK9y" resolve="rand" />
+                                </node>
+                                <node concept="liA8E" id="7nF4KJrReN6" role="2OqNvi">
+                                  <ref role="37wK5l" to="k7g3:~Random.nextInt(int):int" resolve="nextInt" />
+                                  <node concept="10M0yZ" id="7nF4KJrReSI" role="37wK5m">
+                                    <ref role="1PxDUh" to="e2lb:~Integer" resolve="Integer" />
+                                    <ref role="3cqZAo" to="e2lb:~Integer.MAX_VALUE" resolve="MAX_VALUE" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="7nF4KJrSsUR" role="3cqZAp" />
+                    <node concept="3cpWs8" id="7nF4KJrRg7Y" role="3cqZAp">
+                      <node concept="3cpWsn" id="7nF4KJrRg81" role="3cpWs9">
+                        <property role="TrG5h" value="subGraphName" />
+                        <node concept="17QB3L" id="7nF4KJrRg7W" role="1tU5fm" />
+                        <node concept="2YIFZM" id="7nF4KJrRg$Q" role="33vP2m">
+                          <ref role="1Pybhc" node="7nF4KJrH2Ku" resolve="VisualizeUtilityMethods" />
+                          <ref role="37wK5l" node="7nF4KJrJCPt" resolve="labelOfCluster" />
+                          <node concept="37vLTw" id="7nF4KJrRgEG" role="37wK5m">
+                            <ref role="3cqZAo" node="7nF4KJrRctW" resolve="sm" />
+                          </node>
+                          <node concept="37vLTw" id="7nF4KJrRgP5" role="37wK5m">
+                            <ref role="3cqZAo" node="7nF4KJrIK9y" resolve="rand" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="7nF4KJrSu6R" role="3cqZAp" />
+                    <node concept="3clFbF" id="7nF4KJrSt22" role="3cqZAp">
+                      <node concept="2OqwBi" id="7nF4KJrSt6W" role="3clFbG">
+                        <node concept="37vLTw" id="7nF4KJrSt20" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+                        </node>
+                        <node concept="liA8E" id="7nF4KJrStjM" role="2OqNvi">
+                          <ref role="37wK5l" to="1cio:~GraphViz.addln(java.lang.String):void" resolve="addln" />
+                          <node concept="3cpWs3" id="7nF4KJrSv01" role="37wK5m">
+                            <node concept="Xl_RD" id="7nF4KJrSv8n" role="3uHU7w">
+                              <property role="Xl_RC" value=";" />
+                            </node>
+                            <node concept="3cpWs3" id="7nF4KJrStTQ" role="3uHU7B">
+                              <node concept="Xl_RD" id="7nF4KJrStun" role="3uHU7B">
+                                <property role="Xl_RC" value="label=" />
+                              </node>
+                              <node concept="37vLTw" id="7nF4KJrSuG5" role="3uHU7w">
+                                <ref role="3cqZAo" node="7nF4KJrRg81" resolve="subGraphName" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="7nF4KJrRh9s" role="3cqZAp" />
+                    <node concept="3clFbF" id="7nF4KJrRh2e" role="3cqZAp">
+                      <node concept="2YIFZM" id="7nF4KJrRhgD" role="3clFbG">
+                        <ref role="1Pybhc" node="7nF4KJrH2Ku" resolve="VisualizeUtilityMethods" />
+                        <ref role="37wK5l" node="7nF4KJrQLf5" resolve="handleRelations" />
+                        <node concept="37vLTw" id="7nF4KJrRhmI" role="37wK5m">
+                          <ref role="3cqZAo" node="7nF4KJrRctW" resolve="sm" />
+                        </node>
+                        <node concept="37vLTw" id="7nF4KJrRh_6" role="37wK5m">
+                          <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+                        </node>
+                        <node concept="37vLTw" id="7nF4KJrRhLM" role="37wK5m">
+                          <ref role="3cqZAo" node="7nF4KJrIK9y" resolve="rand" />
+                        </node>
+                        <node concept="37vLTw" id="7nF4KJrRhYE" role="37wK5m">
+                          <ref role="3cqZAo" node="7nF4KJrRg81" resolve="subGraphName" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="7nF4KJrUMlG" role="3cqZAp">
+                      <node concept="2YIFZM" id="7nF4KJrUMwE" role="3clFbG">
+                        <ref role="37wK5l" node="7nF4KJrSXIT" resolve="handleRefToSMs" />
+                        <ref role="1Pybhc" node="7nF4KJrH2Ku" resolve="VisualizeUtilityMethods" />
+                        <node concept="37vLTw" id="7nF4KJrUMD7" role="37wK5m">
+                          <ref role="3cqZAo" node="7nF4KJrRctW" resolve="sm" />
+                        </node>
+                        <node concept="37vLTw" id="7nF4KJrUMW0" role="37wK5m">
+                          <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+                        </node>
+                        <node concept="37vLTw" id="7nF4KJrUN4R" role="37wK5m">
+                          <ref role="3cqZAo" node="7nF4KJrRg81" resolve="subGraphName" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="7nF4KJrSu$b" role="3cqZAp" />
+                    <node concept="3clFbF" id="7nF4KJrRiZF" role="3cqZAp">
+                      <node concept="1knj_d" id="7nF4KJrRiZD" role="3clFbG">
+                        <node concept="2OqwBi" id="7nF4KJrRnQU" role="1kn_Bf">
+                          <node concept="2OqwBi" id="7nF4KJrRk$l" role="2Oq$k0">
+                            <node concept="2OqwBi" id="7nF4KJrRjfX" role="2Oq$k0">
+                              <node concept="37vLTw" id="7nF4KJrRj7v" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7nF4KJrRctW" resolve="sm" />
+                              </node>
+                              <node concept="3Tsc0h" id="7nF4KJrRjHc" role="2OqNvi">
+                                <ref role="3TtcxE" to="v0yp:7zWtwVwpdT4" />
+                              </node>
+                            </node>
+                            <node concept="v3k3i" id="7nF4KJrRns1" role="2OqNvi">
+                              <node concept="chp4Y" id="7nF4KJrRn$a" role="v3oSu">
+                                <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="ANE8D" id="7nF4KJrRoNP" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="VQwemtpBm6" role="3cqZAp" />
+                    <node concept="3clFbF" id="7nF4KJrRf5F" role="3cqZAp">
+                      <node concept="2OqwBi" id="7nF4KJrRf80" role="3clFbG">
+                        <node concept="37vLTw" id="7nF4KJrRf5D" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+                        </node>
+                        <node concept="liA8E" id="7nF4KJrRfjv" role="2OqNvi">
+                          <ref role="37wK5l" to="1cio:~GraphViz.addln(java.lang.String):void" resolve="addln" />
+                          <node concept="2OqwBi" id="7nF4KJrRftQ" role="37wK5m">
+                            <node concept="37vLTw" id="7nF4KJrRfrm" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+                            </node>
+                            <node concept="liA8E" id="7nF4KJrRfKM" role="2OqNvi">
+                              <ref role="37wK5l" to="1cio:~GraphViz.end_subgraph():java.lang.String" resolve="end_subgraph" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="7nF4KJrRcOS" role="1DdaDG">
+                    <ref role="3cqZAo" node="7nF4KJrRb4J" resolve="sms" />
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTG" id="7nF4KJrRb4J" role="1bW2Oz">
+                <property role="TrG5h" value="sms" />
+                <node concept="2I9FWS" id="7nF4KJrRb4I" role="1tU5fm">
+                  <ref role="2I9WkF" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7nF4KJrRbzl" role="2SgHGx">
+              <node concept="2OqwBi" id="7nF4KJrR7y2" role="2Oq$k0">
+                <node concept="2OqwBi" id="7nF4KJrR6wY" role="2Oq$k0">
+                  <node concept="37vLTw" id="2CNdJfw4odY" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2CNdJfw46Jn" resolve="node" />
+                  </node>
+                  <node concept="3Tsc0h" id="7nF4KJrR6TI" role="2OqNvi">
+                    <ref role="3TtcxE" to="v0yp:7zWtwVwpdT4" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="7nF4KJrRanS" role="2OqNvi">
+                  <node concept="chp4Y" id="7nF4KJrRapQ" role="v3oSu">
+                    <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                  </node>
+                </node>
+              </node>
+              <node concept="ANE8D" id="7nF4KJrRcqt" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7nF4KJrRas5" role="3cqZAp" />
+        <node concept="3clFbF" id="7mq2LM7_sLP" role="3cqZAp">
+          <node concept="2OqwBi" id="7mq2LM7_sLQ" role="3clFbG">
+            <node concept="37vLTw" id="7mq2LM7_sLR" role="2Oq$k0">
+              <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+            </node>
+            <node concept="liA8E" id="7mq2LM7_sLS" role="2OqNvi">
+              <ref role="37wK5l" to="1cio:~GraphViz.addln(java.lang.String):void" resolve="addln" />
+              <node concept="2OqwBi" id="7mq2LM7_sLT" role="37wK5m">
+                <node concept="37vLTw" id="7mq2LM7_sLU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+                </node>
+                <node concept="liA8E" id="7mq2LM7_sLV" role="2OqNvi">
+                  <ref role="37wK5l" to="1cio:~GraphViz.end_graph():java.lang.String" resolve="end_graph" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7mq2LM7_sY7" role="3cqZAp" />
+        <node concept="34ab3g" id="7nF4KJrJSD_" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="3cpWs3" id="7nF4KJrJTic" role="34bqiv">
+            <node concept="2OqwBi" id="7nF4KJrJTw6" role="3uHU7w">
+              <node concept="37vLTw" id="7nF4KJrJTt7" role="2Oq$k0">
+                <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+              </node>
+              <node concept="liA8E" id="7nF4KJrJTA1" role="2OqNvi">
+                <ref role="37wK5l" to="1cio:~GraphViz.getDotSource():java.lang.String" resolve="getDotSource" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="7nF4KJrJSDB" role="3uHU7B">
+              <property role="Xl_RC" value="The dot graph " />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7nF4KJrJRSG" role="3cqZAp" />
+        <node concept="3clFbF" id="7mq2LM7_t65" role="3cqZAp">
+          <node concept="2OqwBi" id="7mq2LM7_t82" role="3clFbG">
+            <node concept="37vLTw" id="7mq2LM7_t63" role="2Oq$k0">
+              <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+            </node>
+            <node concept="liA8E" id="7mq2LM7_tjH" role="2OqNvi">
+              <ref role="37wK5l" to="1cio:~GraphViz.writeGraphToFile(byte[],java.lang.String):int" resolve="writeGraphToFile" />
+              <node concept="2OqwBi" id="7mq2LM7_tpN" role="37wK5m">
+                <node concept="37vLTw" id="7mq2LM7_toP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+                </node>
+                <node concept="liA8E" id="7mq2LM7_t$R" role="2OqNvi">
+                  <ref role="37wK5l" to="1cio:~GraphViz.getGraph(java.lang.String,java.lang.String,java.lang.String):byte[]" resolve="getGraph" />
+                  <node concept="2OqwBi" id="7mq2LM7_tGp" role="37wK5m">
+                    <node concept="37vLTw" id="7mq2LM7_tES" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
+                    </node>
+                    <node concept="liA8E" id="7mq2LM7_tSb" role="2OqNvi">
+                      <ref role="37wK5l" to="1cio:~GraphViz.getDotSource():java.lang.String" resolve="getDotSource" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="7mq2LM7_tZR" role="37wK5m">
+                    <property role="Xl_RC" value="gif" />
+                  </node>
+                  <node concept="Xl_RD" id="7mq2LM7_u7i" role="37wK5m">
+                    <property role="Xl_RC" value="dot" />
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="2CNdJfw4rQx" role="37wK5m">
+                <ref role="3cqZAo" node="2CNdJfw4rAQ" resolve="path" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2CNdJfw44uj" role="1B3o_S" />
+      <node concept="3cqZAl" id="2CNdJfw44CC" role="3clF45" />
+      <node concept="37vLTG" id="2CNdJfw46Jn" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="2CNdJfw46Jm" role="1tU5fm">
+          <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2CNdJfw4rAQ" role="3clF46">
+        <property role="TrG5h" value="path" />
+        <node concept="17QB3L" id="2CNdJfw4rKr" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2YIFZL" id="7nF4KJrJ5rU" role="jymVt">
       <property role="TrG5h" value="labelOfNode" />
       <property role="od$2w" value="false" />
