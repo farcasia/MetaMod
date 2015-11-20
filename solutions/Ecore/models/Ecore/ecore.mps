@@ -2549,10 +2549,24 @@
     </node>
     <node concept="1wRai3" id="2CNdJfvMyMm" role="1wRbUP">
       <property role="TrG5h" value="Kernel" />
-      <node concept="1wRa9n" id="2CNdJfvOnFC" role="1wRbVV">
-        <node concept="2oAaYs" id="2CNdJfvOnFD" role="1wRbKc" />
-        <node concept="19SGf9" id="2CNdJfvOnFE" role="1wRbKM">
-          <node concept="19SUe$" id="2CNdJfvOnFF" role="19SJt6" />
+      <node concept="1wRa9n" id="2CNdJfvW6aF" role="1wRbVV">
+        <node concept="2oAaYs" id="2CNdJfw1S8f" role="1wRbKc">
+          <ref role="2oAaIS" node="VQwemtk3Wm" resolve="A_to_C" />
+        </node>
+        <node concept="19SGf9" id="2CNdJfvW6aJ" role="1wRbKM">
+          <node concept="19SUe$" id="2CNdJfvW6aK" role="19SJt6">
+            <property role="19SUeA" value="D:\\University\\DataForPrograms\\GeneratedImages\\A_to_C.svg" />
+          </node>
+        </node>
+      </node>
+      <node concept="1wRa9n" id="2CNdJfvW5bH" role="1wRbVV">
+        <node concept="2oAaYs" id="2CNdJfvW5WE" role="1wRbKc">
+          <ref role="2oAaIS" node="VQwemtjSmT" resolve="Classes" />
+        </node>
+        <node concept="19SGf9" id="2CNdJfvW5bJ" role="1wRbKM">
+          <node concept="19SUe$" id="2CNdJfvW5bK" role="19SJt6">
+            <property role="19SUeA" value="D:\\University\\DataForPrograms\\GeneratedImages\\Classes.svg" />
+          </node>
         </node>
       </node>
     </node>
@@ -2574,7 +2588,17 @@
     <node concept="1wRa90" id="2CNdJfvMyMN" role="1wRbUO">
       <node concept="19SGf9" id="2CNdJfvOnF$" role="1wRbLi">
         <node concept="19SUe$" id="2CNdJfvOnF_" role="19SJt6">
-          <property role="19SUeA" value="The Ecore metamodel is described as in the EMF book." />
+          <property role="19SUeA" value="The Ecore metamodel is described as in the EMF book.\nIt seems to be working .. for basic model  " />
+        </node>
+        <node concept="2oAaXF" id="2CNdJfw1_qp" role="19SJt6">
+          <ref role="2oAaID" node="VQwemtk5Xf" resolve="A_to_B" />
+        </node>
+        <node concept="19SUe$" id="2CNdJfw1_qg" role="19SJt6">
+          <property role="19SUeA" value="\nIt seems to be working .. for relations " />
+        </node>
+        <node concept="2oAaYs" id="2CNdJfw2AuO" role="19SJt6" />
+        <node concept="19SUe$" id="2CNdJfw2AuN" role="19SJt6">
+          <property role="19SUeA" value="\nIt seems to be working .. for structure models " />
         </node>
       </node>
     </node>

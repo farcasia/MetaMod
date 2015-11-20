@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="9lyo" ref="r:c0d41959-8f5c-452f-90c5-757e1c169078(LambdaCalculus.structure)" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -118,6 +119,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7zWtwVwpd$b" resolve="NamedBasicModel" />
     </node>
+    <node concept="PrWs8" id="2CNdJfvW7A4" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7zWtwVwpdAi">
     <property role="TrG5h" value="RefToNamedSM" />
@@ -127,6 +131,9 @@
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7zWtwVwpdzu" resolve="NamedStructureModel" />
+    </node>
+    <node concept="PrWs8" id="2CNdJfvW7Us" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
   <node concept="1TIwiD" id="7zWtwVwpdB7">
@@ -141,6 +148,9 @@
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7zWtwVwpdyL" resolve="NamedRelation" />
+    </node>
+    <node concept="PrWs8" id="2CNdJfvW7Um" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
   <node concept="1TIwiD" id="VQwemtBHQ2">
