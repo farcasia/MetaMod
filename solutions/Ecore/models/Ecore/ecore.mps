@@ -2544,7 +2544,9 @@
   </node>
   <node concept="1wRa9J" id="2CNdJfvMyDM">
     <property role="TrG5h" value="EcoreDoc" />
-    <node concept="2oAaYs" id="2CNdJfvMyDN" role="1wRbU5" />
+    <node concept="2oAaYs" id="2CNdJfvUMW8" role="1wRbU5">
+      <ref role="2oAaIS" node="VQwemtjYD0" resolve="Ecore" />
+    </node>
     <node concept="1wRai3" id="2CNdJfvMyMm" role="1wRbUP">
       <property role="TrG5h" value="Kernel" />
       <node concept="1wRa9n" id="2CNdJfvOnFC" role="1wRbVV">

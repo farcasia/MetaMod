@@ -10,6 +10,7 @@
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="9lyo" ref="r:c0d41959-8f5c-452f-90c5-757e1c169078(LambdaCalculus.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -122,7 +123,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="modelExample" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
   <node concept="1TIwiD" id="2oX3QL6SqPE">
@@ -136,7 +137,7 @@
     <node concept="1TJgyj" id="2oX3QL6SruQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="node" />
-      <ref role="20lvS9" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
 </model>
