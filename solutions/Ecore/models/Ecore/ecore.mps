@@ -88,6 +88,9 @@
         <reference id="8717972784948764086" name="ref" index="2oAaIS" />
       </concept>
       <concept id="8717972784948763079" name="Models.structure.Inheritance" flags="ng" index="2oAaZ9" />
+      <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
+        <reference id="3040834594469888400" name="ref" index="3aaZtz" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -848,27 +851,27 @@
         </node>
         <node concept="2jq5PB" id="4it7xKEML$6" role="2oAaxa" />
         <node concept="2oAaZ9" id="VQwemtjPd8" role="2oAaxa">
-          <node concept="2oAaXF" id="VQwemtjPhc" role="2oAawB">
-            <ref role="2oAaID" node="VQwemtjP0P" resolve="EClassifier" />
+          <node concept="2oAaXF" id="57Oty_7kUv$" role="2oAawB">
+            <ref role="3aaZtz" node="VQwemtjI6l" resolve="EClassifier" />
           </node>
-          <node concept="2oAaXF" id="VQwemtjPh9" role="2oAawD">
-            <ref role="2oAaID" node="VQwemtjP0U" resolve="EClass" />
+          <node concept="2oAaXF" id="57Oty_7kUvx" role="2oAawD">
+            <ref role="3aaZtz" node="VQwemthcQL" resolve="EClass" />
           </node>
         </node>
         <node concept="2oAaZ9" id="VQwemtjPld" role="2oAaxa">
-          <node concept="2oAaXF" id="VQwemtjPpn" role="2oAawB">
-            <ref role="2oAaID" node="VQwemtjP5p" resolve="ETypedElement" />
+          <node concept="2oAaXF" id="57Oty_7kUvE" role="2oAawB">
+            <ref role="3aaZtz" node="VQwemtjI8q" resolve="ETypedElement" />
           </node>
-          <node concept="2oAaXF" id="VQwemtjPpk" role="2oAawD">
-            <ref role="2oAaID" node="VQwemtjP53" resolve="EOperation" />
+          <node concept="2oAaXF" id="57Oty_7kUvB" role="2oAawD">
+            <ref role="3aaZtz" node="VQwemtjPwE" resolve="EOperation" />
           </node>
         </node>
         <node concept="2oAaZ9" id="VQwemtjPq1" role="2oAaxa">
-          <node concept="2oAaXF" id="VQwemtjPqo" role="2oAawB">
-            <ref role="2oAaID" node="VQwemtjP5p" resolve="ETypedElement" />
+          <node concept="2oAaXF" id="57Oty_7kUvK" role="2oAawB">
+            <ref role="3aaZtz" node="VQwemtjI8q" resolve="ETypedElement" />
           </node>
-          <node concept="2oAaXF" id="VQwemtjPql" role="2oAawD">
-            <ref role="2oAaID" node="VQwemtjP5d" resolve="EParameter" />
+          <node concept="2oAaXF" id="57Oty_7kUvH" role="2oAawD">
+            <ref role="3aaZtz" node="VQwemtjPwF" resolve="EParameter" />
           </node>
         </node>
       </node>
@@ -2181,40 +2184,40 @@
     <ref role="19kf5F" node="VQwemtk1sc" resolve="RouteEcoreMM" />
     <node concept="2oAaW5" id="VQwemtk5UJ" role="2oAaxa">
       <property role="TrG5h" value="A_to_C" />
-      <node concept="2oAaXF" id="VQwemtk5UK" role="2oAawq">
-        <ref role="2oAaID" node="VQwemtk1TV" resolve="Route" />
+      <node concept="2oAaXF" id="57Oty_7kUvN" role="2oAawq">
+        <ref role="3aaZtz" node="VQwemtk1TV" resolve="Route" />
       </node>
     </node>
     <node concept="2oAaW5" id="VQwemtk5Xf" role="2oAaxa">
       <property role="TrG5h" value="A_to_B" />
-      <node concept="2oAaXF" id="VQwemtk5Xg" role="2oAawq">
-        <ref role="2oAaID" node="VQwemtk1Ux" resolve="ForwardCommand" />
+      <node concept="2oAaXF" id="57Oty_7kUvQ" role="2oAawq">
+        <ref role="3aaZtz" node="VQwemtk1Ux" resolve="ForwardCommand" />
       </node>
     </node>
     <node concept="2oAaW5" id="VQwemtk5ZN" role="2oAaxa">
       <property role="TrG5h" value="B_turn_C" />
-      <node concept="2oAaXF" id="VQwemtk5ZO" role="2oAawq">
-        <ref role="2oAaID" node="VQwemtk1Ug" resolve="TurnCommand" />
+      <node concept="2oAaXF" id="57Oty_7kUvT" role="2oAawq">
+        <ref role="3aaZtz" node="VQwemtk1Ug" resolve="TurnCommand" />
       </node>
     </node>
     <node concept="2oAaW5" id="VQwemtk62r" role="2oAaxa">
       <property role="TrG5h" value="B_to_C" />
-      <node concept="2oAaXF" id="VQwemtk62s" role="2oAawq">
-        <ref role="2oAaID" node="VQwemtk1Ux" resolve="ForwardCommand" />
+      <node concept="2oAaXF" id="57Oty_7kUvW" role="2oAawq">
+        <ref role="3aaZtz" node="VQwemtk1Ux" resolve="ForwardCommand" />
       </node>
     </node>
     <node concept="2oAaW5" id="VQwemtk6x3" role="2oAaxa">
       <property role="TrG5h" value="A_to_C_with_A_to_B" />
-      <node concept="2oAaXF" id="VQwemtk6ym" role="2oAawq">
-        <ref role="2oAaID" node="VQwemtk22e" resolve="RouteToCommand" />
+      <node concept="2oAaXF" id="57Oty_7kUvZ" role="2oAawq">
+        <ref role="3aaZtz" node="VQwemtk22e" resolve="RouteToCommand" />
       </node>
     </node>
     <node concept="2oAaUa" id="VQwemtk6zG" role="2oAaxa">
-      <node concept="2oAaXF" id="VQwemtk6_c" role="2oAawB">
-        <ref role="2oAaID" node="VQwemtk5Xf" resolve="A_to_B" />
+      <node concept="2oAaXF" id="57Oty_7kUw5" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk5Xf" resolve="A_to_B" />
       </node>
-      <node concept="2oAaXF" id="VQwemtk6_7" role="2oAawD">
-        <ref role="2oAaID" node="VQwemtk6x3" resolve="A_to_C_with_A_to_B" />
+      <node concept="2oAaXF" id="57Oty_7kUw2" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk6x3" resolve="A_to_C_with_A_to_B" />
       </node>
       <node concept="2oAawe" id="VQwemtk6_a" role="2oAawy">
         <ref role="2oAawc" node="VQwemtk6kD" resolve="command" />
@@ -2222,44 +2225,44 @@
     </node>
     <node concept="2oAaW5" id="VQwemtk6KD" role="2oAaxa">
       <property role="TrG5h" value="A_to_B_in_A_to_C" />
-      <node concept="2oAaXF" id="VQwemtk6Me" role="2oAawq">
-        <ref role="2oAaID" node="VQwemtk21j" resolve="M2MRouteCommand" />
+      <node concept="2oAaXF" id="57Oty_7kUw8" role="2oAawq">
+        <ref role="3aaZtz" node="VQwemtk21j" resolve="M2MRouteCommand" />
       </node>
     </node>
     <node concept="2oAaUa" id="VQwemtk6NQ" role="2oAaxa">
-      <node concept="2oAaXF" id="VQwemtk6PC" role="2oAawB">
-        <ref role="2oAaID" node="VQwemtk5UJ" resolve="A_to_C" />
+      <node concept="2oAaXF" id="57Oty_7kUwb" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk5UJ" resolve="A_to_C" />
       </node>
-      <node concept="2oAaXF" id="VQwemtk6Pz" role="2oAawD">
-        <ref role="2oAaID" node="VQwemtk6KD" resolve="A_to_B_in_A_to_C" />
+      <node concept="2oAaXF" id="57Oty_7kUwh" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk6KD" resolve="A_to_B_in_A_to_C" />
       </node>
-      <node concept="2oAawe" id="VQwemtk6PA" role="2oAawy">
-        <ref role="2oAawc" node="VQwemtk2aX" resolve="inRoute" />
+      <node concept="2oAawe" id="57Oty_7kUwk" role="2oAawy">
+        <ref role="3aaZtz" node="VQwemtk2aX" resolve="inRoute" />
       </node>
     </node>
     <node concept="2oAaUa" id="VQwemtk6Rl" role="2oAaxa">
-      <node concept="2oAaXF" id="VQwemtk6Tb" role="2oAawB">
-        <ref role="2oAaID" node="VQwemtk6x3" resolve="A_to_C_with_A_to_B" />
+      <node concept="2oAaXF" id="57Oty_7kUwt" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk6x3" resolve="A_to_C_with_A_to_B" />
       </node>
-      <node concept="2oAaXF" id="VQwemtk6T6" role="2oAawD">
-        <ref role="2oAaID" node="VQwemtk6KD" resolve="A_to_B_in_A_to_C" />
+      <node concept="2oAaXF" id="57Oty_7kUwn" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk6KD" resolve="A_to_B_in_A_to_C" />
       </node>
-      <node concept="2oAawe" id="VQwemtk6T9" role="2oAawy">
-        <ref role="2oAawc" node="VQwemtk2k_" resolve="reference" />
+      <node concept="2oAawe" id="57Oty_7kUwq" role="2oAawy">
+        <ref role="3aaZtz" node="VQwemtk2k_" resolve="reference" />
       </node>
     </node>
     <node concept="2oAaW5" id="VQwemtk6AZ" role="2oAaxa">
       <property role="TrG5h" value="A_to_C_with_B_turn_C" />
-      <node concept="2oAaXF" id="VQwemtk6B0" role="2oAawq">
-        <ref role="2oAaID" node="VQwemtk22e" resolve="RouteToCommand" />
+      <node concept="2oAaXF" id="57Oty_7kUIu" role="2oAawq">
+        <ref role="3aaZtz" node="VQwemtk22e" resolve="RouteToCommand" />
       </node>
     </node>
     <node concept="2oAaUa" id="VQwemtk6B1" role="2oAaxa">
-      <node concept="2oAaXF" id="VQwemtk6FT" role="2oAawB">
-        <ref role="2oAaID" node="VQwemtk5ZN" resolve="B_turn_C" />
+      <node concept="2oAaXF" id="57Oty_7kUI$" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk5ZN" resolve="B_turn_C" />
       </node>
-      <node concept="2oAaXF" id="VQwemtk6B3" role="2oAawD">
-        <ref role="2oAaID" node="VQwemtk6AZ" resolve="A_to_C_with_B_turn_C" />
+      <node concept="2oAaXF" id="57Oty_7kUIx" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk6AZ" resolve="A_to_C_with_B_turn_C" />
       </node>
       <node concept="2oAawe" id="VQwemtk6B4" role="2oAawy">
         <ref role="2oAawc" node="VQwemtk6kD" resolve="command" />
@@ -2555,7 +2558,7 @@
         </node>
         <node concept="19SGf9" id="2CNdJfvW6aJ" role="1wRbKM">
           <node concept="19SUe$" id="2CNdJfvW6aK" role="19SJt6">
-            <property role="19SUeA" value="D:\\University\\DataForPrograms\\GeneratedImages\\A_to_C.svg" />
+            <property role="19SUeA" value="D:\\University\\DSLPrograms\\testDir\\figures\\A_to_C" />
           </node>
         </node>
       </node>
@@ -2565,7 +2568,7 @@
         </node>
         <node concept="19SGf9" id="2CNdJfvW5bJ" role="1wRbKM">
           <node concept="19SUe$" id="2CNdJfvW5bK" role="19SJt6">
-            <property role="19SUeA" value="D:\\University\\DataForPrograms\\GeneratedImages\\Classes.svg" />
+            <property role="19SUeA" value="D:\\University\\DSLPrograms\\testDir\\figures\\Classes" />
           </node>
         </node>
       </node>
@@ -2596,10 +2599,16 @@
         <node concept="19SUe$" id="2CNdJfw1_qg" role="19SJt6">
           <property role="19SUeA" value="\nIt seems to be working .. for relations " />
         </node>
-        <node concept="2oAaYs" id="2CNdJfw2AuO" role="19SJt6" />
+        <node concept="2oAawe" id="2CNdJfw63eJ" role="19SJt6">
+          <ref role="2oAawc" node="VQwemtjLDa" resolve="forEClass" />
+        </node>
         <node concept="19SUe$" id="2CNdJfw2AuN" role="19SJt6">
           <property role="19SUeA" value="\nIt seems to be working .. for structure models " />
         </node>
+        <node concept="2oAaXF" id="2CNdJfw63sV" role="19SJt6">
+          <ref role="2oAaID" node="VQwemthcQL" resolve="EClass" />
+        </node>
+        <node concept="19SUe$" id="2CNdJfw63sN" role="19SJt6" />
       </node>
     </node>
   </node>

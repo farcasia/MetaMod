@@ -14,6 +14,8 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -28,6 +30,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -112,28 +115,24 @@
   </node>
   <node concept="1TIwiD" id="7zWtwVwpd__">
     <property role="TrG5h" value="RefToNamedBM" />
-    <ref role="1TJDcQ" to="9lyo:6oGnPI1dYen" resolve="Constant" />
+    <ref role="1TJDcQ" node="2CNdJfw6bPn" resolve="RefToNamed" />
     <node concept="1TJgyj" id="7zWtwVwpdQB" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7zWtwVwpd$b" resolve="NamedBasicModel" />
-    </node>
-    <node concept="PrWs8" id="2CNdJfvW7A4" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+      <ref role="20ksaX" node="2CNdJfw6c6g" />
     </node>
   </node>
   <node concept="1TIwiD" id="7zWtwVwpdAi">
     <property role="TrG5h" value="RefToNamedSM" />
-    <ref role="1TJDcQ" to="9lyo:6oGnPI1dYen" resolve="Constant" />
+    <ref role="1TJDcQ" node="2CNdJfw6bPn" resolve="RefToNamed" />
     <node concept="1TJgyj" id="7zWtwVwpdQQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7zWtwVwpdzu" resolve="NamedStructureModel" />
-    </node>
-    <node concept="PrWs8" id="2CNdJfvW7Us" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+      <ref role="20ksaX" node="2CNdJfw6c6g" />
     </node>
   </node>
   <node concept="1TIwiD" id="7zWtwVwpdB7">
@@ -142,20 +141,33 @@
   </node>
   <node concept="1TIwiD" id="7zWtwVwpdS0">
     <property role="TrG5h" value="RefToNamedRel" />
-    <ref role="1TJDcQ" to="9lyo:6oGnPI1dYen" resolve="Constant" />
+    <ref role="1TJDcQ" node="2CNdJfw6bPn" resolve="RefToNamed" />
     <node concept="1TJgyj" id="7zWtwVwpdS2" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7zWtwVwpdyL" resolve="NamedRelation" />
-    </node>
-    <node concept="PrWs8" id="2CNdJfvW7Um" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+      <ref role="20ksaX" node="2CNdJfw6c6g" />
     </node>
   </node>
   <node concept="1TIwiD" id="VQwemtBHQ2">
     <property role="TrG5h" value="EmptyLine" />
     <ref role="1TJDcQ" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+  </node>
+  <node concept="1TIwiD" id="2CNdJfw6bPn">
+    <property role="TrG5h" value="RefToNamed" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="9lyo:6oGnPI1dYen" resolve="Constant" />
+    <node concept="1TJgyj" id="2CNdJfw6c6g" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="2CNdJfw6bPN" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
   </node>
 </model>
 

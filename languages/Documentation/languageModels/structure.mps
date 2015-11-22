@@ -137,7 +137,7 @@
     <node concept="1TJgyj" id="2oX3QL6SruQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="node" />
-      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+      <ref role="20lvS9" to="v0yp:2CNdJfw6bPn" resolve="RefToNamed" />
     </node>
   </node>
 </model>
