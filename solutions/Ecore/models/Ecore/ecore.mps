@@ -10,14 +10,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
-      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
-        <child id="2557074442922392302" name="words" index="19SJt6" />
-      </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
-        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
-      </concept>
-    </language>
     <language id="ae311dd6-db78-4e5e-a31b-7988fcde0010" name="Modules">
       <concept id="3049631818650728102" name="Modules.structure.ModuleComposite" flags="ng" index="kds5t">
         <child id="3049631818650729077" name="modules" index="kdsQe" />
@@ -42,23 +34,6 @@
       <concept id="7362364337458504600" name="LambdaCalculus.structure.LambdaApplication" flags="ng" index="3B6VN3">
         <child id="7362364337458526851" name="left" index="3B56no" />
         <child id="7362364337458526853" name="right" index="3B56nu" />
-      </concept>
-    </language>
-    <language id="d437ded3-fd97-4424-9a13-b417804f9877" name="Documentation">
-      <concept id="2755375504740691244" name="Documentation.structure.FreeTextComment" flags="ng" index="1wRa90">
-        <child id="2755375504740692798" name="text" index="1wRbLi" />
-      </concept>
-      <concept id="2755375504740691259" name="Documentation.structure.IncludeDiagram" flags="ng" index="1wRa9n">
-        <child id="2755375504740692832" name="refM" index="1wRbKc" />
-        <child id="2755375504740692830" name="path" index="1wRbKM" />
-      </concept>
-      <concept id="2755375504740691203" name="Documentation.structure.Documentation" flags="ng" index="1wRa9J">
-        <child id="2755375504740692457" name="documentedM" index="1wRbU5" />
-        <child id="2755375504740692440" name="documentationComment" index="1wRbUO" />
-        <child id="2755375504740692441" name="chapter" index="1wRbUP" />
-      </concept>
-      <concept id="2755375504740690927" name="Documentation.structure.Chapter" flags="ng" index="1wRai3">
-        <child id="2755375504740692375" name="documentationComment" index="1wRbVV" />
       </concept>
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
@@ -1523,23 +1498,23 @@
   </node>
   <node concept="2oAaVg" id="VQwemtjYD0">
     <property role="TrG5h" value="Ecore" />
-    <node concept="2oAaYs" id="VQwemtjYD1" role="2oAaxa">
-      <ref role="2oAaIS" node="VQwemthcQv" resolve="Kernel" />
+    <node concept="2oAaYs" id="2JwAxChdxuO" role="2oAaxa">
+      <ref role="3aaZtz" node="VQwemthcQv" resolve="Kernel" />
     </node>
-    <node concept="2oAaYs" id="VQwemtjYDe" role="2oAaxa">
-      <ref role="2oAaIS" node="VQwemtjI1m" resolve="StructurealFeatures" />
+    <node concept="2oAaYs" id="2JwAxChdxuW" role="2oAaxa">
+      <ref role="3aaZtz" node="VQwemtjI1m" resolve="StructurealFeatures" />
     </node>
-    <node concept="2oAaYs" id="VQwemtjYDm" role="2oAaxa">
-      <ref role="2oAaIS" node="VQwemtjMsM" resolve="BehavioralFeatures" />
+    <node concept="2oAaYs" id="2JwAxChdxv4" role="2oAaxa">
+      <ref role="3aaZtz" node="VQwemtjMsM" resolve="BehavioralFeatures" />
     </node>
-    <node concept="2oAaYs" id="VQwemtjYDw" role="2oAaxa">
-      <ref role="2oAaIS" node="VQwemtjQDR" resolve="Classifiers" />
+    <node concept="2oAaYs" id="2JwAxChdxvc" role="2oAaxa">
+      <ref role="3aaZtz" node="VQwemtjQDR" resolve="Classifiers" />
     </node>
-    <node concept="2oAaYs" id="VQwemtjYDG" role="2oAaxa">
-      <ref role="2oAaIS" node="VQwemtjWMe" resolve="PackagesAndFactories" />
+    <node concept="2oAaYs" id="2JwAxChdxvk" role="2oAaxa">
+      <ref role="3aaZtz" node="VQwemtjWMe" resolve="PackagesAndFactories" />
     </node>
-    <node concept="2oAaYs" id="VQwemtjYDU" role="2oAaxa">
-      <ref role="2oAaIS" node="VQwemtjYxX" resolve="Annotations" />
+    <node concept="2oAaYs" id="2JwAxChdxvs" role="2oAaxa">
+      <ref role="3aaZtz" node="VQwemtjYxX" resolve="Annotations" />
     </node>
   </node>
   <node concept="2oAaVg" id="VQwemtk1sc">
@@ -2270,16 +2245,16 @@
     </node>
     <node concept="2oAaW5" id="VQwemtk6V$" role="2oAaxa">
       <property role="TrG5h" value="B_turn_C_in_A_to_C" />
-      <node concept="2oAaXF" id="VQwemtk6V_" role="2oAawq">
-        <ref role="2oAaID" node="VQwemtk21j" resolve="M2MRouteCommand" />
+      <node concept="2oAaXF" id="2JwAxChdxgE" role="2oAawq">
+        <ref role="3aaZtz" node="VQwemtk21j" resolve="M2MRouteCommand" />
       </node>
     </node>
     <node concept="2oAaUa" id="VQwemtk6VA" role="2oAaxa">
-      <node concept="2oAaXF" id="VQwemtk6VB" role="2oAawB">
-        <ref role="2oAaID" node="VQwemtk5UJ" resolve="A_to_C" />
+      <node concept="2oAaXF" id="2JwAxChdxuF" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk5UJ" resolve="A_to_C" />
       </node>
-      <node concept="2oAaXF" id="VQwemtk6VC" role="2oAawD">
-        <ref role="2oAaID" node="VQwemtk6V$" resolve="B_turn_C_in_A_to_C" />
+      <node concept="2oAaXF" id="2JwAxChdxuI" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk6V$" resolve="B_turn_C_in_A_to_C" />
       </node>
       <node concept="2oAawe" id="VQwemtk6VD" role="2oAawy">
         <ref role="2oAawc" node="VQwemtk2aX" resolve="inRoute" />
@@ -2289,8 +2264,8 @@
       <node concept="2oAaXF" id="VQwemtk7cQ" role="2oAawB">
         <ref role="2oAaID" node="VQwemtk6AZ" resolve="A_to_C_with_B_turn_C" />
       </node>
-      <node concept="2oAaXF" id="VQwemtk6VG" role="2oAawD">
-        <ref role="2oAaID" node="VQwemtk6V$" resolve="B_turn_C_in_A_to_C" />
+      <node concept="2oAaXF" id="2JwAxChdxuL" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk6V$" resolve="B_turn_C_in_A_to_C" />
       </node>
       <node concept="2oAawe" id="VQwemtk6VH" role="2oAawy">
         <ref role="2oAawc" node="VQwemtk2k_" resolve="reference" />
@@ -2542,73 +2517,6 @@
         <node concept="2oAaXF" id="VQwemtk51w" role="2oAawB">
           <ref role="2oAaID" node="VQwemtk51l" resolve="B_to_C_100_distance" />
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1wRa9J" id="2CNdJfvMyDM">
-    <property role="TrG5h" value="EcoreDoc" />
-    <node concept="2oAaYs" id="2CNdJfvUMW8" role="1wRbU5">
-      <ref role="2oAaIS" node="VQwemtjYD0" resolve="Ecore" />
-    </node>
-    <node concept="1wRai3" id="2CNdJfvMyMm" role="1wRbUP">
-      <property role="TrG5h" value="Kernel" />
-      <node concept="1wRa9n" id="2CNdJfvW6aF" role="1wRbVV">
-        <node concept="2oAaYs" id="2CNdJfw1S8f" role="1wRbKc">
-          <ref role="2oAaIS" node="VQwemtk3Wm" resolve="A_to_C" />
-        </node>
-        <node concept="19SGf9" id="2CNdJfvW6aJ" role="1wRbKM">
-          <node concept="19SUe$" id="2CNdJfvW6aK" role="19SJt6">
-            <property role="19SUeA" value="D:\\University\\DSLPrograms\\testDir\\figures\\A_to_C" />
-          </node>
-        </node>
-      </node>
-      <node concept="1wRa9n" id="2CNdJfvW5bH" role="1wRbVV">
-        <node concept="2oAaYs" id="2CNdJfvW5WE" role="1wRbKc">
-          <ref role="2oAaIS" node="VQwemtjSmT" resolve="Classes" />
-        </node>
-        <node concept="19SGf9" id="2CNdJfvW5bJ" role="1wRbKM">
-          <node concept="19SUe$" id="2CNdJfvW5bK" role="19SJt6">
-            <property role="19SUeA" value="D:\\University\\DSLPrograms\\testDir\\figures\\Classes" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1wRai3" id="2CNdJfvMyMo" role="1wRbUP">
-      <property role="TrG5h" value="StructuralFeatures" />
-    </node>
-    <node concept="1wRai3" id="2CNdJfvMyMr" role="1wRbUP">
-      <property role="TrG5h" value="BehavioralFeatures" />
-    </node>
-    <node concept="1wRai3" id="2CNdJfvMyMv" role="1wRbUP">
-      <property role="TrG5h" value="Classifiers" />
-    </node>
-    <node concept="1wRai3" id="2CNdJfvMyMA" role="1wRbUP">
-      <property role="TrG5h" value="PackagesAndFactories" />
-    </node>
-    <node concept="1wRai3" id="2CNdJfvMyMG" role="1wRbUP">
-      <property role="TrG5h" value="Annotations" />
-    </node>
-    <node concept="1wRa90" id="2CNdJfvMyMN" role="1wRbUO">
-      <node concept="19SGf9" id="2CNdJfvOnF$" role="1wRbLi">
-        <node concept="19SUe$" id="2CNdJfvOnF_" role="19SJt6">
-          <property role="19SUeA" value="The Ecore metamodel is described as in the EMF book.\nIt seems to be working .. for basic model  " />
-        </node>
-        <node concept="2oAaXF" id="2CNdJfw1_qp" role="19SJt6">
-          <ref role="2oAaID" node="VQwemtk5Xf" resolve="A_to_B" />
-        </node>
-        <node concept="19SUe$" id="2CNdJfw1_qg" role="19SJt6">
-          <property role="19SUeA" value="\nIt seems to be working .. for relations " />
-        </node>
-        <node concept="2oAawe" id="2CNdJfw63eJ" role="19SJt6">
-          <ref role="2oAawc" node="VQwemtjLDa" resolve="forEClass" />
-        </node>
-        <node concept="19SUe$" id="2CNdJfw2AuN" role="19SJt6">
-          <property role="19SUeA" value="\nIt seems to be working .. for structure models " />
-        </node>
-        <node concept="2oAaXF" id="2CNdJfw63sV" role="19SJt6">
-          <ref role="2oAaID" node="VQwemthcQL" resolve="EClass" />
-        </node>
-        <node concept="19SUe$" id="2CNdJfw63sN" role="19SJt6" />
       </node>
     </node>
   </node>
