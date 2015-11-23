@@ -57,51 +57,26 @@
     </node>
     <node concept="1wRai3" id="2CNdJfvMyMm" role="1wRbUP">
       <property role="TrG5h" value="Kernel" />
-      <node concept="1wRa9n" id="2CNdJfvW6aF" role="1wRbVV">
-        <node concept="2oAaYs" id="2JwAxChdxWh" role="1wRbKc">
-          <ref role="3aaZtz" to="syf5:VQwemtk3Wm" resolve="A_to_C" />
-        </node>
-        <node concept="19SGf9" id="2CNdJfvW6aJ" role="1wRbKM">
-          <node concept="19SUe$" id="2CNdJfvW6aK" role="19SJt6">
-            <property role="19SUeA" value="D:\\University\\DSLPrograms\\testDir\\figures\\A_to_C" />
-          </node>
-        </node>
-      </node>
       <node concept="1wRa9n" id="2CNdJfvW5bH" role="1wRbVV">
         <node concept="2oAaYs" id="2JwAxChdxWk" role="1wRbKc">
           <ref role="3aaZtz" to="syf5:VQwemtjSmT" resolve="Classes" />
         </node>
         <node concept="19SGf9" id="2CNdJfvW5bJ" role="1wRbKM">
           <node concept="19SUe$" id="2CNdJfvW5bK" role="19SJt6">
-            <property role="19SUeA" value="D:\\University\\DSLPrograms\\testDir\\figures\\Classes" />
+            <property role="19SUeA" value="D:\\University\\DSLPrograms\\testDir\\figures\\Classes.gif" />
           </node>
         </node>
       </node>
-    </node>
-    <node concept="1wRai3" id="2CNdJfvMyMo" role="1wRbUP">
-      <property role="TrG5h" value="StructuralFeatures" />
-    </node>
-    <node concept="1wRai3" id="2CNdJfvMyMr" role="1wRbUP">
-      <property role="TrG5h" value="BehavioralFeatures" />
-    </node>
-    <node concept="1wRai3" id="2CNdJfvMyMv" role="1wRbUP">
-      <property role="TrG5h" value="Classifiers" />
-    </node>
-    <node concept="1wRai3" id="2CNdJfvMyMA" role="1wRbUP">
-      <property role="TrG5h" value="PackagesAndFactories" />
-    </node>
-    <node concept="1wRai3" id="2CNdJfvMyMG" role="1wRbUP">
-      <property role="TrG5h" value="Annotations" />
     </node>
     <node concept="1wRa90" id="2CNdJfvMyMN" role="1wRbUO">
       <node concept="19SGf9" id="2CNdJfvOnF$" role="1wRbLi">
         <node concept="19SUe$" id="2CNdJfvOnF_" role="19SJt6">
           <property role="19SUeA" value="The Ecore metamodel is described as in the EMF book.\nIt seems to be working .. for basic model  " />
         </node>
-        <node concept="2oAaXF" id="2JwAxChdxVw" role="19SJt6">
-          <ref role="3aaZtz" to="syf5:VQwemtk5Xf" resolve="A_to_B" />
+        <node concept="2oAaXF" id="2sGdL5x9pAU" role="19SJt6">
+          <ref role="3aaZtz" to="syf5:VQwemtk51n" resolve="100" />
         </node>
-        <node concept="19SUe$" id="2CNdJfw1_qg" role="19SJt6">
+        <node concept="19SUe$" id="2sGdL5x9pAL" role="19SJt6">
           <property role="19SUeA" value="\nIt seems to be working .. for relations " />
         </node>
         <node concept="2oAawe" id="2JwAxChdxVD" role="19SJt6">
