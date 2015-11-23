@@ -1108,7 +1108,7 @@
     <property role="TrG5h" value="RouteEcoreMM" />
     <ref role="19kf5F" node="2sGdL5xbqMO" resolve="Ecore" />
     <node concept="kds5t" id="4it7xKEMLZZ" role="2oAaxa">
-      <property role="TrG5h" value="Patterns" />
+      <property role="TrG5h" value="Commons" />
       <node concept="kds5u" id="4it7xKEMM1f" role="kdsQe">
         <property role="TrG5h" value="StructuralFeatureTypeAndName" />
         <node concept="3B6VN2" id="4it7xKEMM1g" role="kdsPW">
@@ -1509,6 +1509,14 @@
         </node>
       </node>
       <node concept="2jq5PB" id="2sGdL5xbRt9" role="2oAaxa" />
+      <node concept="2oAaZ9" id="2sGdL5xbZVy" role="2oAaxa">
+        <node concept="2oAaXF" id="2sGdL5xbZWo" role="2oAawB">
+          <ref role="3aaZtz" node="VQwemtk1U3" resolve="Command" />
+        </node>
+        <node concept="2oAaXF" id="2sGdL5xbZWl" role="2oAawD">
+          <ref role="3aaZtz" node="VQwemtk1Ug" resolve="TurnCommand" />
+        </node>
+      </node>
       <node concept="2yUw1A" id="2oX3QL6R_FP" role="2oAaxa">
         <property role="TrG5h" value="Inherited" />
         <node concept="2oAaXF" id="LhtLNMoYzS" role="3B56nu">
@@ -1633,6 +1641,14 @@
         </node>
       </node>
       <node concept="2jq5PB" id="2sGdL5xbRCL" role="2oAaxa" />
+      <node concept="2oAaZ9" id="2sGdL5xbZTX" role="2oAaxa">
+        <node concept="2oAaXF" id="2sGdL5xbZUN" role="2oAawB">
+          <ref role="3aaZtz" node="VQwemtk35v" resolve="Command" />
+        </node>
+        <node concept="2oAaXF" id="2sGdL5xbZUK" role="2oAawD">
+          <ref role="3aaZtz" node="VQwemtk1Ux" resolve="ForwardCommand" />
+        </node>
+      </node>
       <node concept="2yUw1A" id="2oX3QL6R_Iu" role="2oAaxa">
         <property role="TrG5h" value="Inherited" />
         <node concept="2oAaXF" id="LhtLNMoY$X" role="3B56nu">
@@ -1658,13 +1674,13 @@
       <node concept="2oAaVg" id="2sGdL5xbREj" role="2oAaxa">
         <property role="TrG5h" value="ForwardCommandDistanceAttr" />
         <node concept="2oAaW5" id="VQwemtk1VY" role="2oAaxa">
-          <property role="TrG5h" value="distance" />
+          <property role="TrG5h" value="distanceAttr" />
           <node concept="2oAaXF" id="LhtLNMoY_3" role="2oAawq">
             <ref role="3aaZtz" node="2sGdL5xbqMQ" resolve="EAttribute" />
           </node>
         </node>
         <node concept="2oAaW5" id="VQwemtk4jx" role="2oAaxa">
-          <property role="TrG5h" value="distanceAttr" />
+          <property role="TrG5h" value="distance" />
           <node concept="2oAaXF" id="LhtLNMoY_6" role="2oAawq">
             <ref role="3aaZtz" node="2sGdL5xbqMV" resolve="String" />
           </node>
@@ -1703,7 +1719,7 @@
         <node concept="2oAaUZ" id="VQwemtk2KY" role="2oAaxa">
           <property role="TrG5h" value="distance" />
           <node concept="2oAaXF" id="LhtLNMoY_O" role="2oAawB">
-            <ref role="3aaZtz" node="VQwemtk1VY" resolve="distance" />
+            <ref role="3aaZtz" node="VQwemtk1VY" resolve="distanceAttr" />
           </node>
           <node concept="2oAaXF" id="LhtLNMoY_R" role="2oAawD">
             <ref role="3aaZtz" node="VQwemtk2KS" resolve="ForwardCommandDistanceAttr" />
@@ -1715,7 +1731,7 @@
         <node concept="2yUw1A" id="2sGdL5xbRL7" role="2oAaxa">
           <property role="TrG5h" value="Name" />
           <node concept="2oAaXF" id="2sGdL5xbRLS" role="3B56nu">
-            <ref role="3aaZtz" node="VQwemtk4jx" resolve="distanceAttr" />
+            <ref role="3aaZtz" node="VQwemtk4jx" resolve="distance" />
           </node>
           <node concept="2yUw1A" id="2sGdL5xbRL9" role="3B56no">
             <property role="TrG5h" value="Type" />
@@ -1725,7 +1741,7 @@
             <node concept="2yUw1A" id="2sGdL5xbRLb" role="3B56no">
               <property role="TrG5h" value="StructuralFeature" />
               <node concept="2oAaXF" id="2sGdL5xbRLM" role="3B56nu">
-                <ref role="3aaZtz" node="VQwemtk1VY" resolve="distance" />
+                <ref role="3aaZtz" node="VQwemtk1VY" resolve="distanceAttr" />
               </node>
               <node concept="kdsPF" id="2sGdL5xbRLd" role="3B56no">
                 <ref role="kdsPE" node="4it7xKEMM1f" resolve="StructuralFeatureTypeAndName" />
