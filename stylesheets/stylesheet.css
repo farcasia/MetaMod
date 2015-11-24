@@ -10,10 +10,14 @@ body {
   color: #606c71; }
 
 a {
-  color: #fff;
+  color: #1e6bb8;
   text-decoration: none; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: underline; }
+
+pageHeader {
+  color: #fff;
+  text-decoration: none; }
 
 .btn {
   display: inline-block;
