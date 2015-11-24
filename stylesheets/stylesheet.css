@@ -19,6 +19,9 @@ a {
   color: #fff;
   text-decoration: none; }
 
+.pageHeader:hover {
+    text-decoration: none; }
+
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
