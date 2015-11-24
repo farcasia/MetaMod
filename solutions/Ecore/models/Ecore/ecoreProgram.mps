@@ -1649,18 +1649,18 @@
                     <ref role="19kf5F" node="2sGdL5xbqMO" resolve="Ecore" />
                     <node concept="2oAaUa" id="2sGdL5xbSGf" role="2oAaxa">
                       <node concept="3B6VN0" id="2sGdL5xbSGg" role="2oAawB">
-                        <ref role="3B56nS" node="2sGdL5xbSGy" resolve="containment" />
+                        <ref role="3B56nS" node="2sGdL5xbSGy" resolve="Containment" />
                       </node>
                       <node concept="3B6VN0" id="2sGdL5xbSGh" role="2oAawD">
                         <ref role="3B56nS" node="2sGdL5xbSG9" resolve="Reference" />
                       </node>
-                      <node concept="3B6VN0" id="2sGdL5xbSGi" role="2oAawy">
-                        <ref role="3B56nS" node="2sGdL5xbSGy" resolve="containment" />
+                      <node concept="2oAawe" id="2sGdL5xc9iM" role="2oAawy">
+                        <ref role="3aaZtz" node="2sGdL5xbqNC" resolve="containment" />
                       </node>
                     </node>
                     <node concept="2oAaUa" id="2sGdL5xbSGj" role="2oAaxa">
                       <node concept="3B6VN0" id="2sGdL5xbSGk" role="2oAawB">
-                        <ref role="3B56nS" node="2sGdL5xbSGx" resolve="lowerbound" />
+                        <ref role="3B56nS" node="2sGdL5xbSGx" resolve="Lowerbound" />
                       </node>
                       <node concept="3B6VN0" id="2sGdL5xbSGl" role="2oAawD">
                         <ref role="3B56nS" node="2sGdL5xbSG9" resolve="Reference" />
@@ -1671,7 +1671,7 @@
                     </node>
                     <node concept="2oAaUa" id="2sGdL5xbSGn" role="2oAaxa">
                       <node concept="3B6VN0" id="2sGdL5xbSGo" role="2oAawB">
-                        <ref role="3B56nS" node="2sGdL5xbSGw" resolve="upperbound" />
+                        <ref role="3B56nS" node="2sGdL5xbSGw" resolve="Upperbound" />
                       </node>
                       <node concept="3B6VN0" id="2sGdL5xbSGp" role="2oAawD">
                         <ref role="3B56nS" node="2sGdL5xbSG9" resolve="Reference" />
@@ -1682,30 +1682,30 @@
                     </node>
                     <node concept="2oAaUa" id="2sGdL5xbSGr" role="2oAaxa">
                       <node concept="3B6VN0" id="2sGdL5xbSGs" role="2oAawB">
-                        <ref role="3B56nS" node="2sGdL5xbSGv" resolve="ordered" />
+                        <ref role="3B56nS" node="2sGdL5xbSGv" resolve="Ordered" />
                       </node>
                       <node concept="3B6VN0" id="2sGdL5xbSGt" role="2oAawD">
                         <ref role="3B56nS" node="2sGdL5xbSG9" resolve="Reference" />
                       </node>
-                      <node concept="3B6VN0" id="2sGdL5xbSGu" role="2oAawy">
-                        <ref role="3B56nS" node="2sGdL5xbSGv" resolve="ordered" />
+                      <node concept="2oAawe" id="2sGdL5xc9iJ" role="2oAawy">
+                        <ref role="3aaZtz" node="2sGdL5xbqOf" resolve="ordered" />
                       </node>
                     </node>
                   </node>
                   <node concept="3B6VN1" id="2sGdL5xbSGv" role="3B56n9">
-                    <property role="TrG5h" value="ordered" />
+                    <property role="TrG5h" value="Ordered" />
                   </node>
                 </node>
                 <node concept="3B6VN1" id="2sGdL5xbSGw" role="3B56n9">
-                  <property role="TrG5h" value="upperbound" />
+                  <property role="TrG5h" value="Upperbound" />
                 </node>
               </node>
               <node concept="3B6VN1" id="2sGdL5xbSGx" role="3B56n9">
-                <property role="TrG5h" value="lowerbound" />
+                <property role="TrG5h" value="Lowerbound" />
               </node>
             </node>
             <node concept="3B6VN1" id="2sGdL5xbSGy" role="3B56n9">
-              <property role="TrG5h" value="containment" />
+              <property role="TrG5h" value="Containment" />
             </node>
           </node>
         </node>
