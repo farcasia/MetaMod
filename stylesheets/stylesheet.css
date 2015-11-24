@@ -15,7 +15,7 @@ a {
   a:hover {
     text-decoration: underline; }
 
-a.pageHeader:link {
+.pageHeader {
   color: #fff;
   text-decoration: none; }
 
