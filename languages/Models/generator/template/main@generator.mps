@@ -155,12 +155,6 @@
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -1068,6 +1062,16 @@
           </node>
         </node>
         <node concept="3clFbH" id="20nTeIlbVLr" role="3cqZAp" />
+        <node concept="3SKdUt" id="210OVEYby0R" role="3cqZAp">
+          <node concept="3SKdUq" id="210OVEYbyaV" role="3SKWNk">
+            <property role="3SKdUp" value="We make the evaluations." />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="210OVEYbyml" role="3cqZAp">
+          <node concept="3SKdUq" id="210OVEYbyuY" role="3SKWNk">
+            <property role="3SKdUp" value="The result of the evaluations still contains references to old model elements." />
+          </node>
+        </node>
         <node concept="1DcWWT" id="20nTeIlbO8f" role="3cqZAp">
           <node concept="3cpWsn" id="20nTeIlbO8g" role="1Duv9x">
             <property role="TrG5h" value="root" />
@@ -1114,14 +1118,79 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="20nTeIlbYNf" role="3cqZAp" />
-        <node concept="34ab3g" id="20nTeIldMrQ" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="20nTeIldMrS" role="34bqiv">
-            <property role="Xl_RC" value="After callByName!" />
+        <node concept="3clFbH" id="210OVEY5hGb" role="3cqZAp" />
+        <node concept="3SKdUt" id="210OVEYbyPZ" role="3cqZAp">
+          <node concept="3SKdUq" id="210OVEYbyQ0" role="3SKWNk">
+            <property role="3SKdUp" value="We add the missing conformance declarations to subgroups that are a result of a lambda application" />
           </node>
         </node>
-        <node concept="3clFbH" id="20nTeIldMd8" role="3cqZAp" />
+        <node concept="3SKdUt" id="210OVEYbzap" role="3cqZAp">
+          <node concept="3SKdUq" id="210OVEYbzaq" role="3SKWNk">
+            <property role="3SKdUp" value="and that were given references to named basic models as parameters." />
+          </node>
+        </node>
+        <node concept="1DcWWT" id="210OVEY5hVN" role="3cqZAp">
+          <node concept="3clFbS" id="210OVEY5hVP" role="2LFqv$">
+            <node concept="1DcWWT" id="210OVEY5jrD" role="3cqZAp">
+              <node concept="3clFbS" id="210OVEY5jrF" role="2LFqv$">
+                <node concept="3clFbF" id="210OVEXZFA0" role="3cqZAp">
+                  <node concept="2OqwBi" id="210OVEXZFC5" role="3clFbG">
+                    <node concept="37vLTw" id="210OVEXZF_Y" role="2Oq$k0">
+                      <ref role="3cqZAo" node="210OVEY5jrG" resolve="structureModel" />
+                    </node>
+                    <node concept="2qgKlT" id="210OVEXZFPB" role="2OqNvi">
+                      <ref role="37wK5l" to="z64h:210OVEXWv8X" resolve="addMissingBaseToReferences" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWsn" id="210OVEY5jrG" role="1Duv9x">
+                <property role="TrG5h" value="structureModel" />
+                <node concept="3Tqbb2" id="210OVEY5jyA" role="1tU5fm">
+                  <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="210OVEY5lW1" role="1DdaDG">
+                <node concept="2OqwBi" id="210OVEY5jZm" role="2Oq$k0">
+                  <node concept="37vLTw" id="210OVEY5jVQ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="210OVEY5hVQ" resolve="nRoot" />
+                  </node>
+                  <node concept="2Rf3mk" id="210OVEY5kju" role="2OqNvi">
+                    <node concept="1xMEDy" id="210OVEY5kjw" role="1xVPHs">
+                      <node concept="chp4Y" id="210OVEY5kE$" role="ri$Ld">
+                        <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="210OVEYbBW4" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="210OVEY5q4a" role="2OqNvi">
+                  <node concept="chp4Y" id="210OVEY5q6U" role="v3oSu">
+                    <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="210OVEY5hVQ" role="1Duv9x">
+            <property role="TrG5h" value="nRoot" />
+            <node concept="3Tqbb2" id="210OVEY5iac" role="1tU5fm">
+              <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="210OVEY5iG3" role="1DdaDG">
+            <node concept="37vLTw" id="210OVEY5isT" role="2Oq$k0">
+              <ref role="3cqZAo" node="20nTeIliQOj" resolve="roots" />
+            </node>
+            <node concept="T8wYR" id="210OVEY5jlj" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="20nTeIlbYNf" role="3cqZAp" />
+        <node concept="3SKdUt" id="210OVEYbzLF" role="3cqZAp">
+          <node concept="3SKdUq" id="210OVEYbzUm" role="3SKWNk">
+            <property role="3SKdUp" value="We fix the conformance elements to point to elements that are present in the new model." />
+          </node>
+        </node>
         <node concept="1DcWWT" id="20nTeIlbYTQ" role="3cqZAp">
           <node concept="3clFbS" id="20nTeIlbYTS" role="2LFqv$">
             <node concept="1DcWWT" id="20nTeIlch9O" role="3cqZAp">
@@ -1466,13 +1535,78 @@
           </node>
         </node>
         <node concept="3clFbH" id="20nTeIliXop" role="3cqZAp" />
-        <node concept="34ab3g" id="20nTeIliXuW" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="20nTeIliXuY" role="34bqiv">
-            <property role="Xl_RC" value="After conformance fix!" />
+        <node concept="3SKdUt" id="210OVEYb$Hk" role="3cqZAp">
+          <node concept="3SKdUq" id="210OVEYb$Q4" role="3SKWNk">
+            <property role="3SKdUp" value="We fix the references to model elements that are made to model elements outside of the group where the reference" />
           </node>
         </node>
-        <node concept="3clFbH" id="20nTeIliRmF" role="3cqZAp" />
+        <node concept="3SKdUt" id="210OVEYb_LA" role="3cqZAp">
+          <node concept="3SKdUq" id="210OVEYb_Pn" role="3SKWNk">
+            <property role="3SKdUp" value="is defined." />
+          </node>
+        </node>
+        <node concept="1DcWWT" id="210OVEYbA4E" role="3cqZAp">
+          <node concept="3clFbS" id="210OVEYbA4G" role="2LFqv$">
+            <node concept="1DcWWT" id="210OVEYbBCB" role="3cqZAp">
+              <node concept="3clFbS" id="210OVEYbBCC" role="2LFqv$">
+                <node concept="3clFbF" id="210OVEYbBCD" role="3cqZAp">
+                  <node concept="2OqwBi" id="210OVEYbBCE" role="3clFbG">
+                    <node concept="37vLTw" id="210OVEYbBCF" role="2Oq$k0">
+                      <ref role="3cqZAo" node="210OVEYbBCH" resolve="structureModel" />
+                    </node>
+                    <node concept="2qgKlT" id="210OVEYcu7F" role="2OqNvi">
+                      <ref role="37wK5l" to="z64h:210OVEYbDKN" resolve="fixReferencesToExterior" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWsn" id="210OVEYbBCH" role="1Duv9x">
+                <property role="TrG5h" value="structureModel" />
+                <node concept="3Tqbb2" id="210OVEYbBCI" role="1tU5fm">
+                  <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="210OVEYbBCJ" role="1DdaDG">
+                <node concept="2OqwBi" id="210OVEYbBCK" role="2Oq$k0">
+                  <node concept="37vLTw" id="210OVEYbBCL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="210OVEYbA4H" resolve="nRoot" />
+                  </node>
+                  <node concept="2Rf3mk" id="210OVEYbBCM" role="2OqNvi">
+                    <node concept="1xMEDy" id="210OVEYbBCN" role="1xVPHs">
+                      <node concept="chp4Y" id="210OVEYbBCO" role="ri$Ld">
+                        <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="210OVEYbCkl" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="210OVEYbBCP" role="2OqNvi">
+                  <node concept="chp4Y" id="210OVEYbBCQ" role="v3oSu">
+                    <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="210OVEYbA4H" role="1Duv9x">
+            <property role="TrG5h" value="nRoot" />
+            <node concept="3Tqbb2" id="210OVEYbAla" role="1tU5fm">
+              <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="210OVEYbARU" role="1DdaDG">
+            <node concept="37vLTw" id="210OVEYbAAT" role="2Oq$k0">
+              <ref role="3cqZAo" node="20nTeIliQOj" resolve="roots" />
+            </node>
+            <node concept="T8wYR" id="210OVEYbBxh" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="210OVEYb$qq" role="3cqZAp" />
+        <node concept="3SKdUt" id="210OVEYb$eV" role="3cqZAp">
+          <node concept="3SKdUq" id="210OVEYb$p5" role="3SKWNk">
+            <property role="3SKdUp" value="We replace the old root model elements by the new root model elements." />
+          </node>
+        </node>
         <node concept="1DcWWT" id="20nTeIliR_A" role="3cqZAp">
           <node concept="3clFbS" id="20nTeIliR_C" role="2LFqv$">
             <node concept="3clFbF" id="20nTeIliWNJ" role="3cqZAp">
@@ -1504,13 +1638,6 @@
               <ref role="3cqZAo" node="20nTeIliQOj" resolve="roots" />
             </node>
             <node concept="3lbrtF" id="20nTeIliT3K" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="20nTeIlofLd" role="3cqZAp" />
-        <node concept="34ab3g" id="20nTeIliYTj" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="20nTeIliYTl" role="34bqiv">
-            <property role="Xl_RC" value="After root replacement!" />
           </node>
         </node>
       </node>

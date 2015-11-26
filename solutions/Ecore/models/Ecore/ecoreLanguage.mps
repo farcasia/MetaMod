@@ -53,7 +53,6 @@
       <concept id="8717972784948762846" name="Models.structure.NamedStructureModel" flags="ng" index="2oAaVg" />
       <concept id="8717972784948762891" name="Models.structure.NamedBasicModel" flags="ng" index="2oAaW5" />
       <concept id="8717972784948762981" name="Models.structure.RefToNamedBM" flags="ng" index="2oAaXF" />
-      <concept id="8717972784948763026" name="Models.structure.RefToNamedSM" flags="ng" index="2oAaYs" />
       <concept id="8717972784948763079" name="Models.structure.Inheritance" flags="ng" index="2oAaZ9" />
       <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
         <reference id="3040834594469888400" name="ref" index="3aaZtz" />
@@ -1144,8 +1143,8 @@
                   <node concept="3B6VN0" id="4it7xKEMZJI" role="2oAawD">
                     <ref role="3B56nS" node="4it7xKEMM1i" resolve="StructuralFeature" />
                   </node>
-                  <node concept="2oAawe" id="2sGdL5xbAJE" role="2oAawy">
-                    <ref role="3aaZtz" node="2sGdL5xbqNs" resolve="name" />
+                  <node concept="2oAawe" id="210OVEY8H9C" role="2oAawy">
+                    <ref role="3aaZtz" node="2sGdL5xbqOc" resolve="name" />
                   </node>
                 </node>
               </node>
@@ -1524,9 +1523,6 @@
         </node>
         <node concept="2yUw1A" id="2oX3QL6R_s8" role="3B56no">
           <property role="TrG5h" value="Inheriting" />
-          <node concept="2oAaYs" id="LhtLNMoYzP" role="3B56nu">
-            <ref role="3aaZtz" node="VQwemtk2X$" resolve="TurnCommand" />
-          </node>
           <node concept="2yUw1A" id="2oX3QL6R_ov" role="3B56no">
             <property role="TrG5h" value="M2MESuperType" />
             <node concept="2oAaXF" id="LhtLNMoYzM" role="3B56nu">
@@ -1535,6 +1531,9 @@
             <node concept="kdsPF" id="2oX3QL6R_qR" role="3B56no">
               <ref role="kdsPE" node="2oX3QL6R_4l" resolve="Inheritance" />
             </node>
+          </node>
+          <node concept="2oAaXF" id="210OVEY8CBM" role="3B56nu">
+            <ref role="3aaZtz" node="VQwemtk1Ug" resolve="TurnCommand" />
           </node>
         </node>
       </node>
@@ -1656,8 +1655,8 @@
         </node>
         <node concept="2yUw1A" id="2oX3QL6R_Iw" role="3B56no">
           <property role="TrG5h" value="Inheriting" />
-          <node concept="2oAaYs" id="LhtLNMoY_0" role="3B56nu">
-            <ref role="3aaZtz" node="VQwemtk32z" resolve="ForwardCommand" />
+          <node concept="2oAaXF" id="210OVEY8H9_" role="3B56nu">
+            <ref role="3aaZtz" node="VQwemtk1Ux" resolve="ForwardCommand" />
           </node>
           <node concept="2yUw1A" id="2oX3QL6R_Iy" role="3B56no">
             <property role="TrG5h" value="M2MESuperType" />

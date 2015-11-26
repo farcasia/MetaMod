@@ -991,13 +991,6 @@
           <node concept="3clFbH" id="5udWXWXH9rb" role="3cqZAp" />
           <node concept="3clFbJ" id="5udWXWXH9sj" role="3cqZAp">
             <node concept="3clFbS" id="5udWXWXH9sl" role="3clFbx">
-              <node concept="34ab3g" id="2JwAxCgVKbW" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="2JwAxCgVKbY" role="34bqiv">
-                  <property role="Xl_RC" value="In Relation-source or Relation-target!!" />
-                </node>
-              </node>
-              <node concept="3clFbH" id="2JwAxCgVO1U" role="3cqZAp" />
               <node concept="3SKdUt" id="5udWXWXI298" role="3cqZAp">
                 <node concept="3SKdUq" id="5udWXWXI2fq" role="3SKWNk">
                   <property role="3SKdUp" value="We want the first ancestor that is a StructureModel." />
@@ -1082,13 +1075,6 @@
           <node concept="3clFbH" id="20nTeIlUjcP" role="3cqZAp" />
           <node concept="3clFbJ" id="20nTeIlUjpq" role="3cqZAp">
             <node concept="3clFbS" id="20nTeIlUjps" role="3clFbx">
-              <node concept="34ab3g" id="2JwAxCgVPs_" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="2JwAxCgVPsB" role="34bqiv">
-                  <property role="Xl_RC" value="In LambdaApplication-right!!" />
-                </node>
-              </node>
-              <node concept="3clFbH" id="2JwAxCgVP_J" role="3cqZAp" />
               <node concept="3cpWs8" id="20nTeIlUjKr" role="3cqZAp">
                 <node concept="3cpWsn" id="20nTeIlUjKs" role="3cpWs9">
                   <property role="TrG5h" value="sm" />
