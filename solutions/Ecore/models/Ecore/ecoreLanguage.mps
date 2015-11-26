@@ -1555,8 +1555,8 @@
         </node>
         <node concept="2oAaW5" id="VQwemtk4fX" role="2oAaxa">
           <property role="TrG5h" value="String" />
-          <node concept="2oAaXF" id="LhtLNMoY$1" role="2oAawq">
-            <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
+          <node concept="2oAaXF" id="210OVEXUtHs" role="2oAawq">
+            <ref role="3aaZtz" node="2sGdL5xbqMR" resolve="EDataType" />
           </node>
         </node>
         <node concept="2oAaW5" id="2sGdL5xbR3o" role="2oAaxa">
@@ -1565,13 +1565,13 @@
             <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
           </node>
         </node>
-        <node concept="2jq5PB" id="2oX3QL6Q$jl" role="2oAaxa" />
         <node concept="2oAaW5" id="VQwemtk2AE" role="2oAaxa">
           <property role="TrG5h" value="TurnCommandSideAttr" />
           <node concept="2oAaXF" id="LhtLNMoY$p" role="2oAawq">
             <ref role="3aaZtz" node="2sGdL5xbqMX" resolve="M2MeAttributes" />
           </node>
         </node>
+        <node concept="2jq5PB" id="210OVEXUbAK" role="2oAaxa" />
         <node concept="2oAaUZ" id="VQwemtk2Cz" role="2oAaxa">
           <property role="TrG5h" value="forTurnCommand" />
           <node concept="2oAaXF" id="LhtLNMoY$s" role="2oAawB">
@@ -1687,8 +1687,8 @@
         </node>
         <node concept="2oAaW5" id="VQwemtk4kx" role="2oAaxa">
           <property role="TrG5h" value="int" />
-          <node concept="2oAaXF" id="LhtLNMoY_9" role="2oAawq">
-            <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
+          <node concept="2oAaXF" id="210OVEXUtHp" role="2oAawq">
+            <ref role="3aaZtz" node="2sGdL5xbqMR" resolve="EDataType" />
           </node>
         </node>
         <node concept="2oAaW5" id="2sGdL5xbRHQ" role="2oAaxa">
@@ -1697,13 +1697,13 @@
             <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
           </node>
         </node>
-        <node concept="2jq5PB" id="2sGdL5xbRG9" role="2oAaxa" />
         <node concept="2oAaW5" id="VQwemtk2KS" role="2oAaxa">
           <property role="TrG5h" value="ForwardCommandDistanceAttr" />
           <node concept="2oAaXF" id="LhtLNMoY_x" role="2oAawq">
             <ref role="3aaZtz" node="2sGdL5xbqMX" resolve="M2MeAttributes" />
           </node>
         </node>
+        <node concept="2jq5PB" id="210OVEXUbjG" role="2oAaxa" />
         <node concept="2oAaUZ" id="VQwemtk2KU" role="2oAaxa">
           <property role="TrG5h" value="forForwardCommand" />
           <node concept="2oAaXF" id="LhtLNMoY_$" role="2oAawB">

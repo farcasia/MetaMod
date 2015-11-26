@@ -15,6 +15,10 @@
       <concept id="3049631818650728101" name="Modules.structure.Module" flags="ng" index="kds5u">
         <child id="3049631818650729095" name="defines" index="kdsPW" />
       </concept>
+      <concept id="3049631818650729104" name="Modules.structure.RefToModule" flags="ng" index="kdsPF">
+        <reference id="3049631818650729105" name="ref" index="kdsPE" />
+      </concept>
+      <concept id="256752499123956591" name="Modules.structure.LambdaApplicationArg" flags="ng" index="2yUw1A" />
     </language>
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" name="LambdaCalculus">
       <concept id="7362364337458504603" name="LambdaCalculus.structure.RefToBoundVariable" flags="ng" index="3B6VN0">
@@ -25,9 +29,17 @@
         <child id="7362364337458526866" name="boundVariable" index="3B56n9" />
         <child id="7362364337458526868" name="body" index="3B56nf" />
       </concept>
+      <concept id="7362364337458504600" name="LambdaCalculus.structure.LambdaApplication" flags="ng" index="3B6VN3">
+        <child id="7362364337458526851" name="left" index="3B56no" />
+        <child id="7362364337458526853" name="right" index="3B56nu" />
+      </concept>
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
+      <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
       <concept id="8717972784948764160" name="Models.structure.RefToNamedRel" flags="ng" index="2oAawe" />
+      <concept id="8717972784948762665" name="Models.structure.BasicModel" flags="ng" index="2oAaSB">
+        <child id="8717972784948764180" name="conformsTo" index="2oAawq" />
+      </concept>
       <concept id="8717972784948762711" name="Models.structure.StructureModel" flags="ng" index="2oAaTp">
         <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
@@ -202,12 +214,12 @@
                   <ref role="3aaZtz" node="2sGdL5xbqNO" resolve="eSuperTypes" />
                 </node>
                 <node concept="3B6VN0" id="2sGdL5xbSGK" role="2oAawB">
-                  <ref role="3B56nS" node="2sGdL5xbSGL" resolve="Inh+erited" />
+                  <ref role="3B56nS" node="2sGdL5xbSGL" resolve="Inherited" />
                 </node>
               </node>
             </node>
             <node concept="3B6VN1" id="2sGdL5xbSGL" role="3B56n9">
-              <property role="TrG5h" value="Inh+erited" />
+              <property role="TrG5h" value="Inherited" />
             </node>
           </node>
           <node concept="3B6VN1" id="2sGdL5xbSGM" role="3B56n9">
@@ -1253,6 +1265,425 @@
       </node>
       <node concept="2oAaXF" id="2sGdL5xbqSj" role="2oAawB">
         <ref role="3aaZtz" node="2sGdL5xbqNo" resolve="EObject" />
+      </node>
+    </node>
+  </node>
+  <node concept="2oAaVg" id="VQwemtk1sc">
+    <property role="TrG5h" value="RouteEcoreMM" />
+    <ref role="19kf5F" node="2sGdL5xbqMO" resolve="Ecore" />
+    <node concept="2oAaW5" id="VQwemtk49p" role="2oAaxa">
+      <property role="TrG5h" value="String" />
+      <node concept="2oAaXF" id="2sGdL5xbbLz" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMR" resolve="EDataType" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk4dl" role="2oAaxa">
+      <property role="TrG5h" value="name" />
+      <node concept="2oAaXF" id="LhtLNMoYx5" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMV" resolve="String" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk1V8" role="2oAaxa">
+      <property role="TrG5h" value="NameAttr" />
+      <node concept="2oAaXF" id="LhtLNMoYxb" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMQ" resolve="EAttribute" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk1Xm" role="2oAaxa">
+      <property role="TrG5h" value="RouteNameAttr" />
+      <node concept="2oAaXF" id="LhtLNMoYxn" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMX" resolve="M2MeAttributes" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk1TV" role="2oAaxa">
+      <property role="TrG5h" value="Route" />
+      <node concept="2oAaXF" id="LhtLNMoYxq" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk22e" role="2oAaxa">
+      <property role="TrG5h" value="RouteToCommand" />
+      <node concept="2oAaXF" id="LhtLNMoYxM" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMS" resolve="EReference" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk5Sj" role="2oAaxa">
+      <property role="TrG5h" value="contains" />
+      <node concept="2oAaXF" id="LhtLNMoYxP" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMV" resolve="String" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk3j4" role="2oAaxa">
+      <property role="TrG5h" value="Command" />
+      <node concept="2oAaXF" id="LhtLNMoYxS" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk23U" role="2oAaxa">
+      <property role="TrG5h" value="true" />
+      <node concept="2oAaXF" id="LhtLNMoYxV" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMT" resolve="boolean" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk3I1" role="2oAaxa">
+      <property role="TrG5h" value="0" />
+      <node concept="2oAaXF" id="LhtLNMoYxY" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMU" resolve="int" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk3Ld" role="2oAaxa">
+      <property role="TrG5h" value="-1" />
+      <node concept="2oAaXF" id="LhtLNMoYy1" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMU" resolve="int" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk21j" role="2oAaxa">
+      <property role="TrG5h" value="RouteToCommandReference" />
+      <node concept="2oAaXF" id="LhtLNMoYys" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMY" resolve="M2MeReferences" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk1Ug" role="2oAaxa">
+      <property role="TrG5h" value="TurnCommand" />
+      <node concept="2oAaXF" id="LhtLNMoYyX" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk2uq" role="2oAaxa">
+      <property role="TrG5h" value="M2MTurnCommandInheritsCommand" />
+      <node concept="2oAaXF" id="LhtLNMoYzJ" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMW" resolve="M2MeSuperTypes" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk1Vx" role="2oAaxa">
+      <property role="TrG5h" value="side" />
+      <node concept="2oAaXF" id="LhtLNMoYzV" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMQ" resolve="EAttribute" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk4ip" role="2oAaxa">
+      <property role="TrG5h" value="sideAttr" />
+      <node concept="2oAaXF" id="LhtLNMoYzY" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMV" resolve="String" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk2AE" role="2oAaxa">
+      <property role="TrG5h" value="TurnCommandSideAttr" />
+      <node concept="2oAaXF" id="LhtLNMoY$p" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMX" resolve="M2MeAttributes" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk1Ux" role="2oAaxa">
+      <property role="TrG5h" value="ForwardCommand" />
+      <node concept="2oAaXF" id="LhtLNMoY$I" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk2HD" role="2oAaxa">
+      <property role="TrG5h" value="M2MForwardCommandInheritsCommand" />
+      <node concept="2oAaXF" id="LhtLNMoY$R" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMW" resolve="M2MeSuperTypes" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk1VY" role="2oAaxa">
+      <property role="TrG5h" value="distanceAttr" />
+      <node concept="2oAaXF" id="LhtLNMoY_3" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMQ" resolve="EAttribute" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk4jx" role="2oAaxa">
+      <property role="TrG5h" value="distance" />
+      <node concept="2oAaXF" id="LhtLNMoY_6" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMV" resolve="String" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk4kx" role="2oAaxa">
+      <property role="TrG5h" value="int" />
+      <node concept="2oAaXF" id="210OVEXUsIR" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMR" resolve="EDataType" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="VQwemtk2KS" role="2oAaxa">
+      <property role="TrG5h" value="ForwardCommandDistanceAttr" />
+      <node concept="2oAaXF" id="LhtLNMoY_x" role="2oAawq">
+        <ref role="3aaZtz" node="2sGdL5xbqMX" resolve="M2MeAttributes" />
+      </node>
+    </node>
+    <node concept="2jq5PB" id="2sGdL5xbAQR" role="2oAaxa" />
+    <node concept="2oAaUZ" id="VQwemtk1Ye" role="2oAaxa">
+      <property role="TrG5h" value="forRoute" />
+      <node concept="2oAaXF" id="LhtLNMoYxz" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk1TV" resolve="Route" />
+      </node>
+      <node concept="2oAaXF" id="LhtLNMoYxw" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk1Xm" resolve="RouteNameAttr" />
+      </node>
+      <node concept="2oAawe" id="210OVEXUqkC" role="2oAawy">
+        <ref role="3aaZtz" node="2sGdL5xbqNR" resolve="forEClass" />
+      </node>
+    </node>
+    <node concept="2oAaUZ" id="VQwemtk1Z5" role="2oAaxa">
+      <property role="TrG5h" value="name" />
+      <node concept="2oAaXF" id="LhtLNMoYxG" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk1V8" resolve="NameAttr" />
+      </node>
+      <node concept="2oAaXF" id="LhtLNMoYxD" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk1Xm" resolve="RouteNameAttr" />
+      </node>
+      <node concept="2oAawe" id="210OVEXUqkF" role="2oAawy">
+        <ref role="3aaZtz" node="2sGdL5xbqNU" resolve="eAttributes" />
+      </node>
+    </node>
+    <node concept="2yUw1A" id="4it7xKEN0h8" role="2oAaxa">
+      <property role="TrG5h" value="Name" />
+      <node concept="2oAaXF" id="LhtLNMoYxk" role="3B56nu">
+        <ref role="3aaZtz" node="VQwemtk4dl" resolve="name" />
+      </node>
+      <node concept="2yUw1A" id="4it7xKEN05Q" role="3B56no">
+        <property role="TrG5h" value="Type" />
+        <node concept="2oAaXF" id="LhtLNMoYxh" role="3B56nu">
+          <ref role="3aaZtz" node="VQwemtk49p" resolve="String" />
+        </node>
+        <node concept="2yUw1A" id="4it7xKEN018" role="3B56no">
+          <property role="TrG5h" value="StructuralFeature" />
+          <node concept="2oAaXF" id="LhtLNMoYxe" role="3B56nu">
+            <ref role="3aaZtz" node="VQwemtk1V8" resolve="NameAttr" />
+          </node>
+          <node concept="kdsPF" id="210OVEXUqkI" role="3B56no">
+            <ref role="kdsPE" node="2sGdL5xbSFR" resolve="StructuralFeatureTypeAndName" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2jq5PB" id="210OVEXUtmz" role="2oAaxa" />
+    <node concept="2oAaUZ" id="VQwemtk2aX" role="2oAaxa">
+      <property role="TrG5h" value="inRoute" />
+      <node concept="2oAaXF" id="LhtLNMoYyC" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk1TV" resolve="Route" />
+      </node>
+      <node concept="2oAaXF" id="LhtLNMoYy_" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk21j" resolve="RouteToCommandReference" />
+      </node>
+      <node concept="2oAawe" id="210OVEXUqOq" role="2oAawy">
+        <ref role="3aaZtz" node="2sGdL5xbqNX" resolve="forEClass" />
+      </node>
+    </node>
+    <node concept="2oAaUZ" id="VQwemtk2k_" role="2oAaxa">
+      <property role="TrG5h" value="reference" />
+      <node concept="2oAaXF" id="LhtLNMoYyL" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk22e" resolve="RouteToCommand" />
+      </node>
+      <node concept="2oAaXF" id="LhtLNMoYyO" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk21j" resolve="RouteToCommandReference" />
+      </node>
+      <node concept="2oAawe" id="210OVEXUqOt" role="2oAawy">
+        <ref role="3aaZtz" node="2sGdL5xbqO0" resolve="eReferences" />
+      </node>
+    </node>
+    <node concept="2yUw1A" id="4it7xKEN0_5" role="2oAaxa">
+      <property role="TrG5h" value="Name" />
+      <node concept="2oAaXF" id="LhtLNMoYy7" role="3B56nu">
+        <ref role="3aaZtz" node="VQwemtk5Sj" resolve="contains" />
+      </node>
+      <node concept="2yUw1A" id="4it7xKEN0_7" role="3B56no">
+        <property role="TrG5h" value="Type" />
+        <node concept="2oAaXF" id="LhtLNMoYya" role="3B56nu">
+          <ref role="3aaZtz" node="VQwemtk3j4" resolve="Command" />
+        </node>
+        <node concept="2yUw1A" id="4it7xKEN0_9" role="3B56no">
+          <property role="TrG5h" value="StructuralFeature" />
+          <node concept="2oAaXF" id="LhtLNMoYy4" role="3B56nu">
+            <ref role="3aaZtz" node="VQwemtk22e" resolve="RouteToCommand" />
+          </node>
+          <node concept="kdsPF" id="4it7xKEN0_b" role="3B56no">
+            <ref role="kdsPE" node="2sGdL5xbSFR" resolve="StructuralFeatureTypeAndName" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2yUw1A" id="2oX3QL6QNm7" role="2oAaxa">
+      <property role="TrG5h" value="Ordered" />
+      <node concept="2oAaXF" id="LhtLNMoYyp" role="3B56nu">
+        <ref role="3aaZtz" node="VQwemtk23U" resolve="true" />
+      </node>
+      <node concept="2yUw1A" id="2oX3QL6QNft" role="3B56no">
+        <property role="TrG5h" value="Upperbound" />
+        <node concept="2oAaXF" id="LhtLNMoYym" role="3B56nu">
+          <ref role="3aaZtz" node="VQwemtk3Ld" resolve="-1" />
+        </node>
+        <node concept="2yUw1A" id="2oX3QL6QN8N" role="3B56no">
+          <property role="TrG5h" value="Lowerbound" />
+          <node concept="2oAaXF" id="LhtLNMoYyj" role="3B56nu">
+            <ref role="3aaZtz" node="VQwemtk3I1" resolve="0" />
+          </node>
+          <node concept="2yUw1A" id="2oX3QL6QN2t" role="3B56no">
+            <property role="TrG5h" value="Containment" />
+            <node concept="2oAaXF" id="LhtLNMoYyg" role="3B56nu">
+              <ref role="3aaZtz" node="VQwemtk23U" resolve="true" />
+            </node>
+            <node concept="2yUw1A" id="2oX3QL6QMWi" role="3B56no">
+              <property role="TrG5h" value="Reference" />
+              <node concept="2oAaXF" id="LhtLNMoYyd" role="3B56nu">
+                <ref role="3aaZtz" node="VQwemtk22e" resolve="RouteToCommand" />
+              </node>
+              <node concept="kdsPF" id="2oX3QL6QMYo" role="3B56no">
+                <ref role="kdsPE" node="2sGdL5xbSG7" resolve="ReferenceConstants" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2jq5PB" id="210OVEXUrfr" role="2oAaxa" />
+    <node concept="2oAaZ9" id="2sGdL5xbZVy" role="2oAaxa">
+      <node concept="2oAaXF" id="2sGdL5xbZWo" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk3j4" resolve="Command" />
+      </node>
+      <node concept="2oAaXF" id="2sGdL5xbZWl" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk1Ug" resolve="TurnCommand" />
+      </node>
+    </node>
+    <node concept="2yUw1A" id="2oX3QL6R_FP" role="2oAaxa">
+      <property role="TrG5h" value="Inherited" />
+      <node concept="2oAaXF" id="LhtLNMoYzS" role="3B56nu">
+        <ref role="3aaZtz" node="VQwemtk3j4" resolve="Command" />
+      </node>
+      <node concept="2yUw1A" id="2oX3QL6R_s8" role="3B56no">
+        <property role="TrG5h" value="Inheriting" />
+        <node concept="2oAaXF" id="210OVEXUraj" role="3B56nu">
+          <ref role="3aaZtz" node="VQwemtk1Ug" resolve="TurnCommand" />
+        </node>
+        <node concept="2yUw1A" id="2oX3QL6R_ov" role="3B56no">
+          <property role="TrG5h" value="M2MESuperType" />
+          <node concept="2oAaXF" id="LhtLNMoYzM" role="3B56nu">
+            <ref role="3aaZtz" node="VQwemtk2uq" resolve="M2MTurnCommandInheritsCommand" />
+          </node>
+          <node concept="kdsPF" id="2oX3QL6R_qR" role="3B56no">
+            <ref role="kdsPE" node="2sGdL5xbSGz" resolve="Inheritance" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2jq5PB" id="210OVEXUqZe" role="2oAaxa" />
+    <node concept="2oAaUZ" id="VQwemtk2Cz" role="2oAaxa">
+      <property role="TrG5h" value="forTurnCommand" />
+      <node concept="2oAaXF" id="LhtLNMoY$s" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk1Ug" resolve="TurnCommand" />
+      </node>
+      <node concept="2oAaXF" id="LhtLNMoY$m" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk2AE" resolve="TurnCommandSideAttr" />
+      </node>
+      <node concept="2oAawe" id="210OVEXUrGo" role="2oAawy">
+        <ref role="3aaZtz" node="2sGdL5xbqNR" resolve="forEClass" />
+      </node>
+    </node>
+    <node concept="2oAaUZ" id="VQwemtk2EI" role="2oAaxa">
+      <property role="TrG5h" value="side" />
+      <node concept="2oAaXF" id="LhtLNMoY$C" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk1Vx" resolve="side" />
+      </node>
+      <node concept="2oAaXF" id="LhtLNMoY$_" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk2AE" resolve="TurnCommandSideAttr" />
+      </node>
+      <node concept="2oAawe" id="210OVEXUrGr" role="2oAawy">
+        <ref role="3aaZtz" node="2sGdL5xbqNU" resolve="eAttributes" />
+      </node>
+    </node>
+    <node concept="2yUw1A" id="2sGdL5xbR8K" role="2oAaxa">
+      <property role="TrG5h" value="Name" />
+      <node concept="2oAaXF" id="2sGdL5xbRa4" role="3B56nu">
+        <ref role="3aaZtz" node="VQwemtk4ip" resolve="sideAttr" />
+      </node>
+      <node concept="2yUw1A" id="2sGdL5xbR8M" role="3B56no">
+        <property role="TrG5h" value="Type" />
+        <node concept="2oAaXF" id="210OVEXUrGl" role="3B56nu">
+          <ref role="3aaZtz" node="VQwemtk49p" resolve="String" />
+        </node>
+        <node concept="2yUw1A" id="2sGdL5xbR8O" role="3B56no">
+          <property role="TrG5h" value="StructuralFeature" />
+          <node concept="2oAaXF" id="2sGdL5xbR9Y" role="3B56nu">
+            <ref role="3aaZtz" node="VQwemtk1Vx" resolve="side" />
+          </node>
+          <node concept="kdsPF" id="2sGdL5xbR8Q" role="3B56no">
+            <ref role="kdsPE" node="2sGdL5xbSFR" resolve="StructuralFeatureTypeAndName" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2jq5PB" id="210OVEXUrVA" role="2oAaxa" />
+    <node concept="2oAaZ9" id="2sGdL5xbZTX" role="2oAaxa">
+      <node concept="2oAaXF" id="2sGdL5xbZUN" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk3j4" resolve="Command" />
+      </node>
+      <node concept="2oAaXF" id="2sGdL5xbZUK" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk1Ux" resolve="ForwardCommand" />
+      </node>
+    </node>
+    <node concept="2yUw1A" id="2oX3QL6R_Iu" role="2oAaxa">
+      <property role="TrG5h" value="Inherited" />
+      <node concept="2oAaXF" id="LhtLNMoY$X" role="3B56nu">
+        <ref role="3aaZtz" node="VQwemtk3j4" resolve="Command" />
+      </node>
+      <node concept="2yUw1A" id="2oX3QL6R_Iw" role="3B56no">
+        <property role="TrG5h" value="Inheriting" />
+        <node concept="2oAaXF" id="210OVEXUs7v" role="3B56nu">
+          <ref role="3aaZtz" node="VQwemtk1Ux" resolve="ForwardCommand" />
+        </node>
+        <node concept="2yUw1A" id="2oX3QL6R_Iy" role="3B56no">
+          <property role="TrG5h" value="M2MESuperType" />
+          <node concept="2oAaXF" id="LhtLNMoY$U" role="3B56nu">
+            <ref role="3aaZtz" node="VQwemtk2HD" resolve="M2MForwardCommandInheritsCommand" />
+          </node>
+          <node concept="kdsPF" id="2oX3QL6R_I$" role="3B56no">
+            <ref role="kdsPE" node="2sGdL5xbSGz" resolve="Inheritance" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2jq5PB" id="210OVEXUs7y" role="2oAaxa" />
+    <node concept="2oAaUZ" id="VQwemtk2KU" role="2oAaxa">
+      <property role="TrG5h" value="forForwardCommand" />
+      <node concept="2oAaXF" id="LhtLNMoY_$" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk1Ux" resolve="ForwardCommand" />
+      </node>
+      <node concept="2oAaXF" id="LhtLNMoY_B" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk2KS" resolve="ForwardCommandDistanceAttr" />
+      </node>
+      <node concept="2oAawe" id="210OVEXUsRF" role="2oAawy">
+        <ref role="3aaZtz" node="2sGdL5xbqNR" resolve="forEClass" />
+      </node>
+    </node>
+    <node concept="2oAaUZ" id="VQwemtk2KY" role="2oAaxa">
+      <property role="TrG5h" value="distance" />
+      <node concept="2oAaXF" id="LhtLNMoY_O" role="2oAawB">
+        <ref role="3aaZtz" node="VQwemtk1VY" resolve="distanceAttr" />
+      </node>
+      <node concept="2oAaXF" id="LhtLNMoY_R" role="2oAawD">
+        <ref role="3aaZtz" node="VQwemtk2KS" resolve="ForwardCommandDistanceAttr" />
+      </node>
+      <node concept="2oAawe" id="210OVEXUsRI" role="2oAawy">
+        <ref role="3aaZtz" node="2sGdL5xbqNU" resolve="eAttributes" />
+      </node>
+    </node>
+    <node concept="2yUw1A" id="2sGdL5xbRL7" role="2oAaxa">
+      <property role="TrG5h" value="Name" />
+      <node concept="2oAaXF" id="2sGdL5xbRLS" role="3B56nu">
+        <ref role="3aaZtz" node="VQwemtk4jx" resolve="distance" />
+      </node>
+      <node concept="2yUw1A" id="2sGdL5xbRL9" role="3B56no">
+        <property role="TrG5h" value="Type" />
+        <node concept="2oAaXF" id="2sGdL5xbRLP" role="3B56nu">
+          <ref role="3aaZtz" node="VQwemtk4kx" resolve="int" />
+        </node>
+        <node concept="2yUw1A" id="2sGdL5xbRLb" role="3B56no">
+          <property role="TrG5h" value="StructuralFeature" />
+          <node concept="2oAaXF" id="2sGdL5xbRLM" role="3B56nu">
+            <ref role="3aaZtz" node="VQwemtk1VY" resolve="distanceAttr" />
+          </node>
+          <node concept="kdsPF" id="2sGdL5xbRLd" role="3B56no">
+            <ref role="kdsPE" node="2sGdL5xbSFR" resolve="StructuralFeatureTypeAndName" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
