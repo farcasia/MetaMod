@@ -1335,27 +1335,6 @@
             <ref role="3aaZtz" node="2sGdL5xbqNU" resolve="eAttributes" />
           </node>
         </node>
-        <node concept="2yUw1A" id="4it7xKEN0h8" role="2oAaxa">
-          <property role="TrG5h" value="Name" />
-          <node concept="2oAaXF" id="LhtLNMoYxk" role="3B56nu">
-            <ref role="3aaZtz" node="VQwemtk4dl" resolve="name" />
-          </node>
-          <node concept="2yUw1A" id="4it7xKEN05Q" role="3B56no">
-            <property role="TrG5h" value="Type" />
-            <node concept="2oAaXF" id="LhtLNMoYxh" role="3B56nu">
-              <ref role="3aaZtz" node="VQwemtk49p" resolve="String" />
-            </node>
-            <node concept="2yUw1A" id="4it7xKEN018" role="3B56no">
-              <property role="TrG5h" value="StructuralFeature" />
-              <node concept="2oAaXF" id="LhtLNMoYxe" role="3B56nu">
-                <ref role="3aaZtz" node="VQwemtk1V8" resolve="NameAttr" />
-              </node>
-              <node concept="kdsPF" id="4it7xKEN02J" role="3B56no">
-                <ref role="kdsPE" node="4it7xKEMM1f" resolve="StructuralFeatureTypeAndName" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="2uuBJw" id="210OVEYgnMI" role="2oAaxa">
           <property role="TrG5h" value="Name" />
           <node concept="2oAaXF" id="210OVEYmvY7" role="3B56nu">
@@ -1376,46 +1355,46 @@
               </node>
             </node>
           </node>
-          <node concept="2oAaTp" id="210OVEYLwiP" role="2uuBGn">
-            <node concept="2oAaW5" id="210OVEYLwo$" role="2oAaxa">
+          <node concept="2oAaTp" id="210OVEYOQtG" role="2uuBGn">
+            <node concept="2oAaW5" id="210OVEYOQzr" role="2oAaxa">
               <property role="TrG5h" value="name" />
-              <node concept="2oAaXF" id="210OVEYLwo_" role="2oAawq">
+              <node concept="2oAaXF" id="210OVEYOQzs" role="2oAawq">
                 <ref role="3aaZtz" node="2sGdL5xbqMV" resolve="String" />
               </node>
             </node>
-            <node concept="2oAaW5" id="210OVEYLwoy" role="2oAaxa">
+            <node concept="2oAaW5" id="210OVEYOQzp" role="2oAaxa">
               <property role="TrG5h" value="String" />
-              <node concept="2oAaXF" id="210OVEYLwoz" role="2oAawq">
+              <node concept="2oAaXF" id="210OVEYOQzq" role="2oAawq">
                 <ref role="3aaZtz" node="2sGdL5xbqMR" resolve="EDataType" />
               </node>
             </node>
-            <node concept="2oAaW5" id="210OVEYLwow" role="2oAaxa">
+            <node concept="2oAaW5" id="210OVEYOQzn" role="2oAaxa">
               <property role="TrG5h" value="NameAttr" />
-              <node concept="2oAaXF" id="210OVEYLwox" role="2oAawq">
+              <node concept="2oAaXF" id="210OVEYOQzo" role="2oAawq">
                 <ref role="3aaZtz" node="2sGdL5xbqMQ" resolve="EAttribute" />
               </node>
             </node>
-            <node concept="2jq5PB" id="210OVEYLwov" role="2oAaxa" />
-            <node concept="2oAaUZ" id="210OVEYLwon" role="2oAaxa">
+            <node concept="2jq5PB" id="210OVEYOQzm" role="2oAaxa" />
+            <node concept="2oAaUZ" id="210OVEYOQze" role="2oAaxa">
               <property role="TrG5h" value="value" />
-              <node concept="2oAaXF" id="210OVEYLwoo" role="2oAawD">
-                <ref role="3aaZtz" node="210OVEYLwow" resolve="NameAttr" />
+              <node concept="2oAaXF" id="210OVEYOQzf" role="2oAawD">
+                <ref role="3aaZtz" node="210OVEYOQzn" resolve="NameAttr" />
               </node>
-              <node concept="2oAaXF" id="210OVEYLwop" role="2oAawB">
-                <ref role="3aaZtz" node="210OVEYLwoy" resolve="String" />
+              <node concept="2oAaXF" id="210OVEYOQzg" role="2oAawB">
+                <ref role="3aaZtz" node="210OVEYOQzp" resolve="String" />
               </node>
-              <node concept="2oAawe" id="210OVEYLwoq" role="2oAawy">
+              <node concept="2oAawe" id="210OVEYOQzh" role="2oAawy">
                 <ref role="3aaZtz" node="2sGdL5xbqOH" resolve="eType" />
               </node>
             </node>
-            <node concept="2oAaUa" id="210OVEYLwor" role="2oAaxa">
-              <node concept="2oAaXF" id="210OVEYLwos" role="2oAawD">
-                <ref role="3aaZtz" node="210OVEYLwow" resolve="NameAttr" />
+            <node concept="2oAaUa" id="210OVEYOQzi" role="2oAaxa">
+              <node concept="2oAaXF" id="210OVEYOQzj" role="2oAawD">
+                <ref role="3aaZtz" node="210OVEYOQzn" resolve="NameAttr" />
               </node>
-              <node concept="2oAaXF" id="210OVEYLwot" role="2oAawB">
-                <ref role="3aaZtz" node="210OVEYLwo$" resolve="name" />
+              <node concept="2oAaXF" id="210OVEYOQzk" role="2oAawB">
+                <ref role="3aaZtz" node="210OVEYOQzr" resolve="name" />
               </node>
-              <node concept="2oAawe" id="210OVEYLwou" role="2oAawy">
+              <node concept="2oAawe" id="210OVEYOQzl" role="2oAawy">
                 <ref role="3aaZtz" node="2sGdL5xbqOc" resolve="name" />
               </node>
             </node>
