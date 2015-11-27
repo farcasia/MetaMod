@@ -1121,12 +1121,12 @@
         <node concept="3clFbH" id="210OVEY5hGb" role="3cqZAp" />
         <node concept="3SKdUt" id="210OVEYbyPZ" role="3cqZAp">
           <node concept="3SKdUq" id="210OVEYbyQ0" role="3SKWNk">
-            <property role="3SKdUp" value="We add the missing conformance declarations to subgroups that are a result of a lambda application" />
+            <property role="3SKdUp" value="We add the missing conformance declarations to subgroups that are a result" />
           </node>
         </node>
         <node concept="3SKdUt" id="210OVEYbzap" role="3cqZAp">
           <node concept="3SKdUq" id="210OVEYbzaq" role="3SKWNk">
-            <property role="3SKdUp" value="and that were given references to named basic models as parameters." />
+            <property role="3SKdUp" value="of a lambda application and that were given references to named basic models as parameters." />
           </node>
         </node>
         <node concept="1DcWWT" id="210OVEY5hVN" role="3cqZAp">
@@ -1537,12 +1537,12 @@
         <node concept="3clFbH" id="20nTeIliXop" role="3cqZAp" />
         <node concept="3SKdUt" id="210OVEYb$Hk" role="3cqZAp">
           <node concept="3SKdUq" id="210OVEYb$Q4" role="3SKWNk">
-            <property role="3SKdUp" value="We fix the references to model elements that are made to model elements outside of the group where the reference" />
+            <property role="3SKdUp" value="We fix the references to model elements that are made to model elements" />
           </node>
         </node>
-        <node concept="3SKdUt" id="210OVEYb_LA" role="3cqZAp">
-          <node concept="3SKdUq" id="210OVEYb_Pn" role="3SKWNk">
-            <property role="3SKdUp" value="is defined." />
+        <node concept="3SKdUt" id="210OVEYri4C" role="3cqZAp">
+          <node concept="3SKdUq" id="210OVEYrirk" role="3SKWNk">
+            <property role="3SKdUp" value="outside of the group where the reference is defined." />
           </node>
         </node>
         <node concept="1DcWWT" id="210OVEYbA4E" role="3cqZAp">

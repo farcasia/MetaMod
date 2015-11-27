@@ -54,6 +54,9 @@
       <concept id="8717972784948762891" name="Models.structure.NamedBasicModel" flags="ng" index="2oAaW5" />
       <concept id="8717972784948762981" name="Models.structure.RefToNamedBM" flags="ng" index="2oAaXF" />
       <concept id="8717972784948763079" name="Models.structure.Inheritance" flags="ng" index="2oAaZ9" />
+      <concept id="2324090206732068954" name="Models.structure.LApplWithGroup" flags="ng" index="2uuBJw">
+        <child id="2324090206732069037" name="group" index="2uuBGn" />
+      </concept>
       <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
         <reference id="3040834594469888400" name="ref" index="3aaZtz" />
       </concept>
@@ -1349,6 +1352,72 @@
               </node>
               <node concept="kdsPF" id="4it7xKEN02J" role="3B56no">
                 <ref role="kdsPE" node="4it7xKEMM1f" resolve="StructuralFeatureTypeAndName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2uuBJw" id="210OVEYgnMI" role="2oAaxa">
+          <property role="TrG5h" value="Name" />
+          <node concept="2oAaXF" id="210OVEYmvY7" role="3B56nu">
+            <ref role="3aaZtz" node="VQwemtk4dl" resolve="name" />
+          </node>
+          <node concept="2uuBJw" id="210OVEYgnaw" role="3B56no">
+            <property role="TrG5h" value="Type" />
+            <node concept="2oAaXF" id="210OVEYlKlQ" role="3B56nu">
+              <ref role="3aaZtz" node="VQwemtk49p" resolve="String" />
+            </node>
+            <node concept="2uuBJw" id="210OVEYgn85" role="3B56no">
+              <property role="TrG5h" value="StructuralFeature" />
+              <node concept="2oAaXF" id="210OVEYgn8H" role="3B56nu">
+                <ref role="3aaZtz" node="VQwemtk1V8" resolve="NameAttr" />
+              </node>
+              <node concept="kdsPF" id="210OVEYgn8D" role="3B56no">
+                <ref role="kdsPE" node="4it7xKEMM1f" resolve="StructuralFeatureTypeAndName" />
+              </node>
+            </node>
+          </node>
+          <node concept="2oAaTp" id="210OVEYraLz" role="2uuBGn">
+            <ref role="19kf5F" to=":^" />
+            <node concept="2oAaW5" id="210OVEYraRi" role="2oAaxa">
+              <property role="TrG5h" value="name" />
+              <node concept="2oAaXF" id="210OVEYraRj" role="2oAawq">
+                <ref role="3aaZtz" node="2sGdL5xbqMV" resolve="String" />
+              </node>
+            </node>
+            <node concept="2oAaW5" id="210OVEYraRg" role="2oAaxa">
+              <property role="TrG5h" value="String" />
+              <node concept="2oAaXF" id="210OVEYraRh" role="2oAawq">
+                <ref role="3aaZtz" node="2sGdL5xbqMR" resolve="EDataType" />
+              </node>
+            </node>
+            <node concept="2oAaW5" id="210OVEYraRe" role="2oAaxa">
+              <property role="TrG5h" value="NameAttr" />
+              <node concept="2oAaXF" id="210OVEYraRf" role="2oAawq">
+                <ref role="3aaZtz" node="2sGdL5xbqMQ" resolve="EAttribute" />
+              </node>
+            </node>
+            <node concept="2jq5PB" id="210OVEYraRd" role="2oAaxa" />
+            <node concept="2oAaUZ" id="210OVEYraR5" role="2oAaxa">
+              <property role="TrG5h" value="value" />
+              <node concept="2oAaXF" id="210OVEYraR6" role="2oAawD">
+                <ref role="3aaZtz" node="210OVEYraRe" resolve="NameAttr" />
+              </node>
+              <node concept="2oAaXF" id="210OVEYraR7" role="2oAawB">
+                <ref role="3aaZtz" node="210OVEYraRg" resolve="String" />
+              </node>
+              <node concept="2oAawe" id="210OVEYraR8" role="2oAawy">
+                <ref role="3aaZtz" node="2sGdL5xbqOH" resolve="eType" />
+              </node>
+            </node>
+            <node concept="2oAaUa" id="210OVEYraR9" role="2oAaxa">
+              <node concept="2oAaXF" id="210OVEYraRa" role="2oAawD">
+                <ref role="3aaZtz" node="210OVEYraRe" resolve="NameAttr" />
+              </node>
+              <node concept="2oAaXF" id="210OVEYraRb" role="2oAawB">
+                <ref role="3aaZtz" node="210OVEYraRi" resolve="name" />
+              </node>
+              <node concept="2oAawe" id="210OVEYraRc" role="2oAawy">
+                <ref role="3aaZtz" node="2sGdL5xbqOc" resolve="name" />
               </node>
             </node>
           </node>

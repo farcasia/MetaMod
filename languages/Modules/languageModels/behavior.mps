@@ -55,9 +55,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -153,12 +150,6 @@
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -955,12 +946,6 @@
                 </node>
               </node>
             </node>
-            <node concept="34ab3g" id="egaKAxxiHd" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="Xl_RD" id="egaKAxxiHf" role="34bqiv">
-                <property role="Xl_RC" value="Do we ever get here?" />
-              </node>
-            </node>
             <node concept="3clFbF" id="egaKAxv$9q" role="3cqZAp">
               <node concept="3uNrnE" id="egaKAxv$q6" role="3clFbG">
                 <node concept="37vLTw" id="egaKAxv$q8" role="2$L3a6">
@@ -1063,12 +1048,7 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="egaKAxxnqH" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="egaKAxxnqJ" role="34bqiv">
-            <property role="Xl_RC" value="get to this point" />
-          </node>
-        </node>
+        <node concept="3clFbH" id="210OVEYpgHH" role="3cqZAp" />
         <node concept="1Dw8fO" id="egaKAxvC_o" role="3cqZAp">
           <node concept="3clFbS" id="egaKAxvC_q" role="2LFqv$">
             <node concept="3clFbJ" id="egaKAxvDyD" role="3cqZAp">

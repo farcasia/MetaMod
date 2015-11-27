@@ -10,6 +10,7 @@
     <import index="9lyo" ref="r:c0d41959-8f5c-452f-90c5-757e1c169078(LambdaCalculus.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="2mcz" ref="r:23e4f1fd-a9d1-4b09-a8c1-3a24e82c6a63(Modules.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -167,6 +168,15 @@
     </node>
     <node concept="PrWs8" id="2CNdJfw6bPN" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="210OVEYeExq">
+    <property role="TrG5h" value="LApplWithGroup" />
+    <ref role="1TJDcQ" to="2mcz:egaKAxuyHJ" resolve="LambdaApplicationArg" />
+    <node concept="1TJgyj" id="210OVEYeEyH" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="group" />
+      <ref role="20lvS9" node="7zWtwVwpdxn" resolve="StructureModel" />
     </node>
   </node>
 </model>
