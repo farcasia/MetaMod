@@ -83,6 +83,7 @@
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -1189,6 +1190,7 @@
           </node>
         </node>
         <node concept="3EZMnI" id="210OVEYeQkG" role="1QoVPY">
+          <property role="S$Qs1" value="true" />
           <node concept="3F0ifn" id="210OVEYeQrc" role="3EZMnx">
             <property role="3F0ifm" value="-&gt;" />
           </node>
@@ -1297,7 +1299,7 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="210OVEYl13F" role="3cqZAp" />
+          <node concept="3clFbH" id="210OVEYuoNh" role="3cqZAp" />
           <node concept="1DcWWT" id="210OVEY5jrD" role="3cqZAp">
             <node concept="3clFbS" id="210OVEY5jrF" role="2LFqv$">
               <node concept="3clFbF" id="210OVEXZFA0" role="3cqZAp">
@@ -1385,7 +1387,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="210OVEYlKE4" role="3cqZAp" />
         </node>
       </node>
     </node>
