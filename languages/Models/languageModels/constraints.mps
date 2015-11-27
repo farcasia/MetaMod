@@ -50,9 +50,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -87,7 +84,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -165,12 +161,6 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1362,26 +1352,6 @@
           <node concept="3clFbH" id="2CNdJfw215d" role="3cqZAp" />
           <node concept="3clFbJ" id="5udWXWXHaEk" role="3cqZAp">
             <node concept="3clFbS" id="5udWXWXHaEm" role="3clFbx">
-              <node concept="34ab3g" id="6uuPbCA7581" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="3cpWs3" id="6uuPbCA7bXr" role="34bqiv">
-                  <node concept="21POm0" id="6uuPbCA8Wh1" role="3uHU7w" />
-                  <node concept="3cpWs3" id="6uuPbCA78XE" role="3uHU7B">
-                    <node concept="3cpWs3" id="6uuPbCA7886" role="3uHU7B">
-                      <node concept="Xl_RD" id="6uuPbCA7583" role="3uHU7B">
-                        <property role="Xl_RC" value="In the ref link of RefToNamedRel_Constraints metamodel is " />
-                      </node>
-                      <node concept="37vLTw" id="6uuPbCA78gv" role="3uHU7w">
-                        <ref role="3cqZAo" node="6uuPbCA3SIh" resolve="metamodel" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="6uuPbCA798C" role="3uHU7w">
-                      <property role="Xl_RC" value=" and the enclosingNode is " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="6uuPbCA3SAV" role="3cqZAp" />
               <node concept="3SKdUt" id="6uuPbCA3zZt" role="3cqZAp">
                 <node concept="3SKdUq" id="6uuPbCA3$23" role="3SKWNk">
                   <property role="3SKdUp" value="We need at least one of the ends to be defined." />
@@ -1991,48 +1961,6 @@
                 </node>
               </node>
               <node concept="3clFbH" id="6uuPbCA69qJ" role="3cqZAp" />
-              <node concept="34ab3g" id="6uuPbCA69Nd" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="3cpWs3" id="58fdlQtOvXt" role="34bqiv">
-                  <node concept="37vLTw" id="58fdlQtOvDc" role="3uHU7w">
-                    <ref role="3cqZAo" node="6uuPbCA4i8U" resolve="target" />
-                  </node>
-                  <node concept="3cpWs3" id="58fdlQtOvq9" role="3uHU7B">
-                    <node concept="3cpWs3" id="58fdlQtOuYA" role="3uHU7B">
-                      <node concept="3cpWs3" id="58fdlQtOtxj" role="3uHU7B">
-                        <node concept="3cpWs3" id="6uuPbCA6fSi" role="3uHU7B">
-                          <node concept="3cpWs3" id="6uuPbCA6e0w" role="3uHU7B">
-                            <node concept="3cpWs3" id="6uuPbCA6buT" role="3uHU7B">
-                              <node concept="Xl_RD" id="6uuPbCA69Nf" role="3uHU7B">
-                                <property role="Xl_RC" value="Ok, so we have ... fromTheSource " />
-                              </node>
-                              <node concept="37vLTw" id="6uuPbCA6bBq" role="3uHU7w">
-                                <ref role="3cqZAo" node="6uuPbCA3_iF" resolve="fromTheSource" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="6uuPbCA6efe" role="3uHU7w">
-                              <property role="Xl_RC" value=" and fromTheTarget " />
-                            </node>
-                          </node>
-                          <node concept="37vLTw" id="6uuPbCA6g7e" role="3uHU7w">
-                            <ref role="3cqZAo" node="6uuPbCA3Ao9" resolve="fromTheTarget" />
-                          </node>
-                        </node>
-                        <node concept="Xl_RD" id="58fdlQtOtJV" role="3uHU7w">
-                          <property role="Xl_RC" value=" for source and target " />
-                        </node>
-                      </node>
-                      <node concept="37vLTw" id="58fdlQtOvby" role="3uHU7w">
-                        <ref role="3cqZAo" node="6uuPbCA4hgL" resolve="source" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="58fdlQtOwcF" role="3uHU7w">
-                      <property role="Xl_RC" value=" " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="6uuPbCA42iL" role="3cqZAp" />
               <node concept="3clFbJ" id="6uuPbCA47BG" role="3cqZAp">
                 <node concept="3clFbS" id="6uuPbCA47BI" role="3clFbx">
                   <node concept="3clFbJ" id="6uuPbCA48Z5" role="3cqZAp">

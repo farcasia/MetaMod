@@ -4383,22 +4383,6 @@
                 </node>
               </node>
             </node>
-            <node concept="34ab3g" id="2kO$Kh_m$JZ" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="2kO$Kh_m$Zz" role="34bqiv">
-                <node concept="3EllGN" id="2kO$Kh_m_oU" role="3uHU7w">
-                  <node concept="37vLTw" id="2kO$Kh_ngAK" role="3ElVtu">
-                    <ref role="3cqZAo" node="4IND2wwM7wP" resolve="root" />
-                  </node>
-                  <node concept="37vLTw" id="2kO$Kh_m_6d" role="3ElQJh">
-                    <ref role="3cqZAo" node="2kO$Kh_iDj1" resolve="equivalences" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="2kO$Kh_m$K1" role="3uHU7B">
-                  <property role="Xl_RC" value="equivalences[nRoot] " />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="2QDb_d05pgK" role="3cqZAp">
               <node concept="2OqwBi" id="2kO$Kh_hyJY" role="3clFbG">
                 <node concept="2OqwBi" id="2QDb_d05pvI" role="2Oq$k0">
@@ -9095,34 +9079,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7mq2LM7_sY7" role="3cqZAp" />
-        <node concept="34ab3g" id="7nF4KJrJSD_" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="7nF4KJrJTic" role="34bqiv">
-            <node concept="2OqwBi" id="7nF4KJrJTw6" role="3uHU7w">
-              <node concept="37vLTw" id="7nF4KJrJTt7" role="2Oq$k0">
-                <ref role="3cqZAo" node="7mq2LM7$KMD" resolve="graph" />
-              </node>
-              <node concept="liA8E" id="7nF4KJrJTA1" role="2OqNvi">
-                <ref role="37wK5l" to="1cio:~GraphViz.getDotSource():java.lang.String" resolve="getDotSource" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="7nF4KJrJSDB" role="3uHU7B">
-              <property role="Xl_RC" value="The dot graph " />
-            </node>
-          </node>
-        </node>
-        <node concept="34ab3g" id="2sGdL5x6TzC" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="2sGdL5x6Ufg" role="34bqiv">
-            <node concept="37vLTw" id="2sGdL5x6Umv" role="3uHU7w">
-              <ref role="3cqZAo" node="2CNdJfw4rAQ" resolve="path" />
-            </node>
-            <node concept="Xl_RD" id="2sGdL5x6TzE" role="3uHU7B">
-              <property role="Xl_RC" value="The path is " />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7nF4KJrJRSG" role="3cqZAp" />
         <node concept="3clFbF" id="7mq2LM7_t65" role="3cqZAp">
           <node concept="2OqwBi" id="7mq2LM7_t82" role="3clFbG">
             <node concept="37vLTw" id="7mq2LM7_t63" role="2Oq$k0">
@@ -9158,14 +9114,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="f0hIOKcdcn" role="3cqZAp" />
-        <node concept="34ab3g" id="f0hIOKcdqR" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="f0hIOKcdqW" role="34bqiv">
-            <property role="Xl_RC" value="We wrote the graph to the file" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="f0hIOKcdeM" role="3cqZAp" />
       </node>
       <node concept="3Tm1VV" id="2CNdJfw44uj" role="1B3o_S" />
       <node concept="3cqZAl" id="2CNdJfw44CC" role="3clF45" />
@@ -9738,48 +9686,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="7nF4KJrJzHp" role="3cqZAp" />
-            <node concept="34ab3g" id="7nF4KJrMPW9" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="7nF4KJrMSnC" role="34bqiv">
-                <node concept="37vLTw" id="7nF4KJrQQaT" role="3uHU7w">
-                  <ref role="3cqZAo" node="7nF4KJrQMSA" resolve="node" />
-                </node>
-                <node concept="3cpWs3" id="7nF4KJrMRV0" role="3uHU7B">
-                  <node concept="3cpWs3" id="7nF4KJrMRHJ" role="3uHU7B">
-                    <node concept="3cpWs3" id="7nF4KJrMRrA" role="3uHU7B">
-                      <node concept="3cpWs3" id="7nF4KJrMR9n" role="3uHU7B">
-                        <node concept="3cpWs3" id="7nF4KJrMQB$" role="3uHU7B">
-                          <node concept="3cpWs3" id="7nF4KJrMQos" role="3uHU7B">
-                            <node concept="Xl_RD" id="7nF4KJrMPWb" role="3uHU7B">
-                              <property role="Xl_RC" value="source=" />
-                            </node>
-                            <node concept="37vLTw" id="7nF4KJrMQoK" role="3uHU7w">
-                              <ref role="3cqZAo" node="7nF4KJrJyL_" resolve="source" />
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="7nF4KJrMQEu" role="3uHU7w">
-                            <property role="Xl_RC" value=" target=" />
-                          </node>
-                        </node>
-                        <node concept="37vLTw" id="7nF4KJrMRcv" role="3uHU7w">
-                          <ref role="3cqZAo" node="7nF4KJrJzqi" resolve="target" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="7nF4KJrMRrU" role="3uHU7w">
-                        <property role="Xl_RC" value=" rel=" />
-                      </node>
-                    </node>
-                    <node concept="37vLTw" id="7nF4KJrMRLj" role="3uHU7w">
-                      <ref role="3cqZAo" node="7nF4KJrJxbu" resolve="labelOfRelation" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="7nF4KJrMRYJ" role="3uHU7w">
-                    <property role="Xl_RC" value=" sm=" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="7nF4KJrMPyn" role="3cqZAp" />
             <node concept="3clFbJ" id="7nF4KJrJzP7" role="3cqZAp">
               <node concept="3clFbS" id="7nF4KJrJzP9" role="3clFbx">
                 <node concept="3cpWs6" id="VQwemtq8km" role="3cqZAp" />
@@ -10325,18 +10231,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2kO$Kh_923L" role="3clF47">
-        <node concept="34ab3g" id="2kO$Kh_lR1P" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="2kO$Kh_lRXA" role="34bqiv">
-            <node concept="37vLTw" id="2kO$Kh_lRZr" role="3uHU7w">
-              <ref role="3cqZAo" node="2kO$Kh_90XQ" resolve="wrappedNbmEq" />
-            </node>
-            <node concept="Xl_RD" id="2kO$Kh_lR1R" role="3uHU7B">
-              <property role="Xl_RC" value="We get from this map " />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2kO$Kh_lOKj" role="3cqZAp" />
         <node concept="1DcWWT" id="2kO$Kh_aoI_" role="3cqZAp">
           <node concept="3cpWsn" id="2kO$Kh_aoIA" role="1Duv9x">
             <property role="TrG5h" value="nbm" />
