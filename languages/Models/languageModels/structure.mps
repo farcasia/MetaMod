@@ -171,12 +171,12 @@
     </node>
   </node>
   <node concept="1TIwiD" id="210OVEYeExq">
-    <property role="TrG5h" value="LApplWithGroup" />
+    <property role="TrG5h" value="LApplWithFragment" />
     <ref role="1TJDcQ" to="2mcz:egaKAxuyHJ" resolve="LambdaApplicationArg" />
     <node concept="1TJgyj" id="210OVEYeEyH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="group" />
-      <ref role="20lvS9" node="7zWtwVwpdxn" resolve="StructureModel" />
+      <property role="20kJfa" value="term" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
 </model>
