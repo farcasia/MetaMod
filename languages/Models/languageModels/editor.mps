@@ -39,6 +39,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
       </concept>
@@ -979,7 +980,7 @@
     <ref role="1XX52x" to="v0yp:210OVEYeExq" resolve="LApplWithFragment" />
     <node concept="1QoScp" id="210OVEYeOgy" role="2wV5jI">
       <property role="1QpmdY" value="true" />
-      <ref role="34QXea" node="210OVEYgo79" resolve="EvaluateLApplWithGroup" />
+      <ref role="34QXea" node="210OVEYgo79" resolve="EvaluateLApplWithFragment" />
       <node concept="pkWqt" id="210OVEYeOg_" role="3e4ffs">
         <node concept="3clFbS" id="210OVEYeOgB" role="2VODD2">
           <node concept="3clFbF" id="210OVEYeOsl" role="3cqZAp">
@@ -1206,6 +1207,9 @@
             <ref role="1NtTu8" to="v0yp:210OVEYeEyH" />
           </node>
           <node concept="2iRkQZ" id="210OVEYHOO3" role="2iSdaV" />
+          <node concept="xShMh" id="7slGp8qKmNl" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="2iRkQZ" id="210OVEYeQkJ" role="2iSdaV" />
       </node>
@@ -1413,7 +1417,7 @@
     </node>
   </node>
   <node concept="325Ffw" id="210OVEYgo79">
-    <property role="TrG5h" value="EvaluateLApplWithGroup" />
+    <property role="TrG5h" value="EvaluateLApplWithFragment" />
     <ref role="1chiOs" to="v0yp:210OVEYeExq" resolve="LApplWithFragment" />
     <node concept="2PxR9H" id="210OVEYgo7$" role="2QnnpI">
       <node concept="2Py5lD" id="210OVEYgo7_" role="2PyaAO">
