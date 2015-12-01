@@ -1961,6 +1961,32 @@
           </node>
         </node>
       </node>
+      <node concept="kds5u" id="7slGp8qN4gH" role="kdsQe">
+        <property role="TrG5h" value="ifthen" />
+        <node concept="3B6VN2" id="7slGp8qN4gJ" role="kdsPW">
+          <node concept="3B6VN2" id="7slGp8qN4hL" role="3B56nf">
+            <node concept="3B6VN1" id="7slGp8qN4hP" role="3B56n9">
+              <property role="TrG5h" value="then_branch" />
+            </node>
+            <node concept="2PO6tq" id="7slGp8qN4ik" role="3B56nf">
+              <node concept="3B6VN0" id="7slGp8qN4iD" role="3B56nu">
+                <ref role="3B56nS" node="7slGp8qN4hP" resolve="then_branch" />
+              </node>
+              <node concept="2PO6tq" id="7slGp8qN4hZ" role="3B56no">
+                <node concept="3B6VN0" id="7slGp8qN4ie" role="3B56nu">
+                  <ref role="3B56nS" node="7slGp8qN4gN" resolve="condition" />
+                </node>
+                <node concept="kdsPF" id="7slGp8qN4ib" role="3B56no">
+                  <ref role="kdsPE" node="23X6BHfVtpB" resolve="and" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3B6VN1" id="7slGp8qN4gN" role="3B56n9">
+            <property role="TrG5h" value="condition" />
+          </node>
+        </node>
+      </node>
       <node concept="kds5u" id="23X6BHfVtpB" role="kdsQe">
         <property role="TrG5h" value="and" />
         <node concept="3B6VN2" id="23X6BHfVtpD" role="kdsPW">
