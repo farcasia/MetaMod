@@ -42,6 +42,7 @@
       <concept id="8717972784948762846" name="Models.structure.NamedStructureModel" flags="ng" index="2oAaVg" />
       <concept id="8717972784948762891" name="Models.structure.NamedBasicModel" flags="ng" index="2oAaW5" />
       <concept id="8717972784948762981" name="Models.structure.RefToNamedBM" flags="ng" index="2oAaXF" />
+      <concept id="8717972784948763026" name="Models.structure.RefToNamedSM" flags="ng" index="2oAaYs" />
       <concept id="2324090206732068954" name="Models.structure.LApplWithFragment" flags="ng" index="2uuBJw">
         <child id="2324090206732069037" name="term" index="2uuBGn" />
       </concept>
@@ -726,6 +727,9 @@
       <property role="TrG5h" value="h" />
     </node>
     <node concept="2jq5PB" id="23X6BHfWnB_" role="2oAaxa" />
+    <node concept="2oAaVg" id="7slGp8qLdUt" role="2oAaxa">
+      <property role="TrG5h" value="Something" />
+    </node>
     <node concept="kds5u" id="7HhOCoeJtI8" role="2oAaxa">
       <property role="TrG5h" value="constant" />
       <node concept="3B6VN2" id="7HhOCoeJtIa" role="kdsPW">
@@ -876,8 +880,8 @@
     </node>
     <node concept="2uuBJw" id="7slGp8qBIP3" role="2oAaxa">
       <property role="TrG5h" value="false_branch" />
-      <node concept="2oAaXF" id="7slGp8qBJ0w" role="3B56nu">
-        <ref role="3aaZtz" node="7slGp8qBIWO" resolve="h" />
+      <node concept="2oAaYs" id="7slGp8qLdYc" role="3B56nu">
+        <ref role="3aaZtz" node="7slGp8qLdUt" resolve="Something" />
       </node>
       <node concept="2uuBJw" id="7slGp8qBIyV" role="3B56no">
         <property role="TrG5h" value="true_branch" />
@@ -909,8 +913,8 @@
           </node>
         </node>
       </node>
-      <node concept="2oAaXF" id="7slGp8qLdBx" role="2uuBGn">
-        <ref role="3aaZtz" node="7slGp8qBIWO" resolve="h" />
+      <node concept="2oAaYs" id="7slGp8qLe1E" role="2uuBGn">
+        <ref role="3aaZtz" node="7slGp8qLdUt" resolve="Something" />
       </node>
     </node>
   </node>
