@@ -4,10 +4,34 @@
   <languages>
     <use id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models" version="-1" />
     <use id="b6269b38-266c-4c72-855f-f9773fac7a5c" name="LambdaCalculus" version="0" />
+    <use id="ae311dd6-db78-4e5e-a31b-7988fcde0010" name="Modules" version="0" />
   </languages>
   <imports />
   <registry>
+    <language id="ae311dd6-db78-4e5e-a31b-7988fcde0010" name="Modules">
+      <concept id="3049631818650728101" name="Modules.structure.Module" flags="ng" index="kds5u">
+        <child id="3049631818650729095" name="defines" index="kdsPW" />
+      </concept>
+      <concept id="3049631818650729104" name="Modules.structure.RefToModule" flags="ng" index="kdsPF">
+        <reference id="3049631818650729105" name="ref" index="kdsPE" />
+      </concept>
+    </language>
+    <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" name="LambdaCalculus">
+      <concept id="7362364337458504603" name="LambdaCalculus.structure.RefToBoundVariable" flags="ng" index="3B6VN0">
+        <reference id="7362364337458526883" name="ref" index="3B56nS" />
+      </concept>
+      <concept id="7362364337458504602" name="LambdaCalculus.structure.BoundVariable" flags="ng" index="3B6VN1" />
+      <concept id="7362364337458504601" name="LambdaCalculus.structure.LambdaAbstraction" flags="ng" index="3B6VN2">
+        <child id="7362364337458526866" name="boundVariable" index="3B56n9" />
+        <child id="7362364337458526868" name="body" index="3B56nf" />
+      </concept>
+      <concept id="7362364337458504600" name="LambdaCalculus.structure.LambdaApplication" flags="ng" index="3B6VN3">
+        <child id="7362364337458526851" name="left" index="3B56no" />
+        <child id="7362364337458526853" name="right" index="3B56nu" />
+      </concept>
+    </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
+      <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
       <concept id="8717972784948764160" name="Models.structure.RefToNamedRel" flags="ng" index="2oAawe" />
       <concept id="8717972784948762665" name="Models.structure.BasicModel" flags="ng" index="2oAaSB">
         <child id="8717972784948764180" name="conformsTo" index="2oAawq" />
@@ -26,6 +50,9 @@
       <concept id="8717972784948762891" name="Models.structure.NamedBasicModel" flags="ng" index="2oAaW5" />
       <concept id="8717972784948762981" name="Models.structure.RefToNamedBM" flags="ng" index="2oAaXF" />
       <concept id="8717972784948763026" name="Models.structure.RefToNamedSM" flags="ng" index="2oAaYs" />
+      <concept id="2324090206732068954" name="Models.structure.LApplWithFragment" flags="ng" index="2uuBJw">
+        <child id="2324090206732069037" name="term" index="2uuBGn" />
+      </concept>
       <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
         <reference id="3040834594469888400" name="ref" index="3aaZtz" />
       </concept>
@@ -39,6 +66,32 @@
   <node concept="2oAaVg" id="5v3N1I1qn_S">
     <property role="TrG5h" value="VarUseDefLanguage" />
     <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
+    <node concept="kds5u" id="3DVAlFLbyX9" role="2oAaxa">
+      <property role="TrG5h" value="BMRelationToPrimitive" />
+      <node concept="3B6VN2" id="3DVAlFLbyXb" role="kdsPW">
+        <node concept="2oAaTp" id="3DVAlFLbyY9" role="3B56nf">
+          <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
+          <node concept="2oAaUa" id="3DVAlFLbz03" role="2oAaxa">
+            <node concept="3B6VN0" id="3DVAlFLbz0j" role="2oAawB">
+              <ref role="3B56nS" node="3DVAlFLbyXf" resolve="Primitive" />
+            </node>
+            <node concept="2oAaSB" id="3DVAlFLbz0e" role="2oAawD">
+              <node concept="2oAaXF" id="3DVAlFLbz0h" role="2oAawq">
+                <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
+              </node>
+            </node>
+            <node concept="2oAawe" id="3DVAlFLbz0c" role="2oAawy">
+              <ref role="3aaZtz" node="3Ky4PoV$GpT" resolve="Relation" />
+            </node>
+          </node>
+        </node>
+        <node concept="3B6VN1" id="3DVAlFLbyXf" role="3B56n9">
+          <property role="TrG5h" value="Primitive" />
+        </node>
+      </node>
+    </node>
+    <node concept="2jq5PB" id="3DVAlFLbyYc" role="2oAaxa" />
+    <node concept="2jq5PB" id="3DVAlFLbyZ6" role="2oAaxa" />
     <node concept="2oAaYs" id="6RWccq2_iCP" role="2oAaxa">
       <ref role="3aaZtz" node="5udWXWXqDY1" resolve="Primitives" />
     </node>
@@ -58,6 +111,39 @@
         </node>
       </node>
     </node>
+    <node concept="2uuBJw" id="3DVAlFLbz3Q" role="2oAaxa">
+      <property role="TrG5h" value="Primitive" />
+      <node concept="2oAaXF" id="3DVAlFLbz51" role="3B56nu">
+        <ref role="3aaZtz" node="5udWXWXsI_z" resolve="Int" />
+      </node>
+      <node concept="kdsPF" id="3DVAlFLbz4Y" role="3B56no">
+        <ref role="kdsPE" node="3DVAlFLbyX9" resolve="BMRelationToPrimitive" />
+      </node>
+      <node concept="2oAaTp" id="3DVAlFLfEFN" role="2uuBGn">
+        <ref role="19kf5F" to=":^" />
+        <node concept="2oAaW5" id="3DVAlFLfEG1" role="2oAaxa">
+          <property role="TrG5h" value="Int" />
+          <node concept="2oAaXF" id="3DVAlFLfEG2" role="2oAawq">
+            <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
+          </node>
+        </node>
+        <node concept="2jq5PB" id="3DVAlFLfEG0" role="2oAaxa" />
+        <node concept="2oAaUa" id="3DVAlFLfEFV" role="2oAaxa">
+          <node concept="2oAaSB" id="3DVAlFLfEFW" role="2oAawD">
+            <node concept="2oAaXF" id="3DVAlFLfEFX" role="2oAawq">
+              <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
+            </node>
+          </node>
+          <node concept="2oAaXF" id="3DVAlFLfEFY" role="2oAawB">
+            <ref role="3aaZtz" node="3DVAlFLfEG1" resolve="Int" />
+          </node>
+          <node concept="2oAawe" id="3DVAlFLfEFZ" role="2oAawy">
+            <ref role="3aaZtz" node="3Ky4PoV$GpT" resolve="Relation" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2jq5PB" id="3DVAlFLbz78" role="2oAaxa" />
     <node concept="2oAaVg" id="3Ky4PoV$Isr" role="2oAaxa">
       <property role="TrG5h" value="Blocks" />
       <node concept="2oAaUZ" id="3Ky4PoV_nil" role="2oAaxa">
