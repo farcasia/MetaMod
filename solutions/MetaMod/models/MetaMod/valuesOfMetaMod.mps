@@ -82,7 +82,7 @@
     <node concept="2oAaW5" id="3DVAlFLrbpx" role="2oAaxa">
       <property role="TrG5h" value="SubtypeRel" />
       <node concept="2oAaXF" id="3DVAlFLrbqf" role="2oAawq">
-        <ref role="3aaZtz" node="3DVAlFLrbpT" resolve="Subtyping" />
+        <ref role="3aaZtz" node="3DVAlFLrcqd" resolve="Subtyping" />
       </node>
     </node>
     <node concept="2jq5PB" id="3DVAlFLrbc0" role="2oAaxa" />
@@ -293,29 +293,29 @@
       </node>
     </node>
     <node concept="2jq5PB" id="3DVAlFLrbgy" role="2oAaxa" />
-    <node concept="2uuBJw" id="3DVAlFLrbml" role="2oAaxa">
+    <node concept="2uuBJw" id="3DVAlFLrccD" role="2oAaxa">
       <property role="TrG5h" value="SuperType" />
-      <node concept="2oAaXF" id="3DVAlFLrbns" role="3B56nu">
+      <node concept="2oAaXF" id="3DVAlFLrcdW" role="3B56nu">
         <ref role="3aaZtz" node="7nF4KJrVITL" resolve="Relation" />
       </node>
-      <node concept="kdsPF" id="3DVAlFLrbnp" role="3B56no">
+      <node concept="kdsPF" id="3DVAlFLrcdT" role="3B56no">
         <ref role="kdsPE" node="3DVAlFLrbdc" resolve="IntroduceSubtyping" />
       </node>
-      <node concept="2oAaTp" id="3DVAlFLrbpS" role="2uuBGn">
-        <node concept="2oAaW5" id="3DVAlFLrbpZ" role="2oAaxa">
+      <node concept="2oAaTp" id="3DVAlFLrcqc" role="2uuBGn">
+        <node concept="2oAaW5" id="3DVAlFLrcqj" role="2oAaxa">
           <property role="TrG5h" value="Relation" />
         </node>
-        <node concept="2jq5PB" id="3DVAlFLrbpY" role="2oAaxa" />
-        <node concept="2oAaW5" id="3DVAlFLrbpT" role="2oAaxa">
+        <node concept="2jq5PB" id="3DVAlFLrcqi" role="2oAaxa" />
+        <node concept="2oAaW5" id="3DVAlFLrcqd" role="2oAaxa">
           <property role="TrG5h" value="Subtyping" />
         </node>
-        <node concept="2jq5PB" id="3DVAlFLrbpU" role="2oAaxa" />
-        <node concept="2oAaZ9" id="3DVAlFLrbpV" role="2oAaxa">
-          <node concept="2oAaXF" id="3DVAlFLrbpW" role="2oAawD">
-            <ref role="3aaZtz" node="3DVAlFLrbpT" resolve="Subtyping" />
+        <node concept="2jq5PB" id="3DVAlFLrcqe" role="2oAaxa" />
+        <node concept="2oAaZ9" id="3DVAlFLrcqf" role="2oAaxa">
+          <node concept="2oAaXF" id="3DVAlFLrcqg" role="2oAawD">
+            <ref role="3aaZtz" node="3DVAlFLrcqd" resolve="Subtyping" />
           </node>
-          <node concept="2oAaXF" id="3DVAlFLrbpX" role="2oAawB">
-            <ref role="3aaZtz" node="3DVAlFLrbpZ" resolve="Relation" />
+          <node concept="2oAaXF" id="3DVAlFLrcqh" role="2oAawB">
+            <ref role="3aaZtz" node="3DVAlFLrcqj" resolve="Relation" />
           </node>
         </node>
       </node>

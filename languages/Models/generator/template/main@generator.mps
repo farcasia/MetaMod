@@ -350,12 +350,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="3dUSd7M64aO" role="3cqZAp" />
-        <node concept="3SKdUt" id="16zLRPr4Z76" role="3cqZAp">
-          <node concept="3SKdUq" id="16zLRPr502i" role="3SKWNk">
-            <property role="3SKdUp" value="TODO take into consideration the inheritance of the concepts as well." />
-          </node>
-        </node>
-        <node concept="3clFbH" id="16zLRPr4Xlp" role="3cqZAp" />
         <node concept="3SKdUt" id="4IND2wwLACp" role="3cqZAp">
           <node concept="3SKdUq" id="4IND2wwLBq8" role="3SKWNk">
             <property role="3SKdUp" value="Stage 1 ... build new models without conformance_to relationships adjusted" />
