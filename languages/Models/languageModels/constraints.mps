@@ -245,7 +245,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="7zWtwVwpvfn">
-    <ref role="1M2myG" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+    <ref role="1M2myG" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
     <node concept="nKS2y" id="5udWXWXzAAL" role="1MLUbF">
       <node concept="3clFbS" id="5udWXWXzAAM" role="2VODD2">
         <node concept="3clFbJ" id="5udWXWXzAFF" role="3cqZAp">
@@ -275,7 +275,7 @@
           </node>
           <node concept="3clFbC" id="6QPRDxNExFH" role="3clFbw">
             <node concept="28GBK8" id="6QPRDxNExLb" role="3uHU7w">
-              <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+              <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
               <ref role="28H3Ia" to="v0yp:7zWtwVwpdSk" />
             </node>
             <node concept="oXsJc" id="6QPRDxNExzo" role="3uHU7B" />
@@ -328,7 +328,7 @@
             <node concept="3clFbC" id="6QPRDxNEC7t" role="3uHU7B">
               <node concept="oXsJc" id="6QPRDxNEC1A" role="3uHU7B" />
               <node concept="28GBK8" id="6QPRDxNECcL" role="3uHU7w">
-                <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
                 <ref role="28H3Ia" to="v0yp:7zWtwVwpdSk" />
               </node>
             </node>
@@ -357,7 +357,7 @@
                 <node concept="3clFbC" id="20nTeIkSHqA" role="3uHU7B">
                   <node concept="oXsJc" id="20nTeIkSHkD" role="3uHU7B" />
                   <node concept="28GBK8" id="20nTeIkSHw4" role="3uHU7w">
-                    <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                    <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
                     <ref role="28H3Ia" to="v0yp:7zWtwVwpdSk" />
                   </node>
                 </node>
@@ -409,7 +409,7 @@
                   <node concept="2H4GUG" id="5udWXWXurjO" role="2Oq$k0" />
                   <node concept="1mIQ4w" id="5udWXWXurAg" role="2OqNvi">
                     <node concept="chp4Y" id="5udWXWXurJ9" role="cj9EA">
-                      <ref role="cht4Q" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedSM" />
+                      <ref role="cht4Q" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedGroup" />
                     </node>
                   </node>
                 </node>
@@ -436,7 +436,7 @@
                     <node concept="2H4GUG" id="7zWtwVwpLM_" role="2Oq$k0" />
                     <node concept="1mIQ4w" id="7zWtwVwpMbC" role="2OqNvi">
                       <node concept="chp4Y" id="7zWtwVww0l9" role="cj9EA">
-                        <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                        <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                       </node>
                     </node>
                   </node>
@@ -492,7 +492,7 @@
                     <node concept="2H4GUG" id="7zWtwVww0ve" role="2Oq$k0" />
                     <node concept="1mIQ4w" id="7zWtwVww0vf" role="2OqNvi">
                       <node concept="chp4Y" id="7zWtwVww0vg" role="cj9EA">
-                        <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                        <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                       </node>
                     </node>
                   </node>
@@ -501,7 +501,7 @@
                   <node concept="2H4GUG" id="5udWXWXusdD" role="2Oq$k0" />
                   <node concept="1mIQ4w" id="5udWXWXusdE" role="2OqNvi">
                     <node concept="chp4Y" id="5udWXWXusdF" role="cj9EA">
-                      <ref role="cht4Q" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedSM" />
+                      <ref role="cht4Q" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedGroup" />
                     </node>
                   </node>
                 </node>
@@ -668,7 +668,7 @@
           </node>
           <node concept="3clFbC" id="5udWXWXHZio" role="3clFbw">
             <node concept="28GBK8" id="5udWXWXHZo0" role="3uHU7w">
-              <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+              <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
               <ref role="28H3Ia" to="v0yp:7zWtwVwpdSk" />
             </node>
             <node concept="oXsJc" id="5udWXWXHZci" role="3uHU7B" />
@@ -701,7 +701,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="3Ky4PoV$IAJ">
-    <ref role="1M2myG" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+    <ref role="1M2myG" to="v0yp:7zWtwVwpdxn" resolve="Group" />
     <node concept="osYL8" id="3Ky4PoV$O2A" role="1MLXOK">
       <node concept="3clFbS" id="3Ky4PoV$O2B" role="2VODD2">
         <node concept="3clFbJ" id="3Ky4PoV_05j" role="3cqZAp">
@@ -719,7 +719,7 @@
                   <node concept="2H4GUG" id="3Ky4PoV_mGH" role="2Oq$k0" />
                   <node concept="1mIQ4w" id="3Ky4PoV_n08" role="2OqNvi">
                     <node concept="chp4Y" id="3Ky4PoV_n8a" role="cj9EA">
-                      <ref role="cht4Q" to="v0yp:7zWtwVwpdS0" resolve="RefToNamedRel" />
+                      <ref role="cht4Q" to="v0yp:7zWtwVwpdS0" resolve="RefToNamedRelation" />
                     </node>
                   </node>
                 </node>
@@ -727,7 +727,7 @@
                   <node concept="2H4GUG" id="3Ky4PoV_ls0" role="2Oq$k0" />
                   <node concept="1mIQ4w" id="3Ky4PoV_lKi" role="2OqNvi">
                     <node concept="chp4Y" id="3Ky4PoV_lRm" role="cj9EA">
-                      <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                      <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                     </node>
                   </node>
                 </node>
@@ -736,7 +736,7 @@
             <node concept="3clFbC" id="3Ky4PoV_0AG" role="3uHU7B">
               <node concept="oXsJc" id="3Ky4PoV_0al" role="3uHU7B" />
               <node concept="28GBK8" id="3Ky4PoV_0Dr" role="3uHU7w">
-                <ref role="28GBKb" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                <ref role="28GBKb" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                 <ref role="28H3Ia" to="v0yp:7zWtwVwpdT4" />
               </node>
             </node>
@@ -805,7 +805,7 @@
           </node>
           <node concept="3clFbC" id="6QPRDxNEBm2" role="3clFbw">
             <node concept="28GBK8" id="6QPRDxNEBm3" role="3uHU7w">
-              <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+              <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
               <ref role="28H3Ia" to="v0yp:7zWtwVwpdSk" />
             </node>
             <node concept="oXsJc" id="6QPRDxNEBm4" role="3uHU7B" />
@@ -838,7 +838,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5udWXWXvZtU">
-    <ref role="1M2myG" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+    <ref role="1M2myG" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
     <node concept="nKS2y" id="5udWXWXvZtV" role="1MLUbF">
       <node concept="3clFbS" id="5udWXWXvZtW" role="2VODD2">
         <node concept="3clFbJ" id="5udWXWXxQdk" role="3cqZAp">
@@ -851,7 +851,7 @@
           </node>
           <node concept="3clFbC" id="5udWXWXxQxH" role="3clFbw">
             <node concept="28GBK8" id="5udWXWXxQEi" role="3uHU7w">
-              <ref role="28GBKb" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+              <ref role="28GBKb" to="v0yp:7zWtwVwpdxn" resolve="Group" />
               <ref role="28H3Ia" to="v0yp:7zWtwVwpdT4" />
             </node>
             <node concept="oXsJc" id="5udWXWXxQmh" role="3uHU7B" />
@@ -888,7 +888,7 @@
         <node concept="3clFbS" id="5udWXWXH8RH" role="2VODD2">
           <node concept="3SKdUt" id="5udWXWXH8S5" role="3cqZAp">
             <node concept="3SKdUq" id="5udWXWXH8Sr" role="3SKWNk">
-              <property role="3SKdUp" value="We want to see just the list of basic models of the metamodel in the menu completion for when we are" />
+              <property role="3SKdUp" value="We want to see just the list of concepts of the metamodel in the menu completion for when we are" />
             </node>
           </node>
           <node concept="3SKdUt" id="5udWXWXH9gu" role="3cqZAp">
@@ -902,7 +902,7 @@
                 <node concept="3cpWsn" id="5udWXWXHbn0" role="3cpWs9">
                   <property role="TrG5h" value="metamodel" />
                   <node concept="3Tqbb2" id="5udWXWXHbn1" role="1tU5fm">
-                    <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+                    <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                   </node>
                   <node concept="2YIFZM" id="20nTeIkI8OQ" role="33vP2m">
                     <ref role="37wK5l" to="z64h:20nTeIkHf6L" resolve="searchNearestMetamodel" />
@@ -962,7 +962,7 @@
             <node concept="3clFbC" id="5udWXWXHbnQ" role="3clFbw">
               <node concept="gBGtZ" id="5udWXWXHc4X" role="3uHU7B" />
               <node concept="28GBK8" id="5udWXWXHbnS" role="3uHU7w">
-                <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
                 <ref role="28H3Ia" to="v0yp:7zWtwVwpdSk" />
               </node>
             </node>
@@ -970,7 +970,7 @@
           <node concept="3clFbH" id="5udWXWXH96Z" role="3cqZAp" />
           <node concept="3SKdUt" id="5udWXWXH994" role="3cqZAp">
             <node concept="3SKdUq" id="5udWXWXH99O" role="3SKWNk">
-              <property role="3SKdUp" value="We want to see just the list of basic models that exist in the structure model or sub-structure models when" />
+              <property role="3SKdUp" value="We want to see just the list of concepts that exist in the group or subgroups when" />
             </node>
           </node>
           <node concept="3SKdUt" id="5udWXWXH9or" role="3cqZAp">
@@ -983,21 +983,21 @@
             <node concept="3clFbS" id="5udWXWXH9sl" role="3clFbx">
               <node concept="3SKdUt" id="5udWXWXI298" role="3cqZAp">
                 <node concept="3SKdUq" id="5udWXWXI2fq" role="3SKWNk">
-                  <property role="3SKdUp" value="We want the first ancestor that is a StructureModel." />
+                  <property role="3SKdUp" value="We want the first ancestor that is a Group" />
                 </node>
               </node>
               <node concept="3cpWs8" id="5udWXWXI1eJ" role="3cqZAp">
                 <node concept="3cpWsn" id="5udWXWXI1eM" role="3cpWs9">
                   <property role="TrG5h" value="sm" />
                   <node concept="3Tqbb2" id="5udWXWXI1eI" role="1tU5fm">
-                    <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                    <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                   </node>
                   <node concept="2OqwBi" id="5udWXWXI2BF" role="33vP2m">
                     <node concept="21POm0" id="5udWXWXI2yg" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="5udWXWXI2SZ" role="2OqNvi">
                       <node concept="1xMEDy" id="5udWXWXI2T1" role="1xVPHs">
                         <node concept="chp4Y" id="5udWXWXI2ZA" role="ri$Ld">
-                          <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                          <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                         </node>
                       </node>
                       <node concept="1xIGOp" id="5udWXWXI3cB" role="1xVPHs" />
@@ -1069,14 +1069,14 @@
                 <node concept="3cpWsn" id="20nTeIlUjKs" role="3cpWs9">
                   <property role="TrG5h" value="sm" />
                   <node concept="3Tqbb2" id="20nTeIlUjKt" role="1tU5fm">
-                    <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                    <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                   </node>
                   <node concept="2OqwBi" id="20nTeIlUjKu" role="33vP2m">
                     <node concept="21POm0" id="20nTeIlUjKv" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="20nTeIlUjKw" role="2OqNvi">
                       <node concept="1xMEDy" id="20nTeIlUjKx" role="1xVPHs">
                         <node concept="chp4Y" id="20nTeIlUjKy" role="ri$Ld">
-                          <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                          <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                         </node>
                       </node>
                       <node concept="1xIGOp" id="20nTeIlUjKz" role="1xVPHs" />
@@ -1088,7 +1088,7 @@
                 <node concept="3cpWsn" id="20nTeIlUkn5" role="3cpWs9">
                   <property role="TrG5h" value="metamodel" />
                   <node concept="3Tqbb2" id="20nTeIlUkn6" role="1tU5fm">
-                    <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+                    <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                   </node>
                   <node concept="2YIFZM" id="20nTeIlUkn7" role="33vP2m">
                     <ref role="1Pybhc" to="z64h:1vxM8_OCb4Z" resolve="UtilityMethods" />
@@ -1245,7 +1245,7 @@
                     <node concept="2OqwBi" id="2CNdJfvZXNJ" role="37wK5m">
                       <node concept="1Q6Npb" id="2CNdJfvZXzK" role="2Oq$k0" />
                       <node concept="1j9C0f" id="2CNdJfvZYao" role="2OqNvi">
-                        <ref role="1j9C0d" to="v0yp:7zWtwVwpd$b" resolve="NamedBasicModel" />
+                        <ref role="1j9C0d" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
                       </node>
                     </node>
                   </node>
@@ -1260,7 +1260,7 @@
                 </node>
                 <node concept="v3k3i" id="2CNdJfvZUhd" role="2OqNvi">
                   <node concept="chp4Y" id="2CNdJfvZUvE" role="v3oSu">
-                    <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                    <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                   </node>
                 </node>
               </node>
@@ -1280,7 +1280,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5udWXWXynfR">
-    <ref role="1M2myG" to="v0yp:7zWtwVwpdS0" resolve="RefToNamedRel" />
+    <ref role="1M2myG" to="v0yp:7zWtwVwpdS0" resolve="RefToNamedRelation" />
     <node concept="1N5Pfh" id="5udWXWXHarj" role="1Mr941">
       <ref role="1N5Vy1" to="v0yp:7zWtwVwpdS2" />
       <node concept="13QW63" id="5udWXWXHarl" role="1N6uqs">
@@ -1325,7 +1325,7 @@
                 </node>
                 <node concept="v3k3i" id="2CNdJfw2ajp" role="2OqNvi">
                   <node concept="chp4Y" id="2CNdJfw2aJa" role="v3oSu">
-                    <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                    <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                   </node>
                 </node>
               </node>
@@ -1337,7 +1337,7 @@
             <node concept="3cpWsn" id="6uuPbCA3SIh" role="3cpWs9">
               <property role="TrG5h" value="metamodel" />
               <node concept="3Tqbb2" id="6uuPbCA3SIc" role="1tU5fm">
-                <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
               </node>
               <node concept="2YIFZM" id="20nTeIkIcL_" role="33vP2m">
                 <ref role="37wK5l" to="z64h:20nTeIkHf6L" resolve="searchNearestMetamodel" />
@@ -1402,7 +1402,7 @@
                 <node concept="3cpWsn" id="6uuPbCA4hgL" role="3cpWs9">
                   <property role="TrG5h" value="source" />
                   <node concept="3Tqbb2" id="6uuPbCA4hgG" role="1tU5fm">
-                    <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedBasicModel" />
+                    <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
                   </node>
                   <node concept="10Nm6u" id="6uuPbCA4hPz" role="33vP2m" />
                 </node>
@@ -1411,7 +1411,7 @@
                 <node concept="3cpWsn" id="6uuPbCA4i8U" role="3cpWs9">
                   <property role="TrG5h" value="target" />
                   <node concept="3Tqbb2" id="6uuPbCA4i8P" role="1tU5fm">
-                    <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedBasicModel" />
+                    <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
                   </node>
                   <node concept="10Nm6u" id="6uuPbCA4iCJ" role="33vP2m" />
                 </node>
@@ -1426,10 +1426,10 @@
                       </node>
                       <node concept="2OqwBi" id="6uuPbCA8TDS" role="37vLTx">
                         <node concept="1PxgMI" id="6uuPbCA3P7C" role="2Oq$k0">
-                          <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                          <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                           <node concept="2OqwBi" id="6uuPbCA3OoQ" role="1PxMeX">
                             <node concept="1PxgMI" id="6uuPbCA3Ob4" role="2Oq$k0">
-                              <ref role="1PxNhF" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                              <ref role="1PxNhF" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
                               <node concept="2OqwBi" id="6uuPbCA3NMq" role="1PxMeX">
                                 <node concept="1PxgMI" id="6uuPbCA3N_n" role="2Oq$k0">
                                   <ref role="1PxNhF" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
@@ -1497,7 +1497,7 @@
                         </node>
                         <node concept="1mIQ4w" id="6uuPbCA3CIA" role="2OqNvi">
                           <node concept="chp4Y" id="6uuPbCA3CLb" role="cj9EA">
-                            <ref role="cht4Q" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                            <ref role="cht4Q" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
                           </node>
                         </node>
                       </node>
@@ -1505,7 +1505,7 @@
                     <node concept="2OqwBi" id="6uuPbCA3JeI" role="3uHU7w">
                       <node concept="2OqwBi" id="6uuPbCA3IMq" role="2Oq$k0">
                         <node concept="1PxgMI" id="6uuPbCA3ID0" role="2Oq$k0">
-                          <ref role="1PxNhF" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                          <ref role="1PxNhF" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
                           <node concept="2OqwBi" id="6uuPbCA3IbB" role="1PxMeX">
                             <node concept="1PxgMI" id="6uuPbCA3I50" role="2Oq$k0">
                               <ref role="1PxNhF" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
@@ -1526,7 +1526,7 @@
                   <node concept="2OqwBi" id="6uuPbCA3KzB" role="3uHU7w">
                     <node concept="2OqwBi" id="6uuPbCA3JGp" role="2Oq$k0">
                       <node concept="1PxgMI" id="6uuPbCA3JGq" role="2Oq$k0">
-                        <ref role="1PxNhF" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                        <ref role="1PxNhF" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
                         <node concept="2OqwBi" id="6uuPbCA3JGr" role="1PxMeX">
                           <node concept="1PxgMI" id="6uuPbCA3JGs" role="2Oq$k0">
                             <ref role="1PxNhF" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
@@ -1543,7 +1543,7 @@
                     </node>
                     <node concept="1mIQ4w" id="6uuPbCA3KR2" role="2OqNvi">
                       <node concept="chp4Y" id="6uuPbCA8TdT" role="cj9EA">
-                        <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                        <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                       </node>
                     </node>
                   </node>
@@ -1559,11 +1559,11 @@
                       </node>
                       <node concept="2OqwBi" id="6uuPbCAgBgN" role="37vLTx">
                         <node concept="1PxgMI" id="6uuPbCAgAWj" role="2Oq$k0">
-                          <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                          <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                           <node concept="2OqwBi" id="6uuPbCAgAgu" role="1PxMeX">
                             <node concept="2OqwBi" id="6uuPbCA40Mq" role="2Oq$k0">
                               <node concept="1PxgMI" id="6uuPbCA3Zi4" role="2Oq$k0">
-                                <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                                <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                                 <node concept="2OqwBi" id="6uuPbCA3Zi5" role="1PxMeX">
                                   <node concept="1PxgMI" id="6uuPbCA3Zi6" role="2Oq$k0">
                                     <ref role="1PxNhF" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
@@ -1635,7 +1635,7 @@
                         </node>
                         <node concept="1mIQ4w" id="6uuPbCA3Zi0" role="2OqNvi">
                           <node concept="chp4Y" id="6uuPbCA3Zyx" role="cj9EA">
-                            <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                            <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                           </node>
                         </node>
                       </node>
@@ -1644,7 +1644,7 @@
                       <node concept="2OqwBi" id="6uuPbCAgEAV" role="2Oq$k0">
                         <node concept="2OqwBi" id="6uuPbCAgDEz" role="2Oq$k0">
                           <node concept="1PxgMI" id="6uuPbCAgDjp" role="2Oq$k0">
-                            <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                            <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                             <node concept="2OqwBi" id="6uuPbCAgCNj" role="1PxMeX">
                               <node concept="1PxgMI" id="6uuPbCAgCvW" role="2Oq$k0">
                                 <ref role="1PxNhF" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
@@ -1670,7 +1670,7 @@
                     <node concept="2OqwBi" id="6uuPbCAgGqU" role="2Oq$k0">
                       <node concept="2OqwBi" id="6uuPbCAgGqV" role="2Oq$k0">
                         <node concept="1PxgMI" id="6uuPbCAgGqW" role="2Oq$k0">
-                          <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                          <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                           <node concept="2OqwBi" id="6uuPbCAgGqX" role="1PxMeX">
                             <node concept="1PxgMI" id="6uuPbCAgGqY" role="2Oq$k0">
                               <ref role="1PxNhF" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
@@ -1691,7 +1691,7 @@
                     </node>
                     <node concept="1mIQ4w" id="6uuPbCAgHf8" role="2OqNvi">
                       <node concept="chp4Y" id="6uuPbCAgHpP" role="cj9EA">
-                        <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                        <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                       </node>
                     </node>
                   </node>
@@ -1707,10 +1707,10 @@
                       </node>
                       <node concept="2OqwBi" id="6uuPbCA8UYi" role="37vLTx">
                         <node concept="1PxgMI" id="6uuPbCA42zZ" role="2Oq$k0">
-                          <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                          <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                           <node concept="2OqwBi" id="6uuPbCA42$0" role="1PxMeX">
                             <node concept="1PxgMI" id="6uuPbCA42$1" role="2Oq$k0">
-                              <ref role="1PxNhF" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                              <ref role="1PxNhF" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
                               <node concept="2OqwBi" id="6uuPbCA42$2" role="1PxMeX">
                                 <node concept="1PxgMI" id="6uuPbCA42$3" role="2Oq$k0">
                                   <ref role="1PxNhF" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
@@ -1778,7 +1778,7 @@
                         </node>
                         <node concept="1mIQ4w" id="6uuPbCA42$l" role="2OqNvi">
                           <node concept="chp4Y" id="6uuPbCA42$m" role="cj9EA">
-                            <ref role="cht4Q" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                            <ref role="cht4Q" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
                           </node>
                         </node>
                       </node>
@@ -1786,7 +1786,7 @@
                     <node concept="2OqwBi" id="6uuPbCA42$n" role="3uHU7w">
                       <node concept="2OqwBi" id="6uuPbCA42$o" role="2Oq$k0">
                         <node concept="1PxgMI" id="6uuPbCA42$p" role="2Oq$k0">
-                          <ref role="1PxNhF" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                          <ref role="1PxNhF" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
                           <node concept="2OqwBi" id="6uuPbCA42$q" role="1PxMeX">
                             <node concept="1PxgMI" id="6uuPbCA42$r" role="2Oq$k0">
                               <ref role="1PxNhF" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
@@ -1807,7 +1807,7 @@
                   <node concept="2OqwBi" id="6uuPbCA42$w" role="3uHU7w">
                     <node concept="2OqwBi" id="6uuPbCA42$x" role="2Oq$k0">
                       <node concept="1PxgMI" id="6uuPbCA42$y" role="2Oq$k0">
-                        <ref role="1PxNhF" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                        <ref role="1PxNhF" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
                         <node concept="2OqwBi" id="6uuPbCA42$z" role="1PxMeX">
                           <node concept="1PxgMI" id="6uuPbCA42$$" role="2Oq$k0">
                             <ref role="1PxNhF" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
@@ -1824,7 +1824,7 @@
                     </node>
                     <node concept="1mIQ4w" id="6uuPbCA42$C" role="2OqNvi">
                       <node concept="chp4Y" id="6uuPbCA8VAH" role="cj9EA">
-                        <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                        <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                       </node>
                     </node>
                   </node>
@@ -1840,11 +1840,11 @@
                       </node>
                       <node concept="2OqwBi" id="6uuPbCAg_pJ" role="37vLTx">
                         <node concept="1PxgMI" id="6uuPbCAg_6b" role="2Oq$k0">
-                          <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                          <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                           <node concept="2OqwBi" id="6uuPbCAg$rp" role="1PxMeX">
                             <node concept="2OqwBi" id="6uuPbCA42$N" role="2Oq$k0">
                               <node concept="1PxgMI" id="6uuPbCA42$O" role="2Oq$k0">
-                                <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                                <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                                 <node concept="2OqwBi" id="6uuPbCA42$P" role="1PxMeX">
                                   <node concept="1PxgMI" id="6uuPbCA42$Q" role="2Oq$k0">
                                     <ref role="1PxNhF" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
@@ -1916,7 +1916,7 @@
                         </node>
                         <node concept="1mIQ4w" id="6uuPbCA42_6" role="2OqNvi">
                           <node concept="chp4Y" id="6uuPbCA42_7" role="cj9EA">
-                            <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                            <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                           </node>
                         </node>
                       </node>
@@ -1925,7 +1925,7 @@
                       <node concept="2OqwBi" id="6uuPbCAgI0i" role="2Oq$k0">
                         <node concept="2OqwBi" id="6uuPbCAgI0j" role="2Oq$k0">
                           <node concept="1PxgMI" id="6uuPbCAgI0k" role="2Oq$k0">
-                            <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                            <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                             <node concept="2OqwBi" id="6uuPbCAgI0l" role="1PxMeX">
                               <node concept="1PxgMI" id="6uuPbCAgI0m" role="2Oq$k0">
                                 <ref role="1PxNhF" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
@@ -1951,7 +1951,7 @@
                     <node concept="2OqwBi" id="6uuPbCAgIW3" role="2Oq$k0">
                       <node concept="2OqwBi" id="6uuPbCAgIW4" role="2Oq$k0">
                         <node concept="1PxgMI" id="6uuPbCAgIW5" role="2Oq$k0">
-                          <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                          <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                           <node concept="2OqwBi" id="6uuPbCAgIW6" role="1PxMeX">
                             <node concept="1PxgMI" id="6uuPbCAgIW7" role="2Oq$k0">
                               <ref role="1PxNhF" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
@@ -1972,7 +1972,7 @@
                     </node>
                     <node concept="1mIQ4w" id="6uuPbCAgJI2" role="2OqNvi">
                       <node concept="chp4Y" id="6uuPbCAgJTT" role="cj9EA">
-                        <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                        <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                       </node>
                     </node>
                   </node>
@@ -2093,7 +2093,7 @@
                       <node concept="3cpWsn" id="16zLRPr13au" role="3cpWs9">
                         <property role="TrG5h" value="nbmWithSuperConcepts" />
                         <node concept="2I9FWS" id="16zLRPr13ap" role="1tU5fm">
-                          <ref role="2I9WkF" to="v0yp:7zWtwVwpd$b" resolve="NamedBasicModel" />
+                          <ref role="2I9WkF" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
                         </node>
                         <node concept="2OqwBi" id="16zLRPr141G" role="33vP2m">
                           <node concept="37vLTw" id="58fdlQtRrHp" role="2Oq$k0">
@@ -2150,7 +2150,7 @@
                               </node>
                               <node concept="1mIQ4w" id="6uuPbCA4I_5" role="2OqNvi">
                                 <node concept="chp4Y" id="6uuPbCA4IIR" role="cj9EA">
-                                  <ref role="cht4Q" to="v0yp:7zWtwVwpd$b" resolve="NamedBasicModel" />
+                                  <ref role="cht4Q" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
                                 </node>
                               </node>
                             </node>
@@ -2173,7 +2173,7 @@
                                         </node>
                                         <node concept="2OqwBi" id="6uuPbCA4Q4c" role="3uHU7B">
                                           <node concept="1PxgMI" id="6uuPbCA4PN9" role="2Oq$k0">
-                                            <ref role="1PxNhF" to="v0yp:7zWtwVwpd$b" resolve="NamedBasicModel" />
+                                            <ref role="1PxNhF" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
                                             <node concept="2OqwBi" id="6uuPbCA4Pin" role="1PxMeX">
                                               <node concept="37vLTw" id="6uuPbCA4Pa6" role="2Oq$k0">
                                                 <ref role="3cqZAo" node="6uuPbCA4lVb" resolve="sourceRel" />
@@ -2226,7 +2226,7 @@
                               </node>
                               <node concept="1mIQ4w" id="6uuPbCA4Lo8" role="2OqNvi">
                                 <node concept="chp4Y" id="6uuPbCA4Lzb" role="cj9EA">
-                                  <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                                  <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                                 </node>
                               </node>
                             </node>
@@ -2250,7 +2250,7 @@
                                         <node concept="2OqwBi" id="58fdlQtRHLU" role="3uHU7B">
                                           <node concept="2OqwBi" id="58fdlQtRIGo" role="2Oq$k0">
                                             <node concept="1PxgMI" id="58fdlQtRHLV" role="2Oq$k0">
-                                              <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+                                              <ref role="1PxNhF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
                                               <node concept="2OqwBi" id="58fdlQtRHLW" role="1PxMeX">
                                                 <node concept="37vLTw" id="58fdlQtRHLX" role="2Oq$k0">
                                                   <ref role="3cqZAo" node="6uuPbCA4lVb" resolve="sourceRel" />
@@ -2366,7 +2366,7 @@
           <node concept="22lmx$" id="4KCs5oxFlb0" role="3clFbw">
             <node concept="3clFbC" id="4KCs5oxFlLy" role="3uHU7w">
               <node concept="28GBK8" id="4KCs5oxFlRW" role="3uHU7w">
-                <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+                <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
                 <ref role="28H3Ia" to="v0yp:7zWtwVwpdSk" />
               </node>
               <node concept="oXsJc" id="4KCs5oxFlED" role="3uHU7B" />
@@ -2376,7 +2376,7 @@
                 <node concept="3clFbC" id="5udWXWXynxS" role="3uHU7B">
                   <node concept="oXsJc" id="5udWXWXynpO" role="3uHU7B" />
                   <node concept="28GBK8" id="5udWXWXynB0" role="3uHU7w">
-                    <ref role="28GBKb" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                    <ref role="28GBKb" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                     <ref role="28H3Ia" to="v0yp:7zWtwVwpdT4" />
                   </node>
                 </node>
@@ -2408,7 +2408,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5udWXWXySwb">
-    <ref role="1M2myG" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedSM" />
+    <ref role="1M2myG" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedGroup" />
     <node concept="nKS2y" id="5udWXWXySwc" role="1MLUbF">
       <node concept="3clFbS" id="5udWXWXySwd" role="2VODD2">
         <node concept="3clFbJ" id="5udWXWXyS_6" role="3cqZAp">
@@ -2464,7 +2464,7 @@
           </node>
           <node concept="3clFbC" id="6QPRDxNDPi1" role="3clFbw">
             <node concept="28GBK8" id="6QPRDxNDPnD" role="3uHU7w">
-              <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+              <ref role="28GBKb" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
               <ref role="28H3Ia" to="v0yp:7zWtwVwpdSk" />
             </node>
             <node concept="oXsJc" id="6QPRDxNDORz" role="3uHU7B" />
@@ -2475,7 +2475,7 @@
           <node concept="3clFbS" id="19jQaVARget" role="3clFbx">
             <node concept="3SKdUt" id="19jQaVARhf3" role="3cqZAp">
               <node concept="3SKdUq" id="19jQaVARhlp" role="3SKWNk">
-                <property role="3SKdUp" value="We only allow structure models that conform to the same metamodel as the containing structure model." />
+                <property role="3SKdUp" value="We only allow groups that conform to the same metamodel as the containing group." />
               </node>
             </node>
             <node concept="3clFbJ" id="19jQaVARwqB" role="3cqZAp">
@@ -2496,7 +2496,7 @@
                       </node>
                       <node concept="1mIQ4w" id="19jQaVARBh1" role="2OqNvi">
                         <node concept="chp4Y" id="19jQaVARBmN" role="cj9EA">
-                          <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                          <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                         </node>
                       </node>
                     </node>
@@ -2512,7 +2512,7 @@
                       </node>
                       <node concept="1mIQ4w" id="19jQaVAR$ia" role="2OqNvi">
                         <node concept="chp4Y" id="19jQaVAR$qk" role="cj9EA">
-                          <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                          <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                         </node>
                       </node>
                     </node>
@@ -2525,11 +2525,11 @@
               <node concept="3cpWsn" id="19jQaVARhsF" role="3cpWs9">
                 <property role="TrG5h" value="metamodel" />
                 <node concept="3Tqbb2" id="19jQaVARhsA" role="1tU5fm">
-                  <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+                  <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                 </node>
                 <node concept="2OqwBi" id="19jQaVARCxB" role="33vP2m">
                   <node concept="1PxgMI" id="19jQaVARBTt" role="2Oq$k0">
-                    <ref role="1PxNhF" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                    <ref role="1PxNhF" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                     <node concept="2OqwBi" id="19jQaVARul1" role="1PxMeX">
                       <node concept="2OqwBi" id="19jQaVARim$" role="2Oq$k0">
                         <node concept="EsrRn" id="19jQaVARigX" role="2Oq$k0" />
@@ -2548,13 +2548,13 @@
             </node>
             <node concept="3cpWs8" id="19jQaVARsDR" role="3cqZAp">
               <node concept="3cpWsn" id="19jQaVARsDU" role="3cpWs9">
-                <property role="TrG5h" value="containingStructureMetamodel" />
+                <property role="TrG5h" value="containingGroup" />
                 <node concept="3Tqbb2" id="19jQaVARsDP" role="1tU5fm">
-                  <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+                  <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                 </node>
                 <node concept="2OqwBi" id="19jQaVARDcq" role="33vP2m">
                   <node concept="1PxgMI" id="19jQaVARvOe" role="2Oq$k0">
-                    <ref role="1PxNhF" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                    <ref role="1PxNhF" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                     <node concept="2OqwBi" id="19jQaVARvfI" role="1PxMeX">
                       <node concept="EsrRn" id="19jQaVARtp8" role="2Oq$k0" />
                       <node concept="2Rxl7S" id="19jQaVARvGh" role="2OqNvi" />
@@ -2569,7 +2569,7 @@
             <node concept="3clFbH" id="19jQaVATOwV" role="3cqZAp" />
             <node concept="3SKdUt" id="16zLRPqMh_s" role="3cqZAp">
               <node concept="3SKdUq" id="16zLRPqMhMf" role="3SKWNk">
-                <property role="3SKdUp" value="We can now have structure models that do not conform to any metamodel." />
+                <property role="3SKdUp" value="We can now have groups that do not conform to any metamodel." />
               </node>
             </node>
             <node concept="3SKdUt" id="16zLRPqMgo5" role="3cqZAp">
@@ -2585,7 +2585,7 @@
                   <node concept="22lmx$" id="19jQaVARFuN" role="3clFbw">
                     <node concept="2OqwBi" id="19jQaVARFR2" role="3uHU7w">
                       <node concept="37vLTw" id="19jQaVARFDK" role="2Oq$k0">
-                        <ref role="3cqZAo" node="19jQaVARsDU" resolve="containingStructureMetamodel" />
+                        <ref role="3cqZAo" node="19jQaVARsDU" resolve="containingGroup" />
                       </node>
                       <node concept="3w_OXm" id="19jQaVARGpn" role="2OqNvi" />
                     </node>
@@ -2610,7 +2610,7 @@
               </node>
               <node concept="3y3z36" id="19jQaVARIHk" role="3clFbw">
                 <node concept="37vLTw" id="19jQaVARISC" role="3uHU7w">
-                  <ref role="3cqZAo" node="19jQaVARsDU" resolve="containingStructureMetamodel" />
+                  <ref role="3cqZAo" node="19jQaVARsDU" resolve="containingGroup" />
                 </node>
                 <node concept="37vLTw" id="19jQaVARItB" role="3uHU7B">
                   <ref role="3cqZAo" node="19jQaVARhsF" resolve="metamodel" />
@@ -2620,12 +2620,12 @@
             <node concept="3clFbH" id="2JwAxCh5KEa" role="3cqZAp" />
             <node concept="3SKdUt" id="19jQaVAZ9Nu" role="3cqZAp">
               <node concept="3SKdUq" id="19jQaVAZa2Z" role="3SKWNk">
-                <property role="3SKdUp" value="We can't reuse ancestors of the containing structure model." />
+                <property role="3SKdUp" value="We can't reuse ancestors of the containing group." />
               </node>
             </node>
             <node concept="3SKdUt" id="19jQaVAZc5e" role="3cqZAp">
               <node concept="3SKdUq" id="19jQaVAZcl7" role="3SKWNk">
-                <property role="3SKdUp" value="We know that the parent node is a structure model from the value of the link." />
+                <property role="3SKdUp" value="We know that the parent node is a group from the value of the link." />
               </node>
             </node>
             <node concept="3clFbJ" id="19jQaVAZdAm" role="3cqZAp">
@@ -2649,7 +2649,7 @@
                 <node concept="2OqwBi" id="19jQaVAZluQ" role="3uHU7w">
                   <node concept="2OqwBi" id="19jQaVAZh7p" role="2Oq$k0">
                     <node concept="1PxgMI" id="19jQaVAZaXB" role="2Oq$k0">
-                      <ref role="1PxNhF" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                      <ref role="1PxNhF" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                       <node concept="nLn13" id="19jQaVAZaMS" role="1PxMeX" />
                     </node>
                     <node concept="z$bX8" id="19jQaVAZkAa" role="2OqNvi" />
@@ -2674,7 +2674,7 @@
             <node concept="3clFbC" id="19jQaVARgLJ" role="3uHU7B">
               <node concept="oXsJc" id="19jQaVARgkD" role="3uHU7B" />
               <node concept="28GBK8" id="19jQaVARgRx" role="3uHU7w">
-                <ref role="28GBKb" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                <ref role="28GBKb" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                 <ref role="28H3Ia" to="v0yp:7zWtwVwpdT4" />
               </node>
             </node>
@@ -2722,7 +2722,7 @@
                     <node concept="2OqwBi" id="2CNdJfvSAWK" role="37wK5m">
                       <node concept="1Q6Npb" id="2CNdJfvSAI4" role="2Oq$k0" />
                       <node concept="1j9C0f" id="2CNdJfvSBi6" role="2OqNvi">
-                        <ref role="1j9C0d" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+                        <ref role="1j9C0d" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                       </node>
                     </node>
                   </node>
@@ -2737,7 +2737,7 @@
                 </node>
                 <node concept="v3k3i" id="2CNdJfvSw4Z" role="2OqNvi">
                   <node concept="chp4Y" id="2CNdJfvSwjj" role="v3oSu">
-                    <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                    <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                   </node>
                 </node>
               </node>
@@ -2760,7 +2760,7 @@
                       <node concept="2OqwBi" id="19jQaVAWgxE" role="2Oq$k0">
                         <node concept="1Q6Npb" id="19jQaVAWglF" role="2Oq$k0" />
                         <node concept="1j9C0f" id="19jQaVAXnuA" role="2OqNvi">
-                          <ref role="1j9C0d" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+                          <ref role="1j9C0d" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                         </node>
                       </node>
                       <node concept="3zZkjj" id="19jQaVAWk6s" role="2OqNvi">
@@ -2774,7 +2774,7 @@
                                       <node concept="2OqwBi" id="2CNdJfvSMhR" role="2Oq$k0">
                                         <node concept="v3k3i" id="2CNdJfvSOYW" role="2OqNvi">
                                           <node concept="chp4Y" id="2CNdJfvSPa4" role="v3oSu">
-                                            <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+                                            <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                                           </node>
                                         </node>
                                         <node concept="2YIFZM" id="2JwAxCh8dpK" role="2Oq$k0">
@@ -2796,7 +2796,7 @@
                                       <node concept="2OqwBi" id="2CNdJfvSShy" role="2Oq$k0">
                                         <node concept="v3k3i" id="2CNdJfvSV0U" role="2OqNvi">
                                           <node concept="chp4Y" id="2CNdJfvSVda" role="v3oSu">
-                                            <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+                                            <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                                           </node>
                                         </node>
                                         <node concept="2YIFZM" id="2JwAxCh8eA0" role="2Oq$k0">
@@ -2842,7 +2842,7 @@
             </node>
             <node concept="3clFbC" id="4IND2wwV$n8" role="3clFbw">
               <node concept="28GBK8" id="4IND2wwV$wF" role="3uHU7w">
-                <ref role="28GBKb" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                <ref role="28GBKb" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                 <ref role="28H3Ia" to="v0yp:7zWtwVwpdT4" />
               </node>
               <node concept="gBGtZ" id="4IND2wwV$aJ" role="3uHU7B" />
@@ -2857,7 +2857,7 @@
                   <node concept="2OqwBi" id="4IND2wwV_NY" role="2Oq$k0">
                     <node concept="1Q6Npb" id="4IND2wwV_NZ" role="2Oq$k0" />
                     <node concept="1j9C0f" id="4IND2wwV_O0" role="2OqNvi">
-                      <ref role="1j9C0d" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+                      <ref role="1j9C0d" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                     </node>
                   </node>
                   <node concept="3zZkjj" id="4IND2wwV_O1" role="2OqNvi">
@@ -2877,7 +2877,7 @@
                                   </node>
                                   <node concept="v3k3i" id="2CNdJfvSYpb" role="2OqNvi">
                                     <node concept="chp4Y" id="2CNdJfvSYpc" role="v3oSu">
-                                      <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+                                      <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                                     </node>
                                   </node>
                                 </node>
@@ -2897,7 +2897,7 @@
                                   </node>
                                   <node concept="v3k3i" id="2CNdJfvSY_C" role="2OqNvi">
                                     <node concept="chp4Y" id="2CNdJfvSY_D" role="v3oSu">
-                                      <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+                                      <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                                     </node>
                                   </node>
                                 </node>
@@ -2925,7 +2925,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="19jQaVAWqAG">
-    <ref role="1M2myG" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+    <ref role="1M2myG" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     <node concept="EnEH3" id="19jQaVAWqAH" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="QB0g5" id="19jQaVAWqAJ" role="QCWH9">
@@ -2950,7 +2950,7 @@
                       <node concept="I4A8Y" id="19jQaVAYcF0" role="2OqNvi" />
                     </node>
                     <node concept="1j9C0f" id="19jQaVAYdAx" role="2OqNvi">
-                      <ref role="1j9C0d" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+                      <ref role="1j9C0d" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                     </node>
                   </node>
                   <node concept="3zZkjj" id="19jQaVAYhto" role="2OqNvi">

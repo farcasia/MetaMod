@@ -42,7 +42,7 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="7zWtwVwpdwD">
-    <property role="TrG5h" value="BasicModel" />
+    <property role="TrG5h" value="Concept" />
     <ref role="1TJDcQ" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     <node concept="1TJgyj" id="7zWtwVwpdSk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -52,7 +52,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7zWtwVwpdxn">
-    <property role="TrG5h" value="StructureModel" />
+    <property role="TrG5h" value="Group" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     <node concept="1TJgyj" id="7zWtwVwpdT4" role="1TKVEi">
@@ -64,7 +64,7 @@
     <node concept="1TJgyj" id="2ZZRdXAFMQO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="metamodel" />
-      <ref role="20lvS9" node="7zWtwVwpdzu" resolve="NamedStructureModel" />
+      <ref role="20lvS9" node="7zWtwVwpdzu" resolve="NamedGroup" />
     </node>
     <node concept="PrWs8" id="5udWXWX$JA9" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -100,48 +100,48 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7zWtwVwpdzu">
-    <property role="TrG5h" value="NamedStructureModel" />
+    <property role="TrG5h" value="NamedGroup" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" node="7zWtwVwpdxn" resolve="StructureModel" />
+    <ref role="1TJDcQ" node="7zWtwVwpdxn" resolve="Group" />
     <node concept="PrWs8" id="7zWtwVwpdBl" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="7zWtwVwpd$b">
-    <property role="TrG5h" value="NamedBasicModel" />
-    <ref role="1TJDcQ" node="7zWtwVwpdwD" resolve="BasicModel" />
+    <property role="TrG5h" value="NamedConcept" />
+    <ref role="1TJDcQ" node="7zWtwVwpdwD" resolve="Concept" />
     <node concept="PrWs8" id="7zWtwVwpdBh" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="7zWtwVwpd__">
-    <property role="TrG5h" value="RefToNamedBM" />
+    <property role="TrG5h" value="RefToNamedConcept" />
     <ref role="1TJDcQ" node="2CNdJfw6bPn" resolve="RefToNamed" />
     <node concept="1TJgyj" id="7zWtwVwpdQB" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7zWtwVwpd$b" resolve="NamedBasicModel" />
+      <ref role="20lvS9" node="7zWtwVwpd$b" resolve="NamedConcept" />
       <ref role="20ksaX" node="2CNdJfw6c6g" />
     </node>
   </node>
   <node concept="1TIwiD" id="7zWtwVwpdAi">
-    <property role="TrG5h" value="RefToNamedSM" />
+    <property role="TrG5h" value="RefToNamedGroup" />
     <ref role="1TJDcQ" node="2CNdJfw6bPn" resolve="RefToNamed" />
     <node concept="1TJgyj" id="7zWtwVwpdQQ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7zWtwVwpdzu" resolve="NamedStructureModel" />
+      <ref role="20lvS9" node="7zWtwVwpdzu" resolve="NamedGroup" />
       <ref role="20ksaX" node="2CNdJfw6c6g" />
     </node>
   </node>
   <node concept="1TIwiD" id="7zWtwVwpdB7">
-    <property role="TrG5h" value="Inheritance" />
+    <property role="TrG5h" value="Subtype" />
     <ref role="1TJDcQ" node="7zWtwVwpdy4" resolve="Relation" />
   </node>
   <node concept="1TIwiD" id="7zWtwVwpdS0">
-    <property role="TrG5h" value="RefToNamedRel" />
+    <property role="TrG5h" value="RefToNamedRelation" />
     <ref role="1TJDcQ" node="2CNdJfw6bPn" resolve="RefToNamed" />
     <node concept="1TJgyj" id="7zWtwVwpdS2" role="1TKVEi">
       <property role="20lmBu" value="reference" />
