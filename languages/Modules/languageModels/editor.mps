@@ -6,9 +6,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
+    <import index="2mcz" ref="r:23e4f1fd-a9d1-4b09-a8c1-3a24e82c6a63(Modules.structure)" />
+    <import index="9lyo" ref="r:c0d41959-8f5c-452f-90c5-757e1c169078(LambdaCalculus.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="2mcz" ref="r:23e4f1fd-a9d1-4b09-a8c1-3a24e82c6a63(Modules.structure)" implicit="true" />
-    <import index="9lyo" ref="r:c0d41959-8f5c-452f-90c5-757e1c169078(LambdaCalculus.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -361,12 +362,6 @@
           <node concept="2iRfu4" id="7_AavkCKHwa" role="2iSdaV" />
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="3DVAlFLuhT$">
-    <ref role="1XX52x" to="2mcz:3DVAlFLug4k" resolve="Number" />
-    <node concept="3F0A7n" id="3DVAlFLuhYR" role="2wV5jI">
-      <ref role="1NtTu8" to="2mcz:3DVAlFLugv3" resolve="no" />
     </node>
   </node>
 </model>

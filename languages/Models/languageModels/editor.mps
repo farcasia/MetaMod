@@ -14,9 +14,9 @@
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="z64h" ref="r:52e1580a-16d3-4b41-b86d-411ead3ce794(Models.behavior)" />
     <import index="9lyo" ref="r:c0d41959-8f5c-452f-90c5-757e1c169078(LambdaCalculus.structure)" />
+    <import index="22fv" ref="r:1b829468-420f-4d70-8c6d-ddde8cae701d(LambdaCalculus.behavior)" />
+    <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="22fv" ref="r:1b829468-420f-4d70-8c6d-ddde8cae701d(LambdaCalculus.behavior)" implicit="true" />
-    <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -252,6 +252,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -269,7 +272,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="7zWtwVwpdTw">
-    <ref role="1XX52x" to="v0yp:7zWtwVwpdwD" resolve="BasicModel" />
+    <ref role="1XX52x" to="v0yp:7zWtwVwpdwD" resolve="Concept" />
     <node concept="1QoScp" id="20nTeIkUR2x" role="2wV5jI">
       <property role="1QpmdY" value="true" />
       <node concept="3EZMnI" id="20nTeIkURfa" role="1QoS34">
@@ -327,7 +330,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7zWtwVwpdTX">
-    <ref role="1XX52x" to="v0yp:7zWtwVwpdB7" resolve="Inheritance" />
+    <ref role="1XX52x" to="v0yp:7zWtwVwpdB7" resolve="Subtype" />
     <node concept="3EZMnI" id="7zWtwVwpdTZ" role="2wV5jI">
       <node concept="3F1sOY" id="7zWtwVwpdUu" role="3EZMnx">
         <ref role="1NtTu8" to="v0yp:7zWtwVwpdSB" />
@@ -342,7 +345,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7zWtwVwpdUC">
-    <ref role="1XX52x" to="v0yp:7zWtwVwpd$b" resolve="NamedBasicModel" />
+    <ref role="1XX52x" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
     <node concept="1QoScp" id="2QDb_cZYhN4" role="2wV5jI">
       <property role="1QpmdY" value="true" />
       <node concept="pkWqt" id="2QDb_cZYhN7" role="3e4ffs">
@@ -484,7 +487,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7zWtwVwpdXh">
-    <ref role="1XX52x" to="v0yp:7zWtwVwpdzu" resolve="NamedStructureModel" />
+    <ref role="1XX52x" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     <node concept="1QoScp" id="2ZZRdXAFN4_" role="2wV5jI">
       <property role="1QpmdY" value="true" />
       <ref role="34QXea" node="3uWAB_ARTgk" resolve="VisualizeStructureModel" />
@@ -651,7 +654,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7zWtwVwpdZd">
-    <ref role="1XX52x" to="v0yp:7zWtwVwpd__" resolve="RefToNamedBM" />
+    <ref role="1XX52x" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
     <node concept="1iCGBv" id="2QDb_cZYeV2" role="2wV5jI">
       <ref role="1NtTu8" to="v0yp:7zWtwVwpdQB" />
       <node concept="1sVBvm" id="2QDb_cZYeV3" role="1sWHZn">
@@ -663,7 +666,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7zWtwVwpe0e">
-    <ref role="1XX52x" to="v0yp:7zWtwVwpdS0" resolve="RefToNamedRel" />
+    <ref role="1XX52x" to="v0yp:7zWtwVwpdS0" resolve="RefToNamedRelation" />
     <node concept="1iCGBv" id="7zWtwVwpe0g" role="2wV5jI">
       <ref role="1NtTu8" to="v0yp:7zWtwVwpdS2" />
       <node concept="1sVBvm" id="7zWtwVwpe0i" role="1sWHZn">
@@ -675,7 +678,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7zWtwVwpe0$">
-    <ref role="1XX52x" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedSM" />
+    <ref role="1XX52x" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedGroup" />
     <node concept="1iCGBv" id="7zWtwVwpe0A" role="2wV5jI">
       <ref role="1NtTu8" to="v0yp:7zWtwVwpdQQ" />
       <node concept="1sVBvm" id="7zWtwVwpe0C" role="1sWHZn">
@@ -760,7 +763,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7zWtwVwpe2D">
-    <ref role="1XX52x" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+    <ref role="1XX52x" to="v0yp:7zWtwVwpdxn" resolve="Group" />
     <node concept="3EZMnI" id="7zWtwVwpe2F" role="2wV5jI">
       <ref role="34QXea" node="3uWAB_ARTgk" resolve="VisualizeStructureModel" />
       <node concept="1QoScp" id="2ZZRdXAFJVj" role="3EZMnx">
@@ -930,7 +933,7 @@
   </node>
   <node concept="325Ffw" id="3uWAB_ARTgk">
     <property role="TrG5h" value="VisualizeStructureModel" />
-    <ref role="1chiOs" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+    <ref role="1chiOs" to="v0yp:7zWtwVwpdxn" resolve="Group" />
     <node concept="2PxR9H" id="3uWAB_AS5RH" role="2QnnpI">
       <node concept="2Py5lD" id="3uWAB_AS5RI" role="2PyaAO">
         <property role="2PWKIB" value="ctrl+shift" />
@@ -1494,7 +1497,7 @@
                     </node>
                     <node concept="v3k3i" id="3DVAlFLg5ZP" role="2OqNvi">
                       <node concept="chp4Y" id="3DVAlFLg60H" role="v3oSu">
-                        <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                        <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                       </node>
                     </node>
                   </node>
@@ -1525,7 +1528,7 @@
             <node concept="3cpWsn" id="210OVEY5jrG" role="1Duv9x">
               <property role="TrG5h" value="structureModel" />
               <node concept="3Tqbb2" id="210OVEY5jyA" role="1tU5fm">
-                <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
               </node>
             </node>
             <node concept="2OqwBi" id="210OVEY5lW1" role="1DdaDG">
@@ -1539,7 +1542,7 @@
                 <node concept="2Rf3mk" id="210OVEY5kju" role="2OqNvi">
                   <node concept="1xMEDy" id="210OVEY5kjw" role="1xVPHs">
                     <node concept="chp4Y" id="210OVEY5kE$" role="ri$Ld">
-                      <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                      <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                     </node>
                   </node>
                   <node concept="1xIGOp" id="210OVEYbBW4" role="1xVPHs" />
@@ -1547,13 +1550,20 @@
               </node>
               <node concept="v3k3i" id="210OVEY5q4a" role="2OqNvi">
                 <node concept="chp4Y" id="210OVEY5q6U" role="v3oSu">
-                  <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="StructureModel" />
+                  <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
                 </node>
               </node>
             </node>
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="54BccqhlbxW">
+    <property role="3GE5qa" value="Numbers" />
+    <ref role="1XX52x" to="v0yp:54Bccqhlbto" resolve="Number" />
+    <node concept="3F0A7n" id="54BccqhlbxX" role="2wV5jI">
+      <ref role="1NtTu8" to="v0yp:54Bccqhlbtq" resolve="no" />
     </node>
   </node>
 </model>

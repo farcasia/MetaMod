@@ -6,10 +6,11 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="u7lj" ref="r:d6db98d3-3290-4981-a26d-66d7c8fd8172(Modules.behavior)" implicit="true" />
+    <import index="u7lj" ref="r:d6db98d3-3290-4981-a26d-66d7c8fd8172(Modules.behavior)" />
+    <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
+    <import index="2mcz" ref="r:23e4f1fd-a9d1-4b09-a8c1-3a24e82c6a63(Modules.structure)" />
+    <import index="9lyo" ref="r:c0d41959-8f5c-452f-90c5-757e1c169078(LambdaCalculus.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="2mcz" ref="r:23e4f1fd-a9d1-4b09-a8c1-3a24e82c6a63(Modules.structure)" implicit="true" />
-    <import index="9lyo" ref="r:c0d41959-8f5c-452f-90c5-757e1c169078(LambdaCalculus.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -44,9 +45,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -54,7 +52,6 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
@@ -289,37 +286,6 @@
           <node concept="3cpWs6" id="egaKAxvJCW" role="3cqZAp">
             <node concept="3clFbT" id="egaKAxvJDr" role="3cqZAk">
               <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="3DVAlFLugv5">
-    <ref role="1M2myG" to="2mcz:3DVAlFLug4k" resolve="Number" />
-    <node concept="EnEH3" id="3DVAlFLugxW" role="1MhHOB">
-      <ref role="EomxK" to="2mcz:3DVAlFLugv3" resolve="no" />
-      <node concept="QB0g5" id="3DVAlFLugxY" role="QCWH9">
-        <node concept="3clFbS" id="3DVAlFLugxZ" role="2VODD2">
-          <node concept="3clFbJ" id="3DVAlFLugAS" role="3cqZAp">
-            <node concept="3clFbS" id="3DVAlFLugAT" role="3clFbx">
-              <node concept="3cpWs6" id="3DVAlFLuhb6" role="3cqZAp">
-                <node concept="3clFbT" id="3DVAlFLuhl7" role="3cqZAk">
-                  <property role="3clFbU" value="false" />
-                </node>
-              </node>
-            </node>
-            <node concept="3eOVzh" id="3DVAlFLuh4N" role="3clFbw">
-              <node concept="3cmrfG" id="3DVAlFLuh4S" role="3uHU7w">
-                <property role="3cmrfH" value="0" />
-              </node>
-              <node concept="1Wqviy" id="3DVAlFLugFU" role="3uHU7B" />
-            </node>
-          </node>
-          <node concept="3clFbH" id="3DVAlFLuhrt" role="3cqZAp" />
-          <node concept="3cpWs6" id="3DVAlFLuhCo" role="3cqZAp">
-            <node concept="3clFbT" id="3DVAlFLuhMZ" role="3cqZAk">
-              <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>
