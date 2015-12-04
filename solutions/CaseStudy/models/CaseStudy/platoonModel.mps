@@ -37,11 +37,11 @@
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
       <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
-      <concept id="8717972784948764160" name="Models.structure.RefToNamedRel" flags="ng" index="2oAawe" />
-      <concept id="8717972784948762665" name="Models.structure.BasicModel" flags="ng" index="2oAaSB">
+      <concept id="8717972784948764160" name="Models.structure.RefToNamedRelation" flags="ng" index="2oAawe" />
+      <concept id="8717972784948762665" name="Models.structure.Concept" flags="ng" index="2oAaSB">
         <child id="8717972784948764180" name="conformsTo" index="2oAawq" />
       </concept>
-      <concept id="8717972784948762711" name="Models.structure.StructureModel" flags="ng" index="2oAaTp">
+      <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
@@ -51,11 +51,11 @@
         <child id="8717972784948764199" name="source" index="2oAawD" />
       </concept>
       <concept id="8717972784948762801" name="Models.structure.NamedRelation" flags="ng" index="2oAaUZ" />
-      <concept id="8717972784948762846" name="Models.structure.NamedStructureModel" flags="ng" index="2oAaVg" />
-      <concept id="8717972784948762891" name="Models.structure.NamedBasicModel" flags="ng" index="2oAaW5" />
-      <concept id="8717972784948762981" name="Models.structure.RefToNamedBM" flags="ng" index="2oAaXF" />
-      <concept id="8717972784948763026" name="Models.structure.RefToNamedSM" flags="ng" index="2oAaYs" />
-      <concept id="8717972784948763079" name="Models.structure.Inheritance" flags="ng" index="2oAaZ9" />
+      <concept id="8717972784948762846" name="Models.structure.NamedGroup" flags="ng" index="2oAaVg" />
+      <concept id="8717972784948762891" name="Models.structure.NamedConcept" flags="ng" index="2oAaW5" />
+      <concept id="8717972784948762981" name="Models.structure.RefToNamedConcept" flags="ng" index="2oAaXF" />
+      <concept id="8717972784948763026" name="Models.structure.RefToNamedGroup" flags="ng" index="2oAaYs" />
+      <concept id="8717972784948763079" name="Models.structure.Subtype" flags="ng" index="2oAaZ9" />
       <concept id="2324090206732068954" name="Models.structure.LApplWithFragment" flags="ng" index="2uuBJw">
         <child id="2324090206732069037" name="term" index="2uuBGn" />
       </concept>
@@ -2958,8 +2958,8 @@
                 </node>
                 <node concept="2oAaW5" id="3DVAlFLrpA0" role="2oAaxa">
                   <property role="TrG5h" value="Command1" />
-                  <node concept="2oAaXF" id="3DVAlFLrpAj" role="2oAawq">
-                    <ref role="3aaZtz" node="16zLRPqV073" resolve="ForwardCommand" />
+                  <node concept="2oAaXF" id="54Bccqhl9cE" role="2oAawq">
+                    <ref role="3aaZtz" node="16zLRPqV06A" resolve="TurnCommand" />
                   </node>
                 </node>
                 <node concept="2oAaW5" id="3DVAlFLrpBD" role="2oAaxa">
@@ -2970,8 +2970,8 @@
                 </node>
                 <node concept="2oAaW5" id="3DVAlFLrpC6" role="2oAaxa">
                   <property role="TrG5h" value="Command3" />
-                  <node concept="2oAaXF" id="3DVAlFLrpC7" role="2oAawq">
-                    <ref role="3aaZtz" node="16zLRPqV073" resolve="ForwardCommand" />
+                  <node concept="2oAaXF" id="54Bccqhl9vs" role="2oAawq">
+                    <ref role="3aaZtz" node="16zLRPqV06A" resolve="TurnCommand" />
                   </node>
                 </node>
                 <node concept="2oAaW5" id="3DVAlFLrpC_" role="2oAaxa">
@@ -2982,8 +2982,8 @@
                 </node>
                 <node concept="2oAaW5" id="3DVAlFLrpRT" role="2oAaxa">
                   <property role="TrG5h" value="Command5" />
-                  <node concept="2oAaXF" id="3DVAlFLrpRU" role="2oAawq">
-                    <ref role="3aaZtz" node="16zLRPqV073" resolve="ForwardCommand" />
+                  <node concept="2oAaXF" id="54Bccqhl9vv" role="2oAawq">
+                    <ref role="3aaZtz" node="16zLRPqV06A" resolve="TurnCommand" />
                   </node>
                 </node>
                 <node concept="2oAaW5" id="3DVAlFLrpTi" role="2oAaxa">
@@ -3041,9 +3041,6 @@
                       <ref role="3aaZtz" node="3DVAlFLrpGF" resolve="Right" />
                     </node>
                     <node concept="2PO6tq" id="3DVAlFLrpEE" role="3B56no">
-                      <node concept="kdsPF" id="3DVAlFLrpG1" role="3B56nu">
-                        <ref role="kdsPE" node="7HhOCoeJdOD" resolve="one" />
-                      </node>
                       <node concept="2PO6tq" id="3DVAlFLrpEG" role="3B56no">
                         <node concept="3B6VN0" id="3DVAlFLrpEH" role="3B56nu">
                           <ref role="3B56nS" node="3DVAlFLrpvT" resolve="Route" />
@@ -3061,6 +3058,9 @@
                             </node>
                           </node>
                         </node>
+                      </node>
+                      <node concept="kdsPF" id="54Bccqhl9Oa" role="3B56nu">
+                        <ref role="kdsPE" node="7HhOCoeJdOD" resolve="one" />
                       </node>
                     </node>
                   </node>
@@ -3239,6 +3239,141 @@
         </node>
         <node concept="3B6VN1" id="3DVAlFLakOx" role="3B56n9">
           <property role="TrG5h" value="distance" />
+        </node>
+      </node>
+    </node>
+    <node concept="kds5u" id="54Bccqhl9G1" role="kdsQe">
+      <property role="TrG5h" value="repeat" />
+      <node concept="3B6VN2" id="54Bccqhl9G3" role="kdsPW">
+        <node concept="3B6VN2" id="54Bccqhl9I8" role="3B56nf">
+          <node concept="3B6VN1" id="54Bccqhl9Ic" role="3B56n9">
+            <property role="TrG5h" value="PrevCommand" />
+          </node>
+          <node concept="3B6VN2" id="54Bccqhl9OR" role="3B56nf">
+            <node concept="3B6VN1" id="54Bccqhl9OT" role="3B56n9">
+              <property role="TrG5h" value="Route" />
+            </node>
+            <node concept="2oAaTp" id="54Bccqhl9J5" role="3B56nf">
+              <ref role="19kf5F" node="16zLRPqUZX7" resolve="PlatoonMain" />
+              <node concept="2oAaW5" id="54Bccqhl9ME" role="2oAaxa">
+                <property role="TrG5h" value="Right" />
+                <node concept="2oAaXF" id="54Bccqhl9Nj" role="2oAawq">
+                  <ref role="3aaZtz" node="16zLRPqV09m" resolve="String" />
+                </node>
+              </node>
+              <node concept="2oAaW5" id="54Bccqhl9VE" role="2oAaxa">
+                <property role="TrG5h" value="Command_$counter$" />
+                <node concept="2oAaXF" id="54Bccqhl9Wm" role="2oAawq">
+                  <ref role="3aaZtz" node="16zLRPqV073" resolve="ForwardCommand" />
+                </node>
+              </node>
+              <node concept="2jq5PB" id="54Bccqhl9TF" role="2oAaxa" />
+              <node concept="2PO6tq" id="7slGp8qN57T" role="2oAaxa">
+                <node concept="2PO6tq" id="7slGp8qN56Y" role="3B56no">
+                  <node concept="kdsPF" id="7slGp8qN574" role="3B56no">
+                    <ref role="kdsPE" node="7slGp8qN4gH" resolve="ifthen" />
+                  </node>
+                  <node concept="2PO6tq" id="7slGp8qN57c" role="3B56nu">
+                    <node concept="kdsPF" id="7slGp8qN57l" role="3B56no">
+                      <ref role="kdsPE" node="23X6BHfVFoX" resolve="not" />
+                    </node>
+                    <node concept="2PO6tq" id="7slGp8qN57z" role="3B56nu">
+                      <node concept="3B6VN0" id="7slGp8qN57J" role="3B56nu">
+                        <ref role="3B56nS" node="54Bccqhl9G7" resolve="counter" />
+                      </node>
+                      <node concept="kdsPF" id="7slGp8qN57G" role="3B56no">
+                        <ref role="kdsPE" node="23X6BHg1SMY" resolve="isZero" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2PO6tq" id="54Bccqhl9LC" role="3B56nu">
+                  <node concept="kdsPF" id="54Bccqhl9LD" role="3B56nu">
+                    <ref role="kdsPE" node="7HhOCoeJdOD" resolve="one" />
+                  </node>
+                  <node concept="2PO6tq" id="54Bccqhl9LE" role="3B56no">
+                    <node concept="2oAaXF" id="54Bccqhl9LF" role="3B56nu">
+                      <ref role="3aaZtz" node="54Bccqhl9ME" resolve="Right" />
+                    </node>
+                    <node concept="2PO6tq" id="54Bccqhl9LG" role="3B56no">
+                      <node concept="kdsPF" id="54Bccqhl9LH" role="3B56nu">
+                        <ref role="kdsPE" node="7HhOCoeJdOD" resolve="one" />
+                      </node>
+                      <node concept="2PO6tq" id="54Bccqhl9LI" role="3B56no">
+                        <node concept="3B6VN0" id="54Bccqhl9LJ" role="3B56nu">
+                          <ref role="3B56nS" node="54Bccqhl9OT" resolve="Route" />
+                        </node>
+                        <node concept="2PO6tq" id="54Bccqhl9LK" role="3B56no">
+                          <node concept="3B6VN0" id="54Bccqhl9R_" role="3B56nu">
+                            <ref role="3B56nS" node="54Bccqhl9Ic" resolve="PrevCommand" />
+                          </node>
+                          <node concept="2PO6tq" id="54Bccqhl9LM" role="3B56no">
+                            <node concept="kdsPF" id="54Bccqhl9LN" role="3B56no">
+                              <ref role="kdsPE" node="3DVAlFLgZb2" resolve="FeatureCommandInRouteSequence" />
+                            </node>
+                            <node concept="2oAaXF" id="54Bccqhl9Wo" role="3B56nu">
+                              <ref role="3aaZtz" node="54Bccqhl9VE" resolve="Command_$counter$" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2PO6tq" id="7slGp8qN59d" role="2oAaxa">
+                <node concept="2PO6tq" id="7slGp8qN59f" role="3B56no">
+                  <node concept="kdsPF" id="7slGp8qN59g" role="3B56no">
+                    <ref role="kdsPE" node="7slGp8qN4gH" resolve="ifthen" />
+                  </node>
+                  <node concept="2PO6tq" id="7slGp8qN59h" role="3B56nu">
+                    <node concept="kdsPF" id="7slGp8qN59i" role="3B56no">
+                      <ref role="kdsPE" node="23X6BHfVFoX" resolve="not" />
+                    </node>
+                    <node concept="2PO6tq" id="7slGp8qN59j" role="3B56nu">
+                      <node concept="3B6VN0" id="7slGp8qN59k" role="3B56nu">
+                        <ref role="3B56nS" node="54Bccqhl9G7" resolve="counter" />
+                      </node>
+                      <node concept="kdsPF" id="7slGp8qN59l" role="3B56no">
+                        <ref role="kdsPE" node="23X6BHg1SMY" resolve="isZero" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2PO6tq" id="54Bccqhl9WB" role="3B56nu">
+                  <node concept="3B6VN0" id="54Bccqhl9Xh" role="3B56nu">
+                    <ref role="3B56nS" node="54Bccqhl9OT" resolve="Route" />
+                  </node>
+                  <node concept="2PO6tq" id="7slGp8qN5aU" role="3B56no">
+                    <node concept="2PO6tq" id="7slGp8qN59V" role="3B56no">
+                      <node concept="kdsPF" id="7slGp8qN5a4" role="3B56no">
+                        <ref role="kdsPE" node="54Bccqhl9G1" resolve="repeat" />
+                      </node>
+                      <node concept="2PO6tq" id="7slGp8qN5au" role="3B56nu">
+                        <node concept="kdsPF" id="7slGp8qN5aK" role="3B56nu">
+                          <ref role="kdsPE" node="7HhOCoeJdOD" resolve="one" />
+                        </node>
+                        <node concept="2PO6tq" id="7slGp8qN5ac" role="3B56no">
+                          <node concept="3B6VN0" id="7slGp8qN5ao" role="3B56nu">
+                            <ref role="3B56nS" node="54Bccqhl9G7" resolve="counter" />
+                          </node>
+                          <node concept="kdsPF" id="7slGp8qN5al" role="3B56no">
+                            <ref role="kdsPE" node="23X6BHg1RXx" resolve="sub" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2oAaXF" id="54Bccqhl9Wr" role="3B56nu">
+                      <ref role="3aaZtz" node="54Bccqhl9VE" resolve="Command_$counter$" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3B6VN1" id="54Bccqhl9G7" role="3B56n9">
+          <property role="TrG5h" value="counter" />
         </node>
       </node>
     </node>
