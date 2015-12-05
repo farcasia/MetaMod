@@ -369,5 +369,28 @@
       <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3Fo1Iagq4NG">
+    <property role="TrG5h" value="IfThenElse" />
+    <property role="3GE5qa" value="ControlStructures" />
+    <ref role="1TJDcQ" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+    <node concept="1TJgyj" id="3Fo1IagqHNt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="if" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
+    </node>
+    <node concept="1TJgyj" id="3Fo1IagqHNv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+    </node>
+    <node concept="1TJgyj" id="3Fo1IagqHNy" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="else" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+    </node>
+  </node>
 </model>
 

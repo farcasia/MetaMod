@@ -46,6 +46,11 @@
       <concept id="2324090206732068954" name="Models.structure.LApplWithFragment" flags="ng" index="2uuBJw">
         <child id="2324090206732069037" name="term" index="2uuBGn" />
       </concept>
+      <concept id="4240146619324452076" name="Models.structure.IfThenElse" flags="ng" index="2EG4Ce">
+        <child id="4240146619324620002" name="else" index="2EGHC0" />
+        <child id="4240146619324619999" name="then" index="2EGHCX" />
+        <child id="4240146619324619997" name="if" index="2EGHCZ" />
+      </concept>
       <concept id="5847696270566095112" name="Models.structure.Add" flags="ng" index="30kcBe">
         <child id="5847696270566121691" name="right" index="30nP0t" />
         <child id="5847696270566120723" name="left" index="30nQRl" />
@@ -1319,6 +1324,37 @@
         <property role="30sSus" value="2" />
       </node>
     </node>
+    <node concept="2uuBJw" id="41vT8uzwofh" role="2oAaxa">
+      <property role="TrG5h" value="then_branch" />
+      <node concept="2EG4Ce" id="41vT8uzwokG" role="3B56nu">
+        <node concept="2oAaVg" id="41vT8uzwoqi" role="2EGHC0">
+          <property role="TrG5h" value="FalseGroup" />
+        </node>
+        <node concept="1Nt8Es" id="41vT8uzwokQ" role="2EGHCZ">
+          <property role="1N13bu" value="false" />
+          <node concept="30sSuu" id="41vT8uzwokV" role="1Nt8Et">
+            <property role="1N17t6" value="false" />
+            <property role="30sSus" value="2" />
+          </node>
+        </node>
+        <node concept="2oAaVg" id="41vT8uzwokY" role="2EGHCX">
+          <property role="TrG5h" value="TrueGroup" />
+        </node>
+      </node>
+      <node concept="2uuBJw" id="41vT8uzwnZC" role="3B56no">
+        <property role="TrG5h" value="condition" />
+        <node concept="kdsPF" id="41vT8uzwo4U" role="3B56nu">
+          <ref role="kdsPE" node="mQalcOh8Ev" resolve="true" />
+        </node>
+        <node concept="kdsPF" id="41vT8uzwo4R" role="3B56no">
+          <ref role="kdsPE" node="7slGp8qN4gH" resolve="ifthen" />
+        </node>
+      </node>
+      <node concept="2oAaVg" id="41vT8uzwoEi" role="2uuBGn">
+        <property role="TrG5h" value="FalseGroup" />
+      </node>
+    </node>
+    <node concept="2jq5PB" id="41vT8uzwol1" role="2oAaxa" />
   </node>
 </model>
 
