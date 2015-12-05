@@ -281,5 +281,85 @@
     <property role="3GE5qa" value="Numbers" />
     <property role="TrG5h" value="INumber" />
   </node>
+  <node concept="1TIwiD" id="2r2_whlAvcO">
+    <property role="TrG5h" value="Boolean" />
+    <property role="3GE5qa" value="Booleans" />
+    <ref role="1TJDcQ" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+    <node concept="1TJgyi" id="2r2_whlAwCf" role="1TKVEl">
+      <property role="TrG5h" value="bool" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="2r2_whlAwRl" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="labs" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYep" resolve="LambdaAbstraction" />
+    </node>
+    <node concept="PrWs8" id="2r2_whlAygV" role="PzmwI">
+      <ref role="PrY4T" node="2r2_whlAvdR" resolve="IBoolean" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2r2_whlAvdR">
+    <property role="3GE5qa" value="Booleans" />
+    <property role="TrG5h" value="IBoolean" />
+  </node>
+  <node concept="1TIwiD" id="2r2_whlHxMo">
+    <property role="3GE5qa" value="Booleans" />
+    <property role="TrG5h" value="isZero" />
+    <ref role="1TJDcQ" node="2r2_whlAvcO" resolve="Boolean" />
+    <node concept="1TJgyj" id="2r2_whlHxMp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="no" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2r2_whl_6sL" resolve="INumber" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2r2_whlH_FH">
+    <property role="3GE5qa" value="Booleans" />
+    <property role="TrG5h" value="and" />
+    <property role="34LRSv" value="&amp;&amp;" />
+    <ref role="1TJDcQ" node="2r2_whlAvcO" resolve="Boolean" />
+    <node concept="1TJgyj" id="2r2_whlH_FI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
+    </node>
+    <node concept="1TJgyj" id="2r2_whlH_FK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2r2_whlHExq">
+    <property role="3GE5qa" value="Booleans" />
+    <property role="TrG5h" value="or" />
+    <property role="34LRSv" value="||" />
+    <ref role="1TJDcQ" node="2r2_whlAvcO" resolve="Boolean" />
+    <node concept="1TJgyj" id="2r2_whlHExr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
+    </node>
+    <node concept="1TJgyj" id="2r2_whlHExs" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2r2_whlHGi4">
+    <property role="3GE5qa" value="Booleans" />
+    <property role="TrG5h" value="not" />
+    <ref role="1TJDcQ" node="2r2_whlAvcO" resolve="Boolean" />
+    <node concept="1TJgyj" id="2r2_whlHGie" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
+    </node>
+  </node>
 </model>
 
