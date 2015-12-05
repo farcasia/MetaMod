@@ -1922,6 +1922,7 @@
   </node>
   <node concept="325Ffw" id="2r2_whlLAaT">
     <property role="TrG5h" value="ParanthesesAddBoolean" />
+    <property role="3GE5qa" value="Booleans" />
     <ref role="1chiOs" to="v0yp:2r2_whlAvcO" resolve="Boolean" />
     <node concept="2PxR9H" id="2r2_whlLAaU" role="2QnnpI">
       <node concept="2Py5lD" id="2r2_whlLAaV" role="2PyaAO">
@@ -1949,6 +1950,7 @@
   </node>
   <node concept="325Ffw" id="2r2_whlLKMa">
     <property role="TrG5h" value="ParantheseAddNumber" />
+    <property role="3GE5qa" value="Numbers" />
     <ref role="1chiOs" to="v0yp:54Bccqhlbto" resolve="Number" />
     <node concept="2PxR9H" id="2r2_whlLKMb" role="2QnnpI">
       <node concept="2Py5lD" id="2r2_whlLKMc" role="2PyaAO">
@@ -1976,6 +1978,7 @@
   </node>
   <node concept="325Ffw" id="3Fo1Iagn6UK">
     <property role="TrG5h" value="ParanthesesRemNumber" />
+    <property role="3GE5qa" value="Numbers" />
     <ref role="1chiOs" to="v0yp:54Bccqhlbto" resolve="Number" />
     <node concept="2PxR9H" id="3Fo1Iagncyu" role="2QnnpI">
       <node concept="2Py5lD" id="3Fo1Iagncyv" role="2PyaAO">
@@ -2003,6 +2006,7 @@
   </node>
   <node concept="325Ffw" id="3Fo1IagnuYd">
     <property role="TrG5h" value="ParantheseRemBoolean" />
+    <property role="3GE5qa" value="Booleans" />
     <ref role="1chiOs" to="v0yp:2r2_whlAvcO" resolve="Boolean" />
     <node concept="2PxR9H" id="3Fo1IagnuYe" role="2QnnpI">
       <node concept="2Py5lD" id="3Fo1IagnuYf" role="2PyaAO">
