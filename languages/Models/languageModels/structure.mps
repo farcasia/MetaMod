@@ -214,13 +214,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="left" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whl_6sL" resolve="INumber" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
     <node concept="1TJgyj" id="54Bccqhu63r" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whl_6sL" resolve="INumber" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
   <node concept="1TIwiD" id="2r2_whluutv">
@@ -232,13 +232,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="left" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whl_6sL" resolve="INumber" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
     <node concept="1TJgyj" id="2r2_whluuu5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whl_6sL" resolve="INumber" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
   <node concept="1TIwiD" id="2r2_whlyEn4">
@@ -250,13 +250,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="left" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whl_6sL" resolve="INumber" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
     <node concept="1TJgyj" id="2r2_whlyEn7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whl_6sL" resolve="INumber" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
   <node concept="1TIwiD" id="2r2_whlyIIu">
@@ -268,13 +268,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="left" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whl_6sL" resolve="INumber" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
     <node concept="1TJgyj" id="2r2_whlyIIx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whl_6sL" resolve="INumber" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
   <node concept="PlHQZ" id="2r2_whl_6sL">
