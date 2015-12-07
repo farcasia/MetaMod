@@ -319,7 +319,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="no" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whl_6sL" resolve="INumber" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
   <node concept="1TIwiD" id="2r2_whlH_FH">
