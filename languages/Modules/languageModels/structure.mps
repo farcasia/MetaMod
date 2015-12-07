@@ -94,5 +94,12 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="41vT8u$1ean">
+    <property role="TrG5h" value="EmptyLine" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="41vT8u$1eao" role="PzmwI">
+      <ref role="PrY4T" node="2DitZGYpVDW" resolve="IModuleComponent" />
+    </node>
+  </node>
 </model>
 
