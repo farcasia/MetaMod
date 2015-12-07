@@ -331,13 +331,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="left" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
     <node concept="1TJgyj" id="2r2_whlH_FK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
   <node concept="1TIwiD" id="2r2_whlHExq">
@@ -349,13 +349,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="left" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
     <node concept="1TJgyj" id="2r2_whlHExs" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
   <node concept="1TIwiD" id="2r2_whlHGi4">
@@ -366,7 +366,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="arg" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Fo1Iagq4NG">
@@ -377,7 +377,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="if" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2r2_whlAvdR" resolve="IBoolean" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
     <node concept="1TJgyj" id="3Fo1IagqHNv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
