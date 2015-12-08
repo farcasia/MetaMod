@@ -183,6 +183,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -208,10 +211,22 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -246,6 +261,10 @@
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <reference id="1140138128738" name="concept" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -2098,10 +2117,98 @@
   </node>
   <node concept="24kQdi" id="2g9pCO52Idb">
     <ref role="1XX52x" to="v0yp:2g9pCO52Ib1" resolve="LTList" />
-    <node concept="3F2HdR" id="2g9pCO52Idc" role="2wV5jI">
-      <ref role="34QXea" node="2g9pCO52Ide" resolve="AddNewLTToList" />
-      <ref role="1NtTu8" to="v0yp:7zWtwVwpdT4" />
-      <node concept="2iRkQZ" id="2g9pCO52Idd" role="2czzBx" />
+    <node concept="1QoScp" id="2g9pCO5aU6M" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="2g9pCO5aU6N" role="3e4ffs">
+        <node concept="3clFbS" id="2g9pCO5aU6O" role="2VODD2">
+          <node concept="3SKdUt" id="2g9pCO5cnCd" role="3cqZAp">
+            <node concept="3SKdUq" id="2g9pCO5cnFN" role="3SKWNk">
+              <property role="3SKdUp" value="We assume here that LTList is inside of another lambda term, which at" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="2g9pCO5cnSI" role="3cqZAp">
+            <node concept="3SKdUq" id="2g9pCO5cnWm" role="3SKWNk">
+              <property role="3SKdUp" value="the moment is a sensible assumption." />
+            </node>
+          </node>
+          <node concept="3clFbH" id="2g9pCO5co0F" role="3cqZAp" />
+          <node concept="3clFbJ" id="2g9pCO5cof3" role="3cqZAp">
+            <node concept="3clFbS" id="2g9pCO5cof5" role="3clFbx">
+              <node concept="34ab3g" id="2g9pCO5cpX$" role="3cqZAp">
+                <property role="35gtTG" value="error" />
+                <node concept="Xl_RD" id="2g9pCO5cpXA" role="34bqiv">
+                  <property role="Xl_RC" value="LTList is not inside of a lambda term!" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="2g9pCO5cpPK" role="3clFbw">
+              <node concept="2OqwBi" id="2g9pCO5cpPM" role="3fr31v">
+                <node concept="2OqwBi" id="2g9pCO5cpPN" role="2Oq$k0">
+                  <node concept="pncrf" id="2g9pCO5cpPO" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="2g9pCO5cpPP" role="2OqNvi" />
+                </node>
+                <node concept="1mIQ4w" id="2g9pCO5cpPQ" role="2OqNvi">
+                  <node concept="chp4Y" id="2g9pCO5cpPR" role="cj9EA">
+                    <ref role="cht4Q" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="2g9pCO5co0V" role="3cqZAp" />
+          <node concept="3clFbF" id="2g9pCO5aUbN" role="3cqZAp">
+            <node concept="2OqwBi" id="2g9pCO5aUJT" role="3clFbG">
+              <node concept="2YIFZM" id="2g9pCO5aUfh" role="2Oq$k0">
+                <ref role="37wK5l" to="z64h:20nTeIkHf6L" resolve="searchNearestMetamodel" />
+                <ref role="1Pybhc" to="z64h:1vxM8_OCb4Z" resolve="UtilityMethods" />
+                <node concept="1PxgMI" id="2g9pCO5cnjm" role="37wK5m">
+                  <ref role="1PxNhF" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+                  <node concept="2OqwBi" id="2g9pCO5clU7" role="1PxMeX">
+                    <node concept="pncrf" id="2g9pCO5aUlb" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="2g9pCO5cmot" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3w_OXm" id="2g9pCO5aVlU" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="2g9pCO5aVVE" role="1QoS34">
+        <ref role="34QXea" node="2g9pCO52Ide" resolve="AddNewLTToList" />
+        <node concept="3EZMnI" id="2g9pCO5aW2q" role="3EZMnx">
+          <node concept="VPM3Z" id="2g9pCO5aW2s" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="2g9pCO5aW2u" role="3EZMnx">
+            <property role="3F0ifm" value="type" />
+          </node>
+          <node concept="3F0ifn" id="2g9pCO5aW2D" role="3EZMnx">
+            <property role="3F0ifm" value="model" />
+          </node>
+          <node concept="1iCGBv" id="2g9pCO5aW3d" role="3EZMnx">
+            <ref role="1NtTu8" to="v0yp:2ZZRdXAFMQO" />
+            <node concept="1sVBvm" id="2g9pCO5aW3f" role="1sWHZn">
+              <node concept="3F0A7n" id="2g9pCO5aW3s" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="2iRfu4" id="2g9pCO5aW2v" role="2iSdaV" />
+        </node>
+        <node concept="3F0ifn" id="2g9pCO5aWgz" role="3EZMnx" />
+        <node concept="3F2HdR" id="2g9pCO5aW3J" role="3EZMnx">
+          <ref role="1NtTu8" to="v0yp:7zWtwVwpdT4" />
+          <node concept="2iRkQZ" id="2g9pCO5aW3K" role="2czzBx" />
+        </node>
+        <node concept="2iRkQZ" id="2g9pCO5aVVH" role="2iSdaV" />
+      </node>
+      <node concept="3F2HdR" id="2g9pCO52Idc" role="1QoVPY">
+        <ref role="1NtTu8" to="v0yp:7zWtwVwpdT4" />
+        <ref role="34QXea" node="2g9pCO52Ide" resolve="AddNewLTToList" />
+        <node concept="2iRkQZ" id="2g9pCO52Idd" role="2czzBx" />
+      </node>
     </node>
   </node>
   <node concept="325Ffw" id="2g9pCO52Ide">
