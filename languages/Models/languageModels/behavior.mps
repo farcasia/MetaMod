@@ -5392,6 +5392,7 @@
   </node>
   <node concept="312cEu" id="2QDb_d05LnR">
     <property role="TrG5h" value="Equivalences" />
+    <property role="3GE5qa" value="HelperClasses" />
     <node concept="312cEg" id="2QDb_d05NuK" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -5531,6 +5532,7 @@
   </node>
   <node concept="312cEu" id="4IND2wwM2PW">
     <property role="TrG5h" value="HelperClassScripts" />
+    <property role="3GE5qa" value="HelperClasses" />
     <node concept="2YIFZL" id="4IND2wwM2Qx" role="jymVt">
       <property role="TrG5h" value="initSourceOrTargetRel" />
       <property role="od$2w" value="false" />
@@ -7958,6 +7960,7 @@
   </node>
   <node concept="312cEu" id="1vxM8_OCb4Z">
     <property role="TrG5h" value="UtilityMethods" />
+    <property role="3GE5qa" value="HelperClasses" />
     <node concept="2YIFZL" id="41vT8uzCcSa" role="jymVt">
       <property role="TrG5h" value="convertToBoolean" />
       <property role="DiZV1" value="false" />
@@ -11788,6 +11791,7 @@
   </node>
   <node concept="312cEu" id="7nF4KJrH2Ku">
     <property role="TrG5h" value="VisualizeUtilityMethods" />
+    <property role="3GE5qa" value="HelperClasses" />
     <node concept="2YIFZL" id="2CNdJfw44CG" role="jymVt">
       <property role="TrG5h" value="writeGIFImage" />
       <property role="od$2w" value="false" />
@@ -13186,6 +13190,7 @@
   </node>
   <node concept="312cEu" id="2kO$Kh_8SW0">
     <property role="TrG5h" value="WrapperMapNBM" />
+    <property role="3GE5qa" value="HelperClasses" />
     <node concept="312cEg" id="2kO$Kh_90XQ" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -16822,6 +16827,7 @@
   </node>
   <node concept="312cEu" id="YBsKAllKL$">
     <property role="TrG5h" value="ConvertException" />
+    <property role="3GE5qa" value="HelperClasses" />
     <node concept="3clFbW" id="YBsKAloEcs" role="jymVt">
       <node concept="3cqZAl" id="YBsKAloEcu" role="3clF45" />
       <node concept="3Tm1VV" id="YBsKAloEcv" role="1B3o_S" />
