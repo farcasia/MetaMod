@@ -43,8 +43,8 @@
     <node concept="1TJgyj" id="6oGnPI1e3DT" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="terms" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="2g9pCO4YL$r" resolve="LTList" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
   <node concept="1TIwiD" id="6oGnPI1dYem">
@@ -109,16 +109,6 @@
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6oGnPI1dYeq" resolve="BoundVariable" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2g9pCO4YL$r">
-    <property role="TrG5h" value="LTList" />
-    <ref role="1TJDcQ" node="6oGnPI1dYem" resolve="LambdaTerm" />
-    <node concept="1TJgyj" id="2g9pCO4YRlp" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="contains" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
 </model>

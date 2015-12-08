@@ -392,5 +392,9 @@
       <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2g9pCO52Ib1">
+    <property role="TrG5h" value="LTList" />
+    <ref role="1TJDcQ" node="7zWtwVwpdxn" resolve="Group" />
+  </node>
 </model>
 

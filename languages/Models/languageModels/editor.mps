@@ -232,6 +232,9 @@
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -252,6 +255,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -2088,6 +2094,41 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="3Fo1IagqN8d" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2g9pCO52Idb">
+    <ref role="1XX52x" to="v0yp:2g9pCO52Ib1" resolve="LTList" />
+    <node concept="3F2HdR" id="2g9pCO52Idc" role="2wV5jI">
+      <ref role="34QXea" node="2g9pCO52Ide" resolve="AddNewLTToList" />
+      <ref role="1NtTu8" to="v0yp:7zWtwVwpdT4" />
+      <node concept="2iRkQZ" id="2g9pCO52Idd" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="325Ffw" id="2g9pCO52Ide">
+    <property role="TrG5h" value="AddNewLTToList" />
+    <ref role="1chiOs" to="v0yp:2g9pCO52Ib1" resolve="LTList" />
+    <node concept="2PxR9H" id="2g9pCO52Idf" role="2QnnpI">
+      <node concept="2Py5lD" id="2g9pCO52Idg" role="2PyaAO">
+        <property role="2PWKIB" value="ctrl+alt" />
+        <property role="2PWKIS" value="VK_F2" />
+      </node>
+      <node concept="2PzhpH" id="2g9pCO52Idh" role="2PL9iG">
+        <node concept="3clFbS" id="2g9pCO52Idi" role="2VODD2">
+          <node concept="3clFbF" id="2g9pCO52Idj" role="3cqZAp">
+            <node concept="2OqwBi" id="2g9pCO52Idk" role="3clFbG">
+              <node concept="2OqwBi" id="2g9pCO52Idl" role="2Oq$k0">
+                <node concept="0GJ7k" id="2g9pCO52Idm" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="2g9pCO56sqr" role="2OqNvi">
+                  <ref role="3TtcxE" to="v0yp:7zWtwVwpdT4" />
+                </node>
+              </node>
+              <node concept="WFELt" id="2g9pCO52Ido" role="2OqNvi">
+                <ref role="1A0vxQ" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
