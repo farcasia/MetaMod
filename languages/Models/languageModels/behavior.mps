@@ -2342,7 +2342,7 @@
       <ref role="13i0hy" to="tpcu:3fifI_xCJOQ" resolve="getScope" />
       <node concept="3Tm1VV" id="5udWXWX$JPj" role="1B3o_S" />
       <node concept="3clFbS" id="5udWXWX$JPs" role="3clF47">
-        <node concept="3clFbH" id="3ivI6t8xKSX" role="3cqZAp" />
+        <node concept="3clFbH" id="3ivI6t8BU2Q" role="3cqZAp" />
         <node concept="3clFbF" id="3ivI6t8xZtb" role="3cqZAp">
           <node concept="37vLTI" id="3ivI6t8yc24" role="3clFbG">
             <node concept="2ShNRf" id="3ivI6t8ykR2" role="37vLTx">
@@ -17164,37 +17164,6 @@
       <node concept="3clFbS" id="3ivI6t8yyrv" role="3clF47">
         <node concept="3clFbJ" id="3ivI6t8yAat" role="3cqZAp">
           <node concept="3clFbS" id="3ivI6t8yAau" role="3clFbx">
-            <node concept="34ab3g" id="3ivI6t8$whs" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="3ivI6t8$ya6" role="34bqiv">
-                <node concept="BsUDl" id="3ivI6t8$ydG" role="3uHU7w">
-                  <ref role="37wK5l" node="7rlNOzb51mv" resolve="getScopeAncestor" />
-                </node>
-                <node concept="3cpWs3" id="3ivI6t8$xss" role="3uHU7B">
-                  <node concept="3cpWs3" id="3ivI6t8$xl_" role="3uHU7B">
-                    <node concept="3cpWs3" id="3ivI6t8$w_C" role="3uHU7B">
-                      <node concept="3cpWs3" id="3ivI6t8$wx9" role="3uHU7B">
-                        <node concept="Xl_RD" id="3ivI6t8$whu" role="3uHU7B">
-                          <property role="Xl_RC" value="This should be called by the system: kind -&gt; " />
-                        </node>
-                        <node concept="37vLTw" id="3ivI6t8$wxx" role="3uHU7w">
-                          <ref role="3cqZAo" node="3ivI6t8y$WJ" resolve="kind" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="3ivI6t8$wC_" role="3uHU7w">
-                        <property role="Xl_RC" value=", child-&gt; " />
-                      </node>
-                    </node>
-                    <node concept="37vLTw" id="3ivI6t8$xoK" role="3uHU7w">
-                      <ref role="3cqZAo" node="3ivI6t8y$WL" resolve="child" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="3ivI6t8$xvO" role="3uHU7w">
-                    <property role="Xl_RC" value=" and scopeAncestor " />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs6" id="3ivI6t8yAtA" role="3cqZAp">
               <node concept="2OqwBi" id="3ivI6t8yAyD" role="3cqZAk">
                 <node concept="BsUDl" id="3ivI6t8yAv4" role="2Oq$k0">
@@ -17238,37 +17207,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="3ivI6t8yAWf" role="3cqZAp" />
-        <node concept="34ab3g" id="3ivI6t8AaYx" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="3ivI6t8AaYy" role="34bqiv">
-            <node concept="BsUDl" id="3ivI6t8AaYz" role="3uHU7w">
-              <ref role="37wK5l" node="7rlNOzb51mv" resolve="getScopeAncestor" />
-            </node>
-            <node concept="3cpWs3" id="3ivI6t8AaY$" role="3uHU7B">
-              <node concept="3cpWs3" id="3ivI6t8AaY_" role="3uHU7B">
-                <node concept="3cpWs3" id="3ivI6t8AaYA" role="3uHU7B">
-                  <node concept="3cpWs3" id="3ivI6t8AaYB" role="3uHU7B">
-                    <node concept="Xl_RD" id="3ivI6t8AaYC" role="3uHU7B">
-                      <property role="Xl_RC" value="This is when we go back to calling super: kind -&gt; " />
-                    </node>
-                    <node concept="37vLTw" id="3ivI6t8AaYD" role="3uHU7w">
-                      <ref role="3cqZAo" node="3ivI6t8y$WJ" resolve="kind" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="3ivI6t8AaYE" role="3uHU7w">
-                    <property role="Xl_RC" value=", child-&gt; " />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="3ivI6t8AaYF" role="3uHU7w">
-                  <ref role="3cqZAo" node="3ivI6t8y$WL" resolve="child" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="3ivI6t8AaYG" role="3uHU7w">
-                <property role="Xl_RC" value=" and scopeAncestor " />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="3ivI6t8yAWM" role="3cqZAp">
           <node concept="2OqwBi" id="3ivI6t8yB3i" role="3cqZAk">
             <node concept="13iAh5" id="3ivI6t8yAZG" role="2Oq$k0" />
