@@ -396,5 +396,10 @@
     <property role="TrG5h" value="LTList" />
     <ref role="1TJDcQ" node="7zWtwVwpdxn" resolve="Group" />
   </node>
+  <node concept="1TIwiD" id="3ivI6t8xJor">
+    <property role="TrG5h" value="Sentinel" />
+    <property role="3GE5qa" value="Dummy" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 

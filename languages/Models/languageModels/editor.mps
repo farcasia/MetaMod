@@ -1380,7 +1380,7 @@
     <node concept="2PxR9H" id="210OVEYgo7$" role="2QnnpI">
       <node concept="2Py5lD" id="210OVEYgo7_" role="2PyaAO">
         <property role="2PWKIB" value="ctrl+alt" />
-        <property role="2PWKIS" value="VK_WINDOWS" />
+        <property role="2PWKIS" value="VK_F3" />
       </node>
       <node concept="2PzhpH" id="210OVEYgo7A" role="2PL9iG">
         <node concept="3clFbS" id="210OVEYgo7B" role="2VODD2">
@@ -1473,6 +1473,7 @@
                   <node concept="3GX2aA" id="3DVAlFLg723" role="2OqNvi" />
                 </node>
               </node>
+              <node concept="3clFbH" id="49QhVfSFj$s" role="3cqZAp" />
               <node concept="3clFbF" id="210OVEXZFA0" role="3cqZAp">
                 <node concept="2OqwBi" id="210OVEXZFC5" role="3clFbG">
                   <node concept="37vLTw" id="210OVEXZF_Y" role="2Oq$k0">
