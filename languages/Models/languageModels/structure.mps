@@ -401,5 +401,14 @@
     <property role="3GE5qa" value="Dummy" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="4r$sIq1$r46">
+    <property role="TrG5h" value="NamedConceptGen" />
+    <ref role="1TJDcQ" node="7zWtwVwpd$b" resolve="NamedConcept" />
+    <node concept="1TJgyj" id="4r$sIq1$rth" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="generated" />
+      <ref role="20lvS9" node="7zWtwVwpd$b" resolve="NamedConcept" />
+    </node>
+  </node>
 </model>
 
