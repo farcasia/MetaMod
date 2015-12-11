@@ -32,11 +32,11 @@
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
       <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
-      <concept id="8717972784948764160" name="Models.structure.RefToNamedRel" flags="ng" index="2oAawe" />
-      <concept id="8717972784948762665" name="Models.structure.BasicModel" flags="ng" index="2oAaSB">
+      <concept id="8717972784948764160" name="Models.structure.RefToNamedRelation" flags="ng" index="2oAawe" />
+      <concept id="8717972784948762665" name="Models.structure.Concept" flags="ng" index="2oAaSB">
         <child id="8717972784948764180" name="conformsTo" index="2oAawq" />
       </concept>
-      <concept id="8717972784948762711" name="Models.structure.StructureModel" flags="ng" index="2oAaTp">
+      <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
@@ -46,11 +46,11 @@
         <child id="8717972784948764199" name="source" index="2oAawD" />
       </concept>
       <concept id="8717972784948762801" name="Models.structure.NamedRelation" flags="ng" index="2oAaUZ" />
-      <concept id="8717972784948762846" name="Models.structure.NamedStructureModel" flags="ng" index="2oAaVg" />
-      <concept id="8717972784948762891" name="Models.structure.NamedBasicModel" flags="ng" index="2oAaW5" />
-      <concept id="8717972784948762981" name="Models.structure.RefToNamedBM" flags="ng" index="2oAaXF" />
-      <concept id="8717972784948763026" name="Models.structure.RefToNamedSM" flags="ng" index="2oAaYs" />
-      <concept id="8717972784948763079" name="Models.structure.Inheritance" flags="ng" index="2oAaZ9" />
+      <concept id="8717972784948762846" name="Models.structure.NamedGroup" flags="ng" index="2oAaVg" />
+      <concept id="8717972784948762891" name="Models.structure.NamedConcept" flags="ng" index="2oAaW5" />
+      <concept id="8717972784948762981" name="Models.structure.RefToNamedConcept" flags="ng" index="2oAaXF" />
+      <concept id="8717972784948763026" name="Models.structure.RefToNamedGroup" flags="ng" index="2oAaYs" />
+      <concept id="8717972784948763079" name="Models.structure.Subtype" flags="ng" index="2oAaZ9" />
       <concept id="2324090206732068954" name="Models.structure.LApplWithFragment" flags="ng" index="2uuBJw">
         <child id="2324090206732069037" name="term" index="2uuBGn" />
       </concept>
@@ -81,8 +81,8 @@
     </node>
     <node concept="2oAaW5" id="3DVAlFLrbpx" role="2oAaxa">
       <property role="TrG5h" value="SubtypeRel" />
-      <node concept="2oAaXF" id="3DVAlFLrbqf" role="2oAawq">
-        <ref role="3aaZtz" node="3DVAlFLrcqd" resolve="Subtyping" />
+      <node concept="2oAaXF" id="14BF0eIBhpY" role="2oAawq">
+        <ref role="3aaZtz" node="14BF0eIBhoo" resolve="Subtyping" />
       </node>
     </node>
     <node concept="2jq5PB" id="3DVAlFLrbc0" role="2oAaxa" />
@@ -93,8 +93,8 @@
       <node concept="2oAaXF" id="3DVAlFLrb9P" role="2oAawD">
         <ref role="3aaZtz" node="3DVAlFLrb8X" resolve="G1" />
       </node>
-      <node concept="2oAawe" id="3DVAlFLrb9S" role="2oAawy">
-        <ref role="3aaZtz" node="3DVAlFLrb8i" resolve="contains" />
+      <node concept="2oAawe" id="14BF0eIBhq_" role="2oAawy">
+        <ref role="3aaZtz" node="14BF0eIBhlk" resolve="contains" />
       </node>
     </node>
   </node>
@@ -245,41 +245,41 @@
           </node>
         </node>
       </node>
-      <node concept="2oAaTp" id="3DVAlFLrb8h" role="2uuBGn">
-        <node concept="2oAaW5" id="3DVAlFLrb8v" role="2oAaxa">
+      <node concept="2oAaTp" id="14BF0eIBhlj" role="2uuBGn">
+        <node concept="2oAaW5" id="14BF0eIBhly" role="2oAaxa">
           <property role="TrG5h" value="Concept" />
         </node>
-        <node concept="2oAaW5" id="3DVAlFLrb8u" role="2oAaxa">
+        <node concept="2oAaW5" id="14BF0eIBhlx" role="2oAaxa">
           <property role="TrG5h" value="Term" />
         </node>
-        <node concept="2oAaW5" id="3DVAlFLrb8t" role="2oAaxa">
+        <node concept="2oAaW5" id="14BF0eIBhlw" role="2oAaxa">
           <property role="TrG5h" value="Group" />
         </node>
-        <node concept="2jq5PB" id="3DVAlFLrb8s" role="2oAaxa" />
-        <node concept="2oAaUZ" id="3DVAlFLrb8i" role="2oAaxa">
+        <node concept="2jq5PB" id="14BF0eIBhlv" role="2oAaxa" />
+        <node concept="2oAaUZ" id="14BF0eIBhlk" role="2oAaxa">
           <property role="TrG5h" value="contains" />
-          <node concept="2oAaXF" id="3DVAlFLrb8j" role="2oAawD">
-            <ref role="3aaZtz" node="3DVAlFLrb8t" resolve="Group" />
+          <node concept="2oAaXF" id="14BF0eIBhll" role="2oAawD">
+            <ref role="3aaZtz" node="14BF0eIBhlw" resolve="Group" />
           </node>
-          <node concept="2oAaXF" id="3DVAlFLrb8k" role="2oAawB">
-            <ref role="3aaZtz" node="3DVAlFLrb8u" resolve="Term" />
-          </node>
-        </node>
-        <node concept="2jq5PB" id="3DVAlFLrb8l" role="2oAaxa" />
-        <node concept="2oAaZ9" id="3DVAlFLrb8m" role="2oAaxa">
-          <node concept="2oAaXF" id="3DVAlFLrb8n" role="2oAawD">
-            <ref role="3aaZtz" node="3DVAlFLrb8t" resolve="Group" />
-          </node>
-          <node concept="2oAaXF" id="3DVAlFLrb8o" role="2oAawB">
-            <ref role="3aaZtz" node="3DVAlFLrb8u" resolve="Term" />
+          <node concept="2oAaXF" id="14BF0eIBhlm" role="2oAawB">
+            <ref role="3aaZtz" node="14BF0eIBhlx" resolve="Term" />
           </node>
         </node>
-        <node concept="2oAaZ9" id="3DVAlFLrb8p" role="2oAaxa">
-          <node concept="2oAaXF" id="3DVAlFLrb8q" role="2oAawD">
-            <ref role="3aaZtz" node="3DVAlFLrb8v" resolve="Concept" />
+        <node concept="2jq5PB" id="14BF0eIBhln" role="2oAaxa" />
+        <node concept="2oAaZ9" id="14BF0eIBhlo" role="2oAaxa">
+          <node concept="2oAaXF" id="14BF0eIBhlp" role="2oAawD">
+            <ref role="3aaZtz" node="14BF0eIBhlw" resolve="Group" />
           </node>
-          <node concept="2oAaXF" id="3DVAlFLrb8r" role="2oAawB">
-            <ref role="3aaZtz" node="3DVAlFLrb8u" resolve="Term" />
+          <node concept="2oAaXF" id="14BF0eIBhlq" role="2oAawB">
+            <ref role="3aaZtz" node="14BF0eIBhlx" resolve="Term" />
+          </node>
+        </node>
+        <node concept="2oAaZ9" id="14BF0eIBhlr" role="2oAaxa">
+          <node concept="2oAaXF" id="14BF0eIBhls" role="2oAawD">
+            <ref role="3aaZtz" node="14BF0eIBhly" resolve="Concept" />
+          </node>
+          <node concept="2oAaXF" id="14BF0eIBhlt" role="2oAawB">
+            <ref role="3aaZtz" node="14BF0eIBhlx" resolve="Term" />
           </node>
         </node>
       </node>
@@ -301,21 +301,21 @@
       <node concept="kdsPF" id="3DVAlFLrcdT" role="3B56no">
         <ref role="kdsPE" node="3DVAlFLrbdc" resolve="IntroduceSubtyping" />
       </node>
-      <node concept="2oAaTp" id="3DVAlFLrcqc" role="2uuBGn">
-        <node concept="2oAaW5" id="3DVAlFLrcqj" role="2oAaxa">
+      <node concept="2oAaTp" id="14BF0eIBhon" role="2uuBGn">
+        <node concept="2oAaW5" id="14BF0eIBhov" role="2oAaxa">
           <property role="TrG5h" value="Relation" />
         </node>
-        <node concept="2jq5PB" id="3DVAlFLrcqi" role="2oAaxa" />
-        <node concept="2oAaW5" id="3DVAlFLrcqd" role="2oAaxa">
+        <node concept="2jq5PB" id="14BF0eIBhou" role="2oAaxa" />
+        <node concept="2oAaW5" id="14BF0eIBhoo" role="2oAaxa">
           <property role="TrG5h" value="Subtyping" />
         </node>
-        <node concept="2jq5PB" id="3DVAlFLrcqe" role="2oAaxa" />
-        <node concept="2oAaZ9" id="3DVAlFLrcqf" role="2oAaxa">
-          <node concept="2oAaXF" id="3DVAlFLrcqg" role="2oAawD">
-            <ref role="3aaZtz" node="3DVAlFLrcqd" resolve="Subtyping" />
+        <node concept="2jq5PB" id="14BF0eIBhop" role="2oAaxa" />
+        <node concept="2oAaZ9" id="14BF0eIBhoq" role="2oAaxa">
+          <node concept="2oAaXF" id="14BF0eIBhor" role="2oAawD">
+            <ref role="3aaZtz" node="14BF0eIBhoo" resolve="Subtyping" />
           </node>
-          <node concept="2oAaXF" id="3DVAlFLrcqh" role="2oAawB">
-            <ref role="3aaZtz" node="3DVAlFLrcqj" resolve="Relation" />
+          <node concept="2oAaXF" id="14BF0eIBhos" role="2oAawB">
+            <ref role="3aaZtz" node="14BF0eIBhov" resolve="Relation" />
           </node>
         </node>
       </node>

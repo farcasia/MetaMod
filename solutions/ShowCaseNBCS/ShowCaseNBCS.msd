@@ -6,6 +6,9 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">a1a4fafa-681b-4a34-8c99-b9c9766b6526(CaseStudy)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>b6269b38-266c-4c72-855f-f9773fac7a5c(LambdaCalculus)</usedLanguage>
     <usedLanguage>ae311dd6-db78-4e5e-a31b-7988fcde0010(Modules)</usedLanguage>

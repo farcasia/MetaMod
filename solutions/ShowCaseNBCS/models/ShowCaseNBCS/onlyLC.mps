@@ -48,6 +48,9 @@
       <concept id="5847696270563784536" name="Models.structure.Number" flags="ng" index="30sSuu">
         <property id="5847696270563784538" name="no" index="30sSus" />
       </concept>
+      <concept id="2792959664282953521" name="Models.structure.INumber" flags="ng" index="1NlJ4P">
+        <property id="2792959664286261570" name="parantheses" index="1N17t6" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -744,8 +747,9 @@
             </node>
           </node>
           <node concept="2PO6tq" id="41vT8u$1H2O" role="3B56nu">
-            <node concept="kdsPF" id="41vT8u$1H36" role="3B56nu">
-              <ref role="kdsPE" node="7HhOCoeJs6A" resolve="three" />
+            <node concept="30sSuu" id="6nWUM1M9_zN" role="3B56nu">
+              <property role="1N17t6" value="false" />
+              <property role="30sSus" value="5" />
             </node>
             <node concept="2PO6tq" id="41vT8u$1H2y" role="3B56no">
               <node concept="kdsPF" id="41vT8u$1H2I" role="3B56nu">
