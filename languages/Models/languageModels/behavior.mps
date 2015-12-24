@@ -419,6 +419,7 @@
         <child id="1225645893898" name="element" index="1uc2wn" />
       </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
@@ -9095,6 +9096,48 @@
   <node concept="312cEu" id="1vxM8_OCb4Z">
     <property role="TrG5h" value="UtilityMethods" />
     <property role="3GE5qa" value="HelperClasses" />
+    <node concept="2YIFZL" id="5SyC5TNSidr" role="jymVt">
+      <property role="TrG5h" value="topLevelGroup" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5SyC5TNSidu" role="3clF47">
+        <node concept="3SKdUt" id="5SyC5TNSxpm" role="3cqZAp">
+          <node concept="3SKdUq" id="5SyC5TNSxpy" role="3SKWNk">
+            <property role="3SKdUp" value="We assume that the fragment abstractions can see all the concepts in the top level model." />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5SyC5TNSizK" role="3cqZAp">
+          <node concept="2OqwBi" id="5SyC5TNSwFY" role="3cqZAk">
+            <node concept="2OqwBi" id="5SyC5TNStV2" role="2Oq$k0">
+              <node concept="2OqwBi" id="5SyC5TNSiW_" role="2Oq$k0">
+                <node concept="37vLTw" id="5SyC5TNSi_S" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5SyC5TNSi$J" resolve="lt" />
+                </node>
+                <node concept="z$bX8" id="5SyC5TNStlw" role="2OqNvi" />
+              </node>
+              <node concept="v3k3i" id="5SyC5TNSwv2" role="2OqNvi">
+                <node concept="chp4Y" id="5SyC5TNSwwc" role="v3oSu">
+                  <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+                </node>
+              </node>
+            </node>
+            <node concept="1yVyf7" id="5SyC5TNSxl2" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5SyC5TNShTf" role="1B3o_S" />
+      <node concept="3Tqbb2" id="5SyC5TNSidl" role="3clF45">
+        <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+      </node>
+      <node concept="37vLTG" id="5SyC5TNSi$J" role="3clF46">
+        <property role="TrG5h" value="lt" />
+        <node concept="3Tqbb2" id="5SyC5TNSi$I" role="1tU5fm">
+          <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5SyC5TNSfyu" role="jymVt" />
     <node concept="2YIFZL" id="2g9pCO5pq00" role="jymVt">
       <property role="TrG5h" value="checkForGroupAncestor" />
       <property role="od$2w" value="false" />
