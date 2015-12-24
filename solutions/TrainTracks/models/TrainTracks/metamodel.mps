@@ -65,6 +65,9 @@
       <node concept="2oAaW5" id="5SyC5TNJ3$p" role="2oAaxa">
         <property role="TrG5h" value="Int" />
       </node>
+      <node concept="2oAaW5" id="5SyC5TNQGrK" role="2oAaxa">
+        <property role="TrG5h" value="VirtualSegment" />
+      </node>
       <node concept="2jq5PB" id="5SyC5TNJ3$D" role="2oAaxa" />
       <node concept="2oAaUZ" id="5SyC5TNJ3U5" role="2oAaxa">
         <property role="TrG5h" value="point" />
@@ -101,6 +104,15 @@
         </node>
         <node concept="2oAaXF" id="5SyC5TNJ3WR" role="2oAawD">
           <ref role="3aaZtz" node="5SyC5TNIPRJ" resolve="Segment" />
+        </node>
+      </node>
+      <node concept="2jq5PB" id="5SyC5TNQGs5" role="2oAaxa" />
+      <node concept="2oAaZ9" id="5SyC5TNQGt7" role="2oAaxa">
+        <node concept="2oAaXF" id="5SyC5TNQGtK" role="2oAawB">
+          <ref role="3aaZtz" node="5SyC5TNIPRJ" resolve="Segment" />
+        </node>
+        <node concept="2oAaXF" id="5SyC5TNQGtB" role="2oAawD">
+          <ref role="3aaZtz" node="5SyC5TNQGrK" resolve="VirtualSegment" />
         </node>
       </node>
     </node>
