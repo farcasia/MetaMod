@@ -79,7 +79,9 @@
       <concept id="2792959664282953521" name="Models.structure.INumber" flags="ng" index="1NlJ4P">
         <property id="2792959664286261570" name="parantheses" index="1N17t6" />
       </concept>
-      <concept id="2792959664283317044" name="Models.structure.Boolean" flags="ng" index="1NmQkK" />
+      <concept id="2792959664283317044" name="Models.structure.Boolean" flags="ng" index="1NmQkK">
+        <property id="2792959664283322895" name="bool" index="1Nm9Kb" />
+      </concept>
       <concept id="2792959664283317111" name="Models.structure.IBoolean" flags="ng" index="1NmQlN">
         <property id="2792959664286246106" name="parantheses" index="1N13bu" />
       </concept>
@@ -288,6 +290,7 @@
         <property role="TrG5h" value="switch" />
         <node concept="1NmQkK" id="1DJ_GQZxVYZ" role="3B56nu">
           <property role="1N13bu" value="false" />
+          <property role="1Nm9Kb" value="true" />
         </node>
         <node concept="2uuBJw" id="1DJ_GQZxT0s" role="3B56no">
           <property role="TrG5h" value="speed" />
@@ -314,7 +317,157 @@
                   <node concept="2oAaXF" id="1DJ_GQZxTpo" role="3B56nu">
                     <ref role="3aaZtz" node="5SyC5TNQHJC" resolve="TerpAkkers" />
                   </node>
-                  <node concept="kdsPF" id="1DJ_GQZxVNy" role="3B56no">
+                  <node concept="kdsPF" id="1DJ_GQZXjH8" role="3B56no">
+                    <ref role="kdsPE" node="1DJ_GQZXga1" resolve="GenSegWithEndPointsVar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="x0Shc" id="1DJ_GQZXlFw" role="2uuBGn">
+          <node concept="2oAaW5" id="1DJ_GQZXlFx" role="2oAaxa">
+            <property role="TrG5h" value="PointOfSeg1636248292" />
+            <node concept="2oAaXF" id="1DJ_GQZXlF$" role="2oAawq">
+              <ref role="3aaZtz" node="5SyC5TNQG$2" resolve="PointOfSeg" />
+            </node>
+          </node>
+          <node concept="2oAaW5" id="1DJ_GQZXlF_" role="2oAaxa">
+            <property role="TrG5h" value="PointOfSeg170989527" />
+            <node concept="2oAaXF" id="1DJ_GQZXlFC" role="2oAawq">
+              <ref role="3aaZtz" node="5SyC5TNQG$2" resolve="PointOfSeg" />
+            </node>
+          </node>
+          <node concept="3$mKog" id="1DJ_GQZXlFD" role="2oAaxa" />
+          <node concept="2oAaW5" id="1DJ_GQZXlFE" role="2oAaxa">
+            <property role="TrG5h" value="Segment902300691" />
+            <node concept="2oAaXF" id="1DJ_GQZXlFH" role="2oAawq">
+              <ref role="3aaZtz" node="5SyC5TNQG$0" resolve="Segment" />
+            </node>
+          </node>
+          <node concept="2jq5PB" id="1DJ_GQZXlFI" role="2oAaxa" />
+          <node concept="2oAaW5" id="1DJ_GQZXlFJ" role="2oAaxa">
+            <property role="TrG5h" value="VirtualSegment329858935" />
+            <node concept="2oAaXF" id="1DJ_GQZXlFM" role="2oAawq">
+              <ref role="3aaZtz" node="5SyC5TNQG$4" resolve="VirtualSegment" />
+            </node>
+          </node>
+          <node concept="2jq5PB" id="1DJ_GQZXlFN" role="2oAaxa" />
+          <node concept="2oAaUa" id="1DJ_GQZXlFO" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXlFP" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXlFx" resolve="PointOfSeg1636248292" />
+            </node>
+            <node concept="2oAaXF" id="1DJ_GQZXlFQ" role="2oAawB">
+              <ref role="3aaZtz" node="5SyC5TNQST7" resolve="Point1" />
+            </node>
+            <node concept="2oAawe" id="1DJ_GQZXlFR" role="2oAawy">
+              <ref role="3aaZtz" node="5SyC5TNQG$d" resolve="point" />
+            </node>
+          </node>
+          <node concept="2oAaUa" id="1DJ_GQZXlFS" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXlFT" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXlFx" resolve="PointOfSeg1636248292" />
+            </node>
+            <node concept="2oAaXF" id="1DJ_GQZXlFV" role="2oAawB">
+              <ref role="3aaZtz" node="1DJ_GQZXlFJ" resolve="VirtualSegment329858935" />
+            </node>
+            <node concept="2oAawe" id="1DJ_GQZXlFX" role="2oAawy">
+              <ref role="3aaZtz" node="5SyC5TNQG$g" resolve="segment" />
+            </node>
+          </node>
+          <node concept="2jq5PB" id="1DJ_GQZXlFY" role="2oAaxa" />
+          <node concept="2oAaUa" id="1DJ_GQZXlFZ" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXlG0" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXlF_" resolve="PointOfSeg170989527" />
+            </node>
+            <node concept="2oAaXF" id="1DJ_GQZXlG1" role="2oAawB">
+              <ref role="3aaZtz" node="5SyC5TNQHKL" resolve="Point2" />
+            </node>
+            <node concept="2oAawe" id="1DJ_GQZXlG2" role="2oAawy">
+              <ref role="3aaZtz" node="5SyC5TNQG$d" resolve="point" />
+            </node>
+          </node>
+          <node concept="2oAaUa" id="1DJ_GQZXlG3" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXlG4" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXlF_" resolve="PointOfSeg170989527" />
+            </node>
+            <node concept="2oAaXF" id="1DJ_GQZXlG6" role="2oAawB">
+              <ref role="3aaZtz" node="1DJ_GQZXlFJ" resolve="VirtualSegment329858935" />
+            </node>
+            <node concept="2oAawe" id="1DJ_GQZXlG8" role="2oAawy">
+              <ref role="3aaZtz" node="5SyC5TNQG$g" resolve="segment" />
+            </node>
+          </node>
+          <node concept="3$mKog" id="1DJ_GQZXlG9" role="2oAaxa" />
+          <node concept="2oAaUa" id="1DJ_GQZXlGa" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXlGc" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXlFJ" resolve="VirtualSegment329858935" />
+            </node>
+            <node concept="2oAaXF" id="1DJ_GQZXlGe" role="2oAawB">
+              <ref role="3aaZtz" node="5SyC5TNQHRO" resolve="100" />
+            </node>
+            <node concept="2oAawe" id="1DJ_GQZXlGf" role="2oAawy">
+              <ref role="3aaZtz" node="5SyC5TNQG$j" resolve="speed" />
+            </node>
+          </node>
+          <node concept="2oAaUa" id="1DJ_GQZXlGg" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXlGi" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXlFJ" resolve="VirtualSegment329858935" />
+            </node>
+            <node concept="2oAaXF" id="1DJ_GQZXlGk" role="2oAawB">
+              <ref role="3aaZtz" node="5SyC5TNQHSN" resolve="1000" />
+            </node>
+            <node concept="2oAawe" id="1DJ_GQZXlGl" role="2oAawy">
+              <ref role="3aaZtz" node="5SyC5TNQG$m" resolve="length" />
+            </node>
+          </node>
+          <node concept="3$mKog" id="1DJ_GQZXlGm" role="2oAaxa" />
+          <node concept="2oAaUa" id="1DJ_GQZXlGn" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXlGp" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXlFJ" resolve="VirtualSegment329858935" />
+            </node>
+            <node concept="2oAaXF" id="1DJ_GQZXlGr" role="2oAawB">
+              <ref role="3aaZtz" node="5SyC5TNQHJC" resolve="TerpAkkers" />
+            </node>
+            <node concept="2oAawe" id="1DJ_GQZXlGs" role="2oAawy">
+              <ref role="3aaZtz" node="5SyC5TNQG$a" resolve="partOf" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2jq5PB" id="1DJ_GQZxUDk" role="2oAaxa" />
+      <node concept="2uuBJw" id="1DJ_GQZXoBZ" role="2oAaxa">
+        <property role="TrG5h" value="switch" />
+        <node concept="1NmQkK" id="1DJ_GQZXoC0" role="3B56nu">
+          <property role="1N13bu" value="false" />
+          <property role="1Nm9Kb" value="true" />
+        </node>
+        <node concept="2uuBJw" id="1DJ_GQZXoC1" role="3B56no">
+          <property role="TrG5h" value="speed" />
+          <node concept="2oAaXF" id="1DJ_GQZXoC2" role="3B56nu">
+            <ref role="3aaZtz" node="5SyC5TNQHRO" resolve="100" />
+          </node>
+          <node concept="2yUw1A" id="1DJ_GQZXoC3" role="3B56no">
+            <property role="TrG5h" value="length" />
+            <node concept="2oAaXF" id="1DJ_GQZXoC4" role="3B56nu">
+              <ref role="3aaZtz" node="5SyC5TNQHSN" resolve="1000" />
+            </node>
+            <node concept="2yUw1A" id="1DJ_GQZXoC5" role="3B56no">
+              <property role="TrG5h" value="Point2" />
+              <node concept="2oAaXF" id="1DJ_GQZXoC6" role="3B56nu">
+                <ref role="3aaZtz" node="5SyC5TNQHKL" resolve="Point2" />
+              </node>
+              <node concept="2yUw1A" id="1DJ_GQZXoC7" role="3B56no">
+                <property role="TrG5h" value="Point1" />
+                <node concept="2oAaXF" id="1DJ_GQZXoC8" role="3B56nu">
+                  <ref role="3aaZtz" node="5SyC5TNQST7" resolve="Point1" />
+                </node>
+                <node concept="2yUw1A" id="1DJ_GQZXoC9" role="3B56no">
+                  <property role="TrG5h" value="Section" />
+                  <node concept="2oAaXF" id="1DJ_GQZXoCa" role="3B56nu">
+                    <ref role="3aaZtz" node="5SyC5TNQHJC" resolve="TerpAkkers" />
+                  </node>
+                  <node concept="kdsPF" id="1DJ_GQZXps0" role="3B56no">
                     <ref role="kdsPE" node="5SyC5TNQHqb" resolve="GenSegWithEndPoints" />
                   </node>
                 </node>
@@ -322,110 +475,111 @@
             </node>
           </node>
         </node>
-        <node concept="x0Shc" id="1DJ_GQZX6kF" role="2uuBGn">
-          <node concept="2oAaW5" id="1DJ_GQZX6kG" role="2oAaxa">
-            <property role="TrG5h" value="PointOfSeg20661154" />
-            <node concept="2oAaXF" id="1DJ_GQZX6kJ" role="2oAawq">
+        <node concept="x0Shc" id="1DJ_GQZXpyr" role="2uuBGn">
+          <node concept="2oAaW5" id="1DJ_GQZXpys" role="2oAaxa">
+            <property role="TrG5h" value="PointOfSeg2115476979" />
+            <node concept="2oAaXF" id="1DJ_GQZXpyv" role="2oAawq">
               <ref role="3aaZtz" node="5SyC5TNQG$2" resolve="PointOfSeg" />
             </node>
           </node>
-          <node concept="2oAaW5" id="1DJ_GQZX6kK" role="2oAaxa">
-            <property role="TrG5h" value="PointOfSeg197320865" />
-            <node concept="2oAaXF" id="1DJ_GQZX6kN" role="2oAawq">
+          <node concept="2oAaW5" id="1DJ_GQZXpyw" role="2oAaxa">
+            <property role="TrG5h" value="PointOfSeg382923789" />
+            <node concept="2oAaXF" id="1DJ_GQZXpyz" role="2oAawq">
               <ref role="3aaZtz" node="5SyC5TNQG$2" resolve="PointOfSeg" />
             </node>
           </node>
-          <node concept="3$mKog" id="1DJ_GQZX6kO" role="2oAaxa" />
-          <node concept="2oAaW5" id="1DJ_GQZX6kP" role="2oAaxa">
-            <property role="TrG5h" value="Segment1339874306" />
-            <node concept="2oAaXF" id="1DJ_GQZX6kS" role="2oAawq">
-              <ref role="3aaZtz" node="5SyC5TNQG$0" resolve="Segment" />
+          <node concept="3$mKog" id="1DJ_GQZXpy$" role="2oAaxa" />
+          <node concept="2oAaW5" id="1DJ_GQZXpy_" role="2oAaxa">
+            <property role="TrG5h" value="VirtualSegment989927285" />
+            <node concept="2oAaXF" id="1DJ_GQZXpyC" role="2oAawq">
+              <ref role="3aaZtz" node="5SyC5TNQG$4" resolve="VirtualSegment" />
             </node>
           </node>
-          <node concept="2jq5PB" id="1DJ_GQZX6kT" role="2oAaxa" />
-          <node concept="2oAaUa" id="1DJ_GQZX6kU" role="2oAaxa">
-            <node concept="2oAaXF" id="1DJ_GQZX6kV" role="2oAawD">
-              <ref role="3aaZtz" node="1DJ_GQZX6kG" resolve="PointOfSeg20661154" />
+          <node concept="2jq5PB" id="1DJ_GQZXpyD" role="2oAaxa" />
+          <node concept="2oAaUa" id="1DJ_GQZXpyE" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXpyF" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXpys" resolve="PointOfSeg2115476979" />
             </node>
-            <node concept="2oAaXF" id="1DJ_GQZX6kW" role="2oAawB">
+            <node concept="2oAaXF" id="1DJ_GQZXpyG" role="2oAawB">
               <ref role="3aaZtz" node="5SyC5TNQST7" resolve="Point1" />
             </node>
-            <node concept="2oAawe" id="1DJ_GQZX6kX" role="2oAawy">
+            <node concept="2oAawe" id="1DJ_GQZXpyH" role="2oAawy">
               <ref role="3aaZtz" node="5SyC5TNQG$d" resolve="point" />
             </node>
           </node>
-          <node concept="2oAaUa" id="1DJ_GQZX6kY" role="2oAaxa">
-            <node concept="2oAaXF" id="1DJ_GQZX6kZ" role="2oAawD">
-              <ref role="3aaZtz" node="1DJ_GQZX6kG" resolve="PointOfSeg20661154" />
+          <node concept="2oAaUa" id="1DJ_GQZXpyI" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXpyJ" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXpys" resolve="PointOfSeg2115476979" />
             </node>
-            <node concept="2oAaXF" id="1DJ_GQZX6l4" role="2oAawB">
-              <ref role="3aaZtz" node="1DJ_GQZX6kP" resolve="Segment1339874306" />
+            <node concept="2oAaXF" id="1DJ_GQZXpyL" role="2oAawB">
+              <ref role="3aaZtz" node="1DJ_GQZXpy_" resolve="VirtualSegment989927285" />
             </node>
-            <node concept="2oAawe" id="1DJ_GQZX6l5" role="2oAawy">
+            <node concept="2oAawe" id="1DJ_GQZXpyP" role="2oAawy">
               <ref role="3aaZtz" node="5SyC5TNQG$g" resolve="segment" />
             </node>
           </node>
-          <node concept="2jq5PB" id="1DJ_GQZX6l6" role="2oAaxa" />
-          <node concept="2oAaUa" id="1DJ_GQZX6l7" role="2oAaxa">
-            <node concept="2oAaXF" id="1DJ_GQZX6l8" role="2oAawD">
-              <ref role="3aaZtz" node="1DJ_GQZX6kK" resolve="PointOfSeg197320865" />
+          <node concept="2jq5PB" id="1DJ_GQZXpyQ" role="2oAaxa" />
+          <node concept="2oAaUa" id="1DJ_GQZXpyR" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXpyS" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXpyw" resolve="PointOfSeg382923789" />
             </node>
-            <node concept="2oAaXF" id="1DJ_GQZX6l9" role="2oAawB">
+            <node concept="2oAaXF" id="1DJ_GQZXpyT" role="2oAawB">
               <ref role="3aaZtz" node="5SyC5TNQHKL" resolve="Point2" />
             </node>
-            <node concept="2oAawe" id="1DJ_GQZX6la" role="2oAawy">
+            <node concept="2oAawe" id="1DJ_GQZXpyU" role="2oAawy">
               <ref role="3aaZtz" node="5SyC5TNQG$d" resolve="point" />
             </node>
           </node>
-          <node concept="2oAaUa" id="1DJ_GQZX6lb" role="2oAaxa">
-            <node concept="2oAaXF" id="1DJ_GQZX6lc" role="2oAawD">
-              <ref role="3aaZtz" node="1DJ_GQZX6kK" resolve="PointOfSeg197320865" />
+          <node concept="2oAaUa" id="1DJ_GQZXpyV" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXpyW" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXpyw" resolve="PointOfSeg382923789" />
             </node>
-            <node concept="2oAaXF" id="1DJ_GQZX6lf" role="2oAawB">
-              <ref role="3aaZtz" node="1DJ_GQZX6kP" resolve="Segment1339874306" />
+            <node concept="2oAaXF" id="1DJ_GQZXpyY" role="2oAawB">
+              <ref role="3aaZtz" node="1DJ_GQZXpy_" resolve="VirtualSegment989927285" />
             </node>
-            <node concept="2oAawe" id="1DJ_GQZX6lg" role="2oAawy">
+            <node concept="2oAawe" id="1DJ_GQZXpz0" role="2oAawy">
               <ref role="3aaZtz" node="5SyC5TNQG$g" resolve="segment" />
             </node>
           </node>
-          <node concept="3$mKog" id="1DJ_GQZX6lh" role="2oAaxa" />
-          <node concept="2oAaUa" id="1DJ_GQZX6li" role="2oAaxa">
-            <node concept="2oAaXF" id="1DJ_GQZX6ll" role="2oAawD">
-              <ref role="3aaZtz" node="1DJ_GQZX6kP" resolve="Segment1339874306" />
+          <node concept="3$mKog" id="1DJ_GQZXpz1" role="2oAaxa" />
+          <node concept="2oAaUa" id="1DJ_GQZXpz2" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXpz4" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXpy_" resolve="VirtualSegment989927285" />
             </node>
-            <node concept="2oAaXF" id="1DJ_GQZX6lm" role="2oAawB">
+            <node concept="2oAaXF" id="1DJ_GQZXpz6" role="2oAawB">
               <ref role="3aaZtz" node="5SyC5TNQHRO" resolve="100" />
             </node>
-            <node concept="2oAawe" id="1DJ_GQZX6ln" role="2oAawy">
+            <node concept="2oAawe" id="1DJ_GQZXpz7" role="2oAawy">
               <ref role="3aaZtz" node="5SyC5TNQG$j" resolve="speed" />
             </node>
           </node>
-          <node concept="2oAaUa" id="1DJ_GQZX6lo" role="2oAaxa">
-            <node concept="2oAaXF" id="1DJ_GQZX6lr" role="2oAawD">
-              <ref role="3aaZtz" node="1DJ_GQZX6kP" resolve="Segment1339874306" />
+          <node concept="2oAaUa" id="1DJ_GQZXpz8" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXpza" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXpy_" resolve="VirtualSegment989927285" />
             </node>
-            <node concept="2oAaXF" id="1DJ_GQZX6ls" role="2oAawB">
+            <node concept="2oAaXF" id="1DJ_GQZXpzc" role="2oAawB">
               <ref role="3aaZtz" node="5SyC5TNQHSN" resolve="1000" />
             </node>
-            <node concept="2oAawe" id="1DJ_GQZX6lt" role="2oAawy">
+            <node concept="2oAawe" id="1DJ_GQZXpzd" role="2oAawy">
               <ref role="3aaZtz" node="5SyC5TNQG$m" resolve="length" />
             </node>
           </node>
-          <node concept="3$mKog" id="1DJ_GQZX6lu" role="2oAaxa" />
-          <node concept="2oAaUa" id="1DJ_GQZX6lv" role="2oAaxa">
-            <node concept="2oAaXF" id="1DJ_GQZX6ly" role="2oAawD">
-              <ref role="3aaZtz" node="1DJ_GQZX6kP" resolve="Segment1339874306" />
+          <node concept="3$mKog" id="1DJ_GQZXpze" role="2oAaxa" />
+          <node concept="2oAaUa" id="1DJ_GQZXpzf" role="2oAaxa">
+            <node concept="2oAaXF" id="1DJ_GQZXpzh" role="2oAawD">
+              <ref role="3aaZtz" node="1DJ_GQZXpy_" resolve="VirtualSegment989927285" />
             </node>
-            <node concept="2oAaXF" id="1DJ_GQZX6lz" role="2oAawB">
+            <node concept="2oAaXF" id="1DJ_GQZXpzj" role="2oAawB">
               <ref role="3aaZtz" node="5SyC5TNQHJC" resolve="TerpAkkers" />
             </node>
-            <node concept="2oAawe" id="1DJ_GQZX6l$" role="2oAawy">
+            <node concept="2oAawe" id="1DJ_GQZXpzk" role="2oAawy">
               <ref role="3aaZtz" node="5SyC5TNQG$a" resolve="partOf" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="2jq5PB" id="1DJ_GQZxUDk" role="2oAaxa" />
+      <node concept="2jq5PB" id="1DJ_GQZXo77" role="2oAaxa" />
+      <node concept="2jq5PB" id="1DJ_GQZXnCS" role="2oAaxa" />
       <node concept="2uuBJw" id="5SyC5TNQTj4" role="2oAaxa">
         <property role="TrG5h" value="ips" />
         <node concept="30sSuu" id="5SyC5TNQTlD" role="3B56nu">
@@ -1349,6 +1503,187 @@
       </node>
     </node>
     <node concept="3$mKog" id="5SyC5TNQS5k" role="kdsQe" />
+    <node concept="kds5u" id="1DJ_GQZXga1" role="kdsQe">
+      <property role="TrG5h" value="GenSegWithEndPointsVar" />
+      <node concept="3B6VN2" id="1DJ_GQZXga2" role="kdsPW">
+        <node concept="3B6VN1" id="1DJ_GQZXga3" role="3B56n9">
+          <property role="TrG5h" value="Section" />
+        </node>
+        <node concept="3B6VN2" id="1DJ_GQZXga4" role="3B56nf">
+          <node concept="3B6VN2" id="1DJ_GQZXga5" role="3B56nf">
+            <node concept="3B6VN1" id="1DJ_GQZXga6" role="3B56n9">
+              <property role="TrG5h" value="Point2" />
+            </node>
+            <node concept="3B6VN2" id="1DJ_GQZXga7" role="3B56nf">
+              <node concept="3B6VN2" id="1DJ_GQZXga8" role="3B56nf">
+                <node concept="3B6VN1" id="1DJ_GQZXga9" role="3B56n9">
+                  <property role="TrG5h" value="speed" />
+                </node>
+                <node concept="3B6VN2" id="1DJ_GQZXgaa" role="3B56nf">
+                  <node concept="3B6VN1" id="1DJ_GQZXgab" role="3B56n9">
+                    <property role="TrG5h" value="switch" />
+                  </node>
+                  <node concept="x0Shc" id="1DJ_GQZXgac" role="3B56nf">
+                    <ref role="19kf5F" node="5SyC5TNQGzV" resolve="TrainTracks" />
+                    <node concept="37tsfw" id="1DJ_GQZXgad" role="2oAaxa">
+                      <property role="TrG5h" value="PS0" />
+                      <node concept="2oAaXF" id="1DJ_GQZXgae" role="2oAawq">
+                        <ref role="3aaZtz" node="5SyC5TNQG$2" resolve="PointOfSeg" />
+                      </node>
+                    </node>
+                    <node concept="37tsfw" id="1DJ_GQZXgaf" role="2oAaxa">
+                      <property role="TrG5h" value="PS1" />
+                      <node concept="2oAaXF" id="1DJ_GQZXgag" role="2oAawq">
+                        <ref role="3aaZtz" node="5SyC5TNQG$2" resolve="PointOfSeg" />
+                      </node>
+                    </node>
+                    <node concept="3$mKog" id="1DJ_GQZXgah" role="2oAaxa" />
+                    <node concept="37tsfw" id="1DJ_GQZXgam" role="2oAaxa">
+                      <property role="TrG5h" value="S2" />
+                      <node concept="2oAaXF" id="1DJ_GQZXgan" role="2oAawq">
+                        <ref role="3aaZtz" node="5SyC5TNQG$0" resolve="Segment" />
+                      </node>
+                    </node>
+                    <node concept="2jq5PB" id="1DJ_GQZXgrO" role="2oAaxa" />
+                    <node concept="2EG4Ce" id="1DJ_GQZXgai" role="2oAaxa">
+                      <node concept="3B6VN0" id="1DJ_GQZXgaj" role="2EGHCZ">
+                        <ref role="3B56nS" node="1DJ_GQZXgab" resolve="switch" />
+                      </node>
+                      <node concept="37tsfw" id="1DJ_GQZXgak" role="2EGHCX">
+                        <property role="TrG5h" value="S1" />
+                        <node concept="2oAaXF" id="1DJ_GQZXgal" role="2oAawq">
+                          <ref role="3aaZtz" node="5SyC5TNQG$4" resolve="VirtualSegment" />
+                        </node>
+                      </node>
+                      <node concept="2jq5PB" id="1DJ_GQZXgms" role="2EGHC0" />
+                    </node>
+                    <node concept="2jq5PB" id="1DJ_GQZXgao" role="2oAaxa" />
+                    <node concept="2oAaUa" id="1DJ_GQZXgap" role="2oAaxa">
+                      <node concept="3B6VN0" id="1DJ_GQZXgaq" role="2oAawB">
+                        <ref role="3B56nS" node="1DJ_GQZXgb3" resolve="Point1" />
+                      </node>
+                      <node concept="2oAaXF" id="1DJ_GQZXgar" role="2oAawD">
+                        <ref role="3aaZtz" node="1DJ_GQZXgad" resolve="PS0" />
+                      </node>
+                      <node concept="2oAawe" id="1DJ_GQZXgas" role="2oAawy">
+                        <ref role="3aaZtz" node="5SyC5TNQG$d" resolve="point" />
+                      </node>
+                    </node>
+                    <node concept="2oAaUa" id="1DJ_GQZXgat" role="2oAaxa">
+                      <node concept="2oAaXF" id="1DJ_GQZXgau" role="2oAawD">
+                        <ref role="3aaZtz" node="1DJ_GQZXgad" resolve="PS0" />
+                      </node>
+                      <node concept="2oAawe" id="1DJ_GQZXgav" role="2oAawy">
+                        <ref role="3aaZtz" node="5SyC5TNQG$g" resolve="segment" />
+                      </node>
+                      <node concept="2_2aQT" id="1DJ_GQZXgaw" role="2oAawB">
+                        <property role="2_1ff3" value="false" />
+                        <node concept="2oAaXF" id="1DJ_GQZXgax" role="2_2aPN">
+                          <ref role="3aaZtz" node="1DJ_GQZXgam" resolve="S2" />
+                        </node>
+                        <node concept="2oAaXF" id="1DJ_GQZXgay" role="2_2aPL">
+                          <ref role="3aaZtz" node="1DJ_GQZXgak" resolve="S1" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2jq5PB" id="1DJ_GQZXgaz" role="2oAaxa" />
+                    <node concept="2oAaUa" id="1DJ_GQZXga$" role="2oAaxa">
+                      <node concept="3B6VN0" id="1DJ_GQZXga_" role="2oAawB">
+                        <ref role="3B56nS" node="1DJ_GQZXga6" resolve="Point2" />
+                      </node>
+                      <node concept="2oAaXF" id="1DJ_GQZXgaA" role="2oAawD">
+                        <ref role="3aaZtz" node="1DJ_GQZXgaf" resolve="PS1" />
+                      </node>
+                      <node concept="2oAawe" id="1DJ_GQZXgaB" role="2oAawy">
+                        <ref role="3aaZtz" node="5SyC5TNQG$d" resolve="point" />
+                      </node>
+                    </node>
+                    <node concept="2oAaUa" id="1DJ_GQZXgaC" role="2oAaxa">
+                      <node concept="2oAaXF" id="1DJ_GQZXgaD" role="2oAawD">
+                        <ref role="3aaZtz" node="1DJ_GQZXgaf" resolve="PS1" />
+                      </node>
+                      <node concept="2oAawe" id="1DJ_GQZXgaE" role="2oAawy">
+                        <ref role="3aaZtz" node="5SyC5TNQG$g" resolve="segment" />
+                      </node>
+                      <node concept="2_2aQT" id="1DJ_GQZXgaF" role="2oAawB">
+                        <property role="2_1ff3" value="false" />
+                        <node concept="2oAaXF" id="1DJ_GQZXgaG" role="2_2aPN">
+                          <ref role="3aaZtz" node="1DJ_GQZXgam" resolve="S2" />
+                        </node>
+                        <node concept="2oAaXF" id="1DJ_GQZXgaH" role="2_2aPL">
+                          <ref role="3aaZtz" node="1DJ_GQZXgak" resolve="S1" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3$mKog" id="1DJ_GQZXgaI" role="2oAaxa" />
+                    <node concept="2oAaUa" id="1DJ_GQZXgaJ" role="2oAaxa">
+                      <node concept="3B6VN0" id="1DJ_GQZXgaK" role="2oAawB">
+                        <ref role="3B56nS" node="1DJ_GQZXga9" resolve="speed" />
+                      </node>
+                      <node concept="2oAawe" id="1DJ_GQZXgaL" role="2oAawy">
+                        <ref role="3aaZtz" node="5SyC5TNQG$j" resolve="speed" />
+                      </node>
+                      <node concept="2_2aQT" id="1DJ_GQZXgaM" role="2oAawD">
+                        <property role="2_1ff3" value="false" />
+                        <node concept="2oAaXF" id="1DJ_GQZXgaN" role="2_2aPN">
+                          <ref role="3aaZtz" node="1DJ_GQZXgam" resolve="S2" />
+                        </node>
+                        <node concept="2oAaXF" id="1DJ_GQZXgaO" role="2_2aPL">
+                          <ref role="3aaZtz" node="1DJ_GQZXgak" resolve="S1" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2oAaUa" id="1DJ_GQZXgaP" role="2oAaxa">
+                      <node concept="3B6VN0" id="1DJ_GQZXgaQ" role="2oAawB">
+                        <ref role="3B56nS" node="1DJ_GQZXgb2" resolve="length" />
+                      </node>
+                      <node concept="2oAawe" id="1DJ_GQZXgaR" role="2oAawy">
+                        <ref role="3aaZtz" node="5SyC5TNQG$m" resolve="length" />
+                      </node>
+                      <node concept="2_2aQT" id="1DJ_GQZXgaS" role="2oAawD">
+                        <property role="2_1ff3" value="false" />
+                        <node concept="2oAaXF" id="1DJ_GQZXgaT" role="2_2aPN">
+                          <ref role="3aaZtz" node="1DJ_GQZXgam" resolve="S2" />
+                        </node>
+                        <node concept="2oAaXF" id="1DJ_GQZXgaU" role="2_2aPL">
+                          <ref role="3aaZtz" node="1DJ_GQZXgak" resolve="S1" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3$mKog" id="1DJ_GQZXgaV" role="2oAaxa" />
+                    <node concept="2oAaUa" id="1DJ_GQZXgaW" role="2oAaxa">
+                      <node concept="3B6VN0" id="1DJ_GQZXgaX" role="2oAawB">
+                        <ref role="3B56nS" node="1DJ_GQZXga3" resolve="Section" />
+                      </node>
+                      <node concept="2oAawe" id="1DJ_GQZXgaY" role="2oAawy">
+                        <ref role="3aaZtz" node="5SyC5TNQG$a" resolve="partOf" />
+                      </node>
+                      <node concept="2_2aQT" id="1DJ_GQZXgaZ" role="2oAawD">
+                        <property role="2_1ff3" value="false" />
+                        <node concept="2oAaXF" id="1DJ_GQZXgb0" role="2_2aPN">
+                          <ref role="3aaZtz" node="1DJ_GQZXgam" resolve="S2" />
+                        </node>
+                        <node concept="2oAaXF" id="1DJ_GQZXgb1" role="2_2aPL">
+                          <ref role="3aaZtz" node="1DJ_GQZXgak" resolve="S1" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3B6VN1" id="1DJ_GQZXgb2" role="3B56n9">
+                <property role="TrG5h" value="length" />
+              </node>
+            </node>
+          </node>
+          <node concept="3B6VN1" id="1DJ_GQZXgb3" role="3B56n9">
+            <property role="TrG5h" value="Point1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3$mKog" id="1DJ_GQZXg2a" role="kdsQe" />
+    <node concept="3$mKog" id="1DJ_GQZXfXt" role="kdsQe" />
     <node concept="kds5u" id="5SyC5TNQS7Q" role="kdsQe">
       <property role="TrG5h" value="FromStationToStation" />
       <node concept="3B6VN2" id="5SyC5TNQS7S" role="kdsPW">
