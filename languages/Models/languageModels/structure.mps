@@ -414,5 +414,26 @@
       <ref role="20lvS9" node="7zWtwVwpd$b" resolve="NamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1DJ_GQZpNHO">
+    <property role="3GE5qa" value="References" />
+    <property role="TrG5h" value="NamedConceptPhi" />
+    <ref role="1TJDcQ" to="9lyo:6oGnPI1dYen" resolve="Constant" />
+    <node concept="1TJgyi" id="1DJ_GQZqQke" role="1TKVEl">
+      <property role="TrG5h" value="parantheses" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="1DJ_GQZpNIW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+    </node>
+    <node concept="1TJgyj" id="1DJ_GQZpNIY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+    </node>
+  </node>
 </model>
 

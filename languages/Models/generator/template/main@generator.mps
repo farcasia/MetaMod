@@ -1125,6 +1125,11 @@
             <property role="3SKdUp" value="of a lambda application and that were given references to named basic models as parameters." />
           </node>
         </node>
+        <node concept="3SKdUt" id="1DJ_GQZTwtJ" role="3cqZAp">
+          <node concept="3SKdUq" id="1DJ_GQZTwBM" role="3SKWNk">
+            <property role="3SKdUp" value="We also select the first alternative from those valid in a NamedConceptPhi node." />
+          </node>
+        </node>
         <node concept="1DcWWT" id="210OVEY5hVN" role="3cqZAp">
           <node concept="3clFbS" id="210OVEY5hVP" role="2LFqv$">
             <node concept="1DcWWT" id="210OVEY5jrD" role="3cqZAp">
@@ -1136,6 +1141,16 @@
                     </node>
                     <node concept="2qgKlT" id="210OVEXZFPB" role="2OqNvi">
                       <ref role="37wK5l" to="z64h:210OVEXWv8X" resolve="addMissingBaseToReferences" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="1DJ_GQZTvQT" role="3cqZAp">
+                  <node concept="2OqwBi" id="1DJ_GQZTvSQ" role="3clFbG">
+                    <node concept="37vLTw" id="1DJ_GQZTvQR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="210OVEY5jrG" resolve="structureModel" />
+                    </node>
+                    <node concept="2qgKlT" id="1DJ_GQZTwg_" role="2OqNvi">
+                      <ref role="37wK5l" to="z64h:1DJ_GQZSqL9" resolve="selectFirstNamedConceptPhiAlt" />
                     </node>
                   </node>
                 </node>
