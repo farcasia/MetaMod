@@ -14,6 +14,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
@@ -82,6 +85,26 @@
   <node concept="1TIwiD" id="7zWtwVwpdy4">
     <property role="TrG5h" value="Relation" />
     <ref role="1TJDcQ" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+    <node concept="1TJgyi" id="7O7EsH2P4tC" role="1TKVEl">
+      <property role="TrG5h" value="hide" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="3sVMGaa5nh$" role="1TKVEl">
+      <property role="TrG5h" value="minSource" />
+      <ref role="AX2Wp" node="3sVMGaa5n9g" resolve="Multiplicity" />
+    </node>
+    <node concept="1TJgyi" id="3sVMGaa5nhA" role="1TKVEl">
+      <property role="TrG5h" value="maxSource" />
+      <ref role="AX2Wp" node="3sVMGaa5n9g" resolve="Multiplicity" />
+    </node>
+    <node concept="1TJgyi" id="3sVMGaa5nhD" role="1TKVEl">
+      <property role="TrG5h" value="minTarget" />
+      <ref role="AX2Wp" node="3sVMGaa5n9g" resolve="Multiplicity" />
+    </node>
+    <node concept="1TJgyi" id="3sVMGaa5nhH" role="1TKVEl">
+      <property role="TrG5h" value="maxTarget" />
+      <ref role="AX2Wp" node="3sVMGaa5n9g" resolve="Multiplicity" />
+    </node>
     <node concept="1TJgyj" id="7zWtwVwpdSB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="source" />
@@ -434,6 +457,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
+  </node>
+  <node concept="Az7Fb" id="3sVMGaa5n9g">
+    <property role="TrG5h" value="Multiplicity" />
+    <property role="FLfZY" value="[0-9]|[1-9][0-9]+|[*]" />
   </node>
 </model>
 

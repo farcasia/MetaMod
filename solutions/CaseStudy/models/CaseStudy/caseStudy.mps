@@ -13,6 +13,10 @@
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
+        <property id="3979997632601093222" name="maxSource" index="2XbFU$" />
+        <property id="3979997632601093220" name="minSource" index="2XbFUA" />
+        <property id="3979997632601093225" name="minTarget" index="2XbFUF" />
+        <property id="3979997632601093229" name="maxTarget" index="2XbFUJ" />
         <child id="8717972784948764201" name="target" index="2oAawB" />
         <child id="8717972784948764199" name="source" index="2oAawD" />
       </concept>
@@ -40,6 +44,10 @@
     <node concept="2jq5PB" id="1eHliGiBEEo" role="2oAaxa" />
     <node concept="2oAaUZ" id="16zLRPqSrFk" role="2oAaxa">
       <property role="TrG5h" value="inPlatoon" />
+      <property role="2XbFUA" value="0" />
+      <property role="2XbFU$" value="*" />
+      <property role="2XbFUF" value="0" />
+      <property role="2XbFUJ" value="1" />
       <node concept="2oAaXF" id="57Oty_7kV3M" role="2oAawD">
         <ref role="3aaZtz" node="16zLRPqSrDO" resolve="Vehicle" />
       </node>
@@ -52,6 +60,10 @@
       <property role="TrG5h" value="LeadVehicle" />
       <node concept="2oAaUZ" id="16zLRPqSrCX" role="2oAaxa">
         <property role="TrG5h" value="followsRoute" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaW5" id="16zLRPqSrDj" role="2oAawB">
           <property role="TrG5h" value="Route" />
         </node>
@@ -60,6 +72,10 @@
         </node>
       </node>
       <node concept="2oAaZ9" id="16zLRPqSrDy" role="2oAaxa">
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaW5" id="16zLRPqSrDO" role="2oAawB">
           <property role="TrG5h" value="Vehicle" />
         </node>
@@ -73,6 +89,10 @@
       <property role="TrG5h" value="FollowVehicle" />
       <node concept="2oAaUZ" id="16zLRPqSrE2" role="2oAaxa">
         <property role="TrG5h" value="frontRunner" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaW5" id="16zLRPqV0oV" role="2oAawB">
           <property role="TrG5h" value="Vehicle" />
         </node>
@@ -94,6 +114,10 @@
     <property role="TrG5h" value="Route" />
     <node concept="2oAaUZ" id="16zLRPqV069" role="2oAaxa">
       <property role="TrG5h" value="inRoute" />
+      <property role="2XbFUA" value="0" />
+      <property role="2XbFU$" value="*" />
+      <property role="2XbFUF" value="0" />
+      <property role="2XbFUJ" value="1" />
       <node concept="2oAaW5" id="16zLRPqV06i" role="2oAawB">
         <property role="TrG5h" value="Route" />
       </node>
@@ -104,6 +128,10 @@
     <node concept="2oAaVg" id="16zLRPqV0gq" role="2oAaxa">
       <property role="TrG5h" value="ForwardCommand" />
       <node concept="2oAaZ9" id="16zLRPqV06O" role="2oAaxa">
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaW5" id="16zLRPqV0j4" role="2oAawB">
           <property role="TrG5h" value="Command" />
         </node>
@@ -113,6 +141,10 @@
       </node>
       <node concept="2oAaUZ" id="16zLRPqV08m" role="2oAaxa">
         <property role="TrG5h" value="distance" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaW5" id="16zLRPqV08H" role="2oAawB">
           <property role="TrG5h" value="Int" />
         </node>
@@ -124,6 +156,10 @@
     <node concept="2oAaVg" id="16zLRPqV0i8" role="2oAaxa">
       <property role="TrG5h" value="TurnCommand" />
       <node concept="2oAaZ9" id="16zLRPqV06q" role="2oAaxa">
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaW5" id="16zLRPqV0j7" role="2oAawB">
           <property role="TrG5h" value="Command" />
         </node>
@@ -133,6 +169,10 @@
       </node>
       <node concept="2oAaUZ" id="16zLRPqV08Y" role="2oAaxa">
         <property role="TrG5h" value="side" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaW5" id="16zLRPqV09m" role="2oAawB">
           <property role="TrG5h" value="String" />
         </node>
@@ -174,6 +214,10 @@
       <node concept="2jq5PB" id="1eHliGiBEzs" role="2oAaxa" />
       <node concept="2oAaUZ" id="16zLRPqUZXw" role="2oAaxa">
         <property role="TrG5h" value="platoon" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaXF" id="1eHliGiBEz9" role="2oAawD">
           <ref role="3aaZtz" node="16zLRPqUZXG" resolve="Build" />
         </node>
@@ -183,6 +227,10 @@
       </node>
       <node concept="2oAaUZ" id="16zLRPqUZXW" role="2oAaxa">
         <property role="TrG5h" value="route" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaXF" id="57Oty_7kV0w" role="2oAawD">
           <ref role="3aaZtz" node="16zLRPqUZXG" resolve="Build" />
         </node>
@@ -192,6 +240,10 @@
       </node>
       <node concept="2oAaUZ" id="16zLRPqUZYs" role="2oAaxa">
         <property role="TrG5h" value="constraints" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaXF" id="57Oty_7kV0z" role="2oAawD">
           <ref role="3aaZtz" node="16zLRPqUZXG" resolve="Build" />
         </node>
@@ -207,6 +259,10 @@
       <property role="TrG5h" value="Headway" />
       <node concept="2oAaUZ" id="16zLRPqUZYL" role="2oAaxa">
         <property role="TrG5h" value="min" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaW5" id="16zLRPqUZYU" role="2oAawB">
           <property role="TrG5h" value="Int" />
         </node>
@@ -216,6 +272,10 @@
       </node>
       <node concept="2oAaUZ" id="16zLRPqUZZ2" role="2oAaxa">
         <property role="TrG5h" value="max" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaXF" id="2JwAxCh4khe" role="2oAawB">
           <ref role="3aaZtz" node="16zLRPqUZYU" resolve="Int" />
         </node>
@@ -226,6 +286,10 @@
     </node>
     <node concept="2oAaUZ" id="16zLRPqUZZs" role="2oAaxa">
       <property role="TrG5h" value="maxSpeed" />
+      <property role="2XbFUA" value="0" />
+      <property role="2XbFU$" value="*" />
+      <property role="2XbFUF" value="0" />
+      <property role="2XbFUJ" value="1" />
       <node concept="2oAaW5" id="16zLRPqUZZF" role="2oAawD">
         <property role="TrG5h" value="MaxSpeed" />
       </node>
@@ -235,6 +299,10 @@
     </node>
     <node concept="2oAaUZ" id="16zLRPqV001" role="2oAaxa">
       <property role="TrG5h" value="minSpeed" />
+      <property role="2XbFUA" value="0" />
+      <property role="2XbFU$" value="*" />
+      <property role="2XbFUF" value="0" />
+      <property role="2XbFUJ" value="1" />
       <node concept="2oAaXF" id="2JwAxCh4khk" role="2oAawB">
         <ref role="3aaZtz" node="16zLRPqUZYU" resolve="Int" />
       </node>
@@ -246,6 +314,10 @@
       <property role="TrG5h" value="Constraint" />
       <node concept="2oAaUZ" id="16zLRPqV02W" role="2oAaxa">
         <property role="TrG5h" value="headway" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaW5" id="16zLRPqV035" role="2oAawB">
           <property role="TrG5h" value="Headway" />
         </node>
@@ -255,6 +327,10 @@
       </node>
       <node concept="2oAaUZ" id="16zLRPqV03v" role="2oAaxa">
         <property role="TrG5h" value="minSpeed" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaW5" id="16zLRPqV03w" role="2oAawB">
           <property role="TrG5h" value="MinSpeed" />
         </node>
@@ -264,6 +340,10 @@
       </node>
       <node concept="2oAaUZ" id="16zLRPqV048" role="2oAaxa">
         <property role="TrG5h" value="maxSpeed" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="0" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaW5" id="16zLRPqV049" role="2oAawB">
           <property role="TrG5h" value="MaxSpeed" />
         </node>

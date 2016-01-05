@@ -46,6 +46,10 @@
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
+        <property id="3979997632601093222" name="maxSource" index="2XbFU$" />
+        <property id="3979997632601093220" name="minSource" index="2XbFUA" />
+        <property id="3979997632601093225" name="minTarget" index="2XbFUF" />
+        <property id="3979997632601093229" name="maxTarget" index="2XbFUJ" />
         <child id="8717972784948764204" name="conformsTo" index="2oAawy" />
         <child id="8717972784948764201" name="target" index="2oAawB" />
         <child id="8717972784948764199" name="source" index="2oAawD" />
@@ -505,6 +509,10 @@
                 </node>
                 <node concept="2jq5PB" id="5SyC5TNQHqr" role="2oAaxa" />
                 <node concept="2oAaUa" id="5SyC5TNQHqs" role="2oAaxa">
+                  <property role="2XbFUA" value="0" />
+                  <property role="2XbFU$" value="*" />
+                  <property role="2XbFUF" value="0" />
+                  <property role="2XbFUJ" value="4" />
                   <node concept="3B6VN0" id="5SyC5TNQHqt" role="2oAawB">
                     <ref role="3B56nS" node="5SyC5TNQHqW" resolve="Point1" />
                   </node>

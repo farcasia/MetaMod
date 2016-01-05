@@ -7,23 +7,27 @@
   <imports />
   <registry>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
-      <concept id="8717972784948764160" name="Models.structure.RefToNamedRel" flags="ng" index="2oAawe" />
-      <concept id="8717972784948762665" name="Models.structure.BasicModel" flags="ng" index="2oAaSB">
+      <concept id="8717972784948764160" name="Models.structure.RefToNamedRelation" flags="ng" index="2oAawe" />
+      <concept id="8717972784948762665" name="Models.structure.Concept" flags="ng" index="2oAaSB">
         <child id="8717972784948764180" name="conformsTo" index="2oAawq" />
       </concept>
-      <concept id="8717972784948762711" name="Models.structure.StructureModel" flags="ng" index="2oAaTp">
+      <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
+        <property id="3979997632601093222" name="maxSource" index="2XbFU$" />
+        <property id="3979997632601093220" name="minSource" index="2XbFUA" />
+        <property id="3979997632601093225" name="minTarget" index="2XbFUF" />
+        <property id="3979997632601093229" name="maxTarget" index="2XbFUJ" />
         <child id="8717972784948764204" name="conformsTo" index="2oAawy" />
         <child id="8717972784948764201" name="target" index="2oAawB" />
         <child id="8717972784948764199" name="source" index="2oAawD" />
       </concept>
       <concept id="8717972784948762801" name="Models.structure.NamedRelation" flags="ng" index="2oAaUZ" />
-      <concept id="8717972784948762846" name="Models.structure.NamedStructureModel" flags="ng" index="2oAaVg" />
-      <concept id="8717972784948762891" name="Models.structure.NamedBasicModel" flags="ng" index="2oAaW5" />
-      <concept id="8717972784948762981" name="Models.structure.RefToNamedBM" flags="ng" index="2oAaXF" />
+      <concept id="8717972784948762846" name="Models.structure.NamedGroup" flags="ng" index="2oAaVg" />
+      <concept id="8717972784948762891" name="Models.structure.NamedConcept" flags="ng" index="2oAaW5" />
+      <concept id="8717972784948762981" name="Models.structure.RefToNamedConcept" flags="ng" index="2oAaXF" />
       <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
         <reference id="3040834594469888400" name="ref" index="3aaZtz" />
       </concept>
@@ -39,6 +43,10 @@
     <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
     <node concept="2oAaUZ" id="3Ky4PoV$GpT" role="2oAaxa">
       <property role="TrG5h" value="Relation" />
+      <property role="2XbFU$" value="*" />
+      <property role="2XbFUF" value="0" />
+      <property role="2XbFUJ" value="1" />
+      <property role="2XbFUA" value="0" />
       <node concept="2oAaW5" id="3Ky4PoV$Gqe" role="2oAawB">
         <property role="TrG5h" value="BM" />
         <node concept="2oAaXF" id="57Oty_7kUXy" role="2oAawq">
@@ -82,6 +90,10 @@
     <property role="TrG5h" value="UnnamedBMsRelation" />
     <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
     <node concept="2oAaUa" id="2kO$Kh_oC_R" role="2oAaxa">
+      <property role="2XbFU$" value="*" />
+      <property role="2XbFUF" value="0" />
+      <property role="2XbFUJ" value="1" />
+      <property role="2XbFUA" value="0" />
       <node concept="2oAaSB" id="2kO$Kh_oCA2" role="2oAawB">
         <node concept="2oAaXF" id="57Oty_7kUXL" role="2oAawq">
           <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
