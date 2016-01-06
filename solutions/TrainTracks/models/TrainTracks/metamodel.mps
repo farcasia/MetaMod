@@ -14,10 +14,8 @@
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
-        <property id="3979997632601093222" name="maxSource" index="2XbFU$" />
-        <property id="3979997632601093220" name="minSource" index="2XbFUA" />
-        <property id="3979997632601093225" name="minTarget" index="2XbFUF" />
-        <property id="3979997632601093229" name="maxTarget" index="2XbFUJ" />
+        <property id="3979997632601093222" name="targetCard" index="2XbFU$" />
+        <property id="3979997632601093220" name="sourceCard" index="2XbFUA" />
         <child id="8717972784948764201" name="target" index="2oAawB" />
         <child id="8717972784948764199" name="source" index="2oAawD" />
       </concept>
@@ -45,16 +43,14 @@
       <property role="TrG5h" value="Segment" />
     </node>
     <node concept="2jq5PB" id="5SyC5TNIPQK" role="2oAaxa" />
-    <node concept="2oAaUZ" id="5SyC5TNIPQT" role="2oAaxa">
+    <node concept="2oAaUZ" id="7O7EsH38gM0" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <property role="TrG5h" value="partOf" />
-      <property role="2XbFUA" value="0" />
-      <property role="2XbFU$" value="*" />
-      <property role="2XbFUF" value="0" />
-      <property role="2XbFUJ" value="1" />
-      <node concept="2oAaXF" id="5SyC5TNIPRf" role="2oAawB">
+      <node concept="2oAaXF" id="7O7EsH38gQh" role="2oAawB">
         <ref role="3aaZtz" node="5SyC5TNIPMh" resolve="Section" />
       </node>
-      <node concept="2oAaXF" id="5SyC5TNIPR6" role="2oAawD">
+      <node concept="2oAaXF" id="7O7EsH38gNY" role="2oAawD">
         <ref role="3aaZtz" node="5SyC5TNIPQG" resolve="Segment" />
       </node>
     </node>
@@ -77,57 +73,49 @@
       <node concept="2oAaW5" id="5SyC5TNJ3$p" role="2oAaxa">
         <property role="TrG5h" value="Int" />
       </node>
-      <node concept="2jq5PB" id="5SyC5TNJ3$D" role="2oAaxa" />
-      <node concept="2oAaUZ" id="5SyC5TNJ3U5" role="2oAaxa">
+      <node concept="2jq5PB" id="7O7EsH38hwO" role="2oAaxa" />
+      <node concept="2oAaUZ" id="7O7EsH38gWR" role="2oAaxa">
+        <property role="2XbFUA" value="0..*" />
+        <property role="2XbFU$" value="0..1" />
         <property role="TrG5h" value="point" />
-        <property role="2XbFUA" value="0" />
-        <property role="2XbFU$" value="*" />
-        <property role="2XbFUF" value="0" />
-        <property role="2XbFUJ" value="1" />
-        <node concept="2oAaXF" id="5SyC5TNJ3Uv" role="2oAawB">
+        <node concept="2oAaXF" id="7O7EsH38h1F" role="2oAawB">
           <ref role="3aaZtz" node="5SyC5TNJ3$0" resolve="Point" />
         </node>
-        <node concept="2oAaXF" id="5SyC5TNJ3Ul" role="2oAawD">
+        <node concept="2oAaXF" id="7O7EsH38gYr" role="2oAawD">
           <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
         </node>
       </node>
-      <node concept="2oAaUZ" id="5SyC5TNJ3UI" role="2oAaxa">
+      <node concept="2oAaUZ" id="7O7EsH38h4i" role="2oAaxa">
+        <property role="2XbFUA" value="0..*" />
+        <property role="2XbFU$" value="0..1" />
         <property role="TrG5h" value="segment" />
-        <property role="2XbFUA" value="0" />
-        <property role="2XbFU$" value="*" />
-        <property role="2XbFUF" value="0" />
-        <property role="2XbFUJ" value="1" />
-        <node concept="2oAaXF" id="5SyC5TNJ3V8" role="2oAawB">
+        <node concept="2oAaXF" id="7O7EsH38h85" role="2oAawB">
           <ref role="3aaZtz" node="5SyC5TNIPRJ" resolve="Segment" />
         </node>
-        <node concept="2oAaXF" id="5SyC5TNJ3V1" role="2oAawD">
+        <node concept="2oAaXF" id="7O7EsH38h5U" role="2oAawD">
           <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
         </node>
       </node>
-      <node concept="2jq5PB" id="5SyC5TNJ3Ve" role="2oAaxa" />
-      <node concept="2oAaUZ" id="5SyC5TNJ3VD" role="2oAaxa">
+      <node concept="2jq5PB" id="7O7EsH38heo" role="2oAaxa" />
+      <node concept="2oAaUZ" id="7O7EsH38hht" role="2oAaxa">
+        <property role="2XbFUA" value="0..*" />
+        <property role="2XbFU$" value="0..1" />
         <property role="TrG5h" value="speed" />
-        <property role="2XbFUA" value="0" />
-        <property role="2XbFU$" value="*" />
-        <property role="2XbFUF" value="0" />
-        <property role="2XbFUJ" value="1" />
-        <node concept="2oAaXF" id="5SyC5TNJ3W8" role="2oAawB">
+        <node concept="2oAaXF" id="7O7EsH38hlj" role="2oAawB">
           <ref role="3aaZtz" node="5SyC5TNJ3$p" resolve="Int" />
         </node>
-        <node concept="2oAaXF" id="5SyC5TNJ3VZ" role="2oAawD">
+        <node concept="2oAaXF" id="7O7EsH38hj8" role="2oAawD">
           <ref role="3aaZtz" node="5SyC5TNIPRJ" resolve="Segment" />
         </node>
       </node>
-      <node concept="2oAaUZ" id="5SyC5TNJ3Wu" role="2oAaxa">
+      <node concept="2oAaUZ" id="7O7EsH38ho0" role="2oAaxa">
+        <property role="2XbFUA" value="0..*" />
+        <property role="2XbFU$" value="0..1" />
         <property role="TrG5h" value="length" />
-        <property role="2XbFUA" value="0" />
-        <property role="2XbFU$" value="*" />
-        <property role="2XbFUF" value="0" />
-        <property role="2XbFUJ" value="1" />
-        <node concept="2oAaXF" id="5SyC5TNJ3WY" role="2oAawB">
+        <node concept="2oAaXF" id="7O7EsH38hrn" role="2oAawB">
           <ref role="3aaZtz" node="5SyC5TNJ3$p" resolve="Int" />
         </node>
-        <node concept="2oAaXF" id="5SyC5TNJ3WR" role="2oAawD">
+        <node concept="2oAaXF" id="7O7EsH38hpI" role="2oAawD">
           <ref role="3aaZtz" node="5SyC5TNIPRJ" resolve="Segment" />
         </node>
       </node>

@@ -41,6 +41,8 @@
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
+        <property id="3979997632601093222" name="targetCard" index="2XbFU$" />
+        <property id="3979997632601093220" name="sourceCard" index="2XbFUA" />
         <child id="8717972784948764204" name="conformsTo" index="2oAawy" />
         <child id="8717972784948764201" name="target" index="2oAawB" />
         <child id="8717972784948764199" name="source" index="2oAawD" />
@@ -108,6 +110,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVITF" role="2oAaxa">
       <property role="TrG5h" value="conformsTo" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iUq" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVITL" resolve="Relation" />
       </node>
@@ -117,6 +121,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVITW" role="2oAaxa">
       <property role="TrG5h" value="conformsTo" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iUt" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIU8" resolve="Concept" />
       </node>
@@ -126,6 +132,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVIUH" role="2oAaxa">
       <property role="TrG5h" value="src" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iUA" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIU8" resolve="Concept" />
       </node>
@@ -135,6 +143,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVIVi" role="2oAaxa">
       <property role="TrG5h" value="tgt" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iUG" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIU8" resolve="Concept" />
       </node>
@@ -153,6 +163,8 @@
             <node concept="2oAaTp" id="3DVAlFLraVM" role="3B56nf">
               <node concept="2oAaUZ" id="3DVAlFLraWp" role="2oAaxa">
                 <property role="TrG5h" value="contains" />
+                <property role="2XbFUA" value="0..*" />
+                <property role="2XbFU$" value="0..1" />
                 <node concept="3B6VN0" id="3DVAlFLraWF" role="2oAawD">
                   <ref role="3B56nS" node="3DVAlFLraUE" resolve="Composite" />
                 </node>
@@ -162,6 +174,8 @@
               </node>
               <node concept="2jq5PB" id="3DVAlFLraYk" role="2oAaxa" />
               <node concept="2oAaZ9" id="3DVAlFLraWs" role="2oAaxa">
+                <property role="2XbFUA" value="0..*" />
+                <property role="2XbFU$" value="0..1" />
                 <node concept="3B6VN0" id="3DVAlFLraWL" role="2oAawB">
                   <ref role="3B56nS" node="3DVAlFLraV$" resolve="Component" />
                 </node>
@@ -170,6 +184,8 @@
                 </node>
               </node>
               <node concept="2oAaZ9" id="3DVAlFLraWv" role="2oAaxa">
+                <property role="2XbFUA" value="0..*" />
+                <property role="2XbFU$" value="0..1" />
                 <node concept="3B6VN0" id="3DVAlFLraWO" role="2oAawB">
                   <ref role="3B56nS" node="3DVAlFLraV$" resolve="Component" />
                 </node>
@@ -200,6 +216,8 @@
           </node>
           <node concept="2jq5PB" id="3DVAlFLrbff" role="2oAaxa" />
           <node concept="2oAaZ9" id="3DVAlFLrbfm" role="2oAaxa">
+            <property role="2XbFUA" value="0..*" />
+            <property role="2XbFU$" value="0..1" />
             <node concept="3B6VN0" id="3DVAlFLrbf$" role="2oAawB">
               <ref role="3B56nS" node="3DVAlFLrbdi" resolve="SuperType" />
             </node>
@@ -258,6 +276,8 @@
         <node concept="2jq5PB" id="14BF0eIBhlv" role="2oAaxa" />
         <node concept="2oAaUZ" id="14BF0eIBhlk" role="2oAaxa">
           <property role="TrG5h" value="contains" />
+          <property role="2XbFUA" value="0..*" />
+          <property role="2XbFU$" value="0..1" />
           <node concept="2oAaXF" id="14BF0eIBhll" role="2oAawD">
             <ref role="3aaZtz" node="14BF0eIBhlw" resolve="Group" />
           </node>
@@ -267,6 +287,8 @@
         </node>
         <node concept="2jq5PB" id="14BF0eIBhln" role="2oAaxa" />
         <node concept="2oAaZ9" id="14BF0eIBhlo" role="2oAaxa">
+          <property role="2XbFUA" value="0..*" />
+          <property role="2XbFU$" value="0..1" />
           <node concept="2oAaXF" id="14BF0eIBhlp" role="2oAawD">
             <ref role="3aaZtz" node="14BF0eIBhlw" resolve="Group" />
           </node>
@@ -275,6 +297,8 @@
           </node>
         </node>
         <node concept="2oAaZ9" id="14BF0eIBhlr" role="2oAaxa">
+          <property role="2XbFUA" value="0..*" />
+          <property role="2XbFU$" value="0..1" />
           <node concept="2oAaXF" id="14BF0eIBhls" role="2oAawD">
             <ref role="3aaZtz" node="14BF0eIBhly" resolve="Concept" />
           </node>
@@ -285,6 +309,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVIXi" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iXk" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIWb" resolve="Term" />
       </node>
@@ -311,6 +337,8 @@
         </node>
         <node concept="2jq5PB" id="14BF0eIBhop" role="2oAaxa" />
         <node concept="2oAaZ9" id="14BF0eIBhoq" role="2oAaxa">
+          <property role="2XbFUA" value="0..*" />
+          <property role="2XbFU$" value="0..1" />
           <node concept="2oAaXF" id="14BF0eIBhor" role="2oAawD">
             <ref role="3aaZtz" node="14BF0eIBhoo" resolve="Subtyping" />
           </node>
@@ -325,6 +353,8 @@
     <property role="TrG5h" value="LambdaCalculus" />
     <node concept="2oAaUZ" id="7nF4KJrVIXU" role="2oAaxa">
       <property role="TrG5h" value="left" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaW5" id="7nF4KJrVIY3" role="2oAawB">
         <property role="TrG5h" value="Term" />
       </node>
@@ -334,6 +364,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVIYb" role="2oAaxa">
       <property role="TrG5h" value="right" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iYJ" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIY3" resolve="Term" />
       </node>
@@ -342,6 +374,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVIY_" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iYM" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIY3" resolve="Term" />
       </node>
@@ -351,6 +385,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVIZ_" role="2oAaxa">
       <property role="TrG5h" value="body" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iYS" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIY3" resolve="Term" />
       </node>
@@ -360,6 +396,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVJ1n" role="2oAaxa">
       <property role="TrG5h" value="bound" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaW5" id="7nF4KJrVJ1M" role="2oAawB">
         <property role="TrG5h" value="BoundVar" />
       </node>
@@ -368,6 +406,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVJ0b" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iZ1" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIY3" resolve="Term" />
       </node>
@@ -376,6 +416,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVJ29" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iZ4" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIY3" resolve="Term" />
       </node>
@@ -394,6 +436,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVJ36" role="2oAaxa">
       <property role="TrG5h" value="src" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iZB" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIWb" resolve="Term" />
       </node>
@@ -403,6 +447,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVJ3u" role="2oAaxa">
       <property role="TrG5h" value="tgt" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iZ$" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIWb" resolve="Term" />
       </node>

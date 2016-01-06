@@ -36,24 +36,26 @@
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
       <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
-      <concept id="8717972784948764160" name="Models.structure.RefToNamedRel" flags="ng" index="2oAawe" />
-      <concept id="8717972784948762665" name="Models.structure.BasicModel" flags="ng" index="2oAaSB">
+      <concept id="8717972784948764160" name="Models.structure.RefToNamedRelation" flags="ng" index="2oAawe" />
+      <concept id="8717972784948762665" name="Models.structure.Concept" flags="ng" index="2oAaSB">
         <child id="8717972784948764180" name="conformsTo" index="2oAawq" />
       </concept>
-      <concept id="8717972784948762711" name="Models.structure.StructureModel" flags="ng" index="2oAaTp">
+      <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
+        <property id="3979997632601093222" name="targetCard" index="2XbFU$" />
+        <property id="3979997632601093220" name="sourceCard" index="2XbFUA" />
         <child id="8717972784948764204" name="conformsTo" index="2oAawy" />
         <child id="8717972784948764201" name="target" index="2oAawB" />
         <child id="8717972784948764199" name="source" index="2oAawD" />
       </concept>
       <concept id="8717972784948762801" name="Models.structure.NamedRelation" flags="ng" index="2oAaUZ" />
-      <concept id="8717972784948762846" name="Models.structure.NamedStructureModel" flags="ng" index="2oAaVg" />
-      <concept id="8717972784948762891" name="Models.structure.NamedBasicModel" flags="ng" index="2oAaW5" />
-      <concept id="8717972784948762981" name="Models.structure.RefToNamedBM" flags="ng" index="2oAaXF" />
-      <concept id="8717972784948763079" name="Models.structure.Inheritance" flags="ng" index="2oAaZ9" />
+      <concept id="8717972784948762846" name="Models.structure.NamedGroup" flags="ng" index="2oAaVg" />
+      <concept id="8717972784948762891" name="Models.structure.NamedConcept" flags="ng" index="2oAaW5" />
+      <concept id="8717972784948762981" name="Models.structure.RefToNamedConcept" flags="ng" index="2oAaXF" />
+      <concept id="8717972784948763079" name="Models.structure.Subtype" flags="ng" index="2oAaZ9" />
       <concept id="2324090206732068954" name="Models.structure.LApplWithFragment" flags="ng" index="2uuBJw">
         <child id="2324090206732069037" name="term" index="2uuBGn" />
       </concept>
@@ -182,6 +184,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqNs" role="2oAaxa">
       <property role="TrG5h" value="name" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqNq" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
       </node>
@@ -191,6 +195,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqNv" role="2oAaxa">
       <property role="TrG5h" value="name" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqNt" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMQ" resolve="EAttribute" />
       </node>
@@ -200,6 +206,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqNy" role="2oAaxa">
       <property role="TrG5h" value="name" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqNw" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMR" resolve="EDataType" />
       </node>
@@ -209,6 +217,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqN_" role="2oAaxa">
       <property role="TrG5h" value="name" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqNz" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMS" resolve="EReference" />
       </node>
@@ -218,6 +228,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqNC" role="2oAaxa">
       <property role="TrG5h" value="containment" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqNA" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMS" resolve="EReference" />
       </node>
@@ -227,6 +239,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqNF" role="2oAaxa">
       <property role="TrG5h" value="lowerBound" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqND" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMS" resolve="EReference" />
       </node>
@@ -236,6 +250,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqNI" role="2oAaxa">
       <property role="TrG5h" value="upperBound" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqNG" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMS" resolve="EReference" />
       </node>
@@ -245,6 +261,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqNL" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqNJ" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMW" resolve="M2MeSuperTypes" />
       </node>
@@ -254,6 +272,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqNO" role="2oAaxa">
       <property role="TrG5h" value="eSuperTypes" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqNM" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMW" resolve="M2MeSuperTypes" />
       </node>
@@ -263,6 +283,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqNR" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqNP" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMX" resolve="M2MeAttributes" />
       </node>
@@ -272,6 +294,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqNU" role="2oAaxa">
       <property role="TrG5h" value="eAttributes" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqNS" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMX" resolve="M2MeAttributes" />
       </node>
@@ -281,6 +305,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqNX" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqNV" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMY" resolve="M2MeReferences" />
       </node>
@@ -290,6 +316,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqO0" role="2oAaxa">
       <property role="TrG5h" value="eReferences" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqNY" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMY" resolve="M2MeReferences" />
       </node>
@@ -299,6 +327,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqO3" role="2oAaxa">
       <property role="TrG5h" value="eReferenceType" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqO1" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMS" resolve="EReference" />
       </node>
@@ -308,6 +338,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqO6" role="2oAaxa">
       <property role="TrG5h" value="eOpposite" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqO4" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMS" resolve="EReference" />
       </node>
@@ -317,6 +349,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqO9" role="2oAaxa">
       <property role="TrG5h" value="eAttributeType" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqO7" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMQ" resolve="EAttribute" />
       </node>
@@ -326,6 +360,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOc" role="2oAaxa">
       <property role="TrG5h" value="name" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOa" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMZ" resolve="ENamedElement" />
       </node>
@@ -335,6 +371,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOf" role="2oAaxa">
       <property role="TrG5h" value="ordered" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOd" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN1" resolve="ETypedElement" />
       </node>
@@ -344,6 +382,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOi" role="2oAaxa">
       <property role="TrG5h" value="unique" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOg" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN1" resolve="ETypedElement" />
       </node>
@@ -353,6 +393,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOl" role="2oAaxa">
       <property role="TrG5h" value="lowerBound" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOj" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN1" resolve="ETypedElement" />
       </node>
@@ -362,6 +404,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOo" role="2oAaxa">
       <property role="TrG5h" value="upperBound" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOm" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN1" resolve="ETypedElement" />
       </node>
@@ -371,6 +415,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOr" role="2oAaxa">
       <property role="TrG5h" value="derived" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOp" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN2" resolve="EStructuralFeature" />
       </node>
@@ -380,6 +426,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOu" role="2oAaxa">
       <property role="TrG5h" value="changeable" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOs" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN2" resolve="EStructuralFeature" />
       </node>
@@ -389,6 +437,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOx" role="2oAaxa">
       <property role="TrG5h" value="volatile" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOv" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN2" resolve="EStructuralFeature" />
       </node>
@@ -398,6 +448,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqO$" role="2oAaxa">
       <property role="TrG5h" value="transient" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOy" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN2" resolve="EStructuralFeature" />
       </node>
@@ -407,6 +459,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOB" role="2oAaxa">
       <property role="TrG5h" value="defaultValueLiteral" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqO_" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN2" resolve="EStructuralFeature" />
       </node>
@@ -416,6 +470,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOE" role="2oAaxa">
       <property role="TrG5h" value="unsettable" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOC" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN2" resolve="EStructuralFeature" />
       </node>
@@ -425,6 +481,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOH" role="2oAaxa">
       <property role="TrG5h" value="eType" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOF" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN1" resolve="ETypedElement" />
       </node>
@@ -434,6 +492,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOK" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOI" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN4" resolve="M2MeAllStructuralFeature" />
       </node>
@@ -443,6 +503,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqON" role="2oAaxa">
       <property role="TrG5h" value="eAllStructuralFeatures" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOL" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN4" resolve="M2MeAllStructuralFeature" />
       </node>
@@ -452,6 +514,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqOQ" role="2oAaxa">
       <property role="TrG5h" value="eStructuralFeatures" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOO" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN2" resolve="EStructuralFeature" />
       </node>
@@ -460,6 +524,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqOT" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOR" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN0" resolve="EClassifier" />
       </node>
@@ -468,6 +534,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqOW" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOU" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN1" resolve="ETypedElement" />
       </node>
@@ -476,6 +544,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqOZ" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqOX" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMR" resolve="EDataType" />
       </node>
@@ -484,6 +554,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqP2" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqP0" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
       </node>
@@ -492,6 +564,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqP5" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqP3" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN2" resolve="EStructuralFeature" />
       </node>
@@ -500,6 +574,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqP8" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqP6" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMS" resolve="EReference" />
       </node>
@@ -508,6 +584,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqPb" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqP9" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMQ" resolve="EAttribute" />
       </node>
@@ -517,6 +595,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPe" role="2oAaxa">
       <property role="TrG5h" value="ID" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPc" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMQ" resolve="EAttribute" />
       </node>
@@ -526,6 +606,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPh" role="2oAaxa">
       <property role="TrG5h" value="eAttributeType" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPf" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMQ" resolve="EAttribute" />
       </node>
@@ -535,6 +617,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPk" role="2oAaxa">
       <property role="TrG5h" value="eAttributeID" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPi" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
       </node>
@@ -544,6 +628,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPn" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPl" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMX" resolve="M2MeAttributes" />
       </node>
@@ -553,6 +639,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPq" role="2oAaxa">
       <property role="TrG5h" value="eAttributes" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPo" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMX" resolve="M2MeAttributes" />
       </node>
@@ -562,6 +650,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPt" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPr" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN5" resolve="M2MeAllAttributes" />
       </node>
@@ -571,6 +661,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPw" role="2oAaxa">
       <property role="TrG5h" value="eAllAttributes" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPu" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN5" resolve="M2MeAllAttributes" />
       </node>
@@ -580,6 +672,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPz" role="2oAaxa">
       <property role="TrG5h" value="containment" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPx" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMS" resolve="EReference" />
       </node>
@@ -589,6 +683,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPA" role="2oAaxa">
       <property role="TrG5h" value="resolveProxies" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqP$" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMS" resolve="EReference" />
       </node>
@@ -598,6 +694,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPD" role="2oAaxa">
       <property role="TrG5h" value="eOpposite" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPB" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMS" resolve="EReference" />
       </node>
@@ -607,6 +705,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPG" role="2oAaxa">
       <property role="TrG5h" value="eReferenceType" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPE" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMS" resolve="EReference" />
       </node>
@@ -616,6 +716,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPJ" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPH" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMY" resolve="M2MeReferences" />
       </node>
@@ -625,6 +727,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPM" role="2oAaxa">
       <property role="TrG5h" value="eReferences" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPK" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMY" resolve="M2MeReferences" />
       </node>
@@ -634,6 +738,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPP" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPN" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN6" resolve="M2MeAllReferences" />
       </node>
@@ -643,6 +749,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPS" role="2oAaxa">
       <property role="TrG5h" value="eAllReferences" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPQ" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN6" resolve="M2MeAllReferences" />
       </node>
@@ -652,6 +760,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPV" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPT" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN7" resolve="M2MeAllContainments" />
       </node>
@@ -661,6 +771,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqPY" role="2oAaxa">
       <property role="TrG5h" value="eAllContainments" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPW" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN7" resolve="M2MeAllContainments" />
       </node>
@@ -670,6 +782,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQ1" role="2oAaxa">
       <property role="TrG5h" value="eType" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqPZ" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN1" resolve="ETypedElement" />
       </node>
@@ -679,6 +793,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQ4" role="2oAaxa">
       <property role="TrG5h" value="eOperation" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQ2" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN9" resolve="EParameter" />
       </node>
@@ -688,6 +804,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQ7" role="2oAaxa">
       <property role="TrG5h" value="eContainingClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQ5" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN8" resolve="EOperation" />
       </node>
@@ -697,6 +815,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQa" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQ8" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNa" resolve="M2MeAllOperators" />
       </node>
@@ -706,6 +826,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQd" role="2oAaxa">
       <property role="TrG5h" value="eAllOperators" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQb" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNa" resolve="M2MeAllOperators" />
       </node>
@@ -715,6 +837,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQg" role="2oAaxa">
       <property role="TrG5h" value="forEOperator" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQe" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNb" resolve="M2MeExceptions" />
       </node>
@@ -724,6 +848,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQj" role="2oAaxa">
       <property role="TrG5h" value="eExceptions" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQh" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNb" resolve="M2MeExceptions" />
       </node>
@@ -732,6 +858,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqQm" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQk" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
       </node>
@@ -740,6 +868,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqQp" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQn" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN8" resolve="EOperation" />
       </node>
@@ -748,6 +878,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqQs" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQq" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN9" resolve="EParameter" />
       </node>
@@ -757,6 +889,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQv" role="2oAaxa">
       <property role="TrG5h" value="instanceClassNamed" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQt" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN0" resolve="EClassifier" />
       </node>
@@ -766,6 +900,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQy" role="2oAaxa">
       <property role="TrG5h" value="eType" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQw" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN1" resolve="ETypedElement" />
       </node>
@@ -774,6 +910,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqQ_" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQz" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN0" resolve="EClassifier" />
       </node>
@@ -782,6 +920,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqQC" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQA" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN1" resolve="ETypedElement" />
       </node>
@@ -790,6 +930,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqQF" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQD" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMR" resolve="EDataType" />
       </node>
@@ -798,6 +940,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqQI" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQG" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
       </node>
@@ -807,6 +951,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQL" role="2oAaxa">
       <property role="TrG5h" value="abstract" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQJ" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
       </node>
@@ -816,6 +962,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQO" role="2oAaxa">
       <property role="TrG5h" value="interface" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQM" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMP" resolve="EClass" />
       </node>
@@ -825,6 +973,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQR" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQP" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMW" resolve="M2MeSuperTypes" />
       </node>
@@ -834,6 +984,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQU" role="2oAaxa">
       <property role="TrG5h" value="eSuperTypes" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQS" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMW" resolve="M2MeSuperTypes" />
       </node>
@@ -843,6 +995,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqQX" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQV" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNc" resolve="M2MeAllSuperTypes" />
       </node>
@@ -852,6 +1006,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqR0" role="2oAaxa">
       <property role="TrG5h" value="eAllSuperTypes" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqQY" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNc" resolve="M2MeAllSuperTypes" />
       </node>
@@ -861,6 +1017,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqR3" role="2oAaxa">
       <property role="TrG5h" value="eContainingClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqR1" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN8" resolve="EOperation" />
       </node>
@@ -870,6 +1028,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqR6" role="2oAaxa">
       <property role="TrG5h" value="eContainingClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqR4" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN2" resolve="EStructuralFeature" />
       </node>
@@ -879,6 +1039,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqR9" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqR7" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNe" resolve="M2MeAllOperations" />
       </node>
@@ -888,6 +1050,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRc" role="2oAaxa">
       <property role="TrG5h" value="eAllOperations" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRa" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNe" resolve="M2MeAllOperations" />
       </node>
@@ -897,6 +1061,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRf" role="2oAaxa">
       <property role="TrG5h" value="forEClass" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRd" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNd" resolve="M2MeAllStructuralFeatures" />
       </node>
@@ -906,6 +1072,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRi" role="2oAaxa">
       <property role="TrG5h" value="eAllStructuralFeatures" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRg" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNd" resolve="M2MeAllStructuralFeatures" />
       </node>
@@ -915,6 +1083,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRl" role="2oAaxa">
       <property role="TrG5h" value="serializable" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRj" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqMR" resolve="EDataType" />
       </node>
@@ -924,6 +1094,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRo" role="2oAaxa">
       <property role="TrG5h" value="value" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRm" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNf" resolve="EEnumLiteral" />
       </node>
@@ -933,6 +1105,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRr" role="2oAaxa">
       <property role="TrG5h" value="instance" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRp" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNf" resolve="EEnumLiteral" />
       </node>
@@ -942,6 +1116,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRu" role="2oAaxa">
       <property role="TrG5h" value="literal" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRs" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNf" resolve="EEnumLiteral" />
       </node>
@@ -951,6 +1127,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRx" role="2oAaxa">
       <property role="TrG5h" value="eEnum" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRv" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNf" resolve="EEnumLiteral" />
       </node>
@@ -959,6 +1137,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqR$" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRy" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNh" resolve="EEnum" />
       </node>
@@ -967,6 +1147,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqRB" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqR_" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNf" resolve="EEnumLiteral" />
       </node>
@@ -976,6 +1158,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRE" role="2oAaxa">
       <property role="TrG5h" value="nsURI" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRC" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNj" resolve="EPackage" />
       </node>
@@ -985,6 +1169,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRH" role="2oAaxa">
       <property role="TrG5h" value="nsPrefix" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRF" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNj" resolve="EPackage" />
       </node>
@@ -994,6 +1180,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRK" role="2oAaxa">
       <property role="TrG5h" value="eFactoryInstance" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRI" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNj" resolve="EPackage" />
       </node>
@@ -1003,6 +1191,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRN" role="2oAaxa">
       <property role="TrG5h" value="eSuperPackage" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRL" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNj" resolve="EPackage" />
       </node>
@@ -1012,6 +1202,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRQ" role="2oAaxa">
       <property role="TrG5h" value="ePackage" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRO" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqN0" resolve="EClassifier" />
       </node>
@@ -1020,6 +1212,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqRT" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRR" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNj" resolve="EPackage" />
       </node>
@@ -1028,6 +1222,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqRW" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRU" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNk" resolve="EFactory" />
       </node>
@@ -1037,6 +1233,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqRZ" role="2oAaxa">
       <property role="TrG5h" value="source" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqRX" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNm" resolve="EAnnotation" />
       </node>
@@ -1046,6 +1244,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqS2" role="2oAaxa">
       <property role="TrG5h" value="details" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqS0" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNm" resolve="EAnnotation" />
       </node>
@@ -1055,6 +1255,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqS5" role="2oAaxa">
       <property role="TrG5h" value="eModelElement" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqS3" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNm" resolve="EAnnotation" />
       </node>
@@ -1064,6 +1266,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqS8" role="2oAaxa">
       <property role="TrG5h" value="eAnnotation" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqS6" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNo" resolve="EObject" />
       </node>
@@ -1073,6 +1277,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqSb" role="2oAaxa">
       <property role="TrG5h" value="forEAnnotation" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqS9" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNp" resolve="M2MReferences" />
       </node>
@@ -1082,6 +1288,8 @@
     </node>
     <node concept="2oAaUZ" id="2sGdL5xbqSe" role="2oAaxa">
       <property role="TrG5h" value="references" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqSc" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNp" resolve="M2MReferences" />
       </node>
@@ -1090,6 +1298,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqSh" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqSf" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNm" resolve="EAnnotation" />
       </node>
@@ -1098,6 +1308,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="2sGdL5xbqSk" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2sGdL5xbqSi" role="2oAawD">
         <ref role="3aaZtz" node="2sGdL5xbqNl" resolve="EModelElement" />
       </node>

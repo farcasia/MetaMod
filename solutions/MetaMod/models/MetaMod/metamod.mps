@@ -8,19 +8,21 @@
   <imports />
   <registry>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
-      <concept id="8717972784948762711" name="Models.structure.StructureModel" flags="ng" index="2oAaTp">
+      <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
+        <property id="3979997632601093222" name="targetCard" index="2XbFU$" />
+        <property id="3979997632601093220" name="sourceCard" index="2XbFUA" />
         <child id="8717972784948764201" name="target" index="2oAawB" />
         <child id="8717972784948764199" name="source" index="2oAawD" />
       </concept>
       <concept id="8717972784948762801" name="Models.structure.NamedRelation" flags="ng" index="2oAaUZ" />
-      <concept id="8717972784948762846" name="Models.structure.NamedStructureModel" flags="ng" index="2oAaVg" />
-      <concept id="8717972784948762891" name="Models.structure.NamedBasicModel" flags="ng" index="2oAaW5" />
-      <concept id="8717972784948762981" name="Models.structure.RefToNamedBM" flags="ng" index="2oAaXF" />
-      <concept id="8717972784948763026" name="Models.structure.RefToNamedSM" flags="ng" index="2oAaYs" />
-      <concept id="8717972784948763079" name="Models.structure.Inheritance" flags="ng" index="2oAaZ9" />
+      <concept id="8717972784948762846" name="Models.structure.NamedGroup" flags="ng" index="2oAaVg" />
+      <concept id="8717972784948762891" name="Models.structure.NamedConcept" flags="ng" index="2oAaW5" />
+      <concept id="8717972784948762981" name="Models.structure.RefToNamedConcept" flags="ng" index="2oAaXF" />
+      <concept id="8717972784948763026" name="Models.structure.RefToNamedGroup" flags="ng" index="2oAaYs" />
+      <concept id="8717972784948763079" name="Models.structure.Subtype" flags="ng" index="2oAaZ9" />
       <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
         <reference id="3040834594469888400" name="ref" index="3aaZtz" />
       </concept>
@@ -41,6 +43,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVITF" role="2oAaxa">
       <property role="TrG5h" value="conformsTo" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iUq" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVITL" resolve="Relation" />
       </node>
@@ -50,6 +54,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVITW" role="2oAaxa">
       <property role="TrG5h" value="conformsTo" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iUt" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIU8" resolve="Concept" />
       </node>
@@ -59,6 +65,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVIUH" role="2oAaxa">
       <property role="TrG5h" value="src" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iUA" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIU8" resolve="Concept" />
       </node>
@@ -68,6 +76,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVIVi" role="2oAaxa">
       <property role="TrG5h" value="tgt" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iUG" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIU8" resolve="Concept" />
       </node>
@@ -92,6 +102,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVIVY" role="2oAaxa">
       <property role="TrG5h" value="contains" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iX8" role="2oAawD">
         <ref role="3aaZtz" node="7nF4KJrVIW8" resolve="Group" />
       </node>
@@ -100,6 +112,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVIWk" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iXe" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIWb" resolve="Term" />
       </node>
@@ -108,6 +122,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVIWK" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iXh" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIWb" resolve="Term" />
       </node>
@@ -116,6 +132,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVIXi" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iXk" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIWb" resolve="Term" />
       </node>
@@ -124,6 +142,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVJ4j" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iXn" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVITL" resolve="Relation" />
       </node>
@@ -136,6 +156,8 @@
     <property role="TrG5h" value="LambdaCalculus" />
     <node concept="2oAaUZ" id="7nF4KJrVIXU" role="2oAaxa">
       <property role="TrG5h" value="left" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaW5" id="7nF4KJrVIY3" role="2oAawB">
         <property role="TrG5h" value="Term" />
       </node>
@@ -145,6 +167,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVIYb" role="2oAaxa">
       <property role="TrG5h" value="right" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iYJ" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIY3" resolve="Term" />
       </node>
@@ -153,6 +177,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVIY_" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iYM" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIY3" resolve="Term" />
       </node>
@@ -162,6 +188,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVIZ_" role="2oAaxa">
       <property role="TrG5h" value="body" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iYS" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIY3" resolve="Term" />
       </node>
@@ -171,6 +199,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVJ1n" role="2oAaxa">
       <property role="TrG5h" value="bound" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaW5" id="7nF4KJrVJ1M" role="2oAawB">
         <property role="TrG5h" value="BoundVar" />
       </node>
@@ -179,6 +209,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVJ0b" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iZ1" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIY3" resolve="Term" />
       </node>
@@ -187,6 +219,8 @@
       </node>
     </node>
     <node concept="2oAaZ9" id="7nF4KJrVJ29" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iZ4" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIY3" resolve="Term" />
       </node>
@@ -205,6 +239,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVJ36" role="2oAaxa">
       <property role="TrG5h" value="src" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iZB" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIWb" resolve="Term" />
       </node>
@@ -214,6 +250,8 @@
     </node>
     <node concept="2oAaUZ" id="7nF4KJrVJ3u" role="2oAaxa">
       <property role="TrG5h" value="tgt" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6RWccq2_iZ$" role="2oAawB">
         <ref role="3aaZtz" node="7nF4KJrVIWb" resolve="Term" />
       </node>
