@@ -34,7 +34,6 @@
         <child id="7362364337458526851" name="left" index="3B56no" />
         <child id="7362364337458526853" name="right" index="3B56nu" />
       </concept>
-      <concept id="7362364337458504598" name="LambdaCalculus.structure.LambdaTerm" flags="ng" index="3B6VNd" />
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
       <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
@@ -57,6 +56,7 @@
       <concept id="8717972784948762846" name="Models.structure.NamedGroup" flags="ng" index="2oAaVg" />
       <concept id="8717972784948762891" name="Models.structure.NamedConcept" flags="ng" index="2oAaW5" />
       <concept id="8717972784948762981" name="Models.structure.RefToNamedConcept" flags="ng" index="2oAaXF" />
+      <concept id="8717972784948763026" name="Models.structure.RefToNamedGroup" flags="ng" index="2oAaYs" />
       <concept id="8717972784948763079" name="Models.structure.Subtype" flags="ng" index="2oAaZ9" />
       <concept id="2324090206732068954" name="Models.structure.LApplWithFragment" flags="ng" index="2uuBJw">
         <child id="2324090206732069037" name="term" index="2uuBGn" />
@@ -125,7 +125,7 @@
       <node concept="2oAaW5" id="5SyC5TNQHSN" role="2oAaxa">
         <property role="TrG5h" value="2000" />
         <node concept="2oAaXF" id="5SyC5TNQHT9" role="2oAawq">
-          <ref role="3aaZtz" node="5SyC5TNJ3$p" resolve="Int" />
+          <ref role="3aaZtz" node="ITVTA012yT" resolve="Int" />
         </node>
       </node>
       <node concept="2jq5PB" id="1DJ_GQZxUDk" role="2oAaxa" />
@@ -297,7 +297,7 @@
       <node concept="2oAaW5" id="6ajaw9PVr6z" role="2oAaxa">
         <property role="TrG5h" value="1000" />
         <node concept="2oAaXF" id="6ajaw9PVr6$" role="2oAawq">
-          <ref role="3aaZtz" node="5SyC5TNJ3$p" resolve="Int" />
+          <ref role="3aaZtz" node="ITVTA012yT" resolve="Int" />
         </node>
       </node>
       <node concept="2jq5PB" id="6ajaw9PVr_w" role="2oAaxa" />
@@ -439,25 +439,6 @@
   </node>
   <node concept="kds5t" id="5SyC5TNKvhj">
     <property role="TrG5h" value="TrainTracksCommons" />
-    <node concept="kds5u" id="7ZOQyXYXR68" role="kdsQe">
-      <property role="TrG5h" value="gjkfgs" />
-      <node concept="3B6VN2" id="7ZOQyXYXR6a" role="kdsPW">
-        <node concept="x0Shc" id="7ZOQyXYXRGv" role="3B56nf">
-          <node concept="2EG4Ce" id="7ZOQyXYXRNk" role="2oAaxa">
-            <node concept="2jq5PB" id="7ZOQyXYXRNl" role="2EGHC0" />
-            <node concept="3B6VNd" id="7ZOQyXYXRNp" role="2EGHCX" />
-            <node concept="1Nt8Es" id="7ZOQyXYXRN$" role="2EGHCZ">
-              <property role="1N13bu" value="false" />
-              <node concept="3B6VNd" id="7ZOQyXYXROf" role="1Nt8Et" />
-            </node>
-          </node>
-        </node>
-        <node concept="3B6VN1" id="7ZOQyXYXR6e" role="3B56n9">
-          <property role="TrG5h" value="par" />
-        </node>
-      </node>
-    </node>
-    <node concept="3$mKog" id="7ZOQyXYXRDa" role="kdsQe" />
     <node concept="kds5u" id="5SyC5TNQHqb" role="kdsQe">
       <property role="TrG5h" value="SegWithEndPoints" />
       <node concept="3B6VN2" id="5SyC5TNQHqe" role="kdsPW">
@@ -871,19 +852,20 @@
     <property role="TrG5h" value="TrainTracks" />
     <node concept="2oAaVg" id="5SyC5TNIPR_" role="2oAaxa">
       <property role="TrG5h" value="SegmentsAndPoints" />
+      <node concept="2oAaYs" id="ITVTA012VQ" role="2oAaxa">
+        <ref role="3aaZtz" node="ITVTA012yS" resolve="Primitives" />
+      </node>
+      <node concept="2jq5PB" id="ITVTA012WM" role="2oAaxa" />
       <node concept="2oAaW5" id="5SyC5TNIPRJ" role="2oAaxa">
         <property role="TrG5h" value="Segment" />
       </node>
       <node concept="2oAaW5" id="5SyC5TNJ3$0" role="2oAaxa">
         <property role="TrG5h" value="Point" />
       </node>
-      <node concept="2oAaW5" id="5SyC5TNJ3$p" role="2oAaxa">
-        <property role="TrG5h" value="Int" />
-      </node>
       <node concept="2jq5PB" id="5SyC5TNJ3$D" role="2oAaxa" />
       <node concept="2oAaUZ" id="7O7EsH38i02" role="2oAaxa">
-        <property role="2XbFUA" value="0..*" />
-        <property role="2XbFU$" value="2..2" />
+        <property role="2XbFUA" value="*" />
+        <property role="2XbFU$" value="2" />
         <property role="TrG5h" value="point" />
         <node concept="2oAaXF" id="7O7EsH38i25" role="2oAawB">
           <ref role="3aaZtz" node="5SyC5TNJ3$0" resolve="Point" />
@@ -893,11 +875,11 @@
         </node>
       </node>
       <node concept="2oAaUZ" id="7O7EsH38i3I" role="2oAaxa">
-        <property role="2XbFUA" value="0..*" />
-        <property role="2XbFU$" value="0..1" />
+        <property role="2XbFUA" value="*" />
+        <property role="2XbFU$" value="1" />
         <property role="TrG5h" value="length" />
         <node concept="2oAaXF" id="7O7EsH38i6a" role="2oAawB">
-          <ref role="3aaZtz" node="5SyC5TNJ3$p" resolve="Int" />
+          <ref role="3aaZtz" node="ITVTA012yT" resolve="Int" />
         </node>
         <node concept="2oAaXF" id="7O7EsH38i4J" role="2oAawD">
           <ref role="3aaZtz" node="5SyC5TNIPRJ" resolve="Segment" />
@@ -936,6 +918,12 @@
           <ref role="3aaZtz" node="5SyC5TNQGrK" resolve="VirtualSegment" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2oAaVg" id="ITVTA012yS">
+    <property role="TrG5h" value="Primitives" />
+    <node concept="2oAaW5" id="ITVTA012yT" role="2oAaxa">
+      <property role="TrG5h" value="Int" />
     </node>
   </node>
 </model>

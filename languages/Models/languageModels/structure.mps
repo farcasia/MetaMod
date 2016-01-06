@@ -448,7 +448,7 @@
   </node>
   <node concept="Az7Fb" id="7O7EsH2WkUJ">
     <property role="TrG5h" value="Multiplicity" />
-    <property role="FLfZY" value="[[0-9]|[1-9][0..9]+]..[[0-9]|[1-9][0..9]+|*]" />
+    <property role="FLfZY" value="[[0-9]|[1-9][0..9]+]..[[0-9]|[1-9][0..9]+|*]|[[1-9]|[1-9][0-9]+|*]" />
   </node>
 </model>
 
