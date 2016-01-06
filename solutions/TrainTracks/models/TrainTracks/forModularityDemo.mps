@@ -46,8 +46,8 @@
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
-        <property id="3979997632601093222" name="maxSource" index="2XbFU$" />
-        <property id="3979997632601093220" name="minSource" index="2XbFUA" />
+        <property id="3979997632601093222" name="targetCard" index="2XbFU$" />
+        <property id="3979997632601093220" name="sourceCard" index="2XbFUA" />
         <property id="3979997632601093225" name="minTarget" index="2XbFUF" />
         <property id="3979997632601093229" name="maxTarget" index="2XbFUJ" />
         <child id="8717972784948764204" name="conformsTo" index="2oAawy" />
@@ -154,81 +154,51 @@
         <node concept="1NmQkK" id="6ajaw9PVqo9" role="3B56nu">
           <property role="1N13bu" value="false" />
         </node>
-        <node concept="x0Shc" id="3Piolj0k$8A" role="2uuBGn">
-          <node concept="2oAaW5" id="3Piolj0k$8B" role="2oAaxa">
-            <property role="TrG5h" value="PointOfSeg666014802" />
-            <node concept="2oAaXF" id="3Piolj0k$8E" role="2oAawq">
-              <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
-            </node>
-          </node>
-          <node concept="2oAaW5" id="3Piolj0k$8F" role="2oAaxa">
-            <property role="TrG5h" value="PointOfSeg378585523" />
-            <node concept="2oAaXF" id="3Piolj0k$8I" role="2oAawq">
-              <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
-            </node>
-          </node>
-          <node concept="3$mKog" id="3Piolj0k$8J" role="2oAaxa" />
-          <node concept="2oAaW5" id="3Piolj0k$8K" role="2oAaxa">
-            <property role="TrG5h" value="Segment313735340" />
-            <node concept="2oAaXF" id="3Piolj0k$8N" role="2oAawq">
+        <node concept="x0Shc" id="7O7EsH2Wf38" role="2uuBGn">
+          <node concept="2oAaW5" id="7O7EsH2Wf39" role="2oAaxa">
+            <property role="TrG5h" value="Segment1804132824" />
+            <node concept="2oAaXF" id="7O7EsH2Wf3c" role="2oAawq">
               <ref role="3aaZtz" node="5SyC5TNIPRJ" resolve="Segment" />
             </node>
           </node>
-          <node concept="2jq5PB" id="3Piolj0k$8O" role="2oAaxa" />
-          <node concept="2oAaUa" id="3Piolj0k$8P" role="2oAaxa">
-            <node concept="2oAaXF" id="3Piolj0k$8Q" role="2oAawD">
-              <ref role="3aaZtz" node="3Piolj0k$8B" resolve="PointOfSeg666014802" />
+          <node concept="2jq5PB" id="7O7EsH2Wf3d" role="2oAaxa" />
+          <node concept="2oAaUa" id="7O7EsH2Wf3e" role="2oAaxa">
+            <property role="2XbFUA" value="0" />
+            <property role="2XbFU$" value="*" />
+            <node concept="2oAaXF" id="7O7EsH2Wf3j" role="2oAawD">
+              <ref role="3aaZtz" node="7O7EsH2Wf39" resolve="Segment1804132824" />
             </node>
-            <node concept="2oAaXF" id="3Piolj0k$8R" role="2oAawB">
+            <node concept="2oAaXF" id="7O7EsH2Wf3k" role="2oAawB">
               <ref role="3aaZtz" node="5SyC5TNQST7" resolve="DeTerp" />
             </node>
-            <node concept="2oAawe" id="3Piolj0k$8S" role="2oAawy">
+            <node concept="2oAawe" id="7O7EsH2Wf3l" role="2oAawy">
               <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
             </node>
           </node>
-          <node concept="2oAaUa" id="3Piolj0k$8T" role="2oAaxa">
-            <node concept="2oAaXF" id="3Piolj0k$8U" role="2oAawD">
-              <ref role="3aaZtz" node="3Piolj0k$8B" resolve="PointOfSeg666014802" />
+          <node concept="2oAaUa" id="7O7EsH2Wf3m" role="2oAaxa">
+            <property role="2XbFUA" value="0" />
+            <property role="2XbFU$" value="*" />
+            <node concept="2oAaXF" id="7O7EsH2Wf3p" role="2oAawD">
+              <ref role="3aaZtz" node="7O7EsH2Wf39" resolve="Segment1804132824" />
             </node>
-            <node concept="2oAaXF" id="3Piolj0k$8Z" role="2oAawB">
-              <ref role="3aaZtz" node="3Piolj0k$8K" resolve="Segment313735340" />
-            </node>
-            <node concept="2oAawe" id="3Piolj0k$90" role="2oAawy">
-              <ref role="3aaZtz" node="5SyC5TNJ3UI" resolve="segment" />
-            </node>
-          </node>
-          <node concept="2jq5PB" id="3Piolj0k$91" role="2oAaxa" />
-          <node concept="2oAaUa" id="3Piolj0k$92" role="2oAaxa">
-            <node concept="2oAaXF" id="3Piolj0k$93" role="2oAawD">
-              <ref role="3aaZtz" node="3Piolj0k$8F" resolve="PointOfSeg378585523" />
-            </node>
-            <node concept="2oAaXF" id="3Piolj0k$94" role="2oAawB">
+            <node concept="2oAaXF" id="7O7EsH2Wf3q" role="2oAawB">
               <ref role="3aaZtz" node="5SyC5TNQHKL" resolve="DeAkkers" />
             </node>
-            <node concept="2oAawe" id="3Piolj0k$95" role="2oAawy">
+            <node concept="2oAawe" id="7O7EsH2Wf3r" role="2oAawy">
               <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
             </node>
           </node>
-          <node concept="2oAaUa" id="3Piolj0k$96" role="2oAaxa">
-            <node concept="2oAaXF" id="3Piolj0k$97" role="2oAawD">
-              <ref role="3aaZtz" node="3Piolj0k$8F" resolve="PointOfSeg378585523" />
+          <node concept="3$mKog" id="7O7EsH2Wf3s" role="2oAaxa" />
+          <node concept="2oAaUa" id="7O7EsH2Wf3t" role="2oAaxa">
+            <property role="2XbFUA" value="0..1" />
+            <property role="2XbFU$" value="0..1" />
+            <node concept="2oAaXF" id="7O7EsH2Wf3w" role="2oAawD">
+              <ref role="3aaZtz" node="7O7EsH2Wf39" resolve="Segment1804132824" />
             </node>
-            <node concept="2oAaXF" id="3Piolj0k$9a" role="2oAawB">
-              <ref role="3aaZtz" node="3Piolj0k$8K" resolve="Segment313735340" />
-            </node>
-            <node concept="2oAawe" id="3Piolj0k$9b" role="2oAawy">
-              <ref role="3aaZtz" node="5SyC5TNJ3UI" resolve="segment" />
-            </node>
-          </node>
-          <node concept="3$mKog" id="3Piolj0k$9c" role="2oAaxa" />
-          <node concept="2oAaUa" id="3Piolj0k$9d" role="2oAaxa">
-            <node concept="2oAaXF" id="3Piolj0k$9g" role="2oAawD">
-              <ref role="3aaZtz" node="3Piolj0k$8K" resolve="Segment313735340" />
-            </node>
-            <node concept="2oAaXF" id="3Piolj0k$9h" role="2oAawB">
+            <node concept="2oAaXF" id="7O7EsH2Wf3x" role="2oAawB">
               <ref role="3aaZtz" node="5SyC5TNQHSN" resolve="2000" />
             </node>
-            <node concept="2oAawe" id="3Piolj0k$9i" role="2oAawy">
+            <node concept="2oAawe" id="7O7EsH2Wf3y" role="2oAawy">
               <ref role="3aaZtz" node="5SyC5TNJ3Wu" resolve="length" />
             </node>
           </node>
@@ -284,170 +254,110 @@
           <property role="1N17t6" value="false" />
           <property role="30sSus" value="1" />
         </node>
-        <node concept="x0Shc" id="6ajaw9PVENB" role="2uuBGn">
-          <node concept="x0Shc" id="6ajaw9PVENC" role="2oAaxa">
-            <node concept="2oAaW5" id="6ajaw9PVEND" role="2oAaxa">
-              <property role="TrG5h" value="Point1326507138" />
-              <node concept="2oAaXF" id="6ajaw9PVENG" role="2oAawq">
+        <node concept="x0Shc" id="7O7EsH2WfdM" role="2uuBGn">
+          <node concept="x0Shc" id="7O7EsH2WfdN" role="2oAaxa">
+            <node concept="2oAaW5" id="7O7EsH2WfdO" role="2oAaxa">
+              <property role="TrG5h" value="Point1224984652" />
+              <node concept="2oAaXF" id="7O7EsH2WfdR" role="2oAawq">
                 <ref role="3aaZtz" node="5SyC5TNJ3$0" resolve="Point" />
               </node>
             </node>
-            <node concept="2jq5PB" id="6ajaw9PVENH" role="2oAaxa" />
-            <node concept="x0Shc" id="6ajaw9PVEQI" role="2oAaxa">
-              <node concept="2oAaW5" id="6ajaw9PVEQJ" role="2oAaxa">
-                <property role="TrG5h" value="PointOfSeg1052951299" />
-                <node concept="2oAaXF" id="6ajaw9PVEQM" role="2oAawq">
-                  <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
-                </node>
-              </node>
-              <node concept="2oAaW5" id="6ajaw9PVEQN" role="2oAaxa">
-                <property role="TrG5h" value="PointOfSeg452973607" />
-                <node concept="2oAaXF" id="6ajaw9PVEQQ" role="2oAawq">
-                  <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
-                </node>
-              </node>
-              <node concept="3$mKog" id="6ajaw9PVEQR" role="2oAaxa" />
-              <node concept="2oAaW5" id="6ajaw9PVEQS" role="2oAaxa">
-                <property role="TrG5h" value="Segment1881686541" />
-                <node concept="2oAaXF" id="6ajaw9PVEQV" role="2oAawq">
+            <node concept="2jq5PB" id="7O7EsH2WfdS" role="2oAaxa" />
+            <node concept="x0Shc" id="7O7EsH2Wfg1" role="2oAaxa">
+              <node concept="2oAaW5" id="7O7EsH2Wfg2" role="2oAaxa">
+                <property role="TrG5h" value="Segment1454445680" />
+                <node concept="2oAaXF" id="7O7EsH2Wfg5" role="2oAawq">
                   <ref role="3aaZtz" node="5SyC5TNIPRJ" resolve="Segment" />
                 </node>
               </node>
-              <node concept="2jq5PB" id="6ajaw9PVEQW" role="2oAaxa" />
-              <node concept="2oAaUa" id="6ajaw9PVEQX" role="2oAaxa">
-                <node concept="2oAaXF" id="6ajaw9PVEQY" role="2oAawD">
-                  <ref role="3aaZtz" node="6ajaw9PVEQJ" resolve="PointOfSeg1052951299" />
+              <node concept="2jq5PB" id="7O7EsH2Wfg6" role="2oAaxa" />
+              <node concept="2oAaUa" id="7O7EsH2Wfg7" role="2oAaxa">
+                <property role="2XbFUA" value="0" />
+                <property role="2XbFU$" value="*" />
+                <node concept="2oAaXF" id="7O7EsH2Wfgc" role="2oAawD">
+                  <ref role="3aaZtz" node="7O7EsH2Wfg2" resolve="Segment1454445680" />
                 </node>
-                <node concept="2oAaXF" id="6ajaw9PVEQZ" role="2oAawB">
+                <node concept="2oAaXF" id="7O7EsH2Wfgd" role="2oAawB">
                   <ref role="3aaZtz" node="6ajaw9PVr6v" resolve="Schiedam" />
                 </node>
-                <node concept="2oAawe" id="6ajaw9PVER0" role="2oAawy">
+                <node concept="2oAawe" id="7O7EsH2Wfge" role="2oAawy">
                   <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
                 </node>
               </node>
-              <node concept="2oAaUa" id="6ajaw9PVER1" role="2oAaxa">
-                <node concept="2oAaXF" id="6ajaw9PVER2" role="2oAawD">
-                  <ref role="3aaZtz" node="6ajaw9PVEQJ" resolve="PointOfSeg1052951299" />
+              <node concept="2oAaUa" id="7O7EsH2Wfgf" role="2oAaxa">
+                <property role="2XbFUA" value="0" />
+                <property role="2XbFU$" value="*" />
+                <node concept="2oAaXF" id="7O7EsH2Wfgi" role="2oAawD">
+                  <ref role="3aaZtz" node="7O7EsH2Wfg2" resolve="Segment1454445680" />
                 </node>
-                <node concept="2oAaXF" id="6ajaw9PVER7" role="2oAawB">
-                  <ref role="3aaZtz" node="6ajaw9PVEQS" resolve="Segment1881686541" />
+                <node concept="2oAaXF" id="7O7EsH2Wfgj" role="2oAawB">
+                  <ref role="3aaZtz" node="7O7EsH2WfdO" resolve="Point1224984652" />
                 </node>
-                <node concept="2oAawe" id="6ajaw9PVER8" role="2oAawy">
-                  <ref role="3aaZtz" node="5SyC5TNJ3UI" resolve="segment" />
-                </node>
-              </node>
-              <node concept="2jq5PB" id="6ajaw9PVER9" role="2oAaxa" />
-              <node concept="2oAaUa" id="6ajaw9PVERa" role="2oAaxa">
-                <node concept="2oAaXF" id="6ajaw9PVERb" role="2oAawD">
-                  <ref role="3aaZtz" node="6ajaw9PVEQN" resolve="PointOfSeg452973607" />
-                </node>
-                <node concept="2oAaXF" id="6ajaw9PVERc" role="2oAawB">
-                  <ref role="3aaZtz" node="6ajaw9PVEND" resolve="Point1326507138" />
-                </node>
-                <node concept="2oAawe" id="6ajaw9PVERd" role="2oAawy">
+                <node concept="2oAawe" id="7O7EsH2Wfgk" role="2oAawy">
                   <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
                 </node>
               </node>
-              <node concept="2oAaUa" id="6ajaw9PVERe" role="2oAaxa">
-                <node concept="2oAaXF" id="6ajaw9PVERf" role="2oAawD">
-                  <ref role="3aaZtz" node="6ajaw9PVEQN" resolve="PointOfSeg452973607" />
+              <node concept="3$mKog" id="7O7EsH2Wfgl" role="2oAaxa" />
+              <node concept="2oAaUa" id="7O7EsH2Wfgm" role="2oAaxa">
+                <property role="2XbFUA" value="0..1" />
+                <property role="2XbFU$" value="0..1" />
+                <node concept="2oAaXF" id="7O7EsH2Wfgp" role="2oAawD">
+                  <ref role="3aaZtz" node="7O7EsH2Wfg2" resolve="Segment1454445680" />
                 </node>
-                <node concept="2oAaXF" id="6ajaw9PVERi" role="2oAawB">
-                  <ref role="3aaZtz" node="6ajaw9PVEQS" resolve="Segment1881686541" />
-                </node>
-                <node concept="2oAawe" id="6ajaw9PVERj" role="2oAawy">
-                  <ref role="3aaZtz" node="5SyC5TNJ3UI" resolve="segment" />
-                </node>
-              </node>
-              <node concept="3$mKog" id="6ajaw9PVERk" role="2oAaxa" />
-              <node concept="2oAaUa" id="6ajaw9PVERl" role="2oAaxa">
-                <node concept="2oAaXF" id="6ajaw9PVERo" role="2oAawD">
-                  <ref role="3aaZtz" node="6ajaw9PVEQS" resolve="Segment1881686541" />
-                </node>
-                <node concept="2oAaXF" id="6ajaw9PVERp" role="2oAawB">
+                <node concept="2oAaXF" id="7O7EsH2Wfgq" role="2oAawB">
                   <ref role="3aaZtz" node="6ajaw9PVr6z" resolve="1000" />
                 </node>
-                <node concept="2oAawe" id="6ajaw9PVERq" role="2oAawy">
+                <node concept="2oAawe" id="7O7EsH2Wfgr" role="2oAawy">
                   <ref role="3aaZtz" node="5SyC5TNJ3Wu" resolve="length" />
                 </node>
               </node>
             </node>
-            <node concept="x0Shc" id="6ajaw9PVEUr" role="2oAaxa">
-              <node concept="x0Shc" id="6ajaw9PVEXs" role="2oAaxa">
-                <node concept="2oAaW5" id="6ajaw9PVEXt" role="2oAaxa">
-                  <property role="TrG5h" value="PointOfSeg1394030815" />
-                  <node concept="2oAaXF" id="6ajaw9PVEXw" role="2oAawq">
-                    <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
-                  </node>
-                </node>
-                <node concept="2oAaW5" id="6ajaw9PVEXx" role="2oAaxa">
-                  <property role="TrG5h" value="PointOfSeg236438409" />
-                  <node concept="2oAaXF" id="6ajaw9PVEX$" role="2oAawq">
-                    <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
-                  </node>
-                </node>
-                <node concept="3$mKog" id="6ajaw9PVEX_" role="2oAaxa" />
-                <node concept="2oAaW5" id="6ajaw9PVEXA" role="2oAaxa">
-                  <property role="TrG5h" value="Segment191892883" />
-                  <node concept="2oAaXF" id="6ajaw9PVEXD" role="2oAawq">
+            <node concept="x0Shc" id="7O7EsH2Wfjs" role="2oAaxa">
+              <node concept="x0Shc" id="7O7EsH2Wfl_" role="2oAaxa">
+                <node concept="2oAaW5" id="7O7EsH2WflA" role="2oAaxa">
+                  <property role="TrG5h" value="Segment1633836849" />
+                  <node concept="2oAaXF" id="7O7EsH2WflD" role="2oAawq">
                     <ref role="3aaZtz" node="5SyC5TNIPRJ" resolve="Segment" />
                   </node>
                 </node>
-                <node concept="2jq5PB" id="6ajaw9PVEXE" role="2oAaxa" />
-                <node concept="2oAaUa" id="6ajaw9PVEXF" role="2oAaxa">
-                  <node concept="2oAaXF" id="6ajaw9PVEXG" role="2oAawD">
-                    <ref role="3aaZtz" node="6ajaw9PVEXt" resolve="PointOfSeg1394030815" />
+                <node concept="2jq5PB" id="7O7EsH2WflE" role="2oAaxa" />
+                <node concept="2oAaUa" id="7O7EsH2WflF" role="2oAaxa">
+                  <property role="2XbFUA" value="0" />
+                  <property role="2XbFU$" value="*" />
+                  <node concept="2oAaXF" id="7O7EsH2WflK" role="2oAawD">
+                    <ref role="3aaZtz" node="7O7EsH2WflA" resolve="Segment1633836849" />
                   </node>
-                  <node concept="2oAaXF" id="6ajaw9PVEXH" role="2oAawB">
-                    <ref role="3aaZtz" node="6ajaw9PVEND" resolve="Point1326507138" />
+                  <node concept="2oAaXF" id="7O7EsH2WflL" role="2oAawB">
+                    <ref role="3aaZtz" node="7O7EsH2WfdO" resolve="Point1224984652" />
                   </node>
-                  <node concept="2oAawe" id="6ajaw9PVEXI" role="2oAawy">
+                  <node concept="2oAawe" id="7O7EsH2WflM" role="2oAawy">
                     <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
                   </node>
                 </node>
-                <node concept="2oAaUa" id="6ajaw9PVEXJ" role="2oAaxa">
-                  <node concept="2oAaXF" id="6ajaw9PVEXK" role="2oAawD">
-                    <ref role="3aaZtz" node="6ajaw9PVEXt" resolve="PointOfSeg1394030815" />
+                <node concept="2oAaUa" id="7O7EsH2WflN" role="2oAaxa">
+                  <property role="2XbFUA" value="0" />
+                  <property role="2XbFU$" value="*" />
+                  <node concept="2oAaXF" id="7O7EsH2WflQ" role="2oAawD">
+                    <ref role="3aaZtz" node="7O7EsH2WflA" resolve="Segment1633836849" />
                   </node>
-                  <node concept="2oAaXF" id="6ajaw9PVEXP" role="2oAawB">
-                    <ref role="3aaZtz" node="6ajaw9PVEXA" resolve="Segment191892883" />
-                  </node>
-                  <node concept="2oAawe" id="6ajaw9PVEXQ" role="2oAawy">
-                    <ref role="3aaZtz" node="5SyC5TNJ3UI" resolve="segment" />
-                  </node>
-                </node>
-                <node concept="2jq5PB" id="6ajaw9PVEXR" role="2oAaxa" />
-                <node concept="2oAaUa" id="6ajaw9PVEXS" role="2oAaxa">
-                  <node concept="2oAaXF" id="6ajaw9PVEXT" role="2oAawD">
-                    <ref role="3aaZtz" node="6ajaw9PVEXx" resolve="PointOfSeg236438409" />
-                  </node>
-                  <node concept="2oAaXF" id="6ajaw9PVEXU" role="2oAawB">
+                  <node concept="2oAaXF" id="7O7EsH2WflR" role="2oAawB">
                     <ref role="3aaZtz" node="6ajaw9PVr6x" resolve="Binnenhof" />
                   </node>
-                  <node concept="2oAawe" id="6ajaw9PVEXV" role="2oAawy">
+                  <node concept="2oAawe" id="7O7EsH2WflS" role="2oAawy">
                     <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
                   </node>
                 </node>
-                <node concept="2oAaUa" id="6ajaw9PVEXW" role="2oAaxa">
-                  <node concept="2oAaXF" id="6ajaw9PVEXX" role="2oAawD">
-                    <ref role="3aaZtz" node="6ajaw9PVEXx" resolve="PointOfSeg236438409" />
+                <node concept="3$mKog" id="7O7EsH2WflT" role="2oAaxa" />
+                <node concept="2oAaUa" id="7O7EsH2WflU" role="2oAaxa">
+                  <property role="2XbFUA" value="0..1" />
+                  <property role="2XbFU$" value="0..1" />
+                  <node concept="2oAaXF" id="7O7EsH2WflX" role="2oAawD">
+                    <ref role="3aaZtz" node="7O7EsH2WflA" resolve="Segment1633836849" />
                   </node>
-                  <node concept="2oAaXF" id="6ajaw9PVEY0" role="2oAawB">
-                    <ref role="3aaZtz" node="6ajaw9PVEXA" resolve="Segment191892883" />
-                  </node>
-                  <node concept="2oAawe" id="6ajaw9PVEY1" role="2oAawy">
-                    <ref role="3aaZtz" node="5SyC5TNJ3UI" resolve="segment" />
-                  </node>
-                </node>
-                <node concept="3$mKog" id="6ajaw9PVEY2" role="2oAaxa" />
-                <node concept="2oAaUa" id="6ajaw9PVEY3" role="2oAaxa">
-                  <node concept="2oAaXF" id="6ajaw9PVEY6" role="2oAawD">
-                    <ref role="3aaZtz" node="6ajaw9PVEXA" resolve="Segment191892883" />
-                  </node>
-                  <node concept="2oAaXF" id="6ajaw9PVEY7" role="2oAawB">
+                  <node concept="2oAaXF" id="7O7EsH2WflY" role="2oAawB">
                     <ref role="3aaZtz" node="6ajaw9PVr6z" resolve="1000" />
                   </node>
-                  <node concept="2oAawe" id="6ajaw9PVEY8" role="2oAawy">
+                  <node concept="2oAawe" id="7O7EsH2WflZ" role="2oAawy">
                     <ref role="3aaZtz" node="5SyC5TNJ3Wu" resolve="length" />
                   </node>
                 </node>
@@ -477,19 +387,6 @@
               </node>
               <node concept="x0Shc" id="5SyC5TNQHqk" role="3B56nf">
                 <ref role="19kf5F" node="5SyC5TNIPKX" resolve="TrainTracks" />
-                <node concept="37tsfw" id="5SyC5TNQHql" role="2oAaxa">
-                  <property role="TrG5h" value="PS0" />
-                  <node concept="2oAaXF" id="5SyC5TNQHqm" role="2oAawq">
-                    <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
-                  </node>
-                </node>
-                <node concept="37tsfw" id="5SyC5TNQHqn" role="2oAaxa">
-                  <property role="TrG5h" value="PS1" />
-                  <node concept="2oAaXF" id="5SyC5TNQHqo" role="2oAawq">
-                    <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
-                  </node>
-                </node>
-                <node concept="3$mKog" id="5SyC5TNQHyt" role="2oAaxa" />
                 <node concept="2EG4Ce" id="5SyC5TNQHz7" role="2oAaxa">
                   <node concept="3B6VN0" id="5SyC5TNQHDv" role="2EGHCZ">
                     <ref role="3B56nS" node="5SyC5TNQH_P" resolve="switch" />
@@ -508,65 +405,46 @@
                   </node>
                 </node>
                 <node concept="2jq5PB" id="5SyC5TNQHqr" role="2oAaxa" />
-                <node concept="2oAaUa" id="5SyC5TNQHqs" role="2oAaxa">
+                <node concept="2oAaUa" id="7O7EsH2R41q" role="2oAaxa">
                   <property role="2XbFUA" value="0" />
                   <property role="2XbFU$" value="*" />
                   <property role="2XbFUF" value="0" />
-                  <property role="2XbFUJ" value="4" />
-                  <node concept="3B6VN0" id="5SyC5TNQHqt" role="2oAawB">
+                  <property role="2XbFUJ" value="1" />
+                  <node concept="3B6VN0" id="7O7EsH2R43I" role="2oAawB">
                     <ref role="3B56nS" node="5SyC5TNQHqW" resolve="Point1" />
                   </node>
-                  <node concept="2oAaXF" id="5SyC5TNQHqu" role="2oAawD">
-                    <ref role="3aaZtz" node="5SyC5TNQHql" resolve="PS0" />
-                  </node>
-                  <node concept="2oAawe" id="5SyC5TNQHqv" role="2oAawy">
-                    <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
-                  </node>
-                </node>
-                <node concept="2oAaUa" id="5SyC5TNQHqw" role="2oAaxa">
-                  <node concept="2oAaXF" id="5SyC5TNQHqy" role="2oAawD">
-                    <ref role="3aaZtz" node="5SyC5TNQHql" resolve="PS0" />
-                  </node>
-                  <node concept="2oAawe" id="5SyC5TNQHqz" role="2oAawy">
-                    <ref role="3aaZtz" node="5SyC5TNJ3UI" resolve="segment" />
-                  </node>
-                  <node concept="2_2aQT" id="1DJ_GQZwVHc" role="2oAawB">
+                  <node concept="2_2aQT" id="7O7EsH2R420" role="2oAawD">
                     <property role="2_1ff3" value="false" />
-                    <node concept="2oAaXF" id="1DJ_GQZxOeb" role="2_2aPN">
+                    <node concept="2oAaXF" id="7O7EsH2R42Z" role="2_2aPN">
                       <ref role="3aaZtz" node="5SyC5TNVvnm" resolve="Seg" />
                     </node>
-                    <node concept="2oAaXF" id="1DJ_GQZxOeK" role="2_2aPL">
+                    <node concept="2oAaXF" id="7O7EsH2R42x" role="2_2aPL">
                       <ref role="3aaZtz" node="5SyC5TNVvjC" resolve="VSeg" />
                     </node>
                   </node>
+                  <node concept="2oAawe" id="7O7EsH2R43q" role="2oAawy">
+                    <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
+                  </node>
                 </node>
-                <node concept="2jq5PB" id="5SyC5TNQHq$" role="2oAaxa" />
-                <node concept="2oAaUa" id="5SyC5TNQHq_" role="2oAaxa">
-                  <node concept="3B6VN0" id="5SyC5TNQHqA" role="2oAawB">
+                <node concept="2oAaUa" id="7O7EsH2R44U" role="2oAaxa">
+                  <property role="2XbFUA" value="0" />
+                  <property role="2XbFU$" value="*" />
+                  <property role="2XbFUF" value="0" />
+                  <property role="2XbFUJ" value="1" />
+                  <node concept="3B6VN0" id="7O7EsH2R45V" role="2oAawB">
                     <ref role="3B56nS" node="5SyC5TNQHqg" resolve="Point2" />
                   </node>
-                  <node concept="2oAaXF" id="5SyC5TNQHqB" role="2oAawD">
-                    <ref role="3aaZtz" node="5SyC5TNQHqn" resolve="PS1" />
-                  </node>
-                  <node concept="2oAawe" id="5SyC5TNQHqC" role="2oAawy">
-                    <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
-                  </node>
-                </node>
-                <node concept="2oAaUa" id="5SyC5TNQHqD" role="2oAaxa">
-                  <node concept="2oAaXF" id="5SyC5TNQHqF" role="2oAawD">
-                    <ref role="3aaZtz" node="5SyC5TNQHqn" resolve="PS1" />
-                  </node>
-                  <node concept="2oAawe" id="5SyC5TNQHqG" role="2oAawy">
-                    <ref role="3aaZtz" node="5SyC5TNJ3UI" resolve="segment" />
-                  </node>
-                  <node concept="2_2aQT" id="1DJ_GQZC$1$" role="2oAawB">
+                  <node concept="2_2aQT" id="7O7EsH2R44W" role="2oAawD">
                     <property role="2_1ff3" value="false" />
-                    <node concept="2oAaXF" id="1DJ_GQZC$1_" role="2_2aPN">
+                    <node concept="2oAaXF" id="7O7EsH2R44X" role="2_2aPN">
                       <ref role="3aaZtz" node="5SyC5TNVvnm" resolve="Seg" />
                     </node>
-                    <node concept="2oAaXF" id="1DJ_GQZC$1A" role="2_2aPL">
+                    <node concept="2oAaXF" id="7O7EsH2R44Y" role="2_2aPL">
                       <ref role="3aaZtz" node="5SyC5TNVvjC" resolve="VSeg" />
                     </node>
+                  </node>
+                  <node concept="2oAawe" id="7O7EsH2R44Z" role="2oAawy">
+                    <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
                   </node>
                 </node>
                 <node concept="3$mKog" id="5SyC5TNQHqH" role="2oAaxa" />
@@ -611,62 +489,34 @@
               </node>
               <node concept="x0Shc" id="3sVMGaa1QC$" role="3B56nf">
                 <ref role="19kf5F" node="5SyC5TNIPKX" resolve="TrainTracks" />
-                <node concept="37tsfw" id="3sVMGaa1QCN" role="2oAaxa">
-                  <property role="TrG5h" value="PS0" />
-                  <node concept="2oAaXF" id="3sVMGaa1QCO" role="2oAawq">
-                    <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
-                  </node>
-                </node>
-                <node concept="37tsfw" id="3sVMGaa1QCP" role="2oAaxa">
-                  <property role="TrG5h" value="PS1" />
-                  <node concept="2oAaXF" id="3sVMGaa1QCQ" role="2oAawq">
-                    <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
-                  </node>
-                </node>
-                <node concept="3$mKog" id="3sVMGaa1QDV" role="2oAaxa" />
-                <node concept="2oAaUa" id="3sVMGaa1QFZ" role="2oAaxa">
-                  <node concept="3B6VN0" id="3sVMGaa1QG0" role="2oAawB">
+                <node concept="2oAaUa" id="7O7EsH2R4io" role="2oAaxa">
+                  <property role="2XbFUA" value="0" />
+                  <property role="2XbFU$" value="*" />
+                  <property role="2XbFUF" value="0" />
+                  <property role="2XbFUJ" value="1" />
+                  <node concept="3B6VN0" id="7O7EsH2R4ip" role="2oAawB">
                     <ref role="3B56nS" node="3sVMGaa1CQA" resolve="Point1" />
                   </node>
-                  <node concept="2oAaXF" id="3sVMGaa1QG1" role="2oAawD">
-                    <ref role="3aaZtz" node="3sVMGaa1QCN" resolve="PS0" />
+                  <node concept="3B6VN0" id="7O7EsH2R4jK" role="2oAawD">
+                    <ref role="3B56nS" node="3sVMGaa1CQt" resolve="Segment" />
                   </node>
-                  <node concept="2oAawe" id="3sVMGaa1QG2" role="2oAawy">
+                  <node concept="2oAawe" id="7O7EsH2R4it" role="2oAawy">
                     <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
                   </node>
                 </node>
-                <node concept="2oAaUa" id="3sVMGaa1QG3" role="2oAaxa">
-                  <node concept="2oAaXF" id="3sVMGaa1QG4" role="2oAawD">
-                    <ref role="3aaZtz" node="3sVMGaa1QCN" resolve="PS0" />
-                  </node>
-                  <node concept="2oAawe" id="3sVMGaa1QG5" role="2oAawy">
-                    <ref role="3aaZtz" node="5SyC5TNJ3UI" resolve="segment" />
-                  </node>
-                  <node concept="3B6VN0" id="3sVMGaa1R6q" role="2oAawB">
-                    <ref role="3B56nS" node="3sVMGaa1CQt" resolve="Segment" />
-                  </node>
-                </node>
-                <node concept="2jq5PB" id="3sVMGaa1QG9" role="2oAaxa" />
-                <node concept="2oAaUa" id="3sVMGaa1QGa" role="2oAaxa">
-                  <node concept="3B6VN0" id="3sVMGaa1QGb" role="2oAawB">
+                <node concept="2oAaUa" id="7O7EsH2R4iu" role="2oAaxa">
+                  <property role="2XbFUA" value="0" />
+                  <property role="2XbFU$" value="*" />
+                  <property role="2XbFUF" value="0" />
+                  <property role="2XbFUJ" value="1" />
+                  <node concept="3B6VN0" id="7O7EsH2R4iv" role="2oAawB">
                     <ref role="3B56nS" node="3sVMGaa1CQJ" resolve="Point2" />
                   </node>
-                  <node concept="2oAaXF" id="3sVMGaa1QGc" role="2oAawD">
-                    <ref role="3aaZtz" node="3sVMGaa1QCP" resolve="PS1" />
-                  </node>
-                  <node concept="2oAawe" id="3sVMGaa1QGd" role="2oAawy">
-                    <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
-                  </node>
-                </node>
-                <node concept="2oAaUa" id="3sVMGaa1QGe" role="2oAaxa">
-                  <node concept="2oAaXF" id="3sVMGaa1QGf" role="2oAawD">
-                    <ref role="3aaZtz" node="3sVMGaa1QCP" resolve="PS1" />
-                  </node>
-                  <node concept="2oAawe" id="3sVMGaa1QGg" role="2oAawy">
-                    <ref role="3aaZtz" node="5SyC5TNJ3UI" resolve="segment" />
-                  </node>
-                  <node concept="3B6VN0" id="3sVMGaa1R79" role="2oAawB">
+                  <node concept="3B6VN0" id="7O7EsH2R4k1" role="2oAawD">
                     <ref role="3B56nS" node="3sVMGaa1CQt" resolve="Segment" />
+                  </node>
+                  <node concept="2oAawe" id="7O7EsH2R4iz" role="2oAawy">
+                    <ref role="3aaZtz" node="5SyC5TNJ3U5" resolve="point" />
                   </node>
                 </node>
                 <node concept="3$mKog" id="3sVMGaa1QGk" role="2oAaxa" />
@@ -941,34 +791,29 @@
       <node concept="2oAaW5" id="5SyC5TNJ3$0" role="2oAaxa">
         <property role="TrG5h" value="Point" />
       </node>
-      <node concept="2oAaW5" id="5SyC5TNJ3$g" role="2oAaxa">
-        <property role="TrG5h" value="PointOfSeg" />
-      </node>
       <node concept="2oAaW5" id="5SyC5TNJ3$p" role="2oAaxa">
         <property role="TrG5h" value="Int" />
       </node>
       <node concept="2jq5PB" id="5SyC5TNJ3$D" role="2oAaxa" />
       <node concept="2oAaUZ" id="5SyC5TNJ3U5" role="2oAaxa">
         <property role="TrG5h" value="point" />
+        <property role="2XbFUA" value="0..*" />
+        <property role="2XbFU$" value="0..1" />
+        <property role="2XbFUF" value="2" />
+        <property role="2XbFUJ" value="2" />
         <node concept="2oAaXF" id="5SyC5TNJ3Uv" role="2oAawB">
           <ref role="3aaZtz" node="5SyC5TNJ3$0" resolve="Point" />
         </node>
-        <node concept="2oAaXF" id="5SyC5TNJ3Ul" role="2oAawD">
-          <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
-        </node>
-      </node>
-      <node concept="2oAaUZ" id="5SyC5TNJ3UI" role="2oAaxa">
-        <property role="TrG5h" value="segment" />
-        <node concept="2oAaXF" id="5SyC5TNJ3V8" role="2oAawB">
+        <node concept="2oAaXF" id="7O7EsH2R35p" role="2oAawD">
           <ref role="3aaZtz" node="5SyC5TNIPRJ" resolve="Segment" />
         </node>
-        <node concept="2oAaXF" id="5SyC5TNJ3V1" role="2oAawD">
-          <ref role="3aaZtz" node="5SyC5TNJ3$g" resolve="PointOfSeg" />
-        </node>
       </node>
-      <node concept="2jq5PB" id="5SyC5TNJ3Ve" role="2oAaxa" />
       <node concept="2oAaUZ" id="5SyC5TNJ3Wu" role="2oAaxa">
         <property role="TrG5h" value="length" />
+        <property role="2XbFUA" value="0" />
+        <property role="2XbFU$" value="*" />
+        <property role="2XbFUF" value="1" />
+        <property role="2XbFUJ" value="1" />
         <node concept="2oAaXF" id="5SyC5TNJ3WY" role="2oAawB">
           <ref role="3aaZtz" node="5SyC5TNJ3$p" resolve="Int" />
         </node>

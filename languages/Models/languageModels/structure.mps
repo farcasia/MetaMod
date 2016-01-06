@@ -85,25 +85,13 @@
   <node concept="1TIwiD" id="7zWtwVwpdy4">
     <property role="TrG5h" value="Relation" />
     <ref role="1TJDcQ" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
-    <node concept="1TJgyi" id="7O7EsH2P4tC" role="1TKVEl">
-      <property role="TrG5h" value="hide" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyi" id="3sVMGaa5nh$" role="1TKVEl">
-      <property role="TrG5h" value="minSource" />
-      <ref role="AX2Wp" node="3sVMGaa5n9g" resolve="Multiplicity" />
+      <property role="TrG5h" value="sourceCard" />
+      <ref role="AX2Wp" node="7O7EsH2WkUJ" resolve="Multiplicity" />
     </node>
     <node concept="1TJgyi" id="3sVMGaa5nhA" role="1TKVEl">
-      <property role="TrG5h" value="maxSource" />
-      <ref role="AX2Wp" node="3sVMGaa5n9g" resolve="Multiplicity" />
-    </node>
-    <node concept="1TJgyi" id="3sVMGaa5nhD" role="1TKVEl">
-      <property role="TrG5h" value="minTarget" />
-      <ref role="AX2Wp" node="3sVMGaa5n9g" resolve="Multiplicity" />
-    </node>
-    <node concept="1TJgyi" id="3sVMGaa5nhH" role="1TKVEl">
-      <property role="TrG5h" value="maxTarget" />
-      <ref role="AX2Wp" node="3sVMGaa5n9g" resolve="Multiplicity" />
+      <property role="TrG5h" value="targetCard" />
+      <ref role="AX2Wp" node="7O7EsH2WkUJ" resolve="Multiplicity" />
     </node>
     <node concept="1TJgyj" id="7zWtwVwpdSB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -458,9 +446,9 @@
       <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
   </node>
-  <node concept="Az7Fb" id="3sVMGaa5n9g">
+  <node concept="Az7Fb" id="7O7EsH2WkUJ">
     <property role="TrG5h" value="Multiplicity" />
-    <property role="FLfZY" value="[0-9]|[1-9][0-9]+|[*]" />
+    <property role="FLfZY" value="[[0-9]|[1-9][0..9]+]..[[0-9]|[1-9][0..9]+|*]" />
   </node>
 </model>
 
