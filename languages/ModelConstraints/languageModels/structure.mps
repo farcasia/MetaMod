@@ -118,7 +118,7 @@
     <property role="TrG5h" value="ConceptsOfType" />
     <property role="34LRSv" value="conceptsOfType" />
     <property role="3GE5qa" value="Operations" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="tp2q:gK_YKtE" resolve="ListType" />
     <node concept="1TJgyj" id="1ky6Xl0JyVa" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="conceptType" />
@@ -133,7 +133,7 @@
     <property role="3GE5qa" value="Operations" />
     <property role="TrG5h" value="IsTypeOf" />
     <property role="34LRSv" value="isTypeOf" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="tpee:f_0P_4Y" resolve="BooleanType" />
     <node concept="1TJgyj" id="1ky6Xl0Obv3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="conceptType" />
