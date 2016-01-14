@@ -147,5 +147,35 @@
   <node concept="PlHQZ" id="48EbtxmlfXk">
     <property role="TrG5h" value="IModuleConstraintsContents" />
   </node>
+  <node concept="1TIwiD" id="48EbtxmrRJI">
+    <property role="3GE5qa" value="Operations" />
+    <property role="TrG5h" value="AsSource" />
+    <property role="34LRSv" value="asSource" />
+    <ref role="1TJDcQ" to="tp2q:gK_YKtE" resolve="ListType" />
+    <node concept="1TJgyj" id="48EbtxmrRK9" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="refAssoc" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
+    </node>
+    <node concept="PrWs8" id="48EbtxmtmPj" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="48EbtxmtnqF">
+    <property role="3GE5qa" value="Operations" />
+    <property role="TrG5h" value="AsTarget" />
+    <property role="34LRSv" value="asTarget" />
+    <ref role="1TJDcQ" to="tp2q:gK_YKtE" resolve="ListType" />
+    <node concept="1TJgyj" id="48EbtxmtnqG" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="refAssoc" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
+    </node>
+    <node concept="PrWs8" id="48EbtxmtnsO" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+  </node>
 </model>
 

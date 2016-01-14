@@ -14,9 +14,14 @@
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="urs3" ref="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -32,6 +37,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -40,6 +46,9 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
@@ -62,6 +71,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
         <child id="1144226360166" name="iterable" index="1DdaDG" />
       </concept>
@@ -86,6 +98,12 @@
       </concept>
     </language>
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="ModelConstraints">
+      <concept id="4767673562711423982" name="ModelConstraints.structure.AsSource" flags="ig" index="khloQ">
+        <reference id="4767673562711424009" name="refAssoc" index="khl7h" />
+      </concept>
+      <concept id="4767673562711815851" name="ModelConstraints.structure.AsTarget" flags="ig" index="knPHN">
+        <reference id="4767673562711815852" name="refAssoc" index="knPHO" />
+      </concept>
       <concept id="8976227254846920304" name="ModelConstraints.structure.ModelConstraints" flags="ng" index="CLm5h">
         <child id="8976227254846920305" name="groupConstraints" index="CLm5g" />
       </concept>
@@ -167,7 +185,60 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="48EbtxmoS1y" role="3cqZAp" />
+        <node concept="3cpWs8" id="48Ebtxmt4Co" role="3cqZAp">
+          <node concept="3cpWsn" id="48Ebtxmt4Cr" role="3cpWs9">
+            <property role="TrG5h" value="points" />
+            <node concept="_YKpA" id="48Ebtxmt4Ck" role="1tU5fm">
+              <node concept="CMjq$" id="48Ebtxmt4U$" role="_ZDj9">
+                <ref role="CMYPG" to="ubi7:5SyC5TNJ3$0" resolve="Point" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="48Ebtxmtmxp" role="3cqZAp">
+          <node concept="3cpWsn" id="48Ebtxmtmxs" role="3cpWs9">
+            <property role="TrG5h" value="lengths" />
+            <node concept="_YKpA" id="48EbtxmtK4A" role="1tU5fm">
+              <node concept="3uibUv" id="48EbtxmtK9U" role="_ZDj9">
+                <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="48Ebtxmtmuo" role="3cqZAp" />
+        <node concept="3clFbF" id="48EbtxmtKfw" role="3cqZAp">
+          <node concept="37vLTI" id="48EbtxmtKwg" role="3clFbG">
+            <node concept="2OqwBi" id="48EbtxmtKy9" role="37vLTx">
+              <node concept="37vLTw" id="48EbtxmtKxw" role="2Oq$k0">
+                <ref role="3cqZAo" node="48EbtxmoS0R" resolve="segment" />
+              </node>
+              <node concept="khloQ" id="48EbtxmtOcF" role="2OqNvi">
+                <ref role="khl7h" to="ubi7:7O7EsH38i02" resolve="point" />
+                <node concept="CMjq$" id="48EbtxmtOcG" role="_ZDj9" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="48EbtxmtKfu" role="37vLTJ">
+              <ref role="3cqZAo" node="48Ebtxmt4Cr" resolve="points" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="48EbtxmtOgf" role="3cqZAp">
+          <node concept="37vLTI" id="48EbtxmtOHI" role="3clFbG">
+            <node concept="2OqwBi" id="48EbtxmtOJB" role="37vLTx">
+              <node concept="37vLTw" id="48EbtxmtOIY" role="2Oq$k0">
+                <ref role="3cqZAo" node="48EbtxmoS0R" resolve="segment" />
+              </node>
+              <node concept="knPHN" id="48EbtxmtOQ7" role="2OqNvi">
+                <ref role="knPHO" to="ubi7:7O7EsH38i02" resolve="point" />
+                <node concept="CMjq$" id="48EbtxmtOQ8" role="_ZDj9" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="48EbtxmtOgd" role="37vLTJ">
+              <ref role="3cqZAo" node="48Ebtxmtmxs" resolve="lengths" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="48EbtxmtK38" role="3cqZAp" />
         <node concept="3clFbJ" id="48EbtxmoRZP" role="3cqZAp">
           <node concept="3clFbS" id="48EbtxmoRZR" role="3clFbx">
             <node concept="3cpWs6" id="48EbtxmoUJZ" role="3cqZAp">
