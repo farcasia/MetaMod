@@ -6,6 +6,10 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)</dependency>
+    <dependency reexport="false">9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>b6269b38-266c-4c72-855f-f9773fac7a5c(LambdaCalculus)</usedLanguage>
     <usedLanguage>ae311dd6-db78-4e5e-a31b-7988fcde0010(Modules)</usedLanguage>
