@@ -75,6 +75,7 @@
     <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
     <dependency reexport="false">b6269b38-266c-4c72-855f-f9773fac7a5c(LambdaCalculus)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">9e7f7c3c-cbfb-4bd7-9359-5a9cee6e2a7c(RuntimeModelConstraints)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>b6269b38-266c-4c72-855f-f9773fac7a5c(LambdaCalculus)</usedLanguage>

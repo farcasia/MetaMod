@@ -53,11 +53,11 @@
     <node concept="PrWs8" id="48Ebtxmlpja" role="PzmwI">
       <ref role="PrY4T" node="48EbtxmlfXk" resolve="IModuleConstraintsContents" />
     </node>
-    <node concept="1TJgyj" id="7MhXM5kjFTc" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="groupList" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="7MhXM5kmMIO" resolve="GroupList" />
+    <node concept="1TJgyj" id="1E5i917K6pA" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="group" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     </node>
   </node>
   <node concept="1TIwiD" id="7MhXM5kl9pK">
