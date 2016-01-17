@@ -17,6 +17,7 @@
       <dependencies>
         <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
         <dependency reexport="true">9e7f7c3c-cbfb-4bd7-9359-5a9cee6e2a7c(RuntimeModelConstraints)</dependency>
+        <dependency reexport="false">8a5ffd84-4b2e-475c-803b-24d3ac9331ee(ModelConstraints)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
@@ -52,6 +53,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
+    <dependency reexport="false">d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
