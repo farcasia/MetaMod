@@ -11,6 +11,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/CaseStudy/CaseStudy.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Ecore/Ecore.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/EvaluationLambdaTerms/EvaluationLambdaTerms.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/FamiliarDSL/FamiliarDSL.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/LambdaCalculusExperiments/LambdaCalculusExperiments.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/LambdaCalculusSolution/LambdaCalculusSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/MetaMod/MetaMod.msd" folder="" />
