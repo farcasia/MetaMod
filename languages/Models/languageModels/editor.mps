@@ -228,12 +228,6 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
       <concept id="1226359078165" name="jetbrains.mps.lang.smodel.structure.LinkRefExpression" flags="nn" index="28GBK8">
@@ -1724,12 +1718,6 @@
               </node>
             </node>
           </node>
-          <node concept="34ab3g" id="1wyFeaksxG$" role="3cqZAp">
-            <property role="35gtTG" value="warn" />
-            <node concept="Xl_RD" id="1wyFeaksxGA" role="34bqiv">
-              <property role="Xl_RC" value="Evaluate ..." />
-            </node>
-          </node>
           <node concept="3cpWs8" id="210OVEYmyJj" role="3cqZAp">
             <node concept="3cpWsn" id="210OVEYmyJm" role="3cpWs9">
               <property role="TrG5h" value="lt" />
@@ -1746,12 +1734,6 @@
                   <node concept="0GJ7k" id="1wyFeakm6wf" role="37wK5m" />
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="34ab3g" id="1wyFeaksy6G" role="3cqZAp">
-            <property role="35gtTG" value="warn" />
-            <node concept="Xl_RD" id="1wyFeaksy6I" role="34bqiv">
-              <property role="Xl_RC" value="Evaluated ..." />
             </node>
           </node>
           <node concept="3clFbF" id="210OVEYm$su" role="3cqZAp">
