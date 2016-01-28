@@ -10,8 +10,6 @@
     <import index="9a8" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
     <import index="jsgz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
     <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
-    <import index="1cio" ref="ce9c9ba2-4d34-47b0-9248-280025ca8256/f:java_stub#ce9c9ba2-4d34-47b0-9248-280025ca8256#com.github.jabbalaci.graphviz(Models/com.github.jabbalaci.graphviz@java_stub)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="z64h" ref="r:52e1580a-16d3-4b41-b86d-411ead3ce794(Models.behavior)" />
     <import index="9lyo" ref="r:c0d41959-8f5c-452f-90c5-757e1c169078(LambdaCalculus.structure)" />
     <import index="22fv" ref="r:1b829468-420f-4d70-8c6d-ddde8cae701d(LambdaCalculus.behavior)" />
@@ -228,6 +226,12 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1720,6 +1724,12 @@
               </node>
             </node>
           </node>
+          <node concept="34ab3g" id="1wyFeaksxG$" role="3cqZAp">
+            <property role="35gtTG" value="warn" />
+            <node concept="Xl_RD" id="1wyFeaksxGA" role="34bqiv">
+              <property role="Xl_RC" value="Evaluate ..." />
+            </node>
+          </node>
           <node concept="3cpWs8" id="210OVEYmyJj" role="3cqZAp">
             <node concept="3cpWsn" id="210OVEYmyJm" role="3cpWs9">
               <property role="TrG5h" value="lt" />
@@ -1738,6 +1748,12 @@
               </node>
             </node>
           </node>
+          <node concept="34ab3g" id="1wyFeaksy6G" role="3cqZAp">
+            <property role="35gtTG" value="warn" />
+            <node concept="Xl_RD" id="1wyFeaksy6I" role="34bqiv">
+              <property role="Xl_RC" value="Evaluated ..." />
+            </node>
+          </node>
           <node concept="3clFbF" id="210OVEYm$su" role="3cqZAp">
             <node concept="37vLTI" id="210OVEYm_4r" role="3clFbG">
               <node concept="37vLTw" id="23X6BHfYipZ" role="37vLTx">
@@ -1751,7 +1767,7 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="YBsKAlHYiq" role="3cqZAp" />
+          <node concept="3clFbH" id="1wyFeaksxU7" role="3cqZAp" />
           <node concept="1DcWWT" id="210OVEY5jrD" role="3cqZAp">
             <node concept="3clFbS" id="210OVEY5jrF" role="2LFqv$">
               <node concept="3clFbJ" id="3DVAlFLfPRR" role="3cqZAp">

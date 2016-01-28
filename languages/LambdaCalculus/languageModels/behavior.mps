@@ -3,19 +3,15 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="9lyo" ref="r:c0d41959-8f5c-452f-90c5-757e1c169078(LambdaCalculus.structure)" />
-    <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1001,6 +997,9 @@
                       <node concept="37vLTw" id="54Bccq7e9cO" role="37wK5m">
                         <ref role="3cqZAo" node="54Bccq7e7Ug" resolve="equivalences" />
                       </node>
+                      <node concept="37vLTw" id="1lXHIb0j8z5" role="37wK5m">
+                        <ref role="3cqZAo" node="1wyFeakkwqu" resolve="initiator" />
+                      </node>
                     </node>
                   </node>
                   <node concept="2OqwBi" id="54Bccq7e8cu" role="37vLTJ">
@@ -1023,6 +1022,9 @@
                       <ref role="37wK5l" node="54Bccq7dLc8" resolve="nor" />
                       <node concept="37vLTw" id="54Bccq7e8Ts" role="37wK5m">
                         <ref role="3cqZAo" node="54Bccq7e7Ug" resolve="equivalences" />
+                      </node>
+                      <node concept="37vLTw" id="1lXHIb0j8BX" role="37wK5m">
+                        <ref role="3cqZAo" node="1wyFeakkwqu" resolve="initiator" />
                       </node>
                     </node>
                   </node>

@@ -9,11 +9,8 @@
   <imports>
     <import index="22fv" ref="r:1b829468-420f-4d70-8c6d-ddde8cae701d(LambdaCalculus.behavior)" />
     <import index="9lyo" ref="r:c0d41959-8f5c-452f-90c5-757e1c169078(LambdaCalculus.structure)" />
-    <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="2mcz" ref="r:23e4f1fd-a9d1-4b09-a8c1-3a24e82c6a63(Modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
-    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -56,6 +53,9 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -152,6 +152,12 @@
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -829,6 +835,12 @@
       </node>
       <node concept="3Tm1VV" id="20nTeIl4ChY" role="1B3o_S" />
       <node concept="3clFbS" id="20nTeIl4Ci1" role="3clF47">
+        <node concept="34ab3g" id="4O2XG3bV8AP" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="4O2XG3bV8AR" role="34bqiv">
+            <property role="Xl_RC" value="cbn Call LAppl" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="20nTeIl4JjT" role="3cqZAp">
           <node concept="3cpWsn" id="20nTeIl4JjW" role="3cpWs9">
             <property role="TrG5h" value="left" />
@@ -946,6 +958,12 @@
               </node>
             </node>
             <node concept="3clFbS" id="20nTeIlLSQP" role="3eOfB_">
+              <node concept="34ab3g" id="4O2XG3bZ_AH" role="3cqZAp">
+                <property role="35gtTG" value="warn" />
+                <node concept="Xl_RD" id="4O2XG3bZ_AJ" role="34bqiv">
+                  <property role="Xl_RC" value="cbn Get into refToModule defines" />
+                </node>
+              </node>
               <node concept="3cpWs8" id="7naV5dypCX1" role="3cqZAp">
                 <node concept="3cpWsn" id="7naV5dypCX4" role="3cpWs9">
                   <property role="TrG5h" value="lAbsModule" />
