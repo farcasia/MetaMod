@@ -1402,6 +1402,38 @@
             </node>
             <node concept="1DcWWT" id="20nTeIlcw4j" role="3cqZAp">
               <node concept="3clFbS" id="20nTeIlcw4k" role="2LFqv$">
+                <node concept="3SKdUt" id="1wyFeakb4wL" role="3cqZAp">
+                  <node concept="3SKdUq" id="1wyFeakb4wZ" role="3SKWNk">
+                    <property role="3SKdUp" value="In the case of modules, we copy their definition during nor, so, if there is no equivalent for the" />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="1wyFeakb4Bu" role="3cqZAp">
+                  <node concept="3SKdUq" id="1wyFeakb4BK" role="3SKWNk">
+                    <property role="3SKdUp" value="module in the reference, it means that it is already the good reference." />
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="1wyFeakb4C4" role="3cqZAp">
+                  <node concept="3clFbS" id="1wyFeakb4C6" role="3clFbx">
+                    <node concept="3N13vt" id="1wyFeakbgPh" role="3cqZAp" />
+                  </node>
+                  <node concept="2OqwBi" id="1wyFeakbgu2" role="3clFbw">
+                    <node concept="3EllGN" id="1wyFeakb5cz" role="2Oq$k0">
+                      <node concept="2OqwBi" id="1wyFeakb5fP" role="3ElVtu">
+                        <node concept="37vLTw" id="1wyFeakb5du" role="2Oq$k0">
+                          <ref role="3cqZAo" node="20nTeIlcw4w" resolve="refNamedModule" />
+                        </node>
+                        <node concept="3TrEf2" id="1wyFeakbfpg" role="2OqNvi">
+                          <ref role="3Tt5mk" to="2mcz:2DitZGYpVEh" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="1wyFeakb4Cy" role="3ElQJh">
+                        <ref role="3cqZAo" node="20nTeIlbVNX" resolve="equivalences" />
+                      </node>
+                    </node>
+                    <node concept="3w_OXm" id="1wyFeakbgLX" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3clFbH" id="1wyFeakbniV" role="3cqZAp" />
                 <node concept="3clFbF" id="20nTeIlcw4l" role="3cqZAp">
                   <node concept="37vLTI" id="20nTeIlcw4m" role="3clFbG">
                     <node concept="1PxgMI" id="20nTeIlcw4n" role="37vLTx">

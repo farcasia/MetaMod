@@ -13,6 +13,7 @@
     <import index="2mcz" ref="r:23e4f1fd-a9d1-4b09-a8c1-3a24e82c6a63(Modules.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
+    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -240,7 +241,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="20nTeIl5zfA" role="3cqZAp" />
+        <node concept="3clFbH" id="44n4AYS2u6a" role="3cqZAp" />
         <node concept="3clFbF" id="20nTeIl9Z7t" role="3cqZAp">
           <node concept="37vLTI" id="20nTeIla0Vb" role="3clFbG">
             <node concept="37vLTw" id="20nTeIla0Zl" role="37vLTx">
@@ -284,7 +285,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1eHliGiAhVp" role="3cqZAp" />
+        <node concept="3clFbH" id="44n4AYS2B3Q" role="3cqZAp" />
         <node concept="3clFbF" id="54Bccq7feUL" role="3cqZAp">
           <node concept="37vLTI" id="54Bccq7feUM" role="3clFbG">
             <node concept="37vLTw" id="54Bccq7feUN" role="37vLTx">
