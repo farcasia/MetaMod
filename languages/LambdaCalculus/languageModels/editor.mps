@@ -32,6 +32,13 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -217,6 +224,9 @@
         </node>
         <node concept="3F1sOY" id="6oGnPI1ewP4" role="3EZMnx">
           <ref role="1NtTu8" to="9lyo:6oGnPI1e3Ei" />
+          <node concept="Vb9p2" id="1wyFeakjLNj" role="3F10Kt">
+            <property role="Vbekb" value="BOLD" />
+          </node>
         </node>
         <node concept="3F0ifn" id="6oGnPI1ewQB" role="3EZMnx">
           <property role="3F0ifm" value="." />
@@ -448,6 +458,12 @@
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
+      </node>
+      <node concept="VechU" id="1wyFeakjYCM" role="3F10Kt">
+        <property role="Vb096" value="DARK_MAGENTA" />
+      </node>
+      <node concept="Vb9p2" id="1wyFeakjYFy" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
       </node>
     </node>
   </node>
