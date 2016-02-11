@@ -5,13 +5,14 @@
     <use id="b6269b38-266c-4c72-855f-f9773fac7a5c" name="LambdaCalculus" version="-1" />
     <use id="ae311dd6-db78-4e5e-a31b-7988fcde0010" name="Modules" version="-1" />
     <use id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models" version="-1" />
-    <use id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="ModelConstraints" version="-1" />
+    <use id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <generationPart ref="8a5ffd84-4b2e-475c-803b-24d3ac9331ee(ModelConstraints)" />
+    <use id="47849989-c2df-46a8-aba5-1c5a21bbef1f" name="Constraints" version="-1" />
+    <generationPart ref="8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)" />
   </languages>
   <imports />
   <registry>
@@ -71,6 +72,9 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
+    </language>
+    <language id="47849989-c2df-46a8-aba5-1c5a21bbef1f" name="Constraints">
+      <concept id="5319102428748859495" name="Constraints.structure.ConstraintsContainer" flags="ng" index="1GFRst" />
     </language>
     <language id="ae311dd6-db78-4e5e-a31b-7988fcde0010" name="Modules">
       <concept id="3049631818650728102" name="Modules.structure.ModuleComposite" flags="ng" index="kds5t">
@@ -160,20 +164,20 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="ModelConstraints">
-      <concept id="4767673562711815851" name="ModelConstraints.structure.AsTarget" flags="ig" index="knPHN">
+    <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods">
+      <concept id="4767673562711815851" name="GenericGroupMethods.structure.AsTarget" flags="ig" index="knPHN">
         <reference id="4767673562711815852" name="refAssoc" index="knPHO" />
       </concept>
-      <concept id="8976227254846920304" name="ModelConstraints.structure.ModelConstraints" flags="ng" index="CLm5h">
+      <concept id="8976227254846920304" name="GenericGroupMethods.structure.MethodsContainer" flags="ng" index="CLm5h">
         <reference id="5319102428747287702" name="group" index="1GHRfG" />
-        <child id="8976227254846920305" name="groupConstraints" index="CLm5g" />
+        <child id="8976227254846920305" name="contents" index="CLm5g" />
       </concept>
-      <concept id="8976227254847193477" name="ModelConstraints.structure.ConceptType" flags="ig" index="CMjq$">
+      <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$">
         <reference id="8976227254847281741" name="namedConcept" index="CMYPG" />
       </concept>
-      <concept id="8976227254846537291" name="ModelConstraints.structure.GroupConstraint" flags="ng" index="CRO_E" />
-      <concept id="1522810226732341093" name="ModelConstraints.structure.ValueModel" flags="ig" index="1l_8MK" />
-      <concept id="1522810226732785365" name="ModelConstraints.structure.ConceptsOfType" flags="ig" index="1lBOk0">
+      <concept id="8976227254846537291" name="GenericGroupMethods.structure.Method" flags="ng" index="CRO_E" />
+      <concept id="1522810226732341093" name="GenericGroupMethods.structure.ValueModel" flags="ig" index="1l_8MK" />
+      <concept id="1522810226732785365" name="GenericGroupMethods.structure.ConceptsOfType" flags="ig" index="1lBOk0">
         <child id="1522810226732838602" name="conceptType" index="1lB3kv" />
       </concept>
     </language>
@@ -498,100 +502,6 @@
         </node>
         <node concept="2oAaXF" id="2SWtdi23MxK" role="2oAawD">
           <ref role="3aaZtz" node="2SWtdi23Mxu" resolve="VS1" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="CLm5h" id="1ky6Xl0PBss">
-    <ref role="1GHRfG" node="5SyC5TNIPKX" resolve="TrainTracks" />
-    <node concept="CRO_E" id="4BhfRC_saMu" role="CLm5g">
-      <property role="TrG5h" value="switchWith3Segs" />
-      <node concept="37vLTG" id="4BhfRC_saMv" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
-        <node concept="1l_8MK" id="4BhfRC_saMw" role="1tU5fm" />
-      </node>
-      <node concept="10P_77" id="4BhfRC_saMx" role="3clF45" />
-      <node concept="3clFbS" id="4BhfRC_saMy" role="3clF47">
-        <node concept="3cpWs8" id="4BhfRC_saP1" role="3cqZAp">
-          <node concept="3cpWsn" id="4BhfRC_saP2" role="3cpWs9">
-            <property role="TrG5h" value="lista" />
-            <node concept="_YKpA" id="4BhfRC_saP3" role="1tU5fm">
-              <node concept="CMjq$" id="4BhfRC_saP4" role="_ZDj9">
-                <ref role="CMYPG" node="2SWtdi23Kdh" resolve="Switch" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="4BhfRC_saP5" role="33vP2m">
-              <node concept="37vLTw" id="4BhfRC_saP6" role="2Oq$k0">
-                <ref role="3cqZAo" node="4BhfRC_saMv" resolve="valueModel" />
-              </node>
-              <node concept="1lBOk0" id="4BhfRC_saP7" role="2OqNvi">
-                <node concept="CMjq$" id="4BhfRC_saP8" role="_ZDj9" />
-                <node concept="CMjq$" id="4BhfRC_saP9" role="1lB3kv">
-                  <ref role="CMYPG" node="2SWtdi23Kdh" resolve="Switch" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4BhfRC_saPa" role="3cqZAp" />
-        <node concept="1DcWWT" id="4BhfRC_saPb" role="3cqZAp">
-          <node concept="3clFbS" id="4BhfRC_saPc" role="2LFqv$">
-            <node concept="3cpWs8" id="4BhfRC_saPd" role="3cqZAp">
-              <node concept="3cpWsn" id="4BhfRC_saPe" role="3cpWs9">
-                <property role="TrG5h" value="segments" />
-                <node concept="_YKpA" id="4BhfRC_saPf" role="1tU5fm">
-                  <node concept="CMjq$" id="4BhfRC_saPg" role="_ZDj9">
-                    <ref role="CMYPG" node="5SyC5TNIPRJ" resolve="Segment" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="4BhfRC_saPh" role="33vP2m">
-                  <node concept="37vLTw" id="4BhfRC_saPi" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4BhfRC_saPw" resolve="switchPoint" />
-                  </node>
-                  <node concept="knPHN" id="4BhfRC_saPj" role="2OqNvi">
-                    <ref role="knPHO" node="7O7EsH38i02" resolve="point" />
-                    <node concept="CMjq$" id="4BhfRC_saPk" role="_ZDj9" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="4BhfRC_saPl" role="3cqZAp" />
-            <node concept="3clFbJ" id="4BhfRC_saPm" role="3cqZAp">
-              <node concept="3clFbS" id="4BhfRC_saPn" role="3clFbx">
-                <node concept="3cpWs6" id="4BhfRC_saPo" role="3cqZAp">
-                  <node concept="3clFbT" id="4BhfRC_saPp" role="3cqZAk">
-                    <property role="3clFbU" value="false" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3y3z36" id="4BhfRC_saPq" role="3clFbw">
-                <node concept="3cmrfG" id="4BhfRC_saPr" role="3uHU7w">
-                  <property role="3cmrfH" value="3" />
-                </node>
-                <node concept="2OqwBi" id="4BhfRC_saPs" role="3uHU7B">
-                  <node concept="37vLTw" id="4BhfRC_saPt" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4BhfRC_saPe" resolve="segments" />
-                  </node>
-                  <node concept="34oBXx" id="4BhfRC_saPu" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="37vLTw" id="4BhfRC_saPv" role="1DdaDG">
-            <ref role="3cqZAo" node="4BhfRC_saP2" resolve="lista" />
-          </node>
-          <node concept="3cpWsn" id="4BhfRC_saPw" role="1Duv9x">
-            <property role="TrG5h" value="switchPoint" />
-            <node concept="CMjq$" id="4BhfRC_saPx" role="1tU5fm">
-              <ref role="CMYPG" node="2SWtdi23Kdh" resolve="Switch" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4BhfRC_saPy" role="3cqZAp" />
-        <node concept="3cpWs6" id="4BhfRC_saPz" role="3cqZAp">
-          <node concept="3clFbT" id="4BhfRC_saP$" role="3cqZAk">
-            <property role="3clFbU" value="true" />
-          </node>
         </node>
       </node>
     </node>
@@ -1260,6 +1170,100 @@
     <node concept="2jq5PB" id="2SWtdi2eI2q" role="2oAaxa" />
     <node concept="2jq5PB" id="2SWtdi2eGW0" role="2oAaxa" />
     <node concept="2jq5PB" id="2SWtdi2eGJQ" role="2oAaxa" />
+  </node>
+  <node concept="1GFRst" id="4BhfRC_vEcw">
+    <ref role="1GHRfG" node="5SyC5TNIPKX" resolve="TrainTracks" />
+    <node concept="CRO_E" id="4BhfRC_vEvv" role="CLm5g">
+      <property role="TrG5h" value="switchWith3Segs" />
+      <node concept="37vLTG" id="4BhfRC_vEvw" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="4BhfRC_vEvx" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="4BhfRC_vEvy" role="3clF45" />
+      <node concept="3clFbS" id="4BhfRC_vEvz" role="3clF47">
+        <node concept="3cpWs8" id="4BhfRC_vEv$" role="3cqZAp">
+          <node concept="3cpWsn" id="4BhfRC_vEv_" role="3cpWs9">
+            <property role="TrG5h" value="lista" />
+            <node concept="_YKpA" id="4BhfRC_vEvA" role="1tU5fm">
+              <node concept="CMjq$" id="4BhfRC_vEvB" role="_ZDj9">
+                <ref role="CMYPG" node="2SWtdi23Kdh" resolve="Switch" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4BhfRC_vEvC" role="33vP2m">
+              <node concept="37vLTw" id="4BhfRC_vEvD" role="2Oq$k0">
+                <ref role="3cqZAo" node="4BhfRC_vEvw" resolve="valueModel" />
+              </node>
+              <node concept="1lBOk0" id="4BhfRC_vEvE" role="2OqNvi">
+                <node concept="CMjq$" id="4BhfRC_vEvF" role="_ZDj9" />
+                <node concept="CMjq$" id="4BhfRC_vEvG" role="1lB3kv">
+                  <ref role="CMYPG" node="2SWtdi23Kdh" resolve="Switch" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4BhfRC_vEvH" role="3cqZAp" />
+        <node concept="1DcWWT" id="4BhfRC_vEvI" role="3cqZAp">
+          <node concept="3clFbS" id="4BhfRC_vEvJ" role="2LFqv$">
+            <node concept="3cpWs8" id="4BhfRC_vEvK" role="3cqZAp">
+              <node concept="3cpWsn" id="4BhfRC_vEvL" role="3cpWs9">
+                <property role="TrG5h" value="segments" />
+                <node concept="_YKpA" id="4BhfRC_vEvM" role="1tU5fm">
+                  <node concept="CMjq$" id="4BhfRC_vEvN" role="_ZDj9">
+                    <ref role="CMYPG" node="5SyC5TNIPRJ" resolve="Segment" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="4BhfRC_vEvO" role="33vP2m">
+                  <node concept="37vLTw" id="4BhfRC_vEvP" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4BhfRC_vEw3" resolve="switchPoint" />
+                  </node>
+                  <node concept="knPHN" id="4BhfRC_vEvQ" role="2OqNvi">
+                    <ref role="knPHO" node="7O7EsH38i02" resolve="point" />
+                    <node concept="CMjq$" id="4BhfRC_vEvR" role="_ZDj9" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="4BhfRC_vEvS" role="3cqZAp" />
+            <node concept="3clFbJ" id="4BhfRC_vEvT" role="3cqZAp">
+              <node concept="3clFbS" id="4BhfRC_vEvU" role="3clFbx">
+                <node concept="3cpWs6" id="4BhfRC_vEvV" role="3cqZAp">
+                  <node concept="3clFbT" id="4BhfRC_vEvW" role="3cqZAk">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="4BhfRC_vEvX" role="3clFbw">
+                <node concept="3cmrfG" id="4BhfRC_vEvY" role="3uHU7w">
+                  <property role="3cmrfH" value="3" />
+                </node>
+                <node concept="2OqwBi" id="4BhfRC_vEvZ" role="3uHU7B">
+                  <node concept="37vLTw" id="4BhfRC_vEw0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4BhfRC_vEvL" resolve="segments" />
+                  </node>
+                  <node concept="34oBXx" id="4BhfRC_vEw1" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="4BhfRC_vEw2" role="1DdaDG">
+            <ref role="3cqZAo" node="4BhfRC_vEv_" resolve="lista" />
+          </node>
+          <node concept="3cpWsn" id="4BhfRC_vEw3" role="1Duv9x">
+            <property role="TrG5h" value="switchPoint" />
+            <node concept="CMjq$" id="4BhfRC_vEw4" role="1tU5fm">
+              <ref role="CMYPG" node="2SWtdi23Kdh" resolve="Switch" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4BhfRC_vEw5" role="3cqZAp" />
+        <node concept="3cpWs6" id="4BhfRC_vEw6" role="3cqZAp">
+          <node concept="3clFbT" id="4BhfRC_vEw7" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

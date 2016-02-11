@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c379e502-b565-4052-bf15-b57b9592fda0(ModelConstraints.structure)">
+<model ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
@@ -43,21 +43,21 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="7MhXM5kjFTb">
-    <property role="TrG5h" value="GroupConstraint" />
+    <property role="TrG5h" value="Method" />
     <ref role="1TJDcQ" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
     <node concept="PrWs8" id="48Ebtxmlpja" role="PzmwI">
-      <ref role="PrY4T" node="48EbtxmlfXk" resolve="IModuleConstraintsContents" />
+      <ref role="PrY4T" node="48EbtxmlfXk" resolve="IMethodsContainerContents" />
     </node>
   </node>
   <node concept="1TIwiD" id="7MhXM5kl9pK">
-    <property role="TrG5h" value="ModelConstraints" />
+    <property role="TrG5h" value="MethodsContainer" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7MhXM5kl9pL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="groupConstraints" />
+      <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="48EbtxmlfXk" resolve="IModuleConstraintsContents" />
+      <ref role="20lvS9" node="48EbtxmlfXk" resolve="IMethodsContainerContents" />
     </node>
     <node concept="1TJgyj" id="4BhfRC_p$Mm" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -70,7 +70,7 @@
     <property role="TrG5h" value="EmptyLine" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="48Ebtxmlpjy" role="PzmwI">
-      <ref role="PrY4T" node="48EbtxmlfXk" resolve="IModuleConstraintsContents" />
+      <ref role="PrY4T" node="48EbtxmlfXk" resolve="IMethodsContainerContents" />
     </node>
   </node>
   <node concept="1TIwiD" id="7MhXM5kmc65">
@@ -125,7 +125,7 @@
     </node>
   </node>
   <node concept="PlHQZ" id="48EbtxmlfXk">
-    <property role="TrG5h" value="IModuleConstraintsContents" />
+    <property role="TrG5h" value="IMethodsContainerContents" />
   </node>
   <node concept="1TIwiD" id="48EbtxmrRJI">
     <property role="3GE5qa" value="Operations" />

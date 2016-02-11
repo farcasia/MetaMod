@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="GenericGroupMethods" uuid="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" version="0">
+<language namespace="Constraints" uuid="47849989-c2df-46a8-aba5-1c5a21bbef1f" version="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/languageModels" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="GenericGroupMethods#8976227254846526813" uuid="23889f02-f356-4414-ba59-81b2f1c2170d">
+    <generator name="" generatorUID="Constraints#5319102428748697931" uuid="00d93b69-1e44-4a63-b2c9-865772e77440">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot path="${module}/generator/template" />
@@ -15,22 +15,22 @@
       </models>
       <external-templates />
       <dependencies>
+        <dependency reexport="false">23889f02-f356-4414-ba59-81b2f1c2170d(ModelConstraints#8976227254846526813)</dependency>
         <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
-        <dependency reexport="true">9e7f7c3c-cbfb-4bd7-9359-5a9cee6e2a7c(RuntimeModelConstraints)</dependency>
-        <dependency reexport="false">8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</dependency>
+        <dependency reexport="false">9e7f7c3c-cbfb-4bd7-9359-5a9cee6e2a7c(RuntimeModelConstraints)</dependency>
+        <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
-        <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
-        <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
-        <usedLanguage>8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</usedLanguage>
+        <usedLanguage>47849989-c2df-46a8-aba5-1c5a21bbef1f(Constraints)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
-        <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="-1" />
+        <language id="47849989-c2df-46a8-aba5-1c5a21bbef1f" fqName="Constraints" version="-1" />
+        <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -52,8 +52,8 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
-    <dependency reexport="false">d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)</dependency>
+    <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+    <dependency reexport="false">8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -91,9 +91,7 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
   <extendedLanguages>
-    <extendedLanguage>af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)</extendedLanguage>
-    <extendedLanguage>83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)</extendedLanguage>
-    <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>
+    <extendedLanguage>8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</extendedLanguage>
   </extendedLanguages>
 </language>
 

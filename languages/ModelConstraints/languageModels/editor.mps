@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6ab9d6be-c6ea-4d33-9737-24b94595d134(ModelConstraints.editor)">
+<model ref="r:6ab9d6be-c6ea-4d33-9737-24b94595d134(GenericGroupMethods.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(ModelConstraints.structure)" implicit="true" />
+    <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
@@ -104,7 +104,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="7MhXM5kl9q7">
-    <ref role="1XX52x" to="1o5n:7MhXM5kl9pK" resolve="ModelConstraints" />
+    <ref role="1XX52x" to="1o5n:7MhXM5kl9pK" resolve="MethodsContainer" />
     <node concept="3EZMnI" id="4BhfRC_pJy4" role="2wV5jI">
       <node concept="3EZMnI" id="4BhfRC_pJzI" role="3EZMnx">
         <node concept="VPM3Z" id="4BhfRC_pJzK" role="3F10Kt">
@@ -149,14 +149,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="7MhXM5kl9Pn">
-    <ref role="1XX52x" to="1o5n:7MhXM5kjFTb" resolve="GroupConstraint" />
+    <ref role="1XX52x" to="1o5n:7MhXM5kjFTb" resolve="Method" />
     <node concept="3EZMnI" id="7MhXM5kl9Pp" role="2wV5jI">
       <node concept="3EZMnI" id="7MhXM5kl9Pz" role="3EZMnx">
         <node concept="VPM3Z" id="7MhXM5kl9P_" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="7MhXM5kl9PB" role="3EZMnx">
-          <property role="3F0ifm" value="constraints" />
+          <property role="3F0ifm" value="generic" />
         </node>
         <node concept="3F0A7n" id="1ky6Xl0PBtL" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -176,8 +176,8 @@
         <node concept="3F0ifn" id="1ky6Xl0OU2r" role="3EZMnx">
           <property role="3F0ifm" value="returns" />
         </node>
-        <node concept="3F0ifn" id="1ky6Xl0OU2X" role="3EZMnx">
-          <property role="3F0ifm" value="Boolean" />
+        <node concept="3F1sOY" id="4BhfRC_wcEb" role="3EZMnx">
+          <ref role="1NtTu8" to="tpee:fzclF7X" />
         </node>
         <node concept="2iRfu4" id="7MhXM5kl9PC" role="2iSdaV" />
         <node concept="3F0ifn" id="48Ebtxmoabo" role="3EZMnx">
@@ -207,7 +207,7 @@
     <node concept="3F0ifn" id="7MhXM5klYpe" role="2wV5jI">
       <node concept="OXEIz" id="7MhXM5klYwl" role="P5bDN">
         <node concept="UkePV" id="7MhXM5klYwn" role="OY2wv">
-          <ref role="Ul1FP" to="1o5n:7MhXM5kjFTb" resolve="GroupConstraint" />
+          <ref role="Ul1FP" to="1o5n:7MhXM5kjFTb" resolve="Method" />
         </node>
       </node>
     </node>
