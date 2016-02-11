@@ -713,7 +713,7 @@
                   <property role="2XbFUA" value="0..*" />
                   <property role="2XbFU$" value="0..1" />
                   <node concept="3B6VN0" id="3Hw5xykG6Mr" role="2oAawB">
-                    <ref role="3B56nS" node="3Hw5xykG6Mu" resolve="feature" />
+                    <ref role="3B56nS" node="3Hw5xykG6Mu" resolve="operatorOfFeature" />
                   </node>
                   <node concept="2oAaXF" id="3Hw5xykG6Ms" role="2oAawD">
                     <ref role="3aaZtz" node="3Hw5xykG6Mn" resolve="OperatorOp" />
@@ -758,7 +758,7 @@
                 </node>
               </node>
               <node concept="3B6VN1" id="3Hw5xykG6Mu" role="3B56n9">
-                <property role="TrG5h" value="feature" />
+                <property role="TrG5h" value="operatorOfFeature" />
               </node>
             </node>
           </node>
@@ -784,7 +784,7 @@
                   <property role="2XbFUA" value="0..*" />
                   <property role="2XbFU$" value="0..1" />
                   <node concept="3B6VN0" id="3Hw5xykG6MB" role="2oAawB">
-                    <ref role="3B56nS" node="3Hw5xykG6ME" resolve="feature" />
+                    <ref role="3B56nS" node="3Hw5xykG6ME" resolve="removeFeature" />
                   </node>
                   <node concept="2oAaXF" id="3Hw5xykG6MC" role="2oAawD">
                     <ref role="3aaZtz" node="3Hw5xykG6Mz" resolve="RemoveFeatureOp" />
@@ -829,7 +829,7 @@
                 </node>
               </node>
               <node concept="3B6VN1" id="3Hw5xykG6ME" role="3B56n9">
-                <property role="TrG5h" value="feature" />
+                <property role="TrG5h" value="removeFeature" />
               </node>
             </node>
           </node>
@@ -855,7 +855,7 @@
                   <property role="2XbFUA" value="0..*" />
                   <property role="2XbFU$" value="0..1" />
                   <node concept="3B6VN0" id="3Hw5xykG6MN" role="2oAawB">
-                    <ref role="3B56nS" node="3Hw5xykG6MQ" resolve="feature" />
+                    <ref role="3B56nS" node="3Hw5xykG6MQ" resolve="parentOfFeature" />
                   </node>
                   <node concept="2oAaXF" id="3Hw5xykG6MO" role="2oAawD">
                     <ref role="3aaZtz" node="3Hw5xykG6MJ" resolve="ParentOp" />
@@ -900,7 +900,7 @@
                 </node>
               </node>
               <node concept="3B6VN1" id="3Hw5xykG6MQ" role="3B56n9">
-                <property role="TrG5h" value="feature" />
+                <property role="TrG5h" value="parentOfFeature" />
               </node>
             </node>
           </node>
@@ -926,7 +926,7 @@
                   <property role="2XbFUA" value="0..*" />
                   <property role="2XbFU$" value="0..1" />
                   <node concept="3B6VN0" id="3Hw5xykG6MZ" role="2oAawB">
-                    <ref role="3B56nS" node="3Hw5xykG6N2" resolve="feature" />
+                    <ref role="3B56nS" node="3Hw5xykG6N2" resolve="nameOfFeature" />
                   </node>
                   <node concept="2oAaXF" id="3Hw5xykG6N0" role="2oAawD">
                     <ref role="3aaZtz" node="3Hw5xykG6MV" resolve="NameOp" />
@@ -971,7 +971,7 @@
                 </node>
               </node>
               <node concept="3B6VN1" id="3Hw5xykG6N2" role="3B56n9">
-                <property role="TrG5h" value="feature" />
+                <property role="TrG5h" value="nameOfFeature" />
               </node>
             </node>
           </node>
@@ -1141,7 +1141,7 @@
             </node>
             <node concept="3B6VN2" id="1wyFeakiz1d" role="3B56nf">
               <node concept="3B6VN1" id="1wyFeakiz1e" role="3B56n9">
-                <property role="TrG5h" value="featureModel" />
+                <property role="TrG5h" value="rootOfFeatureModel" />
               </node>
               <node concept="x0Shc" id="1wyFeakiz1f" role="3B56nf">
                 <ref role="19kf5F" node="3Hw5xykEf6n" resolve="FamiliarExcerpt" />
@@ -1156,7 +1156,7 @@
                   <property role="2XbFUA" value="0..*" />
                   <property role="2XbFU$" value="0..1" />
                   <node concept="3B6VN0" id="1wyFeakiz1k" role="2oAawB">
-                    <ref role="3B56nS" node="1wyFeakiz1e" resolve="featureModel" />
+                    <ref role="3B56nS" node="1wyFeakiz1e" resolve="rootOfFeatureModel" />
                   </node>
                   <node concept="2oAaXF" id="1wyFeakiz1l" role="2oAawD">
                     <ref role="3aaZtz" node="1wyFeakiz1g" resolve="RootOp" />
@@ -1239,7 +1239,7 @@
                       <property role="2XbFUA" value="0..*" />
                       <property role="2XbFU$" value="0..1" />
                       <node concept="3B6VN0" id="1wyFeakiz1_" role="2oAawB">
-                        <ref role="3B56nS" node="1wyFeakiz1H" resolve="into" />
+                        <ref role="3B56nS" node="1wyFeakiz1H" resolve="intoFeatureModel" />
                       </node>
                       <node concept="2oAaXF" id="1wyFeakiz1A" role="2oAawD">
                         <ref role="3aaZtz" node="1wyFeakiz1t" resolve="InsertOp" />
@@ -1252,7 +1252,7 @@
                       <property role="2XbFUA" value="0..*" />
                       <property role="2XbFU$" value="0..1" />
                       <node concept="3B6VN0" id="1wyFeakiz1D" role="2oAawB">
-                        <ref role="3B56nS" node="1wyFeakiz1G" resolve="with" />
+                        <ref role="3B56nS" node="1wyFeakiz1G" resolve="withOperator" />
                       </node>
                       <node concept="2oAaXF" id="1wyFeakiz1E" role="2oAawD">
                         <ref role="3aaZtz" node="1wyFeakiz1t" resolve="InsertOp" />
@@ -1297,11 +1297,11 @@
                     </node>
                   </node>
                   <node concept="3B6VN1" id="1wyFeakiz1G" role="3B56n9">
-                    <property role="TrG5h" value="with" />
+                    <property role="TrG5h" value="withOperator" />
                   </node>
                 </node>
                 <node concept="3B6VN1" id="1wyFeakiz1H" role="3B56n9">
-                  <property role="TrG5h" value="into" />
+                  <property role="TrG5h" value="intoFeatureModel" />
                 </node>
               </node>
               <node concept="3B6VN1" id="1wyFeakiz1I" role="3B56n9">
@@ -1423,7 +1423,7 @@
               </node>
             </node>
             <node concept="2uuBJw" id="1wyFeakkqwM" role="2oAaxa">
-              <property role="TrG5h" value="featureModel" />
+              <property role="TrG5h" value="rootOfFeatureModel" />
               <node concept="3B6VN0" id="1wyFeakkqCO" role="3B56nu">
                 <ref role="3B56nS" node="3Hw5xykFFkg" resolve="target" />
               </node>
@@ -1451,7 +1451,7 @@
               </node>
             </node>
             <node concept="2uuBJw" id="1wyFeakkrch" role="2oAaxa">
-              <property role="TrG5h" value="feature" />
+              <property role="TrG5h" value="nameOfFeature" />
               <node concept="2oAaXF" id="1wyFeakkrjd" role="3B56nu">
                 <ref role="3aaZtz" node="3Hw5xykG3V3" resolve="ft" />
               </node>
@@ -1523,7 +1523,7 @@
               </node>
             </node>
             <node concept="2uuBJw" id="3Hw5xykGaq9" role="2oAaxa">
-              <property role="TrG5h" value="feature" />
+              <property role="TrG5h" value="parentOfFeature" />
               <node concept="2oAaXF" id="4O2XG3cxomw" role="3B56nu">
                 <ref role="3aaZtz" node="4O2XG3cxo3m" resolve="AccessOperation2031678846" />
               </node>
@@ -1595,7 +1595,7 @@
               </node>
             </node>
             <node concept="2uuBJw" id="1wyFeakksw1" role="2oAaxa">
-              <property role="TrG5h" value="feature" />
+              <property role="TrG5h" value="operatorOfFeature" />
               <node concept="2oAaXF" id="4O2XG3cxoiM" role="3B56nu">
                 <ref role="3aaZtz" node="4O2XG3cxoda" resolve="AccessOperation1904479584" />
               </node>

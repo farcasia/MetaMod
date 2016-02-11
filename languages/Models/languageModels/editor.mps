@@ -643,7 +643,7 @@
     <ref role="1XX52x" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     <node concept="1QoScp" id="2ZZRdXAFN4_" role="2wV5jI">
       <property role="1QpmdY" value="true" />
-      <ref role="34QXea" node="1E5i917CyWa" resolve="CheckConstraints" />
+      <ref role="34QXea" node="3uWAB_ARTgk" resolve="VisualizeStructureModel" />
       <node concept="3EZMnI" id="3HZz$EDXnPi" role="1QoS34">
         <node concept="VPXOz" id="3HZz$EDXPV6" role="3F10Kt" />
         <node concept="2iRkQZ" id="3HZz$EDXnPj" role="2iSdaV" />
@@ -724,6 +724,8 @@
           </node>
           <node concept="2iRkQZ" id="2ZZRdXAFN4R" role="2iSdaV" />
         </node>
+        <node concept="3F0ifn" id="60x5yRItWgv" role="3EZMnx" />
+        <node concept="3F0ifn" id="60x5yRItWh3" role="3EZMnx" />
       </node>
       <node concept="pkWqt" id="2ZZRdXAFN4S" role="3e4ffs">
         <node concept="3clFbS" id="2ZZRdXAFN4T" role="2VODD2">
