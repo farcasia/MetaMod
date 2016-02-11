@@ -643,7 +643,7 @@
     <ref role="1XX52x" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     <node concept="1QoScp" id="2ZZRdXAFN4_" role="2wV5jI">
       <property role="1QpmdY" value="true" />
-      <ref role="34QXea" node="3uWAB_ARTgk" resolve="VisualizeStructureModel" />
+      <ref role="34QXea" node="1E5i917CyWa" resolve="CheckConstraints" />
       <node concept="3EZMnI" id="3HZz$EDXnPi" role="1QoS34">
         <node concept="VPXOz" id="3HZz$EDXPV6" role="3F10Kt" />
         <node concept="2iRkQZ" id="3HZz$EDXnPj" role="2iSdaV" />

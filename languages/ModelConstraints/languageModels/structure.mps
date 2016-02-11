@@ -48,12 +48,6 @@
     <node concept="PrWs8" id="48Ebtxmlpja" role="PzmwI">
       <ref role="PrY4T" node="48EbtxmlfXk" resolve="IModuleConstraintsContents" />
     </node>
-    <node concept="1TJgyj" id="1E5i917K6pA" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="group" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7MhXM5kl9pK">
     <property role="TrG5h" value="ModelConstraints" />
@@ -64,6 +58,12 @@
       <property role="20kJfa" value="groupConstraints" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="48EbtxmlfXk" resolve="IModuleConstraintsContents" />
+    </node>
+    <node concept="1TJgyj" id="4BhfRC_p$Mm" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="group" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     </node>
   </node>
   <node concept="1TIwiD" id="7MhXM5klYp6">
@@ -81,21 +81,6 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="namedConcept" />
       <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7MhXM5kmMIO">
-    <property role="TrG5h" value="GroupList" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7MhXM5kmMIR" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="group" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
-    </node>
-    <node concept="1TJgyj" id="7MhXM5kmMIP" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="groupList" />
-      <ref role="20lvS9" node="7MhXM5kmMIO" resolve="GroupList" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ky6Xl0HDt_">
