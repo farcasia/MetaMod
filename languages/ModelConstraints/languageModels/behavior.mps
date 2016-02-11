@@ -56,21 +56,10 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
-      </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
@@ -102,7 +91,6 @@
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
-      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
   <node concept="13h7C7" id="1ky6Xl0HEV8">
@@ -190,23 +178,6 @@
               <node concept="37vLTw" id="1ky6Xl0Pfxo" role="25WWJ7">
                 <ref role="3cqZAo" node="1ky6Xl0Pb6G" resolve="paramDeclaration" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="34ab3g" id="48Ebtxmnwxb" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="48EbtxmnwVZ" role="34bqiv">
-            <node concept="2OqwBi" id="48Ebtxmn$Ye" role="3uHU7w">
-              <node concept="2OqwBi" id="48Ebtxmnx7n" role="2Oq$k0">
-                <node concept="13iPFW" id="48EbtxmnwWj" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="48Ebtxmnyw_" role="2OqNvi">
-                  <ref role="3TtcxE" to="tpee:fzclF7Y" />
-                </node>
-              </node>
-              <node concept="34oBXx" id="48EbtxmnEY7" role="2OqNvi" />
-            </node>
-            <node concept="Xl_RD" id="48Ebtxmnwxd" role="3uHU7B">
-              <property role="Xl_RC" value="param size" />
             </node>
           </node>
         </node>
