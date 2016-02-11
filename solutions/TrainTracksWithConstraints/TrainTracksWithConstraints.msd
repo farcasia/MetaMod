@@ -21,8 +21,11 @@
     <usedLanguage>83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)</usedLanguage>
     <usedLanguage>8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</usedLanguage>
     <usedLanguage>47849989-c2df-46a8-aba5-1c5a21bbef1f(Constraints)</usedLanguage>
+    <usedLanguage>5f140b5b-a1d2-4d50-af71-7c64c190dbb9(CodeGeneration)</usedLanguage>
+    <usedLanguage>760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</usedLanguage>
   </usedLanguages>
   <languageVersions>
+    <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" fqName="CodeGeneration" version="0" />
     <language id="47849989-c2df-46a8-aba5-1c5a21bbef1f" fqName="Constraints" version="0" />
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" fqName="LambdaCalculus" version="0" />
@@ -33,6 +36,7 @@
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" fqName="jetbrains.mps.baseLanguage.collections" version="0" />
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" fqName="jetbrains.mps.baseLanguage.logging" version="0" />
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" fqName="jetbrains.mps.lang.behavior" version="0" />
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />

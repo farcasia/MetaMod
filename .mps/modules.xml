@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/CodeGeneration/CodeGeneration.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Constraints/Constraints.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Documentation/Documentation.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/LambdaCalculus/LambdaCalculus.mpl" folder="" />
@@ -18,6 +19,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/MetaMod/MetaMod.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ModelsSolution/ModelsSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ModulesSolution/ModulesSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/RuntimeCodeGeneration/RuntimeCodeGeneration.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/RuntimeCommons/RuntimeCommons.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/RuntimeModelConstraints/RuntimeModelConstraints.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ShowCaseNBCS/ShowCaseNBCS.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TrainTracks/TrainTracks.msd" folder="" />

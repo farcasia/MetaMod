@@ -15,9 +15,9 @@
       </models>
       <external-templates />
       <dependencies>
-        <dependency reexport="false">23889f02-f356-4414-ba59-81b2f1c2170d(ModelConstraints#8976227254846526813)</dependency>
+        <dependency reexport="false">23889f02-f356-4414-ba59-81b2f1c2170d(GenericGroupMethods#8976227254846526813)</dependency>
         <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
-        <dependency reexport="false">9e7f7c3c-cbfb-4bd7-9359-5a9cee6e2a7c(RuntimeModelConstraints)</dependency>
+        <dependency reexport="false">9e7f7c3c-cbfb-4bd7-9359-5a9cee6e2a7c(RuntimeConstraints)</dependency>
         <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
       </dependencies>
       <usedLanguages>

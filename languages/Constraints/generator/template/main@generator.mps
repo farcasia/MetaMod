@@ -17,6 +17,7 @@
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="2mcz" ref="r:23e4f1fd-a9d1-4b09-a8c1-3a24e82c6a63(Modules.structure)" implicit="true" />
+    <import index="cxsf" ref="r:1286eb18-7cac-402e-9a8d-671d8750b024(Constraints.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -126,6 +127,7 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="7830515785164762753" name="jetbrains.mps.lang.generator.structure.MappingConfiguration_Condition" flags="in" index="avzCv" />
       <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
         <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
       </concept>
@@ -133,6 +135,7 @@
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="7830515785164764091" name="condition" index="avys_" />
         <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
@@ -259,7 +262,7 @@
       <ref role="aOQi4" to="1o5n:7MhXM5kl9pK" resolve="MethodsContainer" />
     </node>
     <node concept="30QchW" id="6e92Hp1729g" role="30SoJX">
-      <ref role="30HIoZ" to="1o5n:7MhXM5kjFTb" resolve="Method" />
+      <ref role="30HIoZ" to="cxsf:4BhfRC_v$vB" resolve="Constraint" />
       <node concept="3gB$ML" id="6e92Hp1729h" role="3gCiVm">
         <node concept="3clFbS" id="6e92Hp1729i" role="2VODD2">
           <node concept="3clFbF" id="6e92Hp172AE" role="3cqZAp">
@@ -269,7 +272,7 @@
                 <ref role="1iwH77" node="2SWtdi20ukb" resolve="NamedGroupToJavaClass" />
                 <node concept="2OqwBi" id="4BhfRC_pYt8" role="1iwH7V">
                   <node concept="1PxgMI" id="4BhfRC_pYoo" role="2Oq$k0">
-                    <ref role="1PxNhF" to="1o5n:7MhXM5kl9pK" resolve="MethodsContainer" />
+                    <ref role="1PxNhF" to="cxsf:4BhfRC_v$xB" resolve="ConstraintsContainer" />
                     <node concept="2OqwBi" id="2SWtdi20vNJ" role="1PxMeX">
                       <node concept="30H73N" id="2SWtdi20vzO" role="2Oq$k0" />
                       <node concept="1mfA1w" id="4BhfRC_pY3O" role="2OqNvi" />
@@ -552,6 +555,15 @@
       </node>
       <node concept="j$656" id="2SWtdi2egqW" role="1lVwrX">
         <ref role="v9R2y" to="i2ao:2SWtdi2egqU" resolve="reduce_IsTypeOf" />
+      </node>
+    </node>
+    <node concept="avzCv" id="45NpebPmss4" role="avys_">
+      <node concept="3clFbS" id="45NpebPmss5" role="2VODD2">
+        <node concept="3clFbF" id="45NpebPmsGU" role="3cqZAp">
+          <node concept="3clFbT" id="45NpebPmsGT" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

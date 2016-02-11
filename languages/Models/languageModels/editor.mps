@@ -15,6 +15,9 @@
     <import index="22fv" ref="r:1b829468-420f-4d70-8c6d-ddde8cae701d(LambdaCalculus.behavior)" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
     <import index="avy3" ref="r:bb60b16d-24df-41f9-9976-ac7adfdf47d5(RuntimeModelConstraints.runtime)" />
+    <import index="kjbk" ref="r:7cf4a087-99f7-4dc5-9094-7e42b8711ad0(RuntimeCodeGeneration.runtime)" />
+    <import index="xqpa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang.reflect(JDK/java.lang.reflect@java_stub)" />
+    <import index="ksi3" ref="r:4f881588-6291-492b-b792-0f0c9f48f5e4(RuntimeCommons.commons)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -643,7 +646,7 @@
     <ref role="1XX52x" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     <node concept="1QoScp" id="2ZZRdXAFN4_" role="2wV5jI">
       <property role="1QpmdY" value="true" />
-      <ref role="34QXea" node="1E5i917CyWa" resolve="CheckConstraints" />
+      <ref role="34QXea" node="45NpebPmZ$e" resolve="GenCode" />
       <node concept="3EZMnI" id="3HZz$EDXnPi" role="1QoS34">
         <node concept="VPXOz" id="3HZz$EDXPV6" role="3F10Kt" />
         <node concept="2iRkQZ" id="3HZz$EDXnPj" role="2iSdaV" />
@@ -2737,24 +2740,27 @@
                 <node concept="3uibUv" id="6e92Hp0ZRFX" role="0kSFW">
                   <ref role="3uigEE" to="avy3:1E5i917CZdZ" resolve="Constraints" />
                 </node>
-                <node concept="2YIFZM" id="6e92Hp0ZDAg" role="0kSFX">
-                  <ref role="37wK5l" to="avy3:6e92Hp0ZrU3" resolve="createClassInRuntimeConstraints" />
-                  <ref role="1Pybhc" to="avy3:6e92Hp0Zr$o" resolve="Utils" />
-                  <node concept="3cpWs3" id="6e92Hp0ZEeK" role="37wK5m">
-                    <node concept="2OqwBi" id="6e92Hp0ZPX5" role="3uHU7w">
-                      <node concept="2OqwBi" id="6e92Hp0ZElr" role="2Oq$k0">
-                        <node concept="0GJ7k" id="6e92Hp0ZEfJ" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="6e92Hp0ZPBo" role="2OqNvi">
+                <node concept="2YIFZM" id="45NpebPp0q$" role="0kSFX">
+                  <ref role="37wK5l" to="ksi3:6e92Hp0ZrU3" resolve="createClassInRuntime" />
+                  <ref role="1Pybhc" to="ksi3:6e92Hp0Zr$o" resolve="Utils" />
+                  <node concept="3cpWs3" id="45NpebPp0q_" role="37wK5m">
+                    <node concept="2OqwBi" id="45NpebPp0qA" role="3uHU7w">
+                      <node concept="2OqwBi" id="45NpebPp0qB" role="2Oq$k0">
+                        <node concept="0GJ7k" id="45NpebPp0qC" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="45NpebPp0qD" role="2OqNvi">
                           <ref role="3Tt5mk" to="v0yp:2ZZRdXAFMQO" />
                         </node>
                       </node>
-                      <node concept="3TrcHB" id="6e92Hp0ZR5j" role="2OqNvi">
+                      <node concept="3TrcHB" id="45NpebPp0qE" role="2OqNvi">
                         <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                       </node>
                     </node>
-                    <node concept="Xl_RD" id="6e92Hp0ZDB3" role="3uHU7B">
+                    <node concept="Xl_RD" id="45NpebPp0qF" role="3uHU7B">
                       <property role="Xl_RC" value="Constraints_Group_" />
                     </node>
+                  </node>
+                  <node concept="Xl_RD" id="45NpebPp0qG" role="37wK5m">
+                    <property role="Xl_RC" value="RuntimeModelConstraints.runtime." />
                   </node>
                 </node>
               </node>
@@ -2796,6 +2802,68 @@
           <node concept="3cpWs6" id="1E5i917CYic" role="3cqZAp">
             <node concept="3clFbT" id="1E5i917CYoi" role="3cqZAk">
               <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="325Ffw" id="45NpebPmZ$e">
+    <property role="TrG5h" value="GenCode" />
+    <ref role="1chiOs" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+    <node concept="2PxR9H" id="45NpebPmZOI" role="2QnnpI">
+      <node concept="2Py5lD" id="45NpebPmZOJ" role="2PyaAO">
+        <property role="2PWKIB" value="ctrl+alt" />
+        <property role="2PWKIS" value="VK_F6" />
+      </node>
+      <node concept="2PzhpH" id="45NpebPmZOK" role="2PL9iG">
+        <node concept="3clFbS" id="45NpebPmZOL" role="2VODD2">
+          <node concept="3cpWs8" id="45NpebPmZQw" role="3cqZAp">
+            <node concept="3cpWsn" id="45NpebPmZQx" role="3cpWs9">
+              <property role="TrG5h" value="codeGen" />
+              <node concept="3uibUv" id="45NpebPmZWa" role="1tU5fm">
+                <ref role="3uigEE" to="kjbk:45NpebPjv7X" resolve="CodeGen" />
+              </node>
+              <node concept="0kSF2" id="45NpebPmZQz" role="33vP2m">
+                <node concept="3uibUv" id="45NpebPn0wI" role="0kSFW">
+                  <ref role="3uigEE" to="kjbk:45NpebPjv7X" resolve="CodeGen" />
+                </node>
+                <node concept="2YIFZM" id="45NpebPp088" role="0kSFX">
+                  <ref role="37wK5l" to="ksi3:6e92Hp0ZrU3" resolve="createClassInRuntime" />
+                  <ref role="1Pybhc" to="ksi3:6e92Hp0Zr$o" resolve="Utils" />
+                  <node concept="3cpWs3" id="45NpebPp089" role="37wK5m">
+                    <node concept="2OqwBi" id="45NpebPp08a" role="3uHU7w">
+                      <node concept="2OqwBi" id="45NpebPp08b" role="2Oq$k0">
+                        <node concept="0GJ7k" id="45NpebPp08c" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="45NpebPp08d" role="2OqNvi">
+                          <ref role="3Tt5mk" to="v0yp:2ZZRdXAFMQO" />
+                        </node>
+                      </node>
+                      <node concept="3TrcHB" id="45NpebPp08e" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="45NpebPp08f" role="3uHU7B">
+                      <property role="Xl_RC" value="CodeGen_" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="45NpebPp08g" role="37wK5m">
+                    <property role="Xl_RC" value="RuntimeCodeGeneration.runtime." />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="45NpebPmZQH" role="3cqZAp" />
+          <node concept="3clFbF" id="45NpebPmZQI" role="3cqZAp">
+            <node concept="2OqwBi" id="45NpebPmZQJ" role="3clFbG">
+              <node concept="37vLTw" id="45NpebPmZQK" role="2Oq$k0">
+                <ref role="3cqZAo" node="45NpebPmZQx" resolve="codeGen" />
+              </node>
+              <node concept="liA8E" id="45NpebPmZQL" role="2OqNvi">
+                <ref role="37wK5l" to="kjbk:45NpebPmZ6R" resolve="genCodeMain" />
+                <node concept="0GJ7k" id="45NpebPn0Fw" role="37wK5m" />
+              </node>
             </node>
           </node>
         </node>
