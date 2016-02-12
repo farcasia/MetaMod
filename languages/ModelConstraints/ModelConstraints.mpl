@@ -18,6 +18,7 @@
         <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
         <dependency reexport="true">9e7f7c3c-cbfb-4bd7-9359-5a9cee6e2a7c(RuntimeConstraints)</dependency>
         <dependency reexport="false">8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</dependency>
+        <dependency reexport="false">ac92b060-507b-49fd-899b-f9ec55fb3b85(RuntimeCommons)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
