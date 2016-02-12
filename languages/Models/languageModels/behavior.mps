@@ -381,6 +381,10 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
+        <child id="1226511765987" name="elementType" index="2hN53Y" />
+      </concept>
+      <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
       <concept id="1224414427926" name="jetbrains.mps.baseLanguage.collections.structure.SequenceCreator" flags="nn" index="kMnCb">
         <child id="1224414456414" name="elementType" index="kMuH3" />
         <child id="1224414466839" name="initializer" index="kMx8a" />
@@ -393,6 +397,9 @@
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
       <concept id="1227022159410" name="jetbrains.mps.baseLanguage.collections.structure.AddFirstElementOperation" flags="nn" index="2Ke4WJ" />
       <concept id="1201306600024" name="jetbrains.mps.baseLanguage.collections.structure.ContainsKeyOperation" flags="nn" index="2Nt0df">
         <child id="1201654602639" name="key" index="38cxEo" />
@@ -673,6 +680,135 @@
         <property role="TrG5h" value="superConcepts" />
         <node concept="2I9FWS" id="3ivI6t8MFhy" role="1tU5fm">
           <ref role="2I9WkF" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4X4Jbdc5y5v" role="13h7CS">
+      <property role="TrG5h" value="getAllNamedInnerGroups" />
+      <node concept="3Tm1VV" id="4X4Jbdc5y5w" role="1B3o_S" />
+      <node concept="3clFbS" id="4X4Jbdc5y5x" role="3clF47">
+        <node concept="3cpWs8" id="4X4Jbdc6cFV" role="3cqZAp">
+          <node concept="3cpWsn" id="4X4Jbdc6cFY" role="3cpWs9">
+            <property role="TrG5h" value="namedInnerGroups" />
+            <node concept="2hMVRd" id="4X4Jbdc6cFR" role="1tU5fm">
+              <node concept="3Tqbb2" id="4X4Jbdc6cW5" role="2hN53Y">
+                <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="4X4Jbdc6cWJ" role="33vP2m">
+              <node concept="2i4dXS" id="4X4Jbdc6d8y" role="2ShVmc">
+                <node concept="3Tqbb2" id="4X4Jbdc6deW" role="HW$YZ">
+                  <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4X4Jbdc6csD" role="3cqZAp" />
+        <node concept="1DcWWT" id="4X4Jbdc5Vlf" role="3cqZAp">
+          <node concept="3cpWsn" id="4X4Jbdc5Vlg" role="1Duv9x">
+            <property role="TrG5h" value="reusedGr" />
+            <node concept="3Tqbb2" id="4X4Jbdc5Vru" role="1tU5fm">
+              <ref role="ehGHo" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedGroup" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4X4Jbdc5Vlh" role="2LFqv$">
+            <node concept="3clFbF" id="4X4Jbdc6di3" role="3cqZAp">
+              <node concept="2OqwBi" id="4X4Jbdc6dEG" role="3clFbG">
+                <node concept="37vLTw" id="4X4Jbdc6di1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4X4Jbdc6cFY" resolve="namedInnerGroups" />
+                </node>
+                <node concept="TSZUe" id="4X4Jbdc6eoh" role="2OqNvi">
+                  <node concept="2OqwBi" id="4X4Jbdc6eTL" role="25WWJ7">
+                    <node concept="37vLTw" id="4X4Jbdc6eBT" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4X4Jbdc5Vlg" resolve="reusedGr" />
+                    </node>
+                    <node concept="3TrEf2" id="4X4Jbdc6faO" role="2OqNvi">
+                      <ref role="3Tt5mk" to="v0yp:7zWtwVwpdQQ" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4X4Jbdc5XWO" role="1DdaDG">
+            <node concept="2OqwBi" id="4X4Jbdc5WnF" role="2Oq$k0">
+              <node concept="13iPFW" id="4X4Jbdc5Whi" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4X4Jbdc5WNu" role="2OqNvi">
+                <ref role="3TtcxE" to="v0yp:7zWtwVwpdT4" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="4X4Jbdc60gf" role="2OqNvi">
+              <node concept="chp4Y" id="4X4Jbdc60ok" role="v3oSu">
+                <ref role="cht4Q" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedGroup" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4X4Jbdc6kqY" role="3cqZAp" />
+        <node concept="3SKdUt" id="4X4Jbdc6uFW" role="3cqZAp">
+          <node concept="3SKdUq" id="4X4Jbdc6uGG" role="3SKWNk">
+            <property role="3SKdUp" value="This loop should capture the proper subgroups and also groups defined" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4X4Jbdc6x8i" role="3cqZAp">
+          <node concept="3SKdUq" id="4X4Jbdc6ymC" role="3SKWNk">
+            <property role="3SKdUp" value="in if_then_else and lambda terms of LApplWithFragment." />
+          </node>
+        </node>
+        <node concept="1DcWWT" id="4X4Jbdc6kPB" role="3cqZAp">
+          <node concept="3clFbS" id="4X4Jbdc6kPD" role="2LFqv$">
+            <node concept="3clFbF" id="4X4Jbdc6n7L" role="3cqZAp">
+              <node concept="2OqwBi" id="4X4Jbdc6nwl" role="3clFbG">
+                <node concept="37vLTw" id="4X4Jbdc6n7J" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4X4Jbdc6cFY" resolve="namedInnerGroups" />
+                </node>
+                <node concept="TSZUe" id="4X4Jbdc6oVe" role="2OqNvi">
+                  <node concept="37vLTw" id="4X4Jbdc6oZ0" role="25WWJ7">
+                    <ref role="3cqZAo" node="4X4Jbdc6kPE" resolve="subGroup" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="4X4Jbdc6kPE" role="1Duv9x">
+            <property role="TrG5h" value="subGroup" />
+            <node concept="3Tqbb2" id="4X4Jbdc6l9S" role="1tU5fm">
+              <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4X4Jbdc6ly4" role="1DdaDG">
+            <node concept="13iPFW" id="4X4Jbdc6ltd" role="2Oq$k0" />
+            <node concept="2Rf3mk" id="4X4Jbdc6lXZ" role="2OqNvi">
+              <node concept="1xMEDy" id="4X4Jbdc6lY1" role="1xVPHs">
+                <node concept="chp4Y" id="4X4Jbdc6mlk" role="ri$Ld">
+                  <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4X4Jbdc63aM" role="3cqZAp" />
+        <node concept="3cpWs6" id="4X4Jbdc63ju" role="3cqZAp">
+          <node concept="2OqwBi" id="4X4Jbdc6gcq" role="3cqZAk">
+            <node concept="37vLTw" id="4X4Jbdc6fCf" role="2Oq$k0">
+              <ref role="3cqZAo" node="4X4Jbdc6cFY" resolve="namedInnerGroups" />
+            </node>
+            <node concept="ANE8D" id="4X4Jbdc6hMM" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="4X4Jbdc5ORi" role="3clF45">
+        <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+      </node>
+      <node concept="P$JXv" id="4X4Jbdc5ORl" role="lGtFl">
+        <node concept="TZ5HA" id="4X4Jbdc5ORm" role="TZ5H$">
+          <node concept="1dT_AC" id="4X4Jbdc5ORn" role="1dT_Ay">
+            <property role="1dT_AB" value="The inner groups are represented by subgroups and reused groups." />
+          </node>
+        </node>
+        <node concept="x79VA" id="4X4Jbdc5ORo" role="x79VK">
+          <property role="x79VB" value="list of inner groups that this group has acces to" />
         </node>
       </node>
     </node>

@@ -19,6 +19,9 @@
   <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -45,8 +48,12 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -68,6 +75,10 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -85,6 +96,7 @@
       <concept id="5319102428748859367" name="Constraints.structure.Constraint" flags="ng" index="1GFRyt" />
     </language>
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration">
+      <concept id="5711897705675317525" name="CodeGeneration.structure.CodeGenMethodCall" flags="ng" index="3otQA" />
       <concept id="5319102428749892554" name="CodeGeneration.structure.CodeGenMethodsContainer" flags="ng" index="1GnNiK" />
       <concept id="5319102428749892498" name="CodeGeneration.structure.CodeGenMethod" flags="ng" index="1GnNjC" />
     </language>
@@ -196,6 +208,9 @@
       <concept id="1522810226732341093" name="GenericGroupMethods.structure.ValueModel" flags="ig" index="1l_8MK" />
       <concept id="1522810226732785365" name="GenericGroupMethods.structure.ConceptsOfType" flags="ig" index="1lBOk0">
         <child id="1522810226732838602" name="conceptType" index="1lB3kv" />
+      </concept>
+      <concept id="1522810226734053312" name="GenericGroupMethods.structure.IsTypeOf" flags="ig" index="1lWEKl">
+        <child id="1522810226734053315" name="conceptType" index="1lWEKm" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1169,6 +1184,41 @@
                 </node>
                 <node concept="Xl_RD" id="45NpebPjhQg" role="3uHU7B">
                   <property role="Xl_RC" value="here we should be calling the specific methods " />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="4X4Jbdca4yE" role="3cqZAp" />
+            <node concept="3clFbJ" id="4X4Jbdca4kz" role="3cqZAp">
+              <node concept="3clFbS" id="4X4Jbdca4k_" role="3clFbx">
+                <node concept="3clFbF" id="4X4JbdcaSyb" role="3cqZAp">
+                  <node concept="3otQA" id="4X4JbdccKyE" role="3clFbG">
+                    <ref role="37wK5l" node="45NpebPj6_s" resolve="genVirtualSegment" />
+                    <node concept="37vLTw" id="4X4JbdccKyU" role="37wK5m">
+                      <ref role="3cqZAo" node="45NpebPje_n" resolve="valueModel" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4X4Jbdca4l1" role="3clFbw">
+                <node concept="37vLTw" id="4X4Jbdca4kQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="45NpebPjfu9" resolve="seg" />
+                </node>
+                <node concept="1lWEKl" id="4X4Jbdca4rf" role="2OqNvi">
+                  <node concept="CMjq$" id="4X4Jbdca4rh" role="1lWEKm">
+                    <ref role="CMYPG" node="2SWtdi23K0q" resolve="VirtualSegment" />
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="4X4Jbdca4sv" role="9aQIa">
+                <node concept="3clFbS" id="4X4Jbdca4sw" role="9aQI4">
+                  <node concept="3clFbF" id="4X4JbdccIA9" role="3cqZAp">
+                    <node concept="3otQA" id="4X4JbdccIA8" role="3clFbG">
+                      <ref role="37wK5l" node="45NpebPjcL_" resolve="genSegment" />
+                      <node concept="37vLTw" id="4X4JbdccIAh" role="37wK5m">
+                        <ref role="3cqZAo" node="45NpebPje_n" resolve="valueModel" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
