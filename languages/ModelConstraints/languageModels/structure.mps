@@ -76,7 +76,8 @@
   <node concept="1TIwiD" id="7MhXM5kmc65">
     <property role="TrG5h" value="ConceptType" />
     <property role="3GE5qa" value="Types" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <property role="34LRSv" value="ConceptType" />
+    <ref role="1TJDcQ" to="tpee:gWaQbR$" resolve="PrimitiveType" />
     <node concept="1TJgyj" id="7MhXM5kmxDd" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="namedConcept" />
@@ -87,7 +88,7 @@
     <property role="TrG5h" value="ValueModel" />
     <property role="34LRSv" value="ValueModel" />
     <property role="3GE5qa" value="Types" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <ref role="1TJDcQ" to="tpee:gWaQbR$" resolve="PrimitiveType" />
     <node concept="1TJgyj" id="1ky6Xl0HEV6" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="group" />
