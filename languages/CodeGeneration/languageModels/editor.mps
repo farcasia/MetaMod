@@ -18,6 +18,7 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
@@ -162,8 +163,10 @@
           <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
         </node>
         <node concept="3F2HdR" id="1ky6Xl0OSmE" role="3EZMnx">
+          <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="tpee:fzclF7Y" />
           <node concept="2iRfu4" id="1ky6Xl0OSmG" role="2czzBx" />
+          <node concept="3F0ifn" id="5UqrlCgjujU" role="2czzBI" />
         </node>
         <node concept="3F0ifn" id="1ky6Xl0HRJc" role="3EZMnx">
           <property role="3F0ifm" value=")" />
@@ -304,6 +307,7 @@
         <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
       </node>
       <node concept="3F2HdR" id="4X4Jbdc9nKR" role="3EZMnx">
+        <property role="2czwfO" value="," />
         <ref role="1NtTu8" to="tpee:fz7wK6I" />
         <node concept="2iRfu4" id="4X4Jbdc9nKU" role="2czzBx" />
         <node concept="3F0ifn" id="4X4Jbdc9nN6" role="2czzBI" />
