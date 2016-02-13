@@ -62,6 +62,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
@@ -299,6 +300,7 @@
                 <node concept="Xl_RD" id="45NpebPoZM_" role="37wK5m">
                   <property role="Xl_RC" value="RuntimeModelConstraints.runtime." />
                 </node>
+                <node concept="10Nm6u" id="63lYmBSQ2su" role="37wK5m" />
               </node>
             </node>
           </node>
