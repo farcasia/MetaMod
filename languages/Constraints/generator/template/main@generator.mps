@@ -557,10 +557,10 @@
         <ref role="v9R2y" to="i2ao:2SWtdi2egqU" resolve="reduce_IsTypeOf" />
       </node>
     </node>
-    <node concept="avzCv" id="45NpebPmss4" role="avys_">
-      <node concept="3clFbS" id="45NpebPmss5" role="2VODD2">
-        <node concept="3clFbF" id="45NpebPmsGU" role="3cqZAp">
-          <node concept="3clFbT" id="45NpebPmsGT" role="3clFbG">
+    <node concept="avzCv" id="5UqrlCgnvXs" role="avys_">
+      <node concept="3clFbS" id="5UqrlCgnvXt" role="2VODD2">
+        <node concept="3clFbF" id="5UqrlCgnwe0" role="3cqZAp">
+          <node concept="3clFbT" id="5UqrlCgnwdZ" role="3clFbG">
             <property role="3clFbU" value="false" />
           </node>
         </node>
@@ -721,16 +721,16 @@
           <node concept="3nyPlj" id="6e92Hp11JTe" role="3clFbG">
             <ref role="37wK5l" to="avy3:1E5i917CZmT" resolve="checkValidity" />
             <node concept="37vLTw" id="6e92Hp11KBH" role="37wK5m">
-              <ref role="3cqZAo" node="1E5i917L03V" resolve="checkedGroup" />
+              <ref role="3cqZAo" node="1E5i917L03V" resolve="valueModel" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3cqZAl" id="2SWtdi20DUc" role="3clF45" />
       <node concept="37vLTG" id="1E5i917L03V" role="3clF46">
-        <property role="TrG5h" value="checkedGroup" />
+        <property role="TrG5h" value="valueModel" />
         <node concept="3Tqbb2" id="1E5i917L03U" role="1tU5fm">
-          <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+          <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
         </node>
       </node>
       <node concept="3Tm1VV" id="1E5i917L0Cs" role="1B3o_S" />
@@ -826,9 +826,9 @@
           </node>
         </node>
         <node concept="37vLTG" id="2SWtdi28gx$" role="3clF46">
-          <property role="TrG5h" value="checkedGroup" />
+          <property role="TrG5h" value="valueModel" />
           <node concept="3Tqbb2" id="2SWtdi28gxz" role="1tU5fm">
-            <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+            <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
           </node>
         </node>
       </node>

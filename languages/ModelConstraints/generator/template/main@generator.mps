@@ -39,6 +39,8 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -68,6 +70,10 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
+        <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -76,6 +82,7 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -186,7 +193,7 @@
                     <node concept="2OqwBi" id="2SWtdi29qGU" role="_Z9Zf">
                       <node concept="2OqwBi" id="2SWtdi29q4v" role="2Oq$k0">
                         <node concept="37vLTw" id="2SWtdi29q0E" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2SWtdi29pXY" resolve="checkedGroup" />
+                          <ref role="3cqZAo" node="2SWtdi29pXY" resolve="valueModel" />
                         </node>
                         <node concept="2qgKlT" id="2SWtdi29qxa" role="2OqNvi">
                           <ref role="37wK5l" to="z64h:6uuPbC_XXdJ" resolve="getRepresentativesNamedConcepts" />
@@ -314,7 +321,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2SWtdi29pXY" role="3clF46">
-        <property role="TrG5h" value="checkedGroup" />
+        <property role="TrG5h" value="valueModel" />
         <node concept="3Tqbb2" id="2SWtdi29pXX" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
         </node>
@@ -341,7 +348,7 @@
                           <node concept="2OqwBi" id="2SWtdi2a1fG" role="2Oq$k0">
                             <node concept="2OqwBi" id="2SWtdi29Y7F" role="2Oq$k0">
                               <node concept="37vLTw" id="2SWtdi29XVc" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2SWtdi29WOS" resolve="checkedGroup" />
+                                <ref role="3cqZAo" node="2SWtdi29WOS" resolve="valueModel" />
                               </node>
                               <node concept="2qgKlT" id="2SWtdi29YBn" role="2OqNvi">
                                 <ref role="37wK5l" to="z64h:6za56b2K0AC" resolve="getRelationsWithSourceConcept" />
@@ -475,7 +482,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2SWtdi29WOS" role="3clF46">
-        <property role="TrG5h" value="checkedGroup" />
+        <property role="TrG5h" value="valueModel" />
         <node concept="3Tqbb2" id="2SWtdi29WOT" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
         </node>
@@ -502,7 +509,7 @@
                           <node concept="2OqwBi" id="2SWtdi2adQU" role="2Oq$k0">
                             <node concept="2OqwBi" id="2SWtdi2adQV" role="2Oq$k0">
                               <node concept="37vLTw" id="2SWtdi2adQW" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2SWtdi2adRF" resolve="checkedGroup" />
+                                <ref role="3cqZAo" node="2SWtdi2adRF" resolve="valueModel" />
                               </node>
                               <node concept="2qgKlT" id="2SWtdi2adQX" role="2OqNvi">
                                 <ref role="37wK5l" to="z64h:6za56b2K0Co" resolve="getRelationsWithTargetConcept" />
@@ -572,8 +579,8 @@
                                                             </node>
                                                           </node>
                                                         </node>
-                                                        <node concept="3TrEf2" id="2SWtdi2adRn" role="2OqNvi">
-                                                          <ref role="3Tt5mk" to="1o5n:48EbtxmrRK9" />
+                                                        <node concept="3TrEf2" id="5UqrlCgkzn_" role="2OqNvi">
+                                                          <ref role="3Tt5mk" to="1o5n:48EbtxmtnqG" />
                                                         </node>
                                                       </node>
                                                       <node concept="3TrcHB" id="2SWtdi2adRo" role="2OqNvi">
@@ -636,7 +643,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2SWtdi2adRF" role="3clF46">
-        <property role="TrG5h" value="checkedGroup" />
+        <property role="TrG5h" value="valueModel" />
         <node concept="3Tqbb2" id="2SWtdi2adRG" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
         </node>
@@ -760,6 +767,23 @@
           <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="5UqrlCgk$UF">
+    <property role="TrG5h" value="reduce_ValueModel" />
+    <ref role="3gUMe" to="1o5n:1ky6Xl0HDt_" resolve="ValueModel" />
+    <node concept="312cEu" id="5UqrlCgk$UH" role="13RCb5">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="SomeClass" />
+      <node concept="312cEg" id="5UqrlCgk$V0" role="jymVt">
+        <property role="TrG5h" value="someGroup" />
+        <node concept="3Tm6S6" id="5UqrlCgk$V1" role="1B3o_S" />
+        <node concept="3Tqbb2" id="5UqrlCgk$Ve" role="1tU5fm">
+          <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+          <node concept="raruj" id="5UqrlCgk$V_" role="lGtFl" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5UqrlCgk$UI" role="1B3o_S" />
     </node>
   </node>
 </model>
