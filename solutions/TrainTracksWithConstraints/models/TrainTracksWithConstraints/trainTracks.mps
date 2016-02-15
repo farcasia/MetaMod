@@ -195,7 +195,7 @@
       </concept>
     </language>
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods">
-      <concept id="4767673562711815851" name="GenericGroupMethods.structure.AsTarget" flags="ig" index="knPHN">
+      <concept id="4767673562711815851" name="GenericGroupMethods.structure.AsTarget" flags="ng" index="knPHN">
         <reference id="4767673562711815852" name="refAssoc" index="knPHO" />
       </concept>
       <concept id="8976227254846920304" name="GenericGroupMethods.structure.MethodsContainer" flags="ng" index="CLm5h">
@@ -206,10 +206,10 @@
         <reference id="8976227254847281741" name="namedConcept" index="CMYPG" />
       </concept>
       <concept id="1522810226732341093" name="GenericGroupMethods.structure.ValueModel" flags="ig" index="1l_8MK" />
-      <concept id="1522810226732785365" name="GenericGroupMethods.structure.ConceptsOfType" flags="ig" index="1lBOk0">
+      <concept id="1522810226732785365" name="GenericGroupMethods.structure.ConceptsOfType" flags="ng" index="1lBOk0">
         <child id="1522810226732838602" name="conceptType" index="1lB3kv" />
       </concept>
-      <concept id="1522810226734053312" name="GenericGroupMethods.structure.IsTypeOf" flags="ig" index="1lWEKl">
+      <concept id="1522810226734053312" name="GenericGroupMethods.structure.IsTypeOf" flags="ng" index="1lWEKl">
         <child id="1522810226734053315" name="conceptType" index="1lWEKm" />
       </concept>
     </language>
@@ -1237,7 +1237,7 @@
           </node>
         </node>
       </node>
-      <node concept="3cqZAl" id="45NpebPje_$" role="3clF45" />
+      <node concept="3cqZAl" id="26DSjBDLDwO" role="3clF45" />
     </node>
   </node>
   <node concept="1GnNiK" id="45NpebPj6u6">
