@@ -158,5 +158,29 @@
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
     </node>
   </node>
+  <node concept="1TIwiD" id="26DSjBDxXFu">
+    <property role="TrG5h" value="intValue" />
+    <property role="34LRSv" value="intValue" />
+    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <ref role="1TJDcQ" to="tpee:f_0OyhT" resolve="IntegerType" />
+    <node concept="1TJgyj" id="26DSjBDy7eq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="varRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz7vLUo" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="26DSjBDy5pL">
+    <property role="TrG5h" value="strValue" />
+    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="34LRSv" value="strValue" />
+    <ref role="1TJDcQ" to="tpee:hP7QB7G" resolve="StringType" />
+  </node>
+  <node concept="1TIwiD" id="26DSjBDy5_j">
+    <property role="TrG5h" value="boolValue" />
+    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="34LRSv" value="boolValue" />
+    <ref role="1TJDcQ" to="tpee:f_0P_4Y" resolve="BooleanType" />
+  </node>
 </model>
 
