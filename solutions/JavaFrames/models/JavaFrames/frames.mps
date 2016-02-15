@@ -201,6 +201,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="26DSjBDGko1" role="3cqZAp">
+          <node concept="2OqwBi" id="26DSjBDGkxZ" role="3clFbG">
+            <node concept="37vLTw" id="26DSjBDGknZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="5UqrlCgqRTc" resolve="frame" />
+            </node>
+            <node concept="liA8E" id="26DSjBDGlFo" role="2OqNvi">
+              <ref role="37wK5l" to="1t7x:~Frame.setResizable(boolean):void" resolve="setResizable" />
+              <node concept="3clFbT" id="26DSjBDGlGP" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="26DSjBDnrU3" role="3cqZAp" />
         <node concept="3clFbF" id="26DSjBDns2J" role="3cqZAp">
           <node concept="2OqwBi" id="26DSjBDnsbH" role="3clFbG">

@@ -349,31 +349,21 @@
   </node>
   <node concept="24kQdi" id="26DSjBDy4IF">
     <property role="3GE5qa" value="Operations.OperationsPrimitives" />
-    <ref role="1XX52x" to="1o5n:26DSjBDxXFu" resolve="int" />
-    <node concept="3EZMnI" id="26DSjBDy7et" role="2wV5jI">
-      <node concept="2iRfu4" id="26DSjBDy7eu" role="2iSdaV" />
-      <node concept="3F1sOY" id="26DSjBDy7eS" role="3EZMnx">
-        <ref role="1NtTu8" to="1o5n:26DSjBDy7eq" />
-      </node>
-      <node concept="3F0ifn" id="26DSjBDy7eY" role="3EZMnx">
-        <property role="3F0ifm" value="." />
-        <ref role="1k5W1q" to="tpen:hFDnyG9" resolve="Dot" />
-      </node>
-      <node concept="PMmxH" id="26DSjBDy7f6" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      </node>
+    <ref role="1XX52x" to="1o5n:26DSjBDxXFu" resolve="intValue" />
+    <node concept="PMmxH" id="26DSjBDDX5A" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="26DSjBDy5pR">
     <property role="3GE5qa" value="Operations.OperationsPrimitives" />
-    <ref role="1XX52x" to="1o5n:26DSjBDy5pL" resolve="str" />
+    <ref role="1XX52x" to="1o5n:26DSjBDy5pL" resolve="strValue" />
     <node concept="PMmxH" id="26DSjBDy5pT" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="26DSjBDy5_p">
     <property role="3GE5qa" value="Operations.OperationsPrimitives" />
-    <ref role="1XX52x" to="1o5n:26DSjBDy5_j" resolve="bool" />
+    <ref role="1XX52x" to="1o5n:26DSjBDy5_j" resolve="boolValue" />
     <node concept="PMmxH" id="26DSjBDy5_r" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
