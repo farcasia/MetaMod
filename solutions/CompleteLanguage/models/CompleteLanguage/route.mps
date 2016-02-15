@@ -13,6 +13,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
   </languages>
   <imports>
     <import index="qpt8" ref="r:7c483772-12d3-48d5-aef4-e3ba54b5ea31(JavaFrames.frames)" />
@@ -122,7 +123,7 @@
       </concept>
     </language>
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods">
-      <concept id="4767673562711423982" name="GenericGroupMethods.structure.AsSource" flags="ig" index="khloQ">
+      <concept id="4767673562711423982" name="GenericGroupMethods.structure.AsSource" flags="ng" index="khloQ">
         <reference id="4767673562711424009" name="refAssoc" index="khl7h" />
       </concept>
       <concept id="8976227254846920304" name="GenericGroupMethods.structure.MethodsContainer" flags="ng" index="CLm5h">
@@ -135,7 +136,7 @@
       <concept id="2425717513163134577" name="GenericGroupMethods.structure.strValue" flags="ng" index="388rt8" />
       <concept id="2425717513163102942" name="GenericGroupMethods.structure.intValue" flags="ng" index="38bzJB" />
       <concept id="1522810226732341093" name="GenericGroupMethods.structure.ValueModel" flags="ig" index="1l_8MK" />
-      <concept id="1522810226732785365" name="GenericGroupMethods.structure.ConceptsOfType" flags="ig" index="1lBOk0">
+      <concept id="1522810226732785365" name="GenericGroupMethods.structure.ConceptsOfType" flags="ng" index="1lBOk0">
         <child id="1522810226732838602" name="conceptType" index="1lB3kv" />
       </concept>
     </language>
@@ -336,21 +337,21 @@
             <property role="Xl_RC" value="Got into genCodeMain" />
           </node>
         </node>
-        <node concept="3cpWs8" id="5UqrlCgsVD4" role="3cqZAp">
-          <node concept="3cpWsn" id="5UqrlCgsVD7" role="3cpWs9">
+        <node concept="3cpWs8" id="26DSjBDKqtn" role="3cqZAp">
+          <node concept="3cpWsn" id="26DSjBDKqtq" role="3cpWs9">
             <property role="TrG5h" value="routes" />
-            <node concept="_YKpA" id="5UqrlCgsVD0" role="1tU5fm">
-              <node concept="CMjq$" id="5UqrlCgsVDw" role="_ZDj9">
+            <node concept="_YKpA" id="26DSjBDKxHZ" role="1tU5fm">
+              <node concept="CMjq$" id="26DSjBDL2vc" role="_ZDj9">
                 <ref role="CMYPG" node="5UqrlCgsTkj" resolve="Route" />
               </node>
             </node>
-            <node concept="2OqwBi" id="5UqrlCgsVvs" role="33vP2m">
-              <node concept="37vLTw" id="5UqrlCgsVv7" role="2Oq$k0">
+            <node concept="2OqwBi" id="26DSjBDKqE5" role="33vP2m">
+              <node concept="37vLTw" id="26DSjBDKqDH" role="2Oq$k0">
                 <ref role="3cqZAo" node="5UqrlCgsV7Z" resolve="valueModel" />
               </node>
-              <node concept="1lBOk0" id="5UqrlCgsV_L" role="2OqNvi">
-                <node concept="CMjq$" id="5UqrlCgsV_M" role="_ZDj9" />
-                <node concept="CMjq$" id="5UqrlCgsV_O" role="1lB3kv">
+              <node concept="1lBOk0" id="26DSjBDKqKA" role="2OqNvi">
+                <node concept="CMjq$" id="26DSjBDKqKB" role="_ZDj9" />
+                <node concept="CMjq$" id="26DSjBDKqKD" role="1lB3kv">
                   <ref role="CMYPG" node="5UqrlCgsTkj" resolve="Route" />
                 </node>
               </node>
@@ -365,7 +366,7 @@
             </node>
             <node concept="2OqwBi" id="26DSjBDnm0L" role="33vP2m">
               <node concept="37vLTw" id="26DSjBDnm0M" role="2Oq$k0">
-                <ref role="3cqZAo" node="5UqrlCgsVD7" resolve="routes" />
+                <ref role="3cqZAo" node="26DSjBDKqtq" resolve="routes" />
               </node>
               <node concept="34jXtK" id="26DSjBDnm0N" role="2OqNvi">
                 <node concept="3cmrfG" id="26DSjBDnm0O" role="25WWJ7">

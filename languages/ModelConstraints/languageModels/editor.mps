@@ -217,7 +217,7 @@
     <ref role="1XX52x" to="1o5n:7MhXM5kmc65" resolve="ConceptType" />
     <node concept="3EZMnI" id="7MhXM5kmc8b" role="2wV5jI">
       <node concept="3F0ifn" id="7MhXM5kmc8i" role="3EZMnx">
-        <property role="3F0ifm" value="Concept" />
+        <property role="3F0ifm" value="ConceptType" />
         <node concept="3$7jql" id="7MhXM5kmFXT" role="3F10Kt">
           <property role="3$6WeP" value="0.0" />
         </node>

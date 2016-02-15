@@ -76,8 +76,8 @@
   <node concept="1TIwiD" id="7MhXM5kmc65">
     <property role="TrG5h" value="ConceptType" />
     <property role="3GE5qa" value="Types" />
-    <property role="34LRSv" value="ConceptType" />
-    <ref role="1TJDcQ" to="tpee:gWaQbR$" resolve="PrimitiveType" />
+    <property role="34LRSv" value="ConceptType&lt; &gt;" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyj" id="7MhXM5kmxDd" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="namedConcept" />
@@ -99,7 +99,7 @@
     <property role="TrG5h" value="ConceptsOfType" />
     <property role="34LRSv" value="conceptsOfType" />
     <property role="3GE5qa" value="Operations" />
-    <ref role="1TJDcQ" to="tp2q:gK_YKtE" resolve="ListType" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="1ky6Xl0JyVa" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="conceptType" />
@@ -114,7 +114,7 @@
     <property role="3GE5qa" value="Operations" />
     <property role="TrG5h" value="IsTypeOf" />
     <property role="34LRSv" value="isTypeOf" />
-    <ref role="1TJDcQ" to="tpee:f_0P_4Y" resolve="BooleanType" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="1ky6Xl0Obv3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="conceptType" />
@@ -132,7 +132,7 @@
     <property role="3GE5qa" value="Operations" />
     <property role="TrG5h" value="AsSource" />
     <property role="34LRSv" value="asSource" />
-    <ref role="1TJDcQ" to="tp2q:gK_YKtE" resolve="ListType" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="48EbtxmrRK9" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="refAssoc" />
@@ -147,7 +147,7 @@
     <property role="3GE5qa" value="Operations" />
     <property role="TrG5h" value="AsTarget" />
     <property role="34LRSv" value="asTarget" />
-    <ref role="1TJDcQ" to="tp2q:gK_YKtE" resolve="ListType" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="48EbtxmtnqG" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="refAssoc" />
