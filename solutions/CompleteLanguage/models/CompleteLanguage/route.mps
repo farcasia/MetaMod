@@ -14,6 +14,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
+    <use id="47849989-c2df-46a8-aba5-1c5a21bbef1f" name="Constraints" version="-1" />
   </languages>
   <imports>
     <import index="qpt8" ref="r:7c483772-12d3-48d5-aef4-e3ba54b5ea31(JavaFrames.frames)" />
@@ -62,6 +63,7 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -164,6 +166,10 @@
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
+    </language>
+    <language id="47849989-c2df-46a8-aba5-1c5a21bbef1f" name="Constraints">
+      <concept id="5319102428748859495" name="Constraints.structure.ConstraintsContainer" flags="ng" index="1GFRst" />
+      <concept id="5319102428748859367" name="Constraints.structure.Constraint" flags="ng" index="1GFRyt" />
     </language>
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration">
       <concept id="5711897705675317525" name="CodeGeneration.structure.CodeGenMethodCall" flags="ng" index="3otQA" />
@@ -2845,6 +2851,19 @@
       <node concept="2jq5PB" id="2g3sjJrZf4$" role="2oAaxa" />
     </node>
     <node concept="2jq5PB" id="6D5K2vjMNmO" role="2oAaxa" />
+  </node>
+  <node concept="1GFRst" id="6hHbyxTpqeO">
+    <property role="TrG5h" value="Constraints_Primitives" />
+    <ref role="1GHRfG" node="ITVTA012yS" resolve="Primitives" />
+    <node concept="1GFRyt" id="6hHbyxTpv_9" role="CLm5g">
+      <property role="TrG5h" value="constraints" />
+      <node concept="37vLTG" id="6hHbyxTpv_a" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="6hHbyxTpv_b" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="6hHbyxTpv_f" role="3clF45" />
+      <node concept="3clFbS" id="6hHbyxTpv_g" role="3clF47" />
+    </node>
   </node>
 </model>
 

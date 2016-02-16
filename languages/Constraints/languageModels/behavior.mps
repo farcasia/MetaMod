@@ -206,19 +206,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="1ky6Xl0POmh" role="3cqZAp" />
-        <node concept="3clFbF" id="1ky6Xl0POxy" role="3cqZAp">
-          <node concept="37vLTI" id="1ky6Xl0PQk5" role="3clFbG">
-            <node concept="Xl_RD" id="1ky6Xl0PQm$" role="37vLTx">
-              <property role="Xl_RC" value="constraints" />
-            </node>
-            <node concept="2OqwBi" id="1ky6Xl0POOg" role="37vLTJ">
-              <node concept="13iPFW" id="1ky6Xl0POxw" role="2Oq$k0" />
-              <node concept="3TrcHB" id="1ky6Xl0PPvc" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="1ky6Xl0PQFj" role="3cqZAp">
           <node concept="37vLTI" id="1ky6Xl0PRSY" role="3clFbG">
             <node concept="2ShNRf" id="1ky6Xl0PRWk" role="37vLTx">
