@@ -251,6 +251,9 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
@@ -290,6 +293,10 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
+      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -2725,56 +2732,111 @@
         <node concept="3clFbS" id="1E5i917CAI1" role="2VODD2">
           <node concept="3SKdUt" id="2SWtdi21Fln" role="3cqZAp">
             <node concept="3SKdUq" id="2SWtdi21FpS" role="3SKWNk">
-              <property role="3SKdUp" value="We check whether the constraints defined on the type model of this model hold on this model." />
+              <property role="3SKdUp" value="We check whether the constraints defined on the type model of this" />
             </node>
           </node>
-          <node concept="3cpWs8" id="1E5i917DaOd" role="3cqZAp">
-            <node concept="3cpWsn" id="1E5i917DaOe" role="3cpWs9">
-              <property role="TrG5h" value="constraints" />
-              <node concept="3uibUv" id="1E5i917DaOf" role="1tU5fm">
-                <ref role="3uigEE" to="avy3:1E5i917CZdZ" resolve="Constraints" />
-              </node>
-              <node concept="0kSF2" id="6e92Hp0ZRFU" role="33vP2m">
-                <node concept="3uibUv" id="6e92Hp0ZRFX" role="0kSFW">
-                  <ref role="3uigEE" to="avy3:1E5i917CZdZ" resolve="Constraints" />
+          <node concept="3SKdUt" id="6hHbyxTtdw9" role="3cqZAp">
+            <node concept="3SKdUq" id="6hHbyxTtd$R" role="3SKWNk">
+              <property role="3SKdUp" value="value model hold on the value model." />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="6hHbyxTtdGM" role="3cqZAp">
+            <node concept="3SKdUq" id="6hHbyxTtdLy" role="3SKWNk">
+              <property role="3SKdUp" value="We check the constraints of the type model and all its inner groups." />
+            </node>
+          </node>
+          <node concept="3cpWs8" id="6hHbyxTsvL8" role="3cqZAp">
+            <node concept="3cpWsn" id="6hHbyxTsvLb" role="3cpWs9">
+              <property role="TrG5h" value="listOfAccesibleGroups" />
+              <node concept="2OqwBi" id="6hHbyxTs$3O" role="33vP2m">
+                <node concept="2OqwBi" id="6hHbyxTtfxL" role="2Oq$k0">
+                  <node concept="0GJ7k" id="6hHbyxTtf0F" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6hHbyxTthHe" role="2OqNvi">
+                    <ref role="3Tt5mk" to="v0yp:2ZZRdXAFMQO" />
+                  </node>
                 </node>
-                <node concept="2YIFZM" id="45NpebPp0q$" role="0kSFX">
-                  <ref role="37wK5l" to="ksi3:6e92Hp0ZrU3" resolve="createClassInRuntime" />
-                  <ref role="1Pybhc" to="ksi3:6e92Hp0Zr$o" resolve="Utils" />
-                  <node concept="3cpWs3" id="45NpebPp0q_" role="37wK5m">
-                    <node concept="2OqwBi" id="45NpebPp0qA" role="3uHU7w">
-                      <node concept="2OqwBi" id="45NpebPp0qB" role="2Oq$k0">
-                        <node concept="0GJ7k" id="45NpebPp0qC" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="45NpebPp0qD" role="2OqNvi">
-                          <ref role="3Tt5mk" to="v0yp:2ZZRdXAFMQO" />
+                <node concept="2qgKlT" id="6hHbyxTs$AO" role="2OqNvi">
+                  <ref role="37wK5l" to="z64h:4X4Jbdc5y5v" resolve="getAllNamedInnerGroups" />
+                </node>
+              </node>
+              <node concept="2I9FWS" id="6hHbyxTsBbQ" role="1tU5fm">
+                <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6hHbyxTs_kQ" role="3cqZAp">
+            <node concept="2OqwBi" id="6hHbyxTs_J0" role="3clFbG">
+              <node concept="37vLTw" id="6hHbyxTs_kO" role="2Oq$k0">
+                <ref role="3cqZAo" node="6hHbyxTsvLb" resolve="listOfAccesibleGroups" />
+              </node>
+              <node concept="TSZUe" id="6hHbyxTsE59" role="2OqNvi">
+                <node concept="2OqwBi" id="6hHbyxTtifP" role="25WWJ7">
+                  <node concept="0GJ7k" id="6hHbyxTti7q" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6hHbyxTtiB$" role="2OqNvi">
+                    <ref role="3Tt5mk" to="v0yp:2ZZRdXAFMQO" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="6hHbyxTtpKM" role="3cqZAp" />
+          <node concept="1DcWWT" id="6hHbyxTtjkq" role="3cqZAp">
+            <node concept="3clFbS" id="6hHbyxTtjks" role="2LFqv$">
+              <node concept="3cpWs8" id="1E5i917DaOd" role="3cqZAp">
+                <node concept="3cpWsn" id="1E5i917DaOe" role="3cpWs9">
+                  <property role="TrG5h" value="constraints" />
+                  <node concept="3uibUv" id="1E5i917DaOf" role="1tU5fm">
+                    <ref role="3uigEE" to="avy3:1E5i917CZdZ" resolve="Constraints" />
+                  </node>
+                  <node concept="0kSF2" id="6e92Hp0ZRFU" role="33vP2m">
+                    <node concept="3uibUv" id="6e92Hp0ZRFX" role="0kSFW">
+                      <ref role="3uigEE" to="avy3:1E5i917CZdZ" resolve="Constraints" />
+                    </node>
+                    <node concept="2YIFZM" id="45NpebPp0q$" role="0kSFX">
+                      <ref role="1Pybhc" to="ksi3:6e92Hp0Zr$o" resolve="Utils" />
+                      <ref role="37wK5l" to="ksi3:6e92Hp0ZrU3" resolve="createClassInRuntime" />
+                      <node concept="3cpWs3" id="45NpebPp0q_" role="37wK5m">
+                        <node concept="2OqwBi" id="45NpebPp0qA" role="3uHU7w">
+                          <node concept="37vLTw" id="6hHbyxTtlW2" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6hHbyxTtjkt" resolve="group" />
+                          </node>
+                          <node concept="3TrcHB" id="45NpebPp0qE" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="45NpebPp0qF" role="3uHU7B">
+                          <property role="Xl_RC" value="Constraints_Group_" />
                         </node>
                       </node>
-                      <node concept="3TrcHB" id="45NpebPp0qE" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="Xl_RD" id="45NpebPp0qG" role="37wK5m">
+                        <property role="Xl_RC" value="RuntimeModelConstraints.runtime." />
                       </node>
-                    </node>
-                    <node concept="Xl_RD" id="45NpebPp0qF" role="3uHU7B">
-                      <property role="Xl_RC" value="Constraints_Group_" />
+                      <node concept="10Nm6u" id="63lYmBSPZuN" role="37wK5m" />
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="45NpebPp0qG" role="37wK5m">
-                    <property role="Xl_RC" value="RuntimeModelConstraints.runtime." />
+                </node>
+              </node>
+              <node concept="3clFbH" id="6hHbyxTtnaO" role="3cqZAp" />
+              <node concept="3clFbF" id="1E5i917DwKF" role="3cqZAp">
+                <node concept="2OqwBi" id="1E5i917Dx_$" role="3clFbG">
+                  <node concept="37vLTw" id="1E5i917DwKD" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1E5i917DaOe" resolve="constraints" />
                   </node>
-                  <node concept="10Nm6u" id="63lYmBSPZuN" role="37wK5m" />
+                  <node concept="liA8E" id="1E5i917DydM" role="2OqNvi">
+                    <ref role="37wK5l" to="avy3:1E5i917CZmT" resolve="checkValidity" />
+                    <node concept="0GJ7k" id="1E5i917Dyu$" role="37wK5m" />
+                  </node>
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="3clFbH" id="6e92Hp13uKT" role="3cqZAp" />
-          <node concept="3clFbF" id="1E5i917DwKF" role="3cqZAp">
-            <node concept="2OqwBi" id="1E5i917Dx_$" role="3clFbG">
-              <node concept="37vLTw" id="1E5i917DwKD" role="2Oq$k0">
-                <ref role="3cqZAo" node="1E5i917DaOe" resolve="constraints" />
+            <node concept="3cpWsn" id="6hHbyxTtjkt" role="1Duv9x">
+              <property role="TrG5h" value="group" />
+              <node concept="3Tqbb2" id="6hHbyxTtjAR" role="1tU5fm">
+                <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
               </node>
-              <node concept="liA8E" id="1E5i917DydM" role="2OqNvi">
-                <ref role="37wK5l" to="avy3:1E5i917CZmT" resolve="checkValidity" />
-                <node concept="0GJ7k" id="1E5i917Dyu$" role="37wK5m" />
-              </node>
+            </node>
+            <node concept="37vLTw" id="6hHbyxTtk07" role="1DdaDG">
+              <ref role="3cqZAo" node="6hHbyxTsvLb" resolve="listOfAccesibleGroups" />
             </node>
           </node>
         </node>
