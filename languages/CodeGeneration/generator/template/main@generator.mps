@@ -183,12 +183,6 @@
       </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -877,37 +871,6 @@
                     <property role="2qtEX8" value="classifier" />
                     <node concept="3$xsQk" id="63lYmBSPbiq" role="3$ytzL">
                       <node concept="3clFbS" id="63lYmBSPbir" role="2VODD2">
-                        <node concept="34ab3g" id="63lYmBSPbis" role="3cqZAp">
-                          <property role="35gtTG" value="warn" />
-                          <node concept="3cpWs3" id="63lYmBSPbit" role="34bqiv">
-                            <node concept="Xl_RD" id="63lYmBSPbiu" role="3uHU7B">
-                              <property role="Xl_RC" value="reduce_CodeGenMethodCall genContext CodeGen " />
-                            </node>
-                            <node concept="2OqwBi" id="63lYmBSPbiv" role="3uHU7w">
-                              <node concept="1iwH7S" id="63lYmBSPbiw" role="2Oq$k0" />
-                              <node concept="1iwH70" id="63lYmBSPbix" role="2OqNvi">
-                                <ref role="1iwH77" node="2SWtdi20ukb" resolve="NamedGroupToJavaClass" />
-                                <node concept="2OqwBi" id="63lYmBSPbiy" role="1iwH7V">
-                                  <node concept="1PxgMI" id="63lYmBSPbiz" role="2Oq$k0">
-                                    <ref role="1PxNhF" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
-                                    <node concept="2OqwBi" id="63lYmBSPbi$" role="1PxMeX">
-                                      <node concept="2OqwBi" id="63lYmBSPbi_" role="2Oq$k0">
-                                        <node concept="30H73N" id="63lYmBSPbiA" role="2Oq$k0" />
-                                        <node concept="3TrEf2" id="63lYmBSPbiB" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="anrw:4X4Jbdca$w5" />
-                                        </node>
-                                      </node>
-                                      <node concept="2Rxl7S" id="63lYmBSPbiC" role="2OqNvi" />
-                                    </node>
-                                  </node>
-                                  <node concept="3TrEf2" id="63lYmBSPbiD" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="1o5n:4BhfRC_p$Mm" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
                         <node concept="3cpWs6" id="63lYmBSPbiE" role="3cqZAp">
                           <node concept="2OqwBi" id="63lYmBSPbiF" role="3cqZAk">
                             <node concept="1iwH7S" id="63lYmBSPbiG" role="2Oq$k0" />
