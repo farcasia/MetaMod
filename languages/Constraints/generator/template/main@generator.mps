@@ -127,7 +127,6 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
-      <concept id="7830515785164762753" name="jetbrains.mps.lang.generator.structure.MappingConfiguration_Condition" flags="in" index="avzCv" />
       <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
         <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
       </concept>
@@ -135,7 +134,6 @@
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
-        <child id="7830515785164764091" name="condition" index="avys_" />
         <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
@@ -666,15 +664,6 @@
       <ref role="30HIoZ" to="1o5n:7MhXM5kmc65" resolve="ConceptType" />
       <node concept="j$656" id="2SWtdi2afvi" role="1lVwrX">
         <ref role="v9R2y" to="i2ao:2SWtdi2afvg" resolve="reduce_ConceptType" />
-      </node>
-    </node>
-    <node concept="avzCv" id="5UqrlCgnvXs" role="avys_">
-      <node concept="3clFbS" id="5UqrlCgnvXt" role="2VODD2">
-        <node concept="3clFbF" id="5UqrlCgnwe0" role="3cqZAp">
-          <node concept="3clFbT" id="5UqrlCgnwdZ" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
       </node>
     </node>
   </node>

@@ -713,18 +713,40 @@
             </node>
           </node>
           <node concept="3clFbS" id="4X4Jbdc5Vlh" role="2LFqv$">
+            <node concept="3clFbF" id="41F9UXRfQrS" role="3cqZAp">
+              <node concept="2OqwBi" id="41F9UXRfRvU" role="3clFbG">
+                <node concept="37vLTw" id="41F9UXRfQrQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4X4Jbdc6cFY" resolve="namedInnerGroups" />
+                </node>
+                <node concept="TSZUe" id="41F9UXRfTa4" role="2OqNvi">
+                  <node concept="2OqwBi" id="41F9UXRfTEP" role="25WWJ7">
+                    <node concept="37vLTw" id="41F9UXRfToQ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4X4Jbdc5Vlg" resolve="reusedGr" />
+                    </node>
+                    <node concept="3TrEf2" id="41F9UXRfTVc" role="2OqNvi">
+                      <ref role="3Tt5mk" to="v0yp:7zWtwVwpdQQ" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="4X4Jbdc6di3" role="3cqZAp">
               <node concept="2OqwBi" id="4X4Jbdc6dEG" role="3clFbG">
                 <node concept="37vLTw" id="4X4Jbdc6di1" role="2Oq$k0">
                   <ref role="3cqZAo" node="4X4Jbdc6cFY" resolve="namedInnerGroups" />
                 </node>
-                <node concept="TSZUe" id="4X4Jbdc6eoh" role="2OqNvi">
-                  <node concept="2OqwBi" id="4X4Jbdc6eTL" role="25WWJ7">
-                    <node concept="37vLTw" id="4X4Jbdc6eBT" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4X4Jbdc5Vlg" resolve="reusedGr" />
+                <node concept="X8dFx" id="4K5z9Q5$iVj" role="2OqNvi">
+                  <node concept="2OqwBi" id="4K5z9Q5$iVl" role="25WWJ7">
+                    <node concept="2OqwBi" id="4K5z9Q5$iVm" role="2Oq$k0">
+                      <node concept="37vLTw" id="4K5z9Q5$iVn" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4X4Jbdc5Vlg" resolve="reusedGr" />
+                      </node>
+                      <node concept="3TrEf2" id="4K5z9Q5$iVo" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v0yp:7zWtwVwpdQQ" />
+                      </node>
                     </node>
-                    <node concept="3TrEf2" id="4X4Jbdc6faO" role="2OqNvi">
-                      <ref role="3Tt5mk" to="v0yp:7zWtwVwpdQQ" />
+                    <node concept="2qgKlT" id="4K5z9Q5$iVp" role="2OqNvi">
+                      <ref role="37wK5l" node="4X4Jbdc5y5v" resolve="getAllNamedInnerGroups" />
                     </node>
                   </node>
                 </node>
@@ -758,14 +780,31 @@
         </node>
         <node concept="1DcWWT" id="4X4Jbdc6kPB" role="3cqZAp">
           <node concept="3clFbS" id="4X4Jbdc6kPD" role="2LFqv$">
+            <node concept="3clFbF" id="41F9UXRfUYr" role="3cqZAp">
+              <node concept="2OqwBi" id="41F9UXRfW5j" role="3clFbG">
+                <node concept="37vLTw" id="41F9UXRfUYp" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4X4Jbdc6cFY" resolve="namedInnerGroups" />
+                </node>
+                <node concept="TSZUe" id="41F9UXRfXxs" role="2OqNvi">
+                  <node concept="37vLTw" id="41F9UXRfX$i" role="25WWJ7">
+                    <ref role="3cqZAo" node="4X4Jbdc6kPE" resolve="subGroup" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="4X4Jbdc6n7L" role="3cqZAp">
               <node concept="2OqwBi" id="4X4Jbdc6nwl" role="3clFbG">
                 <node concept="37vLTw" id="4X4Jbdc6n7J" role="2Oq$k0">
                   <ref role="3cqZAo" node="4X4Jbdc6cFY" resolve="namedInnerGroups" />
                 </node>
-                <node concept="TSZUe" id="4X4Jbdc6oVe" role="2OqNvi">
-                  <node concept="37vLTw" id="4X4Jbdc6oZ0" role="25WWJ7">
-                    <ref role="3cqZAo" node="4X4Jbdc6kPE" resolve="subGroup" />
+                <node concept="X8dFx" id="4K5z9Q5$juS" role="2OqNvi">
+                  <node concept="2OqwBi" id="4K5z9Q5$jPz" role="25WWJ7">
+                    <node concept="37vLTw" id="4K5z9Q5$juU" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4X4Jbdc6kPE" resolve="subGroup" />
+                    </node>
+                    <node concept="2qgKlT" id="4K5z9Q5$kGR" role="2OqNvi">
+                      <ref role="37wK5l" node="4X4Jbdc5y5v" resolve="getAllNamedInnerGroups" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -804,7 +843,7 @@
       <node concept="P$JXv" id="4X4Jbdc5ORl" role="lGtFl">
         <node concept="TZ5HA" id="4X4Jbdc5ORm" role="TZ5H$">
           <node concept="1dT_AC" id="4X4Jbdc5ORn" role="1dT_Ay">
-            <property role="1dT_AB" value="The inner groups are represented by subgroups and reused groups." />
+            <property role="1dT_AB" value="The inner groups are represented by subgroups and reused groups (recursively)." />
           </node>
         </node>
         <node concept="x79VA" id="4X4Jbdc5ORo" role="x79VK">
