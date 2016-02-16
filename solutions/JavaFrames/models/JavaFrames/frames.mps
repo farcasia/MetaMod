@@ -10,7 +10,6 @@
   <imports>
     <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -129,16 +128,6 @@
       </node>
       <node concept="3Tm6S6" id="5UqrlCgqRTp" role="1B3o_S" />
     </node>
-    <node concept="312cEg" id="26DSjBDnqyq" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="panel" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="26DSjBDnqAb" role="1tU5fm">
-        <ref role="3uigEE" to="dbrf:~JPanel" resolve="JPanel" />
-      </node>
-      <node concept="3Tm1VV" id="26DSjBDnqNs" role="1B3o_S" />
-    </node>
     <node concept="2tJIrI" id="5UqrlCgqRTv" role="jymVt" />
     <node concept="3clFbW" id="5UqrlCgqRU6" role="jymVt">
       <node concept="3cqZAl" id="5UqrlCgqRU8" role="3clF45" />
@@ -156,18 +145,6 @@
             </node>
             <node concept="37vLTw" id="5UqrlCgqRUx" role="37vLTJ">
               <ref role="3cqZAo" node="5UqrlCgqRTc" resolve="frame" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="26DSjBDnqNT" role="3cqZAp">
-          <node concept="37vLTI" id="26DSjBDnrKm" role="3clFbG">
-            <node concept="2ShNRf" id="26DSjBDnrRV" role="37vLTx">
-              <node concept="1pGfFk" id="26DSjBDnrRU" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JPanel.&lt;init&gt;()" resolve="JPanel" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="26DSjBDnqNR" role="37vLTJ">
-              <ref role="3cqZAo" node="26DSjBDnqyq" resolve="panel" />
             </node>
           </node>
         </node>
@@ -199,28 +176,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="26DSjBDnrU3" role="3cqZAp" />
-        <node concept="3clFbF" id="26DSjBDns2J" role="3cqZAp">
-          <node concept="2OqwBi" id="26DSjBDnsbH" role="3clFbG">
-            <node concept="37vLTw" id="26DSjBDns2H" role="2Oq$k0">
-              <ref role="3cqZAo" node="26DSjBDnqyq" resolve="panel" />
-            </node>
-            <node concept="liA8E" id="26DSjBDnHFR" role="2OqNvi">
-              <ref role="37wK5l" to="dbrf:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
-              <node concept="2ShNRf" id="26DSjBDnHH8" role="37wK5m">
-                <node concept="1pGfFk" id="26DSjBDprRQ" role="2ShVmc">
-                  <ref role="37wK5l" to="1t7x:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
-                  <node concept="37vLTw" id="26DSjBDprT6" role="37wK5m">
-                    <ref role="3cqZAo" node="26DSjBDnqgy" resolve="width" />
-                  </node>
-                  <node concept="37vLTw" id="26DSjBDprXa" role="37wK5m">
-                    <ref role="3cqZAo" node="26DSjBDnqjC" resolve="length" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="26DSjBDps4G" role="3cqZAp">
           <node concept="2OqwBi" id="26DSjBDptpL" role="3clFbG">
             <node concept="2OqwBi" id="26DSjBDpsd$" role="2Oq$k0">
@@ -234,12 +189,31 @@
             <node concept="liA8E" id="26DSjBDpwND" role="2OqNvi">
               <ref role="37wK5l" to="1t7x:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
               <node concept="37vLTw" id="26DSjBDpwQL" role="37wK5m">
-                <ref role="3cqZAo" node="26DSjBDnqyq" resolve="panel" />
+                <ref role="3cqZAo" node="6D5K2vjDrUf" resolve="panel" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="26DSjBDnrUv" role="3cqZAp" />
+      </node>
+      <node concept="37vLTG" id="5UqrlCgqUez" role="3clF46">
+        <property role="TrG5h" value="frameName" />
+        <node concept="17QB3L" id="5UqrlCgqUey" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6D5K2vjDrUf" role="3clF46">
+        <property role="TrG5h" value="panel" />
+        <node concept="3uibUv" id="6D5K2vjDs2$" role="1tU5fm">
+          <ref role="3uigEE" to="dbrf:~JPanel" resolve="JPanel" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6D5K2vjD_1E" role="jymVt" />
+    <node concept="3clFb_" id="6D5K2vjD_dK" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="start" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6D5K2vjD_dN" role="3clF47">
         <node concept="3clFbF" id="5UqrlCgr4LY" role="3cqZAp">
           <node concept="2OqwBi" id="5UqrlCgr4Sr" role="3clFbG">
             <node concept="37vLTw" id="5UqrlCgr4LW" role="2Oq$k0">
@@ -264,22 +238,8 @@
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="5UqrlCgqUez" role="3clF46">
-        <property role="TrG5h" value="frameName" />
-        <node concept="17QB3L" id="5UqrlCgqUey" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="26DSjBDnqgy" role="3clF46">
-        <property role="TrG5h" value="width" />
-        <node concept="3uibUv" id="26DSjBDnqjm" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="26DSjBDnqjC" role="3clF46">
-        <property role="TrG5h" value="length" />
-        <node concept="3uibUv" id="26DSjBDnqmn" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
-        </node>
-      </node>
+      <node concept="3Tm1VV" id="6D5K2vjD_9C" role="1B3o_S" />
+      <node concept="3cqZAl" id="6D5K2vjD_dI" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="5UqrlCgqKZT" role="1B3o_S" />
   </node>
