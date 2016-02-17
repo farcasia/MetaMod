@@ -126,8 +126,9 @@
       <node concept="1iCGBv" id="4L1k0SoaiDP" role="3EZMnx">
         <ref role="1NtTu8" to="leqx:4L1k0Soagmf" />
         <node concept="1sVBvm" id="4L1k0SoaiDR" role="1sWHZn">
-          <node concept="3F0ifn" id="4L1k0SoaiDY" role="2wV5jI">
-            <property role="3F0ifm" value="name" />
+          <node concept="3F0A7n" id="4L1k0SozCNc" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
