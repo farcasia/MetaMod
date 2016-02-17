@@ -17,6 +17,7 @@
       <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -137,6 +138,7 @@
         <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
       </node>
       <node concept="3F2HdR" id="4L1k0SoaiEp" role="3EZMnx">
+        <property role="2czwfO" value="," />
         <ref role="1NtTu8" to="tpee:fz7wK6I" />
         <node concept="2iRfu4" id="4L1k0SoaiEr" role="2czzBx" />
       </node>
@@ -166,6 +168,7 @@
           <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
         </node>
         <node concept="3F2HdR" id="4L1k0SoaiG2" role="3EZMnx">
+          <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="tpee:fzclF7Y" />
           <node concept="2iRfu4" id="4L1k0SoaiG4" role="2czzBx" />
         </node>
@@ -178,6 +181,9 @@
         </node>
         <node concept="3F1sOY" id="4L1k0SoaiHq" role="3EZMnx">
           <ref role="1NtTu8" to="tpee:fzclF7X" />
+        </node>
+        <node concept="3F0ifn" id="6RAr73Z$Bq9" role="3EZMnx">
+          <property role="3F0ifm" value="{" />
         </node>
         <node concept="2iRfu4" id="4L1k0SoaiFl" role="2iSdaV" />
       </node>
@@ -192,6 +198,9 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="6RAr73Z$Bql" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
       </node>
       <node concept="2iRkQZ" id="4L1k0SoaiF9" role="2iSdaV" />
     </node>
