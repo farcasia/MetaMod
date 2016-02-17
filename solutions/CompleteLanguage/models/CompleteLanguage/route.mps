@@ -15,6 +15,9 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
     <use id="47849989-c2df-46a8-aba5-1c5a21bbef1f" name="Constraints" version="-1" />
+    <use id="2a4f5bab-551b-46ab-a40c-28d5229d6214" name="Helpers" version="-1" />
+    <generationPart ref="47849989-c2df-46a8-aba5-1c5a21bbef1f(Constraints)" />
+    <generationPart ref="2a4f5bab-551b-46ab-a40c-28d5229d6214(Helpers)" />
   </languages>
   <imports>
     <import index="qpt8" ref="r:7c483772-12d3-48d5-aef4-e3ba54b5ea31(JavaFrames.frames)" />
@@ -308,6 +311,10 @@
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
+    </language>
+    <language id="2a4f5bab-551b-46ab-a40c-28d5229d6214" name="Helpers">
+      <concept id="5494761041833745172" name="Helpers.structure.HelperMethod" flags="ng" index="1kpCGq" />
+      <concept id="5494761041833766979" name="Helpers.structure.HelperMethodContainer" flags="ng" index="1kqm1d" />
     </language>
   </registry>
   <node concept="2oAaVg" id="5UqrlCgr74A">
@@ -4327,6 +4334,19 @@
         </node>
       </node>
       <node concept="10P_77" id="6hHbyxTxFos" role="3clF45" />
+    </node>
+  </node>
+  <node concept="1kqm1d" id="4L1k0Sofzp1">
+    <property role="TrG5h" value="Helper_Commands" />
+    <ref role="1GHRfG" node="5UqrlCgsUMS" resolve="Commands" />
+    <node concept="1kpCGq" id="4L1k0SofH$R" role="CLm5g">
+      <property role="TrG5h" value="test" />
+      <node concept="37vLTG" id="4L1k0SofH$S" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="4L1k0SofH$T" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="4L1k0SofH$U" role="3clF47" />
+      <node concept="3cqZAl" id="4L1k0SofH_5" role="3clF45" />
     </node>
   </node>
 </model>

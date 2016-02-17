@@ -20,6 +20,8 @@
         <dependency reexport="false">ae311dd6-db78-4e5e-a31b-7988fcde0010(Modules)</dependency>
         <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
         <dependency reexport="true">2c1eaabe-b063-45c2-8738-f699a5b99f43(RuntimeCodeGeneration)</dependency>
+        <dependency reexport="false">2a4f5bab-551b-46ab-a40c-28d5229d6214(Helpers)</dependency>
+        <dependency reexport="false">e0c146ad-f842-439c-a45a-3c8b57d915f9(Helpers#5494761041833683320)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
@@ -61,11 +63,14 @@
     <usedLanguage>b6269b38-266c-4c72-855f-f9773fac7a5c(LambdaCalculus)</usedLanguage>
     <usedLanguage>ae311dd6-db78-4e5e-a31b-7988fcde0010(Modules)</usedLanguage>
     <usedLanguage>ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</usedLanguage>
+    <usedLanguage>2a4f5bab-551b-46ab-a40c-28d5229d6214(Helpers)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <languageVersions>
+    <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
+    <language id="2a4f5bab-551b-46ab-a40c-28d5229d6214" fqName="Helpers" version="0" />
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" fqName="LambdaCalculus" version="0" />
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" fqName="Models" version="1" />
     <language id="ae311dd6-db78-4e5e-a31b-7988fcde0010" fqName="Modules" version="0" />
