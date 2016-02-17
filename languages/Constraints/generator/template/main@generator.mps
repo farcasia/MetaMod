@@ -22,6 +22,7 @@
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -35,6 +36,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -75,6 +77,7 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -632,6 +635,46 @@
   </node>
   <node concept="312cEu" id="1E5i917KR$n">
     <property role="TrG5h" value="createConstraintsGroup" />
+    <node concept="3clFbW" id="4X4Jbdc8Pzd" role="jymVt">
+      <node concept="3cqZAl" id="4X4Jbdc8Pzf" role="3clF45" />
+      <node concept="3Tm1VV" id="4X4Jbdc8Pzg" role="1B3o_S" />
+      <node concept="3clFbS" id="4X4Jbdc8Pzh" role="3clF47">
+        <node concept="XkiVB" id="4X4Jbdc9k2I" role="3cqZAp">
+          <ref role="37wK5l" to="avy3:4X4Jbdc3t8s" resolve="Constraints" />
+          <node concept="37vLTw" id="4X4Jbdc9k35" role="37wK5m">
+            <ref role="3cqZAo" node="4X4Jbdc8Sqw" resolve="group" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4X4Jbdc8Sqw" role="3clF46">
+        <property role="TrG5h" value="group" />
+        <node concept="3Tqbb2" id="4X4Jbdc8Sqv" role="1tU5fm">
+          <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+        </node>
+      </node>
+      <node concept="17Uvod" id="4X4Jbdc8Src" role="lGtFl">
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+        <property role="2qtEX9" value="name" />
+        <node concept="3zFVjK" id="4X4Jbdc8Srf" role="3zH0cK">
+          <node concept="3clFbS" id="4X4Jbdc8Srg" role="2VODD2">
+            <node concept="3clFbF" id="4X4Jbdc8Srm" role="3cqZAp">
+              <node concept="3cpWs3" id="4X4Jbdc8Tep" role="3clFbG">
+                <node concept="Xl_RD" id="4X4Jbdc8SB2" role="3uHU7B">
+                  <property role="Xl_RC" value="Constraints_" />
+                </node>
+                <node concept="2OqwBi" id="4X4Jbdc8Srh" role="3uHU7w">
+                  <node concept="3TrcHB" id="4X4Jbdc8Srk" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                  <node concept="30H73N" id="4X4Jbdc8Srl" role="2Oq$k0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4L1k0SocAkO" role="jymVt" />
     <node concept="3clFb_" id="1E5i917KZMg" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="checkValidity" />
