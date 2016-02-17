@@ -314,6 +314,7 @@
     </language>
     <language id="2a4f5bab-551b-46ab-a40c-28d5229d6214" name="Helpers">
       <concept id="5494761041833745172" name="Helpers.structure.HelperMethod" flags="ng" index="1kpCGq" />
+      <concept id="5494761041833766980" name="Helpers.structure.HelperMethodCall" flags="ng" index="1kqm1a" />
       <concept id="5494761041833766979" name="Helpers.structure.HelperMethodContainer" flags="ng" index="1kqm1d" />
     </language>
   </registry>
@@ -3846,6 +3847,14 @@
             <node concept="3SKdUt" id="6hHbyxTxJlw" role="3cqZAp">
               <node concept="3SKdUq" id="6hHbyxTxJlG" role="3SKWNk">
                 <property role="3SKdUp" value="TODO" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="4L1k0SozBZ2" role="3cqZAp">
+              <node concept="1kqm1a" id="4L1k0SozBZ0" role="3clFbG">
+                <ref role="37wK5l" node="4L1k0SofH$R" resolve="test" />
+                <node concept="37vLTw" id="4L1k0SozBZR" role="37wK5m">
+                  <ref role="3cqZAo" node="6hHbyxTx8$s" resolve="valueModel" />
+                </node>
               </node>
             </node>
             <node concept="3clFbH" id="6hHbyxTxJlK" role="3cqZAp" />
