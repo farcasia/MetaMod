@@ -65,20 +65,6 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_together">
-          <greater-priority-mapping>
-            <generator generatorUID="fa9e5521-3f29-432d-a881-147175cac81d(CodeGeneration#5319102428749892274)" />
-            <external-mapping>
-              <mapping-node modelUID="r:c8c9220c-1c7e-43b1-a85f-9e02dbff7050(CodeGeneration.generator.template.main@generator)" nodeID="5319102428749892275" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="e0c146ad-f842-439c-a45a-3c8b57d915f9(Helpers#5494761041833683320)" />
-            <external-mapping>
-              <mapping-node modelUID="r:d95c8d53-273b-4be3-aea0-7cddc60ab338(Helpers.generator.template.main@generator)" nodeID="5494761041833683321" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
