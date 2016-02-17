@@ -9,6 +9,7 @@
   <dependencies>
     <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
     <dependency reexport="false">ac92b060-507b-49fd-899b-f9ec55fb3b85(RuntimeCommons)</dependency>
+    <dependency reexport="false">698a97d6-e1f0-445b-9bf3-fe646be9d3b3(JavaFrames)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
