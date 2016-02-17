@@ -273,6 +273,36 @@
         <ref role="v9R2y" node="45NpebPll0X" resolve="weave_CodeGenMethod" />
       </node>
     </node>
+    <node concept="30QchW" id="4L1k0SocN2a" role="30SoJX">
+      <ref role="30HIoZ" to="leqx:4L1k0So9XGk" resolve="HelperMethod" />
+      <node concept="3gB$ML" id="4L1k0SocN2b" role="3gCiVm">
+        <node concept="3clFbS" id="4L1k0SocN2c" role="2VODD2">
+          <node concept="3clFbF" id="6RAr73Zs6l9" role="3cqZAp">
+            <node concept="2OqwBi" id="6RAr73Zs6la" role="3clFbG">
+              <node concept="1iwH7S" id="6RAr73Zs6lb" role="2Oq$k0" />
+              <node concept="1iwH70" id="6RAr73Zs6lc" role="2OqNvi">
+                <ref role="1iwH77" to="71p1:2SWtdi20ukb" resolve="NG2JavaClass" />
+                <node concept="2OqwBi" id="6RAr73Zs6ld" role="1iwH7V">
+                  <node concept="1PxgMI" id="6RAr73Zs6le" role="2Oq$k0">
+                    <ref role="1PxNhF" to="1o5n:7MhXM5kl9pK" resolve="MethodsContainer" />
+                    <node concept="2OqwBi" id="6RAr73Zs6lf" role="1PxMeX">
+                      <node concept="30H73N" id="6RAr73Zs6lg" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="6RAr73Zs6lh" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="6RAr73Zs6li" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1o5n:4BhfRC_p$Mm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="j$656" id="4L1k0SocNhm" role="1fOSGc">
+        <ref role="v9R2y" to="71p1:4L1k0SocNh2" resolve="weave_HelperMethod" />
+      </node>
+    </node>
     <node concept="3lhOvk" id="1E5i917KQKS" role="3lj3bC">
       <ref role="30HIoZ" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
       <ref role="2sgKRv" node="2SWtdi20ukb" resolve="NamedGroupToJavaClass" />
@@ -387,6 +417,12 @@
       <ref role="30HIoZ" to="anrw:4X4Jbdc9m4l" resolve="CodeGenMethodCall" />
       <node concept="j$656" id="4X4JbdccRWo" role="1lVwrX">
         <ref role="v9R2y" node="4X4JbdccRWm" resolve="reduce_CodeGenMethodCall" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="4L1k0SocT2x" role="3acgRq">
+      <ref role="30HIoZ" to="leqx:4L1k0Soa314" resolve="HelperMethodCall" />
+      <node concept="j$656" id="4L1k0SocTjK" role="1lVwrX">
+        <ref role="v9R2y" to="71p1:4L1k0SocTjI" resolve="reduce_HelperMethodCall" />
       </node>
     </node>
     <node concept="avzCv" id="6hHbyxTlJvl" role="avys_">

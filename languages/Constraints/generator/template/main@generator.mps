@@ -120,6 +120,7 @@
         <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
+        <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
@@ -151,6 +152,9 @@
       </concept>
       <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
+      </concept>
+      <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
+        <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1184616041890" name="jetbrains.mps.lang.generator.structure.Weaving_MappingRule_ContextNodeQuery" flags="in" index="3gB$ML" />
       <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
@@ -216,6 +220,12 @@
   </registry>
   <node concept="bUwia" id="4BhfRC_uX5c">
     <property role="TrG5h" value="main" />
+    <node concept="3aamgX" id="4L1k0SocT2x" role="3acgRq">
+      <ref role="30HIoZ" to="leqx:4L1k0Soa314" resolve="HelperMethodCall" />
+      <node concept="j$656" id="4L1k0SocTjK" role="1lVwrX">
+        <ref role="v9R2y" to="71p1:4L1k0SocTjI" resolve="reduce_HelperMethodCall" />
+      </node>
+    </node>
     <node concept="aNPBN" id="1E5i917M8$W" role="aQYdv">
       <ref role="aOQi4" to="2mcz:2DitZGYpVqA" resolve="ModuleComposite" />
     </node>
@@ -250,6 +260,36 @@
       </node>
       <node concept="j$656" id="6e92Hp18IFn" role="1fOSGc">
         <ref role="v9R2y" node="6e92Hp18IEv" resolve="weave_Constraint" />
+      </node>
+    </node>
+    <node concept="30QchW" id="4L1k0SocN2a" role="30SoJX">
+      <ref role="30HIoZ" to="leqx:4L1k0So9XGk" resolve="HelperMethod" />
+      <node concept="3gB$ML" id="4L1k0SocN2b" role="3gCiVm">
+        <node concept="3clFbS" id="4L1k0SocN2c" role="2VODD2">
+          <node concept="3clFbF" id="6RAr73Zs6l9" role="3cqZAp">
+            <node concept="2OqwBi" id="6RAr73Zs6la" role="3clFbG">
+              <node concept="1iwH7S" id="6RAr73Zs6lb" role="2Oq$k0" />
+              <node concept="1iwH70" id="6RAr73Zs6lc" role="2OqNvi">
+                <ref role="1iwH77" to="71p1:2SWtdi20ukb" resolve="NG2JavaClass" />
+                <node concept="2OqwBi" id="6RAr73Zs6ld" role="1iwH7V">
+                  <node concept="1PxgMI" id="6RAr73Zs6le" role="2Oq$k0">
+                    <ref role="1PxNhF" to="1o5n:7MhXM5kl9pK" resolve="MethodsContainer" />
+                    <node concept="2OqwBi" id="6RAr73Zs6lf" role="1PxMeX">
+                      <node concept="30H73N" id="6RAr73Zs6lg" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="6RAr73Zs6lh" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="6RAr73Zs6li" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1o5n:4BhfRC_p$Mm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="j$656" id="4L1k0SocNhm" role="1fOSGc">
+        <ref role="v9R2y" to="71p1:4L1k0SocNh2" resolve="weave_HelperMethod" />
       </node>
     </node>
     <node concept="2rT7sh" id="2SWtdi20ukb" role="2rTMjI">
