@@ -195,6 +195,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -211,6 +214,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -2973,15 +2977,25 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="6hHbyxTtnaO" role="3cqZAp" />
-              <node concept="3clFbF" id="1E5i917DwKF" role="3cqZAp">
-                <node concept="2OqwBi" id="1E5i917Dx_$" role="3clFbG">
-                  <node concept="37vLTw" id="1E5i917DwKD" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1E5i917DaOe" resolve="constraints" />
-                  </node>
-                  <node concept="liA8E" id="1E5i917DydM" role="2OqNvi">
-                    <ref role="37wK5l" to="avy3:1E5i917CZmT" resolve="checkValidity" />
-                    <node concept="0GJ7k" id="1E5i917Dyu$" role="37wK5m" />
+              <node concept="3clFbH" id="5X829TxvWl5" role="3cqZAp" />
+              <node concept="3SKdUt" id="5X829TxvX37" role="3cqZAp">
+                <node concept="3SKdUq" id="5X829TxvX7H" role="3SKWNk">
+                  <property role="3SKdUp" value="We stop at the first group for which the constraints do not hold." />
+                </node>
+              </node>
+              <node concept="3clFbJ" id="5X829TxvWwc" role="3cqZAp">
+                <node concept="3clFbS" id="5X829TxvWwe" role="3clFbx">
+                  <node concept="3zACq4" id="5X829TxvWYv" role="3cqZAp" />
+                </node>
+                <node concept="3fqX7Q" id="5X829TxvW$M" role="3clFbw">
+                  <node concept="2OqwBi" id="1E5i917Dx_$" role="3fr31v">
+                    <node concept="37vLTw" id="1E5i917DwKD" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1E5i917DaOe" resolve="constraints" />
+                    </node>
+                    <node concept="liA8E" id="1E5i917DydM" role="2OqNvi">
+                      <ref role="37wK5l" to="avy3:1E5i917CZmT" resolve="checkValidity" />
+                      <node concept="0GJ7k" id="1E5i917Dyu$" role="37wK5m" />
+                    </node>
                   </node>
                 </node>
               </node>

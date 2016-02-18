@@ -107,6 +107,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -229,7 +235,7 @@
     <node concept="aNPBN" id="1E5i917M8$W" role="aQYdv">
       <ref role="aOQi4" to="2mcz:2DitZGYpVqA" resolve="ModuleComposite" />
     </node>
-    <node concept="aNPBN" id="2SWtdi28ht$" role="aQYdv">
+    <node concept="aNPBN" id="5X829TxH5Fw" role="aQYdv">
       <ref role="aOQi4" to="1o5n:7MhXM5kl9pK" resolve="MethodsContainer" />
     </node>
     <node concept="30QchW" id="6e92Hp1729g" role="30SoJX">
@@ -290,6 +296,30 @@
       </node>
       <node concept="j$656" id="4L1k0SocNhm" role="1fOSGc">
         <ref role="v9R2y" to="71p1:4L1k0SocNh2" resolve="weave_HelperMethod" />
+      </node>
+    </node>
+    <node concept="30QchW" id="5X829TxEMIq" role="30SoJX">
+      <ref role="30HIoZ" to="cxsf:4BhfRC_v$xB" resolve="ConstraintsContainer" />
+      <node concept="3gB$ML" id="5X829TxEMIr" role="3gCiVm">
+        <node concept="3clFbS" id="5X829TxEMIs" role="2VODD2">
+          <node concept="3clFbF" id="5X829TxEN7w" role="3cqZAp">
+            <node concept="2OqwBi" id="5X829TxEN8J" role="3clFbG">
+              <node concept="1iwH7S" id="5X829TxEN7v" role="2Oq$k0" />
+              <node concept="1iwH70" id="5X829TxENgs" role="2OqNvi">
+                <ref role="1iwH77" node="2SWtdi20ukb" resolve="NamedGroupToJavaClass" />
+                <node concept="2OqwBi" id="5X829TxENlw" role="1iwH7V">
+                  <node concept="30H73N" id="5X829TxENiw" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5X829TxENS6" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1o5n:4BhfRC_p$Mm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="j$656" id="5X829TxEN7c" role="1fOSGc">
+        <ref role="v9R2y" node="5X829TxEN6S" resolve="weave_ConstraintsContainer" />
       </node>
     </node>
     <node concept="2rT7sh" id="2SWtdi20ukb" role="2rTMjI">
@@ -474,16 +504,16 @@
           </node>
         </node>
         <node concept="3clFbH" id="6e92Hp11Jnb" role="3cqZAp" />
-        <node concept="3clFbF" id="2SWtdi20Efq" role="3cqZAp">
-          <node concept="3nyPlj" id="6e92Hp11JTe" role="3clFbG">
+        <node concept="3cpWs6" id="5X829TxvYGG" role="3cqZAp">
+          <node concept="3nyPlj" id="5X829TxvYGH" role="3cqZAk">
             <ref role="37wK5l" to="avy3:1E5i917CZmT" resolve="checkValidity" />
-            <node concept="37vLTw" id="6e92Hp11KBH" role="37wK5m">
+            <node concept="37vLTw" id="5X829TxvYGI" role="37wK5m">
               <ref role="3cqZAo" node="1E5i917L03V" resolve="valueModel" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="3cqZAl" id="2SWtdi20DUc" role="3clF45" />
+      <node concept="10P_77" id="5X829TxvYlS" role="3clF45" />
       <node concept="37vLTG" id="1E5i917L03V" role="3clF46">
         <property role="TrG5h" value="valueModel" />
         <node concept="3Tqbb2" id="1E5i917L03U" role="1tU5fm">
@@ -590,6 +620,35 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6e92Hp18Mw7" role="1B3o_S" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="5X829TxEN6S">
+    <property role="TrG5h" value="weave_ConstraintsContainer" />
+    <ref role="3gUMe" to="cxsf:4BhfRC_v$xB" resolve="ConstraintsContainer" />
+    <node concept="312cEu" id="5X829TxENU8" role="13RCb5">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="SomeClass" />
+      <node concept="3clFb_" id="5X829TxEQt5" role="jymVt">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="populateOrderedMethodNames" />
+        <property role="od$2w" value="false" />
+        <property role="DiZV1" value="false" />
+        <property role="2aFKle" value="false" />
+        <node concept="3clFbS" id="5X829TxEQt8" role="3clF47">
+          <node concept="3SKdUt" id="5X829TxEQtt" role="3cqZAp">
+            <node concept="3SKdUq" id="5X829TxEQtv" role="3SKWNk">
+              <property role="3SKdUp" value="TODO" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="5X829TxEQsX" role="1B3o_S" />
+        <node concept="3cqZAl" id="5X829TxEQt2" role="3clF45" />
+        <node concept="raruj" id="5X829TxEQtx" role="lGtFl" />
+      </node>
+      <node concept="3Tm1VV" id="5X829TxENU9" role="1B3o_S" />
+      <node concept="3uibUv" id="5X829TxENUy" role="1zkMxy">
+        <ref role="3uigEE" to="avy3:1E5i917CZdZ" resolve="Constraints" />
+      </node>
     </node>
   </node>
 </model>

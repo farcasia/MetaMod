@@ -20,6 +20,7 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
@@ -142,6 +143,26 @@
   <node concept="24kQdi" id="4BhfRC_wcjl">
     <ref role="1XX52x" to="cxsf:4BhfRC_v$vB" resolve="Constraint" />
     <node concept="3EZMnI" id="7MhXM5kl9Pp" role="2wV5jI">
+      <node concept="3EZMnI" id="5X829TxE5z3" role="3EZMnx">
+        <node concept="VPM3Z" id="5X829TxE5z5" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5X829TxE5z7" role="3EZMnx">
+          <property role="3F0ifm" value="@" />
+        </node>
+        <node concept="3F0ifn" id="5X829TxE5zz" role="3EZMnx">
+          <property role="3F0ifm" value="depends" />
+        </node>
+        <node concept="3F0ifn" id="5X829TxE5zF" role="3EZMnx">
+          <property role="3F0ifm" value="on" />
+        </node>
+        <node concept="3F2HdR" id="5X829TxE5zP" role="3EZMnx">
+          <property role="2czwfO" value="," />
+          <ref role="1NtTu8" to="cxsf:5X829TxCzL5" />
+          <node concept="2iRfu4" id="5X829TxE5zR" role="2czzBx" />
+        </node>
+        <node concept="2iRfu4" id="5X829TxE5z8" role="2iSdaV" />
+      </node>
       <node concept="3EZMnI" id="7MhXM5kl9Pz" role="3EZMnx">
         <node concept="VPM3Z" id="7MhXM5kl9P_" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -277,6 +298,18 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5X829TxC$iQ">
+    <ref role="1XX52x" to="cxsf:5X829TxCzxV" resolve="RefToConstraint" />
+    <node concept="1iCGBv" id="5X829TxC$n0" role="2wV5jI">
+      <ref role="1NtTu8" to="cxsf:5X829TxCzL3" />
+      <node concept="1sVBvm" id="5X829TxC$n2" role="1sWHZn">
+        <node concept="3F0A7n" id="5X829TxC$nc" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>
