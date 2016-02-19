@@ -21,6 +21,8 @@
         <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
         <dependency reexport="false">2a4f5bab-551b-46ab-a40c-28d5229d6214(Helpers)</dependency>
         <dependency reexport="false">e0c146ad-f842-439c-a45a-3c8b57d915f9(Helpers#5494761041833683320)</dependency>
+        <dependency reexport="false">8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</dependency>
+        <dependency reexport="false">47849989-c2df-46a8-aba5-1c5a21bbef1f(Constraints)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
