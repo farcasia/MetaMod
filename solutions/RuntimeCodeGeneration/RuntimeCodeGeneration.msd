@@ -15,7 +15,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">ac92b060-507b-49fd-899b-f9ec55fb3b85(RuntimeCommons)</dependency>
-    <dependency reexport="false">698a97d6-e1f0-445b-9bf3-fe646be9d3b3(JavaFrames)</dependency>
+    <dependency reexport="false">698a97d6-e1f0-445b-9bf3-fe646be9d3b3(UtilitiesClasses)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>

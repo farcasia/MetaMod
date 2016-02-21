@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="JavaFrames" uuid="698a97d6-e1f0-445b-9bf3-fe646be9d3b3" compileInMPS="true">
+<solution name="UtilitiesClasses" uuid="698a97d6-e1f0-445b-9bf3-fe646be9d3b3" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

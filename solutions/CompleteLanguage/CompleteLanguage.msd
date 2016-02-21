@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">698a97d6-e1f0-445b-9bf3-fe646be9d3b3(JavaFrames)</dependency>
+    <dependency reexport="false">698a97d6-e1f0-445b-9bf3-fe646be9d3b3(UtilitiesClasses)</dependency>
     <dependency reexport="false">8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</dependency>
   </dependencies>
   <usedLanguages>
