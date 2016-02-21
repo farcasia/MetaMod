@@ -1739,6 +1739,17 @@
             <node concept="3clFbH" id="3ivI6t8NlJM" role="3cqZAp" />
             <node concept="1DcWWT" id="3DVAlFLpdej" role="3cqZAp">
               <node concept="3clFbS" id="3DVAlFLpdek" role="2LFqv$">
+                <node concept="34ab3g" id="6dXtnCVUjd4" role="3cqZAp">
+                  <property role="35gtTG" value="warn" />
+                  <node concept="3cpWs3" id="6dXtnCVUnq7" role="34bqiv">
+                    <node concept="37vLTw" id="6dXtnCVUnqt" role="3uHU7w">
+                      <ref role="3cqZAo" node="3DVAlFLpdeA" resolve="structureModel" />
+                    </node>
+                    <node concept="Xl_RD" id="6dXtnCVUjd6" role="3uHU7B">
+                      <property role="Xl_RC" value=" StructureModel " />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="3DVAlFLpdel" role="3cqZAp">
                   <node concept="2OqwBi" id="3DVAlFLpdem" role="3clFbG">
                     <node concept="37vLTw" id="3DVAlFLpFNe" role="2Oq$k0">
@@ -20954,6 +20965,11 @@
             <node concept="3clFbH" id="7rlNOzb5i72" role="3cqZAp" />
             <node concept="3clFbJ" id="7rlNOzb5hIn" role="3cqZAp">
               <node concept="3clFbS" id="7rlNOzb5hIo" role="3clFbx">
+                <node concept="3SKdUt" id="wmCZ0RhZn7" role="3cqZAp">
+                  <node concept="3SKdUq" id="wmCZ0RhZni" role="3SKWNk">
+                    <property role="3SKdUp" value="We want the first containing group." />
+                  </node>
+                </node>
                 <node concept="3clFbF" id="7rlNOzb5irQ" role="3cqZAp">
                   <node concept="37vLTI" id="7rlNOzb5isY" role="3clFbG">
                     <node concept="1PxgMI" id="7rlNOzb5_mj" role="37vLTx">
@@ -20967,6 +20983,7 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3zACq4" id="wmCZ0RhZmN" role="3cqZAp" />
               </node>
               <node concept="2OqwBi" id="7rlNOzb5ibL" role="3clFbw">
                 <node concept="37vLTw" id="7rlNOzb5hUY" role="2Oq$k0">
@@ -21260,8 +21277,26 @@
           </node>
         </node>
         <node concept="3clFbH" id="7rlNOzb5zHR" role="3cqZAp" />
+        <node concept="34ab3g" id="6dXtnCVUuW5" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="3cpWs3" id="6dXtnCVUuW6" role="34bqiv">
+            <node concept="37vLTw" id="6dXtnCVUw1V" role="3uHU7w">
+              <ref role="3cqZAo" node="7rlNOzb5zHb" resolve="scopeAncestor" />
+            </node>
+            <node concept="Xl_RD" id="6dXtnCVUuW8" role="3uHU7B">
+              <property role="Xl_RC" value="ScopeAncestor " />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6dXtnCVUuO$" role="3cqZAp" />
         <node concept="3clFbJ" id="7rlNOzb5zIe" role="3cqZAp">
           <node concept="3clFbS" id="7rlNOzb5zIg" role="3clFbx">
+            <node concept="34ab3g" id="6dXtnCVUwh7" role="3cqZAp">
+              <property role="35gtTG" value="warn" />
+              <node concept="Xl_RD" id="6dXtnCVUwha" role="34bqiv">
+                <property role="Xl_RC" value="Super get direct concepts!" />
+              </node>
+            </node>
             <node concept="3cpWs6" id="7rlNOzb5$08" role="3cqZAp">
               <node concept="2OqwBi" id="7rlNOzb5$3P" role="3cqZAk">
                 <node concept="13iAh5" id="7rlNOzb5$0m" role="2Oq$k0" />
@@ -21286,6 +21321,12 @@
           </node>
           <node concept="9aQIb" id="7rlNOzb5$x8" role="9aQIa">
             <node concept="3clFbS" id="7rlNOzb5$x9" role="9aQI4">
+              <node concept="34ab3g" id="6dXtnCVUwzR" role="3cqZAp">
+                <property role="35gtTG" value="warn" />
+                <node concept="Xl_RD" id="6dXtnCVUwzU" role="34bqiv">
+                  <property role="Xl_RC" value="scopeAncestor get direct concepts!" />
+                </node>
+              </node>
               <node concept="3cpWs6" id="7rlNOzb5$$a" role="3cqZAp">
                 <node concept="2OqwBi" id="7rlNOzb5$Ew" role="3cqZAk">
                   <node concept="37vLTw" id="7rlNOzb5$Bf" role="2Oq$k0">
