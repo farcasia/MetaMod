@@ -52,6 +52,9 @@
     <node concept="PrWs8" id="4BhfRC_x2$K" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="6dXtnCWxfdz" role="PzmwI">
+      <ref role="PrY4T" to="1o5n:6dXtnCWxe33" resolve="IAspect" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5X829TxCzxV">
     <property role="TrG5h" value="RefToConstraint" />

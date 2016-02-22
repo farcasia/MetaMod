@@ -313,6 +313,9 @@
       <concept id="7169015349702230837" name="GenericGroupMethods.structure.RefToFacet" flags="ng" index="1vbBpf">
         <reference id="7169015349702230838" name="ref" index="1vbBpc" />
       </concept>
+      <concept id="7169015349705498819" name="GenericGroupMethods.structure.IAspect" flags="ng" index="1vYpmT">
+        <property id="7169015349705498857" name="aspect" index="1vYpmj" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
@@ -1507,6 +1510,7 @@
   <node concept="1GFRst" id="6hHbyxTpqeO">
     <property role="TrG5h" value="Constraints_Primitives" />
     <property role="3GE5qa" value="Constraints" />
+    <property role="1vYpmj" value="Constraint" />
     <ref role="1GHRfG" node="ITVTA012yS" resolve="Primitives" />
     <node concept="1GFRyt" id="6hHbyxTpv_9" role="CLm5g">
       <property role="TrG5h" value="checkIntegers" />
@@ -1729,6 +1733,7 @@
   <node concept="1GFRst" id="6hHbyxTvt9F">
     <property role="TrG5h" value="Constraints_ForwardCommandGroup" />
     <property role="3GE5qa" value="Constraints" />
+    <property role="1vYpmj" value="Constraint" />
     <ref role="1GHRfG" node="5UqrlCgsUQ6" resolve="ForwardCommandGroup" />
     <node concept="1GFRyt" id="6hHbyxTvtpY" role="CLm5g">
       <property role="TrG5h" value="checkPositiveValues" />
@@ -1846,6 +1851,7 @@
   <node concept="1GFRst" id="6hHbyxTvA4M">
     <property role="TrG5h" value="Constraints_TurnCommandGroup" />
     <property role="3GE5qa" value="Constraints" />
+    <property role="1vYpmj" value="Constraint" />
     <ref role="1GHRfG" node="5UqrlCgsUQj" resolve="TurnCommandGroup" />
     <node concept="1GFRyt" id="6hHbyxTvA8d" role="CLm5g">
       <property role="TrG5h" value="checkTurnLeftOrRight" />
@@ -1983,6 +1989,7 @@
   <node concept="1GFRst" id="6hHbyxTvJ1Q">
     <property role="TrG5h" value="Constraints_Rectangle" />
     <property role="3GE5qa" value="Constraints" />
+    <property role="1vYpmj" value="Constraint" />
     <ref role="1GHRfG" node="5UqrlCgsUuA" resolve="Rectangle" />
     <node concept="1GFRyt" id="6hHbyxTvKAc" role="CLm5g">
       <property role="TrG5h" value="checkPositiveSidesRectangle" />
@@ -2155,6 +2162,7 @@
   <node concept="1GFRst" id="6hHbyxTvPNc">
     <property role="TrG5h" value="Constraints_RouteModel" />
     <property role="3GE5qa" value="Constraints" />
+    <property role="1vYpmj" value="Constraint" />
     <ref role="1GHRfG" node="5UqrlCgr74A" resolve="RouteModel" />
     <node concept="1GFRyt" id="6hHbyxTvPNf" role="CLm5g">
       <property role="TrG5h" value="checkOneRoute" />
@@ -3971,6 +3979,7 @@
   </node>
   <node concept="1vbSxi" id="6dXtnCWlMNX">
     <property role="3GE5qa" value="CodeGeneration" />
+    <property role="1vYpmj" value="CodeGen" />
     <node concept="1vbBpf" id="6dXtnCWv4Ul" role="1vbB4l">
       <ref role="1vbBpc" node="6dXtnCWv4Ki" resolve="frames" />
     </node>
@@ -3978,6 +3987,7 @@
   <node concept="1GnNiK" id="6dXtnCWlZrO">
     <property role="3GE5qa" value="CodeGeneration.CodeGenerationFrames" />
     <property role="TrG5h" value="CodeGen_frames_Commands" />
+    <property role="1vYpmj" value="CodeGen" />
     <ref role="1GHRfG" node="5UqrlCgsUMS" resolve="Commands" />
     <node concept="1GnNjC" id="26DSjBDMnZh" role="CLm5g">
       <property role="TrG5h" value="drawCommands" />
@@ -4656,6 +4666,7 @@
   <node concept="1GnNiK" id="6dXtnCWm9ra">
     <property role="3GE5qa" value="CodeGeneration.CodeGenerationFrames" />
     <property role="TrG5h" value="CodeGen_frames_RouteModel" />
+    <property role="1vYpmj" value="CodeGen" />
     <ref role="1GHRfG" node="5UqrlCgr74A" resolve="RouteModel" />
     <node concept="1GnNjC" id="5UqrlCgsV7Y" role="CLm5g">
       <property role="TrG5h" value="genCodeMain" />
@@ -4968,6 +4979,7 @@
   <node concept="1GnNiK" id="6dXtnCWmcrj">
     <property role="3GE5qa" value="CodeGeneration.CodeGenerationHtml" />
     <property role="TrG5h" value="CodeGen_html_Commands" />
+    <property role="1vYpmj" value="CodeGen" />
     <ref role="1GHRfG" node="5UqrlCgsUMS" resolve="Commands" />
     <node concept="1GnNjC" id="1KRk6G00SDQ" role="CLm5g">
       <property role="TrG5h" value="noOfCommands" />
@@ -5524,6 +5536,7 @@
   <node concept="1GnNiK" id="6dXtnCWmdBP">
     <property role="3GE5qa" value="CodeGeneration.CodeGenerationHtml" />
     <property role="TrG5h" value="CodeGen_html_RouteModel" />
+    <property role="1vYpmj" value="CodeGen" />
     <ref role="1GHRfG" node="5UqrlCgr74A" resolve="RouteModel" />
     <node concept="1GnNjC" id="1KRk6G01dl7" role="CLm5g">
       <property role="TrG5h" value="genCodeMain" />

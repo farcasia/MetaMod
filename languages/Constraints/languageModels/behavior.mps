@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="cxsf" ref="r:1286eb18-7cac-402e-9a8d-671d8750b024(Constraints.structure)" implicit="true" />
   </imports>
@@ -97,6 +98,19 @@
               <node concept="13iPFW" id="4BhfRC_x2Wr" role="2Oq$k0" />
               <node concept="3TrcHB" id="4BhfRC_x39y" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6dXtnCWxfgv" role="3cqZAp">
+          <node concept="37vLTI" id="6dXtnCWxfU4" role="3clFbG">
+            <node concept="Xl_RD" id="6dXtnCWxfUm" role="37vLTx">
+              <property role="Xl_RC" value="Constraint" />
+            </node>
+            <node concept="2OqwBi" id="6dXtnCWxflL" role="37vLTJ">
+              <node concept="13iPFW" id="6dXtnCWxfgt" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6dXtnCWxfyo" role="2OqNvi">
+                <ref role="3TsBF5" to="1o5n:6dXtnCWxe3D" resolve="aspect" />
               </node>
             </node>
           </node>

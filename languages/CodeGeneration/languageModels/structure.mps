@@ -51,6 +51,9 @@
     <node concept="PrWs8" id="4BhfRC_zFoG" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="6dXtnCWxeAq" role="PzmwI">
+      <ref role="PrY4T" to="1o5n:6dXtnCWxe33" resolve="IAspect" />
+    </node>
     <node concept="1TJgyj" id="6dXtnCWkKeZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="facet" />
@@ -79,6 +82,9 @@
       <property role="20kJfa" value="facet" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="1o5n:6dXtnCWkKcP" resolve="RefToFacet" />
+    </node>
+    <node concept="PrWs8" id="6dXtnCWxe3F" role="PzmwI">
+      <ref role="PrY4T" to="1o5n:6dXtnCWxe33" resolve="IAspect" />
     </node>
   </node>
 </model>

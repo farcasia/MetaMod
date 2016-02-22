@@ -493,5 +493,26 @@
       <node concept="17QB3L" id="26DSjBDKzhN" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="6dXtnCWyDAV">
+    <property role="3GE5qa" value="Aspects" />
+    <ref role="13h7C2" to="1o5n:6dXtnCWxe33" resolve="IAspect" />
+    <node concept="13hLZK" id="6dXtnCWyDAW" role="13h7CW">
+      <node concept="3clFbS" id="6dXtnCWyDAX" role="2VODD2">
+        <node concept="3clFbF" id="6dXtnCWyDFP" role="3cqZAp">
+          <node concept="37vLTI" id="6dXtnCWyDU2" role="3clFbG">
+            <node concept="Xl_RD" id="6dXtnCWyDU$" role="37vLTx">
+              <property role="Xl_RC" value="default" />
+            </node>
+            <node concept="2OqwBi" id="6dXtnCWyDGR" role="37vLTJ">
+              <node concept="13iPFW" id="6dXtnCWyDFO" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6dXtnCWyDNQ" role="2OqNvi">
+                <ref role="3TsBF5" to="1o5n:6dXtnCWxe3D" resolve="aspect" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
