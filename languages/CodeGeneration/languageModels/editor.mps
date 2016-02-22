@@ -241,8 +241,8 @@
         <node concept="3F0ifn" id="6dXtnCWizkQ" role="3EZMnx">
           <property role="3F0ifm" value="facet" />
         </node>
-        <node concept="3F0A7n" id="6dXtnCWiEcT" role="3EZMnx">
-          <ref role="1NtTu8" to="anrw:6dXtnCWixrp" resolve="facet" />
+        <node concept="3F1sOY" id="6dXtnCWkKg5" role="3EZMnx">
+          <ref role="1NtTu8" to="anrw:6dXtnCWkKeZ" />
         </node>
         <node concept="2iRfu4" id="6dXtnCWizkR" role="2iSdaV" />
       </node>
@@ -296,8 +296,8 @@
                     </node>
                     <node concept="2OqwBi" id="6dXtnCWiEQj" role="3uHU7w">
                       <node concept="0GJ7k" id="6dXtnCWiELC" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="6dXtnCWiF3k" role="2OqNvi">
-                        <ref role="3TsBF5" to="anrw:6dXtnCWixrp" resolve="facet" />
+                      <node concept="3TrEf2" id="6dXtnCWl$nG" role="2OqNvi">
+                        <ref role="3Tt5mk" to="anrw:6dXtnCWkKeZ" />
                       </node>
                     </node>
                   </node>
@@ -343,6 +343,28 @@
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="4X4Jbdc9mZi" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6dXtnCWmfhM">
+    <property role="3GE5qa" value="Configuration" />
+    <ref role="1XX52x" to="anrw:6dXtnCWkJOC" resolve="ConfigurationCodeGen" />
+    <node concept="3EZMnI" id="6dXtnCWmfhO" role="2wV5jI">
+      <node concept="3F0ifn" id="6dXtnCWmfhV" role="3EZMnx">
+        <property role="3F0ifm" value="Enabled code generation facet:" />
+      </node>
+      <node concept="3EZMnI" id="6dXtnCWmNTg" role="3EZMnx">
+        <node concept="l2Vlx" id="6dXtnCWmNTh" role="2iSdaV" />
+        <node concept="3F1sOY" id="6dXtnCWmfjY" role="3EZMnx">
+          <ref role="1NtTu8" to="anrw:6dXtnCWkKhJ" />
+          <node concept="lj46D" id="6dXtnCWmNTn" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="6dXtnCWmfhR" role="2iSdaV" />
+      <node concept="VSNWy" id="6dXtnCWm$HG" role="3F10Kt">
+        <property role="1lJzqX" value="16" />
+      </node>
     </node>
   </node>
 </model>

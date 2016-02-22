@@ -204,8 +204,11 @@
     </language>
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration">
       <concept id="5711897705675317525" name="CodeGeneration.structure.CodeGenMethodCall" flags="ng" index="3otQA" />
+      <concept id="7169015349702229288" name="CodeGeneration.structure.ConfigurationCodeGen" flags="ng" index="1vbSxi">
+        <child id="7169015349702231151" name="facet" index="1vbB4l" />
+      </concept>
       <concept id="5319102428749892554" name="CodeGeneration.structure.CodeGenMethodsContainer" flags="ng" index="1GnNiK">
-        <property id="7169015349701646041" name="facet" index="1vdQez" />
+        <child id="7169015349702230975" name="facet" index="1vbBr5" />
       </concept>
       <concept id="5319102428749892498" name="CodeGeneration.structure.CodeGenMethod" flags="ng" index="1GnNjC" />
     </language>
@@ -305,6 +308,10 @@
       </concept>
       <concept id="1522810226734053312" name="GenericGroupMethods.structure.IsTypeOf" flags="ng" index="1lWEKl">
         <child id="1522810226734053315" name="conceptType" index="1lWEKm" />
+      </concept>
+      <concept id="7169015349702230285" name="GenericGroupMethods.structure.Facet" flags="ng" index="1vbBhR" />
+      <concept id="7169015349702230837" name="GenericGroupMethods.structure.RefToFacet" flags="ng" index="1vbBpf">
+        <reference id="7169015349702230838" name="ref" index="1vbBpc" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -3962,10 +3969,15 @@
       <node concept="10Oyi0" id="1KRk6G0jluS" role="3clF45" />
     </node>
   </node>
-  <node concept="1GnNiK" id="26DSjBDMnZg">
-    <property role="TrG5h" value="CodeGen_frames_Commands" />
+  <node concept="1vbSxi" id="6dXtnCWlMNX">
+    <property role="3GE5qa" value="CodeGeneration" />
+    <node concept="1vbBpf" id="6dXtnCWv4Ul" role="1vbB4l">
+      <ref role="1vbBpc" node="6dXtnCWv4Ki" resolve="frames" />
+    </node>
+  </node>
+  <node concept="1GnNiK" id="6dXtnCWlZrO">
     <property role="3GE5qa" value="CodeGeneration.CodeGenerationFrames" />
-    <property role="1vdQez" value="frames" />
+    <property role="TrG5h" value="CodeGen_frames_Commands" />
     <ref role="1GHRfG" node="5UqrlCgsUMS" resolve="Commands" />
     <node concept="1GnNjC" id="26DSjBDMnZh" role="CLm5g">
       <property role="TrG5h" value="drawCommands" />
@@ -4637,14 +4649,16 @@
       </node>
     </node>
     <node concept="CLx5B" id="1KRk6G00N6B" role="CLm5g" />
+    <node concept="1vbBhR" id="6dXtnCWv4Ki" role="1vbBr5">
+      <property role="TrG5h" value="frames" />
+    </node>
   </node>
-  <node concept="1GnNiK" id="5UqrlCgsV7j">
-    <property role="TrG5h" value="CodeGen_frames_RouteModel" />
+  <node concept="1GnNiK" id="6dXtnCWm9ra">
     <property role="3GE5qa" value="CodeGeneration.CodeGenerationFrames" />
-    <property role="1vdQez" value="frames" />
+    <property role="TrG5h" value="CodeGen_frames_RouteModel" />
     <ref role="1GHRfG" node="5UqrlCgr74A" resolve="RouteModel" />
     <node concept="1GnNjC" id="5UqrlCgsV7Y" role="CLm5g">
-      <property role="TrG5h" value="genCodeMain1" />
+      <property role="TrG5h" value="genCodeMain" />
       <node concept="37vLTG" id="5UqrlCgsV7Z" role="3clF46">
         <property role="TrG5h" value="valueModel" />
         <node concept="1l_8MK" id="5UqrlCgsV80" role="1tU5fm" />
@@ -4947,11 +4961,12 @@
       </node>
       <node concept="3cqZAl" id="5UqrlCgsV9h" role="3clF45" />
     </node>
-    <node concept="CLx5B" id="1KRk6G01dfm" role="CLm5g" />
+    <node concept="1vbBpf" id="6dXtnCWv4Tt" role="1vbBr5">
+      <ref role="1vbBpc" node="6dXtnCWv4Ki" resolve="frames" />
+    </node>
   </node>
-  <node concept="1GnNiK" id="6dXtnCWj1WH">
+  <node concept="1GnNiK" id="6dXtnCWmcrj">
     <property role="3GE5qa" value="CodeGeneration.CodeGenerationHtml" />
-    <property role="1vdQez" value="html" />
     <property role="TrG5h" value="CodeGen_html_Commands" />
     <ref role="1GHRfG" node="5UqrlCgsUMS" resolve="Commands" />
     <node concept="1GnNjC" id="1KRk6G00SDQ" role="CLm5g">
@@ -5502,10 +5517,12 @@
       </node>
       <node concept="3cqZAl" id="1KRk6G0jazy" role="3clF45" />
     </node>
+    <node concept="1vbBhR" id="6dXtnCWv48s" role="1vbBr5">
+      <property role="TrG5h" value="html" />
+    </node>
   </node>
-  <node concept="1GnNiK" id="6dXtnCWj4sb">
+  <node concept="1GnNiK" id="6dXtnCWmdBP">
     <property role="3GE5qa" value="CodeGeneration.CodeGenerationHtml" />
-    <property role="1vdQez" value="html" />
     <property role="TrG5h" value="CodeGen_html_RouteModel" />
     <ref role="1GHRfG" node="5UqrlCgr74A" resolve="RouteModel" />
     <node concept="1GnNjC" id="1KRk6G01dl7" role="CLm5g">
@@ -5690,6 +5707,9 @@
         </node>
       </node>
       <node concept="3cqZAl" id="1KRk6G01dpI" role="3clF45" />
+    </node>
+    <node concept="1vbBpf" id="6dXtnCWv4kr" role="1vbBr5">
+      <ref role="1vbBpc" node="6dXtnCWv48s" resolve="html" />
     </node>
   </node>
 </model>

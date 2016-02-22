@@ -403,5 +403,25 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6dXtnCWkK4l">
+    <property role="3GE5qa" value="Configuration" />
+    <ref role="1XX52x" to="1o5n:6dXtnCWkK4d" resolve="Facet" />
+    <node concept="3F0A7n" id="6dXtnCWkK5G" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6dXtnCWkKd8">
+    <property role="3GE5qa" value="Configuration" />
+    <ref role="1XX52x" to="1o5n:6dXtnCWkKcP" resolve="RefToFacet" />
+    <node concept="1iCGBv" id="6dXtnCWkKda" role="2wV5jI">
+      <ref role="1NtTu8" to="1o5n:6dXtnCWkKcQ" />
+      <node concept="1sVBvm" id="6dXtnCWkKdc" role="1sWHZn">
+        <node concept="3F0A7n" id="6dXtnCWkKdm" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

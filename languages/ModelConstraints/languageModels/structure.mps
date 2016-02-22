@@ -185,5 +185,34 @@
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6dXtnCWkK4d">
+    <property role="TrG5h" value="Facet" />
+    <property role="3GE5qa" value="Configuration" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6dXtnCWkK4e" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6dXtnCWkKi9" role="PzmwI">
+      <ref role="PrY4T" node="6dXtnCWkKi3" resolve="IFacet" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6dXtnCWkKi3">
+    <property role="TrG5h" value="IFacet" />
+    <property role="3GE5qa" value="Configuration" />
+  </node>
+  <node concept="1TIwiD" id="6dXtnCWkKcP">
+    <property role="TrG5h" value="RefToFacet" />
+    <property role="3GE5qa" value="Configuration" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6dXtnCWkKcQ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6dXtnCWkK4d" resolve="Facet" />
+    </node>
+    <node concept="PrWs8" id="6dXtnCWkKi4" role="PzmwI">
+      <ref role="PrY4T" node="6dXtnCWkKi3" resolve="IFacet" />
+    </node>
+  </node>
 </model>
 
