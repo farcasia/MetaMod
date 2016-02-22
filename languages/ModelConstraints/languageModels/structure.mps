@@ -63,11 +63,23 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="48EbtxmlfXk" resolve="IMethodsContainerContents" />
     </node>
+    <node concept="1TJgyj" id="6dXtnCXbrXj" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="facet" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6dXtnCWkKi3" resolve="IFacet" />
+    </node>
     <node concept="1TJgyj" id="4BhfRC_p$Mm" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="group" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+    </node>
+    <node concept="PrWs8" id="6dXtnCXbrVd" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6dXtnCXbrVX" role="PzmwI">
+      <ref role="PrY4T" node="6dXtnCWxe33" resolve="IAspect" />
     </node>
   </node>
   <node concept="1TIwiD" id="7MhXM5klYp6">
