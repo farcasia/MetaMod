@@ -66,7 +66,7 @@
     <node concept="1TJgyj" id="6dXtnCXbrXj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="facet" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6dXtnCWkKi3" resolve="IFacet" />
     </node>
     <node concept="1TJgyj" id="4BhfRC_p$Mm" role="1TKVEi">
