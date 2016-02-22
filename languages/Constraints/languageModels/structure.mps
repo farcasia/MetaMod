@@ -30,6 +30,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -49,6 +52,12 @@
     <property role="TrG5h" value="ConstraintsContainer" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="1o5n:7MhXM5kl9pK" resolve="MethodsContainer" />
+    <node concept="1TJgyj" id="6dXtnCW$vN1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="facet" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="1o5n:6dXtnCWkKi3" resolve="IFacet" />
+    </node>
     <node concept="PrWs8" id="4BhfRC_x2$K" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -62,6 +71,49 @@
     <node concept="1TJgyj" id="5X829TxCzL3" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="constraint" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4BhfRC_v$vB" resolve="Constraint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6dXtnCW$8hy">
+    <property role="TrG5h" value="ConfigurationConstraints" />
+    <property role="3GE5qa" value="Configuration" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6dXtnCW$8LE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="facets" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6dXtnCW$8LG" resolve="FacetWithExceptions" />
+    </node>
+    <node concept="PrWs8" id="6dXtnCW$8iG" role="PzmwI">
+      <ref role="PrY4T" to="1o5n:6dXtnCWxe33" resolve="IAspect" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6dXtnCW$8LG">
+    <property role="3GE5qa" value="Configuration" />
+    <property role="TrG5h" value="FacetWithExceptions" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6dXtnCW$8Ns" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="refToMethods" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6dXtnCW$8LJ" resolve="RefToConstr" />
+    </node>
+    <node concept="1TJgyj" id="6dXtnCW_ERQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="facet" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="1o5n:6dXtnCWkKcP" resolve="RefToFacet" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6dXtnCW$8LJ">
+    <property role="3GE5qa" value="Configuration" />
+    <property role="TrG5h" value="RefToConstr" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6dXtnCW$8LX" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4BhfRC_v$vB" resolve="Constraint" />
     </node>

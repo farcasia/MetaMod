@@ -60,6 +60,11 @@
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="13h7C7" id="4BhfRC_wbQ_">
     <ref role="13h7C2" to="cxsf:4BhfRC_v$vB" resolve="Constraint" />
@@ -110,6 +115,27 @@
             <node concept="2OqwBi" id="6dXtnCWxflL" role="37vLTJ">
               <node concept="13iPFW" id="6dXtnCWxfgt" role="2Oq$k0" />
               <node concept="3TrcHB" id="6dXtnCWxfyo" role="2OqNvi">
+                <ref role="3TsBF5" to="1o5n:6dXtnCWxe3D" resolve="aspect" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6dXtnCW$8s1">
+    <property role="3GE5qa" value="Configuration" />
+    <ref role="13h7C2" to="cxsf:6dXtnCW$8hy" resolve="ConfigurationConstraints" />
+    <node concept="13hLZK" id="6dXtnCW$8s2" role="13h7CW">
+      <node concept="3clFbS" id="6dXtnCW$8s3" role="2VODD2">
+        <node concept="3clFbF" id="6dXtnCW$8sv" role="3cqZAp">
+          <node concept="37vLTI" id="6dXtnCW$8GW" role="3clFbG">
+            <node concept="Xl_RD" id="6dXtnCW$8Hu" role="37vLTx">
+              <property role="Xl_RC" value="Constraint" />
+            </node>
+            <node concept="2OqwBi" id="6dXtnCW$8tW" role="37vLTJ">
+              <node concept="13iPFW" id="6dXtnCW$8su" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6dXtnCW$8B5" role="2OqNvi">
                 <ref role="3TsBF5" to="1o5n:6dXtnCWxe3D" resolve="aspect" />
               </node>
             </node>

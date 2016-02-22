@@ -197,7 +197,15 @@
       <concept id="6865747108262197371" name="Constraints.structure.RefToConstraint" flags="ng" index="YUz3_">
         <reference id="6865747108262198339" name="constraint" index="YUzjt" />
       </concept>
-      <concept id="5319102428748859495" name="Constraints.structure.ConstraintsContainer" flags="ng" index="1GFRst" />
+      <concept id="7169015349706261602" name="Constraints.structure.ConfigurationConstraints" flags="ng" index="1vVv4o">
+        <child id="7169015349706263658" name="facets" index="1vVv$g" />
+      </concept>
+      <concept id="7169015349706263660" name="Constraints.structure.FacetWithExceptions" flags="ng" index="1vVv$m">
+        <child id="7169015349706665462" name="facet" index="1vUXyc" />
+      </concept>
+      <concept id="5319102428748859495" name="Constraints.structure.ConstraintsContainer" flags="ng" index="1GFRst">
+        <child id="7169015349706357953" name="facet" index="1vV8AV" />
+      </concept>
       <concept id="5319102428748859367" name="Constraints.structure.Constraint" flags="ng" index="1GFRyt">
         <child id="6865747108262198341" name="dependsOn" index="YUzjr" />
       </concept>
@@ -1508,8 +1516,8 @@
     <node concept="2jq5PB" id="6D5K2vjMNmO" role="2oAaxa" />
   </node>
   <node concept="1GFRst" id="6hHbyxTpqeO">
-    <property role="TrG5h" value="Constraints_Primitives" />
-    <property role="3GE5qa" value="Constraints" />
+    <property role="TrG5h" value="Constraints_commons_Primitives" />
+    <property role="3GE5qa" value="Constraints.ConstraintsCommons" />
     <property role="1vYpmj" value="Constraint" />
     <ref role="1GHRfG" node="ITVTA012yS" resolve="Primitives" />
     <node concept="1GFRyt" id="6hHbyxTpv_9" role="CLm5g">
@@ -1729,10 +1737,13 @@
         </node>
       </node>
     </node>
+    <node concept="1vbBpf" id="6dXtnCW_Csj" role="1vV8AV">
+      <ref role="1vbBpc" node="6dXtnCW_gXg" resolve="commons" />
+    </node>
   </node>
   <node concept="1GFRst" id="6hHbyxTvt9F">
-    <property role="TrG5h" value="Constraints_ForwardCommandGroup" />
-    <property role="3GE5qa" value="Constraints" />
+    <property role="TrG5h" value="Constraints_commons_ForwardCommandGroup" />
+    <property role="3GE5qa" value="Constraints.ConstraintsCommons" />
     <property role="1vYpmj" value="Constraint" />
     <ref role="1GHRfG" node="5UqrlCgsUQ6" resolve="ForwardCommandGroup" />
     <node concept="1GFRyt" id="6hHbyxTvtpY" role="CLm5g">
@@ -1847,10 +1858,13 @@
       </node>
       <node concept="10P_77" id="6hHbyxTvtq2" role="3clF45" />
     </node>
+    <node concept="1vbBhR" id="6dXtnCW_gXg" role="1vV8AV">
+      <property role="TrG5h" value="commons" />
+    </node>
   </node>
   <node concept="1GFRst" id="6hHbyxTvA4M">
-    <property role="TrG5h" value="Constraints_TurnCommandGroup" />
-    <property role="3GE5qa" value="Constraints" />
+    <property role="TrG5h" value="Constraints_commons_TurnCommandGroup" />
+    <property role="3GE5qa" value="Constraints.ConstraintsCommons" />
     <property role="1vYpmj" value="Constraint" />
     <ref role="1GHRfG" node="5UqrlCgsUQj" resolve="TurnCommandGroup" />
     <node concept="1GFRyt" id="6hHbyxTvA8d" role="CLm5g">
@@ -1985,10 +1999,13 @@
       </node>
       <node concept="10P_77" id="6hHbyxTvA8Y" role="3clF45" />
     </node>
+    <node concept="1vbBpf" id="6dXtnCW_Elq" role="1vV8AV">
+      <ref role="1vbBpc" node="6dXtnCW_gXg" resolve="commons" />
+    </node>
   </node>
   <node concept="1GFRst" id="6hHbyxTvJ1Q">
-    <property role="TrG5h" value="Constraints_Rectangle" />
-    <property role="3GE5qa" value="Constraints" />
+    <property role="TrG5h" value="Constraints_commons_Rectangle" />
+    <property role="3GE5qa" value="Constraints.ConstraintsCommons" />
     <property role="1vYpmj" value="Constraint" />
     <ref role="1GHRfG" node="5UqrlCgsUuA" resolve="Rectangle" />
     <node concept="1GFRyt" id="6hHbyxTvKAc" role="CLm5g">
@@ -2158,10 +2175,13 @@
       </node>
       <node concept="10P_77" id="6hHbyxTvKAg" role="3clF45" />
     </node>
+    <node concept="1vbBpf" id="6dXtnCW_CMb" role="1vV8AV">
+      <ref role="1vbBpc" node="6dXtnCW_gXg" resolve="commons" />
+    </node>
   </node>
   <node concept="1GFRst" id="6hHbyxTvPNc">
-    <property role="TrG5h" value="Constraints_RouteModel" />
-    <property role="3GE5qa" value="Constraints" />
+    <property role="TrG5h" value="Constraints_commons_RouteModel" />
+    <property role="3GE5qa" value="Constraints.ConstraintsCommons" />
     <property role="1vYpmj" value="Constraint" />
     <ref role="1GHRfG" node="5UqrlCgr74A" resolve="RouteModel" />
     <node concept="1GFRyt" id="6hHbyxTvPNf" role="CLm5g">
@@ -3149,6 +3169,9 @@
       <node concept="YUz3_" id="5X829TxEiEf" role="YUzjr">
         <ref role="YUzjt" node="6hHbyxTxF99" resolve="oneStartCommandRoute" />
       </node>
+    </node>
+    <node concept="1vbBpf" id="6dXtnCW_DZH" role="1vV8AV">
+      <ref role="1vbBpc" node="6dXtnCW_gXg" resolve="commons" />
     </node>
   </node>
   <node concept="1kqm1d" id="6RAr73Z$$3w">
@@ -5723,6 +5746,44 @@
     </node>
     <node concept="1vbBpf" id="6dXtnCWv4kr" role="1vbBr5">
       <ref role="1vbBpc" node="6dXtnCWv48s" resolve="html" />
+    </node>
+  </node>
+  <node concept="1vVv4o" id="6dXtnCW_g7M">
+    <property role="1vYpmj" value="Constraint" />
+    <property role="3GE5qa" value="Constraints" />
+    <node concept="1vVv$m" id="6dXtnCW_ZlQ" role="1vVv$g">
+      <node concept="1vbBpf" id="6dXtnCW_ZlU" role="1vUXyc">
+        <ref role="1vbBpc" node="6dXtnCW_gXg" resolve="commons" />
+      </node>
+    </node>
+    <node concept="1vVv$m" id="6dXtnCWN20Q" role="1vVv$g">
+      <node concept="1vbBpf" id="6dXtnCWN20W" role="1vUXyc">
+        <ref role="1vbBpc" node="6dXtnCWAuP1" resolve="France" />
+      </node>
+    </node>
+  </node>
+  <node concept="1GFRst" id="6dXtnCWAuOZ">
+    <property role="1vYpmj" value="Constraint" />
+    <property role="TrG5h" value="Constraints_France_Rectangle" />
+    <property role="3GE5qa" value="Constraints.ConstraintsFrance" />
+    <ref role="1GHRfG" node="5UqrlCgsUuA" resolve="Rectangle" />
+    <node concept="1GFRyt" id="6dXtnCWAuPl" role="CLm5g">
+      <property role="TrG5h" value="maximumRoute" />
+      <node concept="37vLTG" id="6dXtnCWAuPm" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="6dXtnCWAuPn" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="6dXtnCWAuPo" role="3clF47">
+        <node concept="3cpWs6" id="6dXtnCWAuPy" role="3cqZAp">
+          <node concept="3clFbT" id="6dXtnCWAuPJ" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="6dXtnCWAuPp" role="3clF45" />
+    </node>
+    <node concept="1vbBhR" id="6dXtnCWAuP1" role="1vV8AV">
+      <property role="TrG5h" value="France" />
     </node>
   </node>
 </model>
