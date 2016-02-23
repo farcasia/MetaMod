@@ -137,7 +137,6 @@
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
-      <concept id="7830515785164762753" name="jetbrains.mps.lang.generator.structure.MappingConfiguration_Condition" flags="in" index="avzCv" />
       <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
         <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
       </concept>
@@ -145,7 +144,6 @@
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
-        <child id="7830515785164764091" name="condition" index="avys_" />
         <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
@@ -606,15 +604,6 @@
       <ref role="30HIoZ" to="leqx:4L1k0Soa314" resolve="HelperMethodCall" />
       <node concept="j$656" id="4L1k0SocTjK" role="1lVwrX">
         <ref role="v9R2y" to="71p1:4L1k0SocTjI" resolve="reduce_HelperMethodCall" />
-      </node>
-    </node>
-    <node concept="avzCv" id="6dXtnCWDDS0" role="avys_">
-      <node concept="3clFbS" id="6dXtnCWDDS1" role="2VODD2">
-        <node concept="3clFbF" id="6dXtnCWDE7e" role="3cqZAp">
-          <node concept="3clFbT" id="6dXtnCWDE7d" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
       </node>
     </node>
   </node>
