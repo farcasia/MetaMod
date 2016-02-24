@@ -70,9 +70,9 @@
     <dependency reexport="false">d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)</dependency>
     <dependency reexport="false">b6269b38-266c-4c72-855f-f9773fac7a5c(LambdaCalculus)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-    <dependency reexport="false">9e7f7c3c-cbfb-4bd7-9359-5a9cee6e2a7c(RuntimeConstraints)</dependency>
     <dependency reexport="false">2c1eaabe-b063-45c2-8738-f699a5b99f43(RuntimeCodeGeneration)</dependency>
     <dependency reexport="false">ac92b060-507b-49fd-899b-f9ec55fb3b85(RuntimeCommons)</dependency>
+    <dependency reexport="false">9e7f7c3c-cbfb-4bd7-9359-5a9cee6e2a7c(RuntimeConstraints)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>b6269b38-266c-4c72-855f-f9773fac7a5c(LambdaCalculus)</usedLanguage>
@@ -121,8 +121,8 @@
   </languageVersions>
   <extendedLanguages>
     <extendedLanguage>ae311dd6-db78-4e5e-a31b-7988fcde0010(Modules)</extendedLanguage>
-    <extendedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</extendedLanguage>
     <extendedLanguage>b6269b38-266c-4c72-855f-f9773fac7a5c(LambdaCalculus)</extendedLanguage>
+    <extendedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</extendedLanguage>
   </extendedLanguages>
 </language>
 

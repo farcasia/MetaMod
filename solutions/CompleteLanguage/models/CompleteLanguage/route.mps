@@ -7,13 +7,9 @@
     <use id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models" version="-1" />
     <use id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration" version="-1" />
     <use id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
     <use id="47849989-c2df-46a8-aba5-1c5a21bbef1f" name="Constraints" version="-1" />
     <use id="2a4f5bab-551b-46ab-a40c-28d5229d6214" name="Helpers" version="-1" />
     <generationPart ref="47849989-c2df-46a8-aba5-1c5a21bbef1f(Constraints)" />
@@ -21,10 +17,8 @@
   </languages>
   <imports>
     <import index="qpt8" ref="r:7c483772-12d3-48d5-aef4-e3ba54b5ea31(JavaFrames.JavaFrames)" />
-    <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
     <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="ar19" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.geom(JDK/java.awt.geom@java_stub)" />
     <import index="8q6x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.event(JDK/java.awt.event@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
@@ -47,6 +41,9 @@
       </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
+      </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
         <property id="1224848525476" name="isDeprecated" index="IEkAT" />
@@ -2362,8 +2359,8 @@
   <node concept="1vbSxi" id="6dXtnCWlMNX">
     <property role="3GE5qa" value="CodeGeneration" />
     <property role="1vYpmj" value="CodeGen" />
-    <node concept="1vbBpf" id="6v9Xq7m6Tr0" role="1vbB4l">
-      <ref role="1vbBpc" node="6dXtnCXdiY8" resolve="html" />
+    <node concept="1vbBpf" id="4hy4fxEcepq" role="1vbB4l">
+      <ref role="1vbBpc" node="1nrRmPkSYY8" resolve="frames" />
     </node>
   </node>
   <node concept="1vVv4o" id="6dXtnCW_g7M">
@@ -6653,6 +6650,21 @@
                     <node concept="10P_77" id="1nrRmPkTlHn" role="1tU5fm" />
                     <node concept="3clFbT" id="1nrRmPkTmgi" role="33vP2m">
                       <property role="3clFbU" value="false" />
+                    </node>
+                  </node>
+                  <node concept="312cEg" id="6v9Xq7mcIwp" role="jymVt">
+                    <property role="34CwA1" value="false" />
+                    <property role="eg7rD" value="false" />
+                    <property role="TrG5h" value="listenDraw" />
+                    <property role="3TUv4t" value="true" />
+                    <node concept="3Tm6S6" id="6v9Xq7mcIi_" role="1B3o_S" />
+                    <node concept="3uibUv" id="6v9Xq7mcIuc" role="1tU5fm">
+                      <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                    </node>
+                    <node concept="2ShNRf" id="6v9Xq7mcJyg" role="33vP2m">
+                      <node concept="HV5vD" id="6v9Xq7mcShg" role="2ShVmc">
+                        <ref role="HV5vE" node="1nrRmPkT6B0" resolve="JPanel$anonymous.ListenDraw" />
+                      </node>
                     </node>
                   </node>
                   <node concept="2tJIrI" id="1nrRmPkTkLK" role="jymVt" />
