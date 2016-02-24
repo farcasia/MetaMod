@@ -12,6 +12,11 @@
   <property name="lambda_calculus" location="${basedir}/../../languages/LambdaCalculus" />
   <property name="runtime_constraints" location="${basedir}/../RuntimeModelConstraints" />
   <property name="mps_sl_all" location="${basedir}/../../dependencies" />
+  <property name="complete_language" location="${basedir}/../CompleteLanguage" />
+  <property name="code_generation" location="${basedir}/../../languages/CodeGeneration" />
+  <property name="constraints" location="${basedir}/../../languages/Constraints" />
+  <property name="generic_group_methods" location="${basedir}/../../languages/ModelConstraints" />
+  <property name="helpers" location="${basedir}/../../languages/Helpers" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.mps-sl-all" location="${mps_sl_all}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
@@ -30,9 +35,11 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <copy todir="${build.layout}">
-      <fileset file="${basedir}" />
-    </copy>
+    <zip destfile="${build.layout}/CodeGeneration.zip">
+      <zipfileset dir="${runtime_commons}" prefix="classes_gen" />
+      <zipfileset dir="${runtime_code_generation}" prefix="classes_gen" />
+      <zipfileset dir="${complete_language}" prefix="classes_gen" />
+    </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
@@ -50,7 +57,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.LambdaCalculus, java.compile.LambdaCalculus#7362364337458442660, java.compile.Modules, java.compile.Modules#3049631818650728075, java.compile.java.modules.cycle.1, java.compile.Models, java.compile.Models#8717972784948728248, java.compile.RuntimeConstraints, java.compile.JavaFrames, java.compile.RuntimeCommons, java.compile.RuntimeCodeGeneration" />
+  <target name="compileJava" depends="java.compile.LambdaCalculus, java.compile.LambdaCalculus#7362364337458442660, java.compile.Modules, java.compile.Modules#3049631818650728075, java.compile.java.modules.cycle.1, java.compile.Models, java.compile.Models#8717972784948728248, java.compile.CodeGeneration, java.compile.CodeGeneration#5319102428749892274, java.compile.Constraints, java.compile.Constraints#5319102428748697931, java.compile.GenericGroupMethods, java.compile.GenericGroupMethods#8976227254846526813, java.compile.Helpers, java.compile.Helpers#5494761041833683320, java.compile.RuntimeConstraints, java.compile.JavaFrames, java.compile.RuntimeCommons, java.compile.RuntimeCodeGeneration, java.compile.CompleteLanguage" />
   
   <target name="processResources" />
   
@@ -141,7 +148,17 @@
         <module file="${basedir}/../RuntimeCommons/RuntimeCommons.msd" />
         <module file="${basedir}/../RuntimeModelConstraints/RuntimeModelConstraints.msd" />
       </chunk>
-      <chunk />
+      <chunk bootstrap="true">
+        <module file="${generic_group_methods}/ModelConstraints.mpl" bootstrap="true" />
+      </chunk>
+      <chunk>
+        <module file="${code_generation}/CodeGeneration.mpl" />
+        <module file="${constraints}/Constraints.mpl" />
+        <module file="${helpers}/Helpers.mpl" />
+      </chunk>
+      <chunk>
+        <module file="${complete_language}/CompleteLanguage.msd" />
+      </chunk>
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
@@ -154,6 +171,11 @@
       <macro name="lambda_calculus" path="${lambda_calculus}" />
       <macro name="runtime_constraints" path="${runtime_constraints}" />
       <macro name="mps_sl_all" path="${mps_sl_all}" />
+      <macro name="complete_language" path="${complete_language}" />
+      <macro name="code_generation" path="${code_generation}" />
+      <macro name="constraints" path="${constraints}" />
+      <macro name="generic_group_methods" path="${generic_group_methods}" />
+      <macro name="helpers" path="${helpers}" />
     </generate>
   </target>
   
@@ -424,6 +446,412 @@
     </javac>
   </target>
   
+  <target name="java.compile.CodeGeneration" depends="java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeCodeGeneration, fetchDependencies">
+    <mkdir dir="${code_generation}/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/CodeGeneration" />
+    <javac destdir="${build.tmp}/java/out/CodeGeneration" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${code_generation}/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/GenericGroupMethods" />
+        <pathelement path="${build.tmp}/java/out/Helpers" />
+        <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
+        <pathelement path="${build.tmp}/java/out/Models" />
+        <pathelement path="${build.tmp}/java/out/Modules" />
+        <pathelement path="${build.tmp}/java/out/RuntimeCodeGeneration" />
+        <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.CodeGeneration#5319102428749892274" depends="java.compile.CodeGeneration, java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.Helpers#5494761041833683320, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeCodeGeneration, fetchDependencies">
+    <mkdir dir="${code_generation}/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/CodeGeneration#5319102428749892274" />
+    <javac destdir="${build.tmp}/java/out/CodeGeneration#5319102428749892274" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${code_generation}/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/CodeGeneration" />
+        <pathelement path="${build.tmp}/java/out/GenericGroupMethods" />
+        <pathelement path="${build.tmp}/java/out/Helpers" />
+        <pathelement path="${build.tmp}/java/out/Helpers#5494761041833683320" />
+        <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
+        <pathelement path="${build.tmp}/java/out/Models" />
+        <pathelement path="${build.tmp}/java/out/Modules" />
+        <pathelement path="${build.tmp}/java/out/RuntimeCodeGeneration" />
+        <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.Constraints" depends="java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeConstraints, fetchDependencies">
+    <mkdir dir="${constraints}/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/Constraints" />
+    <javac destdir="${build.tmp}/java/out/Constraints" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${constraints}/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/GenericGroupMethods" />
+        <pathelement path="${build.tmp}/java/out/Helpers" />
+        <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
+        <pathelement path="${build.tmp}/java/out/Models" />
+        <pathelement path="${build.tmp}/java/out/Modules" />
+        <pathelement path="${build.tmp}/java/out/RuntimeConstraints" />
+        <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.Constraints#5319102428748697931" depends="java.compile.Constraints, java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.Helpers#5494761041833683320, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeConstraints, fetchDependencies">
+    <mkdir dir="${constraints}/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/Constraints#5319102428748697931" />
+    <javac destdir="${build.tmp}/java/out/Constraints#5319102428748697931" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${constraints}/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/Constraints" />
+        <pathelement path="${build.tmp}/java/out/GenericGroupMethods" />
+        <pathelement path="${build.tmp}/java/out/Helpers" />
+        <pathelement path="${build.tmp}/java/out/Helpers#5494761041833683320" />
+        <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
+        <pathelement path="${build.tmp}/java/out/Models" />
+        <pathelement path="${build.tmp}/java/out/Modules" />
+        <pathelement path="${build.tmp}/java/out/RuntimeConstraints" />
+        <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.GenericGroupMethods" depends="java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeCommons, java.compile.RuntimeConstraints, fetchDependencies">
+    <mkdir dir="${generic_group_methods}/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/GenericGroupMethods" />
+    <javac destdir="${build.tmp}/java/out/GenericGroupMethods" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${generic_group_methods}/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
+        <pathelement path="${build.tmp}/java/out/Models" />
+        <pathelement path="${build.tmp}/java/out/Modules" />
+        <pathelement path="${build.tmp}/java/out/RuntimeCommons" />
+        <pathelement path="${build.tmp}/java/out/RuntimeConstraints" />
+        <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.GenericGroupMethods#8976227254846526813" depends="java.compile.GenericGroupMethods, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeCommons, java.compile.RuntimeConstraints, fetchDependencies">
+    <mkdir dir="${generic_group_methods}/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/GenericGroupMethods#8976227254846526813" />
+    <javac destdir="${build.tmp}/java/out/GenericGroupMethods#8976227254846526813" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${generic_group_methods}/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/GenericGroupMethods" />
+        <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
+        <pathelement path="${build.tmp}/java/out/Models" />
+        <pathelement path="${build.tmp}/java/out/Modules" />
+        <pathelement path="${build.tmp}/java/out/RuntimeCommons" />
+        <pathelement path="${build.tmp}/java/out/RuntimeConstraints" />
+        <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.Helpers" depends="java.compile.GenericGroupMethods, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeCommons, fetchDependencies">
+    <mkdir dir="${helpers}/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/Helpers" />
+    <javac destdir="${build.tmp}/java/out/Helpers" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${helpers}/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/GenericGroupMethods" />
+        <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
+        <pathelement path="${build.tmp}/java/out/Models" />
+        <pathelement path="${build.tmp}/java/out/Modules" />
+        <pathelement path="${build.tmp}/java/out/RuntimeCommons" />
+        <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.Helpers#5494761041833683320" depends="java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeCommons, fetchDependencies">
+    <mkdir dir="${helpers}/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/Helpers#5494761041833683320" />
+    <javac destdir="${build.tmp}/java/out/Helpers#5494761041833683320" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${helpers}/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/GenericGroupMethods" />
+        <pathelement path="${build.tmp}/java/out/Helpers" />
+        <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
+        <pathelement path="${build.tmp}/java/out/Models" />
+        <pathelement path="${build.tmp}/java/out/Modules" />
+        <pathelement path="${build.tmp}/java/out/RuntimeCommons" />
+        <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
   <target name="java.compile.RuntimeConstraints" depends="java.compile.JavaFrames, java.compile.LambdaCalculus, java.compile.Modules, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${runtime_constraints}/source_gen" />
     <mkdir dir="${build.tmp}/java/out/RuntimeConstraints" />
@@ -555,6 +983,38 @@
     </javac>
   </target>
   
+  <target name="java.compile.CompleteLanguage" depends="java.compile.JavaFrames, java.compile.RuntimeCodeGeneration, java.compile.RuntimeCommons, java.compile.RuntimeConstraints, fetchDependencies">
+    <mkdir dir="${complete_language}/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/CompleteLanguage" />
+    <javac destdir="${build.tmp}/java/out/CompleteLanguage" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${complete_language}/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/JavaFrames" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <pathelement path="${build.tmp}/java/out/RuntimeCodeGeneration" />
+        <pathelement path="${build.tmp}/java/out/RuntimeCommons" />
+        <pathelement path="${build.tmp}/java/out/RuntimeConstraints" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
   <target name="cleanSources">
     <delete dir="${java_frames}/source_gen" />
     <delete dir="${lambda_calculus}/source_gen" />
@@ -565,6 +1025,13 @@
     <delete dir="${runtime_code_generation}/source_gen" />
     <delete dir="${runtime_commons}/source_gen" />
     <delete dir="${runtime_constraints}/source_gen" />
-    <delete dir="${models}/generator/source_gen" />
+    <delete dir="${code_generation}/source_gen" />
+    <delete dir="${constraints}/source_gen" />
+    <delete dir="${generic_group_methods}/generator/source_gen" />
+    <delete dir="${helpers}/source_gen" />
+    <delete dir="${code_generation}/generator/source_gen" />
+    <delete dir="${complete_language}/source_gen" />
+    <delete dir="${constraints}/generator/source_gen" />
+    <delete dir="${helpers}/generator/source_gen" />
   </target>
 </project>

@@ -23,9 +23,6 @@
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
-      <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
-        <child id="9126048691955220762" name="path" index="28jJRO" />
-      </concept>
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
         <child id="7321017245477039051" name="compositePart" index="iGT6I" />
       </concept>
@@ -33,11 +30,22 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
+      <concept id="2750015747481074431" name="jetbrains.mps.build.structure.BuildLayout_Files" flags="ng" index="2HvfSZ">
+        <child id="2750015747481074432" name="path" index="2HvfZ0" />
+      </concept>
+      <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
+        <child id="4903714810883783243" name="parts" index="3MwsjC" />
+      </concept>
       <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
+      <concept id="7389400916848050071" name="jetbrains.mps.build.structure.BuildLayout_Zip" flags="ng" index="3981dG" />
+      <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
+        <child id="4380385936562148502" name="containerName" index="Nbhlr" />
+      </concept>
+      <concept id="7389400916848036984" name="jetbrains.mps.build.structure.BuildLayout_Folder" flags="ng" index="398223" />
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -50,12 +58,17 @@
         <child id="4796668409958418110" name="scriptsDir" index="auvoZ" />
         <child id="6647099934206700656" name="plugins" index="10PD9s" />
         <child id="7389400916848080626" name="parts" index="3989C9" />
+        <child id="3542413272732620719" name="aspects" index="1hWBAP" />
         <child id="5617550519002745381" name="dependencies" index="1l3spa" />
         <child id="5617550519002745378" name="macros" index="1l3spd" />
         <child id="5617550519002745372" name="layout" index="1l3spN" />
       </concept>
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
+      </concept>
+      <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
+      <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
+        <property id="4903714810883755350" name="text" index="3MwjfP" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -64,6 +77,9 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
+      <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh">
+        <property id="6503355885715353788" name="bootstrap" index="2igJW4" />
+      </concept>
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
@@ -312,6 +328,320 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="4EaS5bR1ldc" role="2G$12L">
+        <property role="BnDLt" value="false" />
+        <property role="TrG5h" value="CodeGeneration" />
+        <property role="3LESm3" value="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="4EaS5bR1lSK" role="3LF7KH">
+          <ref role="398BVh" node="4EaS5bR1lob" resolve="code_generation" />
+          <node concept="2Ry0Ak" id="4EaS5bR1lTG" role="iGT6I">
+            <property role="2Ry0Am" value="CodeGeneration.mpl" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lXO" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lXP" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lXQ" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lXR" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lXS" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lXT" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1d41uYMTVPB" resolve="jetbrains.mps.lang.scopes.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lXU" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lXV" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4EaS5bR1lMv" resolve="Helpers" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lXW" role="3bR37C">
+          <node concept="1Busua" id="4EaS5bR1lXX" role="1SiIV1">
+            <ref role="1Busuk" node="4EaS5bR1ljZ" resolve="GenericGroupMethods" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="4EaS5bR1lXY" role="1TViLv">
+          <property role="TrG5h" value="CodeGeneration#5319102428749892274" />
+          <property role="3LESm3" value="fa9e5521-3f29-432d-a881-147175cac81d" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="4EaS5bR1lXZ" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lY0" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4EaS5bR1ljZ" resolve="GenericGroupMethods" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lY1" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lY2" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4hy4fxE41tf" resolve="Modules" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lY3" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lY4" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lY5" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lY6" role="1SiIV1">
+              <property role="3bR36h" value="true" />
+              <ref role="3bR37D" node="6dXtnCXifjk" resolve="RuntimeCodeGeneration" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lY7" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lY8" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4EaS5bR1lMv" resolve="Helpers" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1m2o" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1m2p" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4EaS5bR1lZ2" resolve="Helpers#5494761041833683320" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="4EaS5bR1lgL" role="2G$12L">
+        <property role="BnDLt" value="false" />
+        <property role="TrG5h" value="Constraints" />
+        <property role="3LESm3" value="47849989-c2df-46a8-aba5-1c5a21bbef1f" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="4EaS5bR1lRn" role="3LF7KH">
+          <ref role="398BVh" node="4EaS5bR1lrW" resolve="constraints" />
+          <node concept="2Ry0Ak" id="4EaS5bR1lSj" role="iGT6I">
+            <property role="2Ry0Am" value="Constraints.mpl" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lY9" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lYa" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4EaS5bR1ljZ" resolve="GenericGroupMethods" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lYb" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lYc" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lYd" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lYe" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lYf" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lYg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1d41uYMTVPB" resolve="jetbrains.mps.lang.scopes.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lYh" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lYi" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4EaS5bR1lMv" resolve="Helpers" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lYj" role="3bR37C">
+          <node concept="1Busua" id="4EaS5bR1lYk" role="1SiIV1">
+            <ref role="1Busuk" node="4EaS5bR1ljZ" resolve="GenericGroupMethods" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="4EaS5bR1lYl" role="1TViLv">
+          <property role="TrG5h" value="Constraints#5319102428748697931" />
+          <property role="3LESm3" value="00d93b69-1e44-4a63-b2c9-865772e77440" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="4EaS5bR1lYm" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lYn" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4EaS5bR1ljZ" resolve="GenericGroupMethods" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lYo" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lYp" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lYq" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lYr" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lYs" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lYt" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4hy4fxE5DTp" resolve="RuntimeConstraints" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lYu" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lYv" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4EaS5bR1lgL" resolve="Constraints" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lYw" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lYx" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4EaS5bR1lMv" resolve="Helpers" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1m2v" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1m2w" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4EaS5bR1lZ2" resolve="Helpers#5494761041833683320" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="4EaS5bR1ljZ" role="2G$12L">
+        <property role="BnDLt" value="false" />
+        <property role="TrG5h" value="GenericGroupMethods" />
+        <property role="3LESm3" value="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="4EaS5bR1lPY" role="3LF7KH">
+          <ref role="398BVh" node="4EaS5bR1luT" resolve="generic_group_methods" />
+          <node concept="2Ry0Ak" id="4EaS5bR1lQU" role="iGT6I">
+            <property role="2Ry0Am" value="ModelConstraints.mpl" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lYy" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lYz" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lY$" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lY_" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lYA" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lYB" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1d41uYMTVPB" resolve="jetbrains.mps.lang.scopes.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lYC" role="3bR37C">
+          <node concept="1Busua" id="4EaS5bR1lYD" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lYE" role="3bR37C">
+          <node concept="1Busua" id="4EaS5bR1lYF" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lYG" role="3bR37C">
+          <node concept="1Busua" id="4EaS5bR1lYH" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="4EaS5bR1lYI" role="1TViLv">
+          <property role="TrG5h" value="GenericGroupMethods#8976227254846526813" />
+          <property role="3LESm3" value="23889f02-f356-4414-ba59-81b2f1c2170d" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="4EaS5bR1lYJ" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lYK" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4EaS5bR1ljZ" resolve="GenericGroupMethods" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lYL" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lYM" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeCommons" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lYN" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lYO" role="1SiIV1">
+              <property role="3bR36h" value="true" />
+              <ref role="3bR37D" node="4hy4fxE5DTp" resolve="RuntimeConstraints" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lYP" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lYQ" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="4EaS5bR1lMv" role="2G$12L">
+        <property role="BnDLt" value="false" />
+        <property role="TrG5h" value="Helpers" />
+        <property role="3LESm3" value="2a4f5bab-551b-46ab-a40c-28d5229d6214" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="4EaS5bR1lO_" role="3LF7KH">
+          <ref role="398BVh" node="4EaS5bR1lFT" resolve="helpers" />
+          <node concept="2Ry0Ak" id="4EaS5bR1lPx" role="iGT6I">
+            <property role="2Ry0Am" value="Helpers.mpl" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lYW" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lYX" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lYY" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1lYZ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1d41uYMTVPB" resolve="jetbrains.mps.lang.scopes.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1lZ0" role="3bR37C">
+          <node concept="1Busua" id="4EaS5bR1lZ1" role="1SiIV1">
+            <ref role="1Busuk" node="4EaS5bR1ljZ" resolve="GenericGroupMethods" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="4EaS5bR1lZ2" role="1TViLv">
+          <property role="TrG5h" value="Helpers#5494761041833683320" />
+          <property role="3LESm3" value="e0c146ad-f842-439c-a45a-3c8b57d915f9" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="4EaS5bR1lZ3" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lZ4" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeCommons" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lZ5" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lZ6" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4EaS5bR1ljZ" resolve="GenericGroupMethods" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lZ7" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lZ8" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4hy4fxE41tf" resolve="Modules" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lZ9" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lZa" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4EaS5bR1lZb" role="3bR37C">
+            <node concept="3bR9La" id="4EaS5bR1lZc" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="1nrRmPkSlXJ" role="3989C9">
       <property role="TrG5h" value="UtilitiesClasses" />
@@ -417,8 +747,34 @@
     </node>
     <node concept="55IIr" id="6dXtnCXgru8" role="auvoZ" />
     <node concept="1l3spV" id="6dXtnCXgru9" role="1l3spN">
-      <node concept="28jJK3" id="6dXtnCXhPGg" role="39821P">
-        <node concept="55IIr" id="6dXtnCXhPGh" role="28jJRO" />
+      <node concept="3981dG" id="4EaS5bR1zKw" role="39821P">
+        <node concept="398223" id="4EaS5bR38v8" role="39821P">
+          <node concept="2HvfSZ" id="4EaS5bR1zLl" role="39821P">
+            <node concept="398BVA" id="4EaS5bR1zRN" role="2HvfZ0">
+              <ref role="398BVh" node="1nrRmPkSwOo" resolve="runtime_commons" />
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="4EaS5bR1zNH" role="39821P">
+            <node concept="398BVA" id="4EaS5bR1zO$" role="2HvfZ0">
+              <ref role="398BVh" node="1nrRmPkSwMr" resolve="runtime_code_generation" />
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="4EaS5bR1zQb" role="39821P">
+            <node concept="398BVA" id="4EaS5bR1zS$" role="2HvfZ0">
+              <ref role="398BVh" node="4EaS5bR1krf" resolve="complete_language" />
+            </node>
+          </node>
+          <node concept="3_J27D" id="4EaS5bR38va" role="Nbhlr">
+            <node concept="3Mxwew" id="4EaS5bR38w6" role="3MwsjC">
+              <property role="3MwjfP" value="classes_gen" />
+            </node>
+          </node>
+        </node>
+        <node concept="3_J27D" id="4EaS5bR1zKx" role="Nbhlr">
+          <node concept="3Mxwew" id="4EaS5bR1zLj" role="3MwsjC">
+            <property role="3MwjfP" value="CodeGeneration.zip" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="6dXtnCXi0GE" role="10PD9s" />
@@ -469,6 +825,51 @@
           <node concept="3bR9La" id="4hy4fxE0LCs" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="4EaS5bR1kRQ" role="3989C9">
+      <property role="TrG5h" value="CompleteLanguage" />
+      <node concept="1E1JtA" id="4EaS5bR1kUb" role="2G$12L">
+        <property role="BnDLt" value="false" />
+        <property role="TrG5h" value="CompleteLanguage" />
+        <property role="3LESm3" value="1698b8bc-a639-489e-a64a-be677876b072" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="4EaS5bR1kUh" role="3LF7KH">
+          <ref role="398BVh" node="4EaS5bR1krf" resolve="complete_language" />
+          <node concept="2Ry0Ak" id="4EaS5bR1kV9" role="iGT6I">
+            <property role="2Ry0Am" value="CompleteLanguage.msd" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1kWm" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1kWn" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1nrRmPkSlY7" resolve="JavaFrames" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1kWo" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1kWp" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1kWq" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1kWr" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="6dXtnCXifjk" resolve="RuntimeCodeGeneration" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1kWs" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1kWt" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeCommons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4EaS5bR1kWu" role="3bR37C">
+          <node concept="3bR9La" id="4EaS5bR1kWv" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4hy4fxE5DTp" resolve="RuntimeConstraints" />
           </node>
         </node>
       </node>
@@ -602,6 +1003,85 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="4EaS5bR1krf" role="1l3spd">
+      <property role="TrG5h" value="complete_language" />
+      <node concept="55IIr" id="4EaS5bR1ktb" role="398pKh">
+        <node concept="2Ry0Ak" id="4EaS5bR1kte" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="4EaS5bR1ktj" role="2Ry0An">
+            <property role="2Ry0Am" value="CompleteLanguage" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="4EaS5bR1lob" role="1l3spd">
+      <property role="TrG5h" value="code_generation" />
+      <node concept="55IIr" id="4EaS5bR1lx1" role="398pKh">
+        <node concept="2Ry0Ak" id="4EaS5bR1lx4" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="4EaS5bR1lx7" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="4EaS5bR1lyt" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="4EaS5bR1lzl" role="2Ry0An">
+                <property role="2Ry0Am" value="CodeGeneration" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="4EaS5bR1lrW" role="1l3spd">
+      <property role="TrG5h" value="constraints" />
+      <node concept="55IIr" id="4EaS5bR1lzM" role="398pKh">
+        <node concept="2Ry0Ak" id="4EaS5bR1lzP" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="4EaS5bR1lzS" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="4EaS5bR1lzX" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="4EaS5bR1l$2" role="2Ry0An">
+                <property role="2Ry0Am" value="Constraints" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="4EaS5bR1luT" role="1l3spd">
+      <property role="TrG5h" value="generic_group_methods" />
+      <node concept="55IIr" id="4EaS5bR1l$4" role="398pKh">
+        <node concept="2Ry0Ak" id="4EaS5bR1l$7" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="4EaS5bR1l$a" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="4EaS5bR1l$d" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="4EaS5bR1lAm" role="2Ry0An">
+                <property role="2Ry0Am" value="ModelConstraints" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="4EaS5bR1lFT" role="1l3spd">
+      <property role="TrG5h" value="helpers" />
+      <node concept="55IIr" id="4EaS5bR1lHQ" role="398pKh">
+        <node concept="2Ry0Ak" id="4EaS5bR1lHT" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="4EaS5bR1lHW" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="4EaS5bR1lJx" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="4EaS5bR1lKp" role="2Ry0An">
+                <property role="2Ry0Am" value="Helpers" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2sgV4H" id="1nrRmPkQyZX" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="1nrRmPkQyZZ" role="2JcizS">
@@ -613,6 +1093,9 @@
       <node concept="398BVA" id="2dF_C15CDOM" role="2JcizS">
         <ref role="398BVh" node="2dF_C15CDMj" resolve="mps_sl_all" />
       </node>
+    </node>
+    <node concept="2igEWh" id="4EaS5bR1nKj" role="1hWBAP">
+      <property role="2igJW4" value="true" />
     </node>
   </node>
 </model>
