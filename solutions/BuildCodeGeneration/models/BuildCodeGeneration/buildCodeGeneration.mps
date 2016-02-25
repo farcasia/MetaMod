@@ -45,7 +45,6 @@
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
-      <concept id="7389400916848036984" name="jetbrains.mps.build.structure.BuildLayout_Folder" flags="ng" index="398223" />
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -748,31 +747,24 @@
     <node concept="55IIr" id="6dXtnCXgru8" role="auvoZ" />
     <node concept="1l3spV" id="6dXtnCXgru9" role="1l3spN">
       <node concept="3981dG" id="4EaS5bR1zKw" role="39821P">
-        <node concept="398223" id="4EaS5bR38v8" role="39821P">
-          <node concept="2HvfSZ" id="4EaS5bR1zLl" role="39821P">
-            <node concept="398BVA" id="4EaS5bR1zRN" role="2HvfZ0">
-              <ref role="398BVh" node="1nrRmPkSwOo" resolve="runtime_commons" />
-            </node>
-          </node>
-          <node concept="2HvfSZ" id="4EaS5bR1zNH" role="39821P">
-            <node concept="398BVA" id="4EaS5bR1zO$" role="2HvfZ0">
-              <ref role="398BVh" node="1nrRmPkSwMr" resolve="runtime_code_generation" />
-            </node>
-          </node>
-          <node concept="2HvfSZ" id="4EaS5bR1zQb" role="39821P">
-            <node concept="398BVA" id="4EaS5bR1zS$" role="2HvfZ0">
-              <ref role="398BVh" node="4EaS5bR1krf" resolve="complete_language" />
-            </node>
-          </node>
-          <node concept="3_J27D" id="4EaS5bR38va" role="Nbhlr">
-            <node concept="3Mxwew" id="4EaS5bR38w6" role="3MwsjC">
-              <property role="3MwjfP" value="classes_gen" />
-            </node>
-          </node>
-        </node>
         <node concept="3_J27D" id="4EaS5bR1zKx" role="Nbhlr">
           <node concept="3Mxwew" id="4EaS5bR1zLj" role="3MwsjC">
             <property role="3MwjfP" value="CodeGeneration.zip" />
+          </node>
+        </node>
+        <node concept="2HvfSZ" id="3GIsrLoPWnb" role="39821P">
+          <node concept="398BVA" id="3GIsrLoPWuR" role="2HvfZ0">
+            <ref role="398BVh" node="1nrRmPkSwMr" resolve="runtime_code_generation" />
+          </node>
+        </node>
+        <node concept="2HvfSZ" id="3GIsrLoPWvH" role="39821P">
+          <node concept="398BVA" id="3GIsrLoPWw$" role="2HvfZ0">
+            <ref role="398BVh" node="1nrRmPkSwOo" resolve="runtime_commons" />
+          </node>
+        </node>
+        <node concept="2HvfSZ" id="3GIsrLoPWyU" role="39821P">
+          <node concept="398BVA" id="3GIsrLoPWzN" role="2HvfZ0">
+            <ref role="398BVh" node="4hy4fxE5DXn" resolve="runtime_constraints" />
           </node>
         </node>
       </node>
