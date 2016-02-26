@@ -133,12 +133,6 @@
         <reference id="1174650432090" name="applicableNode" index="1YBMHb" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -255,18 +249,6 @@
         </node>
       </node>
       <node concept="3clFbH" id="3OCrrxNqX9X" role="3cqZAp" />
-      <node concept="34ab3g" id="3OCrrxNCQCj" role="3cqZAp">
-        <property role="35gtTG" value="warn" />
-        <node concept="3cpWs3" id="3OCrrxNCSl4" role="34bqiv">
-          <node concept="1YBJjd" id="3OCrrxNCSlo" role="3uHU7w">
-            <ref role="1YBMHb" node="6cw$ifhxYLy" resolve="group" />
-          </node>
-          <node concept="Xl_RD" id="3OCrrxNCQCl" role="3uHU7B">
-            <property role="Xl_RC" value="Ok, let's check " />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="3OCrrxNCNX2" role="3cqZAp" />
       <node concept="3SKdUt" id="3OCrrxNsMag" role="3cqZAp">
         <node concept="3SKdUq" id="3OCrrxNsMML" role="3SKWNk">
           <property role="3SKdUp" value="Random number generator that we are going to use for the unnamed concepts." />
@@ -879,25 +861,6 @@
       </node>
       <node concept="1DcWWT" id="3OCrrxNvmMl" role="3cqZAp">
         <node concept="3clFbS" id="3OCrrxNvmMn" role="2LFqv$">
-          <node concept="34ab3g" id="3OCrrxND0Iy" role="3cqZAp">
-            <property role="35gtTG" value="warn" />
-            <node concept="3cpWs3" id="3OCrrxND1y1" role="34bqiv">
-              <node concept="2OqwBi" id="3OCrrxND9$u" role="3uHU7w">
-                <node concept="1PxgMI" id="3OCrrxND9s1" role="2Oq$k0">
-                  <ref role="1PxNhF" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
-                  <node concept="37vLTw" id="3OCrrxND1yl" role="1PxMeX">
-                    <ref role="3cqZAo" node="3OCrrxNvmMo" resolve="rel" />
-                  </node>
-                </node>
-                <node concept="3TrcHB" id="3OCrrxND9N$" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="3OCrrxND0I$" role="3uHU7B">
-                <property role="Xl_RC" value="checking relation " />
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="3OCrrxNvkSS" role="3cqZAp">
             <node concept="3cpWsn" id="3OCrrxNvkSV" role="3cpWs9">
               <property role="TrG5h" value="sourceMultLow" />
@@ -1101,7 +1064,6 @@
                   <node concept="T8wYR" id="3OCrrxNvBZW" role="2OqNvi" />
                 </node>
               </node>
-              <node concept="3clFbH" id="3OCrrxNwlXv" role="3cqZAp" />
             </node>
             <node concept="22lmx$" id="3OCrrxNw9R$" role="3clFbw">
               <node concept="3y3z36" id="3OCrrxNwaqF" role="3uHU7w">
