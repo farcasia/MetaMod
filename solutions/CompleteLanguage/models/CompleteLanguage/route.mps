@@ -265,6 +265,7 @@
         <child id="8717972784948764180" name="conformsTo" index="2oAawq" />
       </concept>
       <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
+        <property id="4406892874363944218" name="partial" index="1ewt2y" />
         <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
@@ -540,6 +541,7 @@
   <node concept="2oAaVg" id="5UqrlCgt42K">
     <property role="TrG5h" value="Route" />
     <property role="3GE5qa" value="Models" />
+    <property role="1ewt2y" value="false" />
     <ref role="19kf5F" node="5UqrlCgr74A" resolve="RouteModel" />
     <node concept="2oAaYs" id="3OCrrxNEj5O" role="2oAaxa">
       <ref role="3aaZtz" node="3OCrrxNEiLP" resolve="EnclosingRectangle" />
