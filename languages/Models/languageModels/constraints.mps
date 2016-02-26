@@ -119,9 +119,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -2544,7 +2541,7 @@
             <node concept="3clFbH" id="19jQaVARw3y" role="3cqZAp" />
             <node concept="3cpWs8" id="19jQaVARhsC" role="3cqZAp">
               <node concept="3cpWsn" id="19jQaVARhsF" role="3cpWs9">
-                <property role="TrG5h" value="metamodel" />
+                <property role="TrG5h" value="refMM" />
                 <node concept="3Tqbb2" id="19jQaVARhsA" role="1tU5fm">
                   <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                 </node>
@@ -2569,7 +2566,7 @@
             </node>
             <node concept="3cpWs8" id="19jQaVARsDR" role="3cqZAp">
               <node concept="3cpWsn" id="19jQaVARsDU" role="3cpWs9">
-                <property role="TrG5h" value="containingGroup" />
+                <property role="TrG5h" value="containingGroupMM" />
                 <node concept="3Tqbb2" id="19jQaVARsDP" role="1tU5fm">
                   <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                 </node>
@@ -2588,39 +2585,11 @@
               </node>
             </node>
             <node concept="3clFbH" id="19jQaVATOwV" role="3cqZAp" />
-            <node concept="3SKdUt" id="16zLRPqMh_s" role="3cqZAp">
-              <node concept="3SKdUq" id="16zLRPqMhMf" role="3SKWNk">
-                <property role="3SKdUp" value="We can now have groups that do not conform to any metamodel." />
+            <node concept="3SKdUt" id="3OCrrxNDAiS" role="3cqZAp">
+              <node concept="3SKdUq" id="3OCrrxNDAwN" role="3SKWNk">
+                <property role="3SKdUp" value="We check that the containingGroupMM is refMM or contains refMM." />
               </node>
             </node>
-            <node concept="3SKdUt" id="16zLRPqMgo5" role="3cqZAp">
-              <node concept="3SKWN0" id="16zLRPqMgoh" role="3SKWNk">
-                <node concept="3clFbJ" id="19jQaVAREqa" role="3SKWNf">
-                  <node concept="3clFbS" id="19jQaVAREqc" role="3clFbx">
-                    <node concept="3cpWs6" id="19jQaVARHjG" role="3cqZAp">
-                      <node concept="3clFbT" id="19jQaVARHZs" role="3cqZAk">
-                        <property role="3clFbU" value="false" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="22lmx$" id="19jQaVARFuN" role="3clFbw">
-                    <node concept="2OqwBi" id="19jQaVARFR2" role="3uHU7w">
-                      <node concept="37vLTw" id="19jQaVARFDK" role="2Oq$k0">
-                        <ref role="3cqZAo" node="19jQaVARsDU" resolve="containingGroup" />
-                      </node>
-                      <node concept="3w_OXm" id="19jQaVARGpn" role="2OqNvi" />
-                    </node>
-                    <node concept="2OqwBi" id="19jQaVARGB6" role="3uHU7B">
-                      <node concept="37vLTw" id="19jQaVAREwX" role="2Oq$k0">
-                        <ref role="3cqZAo" node="19jQaVARhsF" resolve="metamodel" />
-                      </node>
-                      <node concept="3w_OXm" id="19jQaVARH8S" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="19jQaVARHBy" role="3cqZAp" />
             <node concept="3clFbJ" id="19jQaVARIm9" role="3cqZAp">
               <node concept="3clFbS" id="19jQaVARImb" role="3clFbx">
                 <node concept="3cpWs6" id="19jQaVARJ3J" role="3cqZAp">
@@ -2629,12 +2598,31 @@
                   </node>
                 </node>
               </node>
-              <node concept="3y3z36" id="19jQaVARIHk" role="3clFbw">
-                <node concept="37vLTw" id="19jQaVARISC" role="3uHU7w">
-                  <ref role="3cqZAo" node="19jQaVARsDU" resolve="containingGroup" />
+              <node concept="1Wc70l" id="3OCrrxNDBH5" role="3clFbw">
+                <node concept="3fqX7Q" id="3OCrrxNDP$G" role="3uHU7w">
+                  <node concept="2OqwBi" id="3OCrrxNDP$I" role="3fr31v">
+                    <node concept="2OqwBi" id="3OCrrxNDP$J" role="2Oq$k0">
+                      <node concept="37vLTw" id="3OCrrxNDP$K" role="2Oq$k0">
+                        <ref role="3cqZAo" node="19jQaVARsDU" resolve="containingGroupMM" />
+                      </node>
+                      <node concept="2qgKlT" id="3OCrrxNDP$L" role="2OqNvi">
+                        <ref role="37wK5l" to="z64h:4X4Jbdc5y5v" resolve="getAllNamedInnerGroups" />
+                      </node>
+                    </node>
+                    <node concept="3JPx81" id="3OCrrxNDP$M" role="2OqNvi">
+                      <node concept="37vLTw" id="3OCrrxNDP$N" role="25WWJ7">
+                        <ref role="3cqZAo" node="19jQaVARhsF" resolve="refMM" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="37vLTw" id="19jQaVARItB" role="3uHU7B">
-                  <ref role="3cqZAo" node="19jQaVARhsF" resolve="metamodel" />
+                <node concept="3y3z36" id="19jQaVARIHk" role="3uHU7B">
+                  <node concept="37vLTw" id="19jQaVARItB" role="3uHU7B">
+                    <ref role="3cqZAo" node="19jQaVARhsF" resolve="refMM" />
+                  </node>
+                  <node concept="37vLTw" id="19jQaVARISC" role="3uHU7w">
+                    <ref role="3cqZAo" node="19jQaVARsDU" resolve="containingGroupMM" />
+                  </node>
                 </node>
               </node>
             </node>
