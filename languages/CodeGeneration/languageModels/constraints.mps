@@ -12,7 +12,6 @@
     <import index="93in" ref="r:66387152-22f1-400f-a531-d1c947e7589b(GenericGroupMethods.behavior)" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" implicit="true" />
-    <import index="m7u2" ref="r:6c04e2ea-09b1-48b2-9bba-290b7735cd79(CodeGeneration.behavior)" implicit="true" />
     <import index="anrw" ref="r:f7f50153-a977-4fee-b5c8-7e4385be5a22(CodeGeneration.structure)" implicit="true" />
   </imports>
   <registry>
@@ -251,29 +250,6 @@
               </node>
             </node>
           </node>
-          <node concept="3cpWs8" id="2TStaYjTZMp" role="3cqZAp">
-            <node concept="3cpWsn" id="2TStaYjTZMs" role="3cpWs9">
-              <property role="TrG5h" value="reachableFacets" />
-              <node concept="2I9FWS" id="2TStaYjTZMn" role="1tU5fm">
-                <ref role="2I9WkF" to="1o5n:6dXtnCWkK4d" resolve="Facet" />
-              </node>
-              <node concept="2OqwBi" id="2TStaYjUpa4" role="33vP2m">
-                <node concept="2OqwBi" id="2TStaYjU7go" role="2Oq$k0">
-                  <node concept="1PxgMI" id="2TStaYjU5tN" role="2Oq$k0">
-                    <ref role="1PxNhF" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
-                    <node concept="2OqwBi" id="2TStaYjU4LF" role="1PxMeX">
-                      <node concept="21POm0" id="2TStaYjU4eX" role="2Oq$k0" />
-                      <node concept="2Rxl7S" id="2TStaYjU5a6" role="2OqNvi" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="2TStaYjU7Tv" role="2OqNvi">
-                    <ref role="37wK5l" to="m7u2:3OCrrxNYOr3" resolve="getAllFacets" />
-                  </node>
-                </node>
-                <node concept="ANE8D" id="2TStaYjUs_T" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
           <node concept="3clFbF" id="6RAr73ZgOF_" role="3cqZAp">
             <node concept="2OqwBi" id="6RAr73ZgOFA" role="3clFbG">
               <node concept="37vLTw" id="6RAr73ZgOFB" role="2Oq$k0">
@@ -286,7 +262,39 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="4L1k0Soayu0" role="3cqZAp" />
+          <node concept="3cpWs8" id="2TStaYk1POh" role="3cqZAp">
+            <node concept="3cpWsn" id="2TStaYjTZMs" role="3cpWs9">
+              <property role="TrG5h" value="reachableFacets" />
+              <node concept="2I9FWS" id="2TStaYjTZMn" role="1tU5fm">
+                <ref role="2I9WkF" to="1o5n:6dXtnCWkK4d" resolve="Facet" />
+              </node>
+              <node concept="2OqwBi" id="2TStaYk1LvX" role="33vP2m">
+                <node concept="2OqwBi" id="2TStaYk1Kec" role="2Oq$k0">
+                  <node concept="2YIFZM" id="2TStaYk1JHY" role="2Oq$k0">
+                    <ref role="1Pybhc" to="93in:3OCrrxNYV5d" resolve="FacetUtilityMethods" />
+                    <ref role="37wK5l" to="93in:3OCrrxNYXAA" resolve="getFacet" />
+                    <node concept="2OqwBi" id="2TStaYk1Nz2" role="37wK5m">
+                      <node concept="1PxgMI" id="2TStaYjU5tN" role="2Oq$k0">
+                        <ref role="1PxNhF" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
+                        <node concept="2OqwBi" id="2TStaYjU4LF" role="1PxMeX">
+                          <node concept="21POm0" id="2TStaYjU4eX" role="2Oq$k0" />
+                          <node concept="2Rxl7S" id="2TStaYjU5a6" role="2OqNvi" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="2TStaYk1Of_" role="2OqNvi">
+                        <ref role="3Tt5mk" to="1o5n:6dXtnCXbrXj" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="2TStaYk1KQc" role="2OqNvi">
+                    <ref role="37wK5l" to="93in:2TStaYk1BnJ" resolve="getAllFacets" />
+                  </node>
+                </node>
+                <node concept="ANE8D" id="2TStaYk1Nf5" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="2TStaYk1P$a" role="3cqZAp" />
           <node concept="3cpWs6" id="6RAr73ZeoGv" role="3cqZAp">
             <node concept="2ShNRf" id="6RAr73ZeoWb" role="3cqZAk">
               <node concept="1pGfFk" id="6RAr73Zg61y" role="2ShVmc">

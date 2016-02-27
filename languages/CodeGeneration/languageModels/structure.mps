@@ -75,5 +75,14 @@
       <ref role="PrY4T" to="1o5n:6dXtnCWxe33" resolve="IAspect" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2TStaYjWuFM">
+    <property role="TrG5h" value="ReplaceCodeGenMethod" />
+    <ref role="1TJDcQ" node="4BhfRC_zwIi" resolve="CodeGenMethod" />
+    <node concept="1TJgyj" id="2TStaYjWuV5" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="codeGenMethod" />
+      <ref role="20lvS9" node="4BhfRC_zwIi" resolve="CodeGenMethod" />
+    </node>
+  </node>
 </model>
 

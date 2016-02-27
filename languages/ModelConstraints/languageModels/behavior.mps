@@ -740,6 +740,50 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="2TStaYk1BnJ" role="13h7CS">
+      <property role="TrG5h" value="getAllFacets" />
+      <node concept="3Tm1VV" id="2TStaYk1BnK" role="1B3o_S" />
+      <node concept="3clFbS" id="2TStaYk1BnL" role="3clF47">
+        <node concept="3cpWs8" id="2TStaYk1BEh" role="3cqZAp">
+          <node concept="3cpWsn" id="2TStaYk1BEk" role="3cpWs9">
+            <property role="TrG5h" value="allFacets" />
+            <node concept="2hMVRd" id="2TStaYk1BEf" role="1tU5fm">
+              <node concept="3Tqbb2" id="2TStaYk1BIf" role="2hN53Y">
+                <ref role="ehGHo" to="1o5n:6dXtnCWkK4d" resolve="Facet" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="2TStaYk1BT8" role="33vP2m">
+              <node concept="2i4dXS" id="2TStaYk1DHX" role="2ShVmc">
+                <node concept="3Tqbb2" id="2TStaYk1DLN" role="HW$YZ">
+                  <ref role="ehGHo" to="1o5n:6dXtnCWkK4d" resolve="Facet" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2TStaYk1DTq" role="3cqZAp">
+          <node concept="2OqwBi" id="2TStaYk1Ec$" role="3clFbG">
+            <node concept="37vLTw" id="2TStaYk1DTo" role="2Oq$k0">
+              <ref role="3cqZAo" node="2TStaYk1BEk" resolve="allFacets" />
+            </node>
+            <node concept="TSZUe" id="2TStaYk1FAX" role="2OqNvi">
+              <node concept="13iPFW" id="2TStaYk1FR5" role="25WWJ7" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2TStaYk1DSv" role="3cqZAp" />
+        <node concept="3cpWs6" id="2TStaYk1DNH" role="3cqZAp">
+          <node concept="37vLTw" id="2TStaYk1DOV" role="3cqZAk">
+            <ref role="3cqZAo" node="2TStaYk1BEk" resolve="allFacets" />
+          </node>
+        </node>
+      </node>
+      <node concept="2hMVRd" id="2TStaYk1BE6" role="3clF45">
+        <node concept="3Tqbb2" id="2TStaYk1BEc" role="2hN53Y">
+          <ref role="ehGHo" to="1o5n:6dXtnCWkK4d" resolve="Facet" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="3OCrrxNYZ$A" role="13h7CW">
       <node concept="3clFbS" id="3OCrrxNYZ$B" role="2VODD2" />
     </node>
