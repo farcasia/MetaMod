@@ -2327,8 +2327,8 @@
   <node concept="1vbSxi" id="6dXtnCWlMNX">
     <property role="3GE5qa" value="CodeGeneration" />
     <property role="1vYpmj" value="CodeGen" />
-    <node concept="1vbBpf" id="3GIsrLoQ5OZ" role="1vbB4l">
-      <ref role="1vbBpc" node="1nrRmPkSYY8" resolve="frames" />
+    <node concept="1vbBpf" id="2TStaYk4Bat" role="1vbB4l">
+      <ref role="1vbBpc" node="1nrRmPkT1Ez" resolve="frames_sim" />
     </node>
   </node>
   <node concept="1vVv4o" id="6dXtnCW_g7M">
@@ -6110,7 +6110,6 @@
     <property role="3GE5qa" value="CodeGeneration.CodeGenerationFramesSim" />
     <property role="TrG5h" value="CodeGen_frames_sim_Commands" />
     <ref role="1GHRfG" node="5UqrlCgsUMS" resolve="Commands" />
-    <node concept="CLx5B" id="1nrRmPkSYUJ" role="CLm5g" />
     <node concept="2XypTt" id="2TStaYk1qNX" role="CLm5g">
       <property role="TrG5h" value="panelWithSegments" />
       <ref role="2XypDE" node="6D5K2vjjCm4" resolve="panelWithSegments" />
