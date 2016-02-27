@@ -16,6 +16,7 @@
     <import index="leqx" ref="r:f298dead-195d-448a-a15c-8e897e077e47(Helpers.structure)" />
     <import index="71p1" ref="r:d95c8d53-273b-4be3-aea0-7cddc60ab338(Helpers.generator.template.main@generator)" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
+    <import index="93in" ref="r:66387152-22f1-400f-a531-d1c947e7589b(GenericGroupMethods.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="anrw" ref="r:f7f50153-a977-4fee-b5c8-7e4385be5a22(CodeGeneration.structure)" implicit="true" />
   </imports>
@@ -38,6 +39,9 @@
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -117,11 +121,6 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
-      </concept>
-      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
-        <child id="1163668914799" name="condition" index="3K4Cdx" />
-        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
-        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
@@ -335,33 +334,11 @@
               <node concept="3Tqbb2" id="6dXtnCWn5on" role="1tU5fm">
                 <ref role="ehGHo" to="1o5n:6dXtnCWkK4d" resolve="Facet" />
               </node>
-              <node concept="3K4zz7" id="6dXtnCWn91S" role="33vP2m">
-                <node concept="1PxgMI" id="6dXtnCWnbM6" role="3K4E3e">
-                  <ref role="1PxNhF" to="1o5n:6dXtnCWkK4d" resolve="Facet" />
-                  <node concept="37vLTw" id="6dXtnCWnbDO" role="1PxMeX">
-                    <ref role="3cqZAo" node="6dXtnCWnazc" resolve="iFacet" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="6dXtnCWncru" role="3K4GZi">
-                  <node concept="1PxgMI" id="6dXtnCWnc6V" role="2Oq$k0">
-                    <ref role="1PxNhF" to="1o5n:6dXtnCWkKcP" resolve="RefToFacet" />
-                    <node concept="37vLTw" id="6dXtnCWnc1h" role="1PxMeX">
-                      <ref role="3cqZAo" node="6dXtnCWnazc" resolve="iFacet" />
-                    </node>
-                  </node>
-                  <node concept="3TrEf2" id="6dXtnCWvxz$" role="2OqNvi">
-                    <ref role="3Tt5mk" to="1o5n:6dXtnCWkKcQ" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="6dXtnCWn8dd" role="3K4Cdx">
-                  <node concept="1mIQ4w" id="6dXtnCWn8xs" role="2OqNvi">
-                    <node concept="chp4Y" id="6dXtnCWv7es" role="cj9EA">
-                      <ref role="cht4Q" to="1o5n:6dXtnCWkK4d" resolve="Facet" />
-                    </node>
-                  </node>
-                  <node concept="37vLTw" id="6dXtnCWnbzl" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6dXtnCWnazc" resolve="iFacet" />
-                  </node>
+              <node concept="2YIFZM" id="2TStaYjVTQR" role="33vP2m">
+                <ref role="37wK5l" to="93in:3OCrrxNYXAA" resolve="getFacet" />
+                <ref role="1Pybhc" to="93in:3OCrrxNYV5d" resolve="FacetUtilityMethods" />
+                <node concept="37vLTw" id="2TStaYjVU2d" role="37wK5m">
+                  <ref role="3cqZAo" node="6dXtnCWnazc" resolve="iFacet" />
                 </node>
               </node>
             </node>
