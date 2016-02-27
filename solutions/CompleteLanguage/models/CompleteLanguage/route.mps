@@ -332,7 +332,9 @@
       <concept id="1522810226734053312" name="GenericGroupMethods.structure.IsTypeOf" flags="ng" index="1lWEKl">
         <child id="1522810226734053315" name="conceptType" index="1lWEKm" />
       </concept>
-      <concept id="7169015349702230285" name="GenericGroupMethods.structure.Facet" flags="ng" index="1vbBhR" />
+      <concept id="7169015349702230285" name="GenericGroupMethods.structure.Facet" flags="ng" index="1vbBhR">
+        <child id="4406892874368993969" name="reusedFacets" index="1eREs9" />
+      </concept>
       <concept id="7169015349702230837" name="GenericGroupMethods.structure.RefToFacet" flags="ng" index="1vbBpf">
         <reference id="7169015349702230838" name="ref" index="1vbBpc" />
       </concept>
@@ -2654,6 +2656,9 @@
     </node>
     <node concept="1vbBhR" id="1nrRmPkT1Ez" role="1ukcCD">
       <property role="TrG5h" value="frames_sim" />
+      <node concept="1vbBpf" id="3OCrrxNYNl7" role="1eREs9">
+        <ref role="1vbBpc" node="1nrRmPkSYY8" resolve="frames" />
+      </node>
     </node>
   </node>
   <node concept="1GnNiK" id="6dXtnCXd9Er">

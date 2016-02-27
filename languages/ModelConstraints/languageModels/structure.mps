@@ -210,6 +210,12 @@
     <node concept="PrWs8" id="6dXtnCWkKi9" role="PzmwI">
       <ref role="PrY4T" node="6dXtnCWkKi3" resolve="IFacet" />
     </node>
+    <node concept="1TJgyj" id="3OCrrxNXGEL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="reusedFacets" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6dXtnCWkKcP" resolve="RefToFacet" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6dXtnCWkKi3">
     <property role="TrG5h" value="IFacet" />

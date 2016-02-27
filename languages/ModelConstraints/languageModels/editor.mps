@@ -406,8 +406,24 @@
   <node concept="24kQdi" id="6dXtnCWkK4l">
     <property role="3GE5qa" value="Configuration" />
     <ref role="1XX52x" to="1o5n:6dXtnCWkK4d" resolve="Facet" />
-    <node concept="3F0A7n" id="6dXtnCWkK5G" role="2wV5jI">
-      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    <node concept="3EZMnI" id="3OCrrxNXGJX" role="2wV5jI">
+      <node concept="3F0A7n" id="6dXtnCWkK5G" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3EZMnI" id="3OCrrxNXGKe" role="3EZMnx">
+        <node concept="l2Vlx" id="3OCrrxNXGKf" role="2iSdaV" />
+        <node concept="3F0ifn" id="3OCrrxNXGO7" role="3EZMnx">
+          <property role="3F0ifm" value="reuses" />
+        </node>
+        <node concept="3F2HdR" id="3OCrrxNXGK8" role="3EZMnx">
+          <ref role="1NtTu8" to="1o5n:3OCrrxNXGEL" />
+          <node concept="2iRkQZ" id="3OCrrxNXGKa" role="2czzBx" />
+          <node concept="lj46D" id="3OCrrxNXGKn" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="3OCrrxNXGJY" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="6dXtnCWkKd8">
