@@ -71,39 +71,11 @@
     <node concept="1TJgyj" id="6dXtnCW$8LE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="facets" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6dXtnCW$8LG" resolve="FacetWithExceptions" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="1o5n:6dXtnCWkKcP" resolve="RefToFacet" />
     </node>
     <node concept="PrWs8" id="6dXtnCW$8iG" role="PzmwI">
       <ref role="PrY4T" to="1o5n:6dXtnCWxe33" resolve="IAspect" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6dXtnCW$8LG">
-    <property role="3GE5qa" value="Configuration" />
-    <property role="TrG5h" value="FacetWithExceptions" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6dXtnCW$8Ns" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="refToMethods" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6dXtnCW$8LJ" resolve="RefToConstr" />
-    </node>
-    <node concept="1TJgyj" id="6dXtnCW_ERQ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="facet" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="1o5n:6dXtnCWkKcP" resolve="RefToFacet" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6dXtnCW$8LJ">
-    <property role="3GE5qa" value="Configuration" />
-    <property role="TrG5h" value="RefToConstr" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6dXtnCW$8LX" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="ref" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4BhfRC_v$vB" resolve="Constraint" />
     </node>
   </node>
 </model>

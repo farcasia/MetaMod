@@ -201,13 +201,6 @@
       <concept id="7169015349706261602" name="Constraints.structure.ConfigurationConstraints" flags="ng" index="1vVv4o">
         <child id="7169015349706263658" name="facets" index="1vVv$g" />
       </concept>
-      <concept id="7169015349706263663" name="Constraints.structure.RefToConstr" flags="ng" index="1vVv$l">
-        <reference id="7169015349706263677" name="ref" index="1vVv$7" />
-      </concept>
-      <concept id="7169015349706263660" name="Constraints.structure.FacetWithExceptions" flags="ng" index="1vVv$m">
-        <child id="7169015349706665462" name="facet" index="1vUXyc" />
-        <child id="7169015349706263772" name="refToMethods" index="1vVvAA" />
-      </concept>
       <concept id="5319102428748859495" name="Constraints.structure.ConstraintsContainer" flags="ng" index="1GFRst" />
       <concept id="5319102428748859367" name="Constraints.structure.Constraint" flags="ng" index="1GFRyt">
         <child id="6865747108262198341" name="dependsOn" index="YUzjr" />
@@ -2322,18 +2315,8 @@
   <node concept="1vVv4o" id="6dXtnCW_g7M">
     <property role="1vYpmj" value="Constraint" />
     <property role="3GE5qa" value="Constraints" />
-    <node concept="1vVv$m" id="6dXtnCW_ZlQ" role="1vVv$g">
-      <node concept="1vbBpf" id="6dXtnCXd_sx" role="1vUXyc">
-        <ref role="1vbBpc" node="6dXtnCXdq1O" resolve="commons" />
-      </node>
-      <node concept="1vVv$l" id="6dXtnCXdR29" role="1vVvAA">
-        <ref role="1vVv$7" node="6hHbyxTxFoo" resolve="aftersInRoute" />
-      </node>
-    </node>
-    <node concept="1vVv$m" id="6dXtnCWN20Q" role="1vVv$g">
-      <node concept="1vbBpf" id="1nrRmPkSTL1" role="1vUXyc">
-        <ref role="1vbBpc" node="1nrRmPkSMtl" resolve="RoboCup" />
-      </node>
+    <node concept="1vbBpf" id="5IUjw$kDcU" role="1vVv$g">
+      <ref role="1vbBpc" node="1nrRmPkSOHs" resolve="RoboChallenge" />
     </node>
   </node>
   <node concept="1GnNiK" id="6dXtnCXd9Er">
@@ -5642,6 +5625,9 @@
     </node>
     <node concept="1vbBhR" id="1nrRmPkSMtl" role="1ukcCD">
       <property role="TrG5h" value="RoboCup" />
+      <node concept="1vbBpf" id="5IUjw$nI5l" role="1eREs9">
+        <ref role="1vbBpc" node="6dXtnCXdq1O" resolve="commons" />
+      </node>
     </node>
   </node>
   <node concept="1GFRst" id="1nrRmPkSOHr">
@@ -5818,6 +5804,9 @@
     </node>
     <node concept="1vbBhR" id="1nrRmPkSOHs" role="1ukcCD">
       <property role="TrG5h" value="RoboChallenge" />
+      <node concept="1vbBpf" id="5IUjw$nHJT" role="1eREs9">
+        <ref role="1vbBpc" node="6dXtnCXdq1O" resolve="commons" />
+      </node>
     </node>
   </node>
   <node concept="1GnNiK" id="1nrRmPkSYW6">
