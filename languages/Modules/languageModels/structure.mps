@@ -99,6 +99,9 @@
     <node concept="PrWs8" id="41vT8u$1eao" role="PzmwI">
       <ref role="PrY4T" node="2DitZGYpVDW" resolve="IModuleComponent" />
     </node>
+    <node concept="PrWs8" id="5kU4o$sRlli" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
 </model>
 
