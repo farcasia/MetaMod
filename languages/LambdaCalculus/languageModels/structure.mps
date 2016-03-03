@@ -13,6 +13,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -61,6 +62,7 @@
   </node>
   <node concept="1TIwiD" id="6oGnPI1dYeo">
     <property role="TrG5h" value="LambdaApplication" />
+    <property role="34LRSv" value="@" />
     <ref role="1TJDcQ" node="6oGnPI1dYem" resolve="LambdaTerm" />
     <node concept="1TJgyj" id="6oGnPI1e3E3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

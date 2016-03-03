@@ -12,6 +12,7 @@
     <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
     <import index="9lyo" ref="r:c0d41959-8f5c-452f-90c5-757e1c169078(LambdaCalculus.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -30,6 +31,9 @@
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -259,8 +263,8 @@
           <node concept="3F0ifn" id="7_AavkCKFzs" role="3EZMnx">
             <property role="3F0ifm" value=")" />
           </node>
-          <node concept="3F0ifn" id="7_AavkCKHD2" role="3EZMnx">
-            <property role="3F0ifm" value="@" />
+          <node concept="PMmxH" id="2ZU8GAlF4TQ" role="3EZMnx">
+            <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           </node>
           <node concept="3F0ifn" id="7_AavkCKFz$" role="3EZMnx">
             <property role="3F0ifm" value="(" />
@@ -308,8 +312,8 @@
           <node concept="3F1sOY" id="7_AavkCKFFu" role="3EZMnx">
             <ref role="1NtTu8" to="9lyo:6oGnPI1e3E3" />
           </node>
-          <node concept="3F0ifn" id="7_AavkCKHDh" role="3EZMnx">
-            <property role="3F0ifm" value="@" />
+          <node concept="PMmxH" id="2ZU8GAlF4TY" role="3EZMnx">
+            <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           </node>
           <node concept="3F0ifn" id="7_AavkCKFF$" role="3EZMnx">
             <property role="3F0ifm" value="(" />
@@ -381,8 +385,8 @@
           <node concept="3F0ifn" id="7_AavkCKHp9" role="3EZMnx">
             <property role="3F0ifm" value=")" />
           </node>
-          <node concept="3F0ifn" id="7_AavkCM1M7" role="3EZMnx">
-            <property role="3F0ifm" value="@" />
+          <node concept="PMmxH" id="2ZU8GAlF4U4" role="3EZMnx">
+            <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           </node>
           <node concept="3F1sOY" id="7_AavkCKHoG" role="3EZMnx">
             <ref role="1NtTu8" to="9lyo:6oGnPI1e3E5" />
@@ -424,8 +428,8 @@
           <node concept="3F1sOY" id="7_AavkCKHB3" role="3EZMnx">
             <ref role="1NtTu8" to="9lyo:6oGnPI1e3E3" />
           </node>
-          <node concept="3F0ifn" id="7_AavkCKHDD" role="3EZMnx">
-            <property role="3F0ifm" value="@" />
+          <node concept="PMmxH" id="2ZU8GAlF4Ua" role="3EZMnx">
+            <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           </node>
           <node concept="3F1sOY" id="7_AavkCKHBd" role="3EZMnx">
             <ref role="1NtTu8" to="9lyo:6oGnPI1e3E5" />
