@@ -2658,7 +2658,6 @@
       </node>
       <node concept="3cqZAl" id="2TStaYk1mYC" role="3clF45" />
     </node>
-    <node concept="CLx5B" id="2TStaYk0Fz9" role="CLm5g" />
     <node concept="1vbBhR" id="1nrRmPkT1Ez" role="1ukcCD">
       <property role="TrG5h" value="frames_sim" />
       <node concept="1vbBpf" id="3OCrrxNYNl7" role="1eREs9">

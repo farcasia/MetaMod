@@ -114,12 +114,6 @@
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -428,12 +422,6 @@
                 <node concept="3clFbH" id="2TStaYjZGI8" role="3cqZAp" />
                 <node concept="3clFbJ" id="2TStaYjZT2E" role="3cqZAp">
                   <node concept="3clFbS" id="2TStaYjZT2G" role="3clFbx">
-                    <node concept="34ab3g" id="2TStaYk0Gpd" role="3cqZAp">
-                      <property role="35gtTG" value="warn" />
-                      <node concept="Xl_RD" id="2TStaYk0Gpf" role="34bqiv">
-                        <property role="Xl_RC" value="Ajungem aici intr-adevar!" />
-                      </node>
-                    </node>
                     <node concept="2MkqsV" id="2TStaYk00lF" role="3cqZAp">
                       <node concept="Xl_RD" id="2TStaYk00lG" role="2MkJ7o">
                         <property role="Xl_RC" value="The replacement method needs to have the same parameters as the replaced method!" />
