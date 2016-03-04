@@ -10,7 +10,6 @@
   </languages>
   <imports>
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
-    <import index="avy3" ref="r:bb60b16d-24df-41f9-9976-ac7adfdf47d5(RuntimeModelConstraints.runtime)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="leqx" ref="r:f298dead-195d-448a-a15c-8e897e077e47(Helpers.structure)" />
     <import index="71p1" ref="r:d95c8d53-273b-4be3-aea0-7cddc60ab338(Helpers.generator.template.main@generator)" />
@@ -18,6 +17,7 @@
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
     <import index="cxsf" ref="r:1286eb18-7cac-402e-9a8d-671d8750b024(Constraints.structure)" />
     <import index="viiz" ref="r:a19eaa03-9bba-4100-a383-9fc98775f641(Constraints.behavior)" />
+    <import index="wz6r" ref="r:395bdffb-840e-4312-80d8-b18c172eee46(RuntimeClasses.runtime)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="93in" ref="r:66387152-22f1-400f-a531-d1c947e7589b(GenericGroupMethods.behavior)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -159,7 +159,6 @@
         <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
-        <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
@@ -194,9 +193,6 @@
       </concept>
       <concept id="1087833466690" name="jetbrains.mps.lang.generator.structure.NodeMacro" flags="lg" index="17VmuZ">
         <reference id="1200912223215" name="mappingLabel" index="2rW$FS" />
-      </concept>
-      <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
-        <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1184616041890" name="jetbrains.mps.lang.generator.structure.Weaving_MappingRule_ContextNodeQuery" flags="in" index="3gB$ML" />
       <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
@@ -321,12 +317,6 @@
   </registry>
   <node concept="bUwia" id="4BhfRC_uX5c">
     <property role="TrG5h" value="main" />
-    <node concept="3aamgX" id="4L1k0SocT2x" role="3acgRq">
-      <ref role="30HIoZ" to="leqx:4L1k0Soa314" resolve="HelperMethodCall" />
-      <node concept="j$656" id="4L1k0SocTjK" role="1lVwrX">
-        <ref role="v9R2y" to="71p1:4L1k0SocTjI" resolve="reduce_HelperMethodCall" />
-      </node>
-    </node>
     <node concept="aNPBN" id="1E5i917M8$W" role="aQYdv">
       <ref role="aOQi4" to="2mcz:2DitZGYpVqA" resolve="ModuleComposite" />
     </node>
@@ -477,36 +467,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="30QchW" id="4L1k0SocN2a" role="30SoJX">
-      <ref role="30HIoZ" to="leqx:4L1k0So9XGk" resolve="HelperMethod" />
-      <node concept="3gB$ML" id="4L1k0SocN2b" role="3gCiVm">
-        <node concept="3clFbS" id="4L1k0SocN2c" role="2VODD2">
-          <node concept="3clFbF" id="6RAr73Zs6l9" role="3cqZAp">
-            <node concept="2OqwBi" id="6RAr73Zs6la" role="3clFbG">
-              <node concept="1iwH7S" id="6RAr73Zs6lb" role="2Oq$k0" />
-              <node concept="1iwH70" id="6RAr73Zs6lc" role="2OqNvi">
-                <ref role="1iwH77" to="71p1:2SWtdi20ukb" resolve="NG2JavaClass" />
-                <node concept="2OqwBi" id="6RAr73Zs6ld" role="1iwH7V">
-                  <node concept="1PxgMI" id="6RAr73Zs6le" role="2Oq$k0">
-                    <ref role="1PxNhF" to="1o5n:7MhXM5kl9pK" resolve="MethodsContainer" />
-                    <node concept="2OqwBi" id="6RAr73Zs6lf" role="1PxMeX">
-                      <node concept="30H73N" id="6RAr73Zs6lg" role="2Oq$k0" />
-                      <node concept="1mfA1w" id="6RAr73Zs6lh" role="2OqNvi" />
-                    </node>
-                  </node>
-                  <node concept="3TrEf2" id="6RAr73Zs6li" role="2OqNvi">
-                    <ref role="3Tt5mk" to="1o5n:4BhfRC_p$Mm" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="j$656" id="4L1k0SocNhm" role="1fOSGc">
-        <ref role="v9R2y" to="71p1:4L1k0SocNh2" resolve="weave_HelperMethod" />
       </node>
     </node>
     <node concept="30QchW" id="5X829TxEMIq" role="30SoJX">
@@ -690,53 +650,6 @@
         </node>
       </node>
     </node>
-    <node concept="3lhOvk" id="4L1k0SocFgR" role="3lj3bC">
-      <ref role="30HIoZ" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
-      <ref role="2sgKRv" to="71p1:2SWtdi20ukb" resolve="NG2JavaClass" />
-      <ref role="3lhOvi" to="71p1:4L1k0SocFOT" resolve="createHelpersGroup" />
-      <node concept="30G5F_" id="4L1k0SocFvy" role="30HLyM">
-        <node concept="3clFbS" id="4L1k0SocFvz" role="2VODD2">
-          <node concept="3clFbJ" id="4L1k0SocF_r" role="3cqZAp">
-            <node concept="3clFbS" id="4L1k0SocF_s" role="3clFbx">
-              <node concept="3cpWs6" id="4L1k0SocF_t" role="3cqZAp">
-                <node concept="3clFbT" id="4L1k0SocF_u" role="3cqZAk">
-                  <property role="3clFbU" value="true" />
-                </node>
-              </node>
-            </node>
-            <node concept="22lmx$" id="4L1k0SocF_v" role="3clFbw">
-              <node concept="3clFbC" id="4L1k0SocF_w" role="3uHU7w">
-                <node concept="10Nm6u" id="4L1k0SocF_x" role="3uHU7w" />
-                <node concept="2OqwBi" id="4L1k0SocF_y" role="3uHU7B">
-                  <node concept="30H73N" id="4L1k0SocF_z" role="2Oq$k0" />
-                  <node concept="1mfA1w" id="4L1k0SocF_$" role="2OqNvi" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="4L1k0SocF__" role="3uHU7B">
-                <node concept="2OqwBi" id="4L1k0SocF_A" role="2Oq$k0">
-                  <node concept="2OqwBi" id="4L1k0SocF_B" role="2Oq$k0">
-                    <node concept="30H73N" id="4L1k0SocF_C" role="2Oq$k0" />
-                    <node concept="z$bX8" id="4L1k0SocF_D" role="2OqNvi" />
-                  </node>
-                  <node concept="1yVyf7" id="4L1k0SocF_E" role="2OqNvi" />
-                </node>
-                <node concept="1mIQ4w" id="4L1k0SocF_F" role="2OqNvi">
-                  <node concept="chp4Y" id="4L1k0SocF_G" role="cj9EA">
-                    <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbH" id="4L1k0SocF_H" role="3cqZAp" />
-          <node concept="3cpWs6" id="4L1k0SocF_I" role="3cqZAp">
-            <node concept="3clFbT" id="4L1k0SocF_J" role="3cqZAk">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="312cEu" id="1E5i917KR$n">
     <property role="TrG5h" value="createConstraintsGroup" />
@@ -745,7 +658,7 @@
       <node concept="3Tm1VV" id="4X4Jbdc8Pzg" role="1B3o_S" />
       <node concept="3clFbS" id="4X4Jbdc8Pzh" role="3clF47">
         <node concept="XkiVB" id="4X4Jbdc9k2I" role="3cqZAp">
-          <ref role="37wK5l" to="avy3:4X4Jbdc3t8s" resolve="Constraints" />
+          <ref role="37wK5l" to="wz6r:4o4IMwnBX9m" resolve="Constraints" />
           <node concept="37vLTw" id="4X4Jbdc9k35" role="37wK5m">
             <ref role="3cqZAo" node="4X4Jbdc8Sqw" resolve="group" />
           </node>
@@ -822,7 +735,7 @@
         <node concept="3clFbH" id="5X829TxPmqQ" role="3cqZAp" />
         <node concept="3cpWs6" id="5X829TxvYGG" role="3cqZAp">
           <node concept="3nyPlj" id="5X829TxvYGH" role="3cqZAk">
-            <ref role="37wK5l" to="avy3:1E5i917CZmT" resolve="checkValidity" />
+            <ref role="37wK5l" to="wz6r:1E5i917CZmT" resolve="checkValidity" />
             <node concept="37vLTw" id="5X829TxvYGI" role="37wK5m">
               <ref role="3cqZAo" node="1E5i917L03V" resolve="valueModel" />
             </node>
@@ -885,8 +798,8 @@
         </node>
       </node>
     </node>
-    <node concept="3uibUv" id="1E5i917KTeM" role="1zkMxy">
-      <ref role="3uigEE" to="avy3:1E5i917CZdZ" resolve="Constraints" />
+    <node concept="3uibUv" id="4o4IMwnJ53t" role="1zkMxy">
+      <ref role="3uigEE" to="wz6r:1E5i917CZdZ" resolve="Constraints" />
     </node>
   </node>
   <node concept="13MO4I" id="6e92Hp18IEv">
@@ -969,7 +882,7 @@
         <node concept="3Tm1VV" id="5X829TxWjCm" role="1B3o_S" />
         <node concept="3clFbS" id="5X829TxWjCn" role="3clF47">
           <node concept="XkiVB" id="5X829TxWl8G" role="3cqZAp">
-            <ref role="37wK5l" to="avy3:4X4Jbdc3t8s" resolve="Constraints" />
+            <ref role="37wK5l" to="wz6r:4o4IMwnBX9m" resolve="Constraints" />
             <node concept="37vLTw" id="5X829TxWl9r" role="37wK5m">
               <ref role="3cqZAo" node="5X829TxWl0q" resolve="ng" />
             </node>
@@ -993,7 +906,7 @@
           <node concept="3clFbF" id="6dXtnCWShy2" role="3cqZAp">
             <node concept="2OqwBi" id="6dXtnCWSiFr" role="3clFbG">
               <node concept="37vLTw" id="6dXtnCWShy0" role="2Oq$k0">
-                <ref role="3cqZAo" to="avy3:5X829TxCcqW" resolve="orderedMethodNames" />
+                <ref role="3cqZAo" to="wz6r:5X829TxCcqW" resolve="orderedMethodNames" />
               </node>
               <node concept="TSZUe" id="6dXtnCWSkdi" role="2OqNvi">
                 <node concept="Xl_RD" id="6dXtnCWSkgj" role="25WWJ7">
@@ -1491,8 +1404,8 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="5X829TxENU9" role="1B3o_S" />
-      <node concept="3uibUv" id="5X829TxENUy" role="1zkMxy">
-        <ref role="3uigEE" to="avy3:1E5i917CZdZ" resolve="Constraints" />
+      <node concept="3uibUv" id="4o4IMwnJ9pE" role="1zkMxy">
+        <ref role="3uigEE" to="wz6r:1E5i917CZdZ" resolve="Constraints" />
       </node>
     </node>
   </node>

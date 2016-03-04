@@ -9,7 +9,6 @@
   <dependencies>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
     <dependency reexport="false">0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)</dependency>
-    <dependency reexport="false">ac92b060-507b-49fd-899b-f9ec55fb3b85(RuntimeCommons)</dependency>
     <dependency reexport="false">f1fb7b1c-ce0d-423c-9369-4a661d600029(de.slisson.mps.all.build)</dependency>
   </dependencies>
   <usedLanguages>

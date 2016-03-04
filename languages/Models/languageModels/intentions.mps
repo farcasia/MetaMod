@@ -7,9 +7,7 @@
   </languages>
   <imports>
     <import index="z64h" ref="r:52e1580a-16d3-4b41-b86d-411ead3ce794(Models.behavior)" />
-    <import index="avy3" ref="r:bb60b16d-24df-41f9-9976-ac7adfdf47d5(RuntimeModelConstraints.runtime)" />
-    <import index="ksi3" ref="r:4f881588-6291-492b-b792-0f0c9f48f5e4(RuntimeCommons.commons)" />
-    <import index="kjbk" ref="r:7cf4a087-99f7-4dc5-9094-7e42b8711ad0(RuntimeCodeGeneration.runtime)" />
+    <import index="wz6r" ref="r:395bdffb-840e-4312-80d8-b18c172eee46(RuntimeClasses.runtime)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" implicit="true" />
   </imports>
@@ -613,33 +611,33 @@
             <node concept="3cpWs8" id="1E5i917DaOd" role="3cqZAp">
               <node concept="3cpWsn" id="1E5i917DaOe" role="3cpWs9">
                 <property role="TrG5h" value="constraints" />
-                <node concept="3uibUv" id="1E5i917DaOf" role="1tU5fm">
-                  <ref role="3uigEE" to="avy3:1E5i917CZdZ" resolve="Constraints" />
+                <node concept="3uibUv" id="4o4IMwnLgAb" role="1tU5fm">
+                  <ref role="3uigEE" to="wz6r:1E5i917CZdZ" resolve="Constraints" />
                 </node>
                 <node concept="0kSF2" id="6e92Hp0ZRFU" role="33vP2m">
-                  <node concept="3uibUv" id="6e92Hp0ZRFX" role="0kSFW">
-                    <ref role="3uigEE" to="avy3:1E5i917CZdZ" resolve="Constraints" />
+                  <node concept="3uibUv" id="4o4IMwnLhyh" role="0kSFW">
+                    <ref role="3uigEE" to="wz6r:1E5i917CZdZ" resolve="Constraints" />
                   </node>
-                  <node concept="2YIFZM" id="45NpebPp0q$" role="0kSFX">
-                    <ref role="1Pybhc" to="ksi3:6e92Hp0Zr$o" resolve="Utils" />
-                    <ref role="37wK5l" to="ksi3:6e92Hp0ZrU3" resolve="createClassInRuntime" />
-                    <node concept="3cpWs3" id="45NpebPp0q_" role="37wK5m">
-                      <node concept="2OqwBi" id="45NpebPp0qA" role="3uHU7w">
-                        <node concept="37vLTw" id="6hHbyxTtlW2" role="2Oq$k0">
+                  <node concept="2YIFZM" id="4o4IMwnLgZy" role="0kSFX">
+                    <ref role="37wK5l" to="wz6r:6e92Hp0ZrU3" resolve="createClassInRuntime" />
+                    <ref role="1Pybhc" to="wz6r:6e92Hp0Zr$o" resolve="Utils" />
+                    <node concept="3cpWs3" id="4o4IMwnLgZz" role="37wK5m">
+                      <node concept="2OqwBi" id="4o4IMwnLgZ$" role="3uHU7w">
+                        <node concept="37vLTw" id="4o4IMwnLgZ_" role="2Oq$k0">
                           <ref role="3cqZAo" node="6hHbyxTtjkt" resolve="group" />
                         </node>
-                        <node concept="3TrcHB" id="45NpebPp0qE" role="2OqNvi">
+                        <node concept="3TrcHB" id="4o4IMwnLgZA" role="2OqNvi">
                           <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                         </node>
                       </node>
-                      <node concept="Xl_RD" id="45NpebPp0qF" role="3uHU7B">
+                      <node concept="Xl_RD" id="4o4IMwnLgZB" role="3uHU7B">
                         <property role="Xl_RC" value="Constraints_Group_" />
                       </node>
                     </node>
-                    <node concept="Xl_RD" id="45NpebPp0qG" role="37wK5m">
-                      <property role="Xl_RC" value="RuntimeModelConstraints.runtime." />
+                    <node concept="Xl_RD" id="4o4IMwnLgZC" role="37wK5m">
+                      <property role="Xl_RC" value="RuntimeClasses.runtime." />
                     </node>
-                    <node concept="37vLTw" id="4L1k0SorArz" role="37wK5m">
+                    <node concept="37vLTw" id="4o4IMwnLgZD" role="37wK5m">
                       <ref role="3cqZAo" node="6hHbyxTtjkt" resolve="group" />
                     </node>
                   </node>
@@ -662,7 +660,7 @@
                     <ref role="3cqZAo" node="1E5i917DaOe" resolve="constraints" />
                   </node>
                   <node concept="liA8E" id="1E5i917DydM" role="2OqNvi">
-                    <ref role="37wK5l" to="avy3:1E5i917CZmT" resolve="checkValidity" />
+                    <ref role="37wK5l" to="wz6r:1E5i917CZmT" resolve="checkValidity" />
                     <node concept="2Sf5sV" id="5IUjw$vgLe" role="37wK5m" />
                   </node>
                 </node>
@@ -736,38 +734,38 @@
         <node concept="3cpWs8" id="45NpebPmZQw" role="3cqZAp">
           <node concept="3cpWsn" id="45NpebPmZQx" role="3cpWs9">
             <property role="TrG5h" value="codeGen" />
-            <node concept="3uibUv" id="45NpebPmZWa" role="1tU5fm">
-              <ref role="3uigEE" to="kjbk:45NpebPjv7X" resolve="CodeGen" />
+            <node concept="3uibUv" id="4o4IMwnLhZx" role="1tU5fm">
+              <ref role="3uigEE" to="wz6r:45NpebPjv7X" resolve="CodeGen" />
             </node>
             <node concept="0kSF2" id="45NpebPmZQz" role="33vP2m">
-              <node concept="3uibUv" id="45NpebPn0wI" role="0kSFW">
-                <ref role="3uigEE" to="kjbk:45NpebPjv7X" resolve="CodeGen" />
+              <node concept="3uibUv" id="4o4IMwnLicA" role="0kSFW">
+                <ref role="3uigEE" to="wz6r:45NpebPjv7X" resolve="CodeGen" />
               </node>
-              <node concept="2YIFZM" id="45NpebPp088" role="0kSFX">
-                <ref role="1Pybhc" to="ksi3:6e92Hp0Zr$o" resolve="Utils" />
-                <ref role="37wK5l" to="ksi3:6e92Hp0ZrU3" resolve="createClassInRuntime" />
-                <node concept="3cpWs3" id="45NpebPp089" role="37wK5m">
-                  <node concept="2OqwBi" id="45NpebPp08a" role="3uHU7w">
-                    <node concept="2OqwBi" id="45NpebPp08b" role="2Oq$k0">
-                      <node concept="2Sf5sV" id="5IUjw$$pdx" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="45NpebPp08d" role="2OqNvi">
+              <node concept="2YIFZM" id="4o4IMwnLi7x" role="0kSFX">
+                <ref role="37wK5l" to="wz6r:6e92Hp0ZrU3" resolve="createClassInRuntime" />
+                <ref role="1Pybhc" to="wz6r:6e92Hp0Zr$o" resolve="Utils" />
+                <node concept="3cpWs3" id="4o4IMwnLi7y" role="37wK5m">
+                  <node concept="2OqwBi" id="4o4IMwnLi7z" role="3uHU7w">
+                    <node concept="2OqwBi" id="4o4IMwnLi7$" role="2Oq$k0">
+                      <node concept="2Sf5sV" id="4o4IMwnLi7_" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="4o4IMwnLi7A" role="2OqNvi">
                         <ref role="3Tt5mk" to="v0yp:2ZZRdXAFMQO" />
                       </node>
                     </node>
-                    <node concept="3TrcHB" id="45NpebPp08e" role="2OqNvi">
+                    <node concept="3TrcHB" id="4o4IMwnLi7B" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="45NpebPp08f" role="3uHU7B">
+                  <node concept="Xl_RD" id="4o4IMwnLi7C" role="3uHU7B">
                     <property role="Xl_RC" value="CodeGen_" />
                   </node>
                 </node>
-                <node concept="Xl_RD" id="45NpebPp08g" role="37wK5m">
-                  <property role="Xl_RC" value="RuntimeCodeGeneration.runtime." />
+                <node concept="Xl_RD" id="4o4IMwnLi7D" role="37wK5m">
+                  <property role="Xl_RC" value="RuntimeClasses.runtime." />
                 </node>
-                <node concept="2OqwBi" id="63lYmBSQ0ED" role="37wK5m">
-                  <node concept="2Sf5sV" id="5IUjw$$phD" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="63lYmBSQ1dF" role="2OqNvi">
+                <node concept="2OqwBi" id="4o4IMwnLi7E" role="37wK5m">
+                  <node concept="2Sf5sV" id="4o4IMwnLi7F" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="4o4IMwnLi7G" role="2OqNvi">
                     <ref role="3Tt5mk" to="v0yp:2ZZRdXAFMQO" />
                   </node>
                 </node>
@@ -782,7 +780,7 @@
               <ref role="3cqZAo" node="45NpebPmZQx" resolve="codeGen" />
             </node>
             <node concept="liA8E" id="45NpebPmZQL" role="2OqNvi">
-              <ref role="37wK5l" to="kjbk:45NpebPmZ6R" resolve="genCodeMain" />
+              <ref role="37wK5l" to="wz6r:45NpebPmZ6R" resolve="genCodeMain" />
               <node concept="2Sf5sV" id="5IUjw$$pm0" role="37wK5m" />
             </node>
           </node>

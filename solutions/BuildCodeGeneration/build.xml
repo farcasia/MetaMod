@@ -4,13 +4,10 @@
   <property name="build.tmp" location="${build.dir}/tmp/BuildCodeGeneration" />
   <property name="build.layout" location="${build.dir}/artifacts/BuildCodeGeneration" />
   <property name="mps_home" location="${basedir}/../../../../MPSForMetaMod" />
-  <property name="runtime_code_generation" location="${basedir}/../RuntimeCodeGeneration" />
-  <property name="runtime_commons" location="${basedir}/../RuntimeCommons" />
-  <property name="java_frames" location="${basedir}/../JavaFrames" />
+  <property name="runtime_classes" location="${basedir}/../RuntimeClasses" />
   <property name="models" location="${basedir}/../../languages/Models" />
   <property name="modules" location="${basedir}/../../languages/Modules" />
   <property name="lambda_calculus" location="${basedir}/../../languages/LambdaCalculus" />
-  <property name="runtime_constraints" location="${basedir}/../RuntimeModelConstraints" />
   <property name="mps_sl_all" location="${basedir}/../../dependencies" />
   <property name="complete_language" location="${basedir}/../CompleteLanguage" />
   <property name="code_generation" location="${basedir}/../../languages/CodeGeneration" />
@@ -35,11 +32,9 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <zip destfile="${build.layout}/CodeGeneration.zip">
-      <fileset dir="${runtime_code_generation}" />
-      <fileset dir="${runtime_commons}" />
-      <fileset dir="${runtime_constraints}" />
-    </zip>
+    <jar destfile="${build.layout}/RuntimeClasses.jar">
+      <fileset dir="${build.tmp}/java/out/runtime" />
+    </jar>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
@@ -57,7 +52,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.LambdaCalculus, java.compile.LambdaCalculus#7362364337458442660, java.compile.Modules, java.compile.Modules#3049631818650728075, java.compile.java.modules.cycle.1, java.compile.Models, java.compile.Models#8717972784948728248, java.compile.CodeGeneration, java.compile.CodeGeneration#5319102428749892274, java.compile.Constraints, java.compile.Constraints#5319102428748697931, java.compile.GenericGroupMethods, java.compile.GenericGroupMethods#8976227254846526813, java.compile.Helpers, java.compile.Helpers#5494761041833683320, java.compile.RuntimeConstraints, java.compile.JavaFrames, java.compile.RuntimeCommons, java.compile.RuntimeCodeGeneration, java.compile.CompleteLanguage" />
+  <target name="compileJava" depends="java.compile.LambdaCalculus, java.compile.LambdaCalculus#7362364337458442660, java.compile.Modules, java.compile.Modules#3049631818650728075, java.compile.java.modules.cycle.1, java.compile.Models, java.compile.Models#8717972784948728248, java.compile.CodeGeneration, java.compile.CodeGeneration#5319102428749892274, java.compile.Constraints, java.compile.Constraints#5319102428748697931, java.compile.GenericGroupMethods, java.compile.GenericGroupMethods#8976227254846526813, java.compile.Helpers, java.compile.Helpers#5494761041833683320, java.compile.RuntimeClasses, java.compile.CompleteLanguage, java.compile.runtime" />
   
   <target name="processResources" />
   
@@ -136,7 +131,6 @@
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.customcell.jar" />
       <library file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
       <chunk>
-        <module file="${basedir}/../JavaFrames/JavaFrames.msd" />
         <module file="${basedir}/../../languages/LambdaCalculus/LambdaCalculus.mpl" />
       </chunk>
       <chunk>
@@ -144,9 +138,7 @@
       </chunk>
       <chunk>
         <module file="${basedir}/../../languages/Models/Models.mpl" />
-        <module file="${basedir}/../RuntimeCodeGeneration/RuntimeCodeGeneration.msd" />
-        <module file="${basedir}/../RuntimeCommons/RuntimeCommons.msd" />
-        <module file="${basedir}/../RuntimeModelConstraints/RuntimeModelConstraints.msd" />
+        <module file="${runtime_classes}/RuntimeClasses.msd" />
       </chunk>
       <chunk bootstrap="true">
         <module file="${generic_group_methods}/ModelConstraints.mpl" bootstrap="true" />
@@ -163,13 +155,10 @@
         <arg value="-Xmx512m" />
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
-      <macro name="runtime_code_generation" path="${runtime_code_generation}" />
-      <macro name="runtime_commons" path="${runtime_commons}" />
-      <macro name="java_frames" path="${java_frames}" />
+      <macro name="runtime_classes" path="${runtime_classes}" />
       <macro name="models" path="${models}" />
       <macro name="modules" path="${modules}" />
       <macro name="lambda_calculus" path="${lambda_calculus}" />
-      <macro name="runtime_constraints" path="${runtime_constraints}" />
       <macro name="mps_sl_all" path="${mps_sl_all}" />
       <macro name="complete_language" path="${complete_language}" />
       <macro name="code_generation" path="${code_generation}" />
@@ -322,16 +311,14 @@
     </javac>
   </target>
   
-  <target name="java.compile.java.modules.cycle.1" depends="java.compile.LambdaCalculus, java.compile.Modules, java.compile.JavaFrames, fetchDependencies">
+  <target name="java.compile.java.modules.cycle.1" depends="java.compile.LambdaCalculus, java.compile.Modules, fetchDependencies">
     <mkdir dir="${build.tmp}/java.modules.cycle.1" />
     <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mps_home}/plugins" />
         <path location="${models}/source_gen" />
-        <path location="${runtime_constraints}/source_gen" />
-        <path location="${runtime_commons}/source_gen" />
-        <path location="${runtime_code_generation}/source_gen" />
+        <path location="${runtime_classes}/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
@@ -359,7 +346,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
         <pathelement path="${build.tmp}/java/out/Modules" />
-        <pathelement path="${build.tmp}/java/out/JavaFrames" />
       </classpath>
     </javac>
   </target>
@@ -446,7 +432,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.CodeGeneration" depends="java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeCodeGeneration, fetchDependencies">
+  <target name="java.compile.CodeGeneration" depends="java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeClasses, fetchDependencies">
     <mkdir dir="${code_generation}/source_gen" />
     <mkdir dir="${build.tmp}/java/out/CodeGeneration" />
     <javac destdir="${build.tmp}/java/out/CodeGeneration" fork="true" includeantruntime="false">
@@ -469,7 +455,7 @@
         <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
         <pathelement path="${build.tmp}/java/out/Models" />
         <pathelement path="${build.tmp}/java/out/Modules" />
-        <pathelement path="${build.tmp}/java/out/RuntimeCodeGeneration" />
+        <pathelement path="${build.tmp}/java/out/RuntimeClasses" />
         <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -497,7 +483,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.CodeGeneration#5319102428749892274" depends="java.compile.CodeGeneration, java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.Helpers#5494761041833683320, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeCodeGeneration, fetchDependencies">
+  <target name="java.compile.CodeGeneration#5319102428749892274" depends="java.compile.CodeGeneration, java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.Helpers#5494761041833683320, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeClasses, fetchDependencies">
     <mkdir dir="${code_generation}/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/CodeGeneration#5319102428749892274" />
     <javac destdir="${build.tmp}/java/out/CodeGeneration#5319102428749892274" fork="true" includeantruntime="false">
@@ -522,7 +508,7 @@
         <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
         <pathelement path="${build.tmp}/java/out/Models" />
         <pathelement path="${build.tmp}/java/out/Modules" />
-        <pathelement path="${build.tmp}/java/out/RuntimeCodeGeneration" />
+        <pathelement path="${build.tmp}/java/out/RuntimeClasses" />
         <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -549,7 +535,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.Constraints" depends="java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeConstraints, fetchDependencies">
+  <target name="java.compile.Constraints" depends="java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeClasses, fetchDependencies">
     <mkdir dir="${constraints}/source_gen" />
     <mkdir dir="${build.tmp}/java/out/Constraints" />
     <javac destdir="${build.tmp}/java/out/Constraints" fork="true" includeantruntime="false">
@@ -572,7 +558,7 @@
         <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
         <pathelement path="${build.tmp}/java/out/Models" />
         <pathelement path="${build.tmp}/java/out/Modules" />
-        <pathelement path="${build.tmp}/java/out/RuntimeConstraints" />
+        <pathelement path="${build.tmp}/java/out/RuntimeClasses" />
         <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -600,7 +586,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.Constraints#5319102428748697931" depends="java.compile.Constraints, java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.Helpers#5494761041833683320, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeConstraints, fetchDependencies">
+  <target name="java.compile.Constraints#5319102428748697931" depends="java.compile.Constraints, java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.Helpers#5494761041833683320, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeClasses, fetchDependencies">
     <mkdir dir="${constraints}/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/Constraints#5319102428748697931" />
     <javac destdir="${build.tmp}/java/out/Constraints#5319102428748697931" fork="true" includeantruntime="false">
@@ -625,7 +611,7 @@
         <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
         <pathelement path="${build.tmp}/java/out/Models" />
         <pathelement path="${build.tmp}/java/out/Modules" />
-        <pathelement path="${build.tmp}/java/out/RuntimeConstraints" />
+        <pathelement path="${build.tmp}/java/out/RuntimeClasses" />
         <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -652,7 +638,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.GenericGroupMethods" depends="java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeCommons, java.compile.RuntimeConstraints, fetchDependencies">
+  <target name="java.compile.GenericGroupMethods" depends="java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeClasses, fetchDependencies">
     <mkdir dir="${generic_group_methods}/source_gen" />
     <mkdir dir="${build.tmp}/java/out/GenericGroupMethods" />
     <javac destdir="${build.tmp}/java/out/GenericGroupMethods" fork="true" includeantruntime="false">
@@ -673,8 +659,7 @@
         <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
         <pathelement path="${build.tmp}/java/out/Models" />
         <pathelement path="${build.tmp}/java/out/Modules" />
-        <pathelement path="${build.tmp}/java/out/RuntimeCommons" />
-        <pathelement path="${build.tmp}/java/out/RuntimeConstraints" />
+        <pathelement path="${build.tmp}/java/out/RuntimeClasses" />
         <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -702,7 +687,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.GenericGroupMethods#8976227254846526813" depends="java.compile.GenericGroupMethods, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeCommons, java.compile.RuntimeConstraints, fetchDependencies">
+  <target name="java.compile.GenericGroupMethods#8976227254846526813" depends="java.compile.GenericGroupMethods, java.compile.RuntimeClasses, fetchDependencies">
     <mkdir dir="${generic_group_methods}/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/GenericGroupMethods#8976227254846526813" />
     <javac destdir="${build.tmp}/java/out/GenericGroupMethods#8976227254846526813" fork="true" includeantruntime="false">
@@ -721,12 +706,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/GenericGroupMethods" />
-        <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
-        <pathelement path="${build.tmp}/java/out/Models" />
-        <pathelement path="${build.tmp}/java/out/Modules" />
-        <pathelement path="${build.tmp}/java/out/RuntimeCommons" />
-        <pathelement path="${build.tmp}/java/out/RuntimeConstraints" />
-        <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
+        <pathelement path="${build.tmp}/java/out/RuntimeClasses" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -736,7 +716,6 @@
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -752,7 +731,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.Helpers" depends="java.compile.GenericGroupMethods, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeCommons, fetchDependencies">
+  <target name="java.compile.Helpers" depends="java.compile.GenericGroupMethods, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeClasses, fetchDependencies">
     <mkdir dir="${helpers}/source_gen" />
     <mkdir dir="${build.tmp}/java/out/Helpers" />
     <javac destdir="${build.tmp}/java/out/Helpers" fork="true" includeantruntime="false">
@@ -774,7 +753,7 @@
         <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
         <pathelement path="${build.tmp}/java/out/Models" />
         <pathelement path="${build.tmp}/java/out/Modules" />
-        <pathelement path="${build.tmp}/java/out/RuntimeCommons" />
+        <pathelement path="${build.tmp}/java/out/RuntimeClasses" />
         <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -802,7 +781,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.Helpers#5494761041833683320" depends="java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeCommons, fetchDependencies">
+  <target name="java.compile.Helpers#5494761041833683320" depends="java.compile.GenericGroupMethods, java.compile.Helpers, java.compile.LambdaCalculus, java.compile.Models, java.compile.Modules, java.compile.RuntimeClasses, fetchDependencies">
     <mkdir dir="${helpers}/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/Helpers#5494761041833683320" />
     <javac destdir="${build.tmp}/java/out/Helpers#5494761041833683320" fork="true" includeantruntime="false">
@@ -825,7 +804,7 @@
         <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
         <pathelement path="${build.tmp}/java/out/Models" />
         <pathelement path="${build.tmp}/java/out/Modules" />
-        <pathelement path="${build.tmp}/java/out/RuntimeCommons" />
+        <pathelement path="${build.tmp}/java/out/RuntimeClasses" />
         <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -852,16 +831,15 @@
     </javac>
   </target>
   
-  <target name="java.compile.RuntimeConstraints" depends="java.compile.JavaFrames, java.compile.LambdaCalculus, java.compile.Modules, java.compile.java.modules.cycle.1, fetchDependencies">
-    <mkdir dir="${runtime_constraints}/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/RuntimeConstraints" />
-    <javac destdir="${build.tmp}/java/out/RuntimeConstraints" fork="true" includeantruntime="false">
+  <target name="java.compile.RuntimeClasses" depends="java.compile.LambdaCalculus, java.compile.Modules, java.compile.java.modules.cycle.1, fetchDependencies">
+    <mkdir dir="${runtime_classes}/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/RuntimeClasses" />
+    <javac destdir="${build.tmp}/java/out/RuntimeClasses" fork="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${runtime_constraints}/source_gen" />
+        <path location="${runtime_classes}/source_gen" />
       </src>
       <classpath>
-        <pathelement path="${build.tmp}/java/out/JavaFrames" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -891,99 +869,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.JavaFrames" depends="fetchDependencies">
-    <mkdir dir="${java_frames}/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/JavaFrames" />
-    <javac destdir="${build.tmp}/java/out/JavaFrames" fork="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${java_frames}/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.RuntimeCommons" depends="java.compile.JavaFrames, java.compile.LambdaCalculus, java.compile.Modules, java.compile.java.modules.cycle.1, fetchDependencies">
-    <mkdir dir="${runtime_commons}/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/RuntimeCommons" />
-    <javac destdir="${build.tmp}/java/out/RuntimeCommons" fork="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${runtime_commons}/source_gen" />
-      </src>
-      <classpath>
-        <pathelement path="${build.tmp}/java/out/JavaFrames" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
-        <pathelement path="${build.tmp}/java/out/Modules" />
-        <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
-        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
-        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.RuntimeCodeGeneration" depends="java.compile.JavaFrames, java.compile.LambdaCalculus, java.compile.Modules, java.compile.java.modules.cycle.1, fetchDependencies">
-    <mkdir dir="${runtime_code_generation}/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/RuntimeCodeGeneration" />
-    <javac destdir="${build.tmp}/java/out/RuntimeCodeGeneration" fork="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${runtime_code_generation}/source_gen" />
-      </src>
-      <classpath>
-        <pathelement path="${build.tmp}/java/out/JavaFrames" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <pathelement path="${build.tmp}/java/out/LambdaCalculus" />
-        <pathelement path="${build.tmp}/java/out/Modules" />
-        <fileset file="${models}/graphviz-java-api-1.0-SNAPSHOT.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
-        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
-        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.CompleteLanguage" depends="java.compile.JavaFrames, java.compile.RuntimeCodeGeneration, java.compile.RuntimeCommons, java.compile.RuntimeConstraints, fetchDependencies">
+  <target name="java.compile.CompleteLanguage" depends="java.compile.RuntimeClasses, fetchDependencies">
     <mkdir dir="${complete_language}/source_gen" />
     <mkdir dir="${build.tmp}/java/out/CompleteLanguage" />
     <javac destdir="${build.tmp}/java/out/CompleteLanguage" fork="true" includeantruntime="false">
@@ -992,15 +878,12 @@
         <path location="${complete_language}/source_gen" />
       </src>
       <classpath>
-        <pathelement path="${build.tmp}/java/out/JavaFrames" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <pathelement path="${build.tmp}/java/out/RuntimeCodeGeneration" />
-        <pathelement path="${build.tmp}/java/out/RuntimeCommons" />
-        <pathelement path="${build.tmp}/java/out/RuntimeConstraints" />
+        <pathelement path="${build.tmp}/java/out/RuntimeClasses" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${build.tmp}/deps/mps-sl-all/mps-sl-all.zip/mps-multiline/lib/diff_match_patch.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -1015,16 +898,39 @@
     </javac>
   </target>
   
+  <target name="java.compile.runtime" depends="fetchDependencies">
+    <mkdir dir="${runtime_classes}/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/runtime" />
+    <javac destdir="${build.tmp}/java/out/runtime" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${runtime_classes}/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
   <target name="cleanSources">
-    <delete dir="${java_frames}/source_gen" />
     <delete dir="${lambda_calculus}/source_gen" />
     <delete dir="${lambda_calculus}/generator/source_gen" />
     <delete dir="${modules}/source_gen" />
     <delete dir="${models}/source_gen" />
     <delete dir="${modules}/generator/source_gen" />
-    <delete dir="${runtime_code_generation}/source_gen" />
-    <delete dir="${runtime_commons}/source_gen" />
-    <delete dir="${runtime_constraints}/source_gen" />
+    <delete dir="${runtime_classes}/source_gen" />
     <delete dir="${code_generation}/source_gen" />
     <delete dir="${constraints}/source_gen" />
     <delete dir="${generic_group_methods}/generator/source_gen" />

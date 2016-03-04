@@ -10,11 +10,12 @@
   </languages>
   <imports>
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
-    <import index="ksi3" ref="r:4f881588-6291-492b-b792-0f0c9f48f5e4(RuntimeCommons.commons)" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
     <import index="2mcz" ref="r:23e4f1fd-a9d1-4b09-a8c1-3a24e82c6a63(Modules.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="wz6r" ref="r:395bdffb-840e-4312-80d8-b18c172eee46(RuntimeClasses.runtime)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="ksi3" ref="r:4f881588-6291-492b-b792-0f0c9f48f5e4(RuntimeCommons.commons)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="leqx" ref="r:f298dead-195d-448a-a15c-8e897e077e47(Helpers.structure)" implicit="true" />
   </imports>
@@ -121,7 +122,6 @@
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
-      <concept id="7830515785164762753" name="jetbrains.mps.lang.generator.structure.MappingConfiguration_Condition" flags="in" index="avzCv" />
       <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
         <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
       </concept>
@@ -129,7 +129,6 @@
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
-        <child id="7830515785164764091" name="condition" index="avys_" />
         <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
@@ -346,15 +345,6 @@
         </node>
       </node>
     </node>
-    <node concept="avzCv" id="4L1k0SojIpR" role="avys_">
-      <node concept="3clFbS" id="4L1k0SojIpS" role="2VODD2">
-        <node concept="3clFbF" id="4L1k0SojICl" role="3cqZAp">
-          <node concept="3clFbT" id="4L1k0SojICk" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="312cEu" id="4L1k0SocFOT">
     <property role="TrG5h" value="createHelpersGroup" />
@@ -363,7 +353,7 @@
       <node concept="3Tm1VV" id="4L1k0SocHt2" role="1B3o_S" />
       <node concept="3clFbS" id="4L1k0SocHt3" role="3clF47">
         <node concept="XkiVB" id="4L1k0SocHIy" role="3cqZAp">
-          <ref role="37wK5l" to="ksi3:4X4Jbdc3t8s" resolve="Helper" />
+          <ref role="37wK5l" to="wz6r:4o4IMwnBS2e" resolve="Helper" />
           <node concept="37vLTw" id="4L1k0SocHJl" role="37wK5m">
             <ref role="3cqZAo" node="4L1k0SocHBV" resolve="group" />
           </node>
@@ -401,8 +391,8 @@
     <node concept="n94m4" id="4L1k0SocFOV" role="lGtFl">
       <ref role="n9lRv" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     </node>
-    <node concept="3uibUv" id="4L1k0SocGpX" role="1zkMxy">
-      <ref role="3uigEE" to="ksi3:4L1k0Soc3BJ" resolve="Helper" />
+    <node concept="3uibUv" id="4o4IMwnJfKJ" role="1zkMxy">
+      <ref role="3uigEE" to="wz6r:4L1k0Soc3BJ" resolve="Helper" />
     </node>
     <node concept="17Uvod" id="4L1k0SocGq9" role="lGtFl">
       <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />

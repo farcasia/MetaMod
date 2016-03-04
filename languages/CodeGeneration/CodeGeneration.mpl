@@ -18,9 +18,9 @@
         <dependency reexport="false">8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</dependency>
         <dependency reexport="false">ae311dd6-db78-4e5e-a31b-7988fcde0010(Modules)</dependency>
         <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
-        <dependency reexport="true">2c1eaabe-b063-45c2-8738-f699a5b99f43(RuntimeCodeGeneration)</dependency>
         <dependency reexport="false">2a4f5bab-551b-46ab-a40c-28d5229d6214(Helpers)</dependency>
         <dependency reexport="false">e0c146ad-f842-439c-a45a-3c8b57d915f9(Helpers#5494761041833683320)</dependency>
+        <dependency reexport="false">a57b016d-56cb-48d5-8806-f5911569ac8b(RuntimeClasses)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>

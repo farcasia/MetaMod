@@ -17,7 +17,6 @@
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="kdzh" ref="r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)" />
     <import index="bb3p" ref="r:589e3942-2f2d-42a2-9312-986a1d3e2f7f(jetbrains.mps.build.mps.editor)" />
-    <import index="ksi3" ref="r:4f881588-6291-492b-b792-0f0c9f48f5e4(RuntimeCommons.commons)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
   </imports>
   <registry>
@@ -26,15 +25,38 @@
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
         <child id="7321017245477039051" name="compositePart" index="iGT6I" />
       </concept>
+      <concept id="2754769020641646247" name="jetbrains.mps.build.structure.BuildSource_JavaDependencyModule" flags="ng" index="nCB5N">
+        <reference id="2754769020641646250" name="module" index="nCB5Y" />
+      </concept>
       <concept id="4993211115183325728" name="jetbrains.mps.build.structure.BuildProjectDependency" flags="ng" index="2sgV4H">
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
+      </concept>
+      <concept id="1500819558096177282" name="jetbrains.mps.build.structure.BuildSource_JavaFiles" flags="ng" index="2GAZfH">
+        <child id="1500819558096177283" name="resset" index="2GAZfG" />
+      </concept>
+      <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
+        <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
       <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
+      <concept id="2591537044435828004" name="jetbrains.mps.build.structure.BuildLayout_CompileOutputOf" flags="ng" index="Saw0i">
+        <reference id="2591537044435828006" name="module" index="Saw0g" />
+      </concept>
+      <concept id="2303926226081001727" name="jetbrains.mps.build.structure.BuildInputSingleFolder" flags="ng" index="TIC1d">
+        <child id="2303926226081001728" name="path" index="TIC6M" />
+      </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
+      <concept id="7389400916848050074" name="jetbrains.mps.build.structure.BuildLayout_Jar" flags="ng" index="3981dx" />
+      <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
+        <child id="4380385936562148502" name="containerName" index="Nbhlr" />
+      </concept>
+      <concept id="7389400916848073784" name="jetbrains.mps.build.structure.BuildSource_JavaModule" flags="ng" index="398b33">
+        <child id="2754769020641646251" name="dependencies" index="nCB5Z" />
+        <child id="7389400916848073826" name="sources" index="398b2p" />
+      </concept>
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -55,6 +77,10 @@
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
+      <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
+      <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
+        <property id="4903714810883755350" name="text" index="3MwjfP" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -69,7 +95,6 @@
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
-      <concept id="2105528055260548241" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_FolderWithSources" flags="ng" index="1bldCd" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
@@ -79,9 +104,6 @@
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
-      <concept id="1692280246134781712" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleSources" flags="ng" index="3$exzU">
-        <reference id="1692280246134781713" name="module" index="3$exzV" />
-      </concept>
       <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
         <child id="4278635856200826394" name="path" index="1BurEY" />
       </concept>
@@ -106,7 +128,7 @@
     <property role="2DA0ip" value="." />
     <property role="TrG5h" value="BuildCodeGeneration" />
     <node concept="2G$12M" id="4hy4fxE0Lk_" role="3989C9">
-      <property role="TrG5h" value="languages" />
+      <property role="TrG5h" value="Languages" />
       <node concept="1E1JtD" id="4hy4fxE5e6K" role="2G$12L">
         <property role="BnDLt" value="false" />
         <property role="TrG5h" value="LambdaCalculus" />
@@ -293,27 +315,15 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="4hy4fxE5DRT" role="3bR37C">
-          <node concept="3bR9La" id="4hy4fxE5DRU" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="6dXtnCXifjk" resolve="RuntimeCodeGeneration" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4hy4fxE5DRV" role="3bR37C">
-          <node concept="3bR9La" id="4hy4fxE5DRW" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeCommons" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4hy4fxE5DUS" role="3bR37C">
-          <node concept="3bR9La" id="4hy4fxE5DUT" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4hy4fxE5DTp" resolve="RuntimeConstraints" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2dF_C15Cyzu" role="3bR37C">
           <node concept="1Busua" id="2dF_C15Cy$l" role="1SiIV1">
             <ref role="1Busuk" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4o4IMwo0Buo" role="3bR37C">
+          <node concept="3bR9La" id="4o4IMwo0Bup" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeClasses" />
           </node>
         </node>
       </node>
@@ -379,12 +389,6 @@
               <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
             </node>
           </node>
-          <node concept="1SiIV0" id="4EaS5bR1lY5" role="3bR37C">
-            <node concept="3bR9La" id="4EaS5bR1lY6" role="1SiIV1">
-              <property role="3bR36h" value="true" />
-              <ref role="3bR37D" node="6dXtnCXifjk" resolve="RuntimeCodeGeneration" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="4EaS5bR1lY7" role="3bR37C">
             <node concept="3bR9La" id="4EaS5bR1lY8" role="1SiIV1">
               <property role="3bR36h" value="false" />
@@ -395,6 +399,12 @@
             <node concept="3bR9La" id="4EaS5bR1m2p" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="4EaS5bR1lZ2" resolve="Helpers#5494761041833683320" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4o4IMwnJmis" role="3bR37C">
+            <node concept="3bR9La" id="4o4IMwnJmit" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeClasses" />
             </node>
           </node>
         </node>
@@ -467,12 +477,6 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
             </node>
           </node>
-          <node concept="1SiIV0" id="4EaS5bR1lYs" role="3bR37C">
-            <node concept="3bR9La" id="4EaS5bR1lYt" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="4hy4fxE5DTp" resolve="RuntimeConstraints" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="4EaS5bR1lYu" role="3bR37C">
             <node concept="3bR9La" id="4EaS5bR1lYv" role="1SiIV1">
               <property role="3bR36h" value="false" />
@@ -489,6 +493,12 @@
             <node concept="3bR9La" id="4EaS5bR1m2w" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="4EaS5bR1lZ2" resolve="Helpers#5494761041833683320" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4o4IMwnJmiz" role="3bR37C">
+            <node concept="3bR9La" id="4o4IMwnJmi$" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeClasses" />
             </node>
           </node>
         </node>
@@ -541,28 +551,10 @@
           <property role="TrG5h" value="GenericGroupMethods#8976227254846526813" />
           <property role="3LESm3" value="23889f02-f356-4414-ba59-81b2f1c2170d" />
           <property role="2GAjPV" value="false" />
-          <node concept="1SiIV0" id="4EaS5bR1lYJ" role="3bR37C">
-            <node concept="3bR9La" id="4EaS5bR1lYK" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="4EaS5bR1ljZ" resolve="GenericGroupMethods" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="4EaS5bR1lYL" role="3bR37C">
             <node concept="3bR9La" id="4EaS5bR1lYM" role="1SiIV1">
               <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeCommons" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="4EaS5bR1lYN" role="3bR37C">
-            <node concept="3bR9La" id="4EaS5bR1lYO" role="1SiIV1">
-              <property role="3bR36h" value="true" />
-              <ref role="3bR37D" node="4hy4fxE5DTp" resolve="RuntimeConstraints" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="4EaS5bR1lYP" role="3bR37C">
-            <node concept="3bR9La" id="4EaS5bR1lYQ" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
+              <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeClasses" />
             </node>
           </node>
         </node>
@@ -602,7 +594,7 @@
           <node concept="1SiIV0" id="4EaS5bR1lZ3" role="3bR37C">
             <node concept="3bR9La" id="4EaS5bR1lZ4" role="1SiIV1">
               <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeCommons" />
+              <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeClasses" />
             </node>
           </node>
           <node concept="1SiIV0" id="4EaS5bR1lZ5" role="3bR37C">
@@ -634,78 +626,15 @@
     </node>
     <node concept="2G$12M" id="1nrRmPkSlXJ" role="3989C9">
       <property role="TrG5h" value="UtilitiesClasses" />
-      <node concept="1E1JtA" id="4hy4fxE5DTp" role="2G$12L">
-        <property role="BnDLt" value="false" />
-        <property role="TrG5h" value="RuntimeConstraints" />
-        <property role="3LESm3" value="9e7f7c3c-cbfb-4bd7-9359-5a9cee6e2a7c" />
-        <property role="2GAjPV" value="false" />
-        <node concept="55IIr" id="4hy4fxE5DTs" role="3LF7KH">
-          <node concept="2Ry0Ak" id="4hy4fxE5DUy" role="iGT6I">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="4hy4fxE5DUB" role="2Ry0An">
-              <property role="2Ry0Am" value="RuntimeModelConstraints" />
-              <node concept="2Ry0Ak" id="4hy4fxE5DUG" role="2Ry0An">
-                <property role="2Ry0Am" value="RuntimeModelConstraints.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4hy4fxE5DV1" role="3bR37C">
-          <node concept="3bR9La" id="4hy4fxE5DV2" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="1nrRmPkSlY7" resolve="JavaFrames" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4hy4fxE5DV3" role="3bR37C">
-          <node concept="3bR9La" id="4hy4fxE5DV4" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeCommons" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4hy4fxE5DV5" role="3bR37C">
-          <node concept="3bR9La" id="4hy4fxE5DV6" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
-          </node>
-        </node>
-      </node>
-      <node concept="1E1JtA" id="1nrRmPkSlY7" role="2G$12L">
-        <property role="BnDLt" value="false" />
-        <property role="TrG5h" value="JavaFrames" />
-        <property role="3LESm3" value="698a97d6-e1f0-445b-9bf3-fe646be9d3b3" />
-        <property role="2GAjPV" value="false" />
-        <node concept="55IIr" id="1nrRmPkSlY8" role="3LF7KH">
-          <node concept="2Ry0Ak" id="1nrRmPkSlYc" role="iGT6I">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="1nrRmPkSlYh" role="2Ry0An">
-              <property role="2Ry0Am" value="JavaFrames" />
-              <node concept="2Ry0Ak" id="1nrRmPkSlYm" role="2Ry0An">
-                <property role="2Ry0Am" value="JavaFrames.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1nrRmPkSvyx" role="3bR37C">
-          <node concept="3bR9La" id="1nrRmPkSvyy" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-      </node>
       <node concept="1E1JtA" id="1nrRmPkSaDg" role="2G$12L">
         <property role="BnDLt" value="false" />
-        <property role="TrG5h" value="RuntimeCommons" />
-        <property role="3LESm3" value="ac92b060-507b-49fd-899b-f9ec55fb3b85" />
+        <property role="TrG5h" value="RuntimeClasses" />
+        <property role="3LESm3" value="a57b016d-56cb-48d5-8806-f5911569ac8b" />
         <property role="2GAjPV" value="false" />
-        <node concept="55IIr" id="1nrRmPkSaDh" role="3LF7KH">
-          <node concept="2Ry0Ak" id="1nrRmPkSaDl" role="iGT6I">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="1nrRmPkSaDq" role="2Ry0An">
-              <property role="2Ry0Am" value="RuntimeCommons" />
-              <node concept="2Ry0Ak" id="1nrRmPkSaDv" role="2Ry0An">
-                <property role="2Ry0Am" value="RuntimeCommons.msd" />
-              </node>
-            </node>
+        <node concept="398BVA" id="4o4IMwnJmbb" role="3LF7KH">
+          <ref role="398BVh" node="1nrRmPkSwOo" resolve="runtime_classes" />
+          <node concept="2Ry0Ak" id="4o4IMwnJmcz" role="iGT6I">
+            <property role="2Ry0Am" value="RuntimeClasses.msd" />
           </node>
         </node>
         <node concept="1SiIV0" id="1nrRmPkSaDx" role="3bR37C">
@@ -720,78 +649,35 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1nrRmPkSwHA" role="3bR37C">
-          <node concept="3bR9La" id="1nrRmPkSwHB" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="1nrRmPkSlY7" resolve="JavaFrames" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="4hy4fxE0LCo" role="3bR37C">
           <node concept="3bR9La" id="4hy4fxE0LCp" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4o4IMwnJmiQ" role="3bR37C">
+          <node concept="3bR9La" id="4o4IMwnJmiR" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="55IIr" id="6dXtnCXgru8" role="auvoZ" />
     <node concept="1l3spV" id="6dXtnCXgru9" role="1l3spN">
-      <node concept="1bldCd" id="4o4IMwn8iO_" role="39821P">
-        <ref role="3$exzV" node="4EaS5bR1lXY" resolve="CodeGeneration#5319102428749892274" />
+      <node concept="3981dx" id="4o4IMwnByu5" role="39821P">
+        <node concept="3_J27D" id="4o4IMwnByu7" role="Nbhlr">
+          <node concept="3Mxwew" id="4o4IMwnByv2" role="3MwsjC">
+            <property role="3MwjfP" value="RuntimeClasses.jar" />
+          </node>
+        </node>
+        <node concept="Saw0i" id="4o4IMwnByv4" role="39821P">
+          <ref role="Saw0g" node="4o4IMwnBxTl" resolve="runtime" />
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="6dXtnCXi0GE" role="10PD9s" />
     <node concept="3b7kt6" id="6dXtnCXifj9" role="10PD9s" />
-    <node concept="2G$12M" id="1nrRmPkSc$c" role="3989C9">
-      <property role="TrG5h" value="RuntimeCodeGeneration" />
-      <node concept="1E1JtA" id="6dXtnCXifjk" role="2G$12L">
-        <property role="BnDLt" value="false" />
-        <property role="TrG5h" value="RuntimeCodeGeneration" />
-        <property role="3LESm3" value="2c1eaabe-b063-45c2-8738-f699a5b99f43" />
-        <property role="2GAjPV" value="false" />
-        <node concept="55IIr" id="6dXtnCXifjo" role="3LF7KH">
-          <node concept="2Ry0Ak" id="6dXtnCXifjs" role="iGT6I">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="6dXtnCXifjx" role="2Ry0An">
-              <property role="2Ry0Am" value="RuntimeCodeGeneration" />
-              <node concept="2Ry0Ak" id="6dXtnCXifln" role="2Ry0An">
-                <property role="2Ry0Am" value="RuntimeCodeGeneration.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1nrRmPkQz0r" role="3bR37C">
-          <node concept="3bR9La" id="1nrRmPkQz0s" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1nrRmPkSvyF" role="3bR37C">
-          <node concept="3bR9La" id="1nrRmPkSvyG" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="1nrRmPkSlY7" resolve="JavaFrames" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1nrRmPkSvyH" role="3bR37C">
-          <node concept="3bR9La" id="1nrRmPkSvyI" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1nrRmPkSvyJ" role="3bR37C">
-          <node concept="3bR9La" id="1nrRmPkSvyK" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeCommons" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4hy4fxE0LCr" role="3bR37C">
-          <node concept="3bR9La" id="4hy4fxE0LCs" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4hy4fxE0Llc" resolve="Models" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2G$12M" id="4EaS5bR1kRQ" role="3989C9">
       <property role="TrG5h" value="CompleteLanguage" />
       <node concept="1E1JtA" id="4EaS5bR1kUb" role="2G$12L">
@@ -805,36 +691,37 @@
             <property role="2Ry0Am" value="CompleteLanguage.msd" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4EaS5bR1kWm" role="3bR37C">
-          <node concept="3bR9La" id="4EaS5bR1kWn" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="1nrRmPkSlY7" resolve="JavaFrames" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="4EaS5bR1kWo" role="3bR37C">
           <node concept="3bR9La" id="4EaS5bR1kWp" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4EaS5bR1kWq" role="3bR37C">
-          <node concept="3bR9La" id="4EaS5bR1kWr" role="1SiIV1">
+        <node concept="1SiIV0" id="4o4IMwo0BuR" role="3bR37C">
+          <node concept="3bR9La" id="4o4IMwo0BuS" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="6dXtnCXifjk" resolve="RuntimeCodeGeneration" />
+            <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeClasses" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4EaS5bR1kWs" role="3bR37C">
-          <node concept="3bR9La" id="4EaS5bR1kWt" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="1nrRmPkSaDg" resolve="RuntimeCommons" />
+      </node>
+    </node>
+    <node concept="398b33" id="4o4IMwnBxTl" role="3989C9">
+      <property role="TrG5h" value="runtime" />
+      <node concept="2GAZfH" id="4o4IMwnBxTm" role="398b2p">
+        <node concept="TIC1d" id="4o4IMwnBxTn" role="2GAZfG">
+          <node concept="398BVA" id="4o4IMwo0Bz9" role="TIC6M">
+            <ref role="398BVh" node="1nrRmPkSwOo" resolve="runtime_classes" />
+            <node concept="2Ry0Ak" id="4o4IMwo0BzS" role="iGT6I">
+              <property role="2Ry0Am" value="source_gen" />
+            </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="4EaS5bR1kWu" role="3bR37C">
-          <node concept="3bR9La" id="4EaS5bR1kWv" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4hy4fxE5DTp" resolve="RuntimeConstraints" />
-          </node>
-        </node>
+      </node>
+      <node concept="nCB5N" id="4o4IMwnBxTs" role="nCB5Z">
+        <ref role="nCB5Y" to="ffeo:1FaKCGJSzEy" resolve="mps-core" />
+      </node>
+      <node concept="nCB5N" id="4o4IMwnBxTt" role="nCB5Z">
+        <ref role="nCB5Y" to="ffeo:1H905DlDRAI" resolve="mps-openapi" />
       </node>
     </node>
     <node concept="398rNT" id="1nrRmPkQvHX" role="1l3spd">
@@ -857,35 +744,13 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="1nrRmPkSwMr" role="1l3spd">
-      <property role="TrG5h" value="runtime_code_generation" />
-      <node concept="55IIr" id="1nrRmPkSwMA" role="398pKh">
-        <node concept="2Ry0Ak" id="1nrRmPkSwMD" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="1nrRmPkSwML" role="2Ry0An">
-            <property role="2Ry0Am" value="RuntimeCodeGeneration" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="398rNT" id="1nrRmPkSwOo" role="1l3spd">
-      <property role="TrG5h" value="runtime_commons" />
+      <property role="TrG5h" value="runtime_classes" />
       <node concept="55IIr" id="1nrRmPkSwOE" role="398pKh">
         <node concept="2Ry0Ak" id="1nrRmPkSwOH" role="iGT6I">
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="1nrRmPkSwOM" role="2Ry0An">
-            <property role="2Ry0Am" value="RuntimeCommons" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="1nrRmPkSwQb" role="1l3spd">
-      <property role="TrG5h" value="java_frames" />
-      <node concept="55IIr" id="1nrRmPkSwQE" role="398pKh">
-        <node concept="2Ry0Ak" id="1nrRmPkSwQH" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="1nrRmPkSwQM" role="2Ry0An">
-            <property role="2Ry0Am" value="JavaFrames" />
+            <property role="2Ry0Am" value="RuntimeClasses" />
           </node>
         </node>
       </node>
@@ -937,17 +802,6 @@
                 <property role="2Ry0Am" value="LambdaCalculus" />
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="4hy4fxE5DXn" role="1l3spd">
-      <property role="TrG5h" value="runtime_constraints" />
-      <node concept="55IIr" id="4hy4fxE5DZ4" role="398pKh">
-        <node concept="2Ry0Ak" id="4hy4fxE5DZ7" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="4hy4fxE5DZc" role="2Ry0An">
-            <property role="2Ry0Am" value="RuntimeModelConstraints" />
           </node>
         </node>
       </node>
