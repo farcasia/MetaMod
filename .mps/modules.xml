@@ -17,15 +17,12 @@
       <modulePath path="$PROJECT_DIR$/solutions/Ecore/Ecore.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/EvaluationLambdaTerms/EvaluationLambdaTerms.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/FamiliarDSL/FamiliarDSL.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/JavaFrames/JavaFrames.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/LambdaCalculusExperiments/LambdaCalculusExperiments.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/LambdaCalculusSolution/LambdaCalculusSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/MetaMod/MetaMod.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ModelsSolution/ModelsSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ModulesSolution/ModulesSolution.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/RuntimeCodeGeneration/RuntimeCodeGeneration.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/RuntimeCommons/RuntimeCommons.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/RuntimeModelConstraints/RuntimeModelConstraints.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/RuntimeClasses/RuntimeClasses.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ShowCaseNBCS/ShowCaseNBCS.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TrainTracks/TrainTracks.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TrainTracksWithConstraints/TrainTracksWithConstraints.msd" folder="" />
