@@ -139,7 +139,6 @@
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
-      <concept id="7830515785164762753" name="jetbrains.mps.lang.generator.structure.MappingConfiguration_Condition" flags="in" index="avzCv" />
       <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
         <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
       </concept>
@@ -147,7 +146,6 @@
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
-        <child id="7830515785164764091" name="condition" index="avys_" />
         <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
@@ -288,7 +286,7 @@
             <node concept="2OqwBi" id="6e92Hp172BS" role="3clFbG">
               <node concept="1iwH7S" id="6e92Hp172AC" role="2Oq$k0" />
               <node concept="1iwH70" id="2SWtdi20vnF" role="2OqNvi">
-                <ref role="1iwH77" node="2SWtdi20ukb" resolve="NamedGroupToJavaClass" />
+                <ref role="1iwH77" node="2SWtdi20ukb" resolve="NamedGroupToJavaClassCG" />
                 <node concept="2OqwBi" id="4BhfRC_pYt8" role="1iwH7V">
                   <node concept="1PxgMI" id="4BhfRC_pYoo" role="2Oq$k0">
                     <ref role="1PxNhF" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
@@ -474,7 +472,7 @@
     </node>
     <node concept="3lhOvk" id="1E5i917KQKS" role="3lj3bC">
       <ref role="30HIoZ" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
-      <ref role="2sgKRv" node="2SWtdi20ukb" resolve="NamedGroupToJavaClass" />
+      <ref role="2sgKRv" node="2SWtdi20ukb" resolve="NamedGroupToJavaClassCG" />
       <ref role="3lhOvi" node="45NpebPl4OU" resolve="createCodeGenGroup" />
       <node concept="30G5F_" id="1E5i917Ln$q" role="30HLyM">
         <node concept="3clFbS" id="1E5i917Ln$r" role="2VODD2">
@@ -567,7 +565,7 @@
       </node>
     </node>
     <node concept="2rT7sh" id="2SWtdi20ukb" role="2rTMjI">
-      <property role="TrG5h" value="NamedGroupToJavaClass" />
+      <property role="TrG5h" value="NamedGroupToJavaClassCG" />
       <ref role="2rZz_L" to="tpee:fz12cDA" resolve="ClassConcept" />
       <ref role="2rTdP9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     </node>
@@ -592,15 +590,6 @@
       <ref role="30HIoZ" to="leqx:4L1k0Soa314" resolve="HelperMethodCall" />
       <node concept="j$656" id="4L1k0SocTjK" role="1lVwrX">
         <ref role="v9R2y" to="71p1:4L1k0SocTjI" resolve="reduce_HelperMethodCall" />
-      </node>
-    </node>
-    <node concept="avzCv" id="5IUjw$nJBZ" role="avys_">
-      <node concept="3clFbS" id="5IUjw$nJC0" role="2VODD2">
-        <node concept="3clFbF" id="5IUjw$nK1t" role="3cqZAp">
-          <node concept="3clFbT" id="5IUjw$nK1s" role="3clFbG">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
       </node>
     </node>
   </node>
@@ -808,7 +797,7 @@
                           <node concept="2OqwBi" id="63lYmBSPbiF" role="3cqZAk">
                             <node concept="1iwH7S" id="63lYmBSPbiG" role="2Oq$k0" />
                             <node concept="1iwH70" id="63lYmBSPbiH" role="2OqNvi">
-                              <ref role="1iwH77" node="2SWtdi20ukb" resolve="NamedGroupToJavaClass" />
+                              <ref role="1iwH77" node="2SWtdi20ukb" resolve="NamedGroupToJavaClassCG" />
                               <node concept="2OqwBi" id="63lYmBSPbiI" role="1iwH7V">
                                 <node concept="1PxgMI" id="63lYmBSPbiJ" role="2Oq$k0">
                                   <ref role="1PxNhF" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
