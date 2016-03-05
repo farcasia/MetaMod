@@ -35,6 +35,9 @@
       <concept id="1500819558096177282" name="jetbrains.mps.build.structure.BuildSource_JavaFiles" flags="ng" index="2GAZfH">
         <child id="1500819558096177283" name="resset" index="2GAZfG" />
       </concept>
+      <concept id="2750015747481074431" name="jetbrains.mps.build.structure.BuildLayout_Files" flags="ng" index="2HvfSZ">
+        <child id="2750015747481074432" name="path" index="2HvfZ0" />
+      </concept>
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
@@ -53,6 +56,7 @@
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
+      <concept id="7389400916848036984" name="jetbrains.mps.build.structure.BuildLayout_Folder" flags="ng" index="398223" />
       <concept id="7389400916848073784" name="jetbrains.mps.build.structure.BuildSource_JavaModule" flags="ng" index="398b33">
         <child id="2754769020641646251" name="dependencies" index="nCB5Z" />
         <child id="7389400916848073826" name="sources" index="398b2p" />
@@ -666,6 +670,21 @@
     <node concept="55IIr" id="6dXtnCXgru8" role="auvoZ" />
     <node concept="1l3spV" id="6dXtnCXgru9" role="1l3spN">
       <node concept="3981dx" id="4o4IMwnByu5" role="39821P">
+        <node concept="398223" id="4o4IMwo17GT" role="39821P">
+          <node concept="3_J27D" id="4o4IMwo17GV" role="Nbhlr">
+            <node concept="3Mxwew" id="4o4IMwo17HD" role="3MwsjC">
+              <property role="3MwjfP" value="sources" />
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="4o4IMwo17HF" role="39821P">
+            <node concept="398BVA" id="4o4IMwo17Io" role="2HvfZ0">
+              <ref role="398BVh" node="1nrRmPkSwOo" resolve="runtime_classes" />
+              <node concept="2Ry0Ak" id="4o4IMwo17J7" role="iGT6I">
+                <property role="2Ry0Am" value="source_gen" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3_J27D" id="4o4IMwnByu7" role="Nbhlr">
           <node concept="3Mxwew" id="4o4IMwnByv2" role="3MwsjC">
             <property role="3MwjfP" value="RuntimeClasses.jar" />
