@@ -2564,21 +2564,33 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="4FkjxxtcTxK" role="3cqZAp">
+              <node concept="3SKdUq" id="4FkjxxtcTML" role="3SKWNk">
+                <property role="3SKdUp" value="A reference to a named group can also reside in a ModuleComposite file." />
+              </node>
+            </node>
             <node concept="3cpWs8" id="19jQaVARsDR" role="3cqZAp">
               <node concept="3cpWsn" id="19jQaVARsDU" role="3cpWs9">
                 <property role="TrG5h" value="containingGroupMM" />
                 <node concept="3Tqbb2" id="19jQaVARsDP" role="1tU5fm">
                   <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                 </node>
-                <node concept="2OqwBi" id="19jQaVARDcq" role="33vP2m">
-                  <node concept="1PxgMI" id="19jQaVARvOe" role="2Oq$k0">
-                    <ref role="1PxNhF" to="v0yp:7zWtwVwpdxn" resolve="Group" />
-                    <node concept="2OqwBi" id="19jQaVARvfI" role="1PxMeX">
-                      <node concept="EsrRn" id="19jQaVARtp8" role="2Oq$k0" />
-                      <node concept="2Rxl7S" id="19jQaVARvGh" role="2OqNvi" />
+                <node concept="2OqwBi" id="4FkjxxtcS_z" role="33vP2m">
+                  <node concept="2OqwBi" id="4FkjxxtcRRR" role="2Oq$k0">
+                    <node concept="2OqwBi" id="4FkjxxtcOkq" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4FkjxxtcMFC" role="2Oq$k0">
+                        <node concept="EsrRn" id="4FkjxxtcMbW" role="2Oq$k0" />
+                        <node concept="z$bX8" id="4FkjxxtcNjm" role="2OqNvi" />
+                      </node>
+                      <node concept="v3k3i" id="4FkjxxtcRgU" role="2OqNvi">
+                        <node concept="chp4Y" id="4FkjxxtcRvb" role="v3oSu">
+                          <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+                        </node>
+                      </node>
                     </node>
+                    <node concept="1yVyf7" id="4FkjxxtcSqh" role="2OqNvi" />
                   </node>
-                  <node concept="3TrEf2" id="19jQaVARDYv" role="2OqNvi">
+                  <node concept="3TrEf2" id="4FkjxxtcT1A" role="2OqNvi">
                     <ref role="3Tt5mk" to="v0yp:2ZZRdXAFMQO" />
                   </node>
                 </node>
