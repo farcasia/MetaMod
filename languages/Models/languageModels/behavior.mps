@@ -21256,7 +21256,7 @@
               <node concept="3clFbS" id="7rlNOzb5hIo" role="3clFbx">
                 <node concept="3SKdUt" id="wmCZ0RhZn7" role="3cqZAp">
                   <node concept="3SKdUq" id="wmCZ0RhZni" role="3SKWNk">
-                    <property role="3SKdUp" value="We want the first containing group." />
+                    <property role="3SKdUp" value="We want the first containing group that is not an LTList or the last containing LTList." />
                   </node>
                 </node>
                 <node concept="3clFbF" id="7rlNOzb5irQ" role="3cqZAp">
@@ -21272,7 +21272,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3zACq4" id="wmCZ0RhZmN" role="3cqZAp" />
+                <node concept="3zACq4" id="6IBCQURHWK6" role="3cqZAp" />
               </node>
               <node concept="2OqwBi" id="7rlNOzb5ibL" role="3clFbw">
                 <node concept="37vLTw" id="7rlNOzb5hUY" role="2Oq$k0">
@@ -21356,11 +21356,69 @@
       <node concept="3clFbS" id="3ivI6t8yyrv" role="3clF47">
         <node concept="3clFbJ" id="3ivI6t8yAat" role="3cqZAp">
           <node concept="3clFbS" id="3ivI6t8yAau" role="3clFbx">
+            <node concept="3cpWs8" id="6IBCQURLAyL" role="3cqZAp">
+              <node concept="3cpWsn" id="6IBCQURLAyO" role="3cpWs9">
+                <property role="TrG5h" value="ancestor" />
+                <node concept="3Tqbb2" id="6IBCQURLAyJ" role="1tU5fm">
+                  <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+                </node>
+                <node concept="2OqwBi" id="6IBCQURLCng" role="33vP2m">
+                  <node concept="13iPFW" id="6IBCQURLCi9" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6IBCQURLCN8" role="2OqNvi">
+                    <ref role="37wK5l" node="7rlNOzb51mv" resolve="getScopeAncestor" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6IBCQURLAC8" role="3cqZAp" />
+            <node concept="3SKdUt" id="6IBCQURLONU" role="3cqZAp">
+              <node concept="3SKdUq" id="6IBCQURLOTz" role="3SKWNk">
+                <property role="3SKdUp" value="Treat the case where we have LTLists nested into each other!" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="6IBCQURLHYR" role="3cqZAp">
+              <node concept="3clFbS" id="6IBCQURLHYT" role="3clFbx">
+                <node concept="3cpWs6" id="6IBCQURLJ7J" role="3cqZAp">
+                  <node concept="2OqwBi" id="6IBCQURLO66" role="3cqZAk">
+                    <node concept="37vLTw" id="6IBCQURLO1b" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6IBCQURLAyO" resolve="ancestor" />
+                    </node>
+                    <node concept="2qgKlT" id="6IBCQURLOvl" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:3fifI_xCJOQ" resolve="getScope" />
+                      <node concept="37vLTw" id="6IBCQURLO$j" role="37wK5m">
+                        <ref role="3cqZAo" node="3ivI6t8y$WJ" resolve="kind" />
+                      </node>
+                      <node concept="10Nm6u" id="6IBCQURLODj" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="6IBCQURLIHa" role="3clFbw">
+                <node concept="3fqX7Q" id="6IBCQURLIJg" role="3uHU7w">
+                  <node concept="1eOMI4" id="6IBCQURLJ5o" role="3fr31v">
+                    <node concept="3clFbC" id="6IBCQURLIPV" role="1eOMHV">
+                      <node concept="37vLTw" id="6IBCQURLILj" role="3uHU7B">
+                        <ref role="3cqZAo" node="6IBCQURLAyO" resolve="ancestor" />
+                      </node>
+                      <node concept="13iPFW" id="6IBCQURLISz" role="3uHU7w" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6IBCQURLI7K" role="3uHU7B">
+                  <node concept="37vLTw" id="6IBCQURLI2n" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6IBCQURLAyO" resolve="ancestor" />
+                  </node>
+                  <node concept="1mIQ4w" id="6IBCQURLIsG" role="2OqNvi">
+                    <node concept="chp4Y" id="6IBCQURLItC" role="cj9EA">
+                      <ref role="cht4Q" to="v0yp:2g9pCO52Ib1" resolve="LTList" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6IBCQURLHSh" role="3cqZAp" />
             <node concept="3cpWs6" id="3ivI6t8yAtA" role="3cqZAp">
               <node concept="2OqwBi" id="3ivI6t8yAyD" role="3cqZAk">
-                <node concept="BsUDl" id="3ivI6t8yAv4" role="2Oq$k0">
-                  <ref role="37wK5l" node="7rlNOzb51mv" resolve="getScopeAncestor" />
-                </node>
                 <node concept="2qgKlT" id="3ivI6t8yATs" role="2OqNvi">
                   <ref role="37wK5l" to="tpcu:3fifI_xCJOQ" resolve="getScope" />
                   <node concept="37vLTw" id="3ivI6t8yCaz" role="37wK5m">
@@ -21373,6 +21431,9 @@
                       </node>
                     </node>
                   </node>
+                </node>
+                <node concept="37vLTw" id="6IBCQURLC55" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6IBCQURLAyO" resolve="ancestor" />
                 </node>
               </node>
             </node>
@@ -21399,6 +21460,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="3ivI6t8yAWf" role="3cqZAp" />
+        <node concept="3SKdUt" id="6IBCQUROorv" role="3cqZAp">
+          <node concept="3SKdUq" id="6IBCQUROoxA" role="3SKWNk">
+            <property role="3SKdUp" value="We have found the appropriate group for the scope." />
+          </node>
+        </node>
         <node concept="3cpWs6" id="3ivI6t8yAWM" role="3cqZAp">
           <node concept="2OqwBi" id="3ivI6t8yB3i" role="3cqZAk">
             <node concept="13iAh5" id="3ivI6t8yAZG" role="2Oq$k0" />
@@ -21517,6 +21583,18 @@
         <property role="TrG5h" value="sentinel" />
         <node concept="3Tqbb2" id="6dXtnCW46WO" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:3ivI6t8xJor" resolve="Sentinel" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="6IBCQUROlLc" role="lGtFl">
+        <node concept="TZ5HA" id="6IBCQUROlLd" role="TZ5H$">
+          <node concept="1dT_AC" id="6IBCQUROlLe" role="1dT_Ay">
+            <property role="1dT_AB" value="This method and all the other sentinel methods (except for getScope) also probably need repair," />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6IBCQUROlPU" role="TZ5H$">
+          <node concept="1dT_AC" id="6IBCQUROlPV" role="1dT_Ay">
+            <property role="1dT_AB" value="but I won't do that until I see the malfunction in the models" />
+          </node>
         </node>
       </node>
     </node>

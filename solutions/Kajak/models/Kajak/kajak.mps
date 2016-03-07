@@ -1207,11 +1207,39 @@
             </node>
           </node>
           <node concept="2jq5PB" id="4Fkjxxti9zh" role="2oAaxa" />
+          <node concept="37tsfw" id="14JzSuhNcPb" role="2oAaxa">
+            <property role="TrG5h" value="wFindDoor" />
+            <node concept="2oAaXF" id="14JzSuhNd9k" role="2oAawq">
+              <ref role="3aaZtz" node="4Fkjxxt2v4y" resolve="while" />
+            </node>
+          </node>
+          <node concept="2uuBJw" id="14JzSuhNecK" role="2oAaxa">
+            <property role="TrG5h" value="body" />
+            <node concept="2uuBJw" id="14JzSuhNdxC" role="3B56no">
+              <property role="TrG5h" value="condition" />
+              <node concept="2uuBJw" id="14JzSuhNdo5" role="3B56no">
+                <property role="TrG5h" value="com" />
+                <node concept="kdsPF" id="14JzSuhNdjh" role="3B56no">
+                  <ref role="kdsPE" node="4Fkjxxt2Y2W" resolve="whileCom" />
+                </node>
+                <node concept="2oAaXF" id="14JzSuhNdpS" role="3B56nu">
+                  <ref role="3aaZtz" node="14JzSuhNcPb" resolve="wFindDoor" />
+                </node>
+              </node>
+              <node concept="2oAaXF" id="14JzSuhNe6N" role="3B56nu">
+                <ref role="3aaZtz" node="4FkjxxtdLAh" resolve="WallAhead" />
+              </node>
+            </node>
+            <node concept="2oAaXF" id="14JzSuhNefx" role="3B56nu">
+              <ref role="3aaZtz" node="4Fkjxxti8e$" resolve="whileCL" />
+            </node>
+          </node>
+          <node concept="2jq5PB" id="14JzSuhNcJR" role="2oAaxa" />
           <node concept="2oAaUa" id="4Fkjxxti9$q" role="2oAaxa">
             <property role="2XbFUA" value="0..*" />
             <property role="2XbFU$" value="0..1" />
-            <node concept="2oAaXF" id="4Fkjxxti9AE" role="2oAawB">
-              <ref role="3aaZtz" node="4Fkjxxti8e$" resolve="whileCL" />
+            <node concept="2oAaXF" id="14JzSuhNeMV" role="2oAawB">
+              <ref role="3aaZtz" node="14JzSuhNcPb" resolve="wFindDoor" />
             </node>
             <node concept="3B6VN0" id="4Fkjxxti9_o" role="2oAawD">
               <ref role="3B56nS" node="4Fkjxxti7E5" resolve="inComList" />
@@ -1644,85 +1672,68 @@
     <node concept="2oAaVg" id="4Fkjxxtcm7g" role="2oAaxa">
       <property role="1ewt2y" value="false" />
       <property role="TrG5h" value="BorderMarks_CL" />
+      <node concept="2oAaW5" id="6y$oWiUbmQX" role="2oAaxa">
+        <property role="TrG5h" value="BorderMarksCL" />
+        <node concept="2oAaXF" id="6y$oWiUbprV" role="2oAawq">
+          <ref role="3aaZtz" node="4Fkjxxt2zdG" resolve="CommandList" />
+        </node>
+      </node>
+      <node concept="2jq5PB" id="6y$oWiUbmKf" role="2oAaxa" />
       <node concept="2uuBJw" id="4FkjxxtbJWz" role="2oAaxa">
         <property role="TrG5h" value="inComList" />
         <node concept="kdsPF" id="4FkjxxtdwLq" role="3B56no">
           <ref role="kdsPE" node="4FkjxxtdvVx" resolve="turnRightNoRepeat" />
         </node>
-        <node concept="x0Shc" id="4FkjxxtbVWV" role="2uuBGn">
+        <node concept="2oAaXF" id="6y$oWiUbqhZ" role="3B56nu">
+          <ref role="3aaZtz" node="6y$oWiUbmQX" resolve="BorderMarksCL" />
+        </node>
+        <node concept="x0Shc" id="6y$oWiUbqvf" role="2uuBGn">
           <property role="1ewt2y" value="false" />
-          <node concept="x0Shc" id="4FkjxxtbVXT" role="2oAaxa">
-            <property role="1ewt2y" value="false" />
-            <node concept="2oAaW5" id="4FkjxxtbW2l" role="2oAaxa">
-              <property role="TrG5h" value="BorderMarksCL" />
-              <node concept="2oAaXF" id="4FkjxxtbW2m" role="2oAawq">
-                <ref role="3aaZtz" node="4Fkjxxt2zdG" resolve="CommandList" />
+          <node concept="2oAaUa" id="6y$oWiUbqvg" role="2oAaxa">
+            <property role="2XbFUA" value="0..*" />
+            <property role="2XbFU$" value="0..1" />
+            <node concept="2oAaXF" id="6y$oWiUbqvh" role="2oAawD">
+              <ref role="3aaZtz" node="6y$oWiUbmQX" resolve="BorderMarksCL" />
+            </node>
+            <node concept="2oAaSB" id="6y$oWiUbqvi" role="2oAawB">
+              <node concept="2oAaXF" id="6y$oWiUbqvj" role="2oAawq">
+                <ref role="3aaZtz" node="4Fkjxxt2uWd" resolve="turnLeft" />
               </node>
             </node>
-            <node concept="2jq5PB" id="4FkjxxtbW2k" role="2oAaxa" />
-            <node concept="2oAaUa" id="4FkjxxtbVXU" role="2oAaxa">
-              <property role="2XbFUA" value="0..*" />
-              <property role="2XbFU$" value="0..1" />
-              <node concept="2oAaXF" id="4FkjxxtbVXV" role="2oAawD">
-                <ref role="3aaZtz" node="4FkjxxtbW2l" resolve="BorderMarksCL" />
-              </node>
-              <node concept="2oAaSB" id="4FkjxxtbVXW" role="2oAawB">
-                <node concept="2oAaXF" id="4FkjxxtbVXX" role="2oAawq">
-                  <ref role="3aaZtz" node="4Fkjxxt2uWd" resolve="turnLeft" />
-                </node>
-              </node>
-              <node concept="2oAawe" id="4FkjxxtbVXY" role="2oAawy">
-                <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
-              </node>
-            </node>
-            <node concept="x0Shc" id="4FkjxxtbVZ2" role="2oAaxa">
-              <property role="1ewt2y" value="false" />
-              <node concept="2oAaUa" id="4FkjxxtbVZ3" role="2oAaxa">
-                <property role="2XbFUA" value="0..*" />
-                <property role="2XbFU$" value="0..1" />
-                <node concept="2oAaXF" id="4FkjxxtbVZ4" role="2oAawD">
-                  <ref role="3aaZtz" node="4FkjxxtbW2l" resolve="BorderMarksCL" />
-                </node>
-                <node concept="2oAaSB" id="4FkjxxtbVZ5" role="2oAawB">
-                  <node concept="2oAaXF" id="4FkjxxtbVZ6" role="2oAawq">
-                    <ref role="3aaZtz" node="4Fkjxxt2uWd" resolve="turnLeft" />
-                  </node>
-                </node>
-                <node concept="2oAawe" id="4FkjxxtbVZ7" role="2oAawy">
-                  <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
-                </node>
-              </node>
-              <node concept="x0Shc" id="4FkjxxtbW0h" role="2oAaxa">
-                <property role="1ewt2y" value="false" />
-                <node concept="2oAaW5" id="4FkjxxtbW2O" role="2oAaxa">
-                  <property role="TrG5h" value="BorderMarksCL" />
-                  <node concept="2oAaXF" id="4FkjxxtbW2P" role="2oAawq">
-                    <ref role="3aaZtz" node="4Fkjxxt2zdG" resolve="CommandList" />
-                  </node>
-                </node>
-                <node concept="2jq5PB" id="4FkjxxtbW2N" role="2oAaxa" />
-                <node concept="2oAaUa" id="4FkjxxtbW0i" role="2oAaxa">
-                  <property role="2XbFUA" value="0..*" />
-                  <property role="2XbFU$" value="0..1" />
-                  <node concept="2oAaXF" id="4FkjxxtbW0j" role="2oAawD">
-                    <ref role="3aaZtz" node="4FkjxxtbW2O" resolve="BorderMarksCL" />
-                  </node>
-                  <node concept="2oAaSB" id="4FkjxxtbW0k" role="2oAawB">
-                    <node concept="2oAaXF" id="4FkjxxtbW0l" role="2oAawq">
-                      <ref role="3aaZtz" node="4Fkjxxt2uWd" resolve="turnLeft" />
-                    </node>
-                  </node>
-                  <node concept="2oAawe" id="4FkjxxtbW0m" role="2oAawy">
-                    <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
-                  </node>
-                </node>
-                <node concept="2jq5PB" id="4FkjxxtbW1A" role="2oAaxa" />
-              </node>
+            <node concept="2oAawe" id="6y$oWiUbqvk" role="2oAawy">
+              <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
             </node>
           </node>
-        </node>
-        <node concept="2oAaXF" id="4Fkjxxtcpch" role="3B56nu">
-          <ref role="3aaZtz" node="4FkjxxtbW2l" resolve="BorderMarksCL" />
+          <node concept="2oAaUa" id="6y$oWiUbqvl" role="2oAaxa">
+            <property role="2XbFUA" value="0..*" />
+            <property role="2XbFU$" value="0..1" />
+            <node concept="2oAaXF" id="6y$oWiUbqvm" role="2oAawD">
+              <ref role="3aaZtz" node="6y$oWiUbmQX" resolve="BorderMarksCL" />
+            </node>
+            <node concept="2oAaSB" id="6y$oWiUbqvn" role="2oAawB">
+              <node concept="2oAaXF" id="6y$oWiUbqvo" role="2oAawq">
+                <ref role="3aaZtz" node="4Fkjxxt2uWd" resolve="turnLeft" />
+              </node>
+            </node>
+            <node concept="2oAawe" id="6y$oWiUbqvp" role="2oAawy">
+              <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
+            </node>
+          </node>
+          <node concept="2oAaUa" id="6y$oWiUbqvq" role="2oAaxa">
+            <property role="2XbFUA" value="0..*" />
+            <property role="2XbFU$" value="0..1" />
+            <node concept="2oAaXF" id="6y$oWiUbqvr" role="2oAawD">
+              <ref role="3aaZtz" node="6y$oWiUbmQX" resolve="BorderMarksCL" />
+            </node>
+            <node concept="2oAaSB" id="6y$oWiUbqvs" role="2oAawB">
+              <node concept="2oAaXF" id="6y$oWiUbqvt" role="2oAawq">
+                <ref role="3aaZtz" node="4Fkjxxt2uWd" resolve="turnLeft" />
+              </node>
+            </node>
+            <node concept="2oAawe" id="6y$oWiUbqvu" role="2oAawy">
+              <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2oAaUa" id="4FkjxxtbT5G" role="2oAaxa">
@@ -1731,8 +1742,8 @@
         <node concept="2oAaXF" id="4FkjxxtbT7K" role="2oAawB">
           <ref role="3aaZtz" node="4FkjxxtbK0m" resolve="whileNotMark_MarkAndStep" />
         </node>
-        <node concept="2oAaXF" id="4FkjxxtbT6z" role="2oAawD">
-          <ref role="3aaZtz" node="4FkjxxtbW2l" resolve="BorderMarksCL" />
+        <node concept="2oAaXF" id="6y$oWiUbqoz" role="2oAawD">
+          <ref role="3aaZtz" node="6y$oWiUbmQX" resolve="BorderMarksCL" />
         </node>
         <node concept="2oAawe" id="4FkjxxtbT7h" role="2oAawy">
           <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
@@ -2866,6 +2877,154 @@
       <node concept="2oAaXF" id="4Fkjxxtib9T" role="3B56nu">
         <ref role="3aaZtz" node="4FkjxxtdoLc" resolve="MazeScriptCL" />
       </node>
+      <node concept="x0Shc" id="6IBCQUROeF3" role="2uuBGn">
+        <property role="1ewt2y" value="false" />
+        <node concept="2oAaYs" id="6IBCQUROeF4" role="2oAaxa">
+          <ref role="3aaZtz" node="4FkjxxtdJ_z" resolve="SimpleCommands" />
+        </node>
+        <node concept="2jq5PB" id="6IBCQUROeF5" role="2oAaxa" />
+        <node concept="2oAaW5" id="6IBCQUROeF6" role="2oAaxa">
+          <property role="TrG5h" value="CommandList393350648" />
+          <node concept="2oAaXF" id="6IBCQUROeF9" role="2oAawq">
+            <ref role="3aaZtz" node="4Fkjxxt2zdG" resolve="CommandList" />
+          </node>
+        </node>
+        <node concept="2oAaUa" id="6IBCQUROeFa" role="2oAaxa">
+          <property role="2XbFUA" value="0..*" />
+          <property role="2XbFU$" value="0..1" />
+          <node concept="2oAaXF" id="6IBCQUROeFb" role="2oAawD">
+            <ref role="3aaZtz" node="6IBCQUROeF6" resolve="CommandList393350648" />
+          </node>
+          <node concept="2oAaXF" id="6IBCQUROeFc" role="2oAawB">
+            <ref role="3aaZtz" node="4FkjxxtdKlt" resolve="TurnLeft" />
+          </node>
+          <node concept="2oAawe" id="6IBCQUROeFd" role="2oAawy">
+            <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
+          </node>
+        </node>
+        <node concept="2oAaUa" id="6IBCQUROeFe" role="2oAaxa">
+          <property role="2XbFUA" value="0..*" />
+          <property role="2XbFU$" value="0..1" />
+          <node concept="2oAaXF" id="6IBCQUROeFf" role="2oAawD">
+            <ref role="3aaZtz" node="6IBCQUROeF6" resolve="CommandList393350648" />
+          </node>
+          <node concept="2oAaXF" id="6IBCQUROeFg" role="2oAawB">
+            <ref role="3aaZtz" node="4FkjxxtdKk3" resolve="Step" />
+          </node>
+          <node concept="2oAawe" id="6IBCQUROeFh" role="2oAawy">
+            <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
+          </node>
+        </node>
+        <node concept="x0Shc" id="6IBCQUROeFx" role="2oAaxa">
+          <property role="1ewt2y" value="false" />
+          <node concept="x0Shc" id="6IBCQUROeGv" role="2oAaxa">
+            <property role="1ewt2y" value="false" />
+            <node concept="2oAaUa" id="6IBCQUROeGw" role="2oAaxa">
+              <property role="2XbFUA" value="0..*" />
+              <property role="2XbFU$" value="0..1" />
+              <node concept="2oAaXF" id="6IBCQUROeGx" role="2oAawD">
+                <ref role="3aaZtz" node="6IBCQUROeF6" resolve="CommandList393350648" />
+              </node>
+              <node concept="2oAaSB" id="6IBCQUROeGy" role="2oAawB">
+                <node concept="2oAaXF" id="6IBCQUROeGz" role="2oAawq">
+                  <ref role="3aaZtz" node="4Fkjxxt2uWd" resolve="turnLeft" />
+                </node>
+              </node>
+              <node concept="2oAawe" id="6IBCQUROeG$" role="2oAawy">
+                <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
+              </node>
+            </node>
+            <node concept="x0Shc" id="6IBCQUROeHC" role="2oAaxa">
+              <property role="1ewt2y" value="false" />
+              <node concept="2oAaUa" id="6IBCQUROeHD" role="2oAaxa">
+                <property role="2XbFUA" value="0..*" />
+                <property role="2XbFU$" value="0..1" />
+                <node concept="2oAaXF" id="6IBCQUROeHE" role="2oAawD">
+                  <ref role="3aaZtz" node="6IBCQUROeF6" resolve="CommandList393350648" />
+                </node>
+                <node concept="2oAaSB" id="6IBCQUROeHF" role="2oAawB">
+                  <node concept="2oAaXF" id="6IBCQUROeHG" role="2oAawq">
+                    <ref role="3aaZtz" node="4Fkjxxt2uWd" resolve="turnLeft" />
+                  </node>
+                </node>
+                <node concept="2oAawe" id="6IBCQUROeHH" role="2oAawy">
+                  <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
+                </node>
+              </node>
+              <node concept="x0Shc" id="6IBCQUROeIR" role="2oAaxa">
+                <property role="1ewt2y" value="false" />
+                <node concept="2oAaUa" id="6IBCQUROeIS" role="2oAaxa">
+                  <property role="2XbFUA" value="0..*" />
+                  <property role="2XbFU$" value="0..1" />
+                  <node concept="2oAaXF" id="6IBCQUROeIT" role="2oAawD">
+                    <ref role="3aaZtz" node="6IBCQUROeF6" resolve="CommandList393350648" />
+                  </node>
+                  <node concept="2oAaSB" id="6IBCQUROeIU" role="2oAawB">
+                    <node concept="2oAaXF" id="6IBCQUROeIV" role="2oAawq">
+                      <ref role="3aaZtz" node="4Fkjxxt2uWd" resolve="turnLeft" />
+                    </node>
+                  </node>
+                  <node concept="2oAawe" id="6IBCQUROeIW" role="2oAawy">
+                    <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
+                  </node>
+                </node>
+                <node concept="2jq5PB" id="6IBCQUROeKc" role="2oAaxa" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2jq5PB" id="6IBCQUROeKd" role="2oAaxa" />
+        <node concept="2oAaW5" id="6IBCQUROeKe" role="2oAaxa">
+          <property role="TrG5h" value="while876644350" />
+          <node concept="2oAaXF" id="6IBCQUROeKh" role="2oAawq">
+            <ref role="3aaZtz" node="4Fkjxxt2v4y" resolve="while" />
+          </node>
+        </node>
+        <node concept="x0Shc" id="6IBCQUROeL1" role="2oAaxa">
+          <property role="1ewt2y" value="false" />
+          <node concept="2oAaUa" id="6IBCQUROeL2" role="2oAaxa">
+            <property role="2XbFUA" value="0..*" />
+            <property role="2XbFU$" value="0..1" />
+            <node concept="2oAaXF" id="6IBCQUROeL3" role="2oAawD">
+              <ref role="3aaZtz" node="6IBCQUROeKe" resolve="while876644350" />
+            </node>
+            <node concept="2oAaXF" id="6IBCQUROeL4" role="2oAawB">
+              <ref role="3aaZtz" node="4FkjxxtdLAh" resolve="WallAhead" />
+            </node>
+            <node concept="2oAawe" id="6IBCQUROeL5" role="2oAawy">
+              <ref role="3aaZtz" node="4Fkjxxt2zyl" resolve="whileCond" />
+            </node>
+          </node>
+          <node concept="2oAaUa" id="6IBCQUROeL6" role="2oAaxa">
+            <property role="2XbFUA" value="0..*" />
+            <property role="2XbFU$" value="0..1" />
+            <node concept="2oAaXF" id="6IBCQUROeL7" role="2oAawD">
+              <ref role="3aaZtz" node="6IBCQUROeKe" resolve="while876644350" />
+            </node>
+            <node concept="2oAaXF" id="6IBCQUROeL8" role="2oAawB">
+              <ref role="3aaZtz" node="6IBCQUROeF6" resolve="CommandList393350648" />
+            </node>
+            <node concept="2oAawe" id="6IBCQUROeL9" role="2oAawy">
+              <ref role="3aaZtz" node="4Fkjxxt2zRD" resolve="body" />
+            </node>
+          </node>
+        </node>
+        <node concept="2jq5PB" id="6IBCQUROeLa" role="2oAaxa" />
+        <node concept="2oAaUa" id="6IBCQUROeLb" role="2oAaxa">
+          <property role="2XbFUA" value="0..*" />
+          <property role="2XbFU$" value="0..1" />
+          <node concept="2oAaXF" id="6IBCQUROeLc" role="2oAawD">
+            <ref role="3aaZtz" node="4FkjxxtdoLc" resolve="MazeScriptCL" />
+          </node>
+          <node concept="2oAaXF" id="6IBCQUROeLd" role="2oAawB">
+            <ref role="3aaZtz" node="6IBCQUROeKe" resolve="while876644350" />
+          </node>
+          <node concept="2oAawe" id="6IBCQUROeLe" role="2oAawy">
+            <ref role="3aaZtz" node="4Fkjxxt2DcT" resolve="commands" />
+          </node>
+        </node>
+        <node concept="2jq5PB" id="6IBCQUROeLf" role="2oAaxa" />
+      </node>
     </node>
     <node concept="2oAaUa" id="4Fkjxxti6A8" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
@@ -2889,7 +3048,7 @@
         <ref role="3aaZtz" node="4FkjxxtdoLc" resolve="MazeScriptCL" />
       </node>
     </node>
-    <node concept="2jq5PB" id="4FkjxxtdtSC" role="2oAaxa" />
+    <node concept="2jq5PB" id="6y$oWiUbwuW" role="2oAaxa" />
     <node concept="2oAaVg" id="4FkjxxtbrlJ" role="2oAaxa">
       <property role="1ewt2y" value="false" />
       <property role="TrG5h" value="WhileNotHeadingSouth_OneTurnLeft" />
@@ -3038,8 +3197,6 @@
         </node>
       </node>
     </node>
-    <node concept="2jq5PB" id="4Fkjxxtdpke" role="2oAaxa" />
-    <node concept="2jq5PB" id="4Fkjxxti5bf" role="2oAaxa" />
   </node>
   <node concept="2oAaVg" id="4FkjxxtdJ_z">
     <property role="1ewt2y" value="false" />
