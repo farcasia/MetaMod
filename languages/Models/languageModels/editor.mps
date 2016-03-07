@@ -2410,6 +2410,7 @@
         <node concept="3F0ifn" id="2g9pCO5aWgz" role="3EZMnx" />
         <node concept="3F2HdR" id="2g9pCO5aW3J" role="3EZMnx">
           <ref role="1NtTu8" to="v0yp:7zWtwVwpdT4" />
+          <ref role="34QXea" node="2g9pCO52Ide" resolve="AddNewLTToList" />
           <node concept="2iRkQZ" id="2g9pCO5aW3K" role="2czzBx" />
           <node concept="4$FPG" id="4Fkjxxt32sQ" role="4_6I_">
             <node concept="3clFbS" id="4Fkjxxt32sR" role="2VODD2">
