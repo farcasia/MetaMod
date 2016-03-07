@@ -1368,9 +1368,6 @@
     <property role="3GE5qa" value="Models" />
     <property role="TrG5h" value="MarksOnBorder" />
     <ref role="19kf5F" node="4o4IMwo_iqx" resolve="Kaja" />
-    <node concept="2oAaYs" id="4Fkjxxtfba7" role="2oAaxa">
-      <ref role="3aaZtz" node="4FkjxxtdL_s" resolve="SimpleLogicalExpressions" />
-    </node>
     <node concept="2oAaW5" id="4FkjxxtbJXc" role="2oAaxa">
       <property role="TrG5h" value="BorderMarks" />
       <node concept="2oAaXF" id="4FkjxxtbJZg" role="2oAawq">
