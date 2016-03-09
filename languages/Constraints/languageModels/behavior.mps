@@ -250,7 +250,7 @@
             <node concept="34ab3g" id="6dXtnCWny0s" role="3cqZAp">
               <property role="35gtTG" value="error" />
               <node concept="Xl_RD" id="6dXtnCWny0u" role="34bqiv">
-                <property role="Xl_RC" value="There should be just one configuration file for code generation!" />
+                <property role="Xl_RC" value="There should be just one configuration file for code generation / constraints!" />
               </node>
             </node>
             <node concept="3cpWs6" id="6dXtnCWn$1e" role="3cqZAp">

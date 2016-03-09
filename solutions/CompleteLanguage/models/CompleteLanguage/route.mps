@@ -554,14 +554,14 @@
     <node concept="2oAaUa" id="26DSjBDLKxd" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="26DSjBDLKBD" role="2oAawB">
-        <ref role="3aaZtz" node="26DSjBDLI7E" resolve="Com1" />
-      </node>
       <node concept="2oAaXF" id="26DSjBDLK$a" role="2oAawD">
         <ref role="3aaZtz" node="5UqrlCgt42L" resolve="RectRoute" />
       </node>
       <node concept="2oAawe" id="26DSjBDLK_e" role="2oAawy">
         <ref role="3aaZtz" node="5UqrlCgsUdS" resolve="commands" />
+      </node>
+      <node concept="2oAaXF" id="5atMD4NBD0i" role="2oAawB">
+        <ref role="3aaZtz" node="26DSjBDLI7E" resolve="Com1" />
       </node>
     </node>
     <node concept="2oAaUa" id="26DSjBDLKEX" role="2oAaxa">

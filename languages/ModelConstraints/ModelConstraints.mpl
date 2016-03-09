@@ -16,6 +16,7 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">a57b016d-56cb-48d5-8806-f5911569ac8b(RuntimeClasses)</dependency>
+        <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>

@@ -109,7 +109,6 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -447,22 +446,23 @@
             <node concept="34ab3g" id="6dXtnCWny0s" role="3cqZAp">
               <property role="35gtTG" value="error" />
               <node concept="Xl_RD" id="6dXtnCWny0u" role="34bqiv">
-                <property role="Xl_RC" value="There should be just one configuration file for code generation!" />
+                <property role="Xl_RC" value="There should be at least one configuration file for code generation!" />
               </node>
             </node>
+            <node concept="3clFbH" id="5atMD4NDNNo" role="3cqZAp" />
             <node concept="3cpWs6" id="6dXtnCWn$1e" role="3cqZAp">
               <node concept="10Nm6u" id="2TStaYk4huX" role="3cqZAk" />
             </node>
           </node>
-          <node concept="3y3z36" id="6dXtnCWnxB5" role="3clFbw">
-            <node concept="3cmrfG" id="6dXtnCWnxO2" role="3uHU7w">
-              <property role="3cmrfH" value="1" />
-            </node>
+          <node concept="3clFbC" id="1e3OgxFTPl3" role="3clFbw">
             <node concept="2OqwBi" id="6dXtnCWnrjZ" role="3uHU7B">
               <node concept="37vLTw" id="6dXtnCWnqzd" role="2Oq$k0">
                 <ref role="3cqZAo" node="6dXtnCWnoBw" resolve="configFiles" />
               </node>
               <node concept="34oBXx" id="6dXtnCWnw7Z" role="2OqNvi" />
+            </node>
+            <node concept="3cmrfG" id="6dXtnCWnxO2" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
             </node>
           </node>
         </node>

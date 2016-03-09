@@ -8,6 +8,7 @@
   <imports>
     <import index="z64h" ref="r:52e1580a-16d3-4b41-b86d-411ead3ce794(Models.behavior)" />
     <import index="wz6r" ref="r:395bdffb-840e-4312-80d8-b18c172eee46(RuntimeClasses.runtime)" />
+    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" implicit="true" />
   </imports>
@@ -774,7 +775,7 @@
           </node>
         </node>
         <node concept="3clFbH" id="6hHbyxTlCY0" role="3cqZAp" />
-        <node concept="3clFbF" id="45NpebPmZQI" role="3cqZAp">
+        <node concept="3clFbF" id="3Nl4fss$1av" role="3cqZAp">
           <node concept="2OqwBi" id="45NpebPmZQJ" role="3clFbG">
             <node concept="37vLTw" id="45NpebPmZQK" role="2Oq$k0">
               <ref role="3cqZAo" node="45NpebPmZQx" resolve="codeGen" />
