@@ -12,6 +12,7 @@
         <child id="8717972784948764180" name="conformsTo" index="2oAawq" />
       </concept>
       <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
+        <property id="9017624775202900822" name="main" index="3uBway" />
         <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
@@ -38,6 +39,7 @@
   </registry>
   <node concept="2oAaVg" id="5v3N1I1qnA3">
     <property role="TrG5h" value="BasicMetaMod" />
+    <property role="3uBway" value="true" />
     <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
     <node concept="2oAaUZ" id="7O7EsH2WfB8" role="2oAaxa">
       <property role="2XbFUA" value="0..n" />
