@@ -10,6 +10,7 @@
       <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
       <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <property id="4406892874363944218" name="partial" index="1ewt2y" />
+        <property id="9017624775202900822" name="main" index="3uBway" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
@@ -37,6 +38,7 @@
   <node concept="2oAaVg" id="IagpToYXhL">
     <property role="1ewt2y" value="false" />
     <property role="TrG5h" value="Kaja" />
+    <property role="3uBway" value="true" />
     <node concept="2oAaW5" id="IagpToYXi2" role="2oAaxa">
       <property role="TrG5h" value="Script" />
     </node>

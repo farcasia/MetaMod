@@ -208,6 +208,7 @@
       </concept>
       <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <property id="4406892874363944218" name="partial" index="1ewt2y" />
+        <property id="9017624775202900822" name="main" index="3uBway" />
         <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
@@ -317,6 +318,7 @@
     <property role="1ewt2y" value="false" />
     <property role="TrG5h" value="Kaja" />
     <property role="3GE5qa" value="Metamodels" />
+    <property role="3uBway" value="true" />
     <node concept="2oAaYs" id="4o4IMwo_iry" role="2oAaxa">
       <ref role="3aaZtz" node="4o4IMwo_iqG" resolve="BasicRobotLogicalExpressions" />
     </node>
@@ -1205,6 +1207,10 @@
         <node concept="x0Shc" id="4FkjxxtbJ4i" role="3B56nf">
           <property role="1ewt2y" value="false" />
           <ref role="19kf5F" node="4o4IMwo_iqx" resolve="Kaja" />
+          <node concept="2oAaYs" id="7O_2vizIF2W" role="2oAaxa">
+            <ref role="3aaZtz" node="4FkjxxtdJ_z" resolve="SimpleCommands" />
+          </node>
+          <node concept="2jq5PB" id="7O_2vizIw_0" role="2oAaxa" />
           <node concept="2oAaW5" id="4FkjxxtbJ4l" role="2oAaxa">
             <property role="TrG5h" value="whileWallAhead" />
             <node concept="2oAaXF" id="4FkjxxtbJcI" role="2oAawq">
@@ -1220,10 +1226,8 @@
           <node concept="2oAaUa" id="4FkjxxtbVs2" role="2oAaxa">
             <property role="2XbFUA" value="0..*" />
             <property role="2XbFU$" value="0..1" />
-            <node concept="2oAaSB" id="4FkjxxtbVu9" role="2oAawB">
-              <node concept="2oAaXF" id="4FkjxxtbVvb" role="2oAawq">
-                <ref role="3aaZtz" node="4Fkjxxt2uWd" resolve="turnLeft" />
-              </node>
+            <node concept="2oAaXF" id="7O_2vizIF5A" role="2oAawB">
+              <ref role="3aaZtz" node="4FkjxxtdKlt" resolve="TurnLeft" />
             </node>
             <node concept="2oAaXF" id="4FkjxxtbVsN" role="2oAawD">
               <ref role="3aaZtz" node="4FkjxxtbVgT" resolve="oneTurnLeftCL" />
@@ -1297,13 +1301,15 @@
         <node concept="x0Shc" id="4FkjxxtbIXQ" role="3B56nf">
           <property role="1ewt2y" value="false" />
           <ref role="19kf5F" node="4o4IMwo_iqx" resolve="Kaja" />
+          <node concept="2oAaYs" id="7O_2vizIGyb" role="2oAaxa">
+            <ref role="3aaZtz" node="4FkjxxtdJ_z" resolve="SimpleCommands" />
+          </node>
+          <node concept="2jq5PB" id="7O_2vizIGxQ" role="2oAaxa" />
           <node concept="2oAaUa" id="4FkjxxtbIXT" role="2oAaxa">
             <property role="2XbFUA" value="0..*" />
             <property role="2XbFU$" value="0..1" />
-            <node concept="2oAaSB" id="4FkjxxtbIYX" role="2oAawB">
-              <node concept="2oAaXF" id="4FkjxxtbJ0y" role="2oAawq">
-                <ref role="3aaZtz" node="4Fkjxxt2uU4" resolve="drop" />
-              </node>
+            <node concept="2oAaXF" id="7O_2vizIGz4" role="2oAawB">
+              <ref role="3aaZtz" node="4FkjxxtdJ_$" resolve="Drop" />
             </node>
             <node concept="3B6VN0" id="4FkjxxtbIY5" role="2oAawD">
               <ref role="3B56nS" node="4FkjxxtbIXz" resolve="inComList" />
