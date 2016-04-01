@@ -485,7 +485,7 @@
   </node>
   <node concept="2sgARr" id="1xqZdIOeM7u">
     <property role="3GE5qa" value="Types" />
-    <property role="TrG5h" value="supertypes_ConceptType" />
+    <property role="TrG5h" value="supertypesOf_ConceptType" />
     <node concept="3clFbS" id="1xqZdIOeM7v" role="2sgrp5">
       <node concept="3cpWs8" id="1xqZdIOeM7A" role="3cqZAp">
         <node concept="3cpWsn" id="1xqZdIOeM7D" role="3cpWs9">

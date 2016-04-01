@@ -30,6 +30,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -39,6 +42,7 @@
     <property role="1ewt2y" value="false" />
     <property role="TrG5h" value="Kaja" />
     <property role="3uBway" value="true" />
+    <property role="3GE5qa" value="Metamodels" />
     <node concept="2oAaW5" id="IagpToYXi2" role="2oAaxa">
       <property role="TrG5h" value="Script" />
     </node>
@@ -555,9 +559,13 @@
   </node>
   <node concept="2oAaVg" id="IagpToYXmz">
     <property role="1ewt2y" value="false" />
-    <property role="TrG5h" value="SceneGridBuilderCommands" />
+    <property role="TrG5h" value="BuildGridCommands" />
+    <property role="3GE5qa" value="Metamodels" />
     <node concept="2oAaYs" id="IagpToZ5Ls" role="2oAaxa">
       <ref role="3aaZtz" node="IagpToYXl3" resolve="Primitives" />
+    </node>
+    <node concept="2oAaYs" id="2VVD4C6l859" role="2oAaxa">
+      <ref role="3aaZtz" node="3NFr8TBgH$2" resolve="LayoutAndItemsCommands" />
     </node>
     <node concept="2jq5PB" id="IagpToZ5Mm" role="2oAaxa" />
     <node concept="2oAaW5" id="IagpToYXmD" role="2oAaxa">
@@ -578,6 +586,17 @@
     </node>
     <node concept="2oAaW5" id="IagpToYXmI" role="2oAaxa">
       <property role="TrG5h" value="pickMark" />
+    </node>
+    <node concept="2jq5PB" id="2VVD4C6l7P2" role="2oAaxa" />
+    <node concept="2oAaZ9" id="IagpToYXmO" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="IagpToYXmM" role="2oAawD">
+        <ref role="3aaZtz" node="IagpToYXmD" resolve="BuilderCommand" />
+      </node>
+      <node concept="2oAaXF" id="IagpToYXmN" role="2oAawB">
+        <ref role="3aaZtz" node="IagpToYXmE" resolve="Command" />
+      </node>
     </node>
     <node concept="2jq5PB" id="IagpToZ5u5" role="2oAaxa" />
     <node concept="2oAaUZ" id="IagpToYXmR" role="2oAaxa">
@@ -602,62 +621,11 @@
         <ref role="3aaZtz" node="IagpToYXl5" resolve="Int" />
       </node>
     </node>
-    <node concept="2jq5PB" id="IagpToZ5vw" role="2oAaxa" />
-    <node concept="2oAaZ9" id="IagpToYXmO" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
-      <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="IagpToYXmM" role="2oAawD">
-        <ref role="3aaZtz" node="IagpToYXmD" resolve="BuilderCommand" />
-      </node>
-      <node concept="2oAaXF" id="IagpToYXmN" role="2oAawB">
-        <ref role="3aaZtz" node="IagpToYXmE" resolve="Command" />
-      </node>
-    </node>
-    <node concept="2jq5PB" id="IagpToZ5wc" role="2oAaxa" />
-    <node concept="2oAaZ9" id="IagpToYXmX" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
-      <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="IagpToYXmV" role="2oAawD">
-        <ref role="3aaZtz" node="IagpToYXmF" resolve="buildWall" />
-      </node>
-      <node concept="2oAaXF" id="IagpToYXmW" role="2oAawB">
-        <ref role="3aaZtz" node="IagpToYXmD" resolve="BuilderCommand" />
-      </node>
-    </node>
-    <node concept="2oAaZ9" id="IagpToYXn0" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
-      <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="IagpToYXmY" role="2oAawD">
-        <ref role="3aaZtz" node="IagpToYXmG" resolve="destroydWall" />
-      </node>
-      <node concept="2oAaXF" id="IagpToYXmZ" role="2oAawB">
-        <ref role="3aaZtz" node="IagpToYXmD" resolve="BuilderCommand" />
-      </node>
-    </node>
-    <node concept="2oAaZ9" id="IagpToYXn3" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
-      <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="IagpToYXn1" role="2oAawD">
-        <ref role="3aaZtz" node="IagpToYXmH" resolve="dropMark" />
-      </node>
-      <node concept="2oAaXF" id="IagpToYXn2" role="2oAawB">
-        <ref role="3aaZtz" node="IagpToYXmD" resolve="BuilderCommand" />
-      </node>
-    </node>
-    <node concept="2oAaZ9" id="IagpToYXn6" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
-      <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="IagpToYXn4" role="2oAawD">
-        <ref role="3aaZtz" node="IagpToYXmI" resolve="pickMark" />
-      </node>
-      <node concept="2oAaXF" id="IagpToYXn5" role="2oAawB">
-        <ref role="3aaZtz" node="IagpToYXmD" resolve="BuilderCommand" />
-      </node>
-    </node>
   </node>
   <node concept="2oAaVg" id="IagpToYXlE">
     <property role="1ewt2y" value="false" />
     <property role="TrG5h" value="RobotCommands" />
+    <property role="3GE5qa" value="Metamodels" />
     <node concept="2oAaW5" id="IagpToYXlJ" role="2oAaxa">
       <property role="TrG5h" value="Command" />
     </node>
@@ -837,6 +805,7 @@
   <node concept="2oAaVg" id="IagpToYXkr">
     <property role="1ewt2y" value="false" />
     <property role="TrG5h" value="BasicRobotLogicalExpressions" />
+    <property role="3GE5qa" value="Metamodels" />
     <node concept="2oAaW5" id="IagpToYXku" role="2oAaxa">
       <property role="TrG5h" value="LogicalExpression" />
     </node>
@@ -962,6 +931,7 @@
   <node concept="2oAaVg" id="IagpToYXCB">
     <property role="1ewt2y" value="false" />
     <property role="TrG5h" value="Commands" />
+    <property role="3GE5qa" value="Metamodels" />
     <node concept="2oAaW5" id="IagpToYXCD" role="2oAaxa">
       <property role="TrG5h" value="Command" />
     </node>
@@ -993,6 +963,7 @@
   <node concept="2oAaVg" id="IagpToYXn7">
     <property role="1ewt2y" value="false" />
     <property role="TrG5h" value="Direction" />
+    <property role="3GE5qa" value="Metamodels" />
     <node concept="2oAaW5" id="IagpToYXn9" role="2oAaxa">
       <property role="TrG5h" value="Direction" />
     </node>
@@ -1052,6 +1023,7 @@
   <node concept="2oAaVg" id="IagpToYXl8">
     <property role="1ewt2y" value="false" />
     <property role="TrG5h" value="LogicalOperators" />
+    <property role="3GE5qa" value="Metamodels" />
     <node concept="2oAaW5" id="IagpToYXlc" role="2oAaxa">
       <property role="TrG5h" value="LogicalExpression" />
     </node>
@@ -1157,6 +1129,7 @@
   <node concept="2oAaVg" id="IagpToYXl3">
     <property role="1ewt2y" value="false" />
     <property role="TrG5h" value="Primitives" />
+    <property role="3GE5qa" value="Metamodels" />
     <node concept="2oAaW5" id="IagpToYXl5" role="2oAaxa">
       <property role="TrG5h" value="Int" />
     </node>
@@ -1165,6 +1138,80 @@
     </node>
     <node concept="2oAaW5" id="IagpToYXl7" role="2oAaxa">
       <property role="TrG5h" value="Boolean" />
+    </node>
+  </node>
+  <node concept="2oAaVg" id="3NFr8TBgH$2">
+    <property role="1ewt2y" value="false" />
+    <property role="TrG5h" value="LayoutAndItemsCommands" />
+    <property role="3GE5qa" value="Metamodels" />
+    <node concept="2oAaVg" id="3NFr8TBgH$3" role="2oAaxa">
+      <property role="1ewt2y" value="false" />
+      <property role="TrG5h" value="LayoutCommands" />
+      <node concept="2oAaW5" id="3NFr8TBgH$4" role="2oAaxa">
+        <property role="TrG5h" value="BuilderCommand" />
+      </node>
+      <node concept="2oAaW5" id="3NFr8TBgH$5" role="2oAaxa">
+        <property role="TrG5h" value="buildWall" />
+      </node>
+      <node concept="2oAaW5" id="3NFr8TBgH$6" role="2oAaxa">
+        <property role="TrG5h" value="destroyWall" />
+      </node>
+      <node concept="2jq5PB" id="3NFr8TBgH$7" role="2oAaxa" />
+      <node concept="2oAaZ9" id="3NFr8TBgH$8" role="2oAaxa">
+        <property role="2XbFUA" value="0..*" />
+        <property role="2XbFU$" value="0..1" />
+        <node concept="2oAaXF" id="3NFr8TBgH$9" role="2oAawB">
+          <ref role="3aaZtz" node="3NFr8TBgH$4" resolve="BuilderCommand" />
+        </node>
+        <node concept="2oAaXF" id="3NFr8TBgH$a" role="2oAawD">
+          <ref role="3aaZtz" node="3NFr8TBgH$5" resolve="buildWall" />
+        </node>
+      </node>
+      <node concept="2oAaZ9" id="3NFr8TBgH$b" role="2oAaxa">
+        <property role="2XbFUA" value="0..*" />
+        <property role="2XbFU$" value="0..1" />
+        <node concept="2oAaXF" id="3NFr8TBgH$c" role="2oAawB">
+          <ref role="3aaZtz" node="3NFr8TBgH$4" resolve="BuilderCommand" />
+        </node>
+        <node concept="2oAaXF" id="3NFr8TBgH$d" role="2oAawD">
+          <ref role="3aaZtz" node="3NFr8TBgH$6" resolve="destroyWall" />
+        </node>
+      </node>
+    </node>
+    <node concept="2jq5PB" id="3NFr8TBgH$e" role="2oAaxa" />
+    <node concept="2oAaVg" id="3NFr8TBgH$f" role="2oAaxa">
+      <property role="1ewt2y" value="false" />
+      <property role="TrG5h" value="ItemsCommands" />
+      <node concept="2oAaW5" id="3NFr8TBgH$g" role="2oAaxa">
+        <property role="TrG5h" value="BuilderCommand" />
+      </node>
+      <node concept="2oAaW5" id="3NFr8TBgH$h" role="2oAaxa">
+        <property role="TrG5h" value="dropMark" />
+      </node>
+      <node concept="2oAaW5" id="3NFr8TBgH$i" role="2oAaxa">
+        <property role="TrG5h" value="pickMark" />
+      </node>
+      <node concept="2jq5PB" id="3NFr8TBgH$j" role="2oAaxa" />
+      <node concept="2oAaZ9" id="3NFr8TBgH$k" role="2oAaxa">
+        <property role="2XbFUA" value="0..*" />
+        <property role="2XbFU$" value="0..1" />
+        <node concept="2oAaXF" id="3NFr8TBgH$l" role="2oAawB">
+          <ref role="3aaZtz" node="3NFr8TBgH$g" resolve="BuilderCommand" />
+        </node>
+        <node concept="2oAaXF" id="3NFr8TBgH$m" role="2oAawD">
+          <ref role="3aaZtz" node="3NFr8TBgH$h" resolve="dropMark" />
+        </node>
+      </node>
+      <node concept="2oAaZ9" id="3NFr8TBgH$n" role="2oAaxa">
+        <property role="2XbFUA" value="0..*" />
+        <property role="2XbFU$" value="0..1" />
+        <node concept="2oAaXF" id="3NFr8TBgH$o" role="2oAawB">
+          <ref role="3aaZtz" node="3NFr8TBgH$g" resolve="BuilderCommand" />
+        </node>
+        <node concept="2oAaXF" id="3NFr8TBgH$p" role="2oAawD">
+          <ref role="3aaZtz" node="3NFr8TBgH$i" resolve="pickMark" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -1387,7 +1387,7 @@
                               </node>
                               <node concept="3cpWs3" id="3OCrrxNOErU" role="3uHU7B">
                                 <node concept="Xl_RD" id="3OCrrxNOErV" role="3uHU7B">
-                                  <property role="Xl_RC" value="The source multiplicity of relation " />
+                                  <property role="Xl_RC" value="The target multiplicity of relation " />
                                 </node>
                                 <node concept="37vLTw" id="3OCrrxNOErW" role="3uHU7w">
                                   <ref role="3cqZAo" node="3OCrrxNOEr_" resolve="rel" />
@@ -1470,7 +1470,6 @@
               <node concept="3lbrtF" id="3OCrrxNOEsp" role="2OqNvi" />
             </node>
           </node>
-          <node concept="3clFbH" id="3OCrrxNODwT" role="3cqZAp" />
         </node>
         <node concept="3fqX7Q" id="3OCrrxNNVv$" role="3clFbw">
           <node concept="2OqwBi" id="3OCrrxNNVvA" role="3fr31v">
