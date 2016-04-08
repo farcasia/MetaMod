@@ -345,7 +345,7 @@
         <ref role="1NtTu8" to="v0yp:7zWtwVwpdSB" />
       </node>
       <node concept="3F0ifn" id="1vxM8_OxnRm" role="3EZMnx">
-        <property role="3F0ifm" value="is a" />
+        <property role="3F0ifm" value="alias" />
       </node>
       <node concept="3F1sOY" id="7zWtwVwpdUp" role="3EZMnx">
         <ref role="1NtTu8" to="v0yp:7zWtwVwpdSD" />

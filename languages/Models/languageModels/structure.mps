@@ -167,6 +167,7 @@
   </node>
   <node concept="1TIwiD" id="7zWtwVwpdB7">
     <property role="TrG5h" value="Subtype" />
+    <property role="34LRSv" value="is a" />
     <ref role="1TJDcQ" node="7zWtwVwpdy4" resolve="Relation" />
   </node>
   <node concept="1TIwiD" id="7zWtwVwpdS0">
