@@ -1,5 +1,6 @@
 workspace.xml
 build.properties
+solutions/PhilipsDSL
 
 # Ignore all directories containing generated
 # java classes and java source files
