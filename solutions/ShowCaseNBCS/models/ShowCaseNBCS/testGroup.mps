@@ -45,6 +45,8 @@
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
+        <property id="3979997632601093222" name="targetCard" index="2XbFU$" />
+        <property id="3979997632601093220" name="sourceCard" index="2XbFUA" />
         <child id="8717972784948764204" name="conformsTo" index="2oAawy" />
         <child id="8717972784948764201" name="target" index="2oAawB" />
         <child id="8717972784948764199" name="source" index="2oAawD" />
@@ -128,6 +130,8 @@
                 </node>
               </node>
               <node concept="2oAaUa" id="4r$sIq1L1LK" role="2oAaxa">
+                <property role="2XbFUA" value="0..*" />
+                <property role="2XbFU$" value="0..*" />
                 <node concept="3B6VN0" id="4r$sIq1L1Mk" role="2oAawB">
                   <ref role="3B56nS" node="4r$sIq1L1KG" resolve="Prev" />
                 </node>
@@ -641,6 +645,8 @@
     <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
     <node concept="2oAaUZ" id="3Ky4PoV$GpT" role="2oAaxa">
       <property role="TrG5h" value="Relation" />
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..*" />
       <node concept="2oAaW5" id="3Ky4PoV$Gqe" role="2oAawB">
         <property role="TrG5h" value="BM" />
         <node concept="2oAaXF" id="57Oty_7kUXy" role="2oAawq">
