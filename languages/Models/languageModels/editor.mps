@@ -27,6 +27,7 @@
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="wo6c" ref="r:de91083f-90a8-4dd4-83b1-8a92d65ab81d(de.itemis.mps.editor.diagram.shapes)" />
+    <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
@@ -298,6 +299,8 @@
         <child id="7890587897031726225" name="query" index="2M4AHN" />
       </concept>
       <concept id="7890587897031711745" name="de.itemis.mps.editor.diagram.structure.Content_GenericEdgeQuery" flags="ng" index="2M4Efz" />
+      <concept id="6237710625713942002" name="de.itemis.mps.editor.diagram.structure.Content_BLQuery" flags="ig" index="2ZMM4L" />
+      <concept id="6237710625713964946" name="de.itemis.mps.editor.diagram.structure.Parameter_Node" flags="ng" index="2ZN8Hh" />
       <concept id="8963411245957652387" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_Query" flags="ig" index="37q72E" />
       <concept id="8963411245958754161" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_ParameterObject" flags="ng" index="37u81S" />
       <concept id="301931493264781535" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramContent" flags="ng" index="3IJ5R8" />
@@ -2856,7 +2859,20 @@
                 <property role="3F0ifm" value="group {" />
               </node>
             </node>
-            <node concept="27vDVx" id="5qE5EZG9V2J" role="3EZMnx" />
+            <node concept="27vDVx" id="5qE5EZG9V2J" role="3EZMnx">
+              <node concept="2ZMM4L" id="5jb2jQP1B$d" role="aCds2">
+                <node concept="3clFbS" id="5jb2jQP1B$f" role="2VODD2">
+                  <node concept="3clFbF" id="5jb2jQP1BYv" role="3cqZAp">
+                    <node concept="2OqwBi" id="5jb2jQP1C4o" role="3clFbG">
+                      <node concept="2ZN8Hh" id="5jb2jQP1BYu" role="2Oq$k0" />
+                      <node concept="3Tsc0h" id="5jb2jQP1CD8" role="2OqNvi">
+                        <ref role="3TtcxE" to="v0yp:7zWtwVwpdT4" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3F0ifn" id="5qE5EZG9R4_" role="3EZMnx">
               <property role="3F0ifm" value="}" />
             </node>
@@ -2877,6 +2893,12 @@
       <node concept="2M4Efz" id="7KXhT6n$sJj" role="aCds2">
         <node concept="37q72E" id="7KXhT6n$sJm" role="2M4AHN">
           <node concept="3clFbS" id="7KXhT6n$sJn" role="2VODD2">
+            <node concept="34ab3g" id="5jb2jQOUtzN" role="3cqZAp">
+              <property role="35gtTG" value="info" />
+              <node concept="Xl_RD" id="5jb2jQOUtzP" role="34bqiv">
+                <property role="Xl_RC" value="We enter in query at least!" />
+              </node>
+            </node>
             <node concept="3clFbF" id="7KXhT6n$_Q7" role="3cqZAp">
               <node concept="1Ls8ON" id="7KXhT6n$_Q6" role="3clFbG">
                 <node concept="2OqwBi" id="7KXhT6n$Aka" role="1Lso8e">
@@ -3007,20 +3029,11 @@
                   <node concept="3cpWsn" id="7KXhT6nKciL" role="3cpWs9">
                     <property role="TrG5h" value="id_source" />
                     <node concept="17QB3L" id="7KXhT6nKciM" role="1tU5fm" />
-                    <node concept="3cpWs3" id="7KXhT6nKciN" role="33vP2m">
-                      <node concept="2YIFZM" id="7KXhT6nKciO" role="3uHU7B">
-                        <ref role="1Pybhc" to="z64h:7KXhT6nIabG" resolve="DiagramUtilityMetods" />
-                        <ref role="37wK5l" to="z64h:7KXhT6nJOzc" resolve="nameNearestContainingGroup" />
-                        <node concept="37vLTw" id="7KXhT6nKciP" role="37wK5m">
-                          <ref role="3cqZAo" node="7KXhT6n$O5Q" resolve="source" />
-                        </node>
-                      </node>
-                      <node concept="2YIFZM" id="7KXhT6nKciQ" role="3uHU7w">
-                        <ref role="37wK5l" to="z64h:7KXhT6nIbv5" resolve="nameOfConcept" />
-                        <ref role="1Pybhc" to="z64h:7KXhT6nIabG" resolve="DiagramUtilityMetods" />
-                        <node concept="37vLTw" id="7KXhT6nKciR" role="37wK5m">
-                          <ref role="3cqZAo" node="7KXhT6n$O5Q" resolve="source" />
-                        </node>
+                    <node concept="2YIFZM" id="_$7WrraL06" role="33vP2m">
+                      <ref role="37wK5l" to="nkm5:5FQFTBpA8uv" resolve="createIdForSNode" />
+                      <ref role="1Pybhc" to="nkm5:2JYLxR6CE8o" resolve="EndpointUtil" />
+                      <node concept="37vLTw" id="_$7WrraL89" role="37wK5m">
+                        <ref role="3cqZAo" node="7KXhT6n$O5Q" resolve="source" />
                       </node>
                     </node>
                   </node>
@@ -3029,20 +3042,11 @@
                   <node concept="3cpWsn" id="7KXhT6nKciT" role="3cpWs9">
                     <property role="TrG5h" value="id_target" />
                     <node concept="17QB3L" id="7KXhT6nKciU" role="1tU5fm" />
-                    <node concept="3cpWs3" id="7KXhT6nKciV" role="33vP2m">
-                      <node concept="2YIFZM" id="7KXhT6nKciW" role="3uHU7B">
-                        <ref role="37wK5l" to="z64h:7KXhT6nJOzc" resolve="nameNearestContainingGroup" />
-                        <ref role="1Pybhc" to="z64h:7KXhT6nIabG" resolve="DiagramUtilityMetods" />
-                        <node concept="37vLTw" id="7KXhT6nKciX" role="37wK5m">
-                          <ref role="3cqZAo" node="7KXhT6n$O5Y" resolve="target" />
-                        </node>
-                      </node>
-                      <node concept="2YIFZM" id="7KXhT6nKciY" role="3uHU7w">
-                        <ref role="37wK5l" to="z64h:7KXhT6nIbv5" resolve="nameOfConcept" />
-                        <ref role="1Pybhc" to="z64h:7KXhT6nIabG" resolve="DiagramUtilityMetods" />
-                        <node concept="37vLTw" id="7KXhT6nKciZ" role="37wK5m">
-                          <ref role="3cqZAo" node="7KXhT6n$O5Y" resolve="target" />
-                        </node>
+                    <node concept="2YIFZM" id="_$7WrraPaZ" role="33vP2m">
+                      <ref role="1Pybhc" to="nkm5:2JYLxR6CE8o" resolve="EndpointUtil" />
+                      <ref role="37wK5l" to="nkm5:5FQFTBpA8uv" resolve="createIdForSNode" />
+                      <node concept="37vLTw" id="_$7WrraPiR" role="37wK5m">
+                        <ref role="3cqZAo" node="7KXhT6n$O5Y" resolve="target" />
                       </node>
                     </node>
                   </node>
