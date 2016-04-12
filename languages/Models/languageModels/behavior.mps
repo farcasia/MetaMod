@@ -17337,6 +17337,84 @@
   </node>
   <node concept="13h7C7" id="210OVEYfvnM">
     <ref role="13h7C2" to="v0yp:210OVEYeExq" resolve="LApplWithFragment" />
+    <node concept="13i0hz" id="17R5xtfCR6M" role="13h7CS">
+      <property role="TrG5h" value="getRefToModule" />
+      <node concept="3Tm1VV" id="17R5xtfCR6N" role="1B3o_S" />
+      <node concept="3clFbS" id="17R5xtfCR6O" role="3clF47">
+        <node concept="3cpWs8" id="17R5xtfCZw2" role="3cqZAp">
+          <node concept="3cpWsn" id="17R5xtfCZw5" role="3cpWs9">
+            <property role="TrG5h" value="current" />
+            <node concept="3Tqbb2" id="17R5xtfCZw0" role="1tU5fm">
+              <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+            </node>
+            <node concept="13iPFW" id="17R5xtfCZzc" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="17R5xtfCZtj" role="3cqZAp" />
+        <node concept="2$JKZl" id="17R5xtfCYxP" role="3cqZAp">
+          <node concept="3clFbS" id="17R5xtfCYxQ" role="2LFqv$">
+            <node concept="3clFbF" id="17R5xtfCZzW" role="3cqZAp">
+              <node concept="37vLTI" id="17R5xtfCZXW" role="3clFbG">
+                <node concept="2OqwBi" id="17R5xtfD12l" role="37vLTx">
+                  <node concept="1PxgMI" id="17R5xtfD0Xj" role="2Oq$k0">
+                    <ref role="1PxNhF" to="v0yp:210OVEYeExq" resolve="LApplWithFragment" />
+                    <node concept="37vLTw" id="17R5xtfD0Us" role="1PxMeX">
+                      <ref role="3cqZAo" node="17R5xtfCZw5" resolve="current" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="17R5xtfD1lp" role="2OqNvi">
+                    <ref role="3Tt5mk" to="9lyo:6oGnPI1e3E3" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="17R5xtfCZVr" role="37vLTJ">
+                  <ref role="3cqZAo" node="17R5xtfCZw5" resolve="current" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="17R5xtfCZ7c" role="2$JKZa">
+            <node concept="37vLTw" id="17R5xtfCZT2" role="2Oq$k0">
+              <ref role="3cqZAo" node="17R5xtfCZw5" resolve="current" />
+            </node>
+            <node concept="1mIQ4w" id="17R5xtfCZmz" role="2OqNvi">
+              <node concept="chp4Y" id="17R5xtfCZo5" role="cj9EA">
+                <ref role="cht4Q" to="v0yp:210OVEYeExq" resolve="LApplWithFragment" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="17R5xtfD0jR" role="3cqZAp" />
+        <node concept="3clFbJ" id="17R5xtfD0oP" role="3cqZAp">
+          <node concept="3clFbS" id="17R5xtfD0oR" role="3clFbx">
+            <node concept="3cpWs6" id="17R5xtfD0Hn" role="3cqZAp">
+              <node concept="1PxgMI" id="7_hp76qJJdt" role="3cqZAk">
+                <ref role="1PxNhF" to="2mcz:2DitZGYpVEg" resolve="RefToModule" />
+                <node concept="37vLTw" id="7_hp76qJIr6" role="1PxMeX">
+                  <ref role="3cqZAo" node="17R5xtfCZw5" resolve="current" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="17R5xtfD0tv" role="3clFbw">
+            <node concept="37vLTw" id="17R5xtfD0s6" role="2Oq$k0">
+              <ref role="3cqZAo" node="17R5xtfCZw5" resolve="current" />
+            </node>
+            <node concept="1mIQ4w" id="17R5xtfD0Fr" role="2OqNvi">
+              <node concept="chp4Y" id="17R5xtfD0G8" role="cj9EA">
+                <ref role="cht4Q" to="2mcz:2DitZGYpVEg" resolve="RefToModule" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="17R5xtfD1Lg" role="3cqZAp" />
+        <node concept="3cpWs6" id="17R5xtfD1ZL" role="3cqZAp">
+          <node concept="10Nm6u" id="17R5xtfD27O" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="17R5xtfCYvr" role="3clF45">
+        <ref role="ehGHo" to="2mcz:2DitZGYpVEg" resolve="RefToModule" />
+      </node>
+    </node>
     <node concept="13i0hz" id="4O2XG3cbQiN" role="13h7CS">
       <property role="TrG5h" value="getOutsideNCG" />
       <node concept="3Tm1VV" id="4O2XG3cbQiO" role="1B3o_S" />
