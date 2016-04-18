@@ -1256,12 +1256,12 @@
       <node concept="3clFbS" id="4X4JbdbYPn5" role="3clF47">
         <node concept="3SKdUt" id="4X4Jbdc1Pyh" role="3cqZAp">
           <node concept="3SKdUq" id="4X4Jbdc1R1l" role="3SKWNk">
-            <property role="3SKdUp" value="We check whether conformingTo is in the list of super-concepts of conformant, or is" />
+            <property role="3SKdUp" value="We check whether concept is in the list of super-concepts of subConcept, or is" />
           </node>
         </node>
         <node concept="3SKdUt" id="4X4Jbdc1Ssk" role="3cqZAp">
           <node concept="3SKdUq" id="4X4Jbdc1T7K" role="3SKWNk">
-            <property role="3SKdUp" value="conformant itself." />
+            <property role="3SKdUp" value="subConcept itself." />
           </node>
         </node>
         <node concept="3clFbH" id="4X4Jbdc1QhN" role="3cqZAp" />
