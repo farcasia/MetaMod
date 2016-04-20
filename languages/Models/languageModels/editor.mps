@@ -80,6 +80,9 @@
       <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
         <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
@@ -298,6 +301,10 @@
       <concept id="6237710625713942002" name="de.itemis.mps.editor.diagram.structure.Content_BLQuery" flags="ig" index="2ZMM4L" />
       <concept id="6237710625713964946" name="de.itemis.mps.editor.diagram.structure.Parameter_Node" flags="ng" index="2ZN8Hh" />
       <concept id="8963411245957652387" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_Query" flags="ig" index="37q72E" />
+      <concept id="6987730699889040828" name="de.itemis.mps.editor.diagram.structure.LineColor" flags="lg" index="3C0NmK" />
+      <concept id="6987730699889040827" name="de.itemis.mps.editor.diagram.structure.LineWidth" flags="lg" index="3C0NmR">
+        <property id="6987730699889499559" name="value" index="3DY3mF" />
+      </concept>
       <concept id="301931493264781535" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramContent" flags="ng" index="3IJ5R8" />
       <concept id="8587703283519920118" name="de.itemis.mps.editor.diagram.structure.ThisNodeExpression" flags="ng" index="1Pxb5l" />
       <concept id="8587703283523590697" name="de.itemis.mps.editor.diagram.structure.ConnectionEndpoint" flags="ng" index="1PNbMa">
@@ -3553,6 +3560,7 @@
               </node>
             </node>
             <node concept="27vDVx" id="6JwGMvF1tzc" role="3EZMnx">
+              <ref role="1k5W1q" to="xcv:7Xqv1PJkVJJ" resolve="biggerText" />
               <node concept="2ZMM4L" id="6JwGMvF1tzd" role="aCds2">
                 <node concept="3clFbS" id="6JwGMvF1tze" role="2VODD2">
                   <node concept="3clFbF" id="6JwGMvF1tzf" role="3cqZAp">
@@ -3858,7 +3866,6 @@
         </node>
       </node>
       <node concept="2M4Efz" id="4hLTqHLYqYh" role="aCds2">
-        <ref role="1k5W1q" to="xcv:7Xqv1PJli_n" resolve="biggerGrayEdge" />
         <node concept="3cpWs3" id="4hLTqHLYZZl" role="2M4AHK">
           <node concept="2YIFZM" id="4hLTqHLZ0ae" role="3uHU7w">
             <ref role="37wK5l" to="nkm5:5FQFTBpA8uv" resolve="createIdForSNode" />
@@ -3933,9 +3940,14 @@
             <property role="3F0ifm" value="then" />
           </node>
         </node>
+        <node concept="3C0NmK" id="XsPlgNwQNi" role="3F10Kt">
+          <property role="Vb096" value="darkGray" />
+        </node>
+        <node concept="3C0NmR" id="XsPlgNwQZj" role="3F10Kt">
+          <property role="3DY3mF" value="2.0" />
+        </node>
       </node>
       <node concept="2M4Efz" id="4hLTqHLZ14T" role="aCds2">
-        <ref role="1k5W1q" to="xcv:7Xqv1PJli_n" resolve="biggerGrayEdge" />
         <node concept="17QB3L" id="4hLTqHLZ1c8" role="2M4AHM" />
         <node concept="37q72E" id="4hLTqHLZ14Z" role="2M4AHN">
           <node concept="3clFbS" id="4hLTqHLZ151" role="2VODD2">
@@ -4009,6 +4021,12 @@
           <node concept="3F0ifn" id="4hLTqHLZ21B" role="2wV5jI">
             <property role="3F0ifm" value="else" />
           </node>
+        </node>
+        <node concept="3C0NmK" id="XsPlgNwREf" role="3F10Kt">
+          <property role="Vb096" value="darkGray" />
+        </node>
+        <node concept="3C0NmR" id="XsPlgNwRQg" role="3F10Kt">
+          <property role="3DY3mF" value="2.0" />
         </node>
       </node>
     </node>
