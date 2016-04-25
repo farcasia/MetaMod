@@ -16,6 +16,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="7cbc13ed-9875-4738-a307-276eb1aa9679" name="GroupInterfaces" version="-1" />
     <use id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" name="MappingChangeableModules" version="-1" />
+    <use id="a00bbccc-dbff-45c7-aa54-02d1f94db9b5" name="LanguageConfiguration" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -65,6 +66,15 @@
       <concept id="6119744805287750193" name="MappingChangeableModules.structure.Mapping" flags="ng" index="1nQ__b">
         <reference id="6119744805287750194" name="changeableConcept" index="1nQ__8" />
         <reference id="6119744805287750196" name="implementationConcept" index="1nQ__e" />
+      </concept>
+    </language>
+    <language id="a00bbccc-dbff-45c7-aa54-02d1f94db9b5" name="LanguageConfiguration">
+      <concept id="8743672689159294856" name="LanguageConfiguration.structure.Configuration" flags="ng" index="1$M0LO">
+        <child id="8743672689159687747" name="mappings" index="1$WwQZ" />
+      </concept>
+      <concept id="8743672689159294857" name="LanguageConfiguration.structure.Mapping" flags="ng" index="1$M0LP">
+        <reference id="8743672689159300278" name="replacedGroup" index="1$M2ta" />
+        <reference id="8743672689159683977" name="replacingGroup" index="1$WBLP" />
       </concept>
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
@@ -145,7 +155,12 @@
         <reference id="8976227254847281741" name="namedConcept" index="CMYPG" />
       </concept>
       <concept id="1522810226732341093" name="GenericGroupMethods.structure.ValueModel" flags="ig" index="1l_8MK" />
-      <concept id="7169015349702230285" name="GenericGroupMethods.structure.Facet" flags="ng" index="1vbBhR" />
+      <concept id="7169015349702230285" name="GenericGroupMethods.structure.Facet" flags="ng" index="1vbBhR">
+        <child id="4406892874368993969" name="reusedFacets" index="1eREs9" />
+      </concept>
+      <concept id="7169015349702230837" name="GenericGroupMethods.structure.RefToFacet" flags="ng" index="1vbBpf">
+        <reference id="7169015349702230838" name="ref" index="1vbBpc" />
+      </concept>
       <concept id="7169015349705498819" name="GenericGroupMethods.structure.IAspect" flags="ng" index="1vYpmT">
         <property id="7169015349705498857" name="aspect" index="1vYpmj" />
       </concept>
@@ -2909,26 +2924,65 @@
       </node>
     </node>
   </node>
-  <node concept="1nQ_01" id="5jHGRC3eorK">
-    <ref role="1nQ_06" node="4bwno4n_pNn" resolve="LambdaTerms" />
+  <node concept="2$1D0M" id="7_nKZKtBNm_">
+    <property role="1vYpmj" value="default" />
+    <property role="3GE5qa" value="GroupInterfaces" />
+    <ref role="1GHRfG" node="4bwno4n_pNn" resolve="LambdaTerms" />
+    <node concept="1vbBhR" id="7_nKZKtBS_6" role="1ukcCD">
+      <property role="TrG5h" value="nor" />
+      <node concept="1vbBpf" id="7_nKZKtBWHW" role="1eREs9">
+        <ref role="1vbBpc" node="5jHGRC3bQXK" resolve="cbn" />
+      </node>
+    </node>
+    <node concept="2$21wx" id="7_nKZKtBS_8" role="CLm5g">
+      <property role="TrG5h" value="nor" />
+      <node concept="37vLTG" id="7_nKZKtBS_9" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="7_nKZKtBS_a" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7_nKZKtBWiF" role="3clF46">
+        <property role="TrG5h" value="lambdaTerm" />
+        <node concept="CMjq$" id="7_nKZKtBWiO" role="1tU5fm">
+          <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7_nKZKtBS_b" role="3clF47" />
+      <node concept="CMjq$" id="7_nKZKtBWiz" role="3clF45">
+        <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
+      </node>
+    </node>
+  </node>
+  <node concept="1$M0LO" id="5A4zKhnEnNN">
+    <property role="TrG5h" value="LambdaTermVisualization" />
+    <node concept="1$M0LP" id="5A4zKhnEnNO" role="1$WwQZ">
+      <ref role="1$M2ta" node="4bwno4n_pNn" resolve="LambdaTerms" />
+      <ref role="1$WBLP" node="2BfcXTMsoYB" resolve="LambdaTermsVis" />
+    </node>
+    <node concept="1$M0LP" id="5A4zKhnEnNQ" role="1$WwQZ">
+      <ref role="1$M2ta" node="2BfcXTMslmf" resolve="Main" />
+      <ref role="1$WBLP" node="2BfcXTMst8$" resolve="MainVis" />
+    </node>
+  </node>
+  <node concept="1nQ_01" id="4Mfs57wlcSF">
     <ref role="1nQ_3S" node="2BfcXTMsoYB" resolve="LambdaTermsVis" />
-    <node concept="1nQ__b" id="5jHGRC3eorL" role="1nQ__n">
+    <ref role="1nQ_06" node="4bwno4n_pNn" resolve="LambdaTerms" />
+    <node concept="1nQ__b" id="4Mfs57wli7f" role="1nQ__n">
       <ref role="1nQ__8" node="4FKFRHYvSfO" resolve="BoundVariable" />
       <ref role="1nQ__e" node="2BfcXTMsqhG" resolve="BoundVariable" />
     </node>
-    <node concept="1nQ__b" id="7_nKZKtA5v_" role="1nQ__n">
+    <node concept="1nQ__b" id="4Mfs57wli7r" role="1nQ__n">
       <ref role="1nQ__8" node="4FKFRHYvSjI" resolve="Constant" />
       <ref role="1nQ__e" node="2BfcXTMsqhI" resolve="Constant" />
     </node>
-    <node concept="1nQ__b" id="7_nKZKtA5vX" role="1nQ__n">
+    <node concept="1nQ__b" id="4Mfs57wli7E" role="1nQ__n">
       <ref role="1nQ__8" node="4FKFRHYvScz" resolve="LambdaAbstraction" />
       <ref role="1nQ__e" node="2BfcXTMsqhE" resolve="LambdaAbstraction" />
     </node>
-    <node concept="1nQ__b" id="7_nKZKtA5wo" role="1nQ__n">
+    <node concept="1nQ__b" id="4Mfs57wli7W" role="1nQ__n">
       <ref role="1nQ__8" node="4FKFRHYvS9t" resolve="LambdaApplication" />
       <ref role="1nQ__e" node="2BfcXTMsqhC" resolve="LambdaApplication" />
     </node>
-    <node concept="1nQ__b" id="7_nKZKtA5wS" role="1nQ__n">
+    <node concept="1nQ__b" id="4Mfs57wli8h" role="1nQ__n">
       <ref role="1nQ__8" node="4FKFRHYvRNt" resolve="LambdaTerm" />
       <ref role="1nQ__e" node="2BfcXTMsqhA" resolve="LambdaTerm" />
     </node>
