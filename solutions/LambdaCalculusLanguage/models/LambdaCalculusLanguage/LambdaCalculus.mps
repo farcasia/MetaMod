@@ -14,6 +14,7 @@
     <use id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="7cbc13ed-9875-4738-a307-276eb1aa9679" name="GroupInterfaces" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -136,6 +137,10 @@
       <concept id="7169015349705498819" name="GenericGroupMethods.structure.IAspect" flags="ng" index="1vYpmT">
         <property id="7169015349705498857" name="aspect" index="1vYpmj" />
       </concept>
+    </language>
+    <language id="7cbc13ed-9875-4738-a307-276eb1aa9679" name="GroupInterfaces">
+      <concept id="5414200760481450709" name="GroupInterfaces.structure.Interface" flags="ng" index="2$1D0M" />
+      <concept id="5414200760481809094" name="GroupInterfaces.structure.MethodSignature" flags="ng" index="2$21wx" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
@@ -2773,7 +2778,8 @@
   </node>
   <node concept="1GnNiK" id="2BfcXTMtkwL">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="Group_Logic" />
+    <property role="3GE5qa" value="Group_codegen" />
+    <property role="TrG5h" value="CodeGen_cbn_LambdaTerms" />
     <ref role="1GHRfG" node="4bwno4n_pNn" resolve="LambdaTerms" />
     <node concept="1vbBhR" id="2BfcXTMtkwS" role="1ukcCD">
       <property role="TrG5h" value="cbn" />
@@ -2862,6 +2868,31 @@
         <node concept="3clFbH" id="4Gz6IvJ8Ey6" role="3cqZAp" />
       </node>
       <node concept="CMjq$" id="4Gz6IvJ84s1" role="3clF45">
+        <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
+      </node>
+    </node>
+  </node>
+  <node concept="2$1D0M" id="5jHGRC3bPrs">
+    <property role="1vYpmj" value="default" />
+    <property role="3GE5qa" value="GroupInterfaces" />
+    <ref role="1GHRfG" node="4bwno4n_pNn" resolve="LambdaTerms" />
+    <node concept="1vbBhR" id="5jHGRC3bQXK" role="1ukcCD">
+      <property role="TrG5h" value="cbn" />
+    </node>
+    <node concept="2$21wx" id="5jHGRC3c2Ng" role="CLm5g">
+      <property role="TrG5h" value="cbn" />
+      <node concept="37vLTG" id="5jHGRC3c2Nh" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="5jHGRC3c2Ni" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5jHGRC3c2Ns" role="3clF46">
+        <property role="TrG5h" value="lambdaTerm" />
+        <node concept="CMjq$" id="5jHGRC3c2N$" role="1tU5fm">
+          <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5jHGRC3c2Nj" role="3clF47" />
+      <node concept="CMjq$" id="5jHGRC3c3yM" role="3clF45">
         <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
       </node>
     </node>
