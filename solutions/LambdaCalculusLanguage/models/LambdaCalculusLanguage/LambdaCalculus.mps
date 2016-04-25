@@ -15,6 +15,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="7cbc13ed-9875-4738-a307-276eb1aa9679" name="GroupInterfaces" version="-1" />
+    <use id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" name="MappingChangeableModules" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -54,6 +55,17 @@
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration">
       <concept id="5319102428749892554" name="CodeGeneration.structure.CodeGenMethodsContainer" flags="ng" index="1GnNiK" />
       <concept id="5319102428749892498" name="CodeGeneration.structure.CodeGenMethod" flags="ng" index="1GnNjC" />
+    </language>
+    <language id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" name="MappingChangeableModules">
+      <concept id="6119744805287748475" name="MappingChangeableModules.structure.MappingContainer" flags="ng" index="1nQ_01">
+        <reference id="6119744805287748476" name="changeableGroup" index="1nQ_06" />
+        <reference id="6119744805287748482" name="implementationGroup" index="1nQ_3S" />
+        <child id="6119744805287750189" name="mappings" index="1nQ__n" />
+      </concept>
+      <concept id="6119744805287750193" name="MappingChangeableModules.structure.Mapping" flags="ng" index="1nQ__b">
+        <reference id="6119744805287750194" name="changeableConcept" index="1nQ__8" />
+        <reference id="6119744805287750196" name="implementationConcept" index="1nQ__e" />
+      </concept>
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
       <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
@@ -2895,6 +2907,30 @@
       <node concept="CMjq$" id="5jHGRC3c3yM" role="3clF45">
         <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
       </node>
+    </node>
+  </node>
+  <node concept="1nQ_01" id="5jHGRC3eorK">
+    <ref role="1nQ_06" node="4bwno4n_pNn" resolve="LambdaTerms" />
+    <ref role="1nQ_3S" node="2BfcXTMsoYB" resolve="LambdaTermsVis" />
+    <node concept="1nQ__b" id="5jHGRC3eorL" role="1nQ__n">
+      <ref role="1nQ__8" node="4FKFRHYvSfO" resolve="BoundVariable" />
+      <ref role="1nQ__e" node="2BfcXTMsqhG" resolve="BoundVariable" />
+    </node>
+    <node concept="1nQ__b" id="7_nKZKtA5v_" role="1nQ__n">
+      <ref role="1nQ__8" node="4FKFRHYvSjI" resolve="Constant" />
+      <ref role="1nQ__e" node="2BfcXTMsqhI" resolve="Constant" />
+    </node>
+    <node concept="1nQ__b" id="7_nKZKtA5vX" role="1nQ__n">
+      <ref role="1nQ__8" node="4FKFRHYvScz" resolve="LambdaAbstraction" />
+      <ref role="1nQ__e" node="2BfcXTMsqhE" resolve="LambdaAbstraction" />
+    </node>
+    <node concept="1nQ__b" id="7_nKZKtA5wo" role="1nQ__n">
+      <ref role="1nQ__8" node="4FKFRHYvS9t" resolve="LambdaApplication" />
+      <ref role="1nQ__e" node="2BfcXTMsqhC" resolve="LambdaApplication" />
+    </node>
+    <node concept="1nQ__b" id="7_nKZKtA5wS" role="1nQ__n">
+      <ref role="1nQ__8" node="4FKFRHYvRNt" resolve="LambdaTerm" />
+      <ref role="1nQ__e" node="2BfcXTMsqhA" resolve="LambdaTerm" />
     </node>
   </node>
 </model>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="MappingChangeableModules" uuid="c2a5c46f-9e45-4936-b1a6-b16d77584a24" version="0">
+<language namespace="LanguageConfiguration" uuid="a00bbccc-dbff-45c7-aa54-02d1f94db9b5" version="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/languageModels" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="MappingChangeableModules#6119744805287747469" uuid="9d9329a5-0015-4b58-bdf8-d23015cb21ed">
+    <generator generatorUID="LanguageConfiguration#8743672689159247142" uuid="6f52da9b-6a93-4cb1-a79f-b4de11b3a4c0">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot path="${module}/generator/template" />
@@ -17,13 +17,13 @@
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
-        <usedLanguage>c2a5c46f-9e45-4936-b1a6-b16d77584a24(MappingChangeableModules)</usedLanguage>
+        <usedLanguage>a00bbccc-dbff-45c7-aa54-02d1f94db9b5(LanguageConfiguration)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
-        <language id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" fqName="MappingChangeableModules" version="-1" />
+        <language id="a00bbccc-dbff-45c7-aa54-02d1f94db9b5" fqName="LanguageConfiguration" version="-1" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -42,9 +42,6 @@
     </generator>
   </generators>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
-  </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>

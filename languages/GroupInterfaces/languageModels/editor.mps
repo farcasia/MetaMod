@@ -54,6 +54,9 @@
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <reference id="1081339532145" name="keyMap" index="34QXea" />
+      </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
@@ -116,6 +119,7 @@
   <node concept="24kQdi" id="4Gz6IvJ9v3H">
     <ref role="1XX52x" to="xxun:4Gz6IvJ9oFl" resolve="GroupInterface" />
     <node concept="3EZMnI" id="4Gz6IvJ9v3J" role="2wV5jI">
+      <ref role="34QXea" node="5jHGRC3crSf" resolve="AssignNameInterfaceContainer" />
       <node concept="3EZMnI" id="4Gz6IvJ9v3Q" role="3EZMnx">
         <node concept="VPM3Z" id="4Gz6IvJ9v3S" role="3F10Kt">
           <property role="VOm3f" value="false" />
