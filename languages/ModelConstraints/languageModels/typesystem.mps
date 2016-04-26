@@ -60,6 +60,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -174,6 +175,7 @@
     </language>
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods">
       <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$" />
+      <concept id="6741447020959204252" name="GenericGroupMethods.structure.RelationType" flags="ig" index="1hVuR5" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -736,6 +738,139 @@
     <node concept="1YaCAy" id="1xqZdIOeM7x" role="1YuTPh">
       <property role="TrG5h" value="conceptType" />
       <ref role="1YaFvo" to="1o5n:7MhXM5kmc65" resolve="ConceptType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5Qer_$cos9B">
+    <property role="TrG5h" value="typeof_NewConceptType" />
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <node concept="3clFbS" id="5Qer_$cos9C" role="18ibNy">
+      <node concept="1Z5TYs" id="5Qer_$cowzB" role="3cqZAp">
+        <node concept="mw_s8" id="5Qer_$coEEb" role="1ZfhKB">
+          <node concept="2c44tf" id="5Qer_$coEE7" role="mwGJk">
+            <node concept="CMjq$" id="5Qer_$coEEu" role="2c44tc">
+              <node concept="2c44tb" id="5Qer_$coEEO" role="lGtFl">
+                <property role="P3scX" value="8a5ffd84-4b2e-475c-803b-24d3ac9331ee/8976227254847193477/8976227254847281741" />
+                <property role="2qtEX8" value="namedConcept" />
+                <node concept="2OqwBi" id="5Qer_$coEGy" role="2c44t1">
+                  <node concept="1YBJjd" id="5Qer_$coEFh" role="2Oq$k0">
+                    <ref role="1YBMHb" node="5Qer_$cos9E" resolve="newConceptType" />
+                  </node>
+                  <node concept="3TrEf2" id="5Qer_$coOLm" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1o5n:6VsEH8K_enN" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5Qer_$cowzE" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5Qer_$cosdo" role="mwGJk">
+            <node concept="1YBJjd" id="5Qer_$cosdO" role="1Z2MuG">
+              <ref role="1YBMHb" node="5Qer_$cos9E" resolve="newConceptType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5Qer_$cos9E" role="1YuTPh">
+      <property role="TrG5h" value="newConceptType" />
+      <ref role="1YaFvo" to="1o5n:6VsEH8K_enM" resolve="NewConceptType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4B2Oes$wAln">
+    <property role="TrG5h" value="typeof_NewRelation" />
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <node concept="3clFbS" id="4B2Oes$wAlo" role="18ibNy">
+      <node concept="1Z5TYs" id="4B2Oes$wE7u" role="3cqZAp">
+        <node concept="mw_s8" id="4B2Oes$wE7M" role="1ZfhKB">
+          <node concept="2c44tf" id="4B2Oes$wE7I" role="mwGJk">
+            <node concept="1hVuR5" id="4B2Oes$wE8y" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4B2Oes$wE7x" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4B2Oes$wCqu" role="mwGJk">
+            <node concept="1YBJjd" id="4B2Oes$wCqU" role="1Z2MuG">
+              <ref role="1YBMHb" node="4B2Oes$wAlq" resolve="newRelation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4B2Oes$wAlq" role="1YuTPh">
+      <property role="TrG5h" value="newRelation" />
+      <ref role="1YaFvo" to="1o5n:6VsEH8K$Xct" resolve="NewRelation" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4B2Oes$xqES">
+    <property role="TrG5h" value="typeof_SetName" />
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <node concept="3clFbS" id="4B2Oes$xqET" role="18ibNy">
+      <node concept="1Z5TYs" id="4B2Oes$xqJ7" role="3cqZAp">
+        <node concept="mw_s8" id="4B2Oes$xqJr" role="1ZfhKB">
+          <node concept="2c44tf" id="4B2Oes$xqJn" role="mwGJk">
+            <node concept="3cqZAl" id="4B2Oes$xqJI" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4B2Oes$xqJa" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4B2Oes$xqEZ" role="mwGJk">
+            <node concept="1YBJjd" id="4B2Oes$xqFr" role="1Z2MuG">
+              <ref role="1YBMHb" node="4B2Oes$xqEV" resolve="setName" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4B2Oes$xqEV" role="1YuTPh">
+      <property role="TrG5h" value="setName" />
+      <ref role="1YaFvo" to="1o5n:6VsEH8K_fmZ" resolve="SetName" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4B2Oes$xqSo">
+    <property role="TrG5h" value="typeof_SetSource" />
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <node concept="3clFbS" id="4B2Oes$xqSp" role="18ibNy">
+      <node concept="1Z5TYs" id="4B2Oes$xqSO" role="3cqZAp">
+        <node concept="mw_s8" id="4B2Oes$xqSP" role="1ZfhKB">
+          <node concept="2c44tf" id="4B2Oes$xqSQ" role="mwGJk">
+            <node concept="3cqZAl" id="4B2Oes$xqSR" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4B2Oes$xqSS" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4B2Oes$xqST" role="mwGJk">
+            <node concept="1YBJjd" id="4B2Oes$xr_X" role="1Z2MuG">
+              <ref role="1YBMHb" node="4B2Oes$xqSr" resolve="setSource" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4B2Oes$xqSr" role="1YuTPh">
+      <property role="TrG5h" value="setSource" />
+      <ref role="1YaFvo" to="1o5n:6VsEH8K_rHU" resolve="SetSource" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4B2Oes$xrAz">
+    <property role="TrG5h" value="typeof_SetTarget" />
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <node concept="3clFbS" id="4B2Oes$xrA$" role="18ibNy">
+      <node concept="1Z5TYs" id="4B2Oes$xrAZ" role="3cqZAp">
+        <node concept="mw_s8" id="4B2Oes$xrB0" role="1ZfhKB">
+          <node concept="2c44tf" id="4B2Oes$xrB1" role="mwGJk">
+            <node concept="3cqZAl" id="4B2Oes$xrB2" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4B2Oes$xrB3" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4B2Oes$xrB4" role="mwGJk">
+            <node concept="1YBJjd" id="4B2Oes$xrC6" role="1Z2MuG">
+              <ref role="1YBMHb" node="4B2Oes$xrAA" resolve="setTarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4B2Oes$xrAA" role="1YuTPh">
+      <property role="TrG5h" value="setTarget" />
+      <ref role="1YaFvo" to="1o5n:6VsEH8K_rNY" resolve="SetTarget" />
     </node>
   </node>
 </model>

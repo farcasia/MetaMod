@@ -28,6 +28,8 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1068431790189" name="jetbrains.mps.baseLanguage.structure.Type" flags="in" index="33vP2l" />
+      <concept id="1068431790191" name="jetbrains.mps.baseLanguage.structure.Expression" flags="nn" index="33vP2n" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -51,6 +53,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
     </language>
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration">
@@ -62,11 +65,13 @@
         <reference id="6119744805287748476" name="changeableGroup" index="1nQ_06" />
         <reference id="6119744805287748482" name="implementationGroup" index="1nQ_3S" />
         <child id="6119744805287750189" name="mappings" index="1nQ__n" />
+        <child id="7988447658784253393" name="transformations" index="1uv$W3" />
       </concept>
       <concept id="6119744805287750193" name="MappingChangeableModules.structure.Mapping" flags="ng" index="1nQ__b">
         <reference id="6119744805287750194" name="changeableConcept" index="1nQ__8" />
         <reference id="6119744805287750196" name="implementationConcept" index="1nQ__e" />
       </concept>
+      <concept id="7988447658784251911" name="MappingChangeableModules.structure.Transformation" flags="ng" index="1uv$Fl" />
     </language>
     <language id="a00bbccc-dbff-45c7-aa54-02d1f94db9b5" name="LanguageConfiguration">
       <concept id="8743672689159294856" name="LanguageConfiguration.structure.Configuration" flags="ng" index="1$M0LO">
@@ -154,6 +159,7 @@
       <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$">
         <reference id="8976227254847281741" name="namedConcept" index="CMYPG" />
       </concept>
+      <concept id="6741447020959204252" name="GenericGroupMethods.structure.RelationType" flags="ig" index="1hVuR5" />
       <concept id="1522810226732341093" name="GenericGroupMethods.structure.ValueModel" flags="ig" index="1l_8MK" />
       <concept id="7169015349702230285" name="GenericGroupMethods.structure.Facet" flags="ng" index="1vbBhR">
         <child id="4406892874368993969" name="reusedFacets" index="1eREs9" />
@@ -166,7 +172,7 @@
       </concept>
     </language>
     <language id="7cbc13ed-9875-4738-a307-276eb1aa9679" name="GroupInterfaces">
-      <concept id="5414200760481450709" name="GroupInterfaces.structure.Interface" flags="ng" index="2$1D0M" />
+      <concept id="5414200760481450709" name="GroupInterfaces.structure.GroupInterface" flags="ng" index="2$1D0M" />
       <concept id="5414200760481809094" name="GroupInterfaces.structure.MethodSignature" flags="ng" index="2$21wx" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -327,7 +333,7 @@
       </node>
     </node>
     <node concept="2oAaUZ" id="4FKFRHYw5W_" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFUA" value="*" />
       <property role="2XbFU$" value="1" />
       <property role="TrG5h" value="body" />
       <node concept="2oAaXF" id="4FKFRHYw5WA" role="2oAawB">
@@ -345,7 +351,7 @@
     </node>
     <node concept="2jq5PB" id="4FKFRHYw5Yv" role="2oAaxa" />
     <node concept="2oAaUZ" id="4FKFRHYvSES" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFUA" value="*" />
       <property role="2XbFU$" value="1" />
       <property role="TrG5h" value="left" />
       <node concept="2oAaXF" id="4FKFRHYvSG4" role="2oAawB">
@@ -362,7 +368,7 @@
       </node>
     </node>
     <node concept="2oAaUZ" id="4FKFRHYw5UN" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFUA" value="*" />
       <property role="2XbFU$" value="1" />
       <property role="TrG5h" value="right" />
       <node concept="2oAaXF" id="4FKFRHYw5UO" role="2oAawB">
@@ -373,8 +379,8 @@
       </node>
       <node concept="2VclpC" id="4FKFRHYw6WU" role="lGtFl">
         <node concept="2VclrF" id="4FKFRHYw6WV" role="2Vcluh">
-          <property role="2Vclpx" value="1162.0053049484036" />
-          <property role="2Vclpz" value="13.94456909761442" />
+          <property role="2Vclpx" value="1157.0053049484036" />
+          <property role="2Vclpz" value="17.94456909761442" />
         </node>
       </node>
     </node>
@@ -606,8 +612,8 @@
             <property role="3ul5GH" value="label" />
             <node concept="3wpmZ1" id="4FKFRHYw6Ws" role="3ul5Gz">
               <node concept="2VclrF" id="4FKFRHYw6Wt" role="3wpmZR">
-                <property role="2Vclpx" value="-117.0" />
-                <property role="2Vclpz" value="45.000282287597656" />
+                <property role="2Vclpx" value="-164.0" />
+                <property role="2Vclpz" value="48.000282287597656" />
               </node>
               <node concept="2VclrF" id="4FKFRHYw6Wu" role="3wpmZP">
                 <property role="2Vclpx" value="593.9374797767351" />
@@ -650,8 +656,8 @@
             <property role="3ul5GH" value="label" />
             <node concept="3wpmZ1" id="4FKFRHYw6WJ" role="3ul5Gz">
               <node concept="2VclrF" id="4FKFRHYw6WK" role="3wpmZR">
-                <property role="2Vclpx" value="-176.99980926513672" />
-                <property role="2Vclpz" value="-36.0" />
+                <property role="2Vclpx" value="-168.99980926513672" />
+                <property role="2Vclpz" value="-30.0" />
               </node>
               <node concept="2VclrF" id="4FKFRHYw6WL" role="3wpmZP">
                 <property role="2Vclpx" value="1029.40750827385" />
@@ -695,11 +701,11 @@
             <node concept="3wpmZ1" id="4FKFRHYw6X2" role="3ul5Gz">
               <node concept="2VclrF" id="4FKFRHYw6X3" role="3wpmZR">
                 <property role="2Vclpx" value="-206.99980926513672" />
-                <property role="2Vclpz" value="30.0" />
+                <property role="2Vclpz" value="33.0" />
               </node>
               <node concept="2VclrF" id="4FKFRHYw6X4" role="3wpmZP">
-                <property role="2Vclpx" value="1059.5303679253946" />
-                <property role="2Vclpz" value="13.94456909761442" />
+                <property role="2Vclpx" value="1055.0303679253946" />
+                <property role="2Vclpz" value="17.94456909761442" />
               </node>
             </node>
           </node>
@@ -711,7 +717,7 @@
                 <property role="2Vclpz" value="-253.02943725152284" />
               </node>
               <node concept="2VclrF" id="4FKFRHYw6X8" role="3wpmZP">
-                <property role="2Vclpx" value="1162.0053049484036" />
+                <property role="2Vclpx" value="1157.0053049484036" />
                 <property role="2Vclpz" value="224.51471862576142" />
               </node>
             </node>
@@ -725,7 +731,7 @@
               </node>
               <node concept="2VclrF" id="4FKFRHYw6Xc" role="3wpmZP">
                 <property role="2Vclpx" value="759.2132034355964" />
-                <property role="2Vclpz" value="13.94456909761442" />
+                <property role="2Vclpz" value="17.94456909761442" />
               </node>
             </node>
           </node>
@@ -2891,8 +2897,15 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4Gz6IvJ8DI4" role="3cqZAp" />
-        <node concept="3clFbH" id="4Gz6IvJ8Ey6" role="3cqZAp" />
+        <node concept="3cpWs8" id="4B2Oes$wAjT" role="3cqZAp">
+          <node concept="3cpWsn" id="4B2Oes$wAjW" role="3cpWs9">
+            <property role="TrG5h" value="relation" />
+            <node concept="1hVuR5" id="4B2Oes$ysvq" role="1tU5fm" />
+            <node concept="33vP2n" id="4B2Oes$wAkr" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4B2Oes$ysvx" role="3cqZAp" />
+        <node concept="3clFbH" id="4B2Oes$ysvT" role="3cqZAp" />
       </node>
       <node concept="CMjq$" id="4Gz6IvJ84s1" role="3clF45">
         <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
@@ -2902,12 +2915,13 @@
   <node concept="2$1D0M" id="5jHGRC3bPrs">
     <property role="1vYpmj" value="default" />
     <property role="3GE5qa" value="GroupInterfaces" />
+    <property role="TrG5h" value="Interface_callByName_LambdaTerms" />
     <ref role="1GHRfG" node="4bwno4n_pNn" resolve="LambdaTerms" />
     <node concept="1vbBhR" id="5jHGRC3bQXK" role="1ukcCD">
-      <property role="TrG5h" value="cbn" />
+      <property role="TrG5h" value="callByName" />
     </node>
     <node concept="2$21wx" id="5jHGRC3c2Ng" role="CLm5g">
-      <property role="TrG5h" value="cbn" />
+      <property role="TrG5h" value="callByName" />
       <node concept="37vLTG" id="5jHGRC3c2Nh" role="3clF46">
         <property role="TrG5h" value="valueModel" />
         <node concept="1l_8MK" id="5jHGRC3c2Ni" role="1tU5fm" />
@@ -2923,19 +2937,47 @@
         <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
       </node>
     </node>
+    <node concept="2$21wx" id="1KNKV9vkn_J" role="CLm5g">
+      <property role="TrG5h" value="substitute" />
+      <node concept="37vLTG" id="1KNKV9vkn_K" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="1KNKV9vkn_L" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1KNKV9vknBk" role="3clF46">
+        <property role="TrG5h" value="lambdaTerm" />
+        <node concept="CMjq$" id="1KNKV9vknBw" role="1tU5fm">
+          <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1KNKV9vknAa" role="3clF46">
+        <property role="TrG5h" value="element" />
+        <node concept="CMjq$" id="1KNKV9vknAi" role="1tU5fm">
+          <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1KNKV9vknAF" role="3clF46">
+        <property role="TrG5h" value="boundVariable" />
+        <node concept="CMjq$" id="1KNKV9vknAP" role="1tU5fm">
+          <ref role="CMYPG" node="4FKFRHYvSfO" resolve="BoundVariable" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1KNKV9vkn_M" role="3clF47" />
+      <node concept="3cqZAl" id="1KNKV9vknBh" role="3clF45" />
+    </node>
   </node>
   <node concept="2$1D0M" id="7_nKZKtBNm_">
     <property role="1vYpmj" value="default" />
     <property role="3GE5qa" value="GroupInterfaces" />
+    <property role="TrG5h" value="Interface_normalOrderReduction_LambdaTerms" />
     <ref role="1GHRfG" node="4bwno4n_pNn" resolve="LambdaTerms" />
     <node concept="1vbBhR" id="7_nKZKtBS_6" role="1ukcCD">
-      <property role="TrG5h" value="nor" />
+      <property role="TrG5h" value="normalOrderReduction" />
       <node concept="1vbBpf" id="7_nKZKtBWHW" role="1eREs9">
-        <ref role="1vbBpc" node="5jHGRC3bQXK" resolve="cbn" />
+        <ref role="1vbBpc" node="5jHGRC3bQXK" resolve="callByName" />
       </node>
     </node>
     <node concept="2$21wx" id="7_nKZKtBS_8" role="CLm5g">
-      <property role="TrG5h" value="nor" />
+      <property role="TrG5h" value="normalOrderReduction" />
       <node concept="37vLTG" id="7_nKZKtBS_9" role="3clF46">
         <property role="TrG5h" value="valueModel" />
         <node concept="1l_8MK" id="7_nKZKtBS_a" role="1tU5fm" />
@@ -2954,37 +2996,59 @@
   </node>
   <node concept="1$M0LO" id="5A4zKhnEnNN">
     <property role="TrG5h" value="LambdaTermVisualization" />
-    <node concept="1$M0LP" id="5A4zKhnEnNO" role="1$WwQZ">
-      <ref role="1$M2ta" node="4bwno4n_pNn" resolve="LambdaTerms" />
-      <ref role="1$WBLP" node="2BfcXTMsoYB" resolve="LambdaTermsVis" />
-    </node>
-    <node concept="1$M0LP" id="5A4zKhnEnNQ" role="1$WwQZ">
+    <node concept="1$M0LP" id="1KNKV9vikV_" role="1$WwQZ">
       <ref role="1$M2ta" node="2BfcXTMslmf" resolve="Main" />
       <ref role="1$WBLP" node="2BfcXTMst8$" resolve="MainVis" />
     </node>
+    <node concept="1$M0LP" id="1KNKV9vi6UW" role="1$WwQZ">
+      <ref role="1$M2ta" node="2BfcXTMso0U" resolve="LambdaTermsWithVars" />
+      <ref role="1$WBLP" node="2BfcXTMso0U" resolve="LambdaTermsWithVars" />
+    </node>
+    <node concept="1$M0LP" id="1KNKV9vilar" role="1$WwQZ">
+      <ref role="1$M2ta" node="4bwno4n_pNn" resolve="LambdaTerms" />
+      <ref role="1$WBLP" node="2BfcXTMsoYB" resolve="LambdaTermsVis" />
+    </node>
   </node>
-  <node concept="1nQ_01" id="4Mfs57wlcSF">
-    <ref role="1nQ_3S" node="2BfcXTMsoYB" resolve="LambdaTermsVis" />
+  <node concept="1nQ_01" id="1dF21jO$fR7">
+    <property role="TrG5h" value="LambdaTermsToLambdaTermsVis" />
     <ref role="1nQ_06" node="4bwno4n_pNn" resolve="LambdaTerms" />
-    <node concept="1nQ__b" id="4Mfs57wli7f" role="1nQ__n">
+    <ref role="1nQ_3S" node="2BfcXTMsoYB" resolve="LambdaTermsVis" />
+    <node concept="1nQ__b" id="5Qer_$cnwgE" role="1nQ__n">
+      <ref role="1nQ__8" node="4FKFRHYvRNt" resolve="LambdaTerm" />
+      <ref role="1nQ__e" node="2BfcXTMsqhA" resolve="LambdaTerm" />
+    </node>
+    <node concept="1nQ__b" id="5Qer_$cnwgG" role="1nQ__n">
       <ref role="1nQ__8" node="4FKFRHYvSfO" resolve="BoundVariable" />
       <ref role="1nQ__e" node="2BfcXTMsqhG" resolve="BoundVariable" />
     </node>
-    <node concept="1nQ__b" id="4Mfs57wli7r" role="1nQ__n">
-      <ref role="1nQ__8" node="4FKFRHYvSjI" resolve="Constant" />
-      <ref role="1nQ__e" node="2BfcXTMsqhI" resolve="Constant" />
-    </node>
-    <node concept="1nQ__b" id="4Mfs57wli7E" role="1nQ__n">
+    <node concept="1nQ__b" id="5Qer_$cnwgJ" role="1nQ__n">
       <ref role="1nQ__8" node="4FKFRHYvScz" resolve="LambdaAbstraction" />
       <ref role="1nQ__e" node="2BfcXTMsqhE" resolve="LambdaAbstraction" />
     </node>
-    <node concept="1nQ__b" id="4Mfs57wli7W" role="1nQ__n">
+    <node concept="1nQ__b" id="5Qer_$cnwgN" role="1nQ__n">
       <ref role="1nQ__8" node="4FKFRHYvS9t" resolve="LambdaApplication" />
-      <ref role="1nQ__e" node="2BfcXTMsqhC" resolve="LambdaApplication" />
+      <ref role="1nQ__e" node="2BfcXTMsqhE" resolve="LambdaAbstraction" />
     </node>
-    <node concept="1nQ__b" id="4Mfs57wli8h" role="1nQ__n">
-      <ref role="1nQ__8" node="4FKFRHYvRNt" resolve="LambdaTerm" />
-      <ref role="1nQ__e" node="2BfcXTMsqhA" resolve="LambdaTerm" />
+    <node concept="1nQ__b" id="5Qer_$cnwgS" role="1nQ__n">
+      <ref role="1nQ__8" node="4FKFRHYvSjI" resolve="Constant" />
+      <ref role="1nQ__e" node="2BfcXTMsqhI" resolve="Constant" />
+    </node>
+    <node concept="1uv$Fl" id="1dF21jO$g4F" role="1uv$W3">
+      <property role="TrG5h" value="Left" />
+      <node concept="37vLTG" id="1dF21jO$g4G" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="1dF21jO$g4H" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="1dF21jO$g4I" role="3clF47">
+        <node concept="3cpWs8" id="2viqW8DnnLt" role="3cqZAp">
+          <node concept="3cpWsn" id="2viqW8DnnLw" role="3cpWs9">
+            <node concept="_YKpA" id="2viqW8DnnLr" role="1tU5fm">
+              <node concept="CMjq$" id="2viqW8DnnLF" role="_ZDj9" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="33vP2l" id="1dF21jO$g4J" role="3clF45" />
     </node>
   </node>
 </model>

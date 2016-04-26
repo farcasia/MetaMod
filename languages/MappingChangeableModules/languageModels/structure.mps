@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
+    <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -57,6 +58,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5jHGRC3dYCL" resolve="Mapping" />
     </node>
+    <node concept="1TJgyj" id="6VsEH8KCInh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="transformations" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6VsEH8KCI07" resolve="Transformation" />
+    </node>
     <node concept="PrWs8" id="7_nKZKtDJSZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -76,6 +83,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6VsEH8KCI07">
+    <property role="TrG5h" value="Transformation" />
+    <ref role="1TJDcQ" to="1o5n:7MhXM5kjFTb" resolve="Method" />
   </node>
 </model>
 
