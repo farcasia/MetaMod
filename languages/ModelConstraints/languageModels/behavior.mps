@@ -286,25 +286,7 @@
     <property role="3GE5qa" value="Operations" />
     <ref role="13h7C2" to="1o5n:1ky6Xl0JlVl" resolve="ConceptsOfType" />
     <node concept="13hLZK" id="48EbtxmrL8q" role="13h7CW">
-      <node concept="3clFbS" id="48EbtxmrL8r" role="2VODD2">
-        <node concept="3clFbF" id="48EbtxmrL9_" role="3cqZAp">
-          <node concept="37vLTI" id="48EbtxmrLMc" role="3clFbG">
-            <node concept="2ShNRf" id="48EbtxmrLNe" role="37vLTx">
-              <node concept="3zrR0B" id="48EbtxmrLNc" role="2ShVmc">
-                <node concept="3Tqbb2" id="48EbtxmrLNd" role="3zrR0E">
-                  <ref role="ehGHo" to="1o5n:7MhXM5kmc65" resolve="ConceptType" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="48EbtxmrLcK" role="37vLTJ">
-              <node concept="13iPFW" id="48EbtxmrL9$" role="2Oq$k0" />
-              <node concept="3TrEf2" id="48EbtxmrLK5" role="2OqNvi">
-                <ref role="3Tt5mk" to="tp2q:gK_ZDn5" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="48EbtxmrL8r" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="48EbtxmtKRW">

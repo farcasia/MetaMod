@@ -13,6 +13,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -27,10 +28,14 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -87,6 +92,41 @@
   <node concept="1TIwiD" id="6VsEH8KCI07">
     <property role="TrG5h" value="Transformation" />
     <ref role="1TJDcQ" to="1o5n:7MhXM5kjFTb" resolve="Method" />
+  </node>
+  <node concept="1TIwiD" id="2viqW8DpOMg">
+    <property role="TrG5h" value="ConceptTypeMapping" />
+    <property role="34LRSv" value="ConceptTypeMap&lt; &gt;" />
+    <property role="3GE5qa" value="Operations" />
+    <ref role="1TJDcQ" to="1o5n:7MhXM5kmc65" resolve="ConceptType" />
+  </node>
+  <node concept="1TIwiD" id="2viqW8DpOMr">
+    <property role="TrG5h" value="RelationTypeMap" />
+    <property role="34LRSv" value="RelationType&lt; &gt;" />
+    <property role="3GE5qa" value="Operations" />
+    <ref role="1TJDcQ" to="1o5n:5Qer_$coSes" resolve="RelationType" />
+  </node>
+  <node concept="1TIwiD" id="2viqW8DrJa8">
+    <property role="TrG5h" value="AsSourceMapping" />
+    <property role="34LRSv" value="asSource" />
+    <property role="3GE5qa" value="Operations" />
+    <ref role="1TJDcQ" to="1o5n:48EbtxmrRJI" resolve="AsSource" />
+  </node>
+  <node concept="1TIwiD" id="2viqW8DrMmr">
+    <property role="TrG5h" value="AsTargetMapping" />
+    <property role="3GE5qa" value="Operations" />
+    <ref role="1TJDcQ" to="1o5n:48EbtxmtnqF" resolve="AsTarget" />
+  </node>
+  <node concept="1TIwiD" id="2viqW8DrNyb">
+    <property role="TrG5h" value="ConceptsOfTypeMapping" />
+    <property role="34LRSv" value="conceptsOfType" />
+    <property role="3GE5qa" value="Operations" />
+    <ref role="1TJDcQ" to="1o5n:1ky6Xl0JlVl" resolve="ConceptsOfType" />
+    <node concept="1TJgyj" id="2viqW8Ds0cq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conceptType" />
+      <ref role="20ksaX" to="1o5n:1ky6Xl0JyVa" />
+      <ref role="20lvS9" node="2viqW8DpOMg" resolve="ConceptTypeMapping" />
+    </node>
   </node>
 </model>
 
