@@ -180,15 +180,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
-        <property id="779128492853935960" name="anchorTag" index="1K8rD$" />
-        <property id="779128492853934523" name="cellId" index="1K8rM7" />
-        <property id="779128492853699361" name="side" index="1Kfyot" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1158,13 +1152,7 @@
                               <node concept="2OqwBi" id="4B2Oes$wYcT" role="1PxMeX">
                                 <node concept="1PxgMI" id="4B2Oes$wYcU" role="2Oq$k0">
                                   <ref role="1PxNhF" to="tpee:hqOqwz4" resolve="DotExpression" />
-                                  <node concept="nLn13" id="4B2Oes$wYcV" role="1PxMeX">
-                                    <node concept="1KehLL" id="4B2Oes$wY$b" role="lGtFl">
-                                      <property role="1K8rM7" value="ALIAS_EDITOR_COMPONENT" />
-                                      <property role="1K8rD$" value="default_RTransform" />
-                                      <property role="1Kfyot" value="left" />
-                                    </node>
-                                  </node>
+                                  <node concept="nLn13" id="4B2Oes$wYcV" role="1PxMeX" />
                                 </node>
                                 <node concept="3TrEf2" id="4B2Oes$wYcW" role="2OqNvi">
                                   <ref role="3Tt5mk" to="tpee:hqOq$gm" />
@@ -1193,13 +1181,7 @@
                               <node concept="2OqwBi" id="4B2Oes$x2ov" role="1PxMeX">
                                 <node concept="1PxgMI" id="4B2Oes$x2ow" role="2Oq$k0">
                                   <ref role="1PxNhF" to="tpee:hqOqwz4" resolve="DotExpression" />
-                                  <node concept="nLn13" id="4B2Oes$x2ox" role="1PxMeX">
-                                    <node concept="1KehLL" id="4B2Oes$x2oy" role="lGtFl">
-                                      <property role="1K8rM7" value="ALIAS_EDITOR_COMPONENT" />
-                                      <property role="1K8rD$" value="default_RTransform" />
-                                      <property role="1Kfyot" value="left" />
-                                    </node>
-                                  </node>
+                                  <node concept="nLn13" id="4B2Oes$x2ox" role="1PxMeX" />
                                 </node>
                                 <node concept="3TrEf2" id="4B2Oes$x2oz" role="2OqNvi">
                                   <ref role="3Tt5mk" to="tpee:hqOq$gm" />

@@ -250,7 +250,7 @@
     <property role="3GE5qa" value="Operations.WriteOperations" />
     <property role="TrG5h" value="NewRelation" />
     <property role="34LRSv" value="create relation" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="6VsEH8K_344" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
@@ -274,7 +274,7 @@
     <property role="3GE5qa" value="Operations.WriteOperations" />
     <property role="TrG5h" value="NewConceptType" />
     <property role="34LRSv" value="create concept" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="6VsEH8K_enN" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="concept" />
@@ -285,14 +285,16 @@
   <node concept="1TIwiD" id="6VsEH8K_fmZ">
     <property role="3GE5qa" value="Operations.WriteOperations" />
     <property role="TrG5h" value="SetName" />
-    <property role="34LRSv" value="name" />
+    <property role="34LRSv" value="setName" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="PrWs8" id="6VsEH8K_rH6" role="PzmwI">
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
     </node>
-    <node concept="1TJgyi" id="6VsEH8K_Ymu" role="1TKVEl">
-      <property role="TrG5h" value="str" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyj" id="2viqW8DyC1b" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="str" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="6VsEH8K_rHU">

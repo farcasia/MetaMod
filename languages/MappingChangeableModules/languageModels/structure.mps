@@ -9,6 +9,7 @@
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -126,6 +127,38 @@
       <property role="20kJfa" value="conceptType" />
       <ref role="20ksaX" to="1o5n:1ky6Xl0JyVa" />
       <ref role="20lvS9" node="2viqW8DpOMg" resolve="ConceptTypeMapping" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2viqW8DtRic">
+    <property role="3GE5qa" value="Operations" />
+    <property role="TrG5h" value="IsTypeOfMap" />
+    <property role="34LRSv" value="isTypeOf" />
+    <ref role="1TJDcQ" to="1o5n:1ky6Xl0Obv0" resolve="IsTypeOf" />
+    <node concept="1TJgyj" id="2viqW8DtRHk" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conceptType" />
+      <ref role="20ksaX" to="1o5n:1ky6Xl0Obv3" />
+      <ref role="20lvS9" node="2viqW8DpOMg" resolve="ConceptTypeMapping" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2viqW8DvY$K">
+    <property role="3GE5qa" value="Operations" />
+    <property role="TrG5h" value="NewRelationMap" />
+    <ref role="1TJDcQ" to="1o5n:6VsEH8K$Xct" resolve="NewRelation" />
+  </node>
+  <node concept="1TIwiD" id="2viqW8DvZ21">
+    <property role="3GE5qa" value="Operations" />
+    <property role="TrG5h" value="NewConceptTypeMap" />
+    <ref role="1TJDcQ" to="1o5n:6VsEH8K_enM" resolve="NewConceptType" />
+  </node>
+  <node concept="1TIwiD" id="2viqW8D$wQc">
+    <property role="TrG5h" value="TransformationCall" />
+    <ref role="1TJDcQ" to="tpee:fz7wK6G" resolve="BaseMethodCall" />
+    <node concept="1TJgyj" id="2viqW8D$wWB" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="method" />
+      <ref role="20ksaX" to="tpee:fz7wK6H" />
+      <ref role="20lvS9" node="6VsEH8KCI07" resolve="Transformation" />
     </node>
   </node>
 </model>

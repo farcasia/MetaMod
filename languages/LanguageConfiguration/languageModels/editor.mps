@@ -22,6 +22,10 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -62,6 +66,9 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
+        <node concept="Veino" id="2sRatYYBM0R" role="3F10Kt">
+          <property role="Vb096" value="green" />
+        </node>
       </node>
       <node concept="3F0ifn" id="7_nKZKtDsS5" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
@@ -73,6 +80,9 @@
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
+        </node>
+        <node concept="Veino" id="2sRatYYBM2V" role="3F10Kt">
+          <property role="Vb096" value="yellow" />
         </node>
       </node>
       <node concept="2iRfu4" id="7_nKZKtBY3G" role="2iSdaV" />

@@ -10,6 +10,7 @@
     <import index="gdcp" ref="r:c37bf6c1-c472-4cbd-a610-2f82648dca67(LambdaCalculusLanguage.LambdaCalculus)" implicit="true" />
     <import index="5h42" ref="r:e07cd4d2-0355-4c35-ad0c-b0182373811d(MappingChangeableModules.structure)" implicit="true" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" implicit="true" />
   </imports>
   <registry>
@@ -24,6 +25,7 @@
     </language>
     <language id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" name="MappingChangeableModules">
       <concept id="2869474394250890384" name="MappingChangeableModules.structure.ConceptTypeMapping" flags="ig" index="eHiti" />
+      <concept id="2869474394250890395" name="MappingChangeableModules.structure.RelationTypeMap" flags="ig" index="eHitp" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="1196350785110" name="jetbrains.mps.lang.quotation.structure.AbstractAntiquotation" flags="ng" index="2c44t0">
@@ -241,6 +243,137 @@
     <node concept="1YaCAy" id="2viqW8DrNyt" role="1YuTPh">
       <property role="TrG5h" value="conceptsOfTypeMapping" />
       <ref role="1YaFvo" to="5h42:2viqW8DrNyb" resolve="ConceptsOfTypeMapping" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2viqW8Dy3r8">
+    <property role="TrG5h" value="typeof_NewConceptTypeMap" />
+    <property role="3GE5qa" value="Operations" />
+    <node concept="3clFbS" id="2viqW8Dy3r9" role="18ibNy">
+      <node concept="1Z5TYs" id="2viqW8Dy3uy" role="3cqZAp">
+        <node concept="mw_s8" id="2viqW8Dy3uQ" role="1ZfhKB">
+          <node concept="2c44tf" id="2viqW8Dy3uM" role="mwGJk">
+            <node concept="eHiti" id="2viqW8Dy3vc" role="2c44tc">
+              <node concept="2c44tb" id="2viqW8Dy3vx" role="lGtFl">
+                <property role="P3scX" value="8a5ffd84-4b2e-475c-803b-24d3ac9331ee/8976227254847193477/8976227254847281741" />
+                <property role="2qtEX8" value="namedConcept" />
+                <node concept="2OqwBi" id="2viqW8Dy3xT" role="2c44t1">
+                  <node concept="1YBJjd" id="2viqW8Dy3vX" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2viqW8Dy3rb" resolve="newConceptTypeMap" />
+                  </node>
+                  <node concept="3TrEf2" id="2viqW8Dy3Hh" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1o5n:6VsEH8K_enN" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2viqW8Dy3u_" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2viqW8Dy3s8" role="mwGJk">
+            <node concept="1YBJjd" id="2viqW8Dy3s$" role="1Z2MuG">
+              <ref role="1YBMHb" node="2viqW8Dy3rb" resolve="newConceptTypeMap" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2viqW8Dy3rb" role="1YuTPh">
+      <property role="TrG5h" value="newConceptTypeMap" />
+      <ref role="1YaFvo" to="5h42:2viqW8DvZ21" resolve="NewConceptTypeMap" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2viqW8Dy41s">
+    <property role="TrG5h" value="typeof_NewRelationMap" />
+    <property role="3GE5qa" value="Operations" />
+    <node concept="3clFbS" id="2viqW8Dy41t" role="18ibNy">
+      <node concept="1Z5TYs" id="2viqW8Dy44S" role="3cqZAp">
+        <node concept="mw_s8" id="2viqW8Dy45v" role="1ZfhKB">
+          <node concept="2c44tf" id="2viqW8Dy45r" role="mwGJk">
+            <node concept="eHitp" id="2viqW8Dy5GW" role="2c44tc">
+              <node concept="2c44tb" id="2viqW8Dy5Hh" role="lGtFl">
+                <property role="P3scX" value="8a5ffd84-4b2e-475c-803b-24d3ac9331ee/6741447020959204252/6741447020959214516" />
+                <property role="2qtEX8" value="relation" />
+                <node concept="2OqwBi" id="2viqW8Dy5PR" role="2c44t1">
+                  <node concept="1YBJjd" id="2viqW8Dy5NV" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2viqW8Dy41v" resolve="newRelationMap" />
+                  </node>
+                  <node concept="3TrEf2" id="2viqW8Dy6bV" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1o5n:6VsEH8K_349" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2c44tb" id="2viqW8Dy6cT" role="lGtFl">
+                <property role="P3scX" value="8a5ffd84-4b2e-475c-803b-24d3ac9331ee/6741447020959204252/6741447020959214514" />
+                <property role="2qtEX8" value="source" />
+                <node concept="2OqwBi" id="2viqW8Dy6fl" role="2c44t1">
+                  <node concept="1YBJjd" id="2viqW8Dy6dp" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2viqW8Dy41v" resolve="newRelationMap" />
+                  </node>
+                  <node concept="3TrEf2" id="2viqW8Dy6qX" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1o5n:6VsEH8K_344" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2c44tb" id="2viqW8Dy6rq" role="lGtFl">
+                <property role="P3scX" value="8a5ffd84-4b2e-475c-803b-24d3ac9331ee/6741447020959204252/6741447020959214515" />
+                <property role="2qtEX8" value="target" />
+                <node concept="2OqwBi" id="2viqW8Dy6ut" role="2c44t1">
+                  <node concept="1YBJjd" id="2viqW8Dy6sx" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2viqW8Dy41v" resolve="newRelationMap" />
+                  </node>
+                  <node concept="3TrEf2" id="2viqW8Dy6El" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1o5n:6VsEH8K_346" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2viqW8Dy44V" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2viqW8Dy41z" role="mwGJk">
+            <node concept="1YBJjd" id="2viqW8Dy42U" role="1Z2MuG">
+              <ref role="1YBMHb" node="2viqW8Dy41v" resolve="newRelationMap" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2viqW8Dy41v" role="1YuTPh">
+      <property role="TrG5h" value="newRelationMap" />
+      <ref role="1YaFvo" to="5h42:2viqW8DvY$K" resolve="NewRelationMap" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2viqW8D$y8u">
+    <property role="TrG5h" value="typeof_TransformationCall" />
+    <node concept="3clFbS" id="2viqW8D$y8v" role="18ibNy">
+      <node concept="1Z5TYs" id="2viqW8D$yaZ" role="3cqZAp">
+        <node concept="mw_s8" id="2viqW8D$ybh" role="1ZfhKB">
+          <node concept="2OqwBi" id="2viqW8D$z7Y" role="mwGJk">
+            <node concept="2OqwBi" id="2viqW8D$yeg" role="2Oq$k0">
+              <node concept="1YBJjd" id="2viqW8D$ybf" role="2Oq$k0">
+                <ref role="1YBMHb" node="2viqW8D$y8x" resolve="transformationCall" />
+              </node>
+              <node concept="3TrEf2" id="2viqW8D$yII" role="2OqNvi">
+                <ref role="3Tt5mk" to="5h42:2viqW8D$wWB" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="2viqW8D$$vi" role="2OqNvi">
+              <ref role="3Tt5mk" to="tpee:fzclF7X" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2viqW8D$yb2" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2viqW8D$y8_" role="mwGJk">
+            <node concept="1YBJjd" id="2viqW8D$y91" role="1Z2MuG">
+              <ref role="1YBMHb" node="2viqW8D$y8x" resolve="transformationCall" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2viqW8D$y8x" role="1YuTPh">
+      <property role="TrG5h" value="transformationCall" />
+      <ref role="1YaFvo" to="5h42:2viqW8D$wQc" resolve="TransformationCall" />
     </node>
   </node>
 </model>

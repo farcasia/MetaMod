@@ -44,7 +44,14 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -59,6 +66,10 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
       <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
         <child id="1144226360166" name="iterable" index="1DdaDG" />
@@ -72,7 +83,11 @@
       <concept id="5319102428749892498" name="CodeGeneration.structure.CodeGenMethod" flags="ng" index="1GnNjC" />
     </language>
     <language id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" name="MappingChangeableModules">
+      <concept id="2869474394253692300" name="MappingChangeableModules.structure.TransformationCall" flags="ng" index="eg6pe" />
+      <concept id="2869474394251949196" name="MappingChangeableModules.structure.IsTypeOfMap" flags="ng" index="eDhXe" />
+      <concept id="2869474394252503344" name="MappingChangeableModules.structure.NewRelationMap" flags="ng" index="eFobM" />
       <concept id="2869474394250890384" name="MappingChangeableModules.structure.ConceptTypeMapping" flags="ig" index="eHiti" />
+      <concept id="2869474394250890395" name="MappingChangeableModules.structure.RelationTypeMap" flags="ig" index="eHitp" />
       <concept id="2869474394251391624" name="MappingChangeableModules.structure.AsSourceMapping" flags="ng" index="eJ9_a" />
       <concept id="2869474394251409547" name="MappingChangeableModules.structure.ConceptsOfTypeMapping" flags="ng" index="eJld9" />
       <concept id="6119744805287748475" name="MappingChangeableModules.structure.MappingContainer" flags="ng" index="1nQ_01">
@@ -173,10 +188,28 @@
       <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$">
         <reference id="8976227254847281741" name="namedConcept" index="CMYPG" />
       </concept>
-      <concept id="6741447020959204252" name="GenericGroupMethods.structure.RelationType" flags="ig" index="1hVuR5" />
+      <concept id="6741447020959204252" name="GenericGroupMethods.structure.RelationType" flags="ig" index="1hVuR5">
+        <reference id="6741447020959214515" name="target" index="1hVsnE" />
+        <reference id="6741447020959214514" name="source" index="1hVsnF" />
+        <reference id="6741447020959214516" name="relation" index="1hVsnH" />
+      </concept>
       <concept id="1522810226732341093" name="GenericGroupMethods.structure.ValueModel" flags="ig" index="1l_8MK" />
       <concept id="1522810226732785365" name="GenericGroupMethods.structure.ConceptsOfType" flags="ng" index="1lBOk0">
         <child id="1522810226732838602" name="conceptType" index="1lB3kv" />
+      </concept>
+      <concept id="1522810226734053312" name="GenericGroupMethods.structure.IsTypeOf" flags="ng" index="1lWEKl">
+        <child id="1522810226734053315" name="conceptType" index="1lWEKm" />
+      </concept>
+      <concept id="7988447658783390586" name="GenericGroupMethods.structure.SetSource" flags="ng" index="1uih6C">
+        <child id="7988447658783564108" name="conceptType" index="1uhcIu" />
+      </concept>
+      <concept id="7988447658783390974" name="GenericGroupMethods.structure.SetTarget" flags="ng" index="1uihoG">
+        <child id="7988447658783564197" name="conceptType" index="1uhcHR" />
+      </concept>
+      <concept id="7988447658783265565" name="GenericGroupMethods.structure.NewRelation" flags="ng" index="1ujRBf">
+        <reference id="7988447658783289606" name="target" index="1ui9Jk" />
+        <reference id="7988447658783289604" name="source" index="1ui9Jm" />
+        <reference id="7988447658783289609" name="relation" index="1ui9Jr" />
       </concept>
       <concept id="7169015349702230285" name="GenericGroupMethods.structure.Facet" flags="ng" index="1vbBhR">
         <child id="4406892874368993969" name="reusedFacets" index="1eREs9" />
@@ -2835,9 +2868,6 @@
     <property role="3GE5qa" value="Group_codegen" />
     <property role="TrG5h" value="CodeGen_cbn_LambdaTerms" />
     <ref role="1GHRfG" node="4bwno4n_pNn" resolve="LambdaTerms" />
-    <node concept="1vbBhR" id="2BfcXTMtkwS" role="1ukcCD">
-      <property role="TrG5h" value="cbn" />
-    </node>
     <node concept="1GnNjC" id="2BfcXTMtkC5" role="CLm5g">
       <property role="TrG5h" value="cbn" />
       <node concept="37vLTG" id="2BfcXTMtkC6" role="3clF46">
@@ -2925,12 +2955,13 @@
             <node concept="33vP2n" id="4B2Oes$wAkr" role="33vP2m" />
           </node>
         </node>
-        <node concept="3clFbH" id="4B2Oes$ysvx" role="3cqZAp" />
-        <node concept="3clFbH" id="4B2Oes$ysvT" role="3cqZAp" />
       </node>
       <node concept="CMjq$" id="4Gz6IvJ84s1" role="3clF45">
         <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
       </node>
+    </node>
+    <node concept="1vbBhR" id="2viqW8DuoD1" role="1ukcCD">
+      <property role="TrG5h" value="cbn" />
     </node>
   </node>
   <node concept="2$1D0M" id="5jHGRC3bPrs">
@@ -3082,7 +3113,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="2viqW8DsnEy" role="3cqZAp" />
-        <node concept="3clFbH" id="2viqW8Drwl$" role="3cqZAp" />
         <node concept="1DcWWT" id="2viqW8DrHOk" role="3cqZAp">
           <node concept="3clFbS" id="2viqW8DrHOm" role="2LFqv$">
             <node concept="3cpWs8" id="2viqW8DsocC" role="3cqZAp">
@@ -3134,11 +3164,77 @@
             <node concept="3clFbH" id="2viqW8Dsu4n" role="3cqZAp" />
             <node concept="3cpWs8" id="2viqW8DtN_8" role="3cqZAp">
               <node concept="3cpWsn" id="2viqW8DtN_b" role="3cpWs9">
-                <property role="TrG5h" value="lAppl" />
+                <property role="TrG5h" value="newLAppl" />
                 <node concept="eHiti" id="2viqW8DtN_6" role="1tU5fm">
                   <ref role="CMYPG" node="4FKFRHYvS9t" resolve="LambdaApplication" />
                 </node>
-                <node concept="33vP2n" id="2viqW8DtNH7" role="33vP2m" />
+                <node concept="eg6pe" id="2viqW8D_x15" role="33vP2m">
+                  <ref role="37wK5l" node="2viqW8DtPkJ" resolve="createConcreteLambdaTerm" />
+                  <node concept="37vLTw" id="2viqW8D_x2o" role="37wK5m">
+                    <ref role="3cqZAo" node="1dF21jO$g4G" resolve="valueModel" />
+                  </node>
+                  <node concept="37vLTw" id="2viqW8D_x3H" role="37wK5m">
+                    <ref role="3cqZAo" node="2viqW8DsocF" resolve="lAppl" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="2viqW8DvENh" role="3cqZAp">
+              <node concept="3cpWsn" id="2viqW8DvENk" role="3cpWs9">
+                <property role="TrG5h" value="newLTerm" />
+                <node concept="eHiti" id="2viqW8DvENf" role="1tU5fm">
+                  <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
+                </node>
+                <node concept="eg6pe" id="2viqW8D_xt5" role="33vP2m">
+                  <ref role="37wK5l" node="2viqW8DtPkJ" resolve="createConcreteLambdaTerm" />
+                  <node concept="37vLTw" id="2viqW8D_xtj" role="37wK5m">
+                    <ref role="3cqZAo" node="1dF21jO$g4G" resolve="valueModel" />
+                  </node>
+                  <node concept="37vLTw" id="2viqW8D_xtO" role="37wK5m">
+                    <ref role="3cqZAo" node="2viqW8DsrEj" resolve="lTerm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2viqW8DvF0M" role="3cqZAp" />
+            <node concept="3cpWs8" id="2viqW8D_ylJ" role="3cqZAp">
+              <node concept="3cpWsn" id="2viqW8D_ylM" role="3cpWs9">
+                <property role="TrG5h" value="newLeft" />
+                <node concept="eFobM" id="2viqW8D_xFV" role="33vP2m">
+                  <ref role="1ui9Jk" node="4FKFRHYvRNt" resolve="LambdaTerm" />
+                  <ref role="1ui9Jm" node="4FKFRHYvS9t" resolve="LambdaApplication" />
+                  <ref role="1ui9Jr" node="4FKFRHYvSES" resolve="left" />
+                </node>
+                <node concept="eHitp" id="2sRatYYzmCG" role="1tU5fm">
+                  <ref role="1hVsnH" node="4FKFRHYvSES" resolve="left" />
+                  <ref role="1hVsnF" node="4FKFRHYvS9t" resolve="LambdaApplication" />
+                  <ref role="1hVsnE" node="4FKFRHYvRNt" resolve="LambdaTerm" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2viqW8D_y$c" role="3cqZAp" />
+            <node concept="3clFbF" id="2viqW8D_z0f" role="3cqZAp">
+              <node concept="2OqwBi" id="2viqW8D_zen" role="3clFbG">
+                <node concept="37vLTw" id="2viqW8D_z0d" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2viqW8D_ylM" resolve="newLeft" />
+                </node>
+                <node concept="1uih6C" id="2viqW8D_zhG" role="2OqNvi">
+                  <node concept="37vLTw" id="2viqW8D_zhX" role="1uhcIu">
+                    <ref role="3cqZAo" node="2viqW8DtN_b" resolve="newLAppl" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2viqW8D_zwv" role="3cqZAp">
+              <node concept="2OqwBi" id="2viqW8D_zIM" role="3clFbG">
+                <node concept="37vLTw" id="2viqW8D_zwt" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2viqW8D_ylM" resolve="newLeft" />
+                </node>
+                <node concept="1uihoG" id="2viqW8D_zPa" role="2OqNvi">
+                  <node concept="37vLTw" id="2viqW8D_zPr" role="1uhcHR">
+                    <ref role="3cqZAo" node="2viqW8DvENk" resolve="newLTerm" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -3154,6 +3250,41 @@
         </node>
       </node>
       <node concept="3cqZAl" id="2viqW8DtMto" role="3clF45" />
+    </node>
+    <node concept="1uv$Fl" id="2viqW8DtPkJ" role="1uv$W3">
+      <property role="TrG5h" value="createConcreteLambdaTerm" />
+      <node concept="37vLTG" id="2viqW8DtPkK" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="2viqW8DtPkL" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="2viqW8DtQAt" role="3clF46">
+        <property role="TrG5h" value="lambdaTerm" />
+        <node concept="eHiti" id="2viqW8DtQA_" role="1tU5fm">
+          <ref role="CMYPG" node="2BfcXTMsqhA" resolve="LambdaTerm" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2viqW8DtPkM" role="3clF47">
+        <node concept="3clFbJ" id="2viqW8DtQJ1" role="3cqZAp">
+          <node concept="3clFbS" id="2viqW8DtQJ2" role="3clFbx">
+            <node concept="3clFbF" id="2viqW8DvDVS" role="3cqZAp">
+              <node concept="33vP2n" id="2viqW8DvEtY" role="3clFbG" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2viqW8DuoV7" role="3clFbw">
+            <node concept="37vLTw" id="2viqW8DuoSw" role="2Oq$k0">
+              <ref role="3cqZAo" node="2viqW8DtQAt" resolve="lambdaTerm" />
+            </node>
+            <node concept="eDhXe" id="2viqW8DupTs" role="2OqNvi">
+              <node concept="eHiti" id="2viqW8DvDG$" role="1lWEKm">
+                <ref role="CMYPG" node="4FKFRHYvScz" resolve="LambdaAbstraction" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="eHiti" id="2viqW8DtQB6" role="3clF45">
+        <ref role="CMYPG" node="4FKFRHYvRNt" resolve="LambdaTerm" />
+      </node>
     </node>
   </node>
 </model>
