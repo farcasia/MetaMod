@@ -29,7 +29,6 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
-        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -48,13 +47,13 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5jHGRC3dYdW" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="changeableGroup" />
+      <property role="20kJfa" value="specificationGroup" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     </node>
     <node concept="1TJgyj" id="5jHGRC3dYe2" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="implementationGroup" />
+      <property role="20kJfa" value="refinmentGroup" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     </node>
@@ -66,9 +65,9 @@
     </node>
     <node concept="1TJgyj" id="6VsEH8KCInh" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="transformations" />
+      <property role="20kJfa" value="rewritings" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6VsEH8KCI07" resolve="Transformation" />
+      <ref role="20lvS9" node="6VsEH8KCI07" resolve="PrimitiveRewriting" />
     </node>
     <node concept="PrWs8" id="7_nKZKtDJSZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -79,32 +78,33 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5jHGRC3dYCM" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="changeableConcept" />
+      <property role="20kJfa" value="specificationConcept" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
     </node>
     <node concept="1TJgyj" id="5jHGRC3dYCO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="implementationConcept" />
+      <property role="20kJfa" value="refinmentConcept" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="6VsEH8KCI07">
-    <property role="TrG5h" value="Transformation" />
-    <ref role="1TJDcQ" to="1o5n:7MhXM5kjFTb" resolve="Method" />
-  </node>
-  <node concept="1TIwiD" id="2viqW8DpOMg">
-    <property role="TrG5h" value="ConceptTypeMapping" />
-    <property role="34LRSv" value="ConceptTypeMap&lt; &gt;" />
-    <property role="3GE5qa" value="Operations" />
-    <ref role="1TJDcQ" to="1o5n:7MhXM5kmc65" resolve="ConceptType" />
-  </node>
-  <node concept="1TIwiD" id="2viqW8DpOMr">
-    <property role="TrG5h" value="RelationTypeMap" />
-    <property role="34LRSv" value="RelationType&lt; &gt;" />
-    <property role="3GE5qa" value="Operations" />
-    <ref role="1TJDcQ" to="1o5n:5Qer_$coSes" resolve="RelationType" />
+    <property role="TrG5h" value="PrimitiveRewriting" />
+    <property role="34LRSv" value="rewrite rule" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="DTk9ZCLlGF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rewrittenExpression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:hqOqwz4" resolve="DotExpression" />
+    </node>
+    <node concept="1TJgyj" id="DTk9ZCLlGD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2viqW8DrJa8">
     <property role="TrG5h" value="AsSourceMapping" />
@@ -115,50 +115,18 @@
   <node concept="1TIwiD" id="2viqW8DrMmr">
     <property role="TrG5h" value="AsTargetMapping" />
     <property role="3GE5qa" value="Operations" />
+    <property role="34LRSv" value="asTarget" />
     <ref role="1TJDcQ" to="1o5n:48EbtxmtnqF" resolve="AsTarget" />
   </node>
-  <node concept="1TIwiD" id="2viqW8DrNyb">
-    <property role="TrG5h" value="ConceptsOfTypeMapping" />
-    <property role="34LRSv" value="conceptsOfType" />
-    <property role="3GE5qa" value="Operations" />
-    <ref role="1TJDcQ" to="1o5n:1ky6Xl0JlVl" resolve="ConceptsOfType" />
-    <node concept="1TJgyj" id="2viqW8Ds0cq" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="conceptType" />
-      <ref role="20ksaX" to="1o5n:1ky6Xl0JyVa" />
-      <ref role="20lvS9" node="2viqW8DpOMg" resolve="ConceptTypeMapping" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2viqW8DtRic">
-    <property role="3GE5qa" value="Operations" />
-    <property role="TrG5h" value="IsTypeOfMap" />
-    <property role="34LRSv" value="isTypeOf" />
-    <ref role="1TJDcQ" to="1o5n:1ky6Xl0Obv0" resolve="IsTypeOf" />
-    <node concept="1TJgyj" id="2viqW8DtRHk" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="conceptType" />
-      <ref role="20ksaX" to="1o5n:1ky6Xl0Obv3" />
-      <ref role="20lvS9" node="2viqW8DpOMg" resolve="ConceptTypeMapping" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2viqW8DvY$K">
-    <property role="3GE5qa" value="Operations" />
-    <property role="TrG5h" value="NewRelationMap" />
-    <ref role="1TJDcQ" to="1o5n:6VsEH8K$Xct" resolve="NewRelation" />
-  </node>
-  <node concept="1TIwiD" id="2viqW8DvZ21">
-    <property role="3GE5qa" value="Operations" />
-    <property role="TrG5h" value="NewConceptTypeMap" />
-    <ref role="1TJDcQ" to="1o5n:6VsEH8K_enM" resolve="NewConceptType" />
-  </node>
-  <node concept="1TIwiD" id="2viqW8D$wQc">
-    <property role="TrG5h" value="TransformationCall" />
-    <ref role="1TJDcQ" to="tpee:fz7wK6G" resolve="BaseMethodCall" />
-    <node concept="1TJgyj" id="2viqW8D$wWB" role="1TKVEi">
+  <node concept="1TIwiD" id="DTk9ZCLhm5">
+    <property role="TrG5h" value="DirectConceptType" />
+    <property role="34LRSv" value="direct conceptType&lt; &gt;" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="DTk9ZCLh_a" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="method" />
-      <ref role="20ksaX" to="tpee:fz7wK6H" />
-      <ref role="20lvS9" node="6VsEH8KCI07" resolve="Transformation" />
+      <property role="20kJfa" value="namedConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
     </node>
   </node>
 </model>

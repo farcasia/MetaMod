@@ -42,6 +42,9 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -73,14 +76,24 @@
       <concept id="5319102428749892498" name="CodeGeneration.structure.CodeGenMethod" flags="ng" index="1GnNjC" />
     </language>
     <language id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" name="MappingChangeableModules">
+      <concept id="2869474394251391624" name="MappingChangeableModules.structure.AsSourceMapping" flags="ng" index="eJ9_a" />
+      <concept id="2869474394251404699" name="MappingChangeableModules.structure.AsTargetMapping" flags="ng" index="eJkTp" />
       <concept id="6119744805287748475" name="MappingChangeableModules.structure.MappingContainer" flags="ng" index="1nQ_01">
-        <reference id="6119744805287748476" name="changeableGroup" index="1nQ_06" />
-        <reference id="6119744805287748482" name="implementationGroup" index="1nQ_3S" />
+        <reference id="6119744805287748476" name="specificationGroup" index="1nQ_06" />
+        <reference id="6119744805287748482" name="refinmentGroup" index="1nQ_3S" />
         <child id="6119744805287750189" name="mappings" index="1nQ__n" />
+        <child id="7988447658784253393" name="rewritings" index="1uv$W3" />
       </concept>
       <concept id="6119744805287750193" name="MappingChangeableModules.structure.Mapping" flags="ng" index="1nQ__b">
-        <reference id="6119744805287750194" name="changeableConcept" index="1nQ__8" />
-        <reference id="6119744805287750196" name="implementationConcept" index="1nQ__e" />
+        <reference id="6119744805287750194" name="specificationConcept" index="1nQ__8" />
+        <reference id="6119744805287750196" name="refinmentConcept" index="1nQ__e" />
+      </concept>
+      <concept id="7988447658784251911" name="MappingChangeableModules.structure.PrimitiveRewriting" flags="ng" index="1uv$Fl">
+        <child id="754723060296538923" name="rewrittenExpression" index="3yJ0IO" />
+        <child id="754723060296538921" name="body" index="3yJ0IQ" />
+      </concept>
+      <concept id="754723060296521093" name="MappingChangeableModules.structure.DirectConceptType" flags="ng" index="3yJ4kq">
+        <reference id="754723060296522058" name="namedConcept" index="3yJ4Bl" />
       </concept>
     </language>
     <language id="a00bbccc-dbff-45c7-aa54-02d1f94db9b5" name="LanguageConfiguration">
@@ -156,6 +169,9 @@
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods">
       <concept id="4767673562711423982" name="GenericGroupMethods.structure.AsSource" flags="ng" index="khloQ">
         <reference id="4767673562711424009" name="refAssoc" index="khl7h" />
+      </concept>
+      <concept id="4767673562711815851" name="GenericGroupMethods.structure.AsTarget" flags="ng" index="knPHN">
+        <reference id="4767673562711815852" name="refAssoc" index="knPHO" />
       </concept>
       <concept id="8976227254846920304" name="GenericGroupMethods.structure.MethodsContainer" flags="ng" index="CLm5h">
         <reference id="5319102428747287702" name="group" index="1GHRfG" />
@@ -566,20 +582,6 @@
       </node>
     </node>
   </node>
-  <node concept="1nQ_01" id="DTk9ZCJ702">
-    <property role="3GE5qa" value="RouteRefinement" />
-    <property role="TrG5h" value="RouteSpecification2RouteCommandList" />
-    <ref role="1nQ_06" node="44wDDDIUxTt" resolve="RouteSpecification" />
-    <ref role="1nQ_3S" node="44wDDDIUK6G" resolve="RouteCommandList" />
-    <node concept="1nQ__b" id="DTk9ZCJ70e" role="1nQ__n">
-      <ref role="1nQ__8" node="44wDDDIUBP8" resolve="Route" />
-      <ref role="1nQ__e" node="44wDDDIUK78" resolve="Route" />
-    </node>
-    <node concept="1nQ__b" id="DTk9ZCJ70o" role="1nQ__n">
-      <ref role="1nQ__8" node="44wDDDIUBPT" resolve="Command" />
-      <ref role="1nQ__e" node="44wDDDIUK79" resolve="Command" />
-    </node>
-  </node>
   <node concept="1vbSxi" id="DTk9ZCJ70D">
     <property role="1vYpmj" value="CodeGen" />
     <property role="3GE5qa" value="RouteSpecification" />
@@ -592,6 +594,80 @@
     <node concept="1$M0LP" id="DTk9ZCJ78J" role="1$WwQZ">
       <ref role="1$M2ta" node="44wDDDIUxTt" resolve="RouteSpecification" />
       <ref role="1$WBLP" node="44wDDDIUK6G" resolve="RouteCommandList" />
+    </node>
+  </node>
+  <node concept="1nQ_01" id="DTk9ZCOJPR">
+    <property role="3GE5qa" value="RouteRefinement" />
+    <property role="TrG5h" value="RouteSpecificationToRouteCommandList" />
+    <ref role="1nQ_06" node="44wDDDIUxTt" resolve="RouteSpecification" />
+    <ref role="1nQ_3S" node="44wDDDIUK6G" resolve="RouteCommandList" />
+    <node concept="1nQ__b" id="DTk9ZCOJPS" role="1nQ__n">
+      <ref role="1nQ__8" node="44wDDDIUBP8" resolve="Route" />
+      <ref role="1nQ__e" node="44wDDDIUK78" resolve="Route" />
+    </node>
+    <node concept="1nQ__b" id="DTk9ZCOJQ6" role="1nQ__n">
+      <ref role="1nQ__8" node="44wDDDIUBPT" resolve="Command" />
+      <ref role="1nQ__e" node="44wDDDIUK79" resolve="Command" />
+    </node>
+    <node concept="1uv$Fl" id="DTk9ZCPDe_" role="1uv$W3">
+      <node concept="3clFbS" id="DTk9ZCPDeA" role="3yJ0IQ">
+        <node concept="3clFbF" id="DTk9ZCPDtu" role="3cqZAp">
+          <node concept="2OqwBi" id="DTk9ZCPG3l" role="3clFbG">
+            <node concept="2OqwBi" id="DTk9ZCPEwC" role="2Oq$k0">
+              <node concept="2OqwBi" id="DTk9ZCPDuy" role="2Oq$k0">
+                <node concept="3yJ4kq" id="DTk9ZCPDtt" role="2Oq$k0">
+                  <ref role="3yJ4Bl" node="44wDDDIUBPT" resolve="Command" />
+                </node>
+                <node concept="eJkTp" id="DTk9ZCPD_b" role="2OqNvi">
+                  <ref role="knPHO" node="44wDDDIUK7e" resolve="commands" />
+                </node>
+              </node>
+              <node concept="1uHKPH" id="DTk9ZCPFin" role="2OqNvi" />
+            </node>
+            <node concept="eJkTp" id="DTk9ZCPGtm" role="2OqNvi">
+              <ref role="knPHO" node="44wDDDIUK7b" resolve="comList" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2OqwBi" id="DTk9ZCPDeB" role="3yJ0IO">
+        <node concept="eJkTp" id="DTk9ZCPDt1" role="2OqNvi">
+          <ref role="knPHO" node="44wDDDIUBRi" resolve="commands" />
+        </node>
+        <node concept="3yJ4kq" id="DTk9ZCPDg7" role="2Oq$k0">
+          <ref role="3yJ4Bl" node="44wDDDIUBPT" resolve="Command" />
+        </node>
+      </node>
+    </node>
+    <node concept="1uv$Fl" id="DTk9ZCQqp9" role="1uv$W3">
+      <node concept="3clFbS" id="DTk9ZCQqpa" role="3yJ0IQ">
+        <node concept="3clFbF" id="DTk9ZCQqAZ" role="3cqZAp">
+          <node concept="2OqwBi" id="DTk9ZCQtdY" role="3clFbG">
+            <node concept="2OqwBi" id="DTk9ZCQrHB" role="2Oq$k0">
+              <node concept="2OqwBi" id="DTk9ZCQqBN" role="2Oq$k0">
+                <node concept="3yJ4kq" id="DTk9ZCQqAY" role="2Oq$k0">
+                  <ref role="3yJ4Bl" node="44wDDDIUBP8" resolve="Route" />
+                </node>
+                <node concept="eJ9_a" id="DTk9ZCQqOL" role="2OqNvi">
+                  <ref role="khl7h" node="44wDDDIUK7b" resolve="comList" />
+                </node>
+              </node>
+              <node concept="1uHKPH" id="DTk9ZCQstG" role="2OqNvi" />
+            </node>
+            <node concept="eJ9_a" id="DTk9ZCQttG" role="2OqNvi">
+              <ref role="khl7h" node="44wDDDIUK7e" resolve="commands" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2OqwBi" id="DTk9ZCQqpb" role="3yJ0IO">
+        <node concept="eJ9_a" id="DTk9ZCQqAy" role="2OqNvi">
+          <ref role="khl7h" node="44wDDDIUBRi" resolve="commands" />
+        </node>
+        <node concept="3yJ4kq" id="DTk9ZCQqpC" role="2Oq$k0">
+          <ref role="3yJ4Bl" node="44wDDDIUBP8" resolve="Route" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
