@@ -16,6 +16,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" name="MappingChangeableModules" version="-1" />
     <use id="a00bbccc-dbff-45c7-aa54-02d1f94db9b5" name="LanguageConfiguration" version="-1" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports />
   <registry>
@@ -23,6 +24,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -53,6 +57,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -60,12 +65,18 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration">
+      <concept id="5711897705675317525" name="CodeGeneration.structure.CodeGenMethodCall" flags="ng" index="3otQA" />
       <concept id="7169015349702229288" name="CodeGeneration.structure.ConfigurationCodeGen" flags="ng" index="1vbSxi">
         <child id="7169015349702231151" name="facet" index="1vbB4l" />
       </concept>
@@ -104,14 +115,20 @@
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
       <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
+      <concept id="8717972784948764160" name="Models.structure.RefToNamedRelation" flags="ng" index="2oAawe" />
+      <concept id="8717972784948762665" name="Models.structure.Concept" flags="ng" index="2oAaSB">
+        <child id="8717972784948764180" name="conformsTo" index="2oAawq" />
+      </concept>
       <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <property id="4406892874363944218" name="partial" index="1ewt2y" />
         <property id="9017624775202900822" name="main" index="3uBway" />
+        <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
         <property id="3979997632601093222" name="targetCard" index="2XbFU$" />
         <property id="3979997632601093220" name="sourceCard" index="2XbFUA" />
+        <child id="8717972784948764204" name="conformsTo" index="2oAawy" />
         <child id="8717972784948764201" name="target" index="2oAawB" />
         <child id="8717972784948764199" name="source" index="2oAawD" />
       </concept>
@@ -121,6 +138,12 @@
       <concept id="8717972784948762981" name="Models.structure.RefToNamedConcept" flags="ng" index="2oAaXF" />
       <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
         <reference id="3040834594469888400" name="ref" index="3aaZtz" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -179,6 +202,7 @@
       <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$">
         <reference id="8976227254847281741" name="namedConcept" index="CMYPG" />
       </concept>
+      <concept id="2425717513163134577" name="GenericGroupMethods.structure.strValue" flags="ng" index="388rt8" />
       <concept id="1522810226732341093" name="GenericGroupMethods.structure.ValueModel" flags="ig" index="1l_8MK" />
       <concept id="1522810226732785365" name="GenericGroupMethods.structure.ConceptsOfType" flags="ng" index="1lBOk0">
         <child id="1522810226732838602" name="conceptType" index="1lB3kv" />
@@ -202,7 +226,7 @@
   <node concept="2oAaVg" id="44wDDDIUK6G">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="true" />
-    <property role="3GE5qa" value="RouteRefinement" />
+    <property role="3GE5qa" value="RouteRefinement.Metamodels" />
     <property role="TrG5h" value="RouteCommandList" />
     <node concept="2oAaW5" id="44wDDDIUK78" role="2oAaxa">
       <property role="TrG5h" value="Route" />
@@ -352,7 +376,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="true" />
     <property role="TrG5h" value="RouteSpecification" />
-    <property role="3GE5qa" value="RouteSpecification" />
+    <property role="3GE5qa" value="RouteSpecification.Metamodels" />
     <node concept="2oAaW5" id="44wDDDIUBP8" role="2oAaxa">
       <property role="TrG5h" value="Route" />
       <node concept="gqqVs" id="44wDDDIULpg" role="lGtFl">
@@ -434,9 +458,51 @@
   </node>
   <node concept="1GnNiK" id="DTk9ZCIkKw">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="RouteSpecification" />
+    <property role="3GE5qa" value="RouteSpecification.CodeGeneration" />
     <property role="TrG5h" value="CodeGen_Common_RouteSpecification" />
     <ref role="1GHRfG" node="44wDDDIUxTt" resolve="RouteSpecification" />
+    <node concept="1GnNjC" id="DTk9ZD7yNT" role="CLm5g">
+      <property role="TrG5h" value="genCodeMain" />
+      <node concept="37vLTG" id="DTk9ZD7yNU" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="DTk9ZD7yNV" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="DTk9ZD7yNW" role="3clF47">
+        <node concept="34ab3g" id="DTk9ZD7yQM" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="DTk9ZD7z1Y" role="34bqiv">
+            <node concept="3otQA" id="DTk9ZD7z2i" role="3uHU7w">
+              <ref role="37wK5l" node="DTk9ZCIp4P" resolve="noOfCommands" />
+              <node concept="37vLTw" id="DTk9ZD7z4Z" role="37wK5m">
+                <ref role="3cqZAo" node="DTk9ZD7yNU" resolve="valueModel" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="DTk9ZD7yQO" role="3uHU7B">
+              <property role="Xl_RC" value="Number of commands: " />
+            </node>
+          </node>
+        </node>
+        <node concept="34ab3g" id="DTk9ZD7z7Q" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="DTk9ZD7zjn" role="34bqiv">
+            <node concept="2OqwBi" id="DTk9ZD7zpI" role="3uHU7w">
+              <node concept="3otQA" id="DTk9ZD7zjF" role="2Oq$k0">
+                <ref role="37wK5l" node="DTk9ZCJ2K1" resolve="firstCommand" />
+                <node concept="37vLTw" id="DTk9ZD7zmo" role="37wK5m">
+                  <ref role="3cqZAo" node="DTk9ZD7yNU" resolve="valueModel" />
+                </node>
+              </node>
+              <node concept="388rt8" id="DTk9ZD7zwz" role="2OqNvi" />
+            </node>
+            <node concept="Xl_RD" id="DTk9ZD7z7S" role="3uHU7B">
+              <property role="Xl_RC" value="First command: " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="DTk9ZD7yOX" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="DTk9ZD7yP0" role="CLm5g" />
     <node concept="1vbBhR" id="DTk9ZCIp4N" role="1ukcCD">
       <property role="TrG5h" value="Common" />
     </node>
@@ -556,7 +622,7 @@
   </node>
   <node concept="1vbSxi" id="DTk9ZCJ70D">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="RouteSpecification" />
+    <property role="3GE5qa" value="RouteSpecification.CodeGeneration" />
     <node concept="1vbBpf" id="DTk9ZCJ70E" role="1vbB4l">
       <ref role="1vbBpc" node="DTk9ZCIp4N" resolve="Common" />
     </node>
@@ -569,7 +635,7 @@
     </node>
   </node>
   <node concept="1nQ_01" id="DTk9ZCOJPR">
-    <property role="3GE5qa" value="RouteRefinement" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="RouteSpecificationToRouteCommandList" />
     <ref role="1nQ_06" node="44wDDDIUxTt" resolve="RouteSpecification" />
     <ref role="1nQ_3S" node="44wDDDIUK6G" resolve="RouteCommandList" />
@@ -639,6 +705,187 @@
         <node concept="3yJ4kq" id="DTk9ZCQqpC" role="2Oq$k0">
           <ref role="3yJ4Bl" node="44wDDDIUBP8" resolve="Route" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2oAaVg" id="DTk9ZD7$4x">
+    <property role="1ewt2y" value="false" />
+    <property role="3uBway" value="true" />
+    <property role="TrG5h" value="Roman_Bucuresti" />
+    <property role="3GE5qa" value="RouteSpecification.Models" />
+    <ref role="19kf5F" node="44wDDDIUxTt" resolve="RouteSpecification" />
+    <node concept="2oAaW5" id="DTk9ZD7$7g" role="2oAaxa">
+      <property role="TrG5h" value="RomanBucuresti" />
+      <node concept="2oAaXF" id="DTk9ZD7$7t" role="2oAawq">
+        <ref role="3aaZtz" node="44wDDDIUBP8" resolve="Route" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="DTk9ZD7$bt" role="2oAaxa">
+      <property role="TrG5h" value="Com1" />
+      <node concept="2oAaXF" id="DTk9ZD7$cw" role="2oAawq">
+        <ref role="3aaZtz" node="44wDDDIUBPT" resolve="Command" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="DTk9ZD7$cL" role="2oAaxa">
+      <property role="TrG5h" value="Com2" />
+      <node concept="2oAaXF" id="DTk9ZD7$dG" role="2oAawq">
+        <ref role="3aaZtz" node="44wDDDIUBPT" resolve="Command" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="DTk9ZD7$e3" role="2oAaxa">
+      <property role="TrG5h" value="Com3" />
+      <node concept="2oAaXF" id="DTk9ZD7$f9" role="2oAawq">
+        <ref role="3aaZtz" node="44wDDDIUBPT" resolve="Command" />
+      </node>
+    </node>
+    <node concept="2jq5PB" id="DTk9ZD7$fk" role="2oAaxa" />
+    <node concept="2oAaUa" id="DTk9ZD7$fP" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="DTk9ZD7$gZ" role="2oAawB">
+        <ref role="3aaZtz" node="DTk9ZD7$bt" resolve="Com1" />
+      </node>
+      <node concept="2oAaXF" id="DTk9ZD7$gy" role="2oAawD">
+        <ref role="3aaZtz" node="DTk9ZD7$7g" resolve="RomanBucuresti" />
+      </node>
+      <node concept="2oAawe" id="DTk9ZD7$gL" role="2oAawy">
+        <ref role="3aaZtz" node="44wDDDIUBRi" resolve="commands" />
+      </node>
+    </node>
+    <node concept="2oAaUa" id="DTk9ZD7$hP" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="DTk9ZD7$kY" role="2oAawB">
+        <ref role="3aaZtz" node="DTk9ZD7$cL" resolve="Com2" />
+      </node>
+      <node concept="2oAaXF" id="DTk9ZD7$hR" role="2oAawD">
+        <ref role="3aaZtz" node="DTk9ZD7$7g" resolve="RomanBucuresti" />
+      </node>
+      <node concept="2oAawe" id="DTk9ZD7$hS" role="2oAawy">
+        <ref role="3aaZtz" node="44wDDDIUBRi" resolve="commands" />
+      </node>
+    </node>
+    <node concept="2oAaUa" id="DTk9ZD7$iB" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="DTk9ZD7$le" role="2oAawB">
+        <ref role="3aaZtz" node="DTk9ZD7$e3" resolve="Com3" />
+      </node>
+      <node concept="2oAaXF" id="DTk9ZD7$iD" role="2oAawD">
+        <ref role="3aaZtz" node="DTk9ZD7$7g" resolve="RomanBucuresti" />
+      </node>
+      <node concept="2oAawe" id="DTk9ZD7$iE" role="2oAawy">
+        <ref role="3aaZtz" node="44wDDDIUBRi" resolve="commands" />
+      </node>
+    </node>
+  </node>
+  <node concept="2oAaVg" id="DTk9ZD7$qQ">
+    <property role="1ewt2y" value="false" />
+    <property role="3uBway" value="true" />
+    <property role="3GE5qa" value="RouteRefinement.Models" />
+    <property role="TrG5h" value="Roman_BucurestiRef" />
+    <ref role="19kf5F" node="44wDDDIUK6G" resolve="RouteCommandList" />
+    <node concept="2oAaW5" id="DTk9ZD7$qR" role="2oAaxa">
+      <property role="TrG5h" value="RomanBucurestiRoute" />
+      <node concept="2oAaXF" id="DTk9ZD7$ui" role="2oAawq">
+        <ref role="3aaZtz" node="44wDDDIUK78" resolve="Route" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="DTk9ZD7$zO" role="2oAaxa">
+      <property role="TrG5h" value="RomanBucurestiCL" />
+      <node concept="2oAaXF" id="DTk9ZD7$BM" role="2oAawq">
+        <ref role="3aaZtz" node="44wDDDIUK7M" resolve="CommandList" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="DTk9ZD7$uo" role="2oAaxa">
+      <property role="TrG5h" value="Com01" />
+      <node concept="2oAaXF" id="DTk9ZD7$va" role="2oAawq">
+        <ref role="3aaZtz" node="44wDDDIUK79" resolve="Command" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="DTk9ZD7$vr" role="2oAaxa">
+      <property role="TrG5h" value="Com02" />
+      <node concept="2oAaXF" id="DTk9ZD7$wI" role="2oAawq">
+        <ref role="3aaZtz" node="44wDDDIUK79" resolve="Command" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="DTk9ZD7$Cf" role="2oAaxa">
+      <property role="TrG5h" value="Com03" />
+      <node concept="2oAaXF" id="DTk9ZD7$DK" role="2oAawq">
+        <ref role="3aaZtz" node="44wDDDIUK79" resolve="Command" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="DTk9ZD7$Ej" role="2oAaxa">
+      <property role="TrG5h" value="Com04" />
+      <node concept="2oAaXF" id="DTk9ZD7$Hw" role="2oAawq">
+        <ref role="3aaZtz" node="44wDDDIUK79" resolve="Command" />
+      </node>
+    </node>
+    <node concept="2jq5PB" id="DTk9ZD7$W2" role="2oAaxa" />
+    <node concept="2oAaUa" id="DTk9ZD7$Xj" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="DTk9ZD7$YF" role="2oAawB">
+        <ref role="3aaZtz" node="DTk9ZD7$zO" resolve="RomanBucurestiCL" />
+      </node>
+      <node concept="2oAaXF" id="DTk9ZD7$Y8" role="2oAawD">
+        <ref role="3aaZtz" node="DTk9ZD7$qR" resolve="RomanBucurestiRoute" />
+      </node>
+      <node concept="2oAawe" id="DTk9ZD7$Yp" role="2oAawy">
+        <ref role="3aaZtz" node="44wDDDIUK7b" resolve="comList" />
+      </node>
+    </node>
+    <node concept="2jq5PB" id="DTk9ZD7$HJ" role="2oAaxa" />
+    <node concept="2oAaUa" id="DTk9ZD7$Iu" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="DTk9ZD7$Ng" role="2oAawB">
+        <ref role="3aaZtz" node="DTk9ZD7$uo" resolve="Com01" />
+      </node>
+      <node concept="2oAaXF" id="DTk9ZD7$J2" role="2oAawD">
+        <ref role="3aaZtz" node="DTk9ZD7$zO" resolve="RomanBucurestiCL" />
+      </node>
+      <node concept="2oAawe" id="DTk9ZD7$Jk" role="2oAawy">
+        <ref role="3aaZtz" node="44wDDDIUK7e" resolve="commands" />
+      </node>
+    </node>
+    <node concept="2oAaUa" id="DTk9ZD7$Oi" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="DTk9ZD7$RA" role="2oAawB">
+        <ref role="3aaZtz" node="DTk9ZD7$vr" resolve="Com02" />
+      </node>
+      <node concept="2oAaXF" id="DTk9ZD7$Ok" role="2oAawD">
+        <ref role="3aaZtz" node="DTk9ZD7$zO" resolve="RomanBucurestiCL" />
+      </node>
+      <node concept="2oAawe" id="DTk9ZD7$Ol" role="2oAawy">
+        <ref role="3aaZtz" node="44wDDDIUK7e" resolve="commands" />
+      </node>
+    </node>
+    <node concept="2oAaUa" id="DTk9ZD7$Pc" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="DTk9ZD7$RU" role="2oAawB">
+        <ref role="3aaZtz" node="DTk9ZD7$Cf" resolve="Com03" />
+      </node>
+      <node concept="2oAaXF" id="DTk9ZD7$Pe" role="2oAawD">
+        <ref role="3aaZtz" node="DTk9ZD7$zO" resolve="RomanBucurestiCL" />
+      </node>
+      <node concept="2oAawe" id="DTk9ZD7$Pf" role="2oAawy">
+        <ref role="3aaZtz" node="44wDDDIUK7e" resolve="commands" />
+      </node>
+    </node>
+    <node concept="2oAaUa" id="DTk9ZD7$Q0" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="DTk9ZD7$Se" role="2oAawB">
+        <ref role="3aaZtz" node="DTk9ZD7$Ej" resolve="Com04" />
+      </node>
+      <node concept="2oAaXF" id="DTk9ZD7$Q2" role="2oAawD">
+        <ref role="3aaZtz" node="DTk9ZD7$zO" resolve="RomanBucurestiCL" />
+      </node>
+      <node concept="2oAawe" id="DTk9ZD7$Q3" role="2oAawy">
+        <ref role="3aaZtz" node="44wDDDIUK7e" resolve="commands" />
       </node>
     </node>
   </node>
