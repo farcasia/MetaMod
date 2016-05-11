@@ -270,7 +270,7 @@
                   <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="2OqwBi" id="DTk9ZCZjcs" role="37wK5m">
                     <node concept="37vLTw" id="DTk9ZCZj6v" role="2Oq$k0">
-                      <ref role="3cqZAo" node="DTk9ZCZ9H0" resolve="toMaprSpecConcept" />
+                      <ref role="3cqZAo" node="DTk9ZCZ9H0" resolve="toMapSpecConcept" />
                     </node>
                     <node concept="3TrcHB" id="DTk9ZCZjpd" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -309,11 +309,99 @@
         <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
       </node>
       <node concept="37vLTG" id="DTk9ZCZ9H0" role="3clF46">
-        <property role="TrG5h" value="toMaprSpecConcept" />
+        <property role="TrG5h" value="toMapSpecConcept" />
         <node concept="3Tqbb2" id="DTk9ZCZ9GZ" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="DTk9ZDp3oh">
+    <ref role="13h7C2" to="5h42:5jHGRC3dYdV" resolve="MappingContainer" />
+    <node concept="13i0hz" id="DTk9ZDp3rZ" role="13h7CS">
+      <property role="TrG5h" value="refinmentConceptMappedToSpecConcept" />
+      <node concept="3Tm1VV" id="DTk9ZDp3s0" role="1B3o_S" />
+      <node concept="3clFbS" id="DTk9ZDp3s1" role="3clF47">
+        <node concept="1DcWWT" id="DTk9ZDp3s2" role="3cqZAp">
+          <node concept="3cpWsn" id="DTk9ZDp3s3" role="1Duv9x">
+            <property role="TrG5h" value="mapping" />
+            <node concept="3Tqbb2" id="DTk9ZDp3s4" role="1tU5fm">
+              <ref role="ehGHo" to="5h42:5jHGRC3dYCL" resolve="Mapping" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="DTk9ZDp3s5" role="2LFqv$">
+            <node concept="3clFbJ" id="DTk9ZDp3s6" role="3cqZAp">
+              <node concept="3clFbS" id="DTk9ZDp3s7" role="3clFbx">
+                <node concept="3cpWs6" id="DTk9ZDp3s8" role="3cqZAp">
+                  <node concept="2OqwBi" id="DTk9ZDp3s9" role="3cqZAk">
+                    <node concept="37vLTw" id="DTk9ZDp3sa" role="2Oq$k0">
+                      <ref role="3cqZAo" node="DTk9ZDp3s3" resolve="mapping" />
+                    </node>
+                    <node concept="3TrEf2" id="DTk9ZDp3sb" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5h42:5jHGRC3dYCO" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="DTk9ZDp3sc" role="3clFbw">
+                <node concept="2OqwBi" id="DTk9ZDp3sd" role="2Oq$k0">
+                  <node concept="2OqwBi" id="DTk9ZDp3se" role="2Oq$k0">
+                    <node concept="37vLTw" id="DTk9ZDp3sf" role="2Oq$k0">
+                      <ref role="3cqZAo" node="DTk9ZDp3s3" resolve="mapping" />
+                    </node>
+                    <node concept="3TrEf2" id="DTk9ZDp3sg" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5h42:5jHGRC3dYCM" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="DTk9ZDp3sh" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="DTk9ZDp3si" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="2OqwBi" id="DTk9ZDp3sj" role="37wK5m">
+                    <node concept="37vLTw" id="DTk9ZDp3sk" role="2Oq$k0">
+                      <ref role="3cqZAo" node="DTk9ZDp3sz" resolve="toMapSpecConcept" />
+                    </node>
+                    <node concept="3TrcHB" id="DTk9ZDp3sl" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="DTk9ZDp3sm" role="1DdaDG">
+            <node concept="13iPFW" id="DTk9ZDp42K" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="DTk9ZDp3sr" role="2OqNvi">
+              <ref role="3TtcxE" to="5h42:5jHGRC3dYCH" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="DTk9ZDp3ss" role="3cqZAp" />
+        <node concept="34ab3g" id="DTk9ZDp3st" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="DTk9ZDp3su" role="34bqiv">
+            <property role="Xl_RC" value="The specification concept was not found in the mappings list!" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="DTk9ZDp3sv" role="3cqZAp" />
+        <node concept="3cpWs6" id="DTk9ZDp3sw" role="3cqZAp">
+          <node concept="10Nm6u" id="DTk9ZDp3sx" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="DTk9ZDp3sy" role="3clF45">
+        <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+      </node>
+      <node concept="37vLTG" id="DTk9ZDp3sz" role="3clF46">
+        <property role="TrG5h" value="toMapSpecConcept" />
+        <node concept="3Tqbb2" id="DTk9ZDp3s$" role="1tU5fm">
+          <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="DTk9ZDp3oi" role="13h7CW">
+      <node concept="3clFbS" id="DTk9ZDp3oj" role="2VODD2" />
     </node>
   </node>
 </model>

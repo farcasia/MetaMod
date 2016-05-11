@@ -258,6 +258,9 @@
         <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
       </node>
     </node>
+    <node concept="2oAaW5" id="DTk9ZDrLv0" role="2oAaxa">
+      <property role="TrG5h" value="String" />
+    </node>
     <node concept="2jq5PB" id="44wDDDIUK7a" role="2oAaxa" />
     <node concept="2oAaUZ" id="44wDDDIUK7b" role="2oAaxa">
       <property role="2XbFUA" value="0..1" />
@@ -279,6 +282,17 @@
       </node>
       <node concept="2oAaXF" id="44wDDDIUKbV" role="2oAawD">
         <ref role="3aaZtz" node="44wDDDIUK7M" resolve="CommandList" />
+      </node>
+    </node>
+    <node concept="2oAaUZ" id="DTk9ZDrLxk" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="1" />
+      <property role="TrG5h" value="description" />
+      <node concept="2oAaXF" id="DTk9ZDrLxl" role="2oAawB">
+        <ref role="3aaZtz" node="DTk9ZDrLv0" resolve="String" />
+      </node>
+      <node concept="2oAaXF" id="DTk9ZDrLxm" role="2oAawD">
+        <ref role="3aaZtz" node="44wDDDIUK78" resolve="Route" />
       </node>
     </node>
     <node concept="37mRI7" id="6SaF8O8COun" role="lGtFl">
@@ -397,6 +411,9 @@
         <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
       </node>
     </node>
+    <node concept="2oAaW5" id="DTk9ZDr1CU" role="2oAaxa">
+      <property role="TrG5h" value="String" />
+    </node>
     <node concept="2jq5PB" id="44wDDDIUBR1" role="2oAaxa" />
     <node concept="2oAaUZ" id="44wDDDIUBRi" role="2oAaxa">
       <property role="2XbFUA" value="0..1" />
@@ -406,6 +423,17 @@
         <ref role="3aaZtz" node="44wDDDIUBPT" resolve="Command" />
       </node>
       <node concept="2oAaXF" id="44wDDDIUBRz" role="2oAawD">
+        <ref role="3aaZtz" node="44wDDDIUBP8" resolve="Route" />
+      </node>
+    </node>
+    <node concept="2oAaUZ" id="DTk9ZDr1Ew" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="1" />
+      <property role="TrG5h" value="description" />
+      <node concept="2oAaXF" id="DTk9ZDr1Fd" role="2oAawB">
+        <ref role="3aaZtz" node="DTk9ZDr1CU" resolve="String" />
+      </node>
+      <node concept="2oAaXF" id="DTk9ZDr1EU" role="2oAawD">
         <ref role="3aaZtz" node="44wDDDIUBP8" resolve="Route" />
       </node>
     </node>
@@ -496,6 +524,38 @@
             </node>
             <node concept="Xl_RD" id="DTk9ZD7z7S" role="3uHU7B">
               <property role="Xl_RC" value="First command: " />
+            </node>
+          </node>
+        </node>
+        <node concept="34ab3g" id="DTk9ZDr22o" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="DTk9ZDr2dS" role="34bqiv">
+            <node concept="Xl_RD" id="DTk9ZDr22q" role="3uHU7B">
+              <property role="Xl_RC" value="Description: " />
+            </node>
+            <node concept="2OqwBi" id="DTk9ZDr5Tx" role="3uHU7w">
+              <node concept="2OqwBi" id="DTk9ZDr4kI" role="2Oq$k0">
+                <node concept="2OqwBi" id="DTk9ZDr32x" role="2Oq$k0">
+                  <node concept="2OqwBi" id="DTk9ZDr2e$" role="2Oq$k0">
+                    <node concept="2OqwBi" id="DTk9ZDr2e_" role="2Oq$k0">
+                      <node concept="37vLTw" id="DTk9ZDr2eA" role="2Oq$k0">
+                        <ref role="3cqZAo" node="DTk9ZD7yNU" resolve="valueModel" />
+                      </node>
+                      <node concept="1lBOk0" id="DTk9ZDr2eB" role="2OqNvi">
+                        <node concept="CMjq$" id="DTk9ZDr2eC" role="1lB3kv">
+                          <ref role="CMYPG" node="44wDDDIUBP8" resolve="Route" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="DTk9ZDr2eD" role="2OqNvi" />
+                  </node>
+                  <node concept="khloQ" id="DTk9ZDr3nh" role="2OqNvi">
+                    <ref role="khl7h" node="DTk9ZDr1Ew" resolve="description" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="DTk9ZDr561" role="2OqNvi" />
+              </node>
+              <node concept="388rt8" id="DTk9ZDr6at" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -720,6 +780,12 @@
         <ref role="3aaZtz" node="44wDDDIUBP8" resolve="Route" />
       </node>
     </node>
+    <node concept="2oAaW5" id="DTk9ZDr1PC" role="2oAaxa">
+      <property role="TrG5h" value="&quot;Very nice route!&quot;" />
+      <node concept="2oAaXF" id="DTk9ZDr1Xk" role="2oAawq">
+        <ref role="3aaZtz" node="DTk9ZDr1CU" resolve="String" />
+      </node>
+    </node>
     <node concept="2oAaW5" id="DTk9ZD7$bt" role="2oAaxa">
       <property role="TrG5h" value="Com1" />
       <node concept="2oAaXF" id="DTk9ZD7$cw" role="2oAawq">
@@ -739,6 +805,20 @@
       </node>
     </node>
     <node concept="2jq5PB" id="DTk9ZD7$fk" role="2oAaxa" />
+    <node concept="2oAaUa" id="DTk9ZDr1NZ" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="DTk9ZDr1X$" role="2oAawB">
+        <ref role="3aaZtz" node="DTk9ZDr1PC" resolve="&quot;Very nice route!&quot;" />
+      </node>
+      <node concept="2oAaXF" id="DTk9ZDr1OD" role="2oAawD">
+        <ref role="3aaZtz" node="DTk9ZD7$7g" resolve="RomanBucuresti" />
+      </node>
+      <node concept="2oAawe" id="DTk9ZDr1OQ" role="2oAawy">
+        <ref role="3aaZtz" node="DTk9ZDr1Ew" resolve="description" />
+      </node>
+    </node>
+    <node concept="2jq5PB" id="DTk9ZDr1MY" role="2oAaxa" />
     <node concept="2oAaUa" id="DTk9ZD7$fP" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
@@ -797,6 +877,12 @@
         <ref role="3aaZtz" node="44wDDDIUK7M" resolve="CommandList" />
       </node>
     </node>
+    <node concept="2oAaW5" id="DTk9ZDrLCL" role="2oAaxa">
+      <property role="TrG5h" value="&quot;Very nice route!&quot;" />
+      <node concept="2oAaXF" id="DTk9ZDrLCM" role="2oAawq">
+        <ref role="3aaZtz" node="DTk9ZDrLv0" resolve="String" />
+      </node>
+    </node>
     <node concept="2oAaW5" id="DTk9ZD7$uo" role="2oAaxa">
       <property role="TrG5h" value="Com01" />
       <node concept="2oAaXF" id="DTk9ZD7$va" role="2oAawq">
@@ -835,7 +921,20 @@
         <ref role="3aaZtz" node="44wDDDIUK7b" resolve="comList" />
       </node>
     </node>
-    <node concept="2jq5PB" id="DTk9ZD7$HJ" role="2oAaxa" />
+    <node concept="2oAaUa" id="DTk9ZDrLH1" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="DTk9ZDrLH2" role="2oAawB">
+        <ref role="3aaZtz" node="DTk9ZDrLCL" resolve="&quot;Very nice route!&quot;" />
+      </node>
+      <node concept="2oAaXF" id="DTk9ZDrM6S" role="2oAawD">
+        <ref role="3aaZtz" node="DTk9ZD7$qR" resolve="RomanBucurestiRoute" />
+      </node>
+      <node concept="2oAawe" id="DTk9ZDrLH4" role="2oAawy">
+        <ref role="3aaZtz" node="DTk9ZDrLxk" resolve="description" />
+      </node>
+    </node>
+    <node concept="2jq5PB" id="DTk9ZDrM8R" role="2oAaxa" />
     <node concept="2oAaUa" id="DTk9ZD7$Iu" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
