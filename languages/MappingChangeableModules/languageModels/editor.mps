@@ -45,6 +45,10 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
+        <property id="1215007802031" name="value" index="3$6WeP" />
+      </concept>
+      <concept id="1215007897487" name="jetbrains.mps.lang.editor.structure.PaddingRightStyleClassItem" flags="ln" index="3$7jql" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -646,6 +650,45 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1gcKwu1xHEL">
+    <property role="3GE5qa" value="Operations" />
+    <ref role="1XX52x" to="5h42:1gcKwu1xETH" resolve="ConceptTypeMapping" />
+    <node concept="3EZMnI" id="7MhXM5kmc8b" role="2wV5jI">
+      <node concept="3F0ifn" id="7MhXM5kmc8i" role="3EZMnx">
+        <property role="3F0ifm" value="ConceptType" />
+        <node concept="3$7jql" id="7MhXM5kmFXT" role="3F10Kt">
+          <property role="3$6WeP" value="0.0" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7MhXM5kmxDs" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+      </node>
+      <node concept="1iCGBv" id="7MhXM5kmxD$" role="3EZMnx">
+        <ref role="1NtTu8" to="1o5n:7MhXM5kmxDd" />
+        <node concept="1sVBvm" id="7MhXM5kmxDA" role="1sWHZn">
+          <node concept="3F0A7n" id="7MhXM5kmxDP" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="3$7jql" id="7MhXM5kmG5s" role="3F10Kt">
+              <property role="3$6WeP" value="0.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3$7jql" id="7MhXM5kmG34" role="3F10Kt">
+          <property role="3$6WeP" value="0.0" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7MhXM5kmxDZ" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="2iRfu4" id="7MhXM5kmc8e" role="2iSdaV" />
+      <node concept="Veino" id="5X829TycETB" role="3F10Kt">
+        <property role="Vb096" value="yellow" />
       </node>
     </node>
   </node>

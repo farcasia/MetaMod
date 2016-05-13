@@ -129,5 +129,10 @@
       <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1gcKwu1xETH">
+    <property role="3GE5qa" value="Operations" />
+    <property role="TrG5h" value="ConceptTypeMapping" />
+    <ref role="1TJDcQ" to="1o5n:7MhXM5kmc65" resolve="ConceptType" />
+  </node>
 </model>
 

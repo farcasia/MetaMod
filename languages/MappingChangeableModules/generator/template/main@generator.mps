@@ -345,6 +345,12 @@
         <ref role="v9R2y" node="DTk9ZCXiw_" resolve="reduce_AsTargetMapping" />
       </node>
     </node>
+    <node concept="3aamgX" id="1gcKwu1$pXL" role="3acgRq">
+      <ref role="30HIoZ" to="5h42:1gcKwu1xETH" resolve="ConceptTypeMapping" />
+      <node concept="j$656" id="1gcKwu1$tFR" role="1lVwrX">
+        <ref role="v9R2y" node="1gcKwu1$tFP" resolve="reduce_ConceptTypeMapping" />
+      </node>
+    </node>
     <node concept="3aamgX" id="DTk9ZDjOJy" role="3acgRq">
       <ref role="30HIoZ" to="tpee:hqOqwz4" resolve="DotExpression" />
       <node concept="j$656" id="DTk9ZDjOJK" role="1lVwrX">
@@ -2402,6 +2408,41 @@
         </node>
       </node>
       <node concept="3cqZAl" id="DTk9ZDn77p" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="1gcKwu1$tFP">
+    <property role="TrG5h" value="reduce_ConceptTypeMapping" />
+    <ref role="3gUMe" to="5h42:1gcKwu1xETH" resolve="ConceptTypeMapping" />
+    <node concept="1kpCGq" id="1gcKwu1$tHT" role="13RCb5">
+      <property role="TrG5h" value="someName" />
+      <node concept="37vLTG" id="1gcKwu1$tHU" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="1gcKwu1$tHV" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1gcKwu1$tHW" role="3clF46">
+        <property role="TrG5h" value="someConcept" />
+        <node concept="CMjq$" id="1gcKwu1$tHX" role="1tU5fm">
+          <node concept="raruj" id="1gcKwu1$tKZ" role="lGtFl" />
+          <node concept="1ZhdrF" id="1gcKwu1$uI4" role="lGtFl">
+            <property role="P3scX" value="8a5ffd84-4b2e-475c-803b-24d3ac9331ee/8976227254847193477/8976227254847281741" />
+            <property role="2qtEX8" value="namedConcept" />
+            <node concept="3$xsQk" id="1gcKwu1$uI5" role="3$ytzL">
+              <node concept="3clFbS" id="1gcKwu1$uI6" role="2VODD2">
+                <node concept="3clFbF" id="1gcKwu1$uN3" role="3cqZAp">
+                  <node concept="2OqwBi" id="1gcKwu1$uRu" role="3clFbG">
+                    <node concept="30H73N" id="1gcKwu1$uN2" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1gcKwu1$vbb" role="2OqNvi">
+                      <ref role="3Tt5mk" to="1o5n:7MhXM5kmxDd" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="1gcKwu1$tHY" role="3clF47" />
+      <node concept="3cqZAl" id="1gcKwu1$tIb" role="3clF45" />
     </node>
   </node>
 </model>
