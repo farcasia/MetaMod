@@ -29,8 +29,10 @@
     <usedLanguage>c2a5c46f-9e45-4936-b1a6-b16d77584a24(MappingChangeableModules)</usedLanguage>
     <usedLanguage>a00bbccc-dbff-45c7-aa54-02d1f94db9b5(LanguageConfiguration)</usedLanguage>
     <usedLanguage>760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</usedLanguage>
+    <usedLanguage>659df44c-8ea7-4afd-b3b4-549fcc453b2f(AuxiliaryGenerationLanguage)</usedLanguage>
   </usedLanguages>
   <languageVersions>
+    <language id="659df44c-8ea7-4afd-b3b4-549fcc453b2f" fqName="AuxiliaryGenerationLanguage" version="0" />
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" fqName="CodeGeneration" version="0" />
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" fqName="LambdaCalculus" version="0" />

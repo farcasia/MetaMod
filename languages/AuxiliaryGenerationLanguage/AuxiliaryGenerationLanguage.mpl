@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="MappingChangeableModules" uuid="c2a5c46f-9e45-4936-b1a6-b16d77584a24" version="0">
+<language namespace="AuxiliaryGenerationLanguage" uuid="659df44c-8ea7-4afd-b3b4-549fcc453b2f" version="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/languageModels" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="" generatorUID="MappingChangeableModules#6119744805287747469" uuid="9d9329a5-0015-4b58-bdf8-d23015cb21ed">
+    <generator name="" generatorUID="AuxiliaryGenerationLanguage#7625552052645392037" uuid="7046d9ed-68a0-4b73-bd79-10d01731d37f">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot path="${module}/generator/template" />
@@ -15,35 +15,32 @@
       </models>
       <external-templates />
       <dependencies>
-        <dependency reexport="false">c2a5c46f-9e45-4936-b1a6-b16d77584a24(MappingChangeableModules)</dependency>
-        <dependency reexport="false">8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</dependency>
-        <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
-        <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
         <dependency reexport="false">5f140b5b-a1d2-4d50-af71-7c64c190dbb9(CodeGeneration)</dependency>
         <dependency reexport="false">a00bbccc-dbff-45c7-aa54-02d1f94db9b5(LanguageConfiguration)</dependency>
+        <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+        <dependency reexport="false">8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</dependency>
+        <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
+        <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
         <dependency reexport="false">2a4f5bab-551b-46ab-a40c-28d5229d6214(Helpers)</dependency>
+        <dependency reexport="false">c2a5c46f-9e45-4936-b1a6-b16d77584a24(MappingChangeableModules)</dependency>
+        <dependency reexport="false">9d9329a5-0015-4b58-bdf8-d23015cb21ed(MappingChangeableModules#6119744805287747469)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
-        <usedLanguage>c2a5c46f-9e45-4936-b1a6-b16d77584a24(MappingChangeableModules)</usedLanguage>
-        <usedLanguage>2a4f5bab-551b-46ab-a40c-28d5229d6214(Helpers)</usedLanguage>
-        <usedLanguage>af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)</usedLanguage>
-        <usedLanguage>c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</usedLanguage>
-        <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
-        <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
-        <usedLanguage>8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</usedLanguage>
+        <usedLanguage>659df44c-8ea7-4afd-b3b4-549fcc453b2f(AuxiliaryGenerationLanguage)</usedLanguage>
         <usedLanguage>5f140b5b-a1d2-4d50-af71-7c64c190dbb9(CodeGeneration)</usedLanguage>
-        <usedLanguage>13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)</usedLanguage>
+        <usedLanguage>8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</usedLanguage>
+        <usedLanguage>2a4f5bab-551b-46ab-a40c-28d5229d6214(Helpers)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
+        <language id="659df44c-8ea7-4afd-b3b4-549fcc453b2f" fqName="AuxiliaryGenerationLanguage" version="-1" />
         <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" fqName="CodeGeneration" version="0" />
         <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
         <language id="2a4f5bab-551b-46ab-a40c-28d5229d6214" fqName="Helpers" version="0" />
-        <language id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" fqName="MappingChangeableModules" version="-1" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -56,31 +53,33 @@
         <language id="b401a680-8325-4110-8fd3-84331ff25bef" fqName="jetbrains.mps.lang.generator" version="0" />
         <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" fqName="jetbrains.mps.lang.generator.generationContext" version="0" />
         <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" fqName="jetbrains.mps.lang.quotation" version="0" />
-        <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" fqName="jetbrains.mps.lang.sharedConcepts" version="0" />
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
         <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="0" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
       </languageVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_after">
+          <greater-priority-mapping>
+            <generator generatorUID="7046d9ed-68a0-4b73-bd79-10d01731d37f(AuxiliaryGenerationLanguage#7625552052645392037)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="9d9329a5-0015-4b58-bdf8-d23015cb21ed(MappingChangeableModules#6119744805287747469)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</dependency>
-    <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
-    <dependency reexport="false">d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)</dependency>
-  </dependencies>
-  <usedLanguages>
-    <usedLanguage>c2a5c46f-9e45-4936-b1a6-b16d77584a24(MappingChangeableModules)</usedLanguage>
-    <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
-    <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
-  </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <languageVersions>
-    <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
-    <language id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" fqName="MappingChangeableModules" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" fqName="jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -112,8 +111,6 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
-  <extendedLanguages>
-    <extendedLanguage>8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</extendedLanguage>
-  </extendedLanguages>
+  <extendedLanguages />
 </language>
 
