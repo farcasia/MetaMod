@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="5h42" ref="r:e07cd4d2-0355-4c35-ad0c-b0182373811d(MappingChangeableModules.structure)" implicit="true" />
+    <import index="ptb2" ref="r:65ba3b28-e38a-49aa-b58e-491eaa99e702(Interfaces.graphs)" implicit="true" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" implicit="true" />
   </imports>
@@ -21,9 +22,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-    </language>
-    <language id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" name="MappingChangeableModules">
-      <concept id="1444742917972733549" name="MappingChangeableModules.structure.ConceptTypeMapping" flags="ig" index="2lyALE" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="1196350785110" name="jetbrains.mps.lang.quotation.structure.AbstractAntiquotation" flags="ng" index="2c44t0">
@@ -56,6 +54,7 @@
       </concept>
       <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
+        <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
@@ -83,7 +82,9 @@
       </concept>
     </language>
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods">
-      <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$" />
+      <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$">
+        <reference id="8976227254847281741" name="namedConcept" index="CMYPG" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
@@ -135,8 +136,8 @@
         <node concept="mw_s8" id="26DSjBDHAuy" role="1ZfhKB">
           <node concept="2c44tf" id="26DSjBDHAuz" role="mwGJk">
             <node concept="_YKpA" id="26DSjBDL2V9" role="2c44tc">
-              <node concept="2lyALE" id="1gcKwu1yJwX" role="_ZDj9">
-                <node concept="2c44tb" id="1gcKwu1yJxj" role="lGtFl">
+              <node concept="CMjq$" id="6BjpN2ySGyl" role="_ZDj9">
+                <node concept="2c44tb" id="6BjpN2ySGyF" role="lGtFl">
                   <property role="P3scX" value="8a5ffd84-4b2e-475c-803b-24d3ac9331ee/8976227254847193477/8976227254847281741" />
                   <property role="2qtEX8" value="namedConcept" />
                   <node concept="2OqwBi" id="1gcKwu1yLl8" role="2c44t1">
@@ -188,8 +189,8 @@
         <node concept="mw_s8" id="1gcKwu1yN9N" role="1ZfhKB">
           <node concept="2c44tf" id="1gcKwu1yN9O" role="mwGJk">
             <node concept="_YKpA" id="1gcKwu1yN9P" role="2c44tc">
-              <node concept="2lyALE" id="1gcKwu1yN9Q" role="_ZDj9">
-                <node concept="2c44tb" id="1gcKwu1yN9R" role="lGtFl">
+              <node concept="CMjq$" id="6BjpN2ySGEh" role="_ZDj9">
+                <node concept="2c44tb" id="6BjpN2ySGJY" role="lGtFl">
                   <property role="P3scX" value="8a5ffd84-4b2e-475c-803b-24d3ac9331ee/8976227254847193477/8976227254847281741" />
                   <property role="2qtEX8" value="namedConcept" />
                   <node concept="2OqwBi" id="1gcKwu1yN9S" role="2c44t1">
@@ -230,6 +231,45 @@
     <node concept="1YaCAy" id="1gcKwu1yN8b" role="1YuTPh">
       <property role="TrG5h" value="asTargetMapping" />
       <ref role="1YaFvo" to="5h42:2viqW8DrMmr" resolve="AsTargetMapping" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6BjpN2ySZOS">
+    <property role="TrG5h" value="typeof_ConceptTypeMapping" />
+    <property role="3GE5qa" value="Operations" />
+    <node concept="3clFbS" id="6BjpN2ySZOT" role="18ibNy">
+      <node concept="1Z5TYs" id="3p2$sO$OWOS" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="3p2$sO$OWOU" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3p2$sO$OWOV" role="mwGJk">
+            <node concept="1YBJjd" id="3p2$sO$OWOW" role="1Z2MuG">
+              <ref role="1YBMHb" node="6BjpN2ySZOV" resolve="conceptTypeMapping" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3p2$sO$OWOX" role="1ZfhKB">
+          <node concept="2c44tf" id="3p2$sO$OWOY" role="mwGJk">
+            <node concept="CMjq$" id="3p2$sO$OWOZ" role="2c44tc">
+              <ref role="CMYPG" to="ptb2:1gcKwu1v3kJ" resolve="Node" />
+              <node concept="2c44tb" id="3p2$sO$OWP0" role="lGtFl">
+                <property role="P3scX" value="8a5ffd84-4b2e-475c-803b-24d3ac9331ee/8976227254847193477/8976227254847281741" />
+                <property role="2qtEX8" value="namedConcept" />
+                <node concept="2OqwBi" id="3p2$sO$OWP1" role="2c44t1">
+                  <node concept="1YBJjd" id="3p2$sO$OWP2" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6BjpN2ySZOV" resolve="conceptTypeMapping" />
+                  </node>
+                  <node concept="3TrEf2" id="3p2$sO$OWP3" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5h42:6BjpN2yXpfc" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6BjpN2ySZOV" role="1YuTPh">
+      <property role="TrG5h" value="conceptTypeMapping" />
+      <ref role="1YaFvo" to="5h42:1gcKwu1xETH" resolve="ConceptTypeMapping" />
     </node>
   </node>
 </model>

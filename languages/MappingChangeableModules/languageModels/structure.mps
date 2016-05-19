@@ -132,7 +132,12 @@
   <node concept="1TIwiD" id="1gcKwu1xETH">
     <property role="3GE5qa" value="Operations" />
     <property role="TrG5h" value="ConceptTypeMapping" />
-    <ref role="1TJDcQ" to="1o5n:7MhXM5kmc65" resolve="ConceptType" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <node concept="1TJgyj" id="6BjpN2yXpfc" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="namedConcept" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+    </node>
   </node>
 </model>
 
