@@ -59,7 +59,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -68,14 +67,6 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
-        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
-      </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
-      </concept>
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
         <child id="1144226360166" name="iterable" index="1DdaDG" />
       </concept>
@@ -84,7 +75,6 @@
       </concept>
     </language>
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration">
-      <concept id="5711897705675317525" name="CodeGeneration.structure.CodeGenMethodCall" flags="ng" index="3otQA" />
       <concept id="7169015349702229288" name="CodeGeneration.structure.ConfigurationCodeGen" flags="ng" index="1vbSxi">
         <child id="7169015349702231151" name="facet" index="1vbB4l" />
       </concept>
@@ -534,45 +524,6 @@
     <property role="TrG5h" value="CodeGen_Statistics_Graph" />
     <property role="3GE5qa" value="Graphs" />
     <ref role="1GHRfG" node="1gcKwu1v3hJ" resolve="Graph" />
-    <node concept="1GnNjC" id="1gcKwu1vlT1" role="CLm5g">
-      <property role="TrG5h" value="genCodeMain" />
-      <node concept="37vLTG" id="1gcKwu1vlT2" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
-        <node concept="1l_8MK" id="1gcKwu1vlT3" role="1tU5fm" />
-      </node>
-      <node concept="3clFbS" id="1gcKwu1vlT4" role="3clF47">
-        <node concept="34ab3g" id="1gcKwu1vlXi" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="1gcKwu1vm8I" role="34bqiv">
-            <node concept="3otQA" id="1gcKwu1vm92" role="3uHU7w">
-              <ref role="37wK5l" node="1gcKwu1vaRq" resolve="noOfNodes" />
-              <node concept="37vLTw" id="1gcKwu1vmbJ" role="37wK5m">
-                <ref role="3cqZAo" node="1gcKwu1vlT2" resolve="valueModel" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="1gcKwu1vlXk" role="3uHU7B">
-              <property role="Xl_RC" value="No. of nodes: " />
-            </node>
-          </node>
-        </node>
-        <node concept="34ab3g" id="1gcKwu1vmeU" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="1gcKwu1vmeV" role="34bqiv">
-            <node concept="3otQA" id="1gcKwu1vmeW" role="3uHU7w">
-              <ref role="37wK5l" node="1gcKwu1vaRR" resolve="noOfEdges" />
-              <node concept="37vLTw" id="1gcKwu1vmeX" role="37wK5m">
-                <ref role="3cqZAo" node="1gcKwu1vlT2" resolve="valueModel" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="1gcKwu1vmeY" role="3uHU7B">
-              <property role="Xl_RC" value="No. of edges: " />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3cqZAl" id="1gcKwu1vlVG" role="3clF45" />
-    </node>
-    <node concept="CLx5B" id="1gcKwu1vlO4" role="CLm5g" />
     <node concept="1GnNjC" id="1gcKwu1vaRq" role="CLm5g">
       <property role="TrG5h" value="noOfNodes" />
       <node concept="37vLTG" id="1gcKwu1vaRr" role="3clF46">

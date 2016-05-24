@@ -260,9 +260,6 @@
     <ref role="1XX52x" to="1o5n:1ky6Xl0HDt_" resolve="ValueModel" />
     <node concept="PMmxH" id="1ky6Xl0Kh8r" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <node concept="Veino" id="5X829TycERS" role="3F10Kt">
-        <property role="Vb096" value="green" />
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1ky6Xl0JlVt">
