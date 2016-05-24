@@ -44,6 +44,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -650,9 +651,6 @@
         </node>
       </node>
       <node concept="10Oyi0" id="1gcKwu1vjWG" role="3clF45" />
-    </node>
-    <node concept="1vbBhR" id="DTk9ZDu2TC" role="1ukcCD">
-      <property role="TrG5h" value="Statistics" />
     </node>
   </node>
   <node concept="2oAaVg" id="1gcKwu1v3hJ">
@@ -2654,8 +2652,8 @@
   </node>
   <node concept="1vbSxi" id="1gcKwu1vXAA">
     <property role="1vYpmj" value="CodeGen" />
-    <node concept="1vbBpf" id="2JdoBprMOMY" role="1vbB4l">
-      <ref role="1vbBpc" node="DTk9ZDu2TC" resolve="Statistics" />
+    <node concept="1vbBpf" id="79tvEmmgR7C" role="1vbB4l">
+      <ref role="1vbBpc" node="79tvEmmgR7u" resolve="Statistics" />
     </node>
   </node>
   <node concept="1nQ_01" id="1gcKwu1xf0U">
@@ -5590,8 +5588,8 @@
     <property role="3GE5qa" value="Graphs" />
     <property role="TrG5h" value="Interface_Statistics_Graph" />
     <ref role="1GHRfG" node="1gcKwu1v3hJ" resolve="Graph" />
-    <node concept="1vbBpf" id="1QHqpFmko4F" role="1ukcCD">
-      <ref role="1vbBpc" node="DTk9ZDu2TC" resolve="Statistics" />
+    <node concept="1vbBhR" id="79tvEmmgR7u" role="1ukcCD">
+      <property role="TrG5h" value="Statistics" />
     </node>
     <node concept="2$21wx" id="1QHqpFmko5l" role="CLm5g">
       <property role="TrG5h" value="noOfNodes" />
@@ -5640,6 +5638,60 @@
       </node>
       <node concept="3clFbS" id="1QHqpFmkwPP" role="3clF47" />
       <node concept="10Oyi0" id="1QHqpFmkwPQ" role="3clF45" />
+    </node>
+  </node>
+  <node concept="2$1D0M" id="79tvEmmg$ih">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="Graphs" />
+    <property role="TrG5h" value="Interface_Dot_Graph" />
+    <ref role="1GHRfG" node="1gcKwu1v3hJ" resolve="Graph" />
+    <node concept="1vbBhR" id="79tvEmmgFnN" role="1ukcCD">
+      <property role="TrG5h" value="Dot" />
+    </node>
+    <node concept="2$21wx" id="79tvEmmgRZR" role="CLm5g">
+      <property role="TrG5h" value="drawEdge" />
+      <node concept="37vLTG" id="79tvEmmgRZS" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="79tvEmmgRZT" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="79tvEmmgS08" role="3clF46">
+        <property role="TrG5h" value="edge" />
+        <node concept="CMjq$" id="79tvEmmgVLP" role="1tU5fm">
+          <ref role="CMYPG" node="1gcKwu1v41X" resolve="Edge" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="79tvEmmgRZU" role="3clF47" />
+      <node concept="17QB3L" id="79tvEmmgVMN" role="3clF45" />
+    </node>
+    <node concept="2$21wx" id="79tvEmmgVMp" role="CLm5g">
+      <property role="TrG5h" value="drawNode" />
+      <node concept="37vLTG" id="79tvEmmgVMq" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="79tvEmmgVMr" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="79tvEmmgVMQ" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="CMjq$" id="79tvEmmgVMY" role="1tU5fm">
+          <ref role="CMYPG" node="1gcKwu1v3kJ" resolve="Node" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="79tvEmmgVMs" role="3clF47" />
+      <node concept="17QB3L" id="79tvEmmgVNe" role="3clF45" />
+    </node>
+    <node concept="2$21wx" id="79tvEmmgVNA" role="CLm5g">
+      <property role="TrG5h" value="drawGraph" />
+      <node concept="37vLTG" id="79tvEmmgVNB" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="79tvEmmgVNC" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="79tvEmmgVO7" role="3clF46">
+        <property role="TrG5h" value="graph" />
+        <node concept="CMjq$" id="79tvEmmgVOf" role="1tU5fm">
+          <ref role="CMYPG" node="1gcKwu1v3iM" resolve="Graph" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="79tvEmmgVND" role="3clF47" />
+      <node concept="3cqZAl" id="79tvEmmgVOy" role="3clF45" />
     </node>
   </node>
 </model>
