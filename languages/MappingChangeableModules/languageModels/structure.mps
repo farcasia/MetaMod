@@ -110,13 +110,31 @@
     <property role="TrG5h" value="AsSourceMapping" />
     <property role="34LRSv" value="asSource" />
     <property role="3GE5qa" value="Operations" />
-    <ref role="1TJDcQ" to="1o5n:48EbtxmrRJI" resolve="AsSource" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="48EbtxmrRK9" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="refAssoc" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
+    </node>
+    <node concept="PrWs8" id="6YtJRaiJj3n" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2viqW8DrMmr">
     <property role="TrG5h" value="AsTargetMapping" />
     <property role="3GE5qa" value="Operations" />
     <property role="34LRSv" value="asTarget" />
-    <ref role="1TJDcQ" to="1o5n:48EbtxmtnqF" resolve="AsTarget" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6YtJRaiJkPV" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="refAssoc" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
+    </node>
+    <node concept="PrWs8" id="6YtJRaiJj3p" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="DTk9ZCLhm5">
     <property role="TrG5h" value="DirectConceptType" />
