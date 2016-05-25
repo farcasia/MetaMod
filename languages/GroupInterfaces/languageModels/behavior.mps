@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
     <import index="xxun" ref="r:6d9c017b-f042-47bc-8385-20fba6d818a3(GroupInterfaces.structure)" implicit="true" />
   </imports>
@@ -27,6 +28,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -42,15 +46,42 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
   </registry>
   <node concept="13h7C7" id="4Gz6IvJaKb7">
     <ref role="13h7C2" to="xxun:4Gz6IvJaKb6" resolve="MethodSignature" />
     <node concept="13hLZK" id="4Gz6IvJaKb8" role="13h7CW">
-      <node concept="3clFbS" id="4Gz6IvJaKb9" role="2VODD2" />
+      <node concept="3clFbS" id="4Gz6IvJaKb9" role="2VODD2">
+        <node concept="3clFbF" id="1ky6Xl0PQFj" role="3cqZAp">
+          <node concept="37vLTI" id="1ky6Xl0PRSY" role="3clFbG">
+            <node concept="2ShNRf" id="1ky6Xl0PRWk" role="37vLTx">
+              <node concept="3zrR0B" id="1ky6Xl0PV7d" role="2ShVmc">
+                <node concept="3Tqbb2" id="1ky6Xl0PV7f" role="3zrR0E">
+                  <ref role="ehGHo" to="xxun:6YtJRaiMRlj" resolve="StatementListSignature" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1ky6Xl0PRao" role="37vLTJ">
+              <node concept="13iPFW" id="1ky6Xl0PQFh" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1ky6Xl0PRPk" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:fzclF7Z" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="2viqW8DnofV">
@@ -71,6 +102,12 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6YtJRaiMRlw">
+    <ref role="13h7C2" to="xxun:6YtJRaiMRlj" resolve="StatementListSignature" />
+    <node concept="13hLZK" id="6YtJRaiMRlx" role="13h7CW">
+      <node concept="3clFbS" id="6YtJRaiMRly" role="2VODD2" />
     </node>
   </node>
 </model>
