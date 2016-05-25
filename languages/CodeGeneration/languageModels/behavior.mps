@@ -10,7 +10,10 @@
     <import index="93in" ref="r:66387152-22f1-400f-a531-d1c947e7589b(GenericGroupMethods.behavior)" />
     <import index="swnn" ref="r:2b06d962-26a9-4f96-9ae3-e1df62677078(LanguageConfiguration.structure)" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
+    <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" implicit="true" />
     <import index="anrw" ref="r:f7f50153-a977-4fee-b5c8-7e4385be5a22(CodeGeneration.structure)" implicit="true" />
+    <import index="z64h" ref="r:52e1580a-16d3-4b41-b86d-411ead3ce794(Models.behavior)" implicit="true" />
+    <import index="oxcu" ref="r:6ce6eaa9-b35f-4fa0-997e-8bf5d736dc22(LanguageConfiguration.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -113,10 +116,12 @@
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -161,6 +166,9 @@
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
+      <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
+        <reference id="1176109685394" name="concept" index="3lApI3" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -192,8 +200,10 @@
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
@@ -518,6 +528,153 @@
       <node concept="37vLTG" id="2TStaYk46L1" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="2TStaYk46L0" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6YtJRaiOkfY" role="jymVt" />
+    <node concept="2YIFZL" id="6YtJRaiOkAq" role="jymVt">
+      <property role="TrG5h" value="listOfAccesibleGroups" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6YtJRaiOkAt" role="3clF47">
+        <node concept="3cpWs8" id="6RAr73ZgOFv" role="3cqZAp">
+          <node concept="3cpWsn" id="6RAr73ZgOFw" role="3cpWs9">
+            <property role="TrG5h" value="listOfAccesibleGroups" />
+            <node concept="2OqwBi" id="6RAr73ZgOFx" role="33vP2m">
+              <node concept="37vLTw" id="6RAr73ZgOFy" role="2Oq$k0">
+                <ref role="3cqZAo" node="6YtJRaiOkDP" resolve="group" />
+              </node>
+              <node concept="2qgKlT" id="6RAr73ZgOFz" role="2OqNvi">
+                <ref role="37wK5l" to="z64h:4X4Jbdc5y5v" resolve="getAllNamedInnerGroups" />
+              </node>
+            </node>
+            <node concept="2I9FWS" id="6RAr73ZgOF$" role="1tU5fm">
+              <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6RAr73ZgOF_" role="3cqZAp">
+          <node concept="2OqwBi" id="6RAr73ZgOFA" role="3clFbG">
+            <node concept="37vLTw" id="6RAr73ZgOFB" role="2Oq$k0">
+              <ref role="3cqZAo" node="6RAr73ZgOFw" resolve="listOfAccesibleGroups" />
+            </node>
+            <node concept="TSZUe" id="6RAr73ZgOFC" role="2OqNvi">
+              <node concept="37vLTw" id="6RAr73ZgOFD" role="25WWJ7">
+                <ref role="3cqZAo" node="6YtJRaiOkDP" resolve="group" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6YtJRaiNAf0" role="3cqZAp" />
+        <node concept="3SKdUt" id="6YtJRaiNACq" role="3cqZAp">
+          <node concept="3SKdUq" id="6YtJRaiNAVI" role="3SKWNk">
+            <property role="3SKdUp" value="We are adding also the groups of the interface into the list of" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6YtJRaiNB_O" role="3cqZAp">
+          <node concept="3SKdUq" id="6YtJRaiNBXd" role="3SKWNk">
+            <property role="3SKdUp" value="accesible groups. For that, we need to look into the LanguageConfiguration" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6YtJRaiNC$k" role="3cqZAp">
+          <node concept="3SKdUq" id="6YtJRaiNCTM" role="3SKWNk">
+            <property role="3SKdUp" value="file." />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6YtJRaiNQ$L" role="3cqZAp">
+          <node concept="3SKdUq" id="6YtJRaiNQXv" role="3SKWNk">
+            <property role="3SKdUp" value="We assume that there is at most one language configuration file in the" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6YtJRaiNRy3" role="3cqZAp">
+          <node concept="3SKdUq" id="6YtJRaiNRzA" role="3SKWNk">
+            <property role="3SKdUp" value="model space." />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6YtJRaiNIuX" role="3cqZAp">
+          <node concept="3cpWsn" id="6YtJRaiNIv0" role="3cpWs9">
+            <property role="TrG5h" value="langConfiguration" />
+            <node concept="3Tqbb2" id="6YtJRaiNIuV" role="1tU5fm">
+              <ref role="ehGHo" to="swnn:7_nKZKtBWY8" resolve="Configuration" />
+            </node>
+            <node concept="2OqwBi" id="6YtJRaiNMIO" role="33vP2m">
+              <node concept="2OqwBi" id="6YtJRaiNKY$" role="2Oq$k0">
+                <node concept="2OqwBi" id="6YtJRaiOtjK" role="2Oq$k0">
+                  <node concept="37vLTw" id="6YtJRaiOrrv" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6YtJRaiOkDP" resolve="group" />
+                  </node>
+                  <node concept="I4A8Y" id="6YtJRaiOuWD" role="2OqNvi" />
+                </node>
+                <node concept="3lApI0" id="6YtJRaiNLo_" role="2OqNvi">
+                  <ref role="3lApI3" to="swnn:7_nKZKtBWY8" resolve="Configuration" />
+                </node>
+              </node>
+              <node concept="1uHKPH" id="6YtJRaiNOQf" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6YtJRaiNPw8" role="3cqZAp">
+          <node concept="3clFbS" id="6YtJRaiNPwa" role="3clFbx">
+            <node concept="1DcWWT" id="6YtJRaiOG5z" role="3cqZAp">
+              <node concept="3clFbS" id="6YtJRaiOG5_" role="2LFqv$">
+                <node concept="3clFbF" id="6YtJRaiNGpB" role="3cqZAp">
+                  <node concept="2OqwBi" id="6YtJRaiNUA4" role="3clFbG">
+                    <node concept="37vLTw" id="6YtJRaiNGp_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6RAr73ZgOFw" resolve="listOfAccesibleGroups" />
+                    </node>
+                    <node concept="X8dFx" id="6YtJRaiO0X2" role="2OqNvi">
+                      <node concept="1rXfSq" id="6YtJRaiONGp" role="25WWJ7">
+                        <ref role="37wK5l" node="6YtJRaiOkAq" resolve="listOfAccesibleGroups" />
+                        <node concept="37vLTw" id="6YtJRaiORWt" role="37wK5m">
+                          <ref role="3cqZAo" node="6YtJRaiOG5A" resolve="specGroup" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWsn" id="6YtJRaiOG5A" role="1Duv9x">
+                <property role="TrG5h" value="specGroup" />
+                <node concept="3Tqbb2" id="6YtJRaiOGlU" role="1tU5fm">
+                  <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6YtJRaiO483" role="1DdaDG">
+                <node concept="37vLTw" id="6YtJRaiO3jd" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6YtJRaiNIv0" resolve="langConfiguration" />
+                </node>
+                <node concept="2qgKlT" id="6YtJRaiO670" role="2OqNvi">
+                  <ref role="37wK5l" to="oxcu:2JdoBpsczDj" resolve="specificationGroups" />
+                  <node concept="37vLTw" id="6YtJRaiO7ta" role="37wK5m">
+                    <ref role="3cqZAo" node="6YtJRaiOkDP" resolve="group" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="6YtJRaiNRXv" role="3clFbw">
+            <node concept="10Nm6u" id="6YtJRaiNSgP" role="3uHU7w" />
+            <node concept="37vLTw" id="6YtJRaiNPSz" role="3uHU7B">
+              <ref role="3cqZAo" node="6YtJRaiNIv0" resolve="langConfiguration" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6YtJRaiOlWh" role="3cqZAp" />
+        <node concept="3cpWs6" id="6YtJRaiOo10" role="3cqZAp">
+          <node concept="37vLTw" id="6YtJRaiOoG8" role="3cqZAk">
+            <ref role="3cqZAo" node="6RAr73ZgOFw" resolve="listOfAccesibleGroups" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6YtJRaiOkvX" role="1B3o_S" />
+      <node concept="2I9FWS" id="6YtJRaiOkAm" role="3clF45">
+        <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+      </node>
+      <node concept="37vLTG" id="6YtJRaiOkDP" role="3clF46">
+        <property role="TrG5h" value="group" />
+        <node concept="3Tqbb2" id="6YtJRaiOkDO" role="1tU5fm">
+          <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="DTk9ZDdvai" role="jymVt" />
