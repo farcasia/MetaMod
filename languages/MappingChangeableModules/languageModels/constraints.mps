@@ -10,11 +10,11 @@
   </languages>
   <imports>
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
+    <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="5h42" ref="r:e07cd4d2-0355-4c35-ad0c-b0182373811d(MappingChangeableModules.structure)" implicit="true" />
-    <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" implicit="true" />
-    <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="z64h" ref="r:52e1580a-16d3-4b41-b86d-411ead3ce794(Models.behavior)" implicit="true" />
     <import index="m7fl" ref="r:d7b81ddf-e7b4-4aad-b4ef-1edcac8b0b8f(MappingChangeableModules.behavior)" implicit="true" />
   </imports>
@@ -846,6 +846,58 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6YtJRaiW75t">
+    <property role="3GE5qa" value="Operations" />
+    <ref role="1M2myG" to="5h42:1ky6Xl0Obv0" resolve="IsTypeOf" />
+    <node concept="nKS2y" id="6YtJRaiW7as" role="1MLUbF">
+      <node concept="3clFbS" id="6YtJRaiW7at" role="2VODD2">
+        <node concept="3clFbJ" id="1ky6Xl0Ob$Q" role="3cqZAp">
+          <node concept="3clFbS" id="1ky6Xl0Ob$R" role="3clFbx">
+            <node concept="3cpWs6" id="1ky6Xl0Oqoc" role="3cqZAp">
+              <node concept="3clFbT" id="1ky6Xl0OqEO" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="1ky6Xl0Ocb4" role="3clFbw">
+            <node concept="3clFbC" id="1ky6Xl0ObLR" role="3uHU7B">
+              <node concept="oXsJc" id="1ky6Xl0ObDS" role="3uHU7B" />
+              <node concept="28GBK8" id="1ky6Xl0ObQZ" role="3uHU7w">
+                <ref role="28GBKb" to="tpee:hqOqwz4" resolve="DotExpression" />
+                <ref role="28H3Ia" to="tpee:hqOqNr4" />
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="1ky6Xl0OlC3" role="3uHU7w">
+              <node concept="1eOMI4" id="1ky6Xl0OlHt" role="3fr31v">
+                <node concept="2OqwBi" id="DTk9ZCKShF" role="1eOMHV">
+                  <node concept="2OqwBi" id="DTk9ZCKShG" role="2Oq$k0">
+                    <node concept="1PxgMI" id="DTk9ZCKShH" role="2Oq$k0">
+                      <ref role="1PxNhF" to="tpee:hqOqwz4" resolve="DotExpression" />
+                      <node concept="nLn13" id="DTk9ZCKShI" role="1PxMeX" />
+                    </node>
+                    <node concept="2qgKlT" id="DTk9ZCKShJ" role="2OqNvi">
+                      <ref role="37wK5l" to="tpek:7GulAc9z0dN" resolve="getOperandType" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="DTk9ZCKShK" role="2OqNvi">
+                    <node concept="chp4Y" id="6YtJRaiW7qA" role="cj9EA">
+                      <ref role="cht4Q" to="5h42:1gcKwu1xETH" resolve="ConceptTypeMapping" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1ky6Xl0OqRm" role="3cqZAp" />
+        <node concept="3cpWs6" id="1ky6Xl0Or53" role="3cqZAp">
+          <node concept="3clFbT" id="1ky6Xl0Oriu" role="3cqZAk">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>

@@ -17,6 +17,7 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -227,6 +228,30 @@
     <node concept="1YaCAy" id="1gcKwu1yN8b" role="1YuTPh">
       <property role="TrG5h" value="asTargetMapping" />
       <ref role="1YaFvo" to="5h42:2viqW8DrMmr" resolve="AsTargetMapping" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6YtJRaiW7Qh">
+    <property role="TrG5h" value="typeof_IsTypeOf" />
+    <property role="3GE5qa" value="Operations" />
+    <node concept="3clFbS" id="6YtJRaiW7Qi" role="18ibNy">
+      <node concept="1Z5TYs" id="26DSjBDHwhx" role="3cqZAp">
+        <node concept="mw_s8" id="26DSjBDHwhR" role="1ZfhKB">
+          <node concept="2c44tf" id="26DSjBDHwie" role="mwGJk">
+            <node concept="10P_77" id="26DSjBDHwiy" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="26DSjBDHwh$" role="1ZfhK$">
+          <node concept="1Z2H0r" id="26DSjBDHweO" role="mwGJk">
+            <node concept="1YBJjd" id="26DSjBDHwfg" role="1Z2MuG">
+              <ref role="1YBMHb" node="6YtJRaiW7Qk" resolve="isTypeOf" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6YtJRaiW7Qk" role="1YuTPh">
+      <property role="TrG5h" value="isTypeOf" />
+      <ref role="1YaFvo" to="5h42:1ky6Xl0Obv0" resolve="IsTypeOf" />
     </node>
   </node>
 </model>

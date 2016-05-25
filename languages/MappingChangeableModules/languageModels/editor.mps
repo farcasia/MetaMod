@@ -13,6 +13,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="z64h" ref="r:52e1580a-16d3-4b41-b86d-411ead3ce794(Models.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -33,6 +34,9 @@
       </concept>
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
         <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
@@ -729,6 +733,30 @@
         <node concept="UkePV" id="6YtJRaiKnRa" role="OY2wv">
           <ref role="Ul1FP" to="5h42:6VsEH8KCI07" resolve="PrimitiveRewriting" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6YtJRaiW6Sk">
+    <property role="3GE5qa" value="Operations" />
+    <ref role="1XX52x" to="5h42:1ky6Xl0Obv0" resolve="IsTypeOf" />
+    <node concept="3EZMnI" id="1ky6Xl0Obvc" role="2wV5jI">
+      <node concept="PMmxH" id="1ky6Xl0Obvm" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="1ky6Xl0Obvz" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+      </node>
+      <node concept="3F1sOY" id="1ky6Xl0ObvP" role="3EZMnx">
+        <ref role="1NtTu8" to="5h42:1ky6Xl0Obv3" />
+      </node>
+      <node concept="3F0ifn" id="1ky6Xl0ObvF" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="2iRfu4" id="1ky6Xl0Obvf" role="2iSdaV" />
+      <node concept="Veino" id="5X829TycENC" role="3F10Kt">
+        <property role="Vb096" value="yellow" />
       </node>
     </node>
   </node>

@@ -8,8 +8,8 @@
   <imports>
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -169,6 +169,21 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6YtJRaiKntm" role="PzmwI">
       <ref role="PrY4T" node="6YtJRaiKiZK" resolve="IRewriting" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1ky6Xl0Obv0">
+    <property role="3GE5qa" value="Operations" />
+    <property role="TrG5h" value="IsTypeOf" />
+    <property role="34LRSv" value="isTypeOf" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="1ky6Xl0Obv3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conceptType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1gcKwu1xETH" resolve="ConceptTypeMapping" />
+    </node>
+    <node concept="PrWs8" id="1ky6Xl0Obv1" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
     </node>
   </node>
 </model>
