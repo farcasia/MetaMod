@@ -1179,8 +1179,28 @@
           </node>
         </node>
         <node concept="3clFbH" id="2JdoBpscllB" role="3cqZAp" />
+        <node concept="3SKdUt" id="705MhtR7ypk" role="3cqZAp">
+          <node concept="3SKdUq" id="705MhtR7zlM" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: At some point, we should make CodeGen files for super-groups of the" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="705MhtR7_5O" role="3cqZAp">
+          <node concept="3SKdUq" id="705MhtR7A2u" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: refinement group as well." />
+          </node>
+        </node>
         <node concept="1DcWWT" id="2JdoBpscxKP" role="3cqZAp">
           <node concept="3clFbS" id="2JdoBpscxKR" role="2LFqv$">
+            <node concept="3SKdUt" id="705MhtR7usC" role="3cqZAp">
+              <node concept="3SKdUq" id="705MhtR7vtU" role="3SKWNk">
+                <property role="3SKdUp" value="specificationGroups -&gt; collection of all specification groups that the" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="705MhtR7wp$" role="3cqZAp">
+              <node concept="3SKdUq" id="705MhtR7xl7" role="3SKWNk">
+                <property role="3SKdUp" value="current refinement group has mapped in the language configuration." />
+              </node>
+            </node>
             <node concept="3cpWs8" id="2JdoBpscz3U" role="3cqZAp">
               <node concept="3cpWsn" id="2JdoBpscz3X" role="3cpWs9">
                 <property role="TrG5h" value="specificationGroups" />
@@ -1198,6 +1218,11 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="705MhtR7qqY" role="3cqZAp">
+              <node concept="3SKdUq" id="705MhtR7ru5" role="3SKWNk">
+                <property role="3SKdUp" value="The &quot;MethodsContainer&quot; elements that specify operations for the refinement groups." />
               </node>
             </node>
             <node concept="3cpWs8" id="2JdoBpsduUo" role="3cqZAp">
@@ -1251,9 +1276,14 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="705MhtR7svA" role="3cqZAp">
+              <node concept="3SKdUq" id="705MhtR7tpy" role="3SKWNk">
+                <property role="3SKdUp" value="We collect all the facets that the refinement groups have in refFacetNames." />
+              </node>
+            </node>
             <node concept="3cpWs8" id="2JdoBpsdT0U" role="3cqZAp">
               <node concept="3cpWsn" id="2JdoBpsdT0X" role="3cpWs9">
-                <property role="TrG5h" value="facetNames" />
+                <property role="TrG5h" value="refFacetNames" />
                 <node concept="_YKpA" id="2JdoBpsdT0Q" role="1tU5fm">
                   <node concept="17QB3L" id="2JdoBpsdUmW" role="_ZDj9" />
                 </node>
@@ -1270,7 +1300,7 @@
                 <node concept="3clFbF" id="2JdoBpsdYkf" role="3cqZAp">
                   <node concept="2OqwBi" id="2JdoBpsdYyr" role="3clFbG">
                     <node concept="37vLTw" id="2JdoBpsdYkd" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2JdoBpsdT0X" resolve="facetNames" />
+                      <ref role="3cqZAo" node="2JdoBpsdT0X" resolve="refFacetNames" />
                     </node>
                     <node concept="TSZUe" id="2JdoBpse02c" role="2OqNvi">
                       <node concept="2OqwBi" id="2JdoBpse6i6" role="25WWJ7">
@@ -1308,6 +1338,26 @@
             <node concept="3clFbH" id="2JdoBpsdSbq" role="3cqZAp" />
             <node concept="1DcWWT" id="2JdoBpsdj$C" role="3cqZAp">
               <node concept="3clFbS" id="2JdoBpsdj$E" role="2LFqv$">
+                <node concept="3SKdUt" id="705MhtR7BaE" role="3cqZAp">
+                  <node concept="3SKdUq" id="705MhtR7BlW" role="3SKWNk">
+                    <property role="3SKdUp" value="We look at the CodeGen files of the specification group to see what CodeGen file" />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="705MhtR7BEY" role="3cqZAp">
+                  <node concept="3SKdUq" id="705MhtR7BQj" role="3SKWNk">
+                    <property role="3SKdUp" value="we need to still add for the current refinement group. If the facet already" />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="705MhtR7C0a" role="3cqZAp">
+                  <node concept="3SKdUq" id="705MhtR7CbB" role="3SKWNk">
+                    <property role="3SKdUp" value="exists for the current refinement group, then the CodeGen file does not" />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="705MhtR7CjB" role="3cqZAp">
+                  <node concept="3SKdUq" id="705MhtR7Cv6" role="3SKWNk">
+                    <property role="3SKdUp" value="need to be created." />
+                  </node>
+                </node>
                 <node concept="1DcWWT" id="2JdoBpsdkMi" role="3cqZAp">
                   <node concept="3clFbS" id="2JdoBpsdkMk" role="2LFqv$">
                     <node concept="3clFbJ" id="2JdoBpse752" role="3cqZAp">
@@ -1447,7 +1497,7 @@
                         <node concept="3clFbF" id="6BjpN2xggqg" role="3cqZAp">
                           <node concept="2OqwBi" id="6BjpN2xggLM" role="3clFbG">
                             <node concept="37vLTw" id="6BjpN2xggqe" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2JdoBpsdT0X" resolve="facetNames" />
+                              <ref role="3cqZAo" node="2JdoBpsdT0X" resolve="refFacetNames" />
                             </node>
                             <node concept="TSZUe" id="6BjpN2xgihL" role="2OqNvi">
                               <node concept="2OqwBi" id="6BjpN2xgilx" role="25WWJ7">
@@ -1482,7 +1532,7 @@
                       <node concept="3fqX7Q" id="2JdoBpseadf" role="3clFbw">
                         <node concept="2OqwBi" id="2JdoBpseadh" role="3fr31v">
                           <node concept="37vLTw" id="2JdoBpseadi" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2JdoBpsdT0X" resolve="facetNames" />
+                            <ref role="3cqZAo" node="2JdoBpsdT0X" resolve="refFacetNames" />
                           </node>
                           <node concept="3JPx81" id="2JdoBpseadj" role="2OqNvi">
                             <node concept="2OqwBi" id="2JdoBpseadk" role="25WWJ7">
@@ -2290,6 +2340,16 @@
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="430hJVZ$Hm0" role="1pqMTA">
       <node concept="3clFbS" id="430hJVZ$Hm1" role="2VODD2">
+        <node concept="3SKdUt" id="705MhtR7EA_" role="3cqZAp">
+          <node concept="3SKdUq" id="705MhtR7EB9" role="3SKWNk">
+            <property role="3SKdUp" value="We duplicate all &quot;MappingContainer&quot; files because we need them twice" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="705MhtR7EBK" role="3cqZAp">
+          <node concept="3SKdUq" id="705MhtR7ECm" role="3SKWNk">
+            <property role="3SKdUp" value="in the generation." />
+          </node>
+        </node>
         <node concept="3cpWs8" id="430hJVZ$HzF" role="3cqZAp">
           <node concept="3cpWsn" id="430hJVZ$HzI" role="3cpWs9">
             <property role="TrG5h" value="mapContainers" />
@@ -2386,9 +2446,7 @@
         </node>
         <node concept="3clFbH" id="705MhtQVmmM" role="3cqZAp" />
         <node concept="3clFbJ" id="705MhtQVmn4" role="3cqZAp">
-          <node concept="3clFbS" id="705MhtQVmn6" role="3clFbx">
-            <node concept="3clFbH" id="705MhtQVmn5" role="3cqZAp" />
-          </node>
+          <node concept="3clFbS" id="705MhtQVmn6" role="3clFbx" />
           <node concept="2OqwBi" id="705MhtQVmnG" role="3clFbw">
             <node concept="37vLTw" id="705MhtQVmnq" role="2Oq$k0">
               <ref role="3cqZAo" node="705MhtQVmmi" resolve="val" />
