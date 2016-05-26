@@ -13,6 +13,7 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <generationPart ref="659df44c-8ea7-4afd-b3b4-549fcc453b2f(AuxiliaryGenerationLanguage)" />
   </languages>
   <imports />
   <registry>
@@ -114,7 +115,7 @@
       <concept id="1444742917972733549" name="MappingChangeableModules.structure.ConceptTypeMapping" flags="ig" index="2lyALE">
         <reference id="7625552052658475980" name="namedConcept" index="3b9JjW" />
       </concept>
-      <concept id="1522810226734053312" name="MappingChangeableModules.structure.IsTypeOf" flags="ng" index="1lWEKl">
+      <concept id="1522810226734053312" name="MappingChangeableModules.structure.IsTypeOfMapping" flags="ng" index="1lWEKl">
         <child id="1522810226734053315" name="conceptType" index="1lWEKm" />
       </concept>
       <concept id="6119744805287748475" name="MappingChangeableModules.structure.MappingContainer" flags="ng" index="1nQ_01">

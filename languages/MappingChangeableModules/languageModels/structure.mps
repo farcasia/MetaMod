@@ -173,7 +173,7 @@
   </node>
   <node concept="1TIwiD" id="1ky6Xl0Obv0">
     <property role="3GE5qa" value="Operations" />
-    <property role="TrG5h" value="IsTypeOf" />
+    <property role="TrG5h" value="IsTypeOfMapping" />
     <property role="34LRSv" value="isTypeOf" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="1ky6Xl0Obv3" role="1TKVEi">
