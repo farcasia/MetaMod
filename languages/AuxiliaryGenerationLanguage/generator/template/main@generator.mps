@@ -987,6 +987,16 @@
                   <property role="3SKdUp" value="to a refinement group." />
                 </node>
               </node>
+              <node concept="3SKdUt" id="705MhtRdHVr" role="3cqZAp">
+                <node concept="3SKdUq" id="705MhtRdI9y" role="3SKWNk">
+                  <property role="3SKdUp" value="TODO: We will have to do this also if the group has a sub-group that has been" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="705MhtRdIyN" role="3cqZAp">
+                <node concept="3SKdUq" id="705MhtRdIF3" role="3SKWNk">
+                  <property role="3SKdUp" value="TODO: changed to a refinement group." />
+                </node>
+              </node>
               <node concept="3clFbJ" id="430hJVZMBU0" role="3cqZAp">
                 <node concept="3clFbS" id="430hJVZMBU2" role="3clFbx">
                   <node concept="3cpWs6" id="430hJVZML6j" role="3cqZAp">

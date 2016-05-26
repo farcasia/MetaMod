@@ -215,6 +215,12 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -2196,7 +2202,7 @@
                           <node concept="2OqwBi" id="430hJVZw0eE" role="37wK5m">
                             <node concept="2OqwBi" id="430hJVZw0eF" role="2Oq$k0">
                               <node concept="1PxgMI" id="430hJVZw0eG" role="2Oq$k0">
-                                <ref role="1PxNhF" to="1o5n:48EbtxmrRJI" resolve="AsSource" />
+                                <ref role="1PxNhF" to="5h42:2viqW8DrJa8" resolve="AsSourceMapping" />
                                 <node concept="2OqwBi" id="430hJVZw0eH" role="1PxMeX">
                                   <node concept="2OqwBi" id="430hJVZw0eI" role="2Oq$k0">
                                     <node concept="30H73N" id="430hJVZw0eJ" role="2Oq$k0" />
@@ -2234,8 +2240,8 @@
                       </node>
                     </node>
                     <node concept="1mIQ4w" id="430hJVZw0eU" role="2OqNvi">
-                      <node concept="chp4Y" id="430hJVZw0eV" role="cj9EA">
-                        <ref role="cht4Q" to="1o5n:48EbtxmrRJI" resolve="AsSource" />
+                      <node concept="chp4Y" id="705MhtR9XFg" role="cj9EA">
+                        <ref role="cht4Q" to="5h42:2viqW8DrJa8" resolve="AsSourceMapping" />
                       </node>
                     </node>
                   </node>
@@ -2254,7 +2260,7 @@
                           <node concept="2OqwBi" id="430hJVZw0f3" role="37wK5m">
                             <node concept="2OqwBi" id="430hJVZw0f4" role="2Oq$k0">
                               <node concept="1PxgMI" id="430hJVZw0f5" role="2Oq$k0">
-                                <ref role="1PxNhF" to="1o5n:48EbtxmtnqF" resolve="AsTarget" />
+                                <ref role="1PxNhF" to="5h42:2viqW8DrMmr" resolve="AsTargetMapping" />
                                 <node concept="2OqwBi" id="430hJVZw0f6" role="1PxMeX">
                                   <node concept="2OqwBi" id="430hJVZw0f7" role="2Oq$k0">
                                     <node concept="30H73N" id="430hJVZw0f8" role="2Oq$k0" />
@@ -2292,13 +2298,31 @@
                       </node>
                     </node>
                     <node concept="1mIQ4w" id="430hJVZw0fj" role="2OqNvi">
-                      <node concept="chp4Y" id="430hJVZw0fk" role="cj9EA">
-                        <ref role="cht4Q" to="1o5n:48EbtxmtnqF" resolve="AsTarget" />
+                      <node concept="chp4Y" id="705MhtR9Znr" role="cj9EA">
+                        <ref role="cht4Q" to="5h42:2viqW8DrMmr" resolve="AsTargetMapping" />
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="430hJVZw0fl" role="3cqZAp" />
+                <node concept="34ab3g" id="705MhtR7Loc" role="3cqZAp">
+                  <property role="35gtTG" value="warn" />
+                  <node concept="3cpWs3" id="705MhtR82Tz" role="34bqiv">
+                    <node concept="30H73N" id="705MhtR84dL" role="3uHU7w" />
+                    <node concept="3cpWs3" id="705MhtR7XPh" role="3uHU7B">
+                      <node concept="3cpWs3" id="705MhtR7WlO" role="3uHU7B">
+                        <node concept="Xl_RD" id="705MhtR7Loe" role="3uHU7B">
+                          <property role="Xl_RC" value="toBeMappedSpecConcept " />
+                        </node>
+                        <node concept="37vLTw" id="705MhtR7Xav" role="3uHU7w">
+                          <ref role="3cqZAo" node="430hJVZw0eu" resolve="toBeMappedSpecConcept" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="705MhtR7YuJ" role="3uHU7w">
+                        <property role="Xl_RC" value="from node " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbJ" id="430hJVZw0fm" role="3cqZAp">
                   <node concept="3clFbS" id="430hJVZw0fn" role="3clFbx">
                     <node concept="3cpWs6" id="430hJVZw0fo" role="3cqZAp">
