@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:552aa11c-16df-4a2a-b2ee-e9829569fe51(AuxiliaryGenerationLanguage.editor)">
+<model ref="r:552aa11c-16df-4a2a-b2ee-e9829569fe51(RightCallsGenerationLanguage.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />

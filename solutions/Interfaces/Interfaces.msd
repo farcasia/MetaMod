@@ -29,11 +29,10 @@
     <usedLanguage>c2a5c46f-9e45-4936-b1a6-b16d77584a24(MappingChangeableModules)</usedLanguage>
     <usedLanguage>a00bbccc-dbff-45c7-aa54-02d1f94db9b5(LanguageConfiguration)</usedLanguage>
     <usedLanguage>760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</usedLanguage>
-    <usedLanguage>659df44c-8ea7-4afd-b3b4-549fcc453b2f(AuxiliaryGenerationLanguage)</usedLanguage>
     <usedLanguage>7cbc13ed-9875-4738-a307-276eb1aa9679(GroupInterfaces)</usedLanguage>
+    <usedLanguage>659df44c-8ea7-4afd-b3b4-549fcc453b2f(RightCallsGenerationLanguage)</usedLanguage>
   </usedLanguages>
   <languageVersions>
-    <language id="659df44c-8ea7-4afd-b3b4-549fcc453b2f" fqName="AuxiliaryGenerationLanguage" version="0" />
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" fqName="CodeGeneration" version="0" />
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
     <language id="7cbc13ed-9875-4738-a307-276eb1aa9679" fqName="GroupInterfaces" version="0" />
@@ -42,6 +41,7 @@
     <language id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" fqName="MappingChangeableModules" version="0" />
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" fqName="Models" version="1" />
     <language id="ae311dd6-db78-4e5e-a31b-7988fcde0010" fqName="Modules" version="0" />
+    <language id="659df44c-8ea7-4afd-b3b4-549fcc453b2f" fqName="RightCallsGenerationLanguage" version="0" />
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" fqName="de.itemis.mps.editor.diagram" version="0" />
     <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" fqName="de.itemis.mps.editor.diagram.layout" version="0" />
     <language id="21063c66-85ba-4e98-839b-036445b17ae2" fqName="de.itemis.mps.editor.layout" version="0" />

@@ -18,7 +18,7 @@
     <use id="a00bbccc-dbff-45c7-aa54-02d1f94db9b5" name="LanguageConfiguration" version="0" />
     <use id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" name="MappingChangeableModules" version="-1" />
     <use id="7cbc13ed-9875-4738-a307-276eb1aa9679" name="GroupInterfaces" version="-1" />
-    <generationPart ref="659df44c-8ea7-4afd-b3b4-549fcc453b2f(AuxiliaryGenerationLanguage)" />
+    <generationPart ref="659df44c-8ea7-4afd-b3b4-549fcc453b2f(RightCallsGenerationLanguage)" />
   </languages>
   <imports />
   <registry>
