@@ -351,17 +351,6 @@
         <node concept="3clFbH" id="6YtJRaiFvsp" role="3cqZAp" />
         <node concept="1DcWWT" id="6YtJRaiFvsA" role="3cqZAp">
           <node concept="3clFbS" id="6YtJRaiFvsC" role="2LFqv$">
-            <node concept="34ab3g" id="3EkoJDOGqFZ" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="3EkoJDOGqVs" role="34bqiv">
-                <node concept="37vLTw" id="3EkoJDOGqVM" role="3uHU7w">
-                  <ref role="3cqZAo" node="6YtJRaiFvsD" resolve="node" />
-                </node>
-                <node concept="Xl_RD" id="3EkoJDOGqG1" role="3uHU7B">
-                  <property role="Xl_RC" value="Ok, we are in node: " />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="6YtJRaiFMXz" role="3cqZAp">
               <node concept="d57v9" id="6YtJRaiFQ07" role="3clFbG">
                 <node concept="2OqwBi" id="6YtJRaiFSsT" role="37vLTx">
@@ -377,17 +366,6 @@
                 </node>
                 <node concept="37vLTw" id="6YtJRaiFMXx" role="37vLTJ">
                   <ref role="3cqZAo" node="6YtJRaiFvrJ" resolve="noOfEdges" />
-                </node>
-              </node>
-            </node>
-            <node concept="34ab3g" id="3EkoJDOKpku" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="3EkoJDOKpzP" role="34bqiv">
-                <node concept="37vLTw" id="3EkoJDOKp$b" role="3uHU7w">
-                  <ref role="3cqZAo" node="6YtJRaiFvrJ" resolve="noOfEdges" />
-                </node>
-                <node concept="Xl_RD" id="3EkoJDOKpkw" role="3uHU7B">
-                  <property role="Xl_RC" value="noOfEdges now " />
                 </node>
               </node>
             </node>
@@ -1177,19 +1155,13 @@
       <node concept="3clFbS" id="6BjpN2ySBoT" role="3yJ0IQ">
         <node concept="3clFbJ" id="6YtJRaiW6da" role="3cqZAp">
           <node concept="3clFbS" id="6YtJRaiW6dc" role="3clFbx">
-            <node concept="34ab3g" id="3EkoJDOKoPL" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="Xl_RD" id="3EkoJDOKozm" role="34bqiv">
-                <property role="Xl_RC" value="Node as source for edge Place!" />
-              </node>
-            </node>
             <node concept="3cpWs6" id="6YtJRaiX23l" role="3cqZAp">
               <node concept="2OqwBi" id="6YtJRaiX23L" role="3cqZAk">
                 <node concept="3yJ4kq" id="6YtJRaiX23x" role="2Oq$k0">
                   <ref role="3yJ4Bl" node="6YtJRaiW33Y" resolve="Node" />
                 </node>
-                <node concept="eJ9_a" id="6YtJRaiX2gG" role="2OqNvi">
-                  <ref role="khl7h" node="DTk9ZDu236" resolve="input" />
+                <node concept="eJkTp" id="3EkoJDOOlZ2" role="2OqNvi">
+                  <ref role="3X8f89" node="DTk9ZDu236" resolve="input" />
                 </node>
               </node>
             </node>
@@ -1209,12 +1181,6 @@
               <node concept="3SKdUt" id="6YtJRaiX2hR" role="3cqZAp">
                 <node concept="3SKdUq" id="6YtJRaiX2hV" role="3SKWNk">
                   <property role="3SKdUp" value="Node is Transition." />
-                </node>
-              </node>
-              <node concept="34ab3g" id="3EkoJDOKoTP" role="3cqZAp">
-                <property role="35gtTG" value="info" />
-                <node concept="Xl_RD" id="3EkoJDOKoOL" role="34bqiv">
-                  <property role="Xl_RC" value="Node as source for edge Transition!" />
                 </node>
               </node>
               <node concept="3cpWs6" id="6YtJRaiX2hM" role="3cqZAp">
@@ -1245,12 +1211,6 @@
       <node concept="3clFbS" id="6BjpN2ySBpb" role="3yJ0IQ">
         <node concept="3clFbJ" id="6YtJRaiX2pe" role="3cqZAp">
           <node concept="3clFbS" id="6YtJRaiX2pg" role="3clFbx">
-            <node concept="34ab3g" id="3EkoJDOKp3_" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="Xl_RD" id="3EkoJDOKp4b" role="34bqiv">
-                <property role="Xl_RC" value="Node as target for edge Place!" />
-              </node>
-            </node>
             <node concept="3cpWs6" id="6YtJRaiX2wn" role="3cqZAp">
               <node concept="2OqwBi" id="6YtJRaiX2xd" role="3cqZAk">
                 <node concept="3yJ4kq" id="6YtJRaiX2wX" role="2Oq$k0">
@@ -1279,19 +1239,13 @@
                   <property role="3SKdUp" value="Node is Transition" />
                 </node>
               </node>
-              <node concept="34ab3g" id="3EkoJDOKp57" role="3cqZAp">
-                <property role="35gtTG" value="info" />
-                <node concept="Xl_RD" id="3EkoJDOKp58" role="34bqiv">
-                  <property role="Xl_RC" value="Node as target for edge Transition" />
-                </node>
-              </node>
               <node concept="3cpWs6" id="6YtJRaiX2CC" role="3cqZAp">
                 <node concept="2OqwBi" id="6YtJRaiX2D3" role="3cqZAk">
                   <node concept="3yJ4kq" id="6YtJRaiX2CN" role="2Oq$k0">
                     <ref role="3yJ4Bl" node="6YtJRaiW33Y" resolve="Node" />
                   </node>
-                  <node concept="eJkTp" id="6YtJRaiX2Jg" role="2OqNvi">
-                    <ref role="3X8f89" node="DTk9ZDu236" resolve="input" />
+                  <node concept="eJ9_a" id="3EkoJDOOm5B" role="2OqNvi">
+                    <ref role="khl7h" node="DTk9ZDu236" resolve="input" />
                   </node>
                 </node>
               </node>
