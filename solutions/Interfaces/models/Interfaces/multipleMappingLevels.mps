@@ -14,6 +14,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <generationPart ref="659df44c-8ea7-4afd-b3b4-549fcc453b2f(RightCallsGenerationLanguage)" />
+    <generationPart ref="9042c6af-2dc7-4f7f-9455-9b2ff7818bf2(CopyHelperMethodsGenerationLanguage)" />
   </languages>
   <imports />
   <registry>
