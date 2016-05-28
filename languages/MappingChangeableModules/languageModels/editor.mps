@@ -738,7 +738,7 @@
   </node>
   <node concept="24kQdi" id="6YtJRaiW6Sk">
     <property role="3GE5qa" value="Operations" />
-    <ref role="1XX52x" to="5h42:1ky6Xl0Obv0" resolve="IsTypeOf" />
+    <ref role="1XX52x" to="5h42:1ky6Xl0Obv0" resolve="IsTypeOfMapping" />
     <node concept="3EZMnI" id="1ky6Xl0Obvc" role="2wV5jI">
       <node concept="PMmxH" id="1ky6Xl0Obvm" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -758,6 +758,27 @@
       <node concept="Veino" id="5X829TycENC" role="3F10Kt">
         <property role="Vb096" value="yellow" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3EkoJDPae2L">
+    <property role="3GE5qa" value="Operations" />
+    <ref role="1XX52x" to="5h42:3EkoJDPae2x" resolve="AsConceptTypeMapping" />
+    <node concept="3EZMnI" id="3EkoJDP8MIu" role="2wV5jI">
+      <node concept="3F0ifn" id="3EkoJDP8MI_" role="3EZMnx">
+        <property role="3F0ifm" value="castTo" />
+      </node>
+      <node concept="3F0ifn" id="3EkoJDP8MIF" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+      </node>
+      <node concept="3F1sOY" id="3EkoJDP8N3l" role="3EZMnx">
+        <ref role="1NtTu8" to="5h42:3EkoJDPae2y" />
+      </node>
+      <node concept="3F0ifn" id="3EkoJDP8MIN" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="2iRfu4" id="3EkoJDP8MIx" role="2iSdaV" />
     </node>
   </node>
 </model>

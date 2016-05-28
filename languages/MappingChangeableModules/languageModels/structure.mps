@@ -186,5 +186,20 @@
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3EkoJDPae2x">
+    <property role="3GE5qa" value="Operations" />
+    <property role="TrG5h" value="AsConceptTypeMapping" />
+    <property role="34LRSv" value="cast mapping" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="3EkoJDPae2y" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conceptType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1gcKwu1xETH" resolve="ConceptTypeMapping" />
+    </node>
+    <node concept="PrWs8" id="3EkoJDPae2$" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+  </node>
 </model>
 

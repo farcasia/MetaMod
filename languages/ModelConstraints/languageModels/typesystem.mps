@@ -910,5 +910,47 @@
       <ref role="1YaFvo" to="1o5n:6VsEH8K_rNY" resolve="SetTarget" />
     </node>
   </node>
+  <node concept="1YbPZF" id="3EkoJDP8OwD">
+    <property role="TrG5h" value="typeof_AsConceptType" />
+    <property role="3GE5qa" value="Operations" />
+    <node concept="3clFbS" id="3EkoJDP8OwE" role="18ibNy">
+      <node concept="1Z5TYs" id="3EkoJDP8PDI" role="3cqZAp">
+        <node concept="mw_s8" id="3EkoJDP8PFX" role="1ZfhKB">
+          <node concept="2c44tf" id="3EkoJDP8PFT" role="mwGJk">
+            <node concept="CMjq$" id="3EkoJDP8PGg" role="2c44tc">
+              <node concept="2c44tb" id="3EkoJDP8PGy" role="lGtFl">
+                <property role="P3scX" value="8a5ffd84-4b2e-475c-803b-24d3ac9331ee/8976227254847193477/8976227254847281741" />
+                <property role="2qtEX8" value="namedConcept" />
+                <node concept="2OqwBi" id="3EkoJDP8Q7O" role="2c44t1">
+                  <node concept="2OqwBi" id="3EkoJDP8PIP" role="2Oq$k0">
+                    <node concept="1YBJjd" id="3EkoJDP8PGV" role="2Oq$k0">
+                      <ref role="1YBMHb" node="3EkoJDP8OwG" resolve="asConceptType" />
+                    </node>
+                    <node concept="3TrEf2" id="3EkoJDP8PUb" role="2OqNvi">
+                      <ref role="3Tt5mk" to="1o5n:3EkoJDP8MIX" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="3EkoJDP8Qlx" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1o5n:7MhXM5kmxDd" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3EkoJDP8PDS" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3EkoJDP8PDO" role="mwGJk">
+            <node concept="1YBJjd" id="3EkoJDP8PE9" role="1Z2MuG">
+              <ref role="1YBMHb" node="3EkoJDP8OwG" resolve="asConceptType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3EkoJDP8OwG" role="1YuTPh">
+      <property role="TrG5h" value="asConceptType" />
+      <ref role="1YaFvo" to="1o5n:3EkoJDP8Koo" resolve="AsConceptType" />
+    </node>
+  </node>
 </model>
 

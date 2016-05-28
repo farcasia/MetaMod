@@ -634,5 +634,26 @@
       <node concept="2iRfu4" id="5Qer_$coUKc" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3EkoJDP8KsN">
+    <property role="3GE5qa" value="Operations" />
+    <ref role="1XX52x" to="1o5n:3EkoJDP8Koo" resolve="AsConceptType" />
+    <node concept="3EZMnI" id="3EkoJDP8MIu" role="2wV5jI">
+      <node concept="3F0ifn" id="3EkoJDP8MI_" role="3EZMnx">
+        <property role="3F0ifm" value="castTo" />
+      </node>
+      <node concept="3F0ifn" id="3EkoJDP8MIF" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+      </node>
+      <node concept="3F1sOY" id="3EkoJDP8N3l" role="3EZMnx">
+        <ref role="1NtTu8" to="1o5n:3EkoJDP8MIX" />
+      </node>
+      <node concept="3F0ifn" id="3EkoJDP8MIN" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="2iRfu4" id="3EkoJDP8MIx" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

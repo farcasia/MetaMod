@@ -251,7 +251,49 @@
     </node>
     <node concept="1YaCAy" id="6YtJRaiW7Qk" role="1YuTPh">
       <property role="TrG5h" value="isTypeOf" />
-      <ref role="1YaFvo" to="5h42:1ky6Xl0Obv0" resolve="IsTypeOf" />
+      <ref role="1YaFvo" to="5h42:1ky6Xl0Obv0" resolve="IsTypeOfMapping" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3EkoJDPaeZ0">
+    <property role="TrG5h" value="typeof_AsConceptTypeMapping" />
+    <property role="3GE5qa" value="Operations" />
+    <node concept="3clFbS" id="3EkoJDPaeZ1" role="18ibNy">
+      <node concept="1Z5TYs" id="3EkoJDP8PDI" role="3cqZAp">
+        <node concept="mw_s8" id="3EkoJDP8PFX" role="1ZfhKB">
+          <node concept="2c44tf" id="3EkoJDP8PFT" role="mwGJk">
+            <node concept="2lyALE" id="3EkoJDPafZK" role="2c44tc">
+              <node concept="2c44tb" id="3EkoJDPag09" role="lGtFl">
+                <property role="P3scX" value="c2a5c46f-9e45-4936-b1a6-b16d77584a24/1444742917972733549/7625552052658475980" />
+                <property role="2qtEX8" value="namedConcept" />
+                <node concept="2OqwBi" id="3EkoJDPagAI" role="2c44t1">
+                  <node concept="2OqwBi" id="3EkoJDPag2z" role="2Oq$k0">
+                    <node concept="1YBJjd" id="3EkoJDPag0D" role="2Oq$k0">
+                      <ref role="1YBMHb" node="3EkoJDPaeZ3" resolve="asConceptTypeMapping" />
+                    </node>
+                    <node concept="3TrEf2" id="3EkoJDPago_" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5h42:3EkoJDPae2y" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="3EkoJDPah04" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5h42:6BjpN2yXpfc" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3EkoJDP8PDS" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3EkoJDP8PDO" role="mwGJk">
+            <node concept="1YBJjd" id="3EkoJDPafJ7" role="1Z2MuG">
+              <ref role="1YBMHb" node="3EkoJDPaeZ3" resolve="asConceptTypeMapping" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3EkoJDPaeZ3" role="1YuTPh">
+      <property role="TrG5h" value="asConceptTypeMapping" />
+      <ref role="1YaFvo" to="5h42:3EkoJDPae2x" resolve="AsConceptTypeMapping" />
     </node>
   </node>
 </model>
