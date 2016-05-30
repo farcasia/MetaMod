@@ -176,7 +176,7 @@
     <ref role="1XX52x" to="5h42:5jHGRC3dYCL" resolve="Mapping" />
     <node concept="3EZMnI" id="5jHGRC3dYD5" role="2wV5jI">
       <node concept="1iCGBv" id="5jHGRC3dYDf" role="3EZMnx">
-        <ref role="1NtTu8" to="5h42:5jHGRC3dYCM" />
+        <ref role="1NtTu8" to="5h42:5jHGRC3dYCO" />
         <node concept="1sVBvm" id="5jHGRC3dYDh" role="1sWHZn">
           <node concept="3F0A7n" id="5jHGRC3dYDr" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -184,14 +184,14 @@
           </node>
         </node>
         <node concept="Veino" id="2viqW8Duqjz" role="3F10Kt">
-          <property role="Vb096" value="green" />
+          <property role="Vb096" value="yellow" />
         </node>
       </node>
       <node concept="3F0ifn" id="5jHGRC3dYDz" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
+        <property role="3F0ifm" value="as" />
       </node>
       <node concept="1iCGBv" id="5jHGRC3dYDQ" role="3EZMnx">
-        <ref role="1NtTu8" to="5h42:5jHGRC3dYCO" />
+        <ref role="1NtTu8" to="5h42:5jHGRC3dYCM" />
         <node concept="1sVBvm" id="5jHGRC3dYDS" role="1sWHZn">
           <node concept="3F0A7n" id="5jHGRC3dYE6" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -199,7 +199,7 @@
           </node>
         </node>
         <node concept="Veino" id="2viqW8Duqle" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="green" />
         </node>
       </node>
       <node concept="2iRfu4" id="5jHGRC3dYD8" role="2iSdaV" />
@@ -213,7 +213,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="7_nKZKtDJTZ" role="3EZMnx">
-          <property role="3F0ifm" value="Mapping" />
+          <property role="3F0ifm" value="View" />
         </node>
         <node concept="3F0A7n" id="7_nKZKtDJUm" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -227,10 +227,10 @@
             <property role="VOm3f" value="false" />
           </node>
           <node concept="3F0ifn" id="5jHGRC3dYEY" role="3EZMnx">
-            <property role="3F0ifm" value="group" />
+            <property role="3F0ifm" value="view" />
           </node>
           <node concept="1iCGBv" id="5jHGRC3dYFa" role="3EZMnx">
-            <ref role="1NtTu8" to="5h42:5jHGRC3dYdW" />
+            <ref role="1NtTu8" to="5h42:5jHGRC3dYe2" />
             <node concept="1sVBvm" id="5jHGRC3dYFc" role="1sWHZn">
               <node concept="3F0A7n" id="5jHGRC3dYFo" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -238,14 +238,14 @@
               </node>
             </node>
             <node concept="Veino" id="2viqW8Duqgd" role="3F10Kt">
-              <property role="Vb096" value="green" />
+              <property role="Vb096" value="yellow" />
             </node>
           </node>
           <node concept="3F0ifn" id="5jHGRC3dYFy" role="3EZMnx">
-            <property role="3F0ifm" value="-&gt;" />
+            <property role="3F0ifm" value="as" />
           </node>
           <node concept="1iCGBv" id="5jHGRC3dYFM" role="3EZMnx">
-            <ref role="1NtTu8" to="5h42:5jHGRC3dYe2" />
+            <ref role="1NtTu8" to="5h42:5jHGRC3dYdW" />
             <node concept="1sVBvm" id="5jHGRC3dYFO" role="1sWHZn">
               <node concept="3F0A7n" id="5jHGRC3dYG4" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -253,7 +253,7 @@
               </node>
             </node>
             <node concept="Veino" id="2viqW8DuqhS" role="3F10Kt">
-              <property role="Vb096" value="yellow" />
+              <property role="Vb096" value="green" />
             </node>
           </node>
           <node concept="2iRfu4" id="5jHGRC3dYEZ" role="2iSdaV" />
