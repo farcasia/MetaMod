@@ -23,6 +23,7 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -181,8 +182,8 @@
         <node concept="3F2HdR" id="1ky6Xl0OSmE" role="3EZMnx">
           <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="tpee:fzclF7Y" />
-          <node concept="2iRfu4" id="1ky6Xl0OSmG" role="2czzBx" />
           <node concept="3F0ifn" id="5UqrlCgjujU" role="2czzBI" />
+          <node concept="l2Vlx" id="1CbK6AeixSc" role="2czzBx" />
         </node>
         <node concept="3F0ifn" id="1ky6Xl0HRJc" role="3EZMnx">
           <property role="3F0ifm" value=")" />
@@ -194,7 +195,7 @@
         <node concept="3F1sOY" id="4BhfRC_zy_l" role="3EZMnx">
           <ref role="1NtTu8" to="tpee:fzclF7X" />
         </node>
-        <node concept="2iRfu4" id="7MhXM5kl9PC" role="2iSdaV" />
+        <node concept="l2Vlx" id="1CbK6AeixSd" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="7MhXM5kl9Ps" role="2iSdaV" />
     </node>
