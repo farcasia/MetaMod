@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -11,6 +12,7 @@
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
+    <import index="fnmy" ref="r:89c0fb70-0977-4113-a076-5906f9d8630f(jetbrains.mps.baseLanguage.scopes)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -111,6 +113,9 @@
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+    </language>
+    <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
@@ -704,6 +709,31 @@
     </node>
     <node concept="13hLZK" id="2TStaYk24q9" role="13h7CW">
       <node concept="3clFbS" id="2TStaYk24qa" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1CbK6AekI79">
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <ref role="13h7C2" to="1o5n:1CbK6AejRJj" resolve="DeleteConcept" />
+    <node concept="13hLZK" id="1CbK6AekI7a" role="13h7CW">
+      <node concept="3clFbS" id="1CbK6AekI7b" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1CbK6AekIew" role="13h7CS">
+      <property role="TrG5h" value="getExpressionType" />
+      <node concept="3Tm1VV" id="1CbK6AekIex" role="1B3o_S" />
+      <node concept="3clFbS" id="1CbK6AekIey" role="3clF47">
+        <node concept="3clFbF" id="7GulAc9z0ep" role="3cqZAp">
+          <node concept="2OqwBi" id="7GulAc9z0e9" role="3clFbG">
+            <node concept="2OqwBi" id="7GulAc9z0dZ" role="2Oq$k0">
+              <node concept="13iPFW" id="7GulAc9z0dW" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1CbK6AekJcZ" role="2OqNvi">
+                <ref role="3Tt5mk" to="1o5n:1CbK6AejW7S" />
+              </node>
+            </node>
+            <node concept="3JvlWi" id="1CbK6AekJmb" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1CbK6AekIhG" role="3clF45" />
     </node>
   </node>
 </model>

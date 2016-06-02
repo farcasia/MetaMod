@@ -952,5 +952,29 @@
       <ref role="1YaFvo" to="1o5n:3EkoJDP8Koo" resolve="AsConceptType" />
     </node>
   </node>
+  <node concept="1YbPZF" id="1CbK6AejSty">
+    <property role="TrG5h" value="typeof_DeleteConcept" />
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <node concept="3clFbS" id="1CbK6AejStz" role="18ibNy">
+      <node concept="1Z5TYs" id="1CbK6AejTj_" role="3cqZAp">
+        <node concept="mw_s8" id="1CbK6AejTko" role="1ZfhKB">
+          <node concept="2c44tf" id="1CbK6AejTkk" role="mwGJk">
+            <node concept="3cqZAl" id="1CbK6AejTkF" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="1CbK6AejTjC" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1CbK6AejTjX" role="mwGJk">
+            <node concept="1YBJjd" id="1CbK6AejTjY" role="1Z2MuG">
+              <ref role="1YBMHb" node="1CbK6AejSt_" resolve="deleteConcept" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1CbK6AejSt_" role="1YuTPh">
+      <property role="TrG5h" value="deleteConcept" />
+      <ref role="1YaFvo" to="1o5n:1CbK6AejRJj" resolve="DeleteConcept" />
+    </node>
+  </node>
 </model>
 

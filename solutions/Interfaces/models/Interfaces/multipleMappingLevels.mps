@@ -236,6 +236,9 @@
       </concept>
     </language>
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods">
+      <concept id="1876805229321616339" name="GenericGroupMethods.structure.DeleteConcept" flags="ng" index="2khbIU">
+        <child id="1876805229321634296" name="concept" index="2kh06h" />
+      </concept>
       <concept id="4767673562711423982" name="GenericGroupMethods.structure.AsSource" flags="ng" index="khloQ">
         <reference id="4767673562711424009" name="refAssoc" index="khl7i" />
       </concept>
@@ -4388,13 +4391,112 @@
         <node concept="1l_8MK" id="1jNpnEoIBf4" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="1jNpnEoIBf5" role="3clF47">
-        <node concept="3SKdUt" id="1CbK6AejDez" role="3cqZAp">
-          <node concept="3SKdUq" id="1CbK6AejDe_" role="3SKWNk">
-            <property role="3SKdUp" value="What are we to do? This would mean to delete some things in the metamodel" />
+        <node concept="3cpWs8" id="1CbK6AejNk1" role="3cqZAp">
+          <node concept="3cpWsn" id="1CbK6AejNjX" role="3cpWs9">
+            <property role="TrG5h" value="initialState" />
+            <node concept="CMjq$" id="1CbK6AejNps" role="1tU5fm">
+              <ref role="CMYPG" node="1QHqpFmkyAp" resolve="InitialState" />
+            </node>
+            <node concept="3otQA" id="1CbK6AejNq2" role="33vP2m">
+              <ref role="37wK5l" node="1CbK6AejG0A" resolve="initialState" />
+              <node concept="37vLTw" id="1CbK6AejNqe" role="37wK5m">
+                <ref role="3cqZAo" node="1jNpnEoIBf3" resolve="valueModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1CbK6AejFwd" role="3cqZAp">
+          <node concept="3cpWsn" id="1CbK6AejFwg" role="3cpWs9">
+            <property role="TrG5h" value="unreachableStates" />
+            <node concept="_YKpA" id="1CbK6AejFw9" role="1tU5fm">
+              <node concept="CMjq$" id="1CbK6AejFwt" role="_ZDj9">
+                <ref role="CMYPG" node="1gcKwu1v9WR" resolve="State" />
+              </node>
+            </node>
+            <node concept="3otQA" id="1CbK6AejFAn" role="33vP2m">
+              <ref role="37wK5l" node="1CbK6Aei6ta" resolve="unreachableNodes" />
+              <node concept="37vLTw" id="1CbK6AejFFt" role="37wK5m">
+                <ref role="3cqZAo" node="1jNpnEoIBf3" resolve="valueModel" />
+              </node>
+              <node concept="37vLTw" id="1CbK6AejNvZ" role="37wK5m">
+                <ref role="3cqZAo" node="1CbK6AejNjX" resolve="initialState" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1CbK6AejN_h" role="3cqZAp" />
+        <node concept="3SKdUt" id="1CbK6AemGpX" role="3cqZAp">
+          <node concept="3SKdUq" id="1CbK6AemGHL" role="3SKWNk">
+            <property role="3SKdUp" value="Delete all states that we cannot reach from the initial state." />
+          </node>
+        </node>
+        <node concept="1DcWWT" id="1CbK6AejNKy" role="3cqZAp">
+          <node concept="3clFbS" id="1CbK6AejNK$" role="2LFqv$">
+            <node concept="3clFbF" id="1CbK6AejPI6" role="3cqZAp">
+              <node concept="2OqwBi" id="1CbK6AejPIf" role="3clFbG">
+                <node concept="37vLTw" id="1CbK6AejPI4" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1jNpnEoIBf3" resolve="valueModel" />
+                </node>
+                <node concept="2khbIU" id="1CbK6AemAMI" role="2OqNvi">
+                  <node concept="37vLTw" id="1CbK6AemAMY" role="2kh06h">
+                    <ref role="3cqZAo" node="1CbK6AejNK_" resolve="unreachableState" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="1CbK6AejNK_" role="1Duv9x">
+            <property role="TrG5h" value="unreachableState" />
+            <node concept="CMjq$" id="1CbK6AejNWr" role="1tU5fm">
+              <ref role="CMYPG" node="1gcKwu1v9WR" resolve="State" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="1CbK6AejPvN" role="1DdaDG">
+            <ref role="3cqZAo" node="1CbK6AejFwg" resolve="unreachableStates" />
           </node>
         </node>
       </node>
       <node concept="3cqZAl" id="1jNpnEoIBfg" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="1CbK6AemFnb" role="CLm5g" />
+    <node concept="1GnNjC" id="1CbK6AejG0A" role="CLm5g">
+      <property role="TrG5h" value="initialState" />
+      <node concept="37vLTG" id="1CbK6AejG0B" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="1CbK6AejG0C" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="1CbK6AejG0D" role="3clF47">
+        <node concept="3cpWs8" id="1CbK6AejG6d" role="3cqZAp">
+          <node concept="3cpWsn" id="1CbK6AejG6g" role="3cpWs9">
+            <property role="TrG5h" value="initialState" />
+            <node concept="CMjq$" id="1CbK6AejG6c" role="1tU5fm">
+              <ref role="CMYPG" node="1QHqpFmkyAp" resolve="InitialState" />
+            </node>
+            <node concept="2OqwBi" id="1CbK6AejHy0" role="33vP2m">
+              <node concept="2OqwBi" id="1CbK6AejGrw" role="2Oq$k0">
+                <node concept="37vLTw" id="1CbK6AejG6U" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1CbK6AejG0B" resolve="valueModel" />
+                </node>
+                <node concept="1lBOk0" id="1CbK6AejGxK" role="2OqNvi">
+                  <node concept="CMjq$" id="1CbK6AejGxM" role="1lB3kv">
+                    <ref role="CMYPG" node="1QHqpFmkyAp" resolve="InitialState" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="1CbK6AejIie" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1CbK6AejNsm" role="3cqZAp" />
+        <node concept="3cpWs6" id="1CbK6AejNsH" role="3cqZAp">
+          <node concept="37vLTw" id="1CbK6AejNtK" role="3cqZAk">
+            <ref role="3cqZAo" node="1CbK6AejG6g" resolve="initialState" />
+          </node>
+        </node>
+      </node>
+      <node concept="CMjq$" id="1CbK6AejNqs" role="3clF45">
+        <ref role="CMYPG" node="1QHqpFmkyAp" resolve="InitialState" />
+      </node>
     </node>
     <node concept="1vbBpf" id="2JdoBprGCpJ" role="1ukcCD">
       <ref role="1vbBpc" node="705MhtQTdbD" resolve="Statistics" />

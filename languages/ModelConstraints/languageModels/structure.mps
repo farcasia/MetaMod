@@ -366,5 +366,20 @@
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1CbK6AejRJj">
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="TrG5h" value="DeleteConcept" />
+    <property role="34LRSv" value="delete concept" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="1CbK6AejW7S" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="concept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="1CbK6AekxtF" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+  </node>
 </model>
 
