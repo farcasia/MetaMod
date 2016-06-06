@@ -53,6 +53,9 @@
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
+      <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
+        <property id="1225456424731" name="value" index="1iTho6" />
+      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
@@ -199,7 +202,10 @@
           </node>
         </node>
         <node concept="Veino" id="2viqW8Duqle" role="3F10Kt">
-          <property role="Vb096" value="green" />
+          <property role="Vb096" value="LIGHT_BLUE" />
+          <node concept="1iSF2X" id="6cRXBRmrvxO" role="VblUZ">
+            <property role="1iTho6" value="66FFFF" />
+          </node>
         </node>
       </node>
       <node concept="2iRfu4" id="5jHGRC3dYD8" role="2iSdaV" />
@@ -253,7 +259,10 @@
               </node>
             </node>
             <node concept="Veino" id="2viqW8DuqhS" role="3F10Kt">
-              <property role="Vb096" value="green" />
+              <property role="Vb096" value="LIGHT_BLUE" />
+              <node concept="1iSF2X" id="6cRXBRms6jg" role="VblUZ">
+                <property role="1iTho6" value="66FFFF" />
+              </node>
             </node>
           </node>
           <node concept="2iRfu4" id="5jHGRC3dYEZ" role="2iSdaV" />
@@ -376,13 +385,13 @@
                     <node concept="1pGfFk" id="2viqW8Dw7aY" role="2ShVmc">
                       <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                       <node concept="3cmrfG" id="2viqW8Dw7aZ" role="37wK5m">
-                        <property role="3cmrfH" value="0" />
+                        <property role="3cmrfH" value="102" />
                       </node>
                       <node concept="3cmrfG" id="2viqW8Dw7b0" role="37wK5m">
                         <property role="3cmrfH" value="255" />
                       </node>
                       <node concept="3cmrfG" id="2viqW8Dw7b1" role="37wK5m">
-                        <property role="3cmrfH" value="0" />
+                        <property role="3cmrfH" value="255" />
                       </node>
                     </node>
                   </node>
@@ -569,13 +578,13 @@
                     <node concept="1pGfFk" id="DTk9ZCMmV4" role="2ShVmc">
                       <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                       <node concept="3cmrfG" id="DTk9ZCMmV5" role="37wK5m">
-                        <property role="3cmrfH" value="0" />
+                        <property role="3cmrfH" value="102" />
                       </node>
                       <node concept="3cmrfG" id="DTk9ZCMmV6" role="37wK5m">
                         <property role="3cmrfH" value="255" />
                       </node>
                       <node concept="3cmrfG" id="DTk9ZCMmV7" role="37wK5m">
-                        <property role="3cmrfH" value="0" />
+                        <property role="3cmrfH" value="255" />
                       </node>
                     </node>
                   </node>
@@ -626,7 +635,7 @@
                       <node concept="3cmrfG" id="DTk9ZCMmVt" role="37wK5m">
                         <property role="3cmrfH" value="255" />
                       </node>
-                      <node concept="3cmrfG" id="DTk9ZCMmVu" role="37wK5m">
+                      <node concept="3cmrfG" id="6cRXBRmsMgt" role="37wK5m">
                         <property role="3cmrfH" value="0" />
                       </node>
                     </node>

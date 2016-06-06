@@ -38,6 +38,7 @@
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
+        <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
@@ -46,6 +47,9 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
+        <property id="1225456424731" name="value" index="1iTho6" />
       </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
@@ -252,6 +256,9 @@
       <node concept="2iRfu4" id="7MhXM5kmc8e" role="2iSdaV" />
       <node concept="Veino" id="5X829TycETB" role="3F10Kt">
         <property role="Vb096" value="green" />
+        <node concept="1iSF2X" id="6cRXBRmtZsY" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
       </node>
     </node>
   </node>
@@ -283,6 +290,9 @@
       </node>
       <node concept="Veino" id="5X829TycELW" role="3F10Kt">
         <property role="Vb096" value="green" />
+        <node concept="1iSF2X" id="6cRXBRmtZsU" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
       </node>
     </node>
   </node>
@@ -307,6 +317,9 @@
       <node concept="2iRfu4" id="1ky6Xl0Obvf" role="2iSdaV" />
       <node concept="Veino" id="5X829TycENC" role="3F10Kt">
         <property role="Vb096" value="green" />
+        <node concept="1iSF2X" id="6cRXBRmtZsW" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
       </node>
     </node>
   </node>
@@ -337,6 +350,9 @@
       <node concept="2iRfu4" id="48EbtxmrRMj" role="2iSdaV" />
       <node concept="Veino" id="5X829TycDMG" role="3F10Kt">
         <property role="Vb096" value="green" />
+        <node concept="1iSF2X" id="6cRXBRmtZsQ" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
       </node>
     </node>
   </node>
@@ -367,6 +383,9 @@
       <node concept="2iRfu4" id="48EbtxmtnuG" role="2iSdaV" />
       <node concept="Veino" id="5X829TycEID" role="3F10Kt">
         <property role="Vb096" value="green" />
+        <node concept="1iSF2X" id="6cRXBRmtZsS" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
       </node>
     </node>
   </node>
@@ -377,6 +396,9 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <node concept="Veino" id="5X829TyclW8" role="3F10Kt">
         <property role="Vb096" value="green" />
+        <node concept="1iSF2X" id="6cRXBRmtWve" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
       </node>
     </node>
   </node>
@@ -387,6 +409,9 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <node concept="Veino" id="5X829TyclY4" role="3F10Kt">
         <property role="Vb096" value="green" />
+        <node concept="1iSF2X" id="6cRXBRmtWvg" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
       </node>
     </node>
   </node>
@@ -397,6 +422,9 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <node concept="Veino" id="5X829TyclP_" role="3F10Kt">
         <property role="Vb096" value="green" />
+        <node concept="1iSF2X" id="6cRXBRmtWs4" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
       </node>
     </node>
   </node>
@@ -488,6 +516,11 @@
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="6VsEH8K_efo" role="2iSdaV" />
+      <node concept="Veino" id="6cRXBRmtZg7" role="3F10Kt">
+        <node concept="1iSF2X" id="6cRXBRmtZg9" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6VsEH8K_enU">
@@ -518,6 +551,11 @@
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="6VsEH8K_enZ" role="2iSdaV" />
+      <node concept="Veino" id="6cRXBRmtZff" role="3F10Kt">
+        <node concept="1iSF2X" id="6cRXBRmtZfh" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6VsEH8K_rI2">
@@ -539,6 +577,11 @@
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="6VsEH8KA65i" role="2iSdaV" />
+      <node concept="Veino" id="6cRXBRmtZjv" role="3F10Kt">
+        <node concept="1iSF2X" id="6cRXBRmtZjx" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6VsEH8K_rLw">
@@ -560,6 +603,11 @@
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="6VsEH8KA5ZY" role="2iSdaV" />
+      <node concept="Veino" id="6cRXBRmtZhN" role="3F10Kt">
+        <node concept="1iSF2X" id="6cRXBRmtZhP" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6VsEH8K_rOY">
@@ -581,6 +629,11 @@
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="6VsEH8KA66D" role="2iSdaV" />
+      <node concept="Veino" id="6cRXBRmtZkn" role="3F10Kt">
+        <node concept="1iSF2X" id="6cRXBRmtZkp" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="5Qer_$coUI$">
@@ -632,6 +685,11 @@
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="5Qer_$coUKc" role="2iSdaV" />
+      <node concept="Veino" id="6cRXBRmtZuC" role="3F10Kt">
+        <node concept="1iSF2X" id="6cRXBRmtZuE" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3EkoJDP8KsN">
@@ -653,6 +711,11 @@
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="3EkoJDP8MIx" role="2iSdaV" />
+      <node concept="Veino" id="6cRXBRmtZlf" role="3F10Kt">
+        <node concept="1iSF2X" id="6cRXBRmtZlh" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1CbK6AekaXN">
@@ -673,6 +736,11 @@
       <node concept="3F0ifn" id="1CbK6Aekxy6" role="3EZMnx">
         <property role="3F0ifm" value=")" />
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="Veino" id="6cRXBRmtZen" role="3F10Kt">
+        <node concept="1iSF2X" id="6cRXBRmtZep" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
       </node>
     </node>
   </node>

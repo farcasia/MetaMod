@@ -54,6 +54,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -258,7 +259,9 @@
       <concept id="1522810226732785365" name="GenericGroupMethods.structure.ConceptsOfType" flags="ng" index="1lBOk0">
         <child id="1522810226732838602" name="conceptType" index="1lB3kv" />
       </concept>
-      <concept id="7169015349702230285" name="GenericGroupMethods.structure.Facet" flags="ng" index="1vbBhR" />
+      <concept id="7169015349702230285" name="GenericGroupMethods.structure.Facet" flags="ng" index="1vbBhR">
+        <child id="4406892874368993969" name="reusedFacets" index="1eREs9" />
+      </concept>
       <concept id="7169015349702230837" name="GenericGroupMethods.structure.RefToFacet" flags="ng" index="1vbBpf">
         <reference id="7169015349702230838" name="ref" index="1vbBpc" />
       </concept>
@@ -292,45 +295,6 @@
     <property role="TrG5h" value="CodeGen_Statistics_Graph" />
     <property role="3GE5qa" value="Graphs" />
     <ref role="1GHRfG" node="1gcKwu1v3hJ" resolve="GraphMM" />
-    <node concept="1GnNjC" id="705MhtQTg_9" role="CLm5g">
-      <property role="TrG5h" value="genCodeMain" />
-      <node concept="37vLTG" id="705MhtQTg_a" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
-        <node concept="1l_8MK" id="705MhtQTg_b" role="1tU5fm" />
-      </node>
-      <node concept="3clFbS" id="705MhtQTg_c" role="3clF47">
-        <node concept="34ab3g" id="705MhtQTgDu" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="705MhtQTgOE" role="34bqiv">
-            <node concept="3otQA" id="705MhtQTgOY" role="3uHU7w">
-              <ref role="37wK5l" node="1gcKwu1vaRq" resolve="noOfNodes" />
-              <node concept="37vLTw" id="705MhtQTgRF" role="37wK5m">
-                <ref role="3cqZAo" node="705MhtQTg_a" resolve="valueModel" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="705MhtQTgDw" role="3uHU7B">
-              <property role="Xl_RC" value="noOfNodes: " />
-            </node>
-          </node>
-        </node>
-        <node concept="34ab3g" id="705MhtQTgUy" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="705MhtQThh7" role="34bqiv">
-            <node concept="3otQA" id="705MhtQThhr" role="3uHU7w">
-              <ref role="37wK5l" node="1gcKwu1vaRR" resolve="noOfEdges" />
-              <node concept="37vLTw" id="705MhtQThk8" role="37wK5m">
-                <ref role="3cqZAo" node="705MhtQTg_a" resolve="valueModel" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="705MhtQTgU$" role="3uHU7B">
-              <property role="Xl_RC" value="noOfEdges: " />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3cqZAl" id="705MhtQTgBM" role="3clF45" />
-    </node>
-    <node concept="CLx5B" id="705MhtQTgAx" role="CLm5g" />
     <node concept="1GnNjC" id="1gcKwu1vaRq" role="CLm5g">
       <property role="TrG5h" value="noOfNodes" />
       <node concept="37vLTG" id="1gcKwu1vaRr" role="3clF46">
@@ -520,7 +484,7 @@
       </node>
     </node>
     <node concept="1vbBhR" id="705MhtQTdbD" role="1ukcCD">
-      <property role="TrG5h" value="Statistics" />
+      <property role="TrG5h" value="GraphCommons" />
     </node>
   </node>
   <node concept="2oAaVg" id="1gcKwu1v3hJ">
@@ -1365,7 +1329,7 @@
   <node concept="1vbSxi" id="705MhtQTfUJ">
     <property role="1vYpmj" value="CodeGen" />
     <node concept="1vbBpf" id="705MhtQTfUK" role="1vbB4l">
-      <ref role="1vbBpc" node="705MhtQTdbD" resolve="Statistics" />
+      <ref role="1vbBpc" node="705MhtQTdbD" resolve="GraphCommons" />
     </node>
   </node>
   <node concept="1$M0LO" id="705MhtQTgn$">
@@ -4498,8 +4462,11 @@
         <ref role="CMYPG" node="1QHqpFmkyAp" resolve="InitialState" />
       </node>
     </node>
-    <node concept="1vbBpf" id="2JdoBprGCpJ" role="1ukcCD">
-      <ref role="1vbBpc" node="705MhtQTdbD" resolve="Statistics" />
+    <node concept="1vbBhR" id="3GBB9vA2D4l" role="1ukcCD">
+      <property role="TrG5h" value="Processing" />
+      <node concept="1vbBpf" id="6cRXBRmuByl" role="1eREs9">
+        <ref role="1vbBpc" node="705MhtQTdbD" resolve="GraphCommons" />
+      </node>
     </node>
   </node>
   <node concept="2oAaVg" id="1gcKwu1Agnc">
@@ -5404,7 +5371,7 @@
     <property role="TrG5h" value="Interface_Statistics_Graph" />
     <ref role="1GHRfG" node="1gcKwu1v3hJ" resolve="GraphMM" />
     <node concept="1vbBhR" id="79tvEmmgR7u" role="1ukcCD">
-      <property role="TrG5h" value="Statistics" />
+      <property role="TrG5h" value="GraphCommons" />
     </node>
     <node concept="2$21wx" id="6YtJRaiNwTa" role="CLm5g">
       <property role="TrG5h" value="noOfNodes" />
@@ -5472,6 +5439,109 @@
           <ref role="CMYPG" node="1gcKwu1v3kJ" resolve="Node" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1GnNiK" id="6R5UssM9NAF">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="PetriNetsVis" />
+    <property role="TrG5h" value="CodeGen_Statistics_PetriNetVisMM" />
+    <ref role="1GHRfG" node="_J5chRuCfR" resolve="PetriNetVisMM" />
+    <node concept="1GnNjC" id="6R5UssMa93c" role="CLm5g">
+      <property role="TrG5h" value="statisticalInformation" />
+      <node concept="37vLTG" id="6R5UssMa93d" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="6R5UssMa93e" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="6R5UssMa93f" role="3clF47">
+        <node concept="34ab3g" id="6R5UssMa93g" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="6R5UssMa93h" role="34bqiv">
+            <node concept="3otQA" id="6R5UssMa93i" role="3uHU7w">
+              <ref role="37wK5l" node="1gcKwu1vaRq" resolve="noOfNodes" />
+              <node concept="37vLTw" id="6R5UssMa93j" role="37wK5m">
+                <ref role="3cqZAo" node="6R5UssMa93d" resolve="valueModel" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="6R5UssMa93k" role="3uHU7B">
+              <property role="Xl_RC" value="Number of places and transitions: " />
+            </node>
+          </node>
+        </node>
+        <node concept="34ab3g" id="6R5UssMa93l" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="6R5UssMa93m" role="34bqiv">
+            <node concept="3otQA" id="6R5UssMa93n" role="3uHU7w">
+              <ref role="37wK5l" node="1gcKwu1vaRR" resolve="noOfEdges" />
+              <node concept="37vLTw" id="6R5UssMa93o" role="37wK5m">
+                <ref role="3cqZAo" node="6R5UssMa93d" resolve="valueModel" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="6R5UssMa93p" role="3uHU7B">
+              <property role="Xl_RC" value="Number of arcs: " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6R5UssMa93q" role="3clF45" />
+    </node>
+    <node concept="1vbBpf" id="6R5UssM9XIi" role="1ukcCD">
+      <ref role="1vbBpc" node="705MhtQTdbD" resolve="GraphCommons" />
+    </node>
+  </node>
+  <node concept="2$1D0M" id="6cRXBRmuODq">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="Graphs" />
+    <property role="TrG5h" value="Interface_Dot_GraphMM" />
+    <ref role="1GHRfG" node="1gcKwu1v3hJ" resolve="GraphMM" />
+    <node concept="1vbBhR" id="6cRXBRmuODr" role="1ukcCD">
+      <property role="TrG5h" value="Dot" />
+    </node>
+    <node concept="2$21wx" id="6cRXBRmuP4p" role="CLm5g">
+      <property role="TrG5h" value="drawEdge" />
+      <node concept="37vLTG" id="6cRXBRmuP4q" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="6cRXBRmuP4r" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6cRXBRmuPvE" role="3clF46">
+        <property role="TrG5h" value="source" />
+        <node concept="17QB3L" id="6cRXBRmuPvM" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6cRXBRmuPvR" role="3clF46">
+        <property role="TrG5h" value="target" />
+        <node concept="17QB3L" id="6cRXBRmuPw3" role="1tU5fm" />
+      </node>
+      <node concept="3XlGCx" id="6cRXBRmuP4t" role="3clF47" />
+      <node concept="17QB3L" id="6cRXBRmuPvB" role="3clF45" />
+    </node>
+    <node concept="2$21wx" id="6cRXBRmuPwl" role="CLm5g">
+      <property role="TrG5h" value="drawNode" />
+      <node concept="37vLTG" id="6cRXBRmuPwm" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="6cRXBRmuPwn" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6cRXBRmuPVR" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="CMjq$" id="6cRXBRmuPVZ" role="1tU5fm">
+          <ref role="CMYPG" node="1gcKwu1v3kJ" resolve="Node" />
+        </node>
+      </node>
+      <node concept="3XlGCx" id="6cRXBRmuPwp" role="3clF47" />
+      <node concept="17QB3L" id="6cRXBRmuPWc" role="3clF45" />
+    </node>
+    <node concept="2$21wx" id="6cRXBRmuPWx" role="CLm5g">
+      <property role="TrG5h" value="drawGraph" />
+      <node concept="37vLTG" id="6cRXBRmuPWy" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="6cRXBRmuPWz" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6cRXBRmuQoh" role="3clF46">
+        <property role="TrG5h" value="graph" />
+        <node concept="CMjq$" id="6cRXBRmuQop" role="1tU5fm">
+          <ref role="CMYPG" node="1gcKwu1v3iM" resolve="Graph" />
+        </node>
+      </node>
+      <node concept="3XlGCx" id="6cRXBRmuPW_" role="3clF47" />
+      <node concept="3cqZAl" id="6cRXBRmuQo_" role="3clF45" />
     </node>
   </node>
 </model>
