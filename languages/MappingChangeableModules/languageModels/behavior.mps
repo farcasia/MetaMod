@@ -11,9 +11,9 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="5h42" ref="r:e07cd4d2-0355-4c35-ad0c-b0182373811d(MappingChangeableModules.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="z64h" ref="r:52e1580a-16d3-4b41-b86d-411ead3ce794(Models.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -112,6 +112,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -183,8 +184,8 @@
                       <ref role="3cqZAo" node="DTk9ZCUl1L" resolve="operation" />
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="DTk9ZCUg9S" role="2OqNvi">
-                    <ref role="3Tt5mk" to="1o5n:48EbtxmrRK9" />
+                  <node concept="3TrEf2" id="3ZRNmrSGZ3c" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5h42:48EbtxmrRK9" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="DTk9ZCUgPa" role="2OqNvi">
@@ -216,8 +217,8 @@
                       <ref role="3cqZAo" node="DTk9ZCUl1L" resolve="operation" />
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="DTk9ZCUhSD" role="2OqNvi">
-                    <ref role="3Tt5mk" to="1o5n:48EbtxmtnqG" />
+                  <node concept="3TrEf2" id="3ZRNmrSGZn0" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5h42:6YtJRaiJkPV" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="DTk9ZCUirx" role="2OqNvi">
@@ -319,7 +320,6 @@
             <property role="Xl_RC" value="The specification concept was not found in the mappings list!" />
           </node>
         </node>
-        <node concept="3clFbH" id="DTk9ZCZpkl" role="3cqZAp" />
         <node concept="3cpWs6" id="DTk9ZCZplk" role="3cqZAp">
           <node concept="10Nm6u" id="DTk9ZCZpQJ" role="3cqZAk" />
         </node>
@@ -362,29 +362,19 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="DTk9ZDp3sc" role="3clFbw">
-                <node concept="2OqwBi" id="DTk9ZDp3sd" role="2Oq$k0">
-                  <node concept="2OqwBi" id="DTk9ZDp3se" role="2Oq$k0">
-                    <node concept="37vLTw" id="DTk9ZDp3sf" role="2Oq$k0">
-                      <ref role="3cqZAo" node="DTk9ZDp3s3" resolve="mapping" />
-                    </node>
-                    <node concept="3TrEf2" id="DTk9ZDp3sg" role="2OqNvi">
-                      <ref role="3Tt5mk" to="5h42:5jHGRC3dYCM" />
-                    </node>
+              <node concept="2OqwBi" id="7jr6xHXIGk7" role="3clFbw">
+                <node concept="2OqwBi" id="DTk9ZDp3se" role="2Oq$k0">
+                  <node concept="37vLTw" id="DTk9ZDp3sf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="DTk9ZDp3s3" resolve="mapping" />
                   </node>
-                  <node concept="3TrcHB" id="DTk9ZDp3sh" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  <node concept="3TrEf2" id="DTk9ZDp3sg" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5h42:5jHGRC3dYCM" />
                   </node>
                 </node>
-                <node concept="liA8E" id="DTk9ZDp3si" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                  <node concept="2OqwBi" id="DTk9ZDp3sj" role="37wK5m">
-                    <node concept="37vLTw" id="DTk9ZDp3sk" role="2Oq$k0">
-                      <ref role="3cqZAo" node="DTk9ZDp3sz" resolve="toMapSpecConcept" />
-                    </node>
-                    <node concept="3TrcHB" id="DTk9ZDp3sl" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
+                <node concept="2qgKlT" id="7jr6xHXIHfN" role="2OqNvi">
+                  <ref role="37wK5l" to="z64h:7jr6xHXERvo" resolve="equalsConcept" />
+                  <node concept="37vLTw" id="7jr6xHXIHhu" role="37wK5m">
+                    <ref role="3cqZAo" node="DTk9ZDp3sz" resolve="toMapSpecConcept" />
                   </node>
                 </node>
               </node>
@@ -404,7 +394,6 @@
             <property role="Xl_RC" value="The specification concept was not found in the mappings list!" />
           </node>
         </node>
-        <node concept="3clFbH" id="DTk9ZDp3sv" role="3cqZAp" />
         <node concept="3cpWs6" id="DTk9ZDp3sw" role="3cqZAp">
           <node concept="10Nm6u" id="DTk9ZDp3sx" role="3cqZAk" />
         </node>
