@@ -388,12 +388,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="DTk9ZDp3ss" role="3cqZAp" />
-        <node concept="34ab3g" id="DTk9ZDp3st" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="DTk9ZDp3su" role="34bqiv">
-            <property role="Xl_RC" value="The specification concept was not found in the mappings list!" />
-          </node>
-        </node>
         <node concept="3cpWs6" id="DTk9ZDp3sw" role="3cqZAp">
           <node concept="10Nm6u" id="DTk9ZDp3sx" role="3cqZAk" />
         </node>
@@ -404,6 +398,71 @@
       <node concept="37vLTG" id="DTk9ZDp3sz" role="3clF46">
         <property role="TrG5h" value="toMapSpecConcept" />
         <node concept="3Tqbb2" id="DTk9ZDp3s$" role="1tU5fm">
+          <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="25uxa8EQYbC" role="13h7CS">
+      <property role="TrG5h" value="specificationConceptMappedToRefConcept" />
+      <node concept="3Tm1VV" id="25uxa8EQYbD" role="1B3o_S" />
+      <node concept="3clFbS" id="25uxa8EQYbE" role="3clF47">
+        <node concept="1DcWWT" id="25uxa8EQYMr" role="3cqZAp">
+          <node concept="3cpWsn" id="25uxa8EQYMs" role="1Duv9x">
+            <property role="TrG5h" value="mapping" />
+            <node concept="3Tqbb2" id="25uxa8EQYMt" role="1tU5fm">
+              <ref role="ehGHo" to="5h42:5jHGRC3dYCL" resolve="Mapping" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="25uxa8EQYMu" role="2LFqv$">
+            <node concept="3clFbJ" id="25uxa8EQYMv" role="3cqZAp">
+              <node concept="3clFbS" id="25uxa8EQYMw" role="3clFbx">
+                <node concept="3cpWs6" id="25uxa8EQYMx" role="3cqZAp">
+                  <node concept="2OqwBi" id="25uxa8EQYMy" role="3cqZAk">
+                    <node concept="37vLTw" id="25uxa8EQYMz" role="2Oq$k0">
+                      <ref role="3cqZAo" node="25uxa8EQYMs" resolve="mapping" />
+                    </node>
+                    <node concept="3TrEf2" id="25uxa8EQZQh" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5h42:5jHGRC3dYCM" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="25uxa8EQYM_" role="3clFbw">
+                <node concept="2OqwBi" id="25uxa8EQYMA" role="2Oq$k0">
+                  <node concept="37vLTw" id="25uxa8EQYMB" role="2Oq$k0">
+                    <ref role="3cqZAo" node="25uxa8EQYMs" resolve="mapping" />
+                  </node>
+                  <node concept="3TrEf2" id="25uxa8EQZ_a" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5h42:5jHGRC3dYCO" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="25uxa8EQYMD" role="2OqNvi">
+                  <ref role="37wK5l" to="z64h:7jr6xHXERvo" resolve="equalsConcept" />
+                  <node concept="37vLTw" id="25uxa8EQZBh" role="37wK5m">
+                    <ref role="3cqZAo" node="25uxa8EQYKZ" resolve="toMapRefConcept" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="25uxa8EQYMF" role="1DdaDG">
+            <node concept="13iPFW" id="25uxa8EQYMG" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="25uxa8EQYMH" role="2OqNvi">
+              <ref role="3TtcxE" to="5h42:5jHGRC3dYCH" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="25uxa8ER3HT" role="3cqZAp" />
+        <node concept="3cpWs6" id="25uxa8ER4hs" role="3cqZAp">
+          <node concept="10Nm6u" id="25uxa8ER4LL" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="25uxa8EQYKV" role="3clF45">
+        <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+      </node>
+      <node concept="37vLTG" id="25uxa8EQYKZ" role="3clF46">
+        <property role="TrG5h" value="toMapRefConcept" />
+        <node concept="3Tqbb2" id="25uxa8EQYKY" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
         </node>
       </node>
