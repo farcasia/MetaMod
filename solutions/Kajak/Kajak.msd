@@ -33,11 +33,13 @@
     <usedLanguage>18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</usedLanguage>
     <usedLanguage>21063c66-85ba-4e98-839b-036445b17ae2(de.itemis.mps.editor.layout)</usedLanguage>
     <usedLanguage>8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</usedLanguage>
+    <usedLanguage>7cbc13ed-9875-4738-a307-276eb1aa9679(GroupInterfaces)</usedLanguage>
   </usedLanguages>
   <languageVersions>
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" fqName="CodeGeneration" version="0" />
     <language id="47849989-c2df-46a8-aba5-1c5a21bbef1f" fqName="Constraints" version="0" />
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
+    <language id="7cbc13ed-9875-4738-a307-276eb1aa9679" fqName="GroupInterfaces" version="0" />
     <language id="2a4f5bab-551b-46ab-a40c-28d5229d6214" fqName="Helpers" version="0" />
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" fqName="LambdaCalculus" version="0" />
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" fqName="Models" version="1" />
