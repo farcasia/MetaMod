@@ -76,12 +76,14 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1068431790189" name="jetbrains.mps.baseLanguage.structure.Type" flags="in" index="33vP2l" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -17784,6 +17786,12 @@
         <property role="TrG5h" value="valueModel" />
         <node concept="1l_8MK" id="3$bRwlDlW2d" role="1tU5fm" />
       </node>
+      <node concept="37vLTG" id="3$bRwlDojRJ" role="3clF46">
+        <property role="TrG5h" value="frame" />
+        <node concept="3uibUv" id="3$bRwlDojRT" role="1tU5fm">
+          <ref role="3uigEE" to="wz6r:2RDssu5UvxT" resolve="KajaFrame" />
+        </node>
+      </node>
       <node concept="37vLTG" id="3$bRwlDlZeR" role="3clF46">
         <property role="TrG5h" value="commandList" />
         <node concept="CMjq$" id="3$bRwlDlZf7" role="1tU5fm">
@@ -17911,10 +17919,171 @@
           <ref role="CMYPG" node="4Fkjxxt2Njr" resolve="CommandList" />
         </node>
       </node>
-      <node concept="3clFbS" id="3$bRwlDmchh" role="3clF47" />
+      <node concept="3clFbS" id="3$bRwlDmchh" role="3clF47">
+        <node concept="3cpWs6" id="3$bRwlDo4HX" role="3cqZAp">
+          <node concept="10Nm6u" id="3$bRwlDo6eJ" role="3cqZAk" />
+        </node>
+      </node>
       <node concept="CMjq$" id="3$bRwlDmchZ" role="3clF45">
         <ref role="CMYPG" node="4Fkjxxt2Nx3" resolve="Command" />
       </node>
+    </node>
+    <node concept="CLx5B" id="3$bRwlDo6eV" role="CLm5g" />
+    <node concept="1GnNjC" id="3$bRwlDo6fm" role="CLm5g">
+      <property role="TrG5h" value="nextCommand" />
+      <node concept="37vLTG" id="3$bRwlDo6fn" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="3$bRwlDo6fo" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3$bRwlDo6fU" role="3clF46">
+        <property role="TrG5h" value="command" />
+        <node concept="CMjq$" id="3$bRwlDo6g2" role="1tU5fm">
+          <ref role="CMYPG" node="4Fkjxxt2Nx3" resolve="Command" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3$bRwlDo6fp" role="3clF47">
+        <node concept="3cpWs6" id="3$bRwlDo6gx" role="3cqZAp">
+          <node concept="10Nm6u" id="3$bRwlDo6gI" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="CMjq$" id="3$bRwlDo6gr" role="3clF45">
+        <ref role="CMYPG" node="4Fkjxxt2Nx3" resolve="Command" />
+      </node>
+    </node>
+  </node>
+  <node concept="1GnNiK" id="3$bRwlDoaQw">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="CodeGenerationKajaFrames" />
+    <property role="TrG5h" value="CodeGen_KajaFrames_Commands" />
+    <ref role="1GHRfG" node="lOaKRIRD7q" resolve="Commands" />
+    <node concept="1vbBpf" id="3$bRwlDoaQx" role="1ukcCD">
+      <ref role="1vbBpc" node="3$bRwlDm0J_" resolve="KajaFrames" />
+    </node>
+    <node concept="1GnNjC" id="3$bRwlDoaQz" role="CLm5g">
+      <property role="TrG5h" value="executeCommand" />
+      <node concept="37vLTG" id="3$bRwlDoaQ$" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="3$bRwlDoaQ_" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3$bRwlDoaR7" role="3clF46">
+        <property role="TrG5h" value="frame" />
+        <node concept="3uibUv" id="3$bRwlDoaRh" role="1tU5fm">
+          <ref role="3uigEE" to="wz6r:2RDssu5UvxT" resolve="KajaFrame" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3$bRwlDoaQJ" role="3clF46">
+        <property role="TrG5h" value="command" />
+        <node concept="CMjq$" id="3$bRwlDoaQR" role="1tU5fm">
+          <ref role="CMYPG" node="4Fkjxxt2Nx3" resolve="Command" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3$bRwlDoaQA" role="3clF47">
+        <node concept="34ab3g" id="3$bRwlDocow" role="3cqZAp">
+          <property role="35gtTG" value="error" />
+          <node concept="Xl_RD" id="3$bRwlDocoy" role="34bqiv">
+            <property role="Xl_RC" value="Operation needs to be overriden!" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3$bRwlDoaR4" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="3$bRwlDodZW" role="CLm5g" />
+    <node concept="1GnNjC" id="3$bRwlDoe0n" role="CLm5g">
+      <property role="TrG5h" value="executeCommands" />
+      <node concept="37vLTG" id="3$bRwlDoe0o" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="3$bRwlDoe0p" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3$bRwlDogHD" role="3clF46">
+        <property role="TrG5h" value="frame" />
+        <node concept="3uibUv" id="3$bRwlDogI0" role="1tU5fm">
+          <ref role="3uigEE" to="wz6r:2RDssu5UvxT" resolve="KajaFrame" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3$bRwlDoe0L" role="3clF46">
+        <property role="TrG5h" value="commandList" />
+        <node concept="CMjq$" id="3$bRwlDoe0T" role="1tU5fm">
+          <ref role="CMYPG" node="4Fkjxxt2Njr" resolve="CommandList" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3$bRwlDoe0q" role="3clF47">
+        <node concept="3cpWs8" id="3$bRwlDoelC" role="3cqZAp">
+          <node concept="3cpWsn" id="3$bRwlDoelF" role="3cpWs9">
+            <property role="TrG5h" value="comm" />
+            <node concept="CMjq$" id="3$bRwlDoelB" role="1tU5fm">
+              <ref role="CMYPG" node="4Fkjxxt2Nx3" resolve="Command" />
+            </node>
+            <node concept="3otQA" id="3$bRwlDoemd" role="33vP2m">
+              <ref role="37wK5l" node="3$bRwlDmche" resolve="firstCommand" />
+              <node concept="37vLTw" id="3$bRwlDoemz" role="37wK5m">
+                <ref role="3cqZAo" node="3$bRwlDoe0o" resolve="valueModel" />
+              </node>
+              <node concept="37vLTw" id="3$bRwlDoen4" role="37wK5m">
+                <ref role="3cqZAo" node="3$bRwlDoe0L" resolve="commandList" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3$bRwlDoeno" role="3cqZAp" />
+        <node concept="2$JKZl" id="3$bRwlDoenD" role="3cqZAp">
+          <node concept="3clFbS" id="3$bRwlDoenF" role="2LFqv$">
+            <node concept="3clFbF" id="3$bRwlDogGZ" role="3cqZAp">
+              <node concept="3otQA" id="3$bRwlDogGY" role="3clFbG">
+                <ref role="37wK5l" node="3$bRwlDoaQz" resolve="executeCommand" />
+                <node concept="37vLTw" id="3$bRwlDogH7" role="37wK5m">
+                  <ref role="3cqZAo" node="3$bRwlDoe0o" resolve="valueModel" />
+                </node>
+                <node concept="37vLTw" id="3$bRwlDogIY" role="37wK5m">
+                  <ref role="3cqZAo" node="3$bRwlDogHD" resolve="frame" />
+                </node>
+                <node concept="37vLTw" id="3$bRwlDogJD" role="37wK5m">
+                  <ref role="3cqZAo" node="3$bRwlDoelF" resolve="comm" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3$bRwlDoihA" role="3cqZAp">
+              <node concept="37vLTI" id="3$bRwlDoii5" role="3clFbG">
+                <node concept="3otQA" id="3$bRwlDoiip" role="37vLTx">
+                  <ref role="37wK5l" node="3$bRwlDo6fm" resolve="nextCommand" />
+                  <node concept="37vLTw" id="3$bRwlDoiiC" role="37wK5m">
+                    <ref role="3cqZAo" node="3$bRwlDoe0o" resolve="valueModel" />
+                  </node>
+                  <node concept="37vLTw" id="3$bRwlDoijk" role="37wK5m">
+                    <ref role="3cqZAo" node="3$bRwlDoelF" resolve="comm" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="3$bRwlDoih$" role="37vLTJ">
+                  <ref role="3cqZAo" node="3$bRwlDoelF" resolve="comm" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="3$bRwlDogGt" role="2$JKZa">
+            <node concept="10Nm6u" id="3$bRwlDogGI" role="3uHU7w" />
+            <node concept="37vLTw" id="3$bRwlDoeo8" role="3uHU7B">
+              <ref role="3cqZAo" node="3$bRwlDoelF" resolve="comm" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3$bRwlDoe19" role="3clF45" />
+    </node>
+  </node>
+  <node concept="1GnNiK" id="3$bRwlDojRe">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="CodeGenerationKajaFrames" />
+    <ref role="1GHRfG" node="4o4IMwo_irx" resolve="BuildGridCommands" />
+    <node concept="1vbBpf" id="3$bRwlDojRf" role="1ukcCD">
+      <ref role="1vbBpc" node="3$bRwlDm0J_" resolve="KajaFrames" />
+    </node>
+    <node concept="1GnNjC" id="3$bRwlDojRh" role="CLm5g">
+      <property role="TrG5h" value="executeCommand" />
+      <node concept="37vLTG" id="3$bRwlDojRi" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="3$bRwlDojRj" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="3$bRwlDojRk" role="3clF47" />
+      <node concept="33vP2l" id="3$bRwlDojRl" role="3clF45" />
     </node>
   </node>
 </model>
