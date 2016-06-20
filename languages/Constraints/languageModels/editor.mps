@@ -64,7 +64,9 @@
         <reference id="1081339532145" name="keyMap" index="34QXea" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -194,6 +196,7 @@
         </node>
       </node>
       <node concept="3EZMnI" id="48EbtxmnXj2" role="3EZMnx">
+        <property role="S$Qs1" value="true" />
         <node concept="l2Vlx" id="48EbtxmnXj3" role="2iSdaV" />
         <node concept="3EZMnI" id="7MhXM5kl9Rn" role="3EZMnx">
           <node concept="l2Vlx" id="7MhXM5kl9Ro" role="2iSdaV" />
@@ -201,6 +204,12 @@
             <ref role="1NtTu8" to="tpee:fzclF7Z" />
           </node>
           <node concept="lj46D" id="48EbtxmnXjr" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="3$bRwlDpAyO" role="AHCbl">
+          <property role="3F0ifm" value="..." />
+          <node concept="lj46D" id="3$bRwlDpAyR" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
