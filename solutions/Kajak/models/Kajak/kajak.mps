@@ -18361,7 +18361,7 @@
       <property role="TrG5h" value="CommonConstraints" />
     </node>
     <node concept="1GFRyt" id="3$bRwlDoAhJ" role="CLm5g">
-      <property role="TrG5h" value="oneStartCommand" />
+      <property role="TrG5h" value="atMostOneStartCommand" />
       <node concept="37vLTG" id="3$bRwlDoAhK" role="3clF46">
         <property role="TrG5h" value="valueModel" />
         <node concept="1l_8MK" id="3$bRwlDoAhL" role="1tU5fm" />
@@ -18377,8 +18377,25 @@
       <node concept="10P_77" id="3$bRwlDoAhN" role="3clF45" />
     </node>
     <node concept="CLx5B" id="3$bRwlDoAhV" role="CLm5g" />
+    <node concept="1GFRyt" id="3IcFNSZRscc" role="CLm5g">
+      <property role="TrG5h" value="atMostOneStopCommand" />
+      <node concept="37vLTG" id="3IcFNSZRscd" role="3clF46">
+        <property role="TrG5h" value="valueModel" />
+        <node concept="1l_8MK" id="3IcFNSZRsce" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="3IcFNSZRscf" role="3clF47">
+        <node concept="3cpWs6" id="3IcFNSZRscg" role="3cqZAp">
+          <node concept="3clFbT" id="3IcFNSZRsch" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="3IcFNSZRsci" role="3cqZAp" />
+      </node>
+      <node concept="10P_77" id="3IcFNSZRscj" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="3IcFNSZRsbb" role="CLm5g" />
     <node concept="1GFRyt" id="3$bRwlDoAia" role="CLm5g">
-      <property role="TrG5h" value="connectedCommands" />
+      <property role="TrG5h" value="linkedToOtherListCommands" />
       <node concept="37vLTG" id="3$bRwlDoAib" role="3clF46">
         <property role="TrG5h" value="valueModel" />
         <node concept="1l_8MK" id="3$bRwlDoAic" role="1tU5fm" />
@@ -18393,7 +18410,7 @@
       </node>
       <node concept="10P_77" id="3$bRwlDoAie" role="3clF45" />
       <node concept="YUz3_" id="3$bRwlDoAit" role="YUzjr">
-        <ref role="YUzjt" node="3$bRwlDoAhJ" resolve="oneStartCommand" />
+        <ref role="YUzjt" node="3$bRwlDoAhJ" resolve="atMostOneStartCommand" />
       </node>
     </node>
   </node>
