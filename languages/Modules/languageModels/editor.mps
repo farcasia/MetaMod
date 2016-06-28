@@ -54,11 +54,6 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
-      <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
-        <property id="1221209241505" name="value" index="1lJzqX" />
-        <child id="1221064706952" name="query" index="1d8cEk" />
-      </concept>
-      <concept id="1221057094638" name="jetbrains.mps.lang.editor.structure.QueryFunction_Integer" flags="in" index="1cFabM" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -105,9 +100,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
-        <child id="1068580123156" name="expression" index="3clFbG" />
-      </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -117,9 +109,6 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -164,9 +153,6 @@
         <node concept="Vb9p2" id="1wyFeakiG1g" role="3F10Kt">
           <property role="Vbekb" value="BOLD" />
         </node>
-        <node concept="VSNWy" id="1wyFeakiZE4" role="3F10Kt">
-          <property role="1lJzqX" value="14" />
-        </node>
       </node>
       <node concept="3F0ifn" id="2DitZGYpVER" role="3EZMnx">
         <property role="3F0ifm" value="=" />
@@ -187,17 +173,6 @@
         <node concept="2iRfu4" id="7zWtwVwp57y" role="2iSdaV" />
         <node concept="3F0A7n" id="7zWtwVwp5zJ" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          <node concept="VSNWy" id="1wyFeakiFrn" role="3F10Kt">
-            <node concept="1cFabM" id="1wyFeakiFth" role="1d8cEk">
-              <node concept="3clFbS" id="1wyFeakiFti" role="2VODD2">
-                <node concept="3clFbF" id="1wyFeakiFF$" role="3cqZAp">
-                  <node concept="3cmrfG" id="1wyFeakiFFz" role="3clFbG">
-                    <property role="3cmrfH" value="18" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="Vb9p2" id="1wyFeakiFVX" role="3F10Kt">
             <property role="Vbekb" value="BOLD" />
           </node>
