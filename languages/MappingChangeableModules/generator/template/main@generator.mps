@@ -300,7 +300,7 @@
       <concept id="4221107578599573016" name="GenericGroupMethods.structure.AsConceptType" flags="ng" index="1fHQjy">
         <child id="4221107578599582653" name="conceptType" index="1fHO_7" />
       </concept>
-      <concept id="1522810226732341093" name="GenericGroupMethods.structure.ValueModel" flags="ig" index="1l_8MK" />
+      <concept id="1522810226732341093" name="GenericGroupMethods.structure.GroupType" flags="ig" index="1l_8MK" />
       <concept id="1522810226734053312" name="GenericGroupMethods.structure.IsTypeOf" flags="ng" index="1lWEKl">
         <child id="1522810226734053315" name="conceptType" index="1lWEKm" />
       </concept>
@@ -1004,7 +1004,7 @@
     <node concept="1kpCGq" id="DTk9ZCU5e9" role="13RCb5">
       <property role="TrG5h" value="someName" />
       <node concept="37vLTG" id="DTk9ZCU5ea" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
+        <property role="TrG5h" value="group" />
         <node concept="1l_8MK" id="DTk9ZCU5eb" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="DTk9ZCU5eq" role="3clF46">
@@ -2141,7 +2141,7 @@
     <node concept="1kpCGq" id="430hJVZw0dd" role="13RCb5">
       <property role="TrG5h" value="NameOfOperation" />
       <node concept="37vLTG" id="430hJVZw0de" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
+        <property role="TrG5h" value="group" />
         <node concept="1l_8MK" id="430hJVZw0df" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="430hJVZw0dg" role="3clF46">
@@ -2584,7 +2584,7 @@
     <node concept="1kpCGq" id="705MhtQVmly" role="13RCb5">
       <property role="TrG5h" value="someName" />
       <node concept="37vLTG" id="705MhtQVmlz" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
+        <property role="TrG5h" value="group" />
         <node concept="1l_8MK" id="705MhtQVml$" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="705MhtQVmlB" role="3clF47">

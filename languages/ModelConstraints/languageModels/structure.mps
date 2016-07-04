@@ -103,8 +103,8 @@
     </node>
   </node>
   <node concept="1TIwiD" id="1ky6Xl0HDt_">
-    <property role="TrG5h" value="ValueModel" />
-    <property role="34LRSv" value="ValueModel" />
+    <property role="TrG5h" value="GroupType" />
+    <property role="34LRSv" value="GroupType" />
     <property role="3GE5qa" value="Types" />
     <ref role="1TJDcQ" to="tpee:gWaQbR$" resolve="PrimitiveType" />
     <node concept="1TJgyj" id="1ky6Xl0HEV6" role="1TKVEi">

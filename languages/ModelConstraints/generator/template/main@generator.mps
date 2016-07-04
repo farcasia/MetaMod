@@ -522,9 +522,9 @@
       </node>
     </node>
     <node concept="3aamgX" id="5UqrlCgkWzo" role="3acgRq">
-      <ref role="30HIoZ" to="1o5n:1ky6Xl0HDt_" resolve="ValueModel" />
+      <ref role="30HIoZ" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
       <node concept="j$656" id="5UqrlCgkX9w" role="1lVwrX">
-        <ref role="v9R2y" node="5UqrlCgk$UF" resolve="reduce_ValueModel" />
+        <ref role="v9R2y" node="5UqrlCgk$UF" resolve="reduce_GroupType" />
       </node>
     </node>
   </node>
@@ -545,7 +545,7 @@
                     <node concept="2OqwBi" id="2SWtdi29qGU" role="_Z9Zf">
                       <node concept="2OqwBi" id="2SWtdi29q4v" role="2Oq$k0">
                         <node concept="37vLTw" id="2SWtdi29q0E" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2SWtdi29pXY" resolve="valueModel" />
+                          <ref role="3cqZAo" node="2SWtdi29pXY" resolve="group" />
                         </node>
                         <node concept="2qgKlT" id="2SWtdi29qxa" role="2OqNvi">
                           <ref role="37wK5l" to="z64h:6uuPbC_XXdJ" resolve="getRepresentativesNamedConcepts" />
@@ -673,7 +673,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2SWtdi29pXY" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
+        <property role="TrG5h" value="group" />
         <node concept="3Tqbb2" id="2SWtdi29pXX" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
         </node>
@@ -700,7 +700,7 @@
                           <node concept="2OqwBi" id="2SWtdi2a1fG" role="2Oq$k0">
                             <node concept="2OqwBi" id="2SWtdi29Y7F" role="2Oq$k0">
                               <node concept="37vLTw" id="2SWtdi29XVc" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2SWtdi29WOS" resolve="valueModel" />
+                                <ref role="3cqZAo" node="2SWtdi29WOS" resolve="group" />
                               </node>
                               <node concept="2qgKlT" id="2SWtdi29YBn" role="2OqNvi">
                                 <ref role="37wK5l" to="z64h:6za56b2K0AC" resolve="getRelationsWithSourceConcept" />
@@ -835,7 +835,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2SWtdi29WOS" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
+        <property role="TrG5h" value="group" />
         <node concept="3Tqbb2" id="2SWtdi29WOT" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
         </node>
@@ -862,7 +862,7 @@
                           <node concept="2OqwBi" id="2SWtdi2adQU" role="2Oq$k0">
                             <node concept="2OqwBi" id="2SWtdi2adQV" role="2Oq$k0">
                               <node concept="37vLTw" id="2SWtdi2adQW" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2SWtdi2adRF" resolve="valueModel" />
+                                <ref role="3cqZAo" node="2SWtdi2adRF" resolve="group" />
                               </node>
                               <node concept="2qgKlT" id="2SWtdi2adQX" role="2OqNvi">
                                 <ref role="37wK5l" to="z64h:6za56b2K0Co" resolve="getRelationsWithTargetConcept" />
@@ -997,7 +997,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2SWtdi2adRF" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
+        <property role="TrG5h" value="group" />
         <node concept="3Tqbb2" id="2SWtdi2adRG" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
         </node>
@@ -1124,8 +1124,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="5UqrlCgk$UF">
-    <property role="TrG5h" value="reduce_ValueModel" />
-    <ref role="3gUMe" to="1o5n:1ky6Xl0HDt_" resolve="ValueModel" />
+    <property role="TrG5h" value="reduce_GroupType" />
+    <ref role="3gUMe" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
     <node concept="312cEu" id="5UqrlCgk$UH" role="13RCb5">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="SomeClass" />

@@ -180,7 +180,7 @@
   </registry>
   <node concept="13h7C7" id="1ky6Xl0HEV8">
     <property role="3GE5qa" value="Types" />
-    <ref role="13h7C2" to="1o5n:1ky6Xl0HDt_" resolve="ValueModel" />
+    <ref role="13h7C2" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
     <node concept="13hLZK" id="1ky6Xl0HEV9" role="13h7CW">
       <node concept="3clFbS" id="1ky6Xl0HEVa" role="2VODD2">
         <node concept="3clFbF" id="1ky6Xl0HQM0" role="3cqZAp">
@@ -221,7 +221,7 @@
             <node concept="2ShNRf" id="1ky6Xl0Peix" role="37vLTx">
               <node concept="3zrR0B" id="1ky6Xl0Peiv" role="2ShVmc">
                 <node concept="3Tqbb2" id="1ky6Xl0Peiw" role="3zrR0E">
-                  <ref role="ehGHo" to="1o5n:1ky6Xl0HDt_" resolve="ValueModel" />
+                  <ref role="ehGHo" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
                 </node>
               </node>
             </node>
@@ -238,7 +238,7 @@
         <node concept="3clFbF" id="1ky6Xl0PezQ" role="3cqZAp">
           <node concept="37vLTI" id="1ky6Xl0PfnU" role="3clFbG">
             <node concept="Xl_RD" id="1ky6Xl0Pfsi" role="37vLTx">
-              <property role="Xl_RC" value="valueModel" />
+              <property role="Xl_RC" value="group" />
             </node>
             <node concept="2OqwBi" id="1ky6Xl0PeRm" role="37vLTJ">
               <node concept="37vLTw" id="1ky6Xl0PezO" role="2Oq$k0">
