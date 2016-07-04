@@ -205,7 +205,7 @@
       <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$">
         <reference id="8976227254847281741" name="namedConcept" index="CMYPG" />
       </concept>
-      <concept id="1522810226732341093" name="GenericGroupMethods.structure.ValueModel" flags="ig" index="1l_8MK" />
+      <concept id="1522810226732341093" name="GenericGroupMethods.structure.GroupType" flags="ig" index="1l_8MK" />
       <concept id="1522810226732785365" name="GenericGroupMethods.structure.ConceptsOfType" flags="ng" index="1lBOk0">
         <child id="1522810226732838602" name="conceptType" index="1lB3kv" />
       </concept>
@@ -525,10 +525,27 @@
     <property role="TrG5h" value="CodeGen_Statistics_Graph" />
     <property role="3GE5qa" value="Graphs" />
     <ref role="1GHRfG" node="1gcKwu1v3hJ" resolve="Graph" />
+    <node concept="1GnNjC" id="3u2$VLCJHeG" role="CLm5g">
+      <property role="TrG5h" value="genCodeMain" />
+      <node concept="37vLTG" id="3u2$VLCJHeH" role="3clF46">
+        <property role="TrG5h" value="group" />
+        <node concept="1l_8MK" id="3u2$VLCJHeI" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="3u2$VLCJHeJ" role="3clF47">
+        <node concept="34ab3g" id="3u2$VLD1LNs" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="Xl_RD" id="3u2$VLD1LNu" role="34bqiv">
+            <property role="Xl_RC" value="Somethign!" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3u2$VLCST9G" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="3u2$VLCJHcH" role="CLm5g" />
     <node concept="1GnNjC" id="1gcKwu1vaRq" role="CLm5g">
       <property role="TrG5h" value="noOfNodes" />
       <node concept="37vLTG" id="1gcKwu1vaRr" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
+        <property role="TrG5h" value="group" />
         <node concept="1l_8MK" id="1gcKwu1vaRs" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="1gcKwu1vaRt" role="3clF47">
@@ -538,7 +555,7 @@
               <node concept="2OqwBi" id="1gcKwu1vcZk" role="2Oq$k0">
                 <node concept="2OqwBi" id="1gcKwu1vbXg" role="2Oq$k0">
                   <node concept="37vLTw" id="1gcKwu1vbCF" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1gcKwu1vaRr" resolve="valueModel" />
+                    <ref role="3cqZAo" node="1gcKwu1vaRr" resolve="group" />
                   </node>
                   <node concept="1lBOk0" id="1gcKwu1vc3u" role="2OqNvi">
                     <node concept="CMjq$" id="1gcKwu1vc3w" role="1lB3kv">
@@ -562,7 +579,7 @@
     <node concept="1GnNjC" id="1gcKwu1vaRR" role="CLm5g">
       <property role="TrG5h" value="noOfEdges" />
       <node concept="37vLTG" id="1gcKwu1vaRS" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
+        <property role="TrG5h" value="group" />
         <node concept="1l_8MK" id="1gcKwu1vaRT" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="1gcKwu1vaRU" role="3clF47">
@@ -572,7 +589,7 @@
               <node concept="2OqwBi" id="1gcKwu1vhVl" role="2Oq$k0">
                 <node concept="2OqwBi" id="1gcKwu1vhVm" role="2Oq$k0">
                   <node concept="37vLTw" id="1gcKwu1vhVn" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1gcKwu1vaRS" resolve="valueModel" />
+                    <ref role="3cqZAo" node="1gcKwu1vaRS" resolve="group" />
                   </node>
                   <node concept="1lBOk0" id="1gcKwu1vhVo" role="2OqNvi">
                     <node concept="CMjq$" id="1gcKwu1vhVp" role="1lB3kv">
@@ -596,7 +613,7 @@
     <node concept="1GnNjC" id="1gcKwu1vi2M" role="CLm5g">
       <property role="TrG5h" value="fanIn" />
       <node concept="37vLTG" id="1gcKwu1vi2N" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
+        <property role="TrG5h" value="group" />
         <node concept="1l_8MK" id="1gcKwu1vi2O" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="1gcKwu1vi3A" role="3clF46">
@@ -626,7 +643,7 @@
     <node concept="1GnNjC" id="1gcKwu1vjUs" role="CLm5g">
       <property role="TrG5h" value="fanOut" />
       <node concept="37vLTG" id="1gcKwu1vjUt" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
+        <property role="TrG5h" value="group" />
         <node concept="1l_8MK" id="1gcKwu1vjUu" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="1gcKwu1vjWn" role="3clF46">
@@ -2651,6 +2668,10 @@
     <node concept="1$M0LP" id="2JdoBps7_4a" role="1$WwQZ">
       <ref role="1$M2ta" node="1gcKwu1v3i5" resolve="StateMachine" />
       <ref role="1$WBLP" node="1gcKwu1v53y" resolve="StateMachineVis" />
+    </node>
+    <node concept="1$M0LP" id="3u2$VLDaSO7" role="1$WwQZ">
+      <ref role="1$M2ta" node="DTk9ZDu1U6" resolve="PetriNet" />
+      <ref role="1$WBLP" node="_J5chRuCfR" resolve="PetriNetVis" />
     </node>
   </node>
   <node concept="1vbSxi" id="1gcKwu1vXAA">

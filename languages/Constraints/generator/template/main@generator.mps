@@ -861,7 +861,7 @@
           </node>
         </node>
         <node concept="37vLTG" id="2SWtdi28gx$" role="3clF46">
-          <property role="TrG5h" value="valueModel" />
+          <property role="TrG5h" value="group" />
           <node concept="3Tqbb2" id="2SWtdi28gxz" role="1tU5fm">
             <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
           </node>

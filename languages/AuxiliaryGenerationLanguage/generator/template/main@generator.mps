@@ -292,7 +292,7 @@
       <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$">
         <reference id="8976227254847281741" name="namedConcept" index="CMYPG" />
       </concept>
-      <concept id="1522810226732341093" name="GenericGroupMethods.structure.ValueModel" flags="ig" index="1l_8MK" />
+      <concept id="1522810226732341093" name="GenericGroupMethods.structure.GroupType" flags="ig" index="1l_8MK" />
       <concept id="1522810226732785365" name="GenericGroupMethods.structure.ConceptsOfType" flags="ng" index="1lBOk0">
         <child id="1522810226732838602" name="conceptType" index="1lB3kv" />
       </concept>
@@ -1538,7 +1538,7 @@
       <node concept="1GnNjC" id="DTk9ZDkPip" role="CLm5g">
         <property role="TrG5h" value="someName" />
         <node concept="37vLTG" id="DTk9ZDkPiq" role="3clF46">
-          <property role="TrG5h" value="valueModel" />
+          <property role="TrG5h" value="group" />
           <node concept="1l_8MK" id="DTk9ZDkPir" role="1tU5fm" />
         </node>
         <node concept="3clFbS" id="DTk9ZDkPis" role="3clF47">
@@ -1552,7 +1552,7 @@
             <node concept="1kqm1a" id="1KRk6G0jsxz" role="3clFbG">
               <ref role="37wK5l" to="hzjf:1KRk6G0jcmc" resolve="directionToString" />
               <node concept="37vLTw" id="1KRk6G0js_j" role="37wK5m">
-                <ref role="3cqZAo" node="DTk9ZDkPiq" resolve="valueModel" />
+                <ref role="3cqZAo" node="DTk9ZDkPiq" resolve="group" />
               </node>
               <node concept="37vLTw" id="3EkoJDO_fX$" role="37wK5m">
                 <ref role="3cqZAo" node="DTk9ZDl4y0" resolve="val" />
@@ -2073,7 +2073,7 @@
       <node concept="1GnNjC" id="DTk9ZDmcLu" role="CLm5g">
         <property role="TrG5h" value="someName" />
         <node concept="37vLTG" id="DTk9ZDmcLv" role="3clF46">
-          <property role="TrG5h" value="valueModel" />
+          <property role="TrG5h" value="group" />
           <node concept="1l_8MK" id="DTk9ZDmcLw" role="1tU5fm" />
         </node>
         <node concept="3clFbS" id="DTk9ZDmcLx" role="3clF47">
@@ -2087,7 +2087,7 @@
             <node concept="1kqm1a" id="3EkoJDOD7wi" role="3clFbG">
               <ref role="37wK5l" to="hzjf:1KRk6G0jcmc" resolve="directionToString" />
               <node concept="37vLTw" id="3EkoJDOD7wj" role="37wK5m">
-                <ref role="3cqZAo" node="DTk9ZDmcLv" resolve="valueModel" />
+                <ref role="3cqZAo" node="DTk9ZDmcLv" resolve="group" />
               </node>
               <node concept="37vLTw" id="3EkoJDOD7wk" role="37wK5m">
                 <ref role="3cqZAo" node="DTk9ZDmcLz" resolve="val" />
@@ -2605,7 +2605,7 @@
     <node concept="1GnNjC" id="DTk9ZDn77b" role="13RCb5">
       <property role="TrG5h" value="someName" />
       <node concept="37vLTG" id="DTk9ZDn77c" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
+        <property role="TrG5h" value="group" />
         <node concept="1l_8MK" id="DTk9ZDn77d" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="DTk9ZDn77e" role="3clF47">
@@ -2916,7 +2916,7 @@
             <node concept="2OqwBi" id="DTk9ZCJ2NE" role="33vP2m">
               <node concept="2OqwBi" id="DTk9ZCJ2NF" role="2Oq$k0">
                 <node concept="37vLTw" id="DTk9ZCJ2NG" role="2Oq$k0">
-                  <ref role="3cqZAo" node="DTk9ZDn77c" resolve="valueModel" />
+                  <ref role="3cqZAo" node="DTk9ZDn77c" resolve="group" />
                 </node>
                 <node concept="1lBOk0" id="DTk9ZCJ2NH" role="2OqNvi">
                   <node concept="CMjq$" id="DTk9ZCJ2NI" role="1lB3kv">
@@ -2939,7 +2939,7 @@
     <node concept="1kpCGq" id="430hJVZLPQI" role="CLm5g">
       <property role="TrG5h" value="helperDummy" />
       <node concept="37vLTG" id="430hJVZLPQJ" role="3clF46">
-        <property role="TrG5h" value="valueModel" />
+        <property role="TrG5h" value="group" />
         <node concept="1l_8MK" id="430hJVZLPQK" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="430hJVZLTBV" role="3clF46">
