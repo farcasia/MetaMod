@@ -967,7 +967,20 @@
       <node concept="1Z5TYs" id="3u2$VLDba5s" role="3cqZAp">
         <node concept="mw_s8" id="3u2$VLDbabf" role="1ZfhKB">
           <node concept="2c44tf" id="3u2$VLDbabb" role="mwGJk">
-            <node concept="1l_8MK" id="3u2$VLDbaby" role="2c44tc" />
+            <node concept="1l_8MK" id="6pihOoKVq3V" role="2c44tc">
+              <node concept="2c44tb" id="6pihOoKXszb" role="lGtFl">
+                <property role="P3scX" value="8a5ffd84-4b2e-475c-803b-24d3ac9331ee/1522810226732341093/1522810226732347078" />
+                <property role="2qtEX8" value="group" />
+                <node concept="2OqwBi" id="6pihOoKXs_7" role="2c44t1">
+                  <node concept="1YBJjd" id="6pihOoKXsz$" role="2Oq$k0">
+                    <ref role="1YBMHb" node="3u2$VLDb9Xi" resolve="newGroupType" />
+                  </node>
+                  <node concept="3TrEf2" id="6pihOoKXsIH" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1o5n:6pihOoKVpXw" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="mw_s8" id="3u2$VLDba5A" role="1ZfhK$">
@@ -1006,6 +1019,54 @@
     <node concept="1YaCAy" id="3u2$VLDbbaQ" role="1YuTPh">
       <property role="TrG5h" value="addRootToModelSpace" />
       <ref role="1YaFvo" to="1o5n:3u2$VLDb9Sj" resolve="addRootToModelSpace" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6pihOoKPdbk">
+    <property role="TrG5h" value="typeof_addToContents" />
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <node concept="3clFbS" id="6pihOoKPdbl" role="18ibNy">
+      <node concept="1Z5TYs" id="6pihOoKPdLB" role="3cqZAp">
+        <node concept="mw_s8" id="6pihOoKPdMU" role="1ZfhKB">
+          <node concept="2c44tf" id="6pihOoKPdMQ" role="mwGJk">
+            <node concept="3cqZAl" id="6pihOoKPdNd" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="6pihOoKPdLL" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6pihOoKPdLH" role="mwGJk">
+            <node concept="1YBJjd" id="6pihOoKPdMy" role="1Z2MuG">
+              <ref role="1YBMHb" node="6pihOoKPdbn" resolve="addToContents" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6pihOoKPdbn" role="1YuTPh">
+      <property role="TrG5h" value="addToContents" />
+      <ref role="1YaFvo" to="1o5n:6pihOoKPbzv" resolve="addToContents" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6pihOoKTF1c">
+    <property role="TrG5h" value="typeof_modelType" />
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <node concept="3clFbS" id="6pihOoKTF1d" role="18ibNy">
+      <node concept="1Z5TYs" id="6pihOoKTF1j" role="3cqZAp">
+        <node concept="mw_s8" id="6pihOoKTF26" role="1ZfhKB">
+          <node concept="2c44tf" id="6pihOoKTF22" role="mwGJk">
+            <node concept="3cqZAl" id="6pihOoKTF2p" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="6pihOoKTF1t" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6pihOoKTF1p" role="mwGJk">
+            <node concept="1YBJjd" id="6pihOoKTF1I" role="1Z2MuG">
+              <ref role="1YBMHb" node="6pihOoKTF1f" resolve="modelType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6pihOoKTF1f" role="1YuTPh">
+      <property role="TrG5h" value="modelType" />
+      <ref role="1YaFvo" to="1o5n:6pihOoKTBNq" resolve="modelType" />
     </node>
   </node>
 </model>

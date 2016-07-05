@@ -43,6 +43,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -92,12 +93,25 @@
         <child id="8976227254846920305" name="contents" index="CLm5g" />
         <child id="7169015349716565843" name="facet" index="1ukcCD" />
       </concept>
-      <concept id="1522810226732341093" name="GenericGroupMethods.structure.GroupType" flags="ig" index="1l_8MK" />
+      <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$">
+        <reference id="8976227254847281741" name="namedConcept" index="CMYPG" />
+      </concept>
+      <concept id="1522810226732341093" name="GenericGroupMethods.structure.GroupType" flags="ig" index="1l_8MK">
+        <reference id="1522810226732347078" name="group" index="1l_bkj" />
+      </concept>
+      <concept id="7373033906751453407" name="GenericGroupMethods.structure.addToContents" flags="ng" index="1mxJYp">
+        <child id="7373033906751453410" name="exp" index="1mxJY$" />
+      </concept>
+      <concept id="7988447658783335922" name="GenericGroupMethods.structure.NewConceptType" flags="ng" index="1ui4Ww">
+        <reference id="7988447658783335923" name="concept" index="1ui4Wx" />
+      </concept>
       <concept id="7988447658783339967" name="GenericGroupMethods.structure.SetName" flags="ng" index="1ui5XH">
         <child id="2869474394253197387" name="str" index="emeI9" />
       </concept>
       <concept id="3999921856486088211" name="GenericGroupMethods.structure.addRootToModelSpace" flags="ng" index="1uFwQJ" />
-      <concept id="3999921856486073224" name="GenericGroupMethods.structure.NewGroupType" flags="ng" index="1uFJ0O" />
+      <concept id="3999921856486073224" name="GenericGroupMethods.structure.NewGroupType" flags="ng" index="1uFJ0O">
+        <reference id="7373033906753085280" name="group" index="1mJXwA" />
+      </concept>
       <concept id="7169015349702230285" name="GenericGroupMethods.structure.Facet" flags="ng" index="1vbBhR" />
       <concept id="7169015349702230837" name="GenericGroupMethods.structure.RefToFacet" flags="ng" index="1vbBpf">
         <reference id="7169015349702230838" name="ref" index="1vbBpc" />
@@ -111,11 +125,11 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="true" />
     <property role="TrG5h" value="X" />
-    <node concept="2oAaW5" id="3u2$VLDb1gr" role="2oAaxa">
-      <property role="TrG5h" value="A" />
-    </node>
     <node concept="2oAaW5" id="3u2$VLDb1gG" role="2oAaxa">
       <property role="TrG5h" value="B" />
+    </node>
+    <node concept="2oAaW5" id="6pihOoKRjrj" role="2oAaxa">
+      <property role="TrG5h" value="A" />
     </node>
     <node concept="2jq5PB" id="3u2$VLDb1gY" role="2oAaxa" />
     <node concept="2oAaUZ" id="3u2$VLDb1hf" role="2oAaxa">
@@ -125,8 +139,8 @@
       <node concept="2oAaXF" id="3u2$VLDb1hG" role="2oAawB">
         <ref role="3aaZtz" node="3u2$VLDb1gG" resolve="B" />
       </node>
-      <node concept="2oAaXF" id="3u2$VLDb1hw" role="2oAawD">
-        <ref role="3aaZtz" node="3u2$VLDb1gr" resolve="A" />
+      <node concept="2oAaXF" id="6pihOoKRjvz" role="2oAawD">
+        <ref role="3aaZtz" node="6pihOoKRjrj" resolve="A" />
       </node>
     </node>
   </node>
@@ -147,8 +161,12 @@
         <node concept="3cpWs8" id="3u2$VLDd4z$" role="3cqZAp">
           <node concept="3cpWsn" id="3u2$VLDd4zB" role="3cpWs9">
             <property role="TrG5h" value="g" />
-            <node concept="1l_8MK" id="3u2$VLDd4zz" role="1tU5fm" />
-            <node concept="1uFJ0O" id="6pihOoKJe5S" role="33vP2m" />
+            <node concept="1l_8MK" id="3u2$VLDd4zz" role="1tU5fm">
+              <ref role="1l_bkj" node="3u2$VLDb1gq" resolve="X" />
+            </node>
+            <node concept="1uFJ0O" id="6pihOoKJe5S" role="33vP2m">
+              <ref role="1mJXwA" node="3u2$VLDb1gq" resolve="X" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="6pihOoKIgaI" role="3cqZAp">
@@ -158,7 +176,7 @@
             </node>
             <node concept="1ui5XH" id="6pihOoKIg_L" role="2OqNvi">
               <node concept="Xl_RD" id="6pihOoKIgA1" role="emeI9">
-                <property role="Xl_RC" value="SomeName" />
+                <property role="Xl_RC" value="XInst" />
               </node>
             </node>
           </node>
@@ -169,6 +187,43 @@
               <ref role="3cqZAo" node="3u2$VLDd4zB" resolve="g" />
             </node>
             <node concept="1uFwQJ" id="3u2$VLDd4EB" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6pihOoKNP4x" role="3cqZAp" />
+        <node concept="3cpWs8" id="6pihOoKNP5w" role="3cqZAp">
+          <node concept="3cpWsn" id="6pihOoKNP5z" role="3cpWs9">
+            <property role="TrG5h" value="a" />
+            <node concept="CMjq$" id="6pihOoKNP5u" role="1tU5fm">
+              <ref role="CMYPG" node="6pihOoKRjrj" resolve="A" />
+            </node>
+            <node concept="1ui4Ww" id="6pihOoKNP6H" role="33vP2m">
+              <ref role="1ui4Wx" node="6pihOoKRjrj" resolve="A" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6pihOoKNP7t" role="3cqZAp">
+          <node concept="2OqwBi" id="6pihOoKNP7U" role="3clFbG">
+            <node concept="37vLTw" id="6pihOoKNP7r" role="2Oq$k0">
+              <ref role="3cqZAo" node="6pihOoKNP5z" resolve="a" />
+            </node>
+            <node concept="1ui5XH" id="6pihOoKNPhy" role="2OqNvi">
+              <node concept="Xl_RD" id="6pihOoKNPhM" role="emeI9">
+                <property role="Xl_RC" value="a" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6pihOoKQGmH" role="3cqZAp" />
+        <node concept="3clFbF" id="6pihOoKQGny" role="3cqZAp">
+          <node concept="2OqwBi" id="6pihOoKQGnD" role="3clFbG">
+            <node concept="37vLTw" id="6pihOoKQGnw" role="2Oq$k0">
+              <ref role="3cqZAo" node="3u2$VLDd4zB" resolve="g" />
+            </node>
+            <node concept="1mxJYp" id="6pihOoKQGut" role="2OqNvi">
+              <node concept="37vLTw" id="6pihOoKQU_f" role="1mxJY$">
+                <ref role="3cqZAo" node="6pihOoKNP5z" resolve="a" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

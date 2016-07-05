@@ -94,7 +94,7 @@
   <node concept="1TIwiD" id="7MhXM5kmc65">
     <property role="TrG5h" value="ConceptType" />
     <property role="3GE5qa" value="Types" />
-    <property role="34LRSv" value="ConceptType&lt; &gt;" />
+    <property role="34LRSv" value="ConceptType&lt;&gt;" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyj" id="7MhXM5kmxDd" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -104,13 +104,14 @@
   </node>
   <node concept="1TIwiD" id="1ky6Xl0HDt_">
     <property role="TrG5h" value="GroupType" />
-    <property role="34LRSv" value="GroupType" />
+    <property role="34LRSv" value="GroupType&lt;&gt;" />
     <property role="3GE5qa" value="Types" />
     <ref role="1TJDcQ" to="tpee:gWaQbR$" resolve="PrimitiveType" />
     <node concept="1TJgyj" id="1ky6Xl0HEV6" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="group" />
-      <ref role="20lvS9" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ky6Xl0JlVl">
@@ -330,24 +331,24 @@
   <node concept="1TIwiD" id="5Qer_$coSes">
     <property role="TrG5h" value="RelationType" />
     <property role="3GE5qa" value="Types" />
-    <property role="34LRSv" value="RelationType&lt; &gt;" />
+    <property role="34LRSv" value="RelationType&lt;,,&gt;" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyj" id="5Qer_$coUIM" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
     </node>
     <node concept="1TJgyj" id="5Qer_$coUIN" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
     </node>
     <node concept="1TJgyj" id="5Qer_$coUIO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="relation" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
     </node>
   </node>
@@ -386,14 +387,49 @@
     <property role="TrG5h" value="NewGroupType" />
     <property role="34LRSv" value="create group" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6pihOoKVpXw" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="group" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3u2$VLDb9Sj">
     <property role="3GE5qa" value="Operations.WriteOperations" />
     <property role="TrG5h" value="addRootToModelSpace" />
-    <property role="34LRSv" value="add root" />
+    <property role="34LRSv" value="add root to model space" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="PrWs8" id="3u2$VLDbam0" role="PzmwI">
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6pihOoKPbzv">
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="TrG5h" value="addToContents" />
+    <property role="34LRSv" value="add to contents" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6pihOoKPbzy" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6pihOoKPbzw" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6pihOoKTBNq">
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="TrG5h" value="modelType" />
+    <property role="34LRSv" value="model type" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="PrWs8" id="6pihOoKTBNr" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+    <node concept="1TJgyj" id="6pihOoKTC3I" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
 </model>
