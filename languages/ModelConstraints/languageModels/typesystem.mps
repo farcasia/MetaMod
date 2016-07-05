@@ -182,6 +182,7 @@
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods">
       <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$" />
       <concept id="6741447020959204252" name="GenericGroupMethods.structure.RelationType" flags="ig" index="1hVuR5" />
+      <concept id="1522810226732341093" name="GenericGroupMethods.structure.GroupType" flags="ig" index="1l_8MK" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -818,7 +819,7 @@
     </node>
     <node concept="1YaCAy" id="4B2Oes$wAlq" role="1YuTPh">
       <property role="TrG5h" value="newRelation" />
-      <ref role="1YaFvo" to="1o5n:6VsEH8K$Xct" resolve="NewRelation" />
+      <ref role="1YaFvo" to="1o5n:6VsEH8K$Xct" resolve="NewRelationType" />
     </node>
   </node>
   <node concept="1YbPZF" id="4B2Oes$xqES">
@@ -957,6 +958,54 @@
     <node concept="1YaCAy" id="1CbK6AejSt_" role="1YuTPh">
       <property role="TrG5h" value="deleteConcept" />
       <ref role="1YaFvo" to="1o5n:1CbK6AejRJj" resolve="DeleteConcept" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3u2$VLDb9Xf">
+    <property role="TrG5h" value="typeof_NewGroupType" />
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <node concept="3clFbS" id="3u2$VLDb9Xg" role="18ibNy">
+      <node concept="1Z5TYs" id="3u2$VLDba5s" role="3cqZAp">
+        <node concept="mw_s8" id="3u2$VLDbabf" role="1ZfhKB">
+          <node concept="2c44tf" id="3u2$VLDbabb" role="mwGJk">
+            <node concept="1l_8MK" id="3u2$VLDbaby" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3u2$VLDba5A" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3u2$VLDba5y" role="mwGJk">
+            <node concept="1YBJjd" id="3u2$VLDba5R" role="1Z2MuG">
+              <ref role="1YBMHb" node="3u2$VLDb9Xi" resolve="newGroupType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3u2$VLDb9Xi" role="1YuTPh">
+      <property role="TrG5h" value="newGroupType" />
+      <ref role="1YaFvo" to="1o5n:3u2$VLDb6e8" resolve="NewGroupType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3u2$VLDbbaN">
+    <property role="TrG5h" value="typeof_addRootToModelSpace" />
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <node concept="3clFbS" id="3u2$VLDbbaO" role="18ibNy">
+      <node concept="1Z5TYs" id="3u2$VLDbbaU" role="3cqZAp">
+        <node concept="mw_s8" id="3u2$VLDbbbQ" role="1ZfhKB">
+          <node concept="2c44tf" id="3u2$VLDbbbM" role="mwGJk">
+            <node concept="3cqZAl" id="3u2$VLDbbc9" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3u2$VLDbbb4" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3u2$VLDbbb0" role="mwGJk">
+            <node concept="1YBJjd" id="3u2$VLDbbbl" role="1Z2MuG">
+              <ref role="1YBMHb" node="3u2$VLDbbaQ" resolve="addRootToModelSpace" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3u2$VLDbbaQ" role="1YuTPh">
+      <property role="TrG5h" value="addRootToModelSpace" />
+      <ref role="1YaFvo" to="1o5n:3u2$VLDb9Sj" resolve="addRootToModelSpace" />
     </node>
   </node>
 </model>

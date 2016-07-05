@@ -264,7 +264,7 @@
   </node>
   <node concept="24kQdi" id="1ky6Xl0HE30">
     <property role="3GE5qa" value="Types" />
-    <ref role="1XX52x" to="1o5n:1ky6Xl0HDt_" resolve="ValueModel" />
+    <ref role="1XX52x" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
     <node concept="PMmxH" id="1ky6Xl0Kh8r" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
@@ -488,13 +488,13 @@
   </node>
   <node concept="24kQdi" id="6VsEH8K_34q">
     <property role="3GE5qa" value="Operations.WriteOperations" />
-    <ref role="1XX52x" to="1o5n:6VsEH8K$Xct" resolve="NewRelation" />
+    <ref role="1XX52x" to="1o5n:6VsEH8K$Xct" resolve="NewRelationType" />
     <node concept="3EZMnI" id="6VsEH8K_efl" role="2wV5jI">
       <node concept="3F0ifn" id="6VsEH8K_efs" role="3EZMnx">
         <property role="3F0ifm" value="create" />
       </node>
       <node concept="3F0ifn" id="6VsEH8K_efy" role="3EZMnx">
-        <property role="3F0ifm" value="RelationTypeMap" />
+        <property role="3F0ifm" value="RelationType" />
       </node>
       <node concept="3F0ifn" id="6VsEH8K_efE" role="3EZMnx">
         <property role="3F0ifm" value="&lt;" />
@@ -553,7 +553,7 @@
         <property role="3F0ifm" value="create" />
       </node>
       <node concept="3F0ifn" id="6VsEH8K_eo9" role="3EZMnx">
-        <property role="3F0ifm" value="ConceptTypeMap" />
+        <property role="3F0ifm" value="ConceptType" />
       </node>
       <node concept="3F0ifn" id="6VsEH8K_eoh" role="3EZMnx">
         <property role="3F0ifm" value="&lt;" />
@@ -764,6 +764,34 @@
           <property role="1iTho6" value="66FFFF" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3u2$VLDb6iC">
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <ref role="1XX52x" to="1o5n:3u2$VLDb6e8" resolve="NewGroupType" />
+    <node concept="3EZMnI" id="3u2$VLDb863" role="2wV5jI">
+      <node concept="3F0ifn" id="3u2$VLDb86a" role="3EZMnx">
+        <property role="3F0ifm" value="create" />
+      </node>
+      <node concept="3F0ifn" id="3u2$VLDb86g" role="3EZMnx">
+        <property role="3F0ifm" value="GroupType" />
+      </node>
+      <node concept="3F0ifn" id="3u2$VLDb89Y" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+      </node>
+      <node concept="3F0ifn" id="3u2$VLDb8ao" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="2iRfu4" id="3u2$VLDb866" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3u2$VLDbam7">
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <ref role="1XX52x" to="1o5n:3u2$VLDb9Sj" resolve="addRootToModelSpace" />
+    <node concept="PMmxH" id="3u2$VLDbamc" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

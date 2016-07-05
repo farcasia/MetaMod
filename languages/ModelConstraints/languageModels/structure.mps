@@ -248,7 +248,7 @@
   </node>
   <node concept="1TIwiD" id="6VsEH8K$Xct">
     <property role="3GE5qa" value="Operations.WriteOperations" />
-    <property role="TrG5h" value="NewRelation" />
+    <property role="TrG5h" value="NewRelationType" />
     <property role="34LRSv" value="create relation" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="6VsEH8K_344" role="1TKVEi">
@@ -378,6 +378,21 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="1CbK6AekxtF" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3u2$VLDb6e8">
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="TrG5h" value="NewGroupType" />
+    <property role="34LRSv" value="create group" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3u2$VLDb9Sj">
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="TrG5h" value="addRootToModelSpace" />
+    <property role="34LRSv" value="add root" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="PrWs8" id="3u2$VLDbam0" role="PzmwI">
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
     </node>
   </node>

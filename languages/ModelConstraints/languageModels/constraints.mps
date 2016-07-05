@@ -282,7 +282,7 @@
                   </node>
                   <node concept="1mIQ4w" id="DTk9ZCKRoB" role="2OqNvi">
                     <node concept="chp4Y" id="DTk9ZCKRx4" role="cj9EA">
-                      <ref role="cht4Q" to="1o5n:1ky6Xl0HDt_" resolve="ValueModel" />
+                      <ref role="cht4Q" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
                     </node>
                   </node>
                 </node>
@@ -1021,7 +1021,7 @@
                     </node>
                   </node>
                   <node concept="1eOMI4" id="4B2Oes$x1Ab" role="3uHU7w">
-                    <node concept="22lmx$" id="4B2Oes$x29V" role="1eOMHV">
+                    <node concept="22lmx$" id="3u2$VLDbfWv" role="1eOMHV">
                       <node concept="2OqwBi" id="4B2Oes$wYcP" role="3uHU7B">
                         <node concept="2OqwBi" id="4B2Oes$wYcQ" role="2Oq$k0">
                           <node concept="2OqwBi" id="4B2Oes$wYcR" role="2Oq$k0">
@@ -1051,32 +1051,32 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="4B2Oes$x2or" role="3uHU7w">
-                        <node concept="2OqwBi" id="4B2Oes$x2os" role="2Oq$k0">
-                          <node concept="2OqwBi" id="4B2Oes$x2ot" role="2Oq$k0">
-                            <node concept="1PxgMI" id="4B2Oes$x2ou" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3u2$VLDbgcd" role="3uHU7w">
+                        <node concept="2OqwBi" id="3u2$VLDbgce" role="2Oq$k0">
+                          <node concept="2OqwBi" id="3u2$VLDbgcf" role="2Oq$k0">
+                            <node concept="1PxgMI" id="3u2$VLDbgcg" role="2Oq$k0">
                               <ref role="1PxNhF" to="tpee:fz7vLUo" resolve="VariableReference" />
-                              <node concept="2OqwBi" id="4B2Oes$x2ov" role="1PxMeX">
-                                <node concept="1PxgMI" id="4B2Oes$x2ow" role="2Oq$k0">
+                              <node concept="2OqwBi" id="3u2$VLDbgch" role="1PxMeX">
+                                <node concept="1PxgMI" id="3u2$VLDbgci" role="2Oq$k0">
                                   <ref role="1PxNhF" to="tpee:hqOqwz4" resolve="DotExpression" />
-                                  <node concept="nLn13" id="4B2Oes$x2ox" role="1PxMeX" />
+                                  <node concept="nLn13" id="3u2$VLDbgcj" role="1PxMeX" />
                                 </node>
-                                <node concept="3TrEf2" id="4B2Oes$x2oz" role="2OqNvi">
+                                <node concept="3TrEf2" id="3u2$VLDbgck" role="2OqNvi">
                                   <ref role="3Tt5mk" to="tpee:hqOq$gm" />
                                 </node>
                               </node>
                             </node>
-                            <node concept="3TrEf2" id="4B2Oes$x2o$" role="2OqNvi">
+                            <node concept="3TrEf2" id="3u2$VLDbgcl" role="2OqNvi">
                               <ref role="3Tt5mk" to="tpee:fzcqZ_w" />
                             </node>
                           </node>
-                          <node concept="3TrEf2" id="4B2Oes$x2o_" role="2OqNvi">
+                          <node concept="3TrEf2" id="3u2$VLDbgcm" role="2OqNvi">
                             <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
                           </node>
                         </node>
-                        <node concept="1mIQ4w" id="4B2Oes$x2oA" role="2OqNvi">
-                          <node concept="chp4Y" id="4B2Oes$x2Aw" role="cj9EA">
-                            <ref role="cht4Q" to="1o5n:5Qer_$coSes" resolve="RelationType" />
+                        <node concept="1mIQ4w" id="3u2$VLDbgcn" role="2OqNvi">
+                          <node concept="chp4Y" id="3u2$VLDbgqr" role="cj9EA">
+                            <ref role="cht4Q" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
                           </node>
                         </node>
                       </node>
@@ -1090,7 +1090,7 @@
         <node concept="3clFbH" id="4B2Oes$x2TG" role="3cqZAp" />
         <node concept="3SKdUt" id="4B2Oes$x30x" role="3cqZAp">
           <node concept="3SKdUq" id="4B2Oes$x36y" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: both ConceptType and RelationType need to be from the" />
+            <property role="3SKdUp" value="TODO: both ConceptType and GroupType need to be from the" />
           </node>
         </node>
         <node concept="3SKdUt" id="4B2Oes$x3uF" role="3cqZAp">
@@ -1247,7 +1247,7 @@
                   </node>
                   <node concept="1mIQ4w" id="1CbK6Aekbyx" role="2OqNvi">
                     <node concept="chp4Y" id="1CbK6AekbEZ" role="cj9EA">
-                      <ref role="cht4Q" to="1o5n:1ky6Xl0HDt_" resolve="ValueModel" />
+                      <ref role="cht4Q" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
                     </node>
                   </node>
                 </node>
@@ -1258,6 +1258,58 @@
         <node concept="3clFbH" id="1CbK6Aekbyz" role="3cqZAp" />
         <node concept="3cpWs6" id="1CbK6Aekby$" role="3cqZAp">
           <node concept="3clFbT" id="1CbK6Aekby_" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3u2$VLDbame">
+    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <ref role="1M2myG" to="1o5n:3u2$VLDb9Sj" resolve="addRootToModelSpace" />
+    <node concept="nKS2y" id="3u2$VLDbav4" role="1MLUbF">
+      <node concept="3clFbS" id="3u2$VLDbav5" role="2VODD2">
+        <node concept="3clFbJ" id="3u2$VLDbayx" role="3cqZAp">
+          <node concept="3clFbS" id="3u2$VLDbayy" role="3clFbx">
+            <node concept="3cpWs6" id="3u2$VLDbayz" role="3cqZAp">
+              <node concept="3clFbT" id="3u2$VLDbay$" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="3u2$VLDbay_" role="3clFbw">
+            <node concept="3clFbC" id="3u2$VLDbayA" role="3uHU7B">
+              <node concept="oXsJc" id="3u2$VLDbayB" role="3uHU7B" />
+              <node concept="28GBK8" id="3u2$VLDbayC" role="3uHU7w">
+                <ref role="28H3Ia" to="tpee:hqOqNr4" />
+                <ref role="28GBKb" to="tpee:hqOqwz4" resolve="DotExpression" />
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="3u2$VLDbayD" role="3uHU7w">
+              <node concept="1eOMI4" id="3u2$VLDbayE" role="3fr31v">
+                <node concept="2OqwBi" id="3u2$VLDbayF" role="1eOMHV">
+                  <node concept="2OqwBi" id="3u2$VLDbayG" role="2Oq$k0">
+                    <node concept="1PxgMI" id="3u2$VLDbayH" role="2Oq$k0">
+                      <ref role="1PxNhF" to="tpee:hqOqwz4" resolve="DotExpression" />
+                      <node concept="nLn13" id="3u2$VLDbayI" role="1PxMeX" />
+                    </node>
+                    <node concept="2qgKlT" id="3u2$VLDbayJ" role="2OqNvi">
+                      <ref role="37wK5l" to="tpek:7GulAc9z0dN" resolve="getOperandType" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="3u2$VLDbayK" role="2OqNvi">
+                    <node concept="chp4Y" id="3u2$VLDbaCf" role="cj9EA">
+                      <ref role="cht4Q" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3u2$VLDbayM" role="3cqZAp" />
+        <node concept="3cpWs6" id="3u2$VLDbayN" role="3cqZAp">
+          <node concept="3clFbT" id="3u2$VLDbayO" role="3cqZAk">
             <property role="3clFbU" value="true" />
           </node>
         </node>
