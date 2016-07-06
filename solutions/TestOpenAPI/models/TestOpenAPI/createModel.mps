@@ -525,6 +525,34 @@
             <property role="3SKdUp" value="how to get all of them on board." />
           </node>
         </node>
+        <node concept="3clFbH" id="6pihOoLxer6" role="3cqZAp" />
+        <node concept="3SKdUt" id="6pihOoLxew4" role="3cqZAp">
+          <node concept="3SKdUq" id="6pihOoLxewA" role="3SKWNk">
+            <property role="3SKdUp" value="Quite a verbose transformation in my opinion, but it should do for now" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6pihOoLxexb" role="3cqZAp">
+          <node concept="3SKdUq" id="6pihOoLxexJ" role="3SKWNk">
+            <property role="3SKdUp" value="I guess." />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6pihOoLxeDK" role="3cqZAp" />
+        <node concept="3SKdUt" id="6pihOoLxeEV" role="3cqZAp">
+          <node concept="3SKdUq" id="6pihOoLxeFy" role="3SKWNk">
+            <property role="3SKdUp" value="At this point we can keep traces between A to D and between B to E." />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6pihOoLxeJD" role="3cqZAp" />
+        <node concept="3SKdUt" id="6pihOoLxeKU" role="3cqZAp">
+          <node concept="3SKdUq" id="6pihOoLxeL$" role="3SKWNk">
+            <property role="3SKdUp" value="At some point we will also need deletion elements in the model" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6pihOoLxeMh" role="3cqZAp">
+          <node concept="3SKdUq" id="6pihOoLxeMX" role="3SKWNk">
+            <property role="3SKdUp" value="transformations to twick the output model as well a little bit." />
+          </node>
+        </node>
         <node concept="3cpWs8" id="6pihOoLuLTT" role="3cqZAp">
           <node concept="3cpWsn" id="6pihOoLuLTW" role="3cpWs9">
             <property role="TrG5h" value="y" />
