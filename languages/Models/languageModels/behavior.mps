@@ -928,6 +928,58 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="6pihOoL19Ab" role="13h7CS">
+      <property role="TrG5h" value="getAllNamedInnerGroupsPlusSelf" />
+      <node concept="3Tm1VV" id="6pihOoL19Ac" role="1B3o_S" />
+      <node concept="3clFbS" id="6pihOoL19Ad" role="3clF47">
+        <node concept="3cpWs8" id="6pihOoL29oC" role="3cqZAp">
+          <node concept="3cpWsn" id="6pihOoL29oF" role="3cpWs9">
+            <property role="TrG5h" value="lista" />
+            <node concept="2I9FWS" id="6pihOoL29oB" role="1tU5fm">
+              <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+            </node>
+            <node concept="BsUDl" id="6pihOoL29p9" role="33vP2m">
+              <ref role="37wK5l" node="4X4Jbdc5y5v" resolve="getAllNamedInnerGroups" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6pihOoL2mnB" role="3cqZAp" />
+        <node concept="3clFbJ" id="6pihOoL2mvl" role="3cqZAp">
+          <node concept="3clFbS" id="6pihOoL2mvn" role="3clFbx">
+            <node concept="3clFbF" id="6pihOoL29pM" role="3cqZAp">
+              <node concept="2OqwBi" id="6pihOoL2bdx" role="3clFbG">
+                <node concept="37vLTw" id="6pihOoL29pK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6pihOoL29oF" resolve="lista" />
+                </node>
+                <node concept="TSZUe" id="6pihOoL2g8t" role="2OqNvi">
+                  <node concept="1PxgMI" id="6pihOoL2mg_" role="25WWJ7">
+                    <ref role="1PxNhF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+                    <node concept="13iPFW" id="6pihOoL2gf6" role="1PxMeX" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6pihOoL2mDa" role="3clFbw">
+            <node concept="13iPFW" id="6pihOoL2mvG" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="6pihOoL2mYH" role="2OqNvi">
+              <node concept="chp4Y" id="6pihOoL2mZ5" role="cj9EA">
+                <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6pihOoL2gme" role="3cqZAp" />
+        <node concept="3cpWs6" id="6pihOoL2gtT" role="3cqZAp">
+          <node concept="37vLTw" id="6pihOoL2gub" role="3cqZAk">
+            <ref role="3cqZAo" node="6pihOoL29oF" resolve="lista" />
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="6pihOoL1zK6" role="3clF45">
+        <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+      </node>
+    </node>
     <node concept="13i0hz" id="5X829TwWz93" role="13h7CS">
       <property role="TrG5h" value="getTopoSortStructures" />
       <node concept="37vLTG" id="5X829TwXrdc" role="3clF46">

@@ -407,6 +407,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2SWtdi24E2j">
+    <property role="3GE5qa" value="Types" />
     <ref role="1M2myG" to="1o5n:7MhXM5kmc65" resolve="ConceptType" />
     <node concept="1N5Pfh" id="2SWtdi24Ed6" role="1Mr941">
       <ref role="1N5Vy1" to="1o5n:7MhXM5kmxDd" />
@@ -1486,10 +1487,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1M2fIO" id="6pihOoKXsT7">
-    <property role="3GE5qa" value="Types" />
-    <ref role="1M2myG" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
   </node>
 </model>
 

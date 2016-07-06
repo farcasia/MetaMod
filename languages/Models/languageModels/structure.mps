@@ -102,13 +102,13 @@
     </node>
     <node concept="1TJgyj" id="7zWtwVwpdSB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="source" />
+      <property role="20kJfa" value="src" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
     <node concept="1TJgyj" id="7zWtwVwpdSD" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="target" />
+      <property role="20kJfa" value="tgt" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     </node>
