@@ -6,6 +6,9 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</usedLanguage>
     <usedLanguage>5f140b5b-a1d2-4d50-af71-7c64c190dbb9(CodeGeneration)</usedLanguage>
@@ -20,11 +23,13 @@
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
     <usedLanguage>a00bbccc-dbff-45c7-aa54-02d1f94db9b5(LanguageConfiguration)</usedLanguage>
     <usedLanguage>f97cf326-3077-4de7-b16c-71ef42a55a01(ModelTransformations)</usedLanguage>
+    <usedLanguage>b9d9f978-d2e1-4cb8-a4c8-9c34c6661669(AddMainMethodGenerationLanguage)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>e073aac8-8c71-4c23-be71-86bf7a6df0a2(jetbrains.mps.devkit.bootstrap-languages)</usedDevKit>
   </usedDevKits>
   <languageVersions>
+    <language id="b9d9f978-d2e1-4cb8-a4c8-9c34c6661669" fqName="AddMainMethodGenerationLanguage" version="0" />
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" fqName="CodeGeneration" version="0" />
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" fqName="LambdaCalculus" version="0" />

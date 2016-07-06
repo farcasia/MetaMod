@@ -29,7 +29,6 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
-        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
@@ -45,12 +44,6 @@
     <property role="TrG5h" value="TransformationsContainer" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
-    <node concept="1TJgyj" id="6pihOoLujwj" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="toMM" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
-    </node>
     <node concept="1TJgyj" id="6pihOoLutB2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
