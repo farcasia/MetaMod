@@ -42,9 +42,6 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
-      <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
-        <property id="1221209241505" name="value" index="1lJzqX" />
-      </concept>
       <concept id="1081293058843" name="jetbrains.mps.lang.editor.structure.CellKeyMapDeclaration" flags="ig" index="325Ffw">
         <reference id="1139445935125" name="applicableConcept" index="1chiOs" />
         <child id="1136930944870" name="item" index="2QnnpI" />
@@ -349,9 +346,6 @@
         <ref role="1NtTu8" to="cxsf:6dXtnCW$8LE" />
       </node>
       <node concept="2iRkQZ" id="6dXtnCW$8Q$" role="2iSdaV" />
-      <node concept="VSNWy" id="6dXtnCW$8Sj" role="3F10Kt">
-        <property role="1lJzqX" value="16" />
-      </node>
     </node>
   </node>
 </model>

@@ -347,9 +347,6 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="6dXtnCWmfhR" role="2iSdaV" />
-      <node concept="VSNWy" id="6dXtnCWm$HG" role="3F10Kt">
-        <property role="1lJzqX" value="16" />
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="2TStaYjWuVc">
