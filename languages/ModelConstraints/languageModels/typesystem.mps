@@ -1069,5 +1069,45 @@
       <ref role="1YaFvo" to="1o5n:6pihOoKTBNq" resolve="modelType" />
     </node>
   </node>
+  <node concept="2sgARr" id="6pihOoLuPNl">
+    <property role="3GE5qa" value="Types" />
+    <property role="TrG5h" value="supertypesOf_GroupType" />
+    <node concept="3clFbS" id="6pihOoLuPNm" role="2sgrp5">
+      <node concept="3cpWs8" id="6pihOoLuQ12" role="3cqZAp">
+        <node concept="3cpWsn" id="6pihOoLuQ13" role="3cpWs9">
+          <property role="TrG5h" value="res" />
+          <node concept="2I9FWS" id="6pihOoLuQ14" role="1tU5fm" />
+          <node concept="2ShNRf" id="6pihOoLuQ15" role="33vP2m">
+            <node concept="2T8Vx0" id="6pihOoLuQ16" role="2ShVmc">
+              <node concept="2I9FWS" id="6pihOoLuQ17" role="2T96Bj" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="6pihOoLuQ18" role="3cqZAp" />
+      <node concept="3clFbF" id="6pihOoLuQ1z" role="3cqZAp">
+        <node concept="2OqwBi" id="6pihOoLuQkQ" role="3clFbG">
+          <node concept="37vLTw" id="6pihOoLuQ1x" role="2Oq$k0">
+            <ref role="3cqZAo" node="6pihOoLuQ13" resolve="res" />
+          </node>
+          <node concept="TSZUe" id="6pihOoLuSoV" role="2OqNvi">
+            <node concept="2c44tf" id="6pihOoLuSs4" role="25WWJ7">
+              <node concept="1l_8MK" id="6pihOoLuSvn" role="2c44tc" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="6pihOoLuSKF" role="3cqZAp" />
+      <node concept="3cpWs6" id="6pihOoLuSLa" role="3cqZAp">
+        <node concept="37vLTw" id="6pihOoLuSLA" role="3cqZAk">
+          <ref role="3cqZAo" node="6pihOoLuQ13" resolve="res" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6pihOoLuPXK" role="1YuTPh">
+      <property role="TrG5h" value="groupType" />
+      <ref role="1YaFvo" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
+    </node>
+  </node>
 </model>
 
