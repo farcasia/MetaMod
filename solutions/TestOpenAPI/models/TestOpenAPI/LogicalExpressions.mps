@@ -28,6 +28,9 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -94,6 +97,7 @@
       </concept>
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
@@ -119,6 +123,12 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
+        <child id="1144226360166" name="iterable" index="1DdaDG" />
+      </concept>
+      <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
+        <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
@@ -195,6 +205,9 @@
       </concept>
       <concept id="1522810226732341093" name="GenericGroupMethods.structure.GroupType" flags="ig" index="1l_8MK">
         <reference id="1522810226732347078" name="group" index="1l_bkj" />
+      </concept>
+      <concept id="1522810226732785365" name="GenericGroupMethods.structure.ConceptsOfType" flags="ng" index="1lBOk0">
+        <child id="1522810226732838602" name="conceptType" index="1lB3kv" />
       </concept>
       <concept id="1522810226734053312" name="GenericGroupMethods.structure.IsTypeOf" flags="ng" index="1lWEKl">
         <child id="1522810226734053315" name="conceptType" index="1lWEKm" />
@@ -584,6 +597,59 @@
     <node concept="1vbBhR" id="6K_nk43cJrr" role="1ukcCD">
       <property role="TrG5h" value="transf" />
     </node>
+    <node concept="1naRXK" id="6K_nk43dacS" role="CLm5g">
+      <property role="TrG5h" value="mainTransformation" />
+      <node concept="37vLTG" id="6K_nk43dacT" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="6K_nk43dacU" role="1tU5fm">
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6K_nk43dacW" role="3clF46">
+        <property role="TrG5h" value="outputGroup" />
+        <node concept="1l_8MK" id="6K_nk43dacX" role="1tU5fm">
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6K_nk43dacY" role="3clF47">
+        <node concept="1DcWWT" id="6K_nk43dam_" role="3cqZAp">
+          <node concept="3cpWsn" id="6K_nk43damA" role="1Duv9x">
+            <property role="TrG5h" value="intExp" />
+            <node concept="CMjq$" id="6K_nk43dasO" role="1tU5fm">
+              <ref role="CMYPG" node="6K_nk43cGYP" resolve="IntExp" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6K_nk43damB" role="2LFqv$">
+            <node concept="3clFbF" id="6K_nk43dbPj" role="3cqZAp">
+              <node concept="3otQA" id="6K_nk43dbPi" role="3clFbG">
+                <ref role="37wK5l" node="6K_nk43cSsd" resolve="IntExp2Expression" />
+                <node concept="37vLTw" id="6K_nk43dbPr" role="37wK5m">
+                  <ref role="3cqZAo" node="6K_nk43dacT" resolve="inputGroup" />
+                </node>
+                <node concept="37vLTw" id="6K_nk43dbPU" role="37wK5m">
+                  <ref role="3cqZAo" node="6K_nk43dacW" resolve="outputGroup" />
+                </node>
+                <node concept="37vLTw" id="6K_nk43dbQx" role="37wK5m">
+                  <ref role="3cqZAo" node="6K_nk43damA" resolve="intExp" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6K_nk43daJG" role="1DdaDG">
+            <node concept="37vLTw" id="6K_nk43daIH" role="2Oq$k0">
+              <ref role="3cqZAo" node="6K_nk43dacT" resolve="inputGroup" />
+            </node>
+            <node concept="1lBOk0" id="6K_nk43daY8" role="2OqNvi">
+              <node concept="CMjq$" id="6K_nk43daYa" role="1lB3kv">
+                <ref role="CMYPG" node="6K_nk43cGYP" resolve="IntExp" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6K_nk43damy" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="6K_nk43da3_" role="CLm5g" />
     <node concept="1naRXK" id="6K_nk43cSsd" role="CLm5g">
       <property role="TrG5h" value="IntExp2Expression" />
       <node concept="37vLTG" id="6K_nk43cSse" role="3clF46">
