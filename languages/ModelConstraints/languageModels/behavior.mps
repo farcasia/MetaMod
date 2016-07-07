@@ -296,7 +296,7 @@
         <node concept="3clFbF" id="1ky6Xl0PezQ" role="3cqZAp">
           <node concept="37vLTI" id="1ky6Xl0PfnU" role="3clFbG">
             <node concept="Xl_RD" id="1ky6Xl0Pfsi" role="37vLTx">
-              <property role="Xl_RC" value="group" />
+              <property role="Xl_RC" value="inputGroup" />
             </node>
             <node concept="2OqwBi" id="1ky6Xl0PeRm" role="37vLTJ">
               <node concept="37vLTw" id="1ky6Xl0PezO" role="2Oq$k0">

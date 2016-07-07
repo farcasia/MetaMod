@@ -724,7 +724,7 @@
         </node>
         <node concept="37vLTG" id="45NpebPmSpu" role="3clF46">
           <property role="3TUv4t" value="true" />
-          <property role="TrG5h" value="group" />
+          <property role="TrG5h" value="inputGroup" />
           <node concept="3Tqbb2" id="45NpebPmSpt" role="1tU5fm">
             <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
           </node>
@@ -1128,7 +1128,7 @@
               <node concept="liA8E" id="63lYmBSPbj7" role="2OqNvi">
                 <ref role="37wK5l" to="wz6r:45NpebPmZ6R" resolve="main" />
                 <node concept="37vLTw" id="63lYmBSPbj8" role="37wK5m">
-                  <ref role="3cqZAo" node="4X4Jbdcd4Ge" resolve="group" />
+                  <ref role="3cqZAo" node="4X4Jbdcd4Ge" resolve="inputGroup" />
                   <node concept="2b32R4" id="5UqrlCgqjJL" role="lGtFl">
                     <node concept="3JmXsc" id="5UqrlCgqjJO" role="2P8S$">
                       <node concept="3clFbS" id="5UqrlCgqjJP" role="2VODD2">
@@ -1238,7 +1238,7 @@
         <node concept="3cqZAl" id="4X4Jbdcd2SM" role="3clF45" />
         <node concept="3Tm1VV" id="4X4Jbdcd2SX" role="1B3o_S" />
         <node concept="37vLTG" id="4X4Jbdcd4Ge" role="3clF46">
-          <property role="TrG5h" value="group" />
+          <property role="TrG5h" value="inputGroup" />
           <node concept="3Tqbb2" id="4X4Jbdcd4Gd" role="1tU5fm">
             <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
           </node>
