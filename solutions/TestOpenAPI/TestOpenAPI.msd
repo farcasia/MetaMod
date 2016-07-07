@@ -24,6 +24,7 @@
     <usedLanguage>a00bbccc-dbff-45c7-aa54-02d1f94db9b5(LanguageConfiguration)</usedLanguage>
     <usedLanguage>f97cf326-3077-4de7-b16c-71ef42a55a01(ModelTransformations)</usedLanguage>
     <usedLanguage>b9d9f978-d2e1-4cb8-a4c8-9c34c6661669(AddMainMethodGenerationLanguage)</usedLanguage>
+    <usedLanguage>d59fee7e-5b44-4695-b6c9-ea88342965e6(LinkingModel)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>e073aac8-8c71-4c23-be71-86bf7a6df0a2(jetbrains.mps.devkit.bootstrap-languages)</usedDevKit>
@@ -34,6 +35,7 @@
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" fqName="LambdaCalculus" version="0" />
     <language id="a00bbccc-dbff-45c7-aa54-02d1f94db9b5" fqName="LanguageConfiguration" version="0" />
+    <language id="d59fee7e-5b44-4695-b6c9-ea88342965e6" fqName="LinkingModel" version="0" />
     <language id="f97cf326-3077-4de7-b16c-71ef42a55a01" fqName="ModelTransformations" version="0" />
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" fqName="Models" version="1" />
     <language id="ae311dd6-db78-4e5e-a31b-7988fcde0010" fqName="Modules" version="0" />

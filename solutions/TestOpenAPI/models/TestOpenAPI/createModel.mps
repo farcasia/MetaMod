@@ -15,6 +15,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="a00bbccc-dbff-45c7-aa54-02d1f94db9b5" name="LanguageConfiguration" version="-1" />
     <use id="f97cf326-3077-4de7-b16c-71ef42a55a01" name="ModelTransformations" version="-1" />
+    <use id="d59fee7e-5b44-4695-b6c9-ea88342965e6" name="LinkingModel" version="-1" />
     <generationPart ref="b9d9f978-d2e1-4cb8-a4c8-9c34c6661669(AddMainMethodGenerationLanguage)" />
     <devkit ref="e073aac8-8c71-4c23-be71-86bf7a6df0a2(jetbrains.mps.devkit.bootstrap-languages)" />
   </languages>
@@ -591,14 +592,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6pihOoLBZrL" role="3cqZAp">
-          <node concept="2OqwBi" id="6pihOoLBZtb" role="3clFbG">
-            <node concept="37vLTw" id="6K_nk42R_fU" role="2Oq$k0">
-              <ref role="3cqZAo" node="6K_nk42RzMN" resolve="outputGroup" />
-            </node>
-            <node concept="1uFwQJ" id="6pihOoLBZAf" role="2OqNvi" />
-          </node>
-        </node>
         <node concept="3clFbH" id="6pihOoLBZpj" role="3cqZAp" />
         <node concept="1DcWWT" id="6pihOoLuKLv" role="3cqZAp">
           <node concept="3clFbS" id="6pihOoLuKLx" role="2LFqv$">
@@ -946,17 +939,35 @@
       </node>
     </node>
   </node>
-  <node concept="2oAaVg" id="6K_nk430MyK">
+  <node concept="2oAaVg" id="6K_nk436cvZ">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="true" />
     <property role="TrG5h" value="InstanceY" />
-    <node concept="2oAaW5" id="6K_nk430MyM" role="2oAaxa">
-      <property role="TrG5h" value="d-1171529465" />
-      <node concept="2oAaXF" id="6K_nk430MyN" role="2oAawq" />
+    <ref role="19kf5F" node="6pihOoLuJ1x" resolve="Y" />
+    <node concept="2oAaW5" id="6K_nk436cw1" role="2oAaxa">
+      <property role="TrG5h" value="d-182282174" />
+      <node concept="2oAaXF" id="6K_nk436cw2" role="2oAawq">
+        <ref role="3aaZtz" node="6pihOoLuJ1Z" resolve="D" />
+      </node>
     </node>
-    <node concept="2oAaW5" id="6K_nk430MyO" role="2oAaxa">
-      <property role="TrG5h" value="e-1163064989" />
-      <node concept="2oAaXF" id="6K_nk430MyP" role="2oAawq" />
+    <node concept="2oAaW5" id="6K_nk436cw4" role="2oAaxa">
+      <property role="TrG5h" value="e-176895689" />
+      <node concept="2oAaXF" id="6K_nk436cw5" role="2oAawq">
+        <ref role="3aaZtz" node="6pihOoLuJ1Y" resolve="E" />
+      </node>
+    </node>
+    <node concept="2oAaUa" id="6K_nk436cw7" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAawe" id="6K_nk436cw8" role="2oAawy">
+        <ref role="3aaZtz" node="6pihOoLuJ21" resolve="f" />
+      </node>
+      <node concept="2oAaXF" id="6K_nk436cwb" role="2oAawD">
+        <ref role="3aaZtz" node="6K_nk436cw1" resolve="d-182282174" />
+      </node>
+      <node concept="2oAaXF" id="6K_nk436cwc" role="2oAawB">
+        <ref role="3aaZtz" node="6K_nk436cw4" resolve="e-176895689" />
+      </node>
     </node>
   </node>
 </model>
