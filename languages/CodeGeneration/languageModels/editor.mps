@@ -27,6 +27,8 @@
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
+      <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
+      <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -63,6 +65,7 @@
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <reference id="1081339532145" name="keyMap" index="34QXea" />
+        <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -141,6 +144,36 @@
   <node concept="24kQdi" id="4BhfRC_zyzg">
     <ref role="1XX52x" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
     <node concept="3EZMnI" id="7MhXM5kl9Pp" role="2wV5jI">
+      <node concept="3EZMnI" id="6K_nk43gzj1" role="3EZMnx">
+        <node concept="VPM3Z" id="6K_nk43gzj3" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="6K_nk43gzj5" role="3EZMnx">
+          <property role="3F0ifm" value="@override" />
+        </node>
+        <node concept="2iRfu4" id="6K_nk43gzj6" role="2iSdaV" />
+        <node concept="1iCGBv" id="6K_nk43gzjy" role="3EZMnx">
+          <ref role="1NtTu8" to="anrw:6K_nk43gzgg" />
+          <node concept="1sVBvm" id="6K_nk43gzj$" role="1sWHZn">
+            <node concept="3F0A7n" id="6K_nk43gzjJ" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="pkWqt" id="6K_nk43gznS" role="pqm2j">
+          <node concept="3clFbS" id="6K_nk43gznT" role="2VODD2">
+            <node concept="3clFbF" id="6K_nk43gzsV" role="3cqZAp">
+              <node concept="2OqwBi" id="6K_nk43gzDv" role="3clFbG">
+                <node concept="pncrf" id="6K_nk43gzsU" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6K_nk43g$tm" role="2OqNvi">
+                  <ref role="3TsBF5" to="anrw:6K_nk43gzgr" resolve="showOverride" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3EZMnI" id="7MhXM5kl9Pz" role="3EZMnx">
         <node concept="VPM3Z" id="7MhXM5kl9P_" role="3F10Kt">
           <property role="VOm3f" value="false" />
