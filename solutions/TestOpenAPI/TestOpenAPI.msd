@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="TestOpenAPI" uuid="d2b56a03-1f37-4e26-a2e4-07e6e0832ded" compileInMPS="true">
+<solution name="Transformations" uuid="d2b56a03-1f37-4e26-a2e4-07e6e0832ded" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -26,6 +26,7 @@
     <usedLanguage>b9d9f978-d2e1-4cb8-a4c8-9c34c6661669(AddMainMethodGenerationLanguage)</usedLanguage>
     <usedLanguage>d59fee7e-5b44-4695-b6c9-ea88342965e6(LinkingModel)</usedLanguage>
     <usedLanguage>2a4f5bab-551b-46ab-a40c-28d5229d6214(Helpers)</usedLanguage>
+    <usedLanguage>760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>e073aac8-8c71-4c23-be71-86bf7a6df0a2(jetbrains.mps.devkit.bootstrap-languages)</usedDevKit>
