@@ -3608,9 +3608,7 @@
         </node>
         <node concept="3clFbF" id="7O_2vizJEe8" role="3cqZAp">
           <node concept="37vLTI" id="7O_2vizJFcs" role="3clFbG">
-            <node concept="3clFbT" id="7O_2vizJFcQ" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
+            <node concept="3clFbT" id="7O_2vizJFcQ" role="37vLTx" />
             <node concept="2OqwBi" id="7O_2vizJEJj" role="37vLTJ">
               <node concept="13iPFW" id="7O_2vizJEe6" role="2Oq$k0" />
               <node concept="3TrcHB" id="7O_2vizJEUb" role="2OqNvi">
