@@ -23,6 +23,7 @@
         <dependency reexport="false">a57b016d-56cb-48d5-8806-f5911569ac8b(RuntimeClasses)</dependency>
         <dependency reexport="false">a00bbccc-dbff-45c7-aa54-02d1f94db9b5(LanguageConfiguration)</dependency>
         <dependency reexport="false">5f140b5b-a1d2-4d50-af71-7c64c190dbb9(CodeGeneration)</dependency>
+        <dependency reexport="false">d59fee7e-5b44-4695-b6c9-ea88342965e6(LinkingModel)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>

@@ -58,12 +58,12 @@
     <node concept="1TJgyj" id="6K_nk43gzgg" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="overrideMet" />
-      <ref role="20lvS9" to="1o5n:7MhXM5kjFTb" resolve="Method" />
+      <ref role="20lvS9" node="4BhfRC_zwIi" resolve="CodeGenMethod" />
     </node>
     <node concept="1TJgyj" id="4VnbJ42EV6i" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="defferedMet" />
-      <ref role="20lvS9" to="1o5n:7MhXM5kjFTb" resolve="Method" />
+      <ref role="20lvS9" node="4BhfRC_zwIi" resolve="CodeGenMethod" />
     </node>
   </node>
   <node concept="1TIwiD" id="4BhfRC_zwJa">
