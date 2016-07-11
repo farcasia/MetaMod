@@ -9,6 +9,7 @@
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
     <import index="rqmz" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#com.sun.media.sound(JDK/com.sun.media.sound@java_stub)" />
     <import index="y8bh" ref="r:4f23f377-46e9-4e4f-9ac0-1c09502afcac(ModelTransformations.structure)" />
+    <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -49,11 +50,73 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     </node>
+    <node concept="1TJgyj" id="6sIGfUjxlVv" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="fromValueModel" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+    </node>
+    <node concept="1TJgyj" id="6sIGfUjxlVK" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="toValueModel" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+    </node>
     <node concept="1TJgyj" id="6K_nk430U_U" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="transformation" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="y8bh:6pihOoLudY1" resolve="TransformationsContainer" />
+    </node>
+    <node concept="1TJgyj" id="6sIGfUjveLI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="typeMappings" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6sIGfUjvchJ" resolve="TypeMapping" />
+    </node>
+    <node concept="1TJgyj" id="6sIGfUjveLN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conceptMappings" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6sIGfUjve0W" resolve="ConceptMapping" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6sIGfUjvchJ">
+    <property role="TrG5h" value="TypeMapping" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6sIGfUjvxi9" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="from" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6sIGfUjvxib" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="to" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6sIGfUjve0W">
+    <property role="TrG5h" value="ConceptMapping" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6sIGfUjve0X" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="from" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6sIGfUjve0Z" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="to" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6sIGfUjve12" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="method" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="y8bh:6pihOoLujwQ" resolve="TransformationMethod" />
     </node>
   </node>
 </model>
