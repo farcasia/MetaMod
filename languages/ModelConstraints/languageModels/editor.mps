@@ -266,6 +266,11 @@
     <property role="3GE5qa" value="Types" />
     <ref role="1XX52x" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
     <node concept="3EZMnI" id="6pihOoKV7Lz" role="2wV5jI">
+      <node concept="Veino" id="4VnbJ43Cd1h" role="3F10Kt">
+        <node concept="1iSF2X" id="4VnbJ43Cd1i" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="6pihOoKWE72" role="3EZMnx">
         <property role="3F0ifm" value="GroupType" />
       </node>
@@ -569,6 +574,11 @@
     <property role="3GE5qa" value="Operations.WriteOperations" />
     <ref role="1XX52x" to="1o5n:6VsEH8K_enM" resolve="NewConceptType" />
     <node concept="3EZMnI" id="6VsEH8K_enW" role="2wV5jI">
+      <node concept="Veino" id="4VnbJ43Cd5p" role="3F10Kt">
+        <node concept="1iSF2X" id="4VnbJ43Cd5q" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="6VsEH8K_eo3" role="3EZMnx">
         <property role="3F0ifm" value="create" />
       </node>
@@ -765,6 +775,11 @@
     <property role="3GE5qa" value="Operations.WriteOperations" />
     <ref role="1XX52x" to="1o5n:3u2$VLDb6e8" resolve="NewGroupType" />
     <node concept="3EZMnI" id="3u2$VLDb863" role="2wV5jI">
+      <node concept="Veino" id="4VnbJ43Cd5_" role="3F10Kt">
+        <node concept="1iSF2X" id="4VnbJ43Cd5A" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="3u2$VLDb86a" role="3EZMnx">
         <property role="3F0ifm" value="create" />
       </node>
