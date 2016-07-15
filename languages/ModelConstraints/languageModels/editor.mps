@@ -441,12 +441,6 @@
     <ref role="1XX52x" to="1o5n:26DSjBDxXFu" resolve="intValue" />
     <node concept="PMmxH" id="26DSjBDDX5A" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <node concept="Veino" id="5X829TyclW8" role="3F10Kt">
-        <property role="Vb096" value="green" />
-        <node concept="1iSF2X" id="6cRXBRmtWve" role="VblUZ">
-          <property role="1iTho6" value="66FFFF" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="26DSjBDy5pR">
@@ -454,12 +448,6 @@
     <ref role="1XX52x" to="1o5n:26DSjBDy5pL" resolve="strValue" />
     <node concept="PMmxH" id="26DSjBDy5pT" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <node concept="Veino" id="5X829TyclY4" role="3F10Kt">
-        <property role="Vb096" value="green" />
-        <node concept="1iSF2X" id="6cRXBRmtWvg" role="VblUZ">
-          <property role="1iTho6" value="66FFFF" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="26DSjBDy5_p">
@@ -467,12 +455,6 @@
     <ref role="1XX52x" to="1o5n:26DSjBDy5_j" resolve="boolValue" />
     <node concept="PMmxH" id="26DSjBDy5_r" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <node concept="Veino" id="5X829TyclP_" role="3F10Kt">
-        <property role="Vb096" value="green" />
-        <node concept="1iSF2X" id="6cRXBRmtWs4" role="VblUZ">
-          <property role="1iTho6" value="66FFFF" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6dXtnCWkK4l">
