@@ -14,6 +14,7 @@
       <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -245,14 +246,10 @@
   <node concept="24kQdi" id="6sIGfUjveJ8">
     <ref role="1XX52x" to="e8rz:6sIGfUjve0W" resolve="ConceptMapping" />
     <node concept="3EZMnI" id="6sIGfUjveJa" role="2wV5jI">
-      <node concept="1iCGBv" id="6sIGfUjveJk" role="3EZMnx">
-        <ref role="1NtTu8" to="e8rz:6sIGfUjve12" />
-        <node concept="1sVBvm" id="6sIGfUjveJm" role="1sWHZn">
-          <node concept="3F0A7n" id="6sIGfUjveJw" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
+      <node concept="3F2HdR" id="7ZeQXjOLGcj" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="e8rz:7ZeQXjOLEig" />
+        <node concept="2iRfu4" id="7ZeQXjOLGcl" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="6sIGfUjveJC" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -325,6 +322,18 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7ZeQXjOLHZO">
+    <ref role="1XX52x" to="e8rz:7ZeQXjOLCRP" resolve="RefToTransfMet" />
+    <node concept="1iCGBv" id="7ZeQXjOLIvV" role="2wV5jI">
+      <ref role="1NtTu8" to="e8rz:7ZeQXjOLE3a" />
+      <node concept="1sVBvm" id="7ZeQXjOLIvX" role="1sWHZn">
+        <node concept="3F0A7n" id="7ZeQXjOLIw4" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>

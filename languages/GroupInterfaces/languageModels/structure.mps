@@ -13,6 +13,7 @@
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
     <import index="tp33" ref="r:00000000-0000-4000-0000-011c89590323(jetbrains.mps.lang.script.structure)" />
+    <import index="anrw" ref="r:f7f50153-a977-4fee-b5c8-7e4385be5a22(CodeGeneration.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
@@ -31,6 +32,7 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
@@ -50,11 +52,22 @@
   <node concept="1TIwiD" id="4Gz6IvJaKb6">
     <property role="TrG5h" value="MethodSignature" />
     <ref role="1TJDcQ" to="1o5n:7MhXM5kjFTb" resolve="Method" />
+    <node concept="1TJgyj" id="4VnbJ42EV6i" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="defferedMet" />
+      <ref role="20lvS9" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
+    </node>
     <node concept="1TJgyj" id="6YtJRaiMRl8" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <ref role="20ksaX" to="tpee:fzclF7Z" />
       <ref role="20lvS9" node="6YtJRaiMRlj" resolve="StatementListSignature" />
+    </node>
+    <node concept="1TJgyj" id="7ZeQXjOOD9_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="preConditionBody" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
     </node>
   </node>
   <node concept="1TIwiD" id="6YtJRaiMRlj">

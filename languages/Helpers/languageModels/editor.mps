@@ -40,9 +40,6 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
-      <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
-        <property id="1221209241505" name="value" index="1lJzqX" />
-      </concept>
       <concept id="1081293058843" name="jetbrains.mps.lang.editor.structure.CellKeyMapDeclaration" flags="ig" index="325Ffw">
         <reference id="1139445935125" name="applicableConcept" index="1chiOs" />
         <child id="1136930944870" name="item" index="2QnnpI" />
@@ -161,7 +158,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="4L1k0SoaiFk" role="3EZMnx">
-          <property role="3F0ifm" value="operation" />
+          <property role="3F0ifm" value="helper" />
         </node>
         <node concept="3F0A7n" id="4L1k0SoaiFy" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -213,9 +210,6 @@
     <node concept="3EZMnI" id="4L1k0SoaqRX" role="2wV5jI">
       <ref role="34QXea" node="4L1k0SoaqYk" resolve="AssignNameHelperMethodsContainer" />
       <node concept="3EZMnI" id="4L1k0SoaqS4" role="3EZMnx">
-        <node concept="VSNWy" id="5X829TydppA" role="3F10Kt">
-          <property role="1lJzqX" value="16" />
-        </node>
         <node concept="VPM3Z" id="4L1k0SoaqS6" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>

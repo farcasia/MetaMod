@@ -119,7 +119,17 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
     </node>
-    <node concept="1TJgyj" id="6sIGfUjve12" role="1TKVEi">
+    <node concept="1TJgyj" id="7ZeQXjOLEig" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="methods" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7ZeQXjOLCRP" resolve="RefToTransfMet" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ZeQXjOLCRP">
+    <property role="TrG5h" value="RefToTransfMet" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7ZeQXjOLE3a" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="method" />
       <property role="20lbJX" value="1" />

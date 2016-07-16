@@ -156,6 +156,9 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="d59fee7e-5b44-4695-b6c9-ea88342965e6" name="LinkingModel">
+      <concept id="9209539995705445877" name="LinkingModel.structure.RefToTransfMet" flags="ng" index="2b25ox">
+        <reference id="9209539995705450698" name="method" index="2b27Gu" />
+      </concept>
       <concept id="7792737264039339432" name="LinkingModel.structure.LinkingModel" flags="ng" index="1J9JzD">
         <reference id="7792737264039340397" name="from" index="1J9JgG" />
         <reference id="7792737264039340407" name="to" index="1J9JgQ" />
@@ -166,9 +169,9 @@
         <child id="7435074642277887086" name="typeMappings" index="3Ok_Mg" />
       </concept>
       <concept id="7435074642277883964" name="LinkingModel.structure.ConceptMapping" flags="ng" index="3Ok_32">
-        <reference id="7435074642277883970" name="method" index="3Ok_2W" />
         <reference id="7435074642277883967" name="to" index="3Ok_31" />
         <reference id="7435074642277883965" name="from" index="3Ok_33" />
+        <child id="9209539995705451664" name="methods" index="2b27X4" />
       </concept>
       <concept id="7435074642277876847" name="LinkingModel.structure.TypeMapping" flags="ng" index="3OkBih">
         <reference id="7435074642277962891" name="to" index="3OkahP" />
@@ -3539,84 +3542,6 @@
       </node>
     </node>
   </node>
-  <node concept="1J9JzD" id="6sIGfUjvaoJ">
-    <property role="TrG5h" value="LinkingModel_InstanceLEEcore_InstanceLE" />
-    <ref role="1J9JgG" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
-    <ref role="1J9JgQ" node="6K_nk43cHk1" resolve="LogicalExpressions" />
-    <ref role="1J9JgV" node="6K_nk43cJrq" resolve="Transf_transf_LogicalExpressionsEcore_LogicalExpressions" />
-    <ref role="3OEYSx" node="6K_nk43lBf0" resolve="InstanceLEEcore" />
-    <ref role="3OEYSe" node="4VnbJ43yuUF" resolve="InstanceLE" />
-    <node concept="3Ok_32" id="6sIGfUjxb_e" role="3Ok_Md">
-      <ref role="3Ok_33" node="6K_nk43oLuv" resolve="1" />
-      <ref role="3Ok_2W" node="6K_nk43lGpz" resolve="Integer2Integer" />
-      <ref role="3Ok_31" node="4VnbJ43yuV2" resolve="1" />
-    </node>
-    <node concept="3Ok_32" id="6sIGfUjxb_j" role="3Ok_Md">
-      <ref role="3Ok_33" node="6K_nk43oLA8" resolve="1Const" />
-      <ref role="3Ok_2W" node="6K_nk43lCVR" resolve="ExpConstantInt2IntPrimitive" />
-      <ref role="3Ok_31" node="4VnbJ43yuUT" resolve="1Const" />
-    </node>
-    <node concept="3Ok_32" id="6sIGfUjxb_y" role="3Ok_Md">
-      <ref role="3Ok_2W" node="6K_nk43lGpz" resolve="Integer2Integer" />
-      <ref role="3Ok_33" node="6K_nk43oLvd" resolve="2" />
-      <ref role="3Ok_31" node="4VnbJ43yuVk" resolve="2" />
-    </node>
-    <node concept="3Ok_32" id="6sIGfUjxb_D" role="3Ok_Md">
-      <ref role="3Ok_2W" node="6K_nk43lCVR" resolve="ExpConstantInt2IntPrimitive" />
-      <ref role="3Ok_33" node="6K_nk43oLGc" resolve="2Const" />
-      <ref role="3Ok_31" node="4VnbJ43yuVb" resolve="2Const" />
-    </node>
-    <node concept="3Ok_32" id="6sIGfUjxb_U" role="3Ok_Md">
-      <ref role="3Ok_33" node="6K_nk43lCIv" resolve="1Minus2Plus2" />
-      <ref role="3Ok_2W" node="6K_nk43cJv_" resolve="ExpIntOp2Binary" />
-      <ref role="3Ok_31" node="4VnbJ43yuVM" resolve="1Minus2Plus2" />
-    </node>
-    <node concept="3Ok_32" id="4VnbJ43yvui" role="3Ok_Md">
-      <ref role="3Ok_2W" node="6K_nk43cJv_" resolve="ExpIntOp2Binary" />
-      <ref role="3Ok_33" node="4VnbJ43vx6o" resolve="1Minus2" />
-      <ref role="3Ok_31" node="4VnbJ43yuUK" resolve="1Minus2" />
-    </node>
-    <node concept="3OkBih" id="6sIGfUjxJOD" role="3Ok_Mg">
-      <ref role="3OkahR" node="6K_nk43cGYP" resolve="IntExp" />
-      <ref role="3OkahP" node="6K_nk43cI1g" resolve="Expression" />
-    </node>
-    <node concept="3OkBih" id="4VnbJ43BLZA" role="3Ok_Mg">
-      <ref role="3OkahR" node="6K_nk43cH2K" resolve="ExpBracket" />
-      <ref role="3OkahP" node="6K_nk43cI1g" resolve="Expression" />
-    </node>
-    <node concept="3OkBih" id="6sIGfUjxJCy" role="3Ok_Mg">
-      <ref role="3OkahR" node="6K_nk43cH55" resolve="ExpMinus" />
-      <ref role="3OkahP" node="6K_nk43cIcF" resolve="ExpMinus" />
-    </node>
-    <node concept="3OkBih" id="6sIGfUjxJNP" role="3Ok_Mg">
-      <ref role="3OkahR" node="6K_nk43cH7H" resolve="ExpPlus" />
-      <ref role="3OkahP" node="6K_nk43cIg6" resolve="ExpPlus" />
-    </node>
-    <node concept="3OkBih" id="6sIGfUjxKaL" role="3Ok_Mg">
-      <ref role="3OkahR" node="6K_nk43cH0Z" resolve="ExpIntOp" />
-      <ref role="3OkahP" node="6K_nk43cI7D" resolve="Binary" />
-    </node>
-    <node concept="3OkBih" id="6sIGfUjxKm9" role="3Ok_Mg">
-      <ref role="3OkahR" node="6K_nk43cHa1" resolve="ExpConstantInt" />
-      <ref role="3OkahP" node="6K_nk43cIp1" resolve="IntPrimitive" />
-    </node>
-    <node concept="3OkBih" id="6sIGfUjxKGn" role="3Ok_Mg">
-      <ref role="3OkahR" node="6K_nk43cHf6" resolve="Integer" />
-      <ref role="3OkahP" node="6K_nk43cItu" resolve="Integer" />
-    </node>
-    <node concept="3OkBih" id="6sIGfUjxL2A" role="3Ok_Mg">
-      <ref role="3OkahR" node="6K_nk43cGYP" resolve="IntExp" />
-      <ref role="3OkahP" node="6K_nk43cI8M" resolve="Unary" />
-    </node>
-    <node concept="3OkBih" id="6sIGfUjxLe9" role="3Ok_Mg">
-      <ref role="3OkahR" node="6K_nk43cH0Z" resolve="ExpIntOp" />
-      <ref role="3OkahP" node="6K_nk43cI9W" resolve="Add" />
-    </node>
-    <node concept="3OkBih" id="6sIGfUjxLpG" role="3Ok_Mg">
-      <ref role="3OkahR" node="6K_nk43cH0Z" resolve="ExpIntOp" />
-      <ref role="3OkahP" node="6K_nk43cIb4" resolve="Minus" />
-    </node>
-  </node>
   <node concept="1GnNiK" id="4VnbJ42rjY8">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="CodeGen_Evaluator_LogicalExpressions" />
@@ -4824,6 +4749,108 @@
       <node concept="2oAaXF" id="4VnbJ43yuWE" role="2oAawB">
         <ref role="3aaZtz" node="4VnbJ43yuVb" resolve="2Const" />
       </node>
+    </node>
+  </node>
+  <node concept="1J9JzD" id="6sIGfUjvaoJ">
+    <property role="TrG5h" value="LinkingModel_InstanceLEEcore_InstanceLE" />
+    <ref role="1J9JgQ" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+    <ref role="3OEYSe" node="4VnbJ43yuUF" resolve="InstanceLE" />
+    <ref role="1J9JgG" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+    <ref role="3OEYSx" node="6K_nk43lBf0" resolve="InstanceLEEcore" />
+    <ref role="1J9JgV" node="6K_nk43cJrq" resolve="Transf_transf_LogicalExpressionsEcore_LogicalExpressions" />
+    <node concept="3Ok_32" id="7ZeQXjOMcUl" role="3Ok_Md">
+      <ref role="3Ok_31" node="4VnbJ43yuV2" resolve="1" />
+      <ref role="3Ok_33" node="6K_nk43oLuv" resolve="1" />
+      <node concept="2b25ox" id="7ZeQXjOMcUm" role="2b27X4">
+        <ref role="2b27Gu" node="6K_nk43lGpz" resolve="Integer2Integer" />
+      </node>
+    </node>
+    <node concept="3Ok_32" id="7ZeQXjOMcTy" role="3Ok_Md">
+      <ref role="3Ok_31" node="4VnbJ43yuVk" resolve="2" />
+      <ref role="3Ok_33" node="6K_nk43oLvd" resolve="2" />
+      <node concept="2b25ox" id="7ZeQXjOMcTX" role="2b27X4">
+        <ref role="2b27Gu" node="6K_nk43lGpz" resolve="Integer2Integer" />
+      </node>
+    </node>
+    <node concept="3Ok_32" id="7ZeQXjOMcUL" role="3Ok_Md">
+      <ref role="3Ok_31" node="4VnbJ43yuUT" resolve="1Const" />
+      <ref role="3Ok_33" node="6K_nk43oLA8" resolve="1Const" />
+      <node concept="2b25ox" id="7ZeQXjOMcW1" role="2b27X4">
+        <ref role="2b27Gu" node="6K_nk43cSsd" resolve="IntExp2Expression" />
+      </node>
+      <node concept="2b25ox" id="7ZeQXjOMcW9" role="2b27X4">
+        <ref role="2b27Gu" node="6K_nk43lCVR" resolve="ExpConstantInt2IntPrimitive" />
+      </node>
+    </node>
+    <node concept="3Ok_32" id="7ZeQXjOMcXa" role="3Ok_Md">
+      <ref role="3Ok_33" node="6K_nk43oLGc" resolve="2Const" />
+      <ref role="3Ok_31" node="4VnbJ43yuVb" resolve="2Const" />
+      <node concept="2b25ox" id="7ZeQXjOMcXb" role="2b27X4">
+        <ref role="2b27Gu" node="6K_nk43cSsd" resolve="IntExp2Expression" />
+      </node>
+      <node concept="2b25ox" id="7ZeQXjOMcXc" role="2b27X4">
+        <ref role="2b27Gu" node="6K_nk43lCVR" resolve="ExpConstantInt2IntPrimitive" />
+      </node>
+    </node>
+    <node concept="3Ok_32" id="7ZeQXjOMcYS" role="3Ok_Md">
+      <ref role="3Ok_31" node="4VnbJ43yuUK" resolve="1Minus2" />
+      <ref role="3Ok_33" node="4VnbJ43vx6o" resolve="1Minus2" />
+      <node concept="2b25ox" id="7ZeQXjOMcYT" role="2b27X4">
+        <ref role="2b27Gu" node="6K_nk43cSsd" resolve="IntExp2Expression" />
+      </node>
+      <node concept="2b25ox" id="7ZeQXjOMd16" role="2b27X4">
+        <ref role="2b27Gu" node="6K_nk43cJv_" resolve="ExpIntOp2Binary" />
+      </node>
+    </node>
+    <node concept="3Ok_32" id="7ZeQXjOMd2p" role="3Ok_Md">
+      <ref role="3Ok_31" node="4VnbJ43yuVM" resolve="1Minus2Plus2" />
+      <ref role="3Ok_33" node="6K_nk43lCIv" resolve="1Minus2Plus2" />
+      <node concept="2b25ox" id="7ZeQXjOMd2q" role="2b27X4">
+        <ref role="2b27Gu" node="6K_nk43cSsd" resolve="IntExp2Expression" />
+      </node>
+      <node concept="2b25ox" id="7ZeQXjOMd2r" role="2b27X4">
+        <ref role="2b27Gu" node="6K_nk43cJv_" resolve="ExpIntOp2Binary" />
+      </node>
+    </node>
+    <node concept="3OkBih" id="6sIGfUjxJOD" role="3Ok_Mg">
+      <ref role="3OkahP" node="6K_nk43cI1g" resolve="Expression" />
+      <ref role="3OkahR" node="6K_nk43cGYP" resolve="IntExp" />
+    </node>
+    <node concept="3OkBih" id="4VnbJ43BLZA" role="3Ok_Mg">
+      <ref role="3OkahP" node="6K_nk43cI1g" resolve="Expression" />
+      <ref role="3OkahR" node="6K_nk43cH2K" resolve="ExpBracket" />
+    </node>
+    <node concept="3OkBih" id="6sIGfUjxJCy" role="3Ok_Mg">
+      <ref role="3OkahR" node="6K_nk43cH55" resolve="ExpMinus" />
+      <ref role="3OkahP" node="6K_nk43cIcF" resolve="ExpMinus" />
+    </node>
+    <node concept="3OkBih" id="6sIGfUjxJNP" role="3Ok_Mg">
+      <ref role="3OkahR" node="6K_nk43cH7H" resolve="ExpPlus" />
+      <ref role="3OkahP" node="6K_nk43cIg6" resolve="ExpPlus" />
+    </node>
+    <node concept="3OkBih" id="6sIGfUjxKaL" role="3Ok_Mg">
+      <ref role="3OkahP" node="6K_nk43cI7D" resolve="Binary" />
+      <ref role="3OkahR" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+    </node>
+    <node concept="3OkBih" id="6sIGfUjxKm9" role="3Ok_Mg">
+      <ref role="3OkahR" node="6K_nk43cHa1" resolve="ExpConstantInt" />
+      <ref role="3OkahP" node="6K_nk43cIp1" resolve="IntPrimitive" />
+    </node>
+    <node concept="3OkBih" id="6sIGfUjxKGn" role="3Ok_Mg">
+      <ref role="3OkahR" node="6K_nk43cHf6" resolve="Integer" />
+      <ref role="3OkahP" node="6K_nk43cItu" resolve="Integer" />
+    </node>
+    <node concept="3OkBih" id="6sIGfUjxL2A" role="3Ok_Mg">
+      <ref role="3OkahP" node="6K_nk43cI8M" resolve="Unary" />
+      <ref role="3OkahR" node="6K_nk43cGYP" resolve="IntExp" />
+    </node>
+    <node concept="3OkBih" id="6sIGfUjxLe9" role="3Ok_Mg">
+      <ref role="3OkahP" node="6K_nk43cI9W" resolve="Add" />
+      <ref role="3OkahR" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+    </node>
+    <node concept="3OkBih" id="6sIGfUjxLpG" role="3Ok_Mg">
+      <ref role="3OkahR" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+      <ref role="3OkahP" node="6K_nk43cIb4" resolve="Minus" />
     </node>
   </node>
 </model>

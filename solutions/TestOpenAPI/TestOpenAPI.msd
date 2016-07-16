@@ -8,6 +8,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">7cbc13ed-9875-4738-a307-276eb1aa9679(GroupInterfaces)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</usedLanguage>
@@ -29,6 +30,7 @@
     <usedLanguage>760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</usedLanguage>
     <usedLanguage>7cbc13ed-9875-4738-a307-276eb1aa9679(GroupInterfaces)</usedLanguage>
     <usedLanguage>8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</usedLanguage>
+    <usedLanguage>47849989-c2df-46a8-aba5-1c5a21bbef1f(Constraints)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>e073aac8-8c71-4c23-be71-86bf7a6df0a2(jetbrains.mps.devkit.bootstrap-languages)</usedDevKit>
@@ -36,6 +38,7 @@
   <languageVersions>
     <language id="b9d9f978-d2e1-4cb8-a4c8-9c34c6661669" fqName="AddMainMethodGenerationLanguage" version="0" />
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" fqName="CodeGeneration" version="0" />
+    <language id="47849989-c2df-46a8-aba5-1c5a21bbef1f" fqName="Constraints" version="0" />
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
     <language id="7cbc13ed-9875-4738-a307-276eb1aa9679" fqName="GroupInterfaces" version="0" />
     <language id="2a4f5bab-551b-46ab-a40c-28d5229d6214" fqName="Helpers" version="0" />

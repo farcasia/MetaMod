@@ -57,6 +57,12 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1148934636683" name="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" flags="nn" index="21POm0" />
@@ -178,6 +184,11 @@
             </node>
           </node>
           <node concept="3clFbH" id="4L1k0Soayu0" role="3cqZAp" />
+          <node concept="3SKdUt" id="7ZeQXjP0Rvj" role="3cqZAp">
+            <node concept="3SKdUq" id="7ZeQXjP0RJb" role="3SKWNk">
+              <property role="3SKdUp" value="Helper methods can exist also in CodeGen containers." />
+            </node>
+          </node>
           <node concept="3cpWs6" id="6RAr73ZeoGv" role="3cqZAp">
             <node concept="2ShNRf" id="6RAr73ZeoWb" role="3cqZAk">
               <node concept="1pGfFk" id="6RAr73Zg61y" role="2ShVmc">
@@ -188,7 +199,7 @@
                       <node concept="2OqwBi" id="6RAr73Zg6Fz" role="2Oq$k0">
                         <node concept="1Q6Npb" id="6RAr73Zg6bR" role="2Oq$k0" />
                         <node concept="3lApI0" id="6RAr73Zg6Xx" role="2OqNvi">
-                          <ref role="3lApI3" to="leqx:4L1k0Soa313" resolve="HelperMethodContainer" />
+                          <ref role="3lApI3" to="1o5n:7MhXM5kl9pK" resolve="MethodsContainer" />
                         </node>
                       </node>
                       <node concept="3zZkjj" id="6RAr73ZgafT" role="2OqNvi">
