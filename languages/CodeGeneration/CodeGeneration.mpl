@@ -24,6 +24,7 @@
         <dependency reexport="false">a00bbccc-dbff-45c7-aa54-02d1f94db9b5(LanguageConfiguration)</dependency>
         <dependency reexport="false">5f140b5b-a1d2-4d50-af71-7c64c190dbb9(CodeGeneration)</dependency>
         <dependency reexport="false">d59fee7e-5b44-4695-b6c9-ea88342965e6(LinkingModel)</dependency>
+        <dependency reexport="false">f97cf326-3077-4de7-b16c-71ef42a55a01(ModelTransformations)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
@@ -82,6 +83,7 @@
     <dependency reexport="false">df9d410f-2ebb-43f7-893a-483a4f085250(jetbrains.mps.smodel.resources)</dependency>
     <dependency reexport="false">a00bbccc-dbff-45c7-aa54-02d1f94db9b5(LanguageConfiguration)</dependency>
     <dependency reexport="false">e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)</dependency>
+    <dependency reexport="false">f97cf326-3077-4de7-b16c-71ef42a55a01(ModelTransformations)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)</usedLanguage>

@@ -46,7 +46,7 @@
     <ref role="1TJDcQ" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
     <node concept="1TJgyj" id="6pihOoLutB2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="contents" />
+      <property role="20kJfa" value="transContents" />
       <ref role="20ksaX" to="1o5n:7MhXM5kl9pL" />
       <ref role="20lvS9" node="6pihOoLutAX" resolve="ITransContainerContents" />
     </node>
