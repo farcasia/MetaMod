@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e79cb897-a96c-4b99-8b25-a9118d456f76(TestOpenAPI.LogicalExpressionsNew)">
+<model ref="r:e79cb897-a96c-4b99-8b25-a9118d456f76(TestOpenAPI.Expressions)">
   <persistence version="9" />
   <languages>
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="-1" />
@@ -295,18 +295,17 @@
   </registry>
   <node concept="1GnNiK" id="4VnbJ42rjY8">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="TrG5h" value="CodeGen_Evaluator_LogicalExpressions" />
-    <ref role="1GHRfG" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+    <property role="TrG5h" value="CodeGen_Evaluator_Expressions" />
+    <ref role="1GHRfG" node="6K_nk43cHk1" resolve="Expressions" />
     <node concept="1vbBhR" id="4VnbJ42rpi0" role="1ukcCD">
       <property role="TrG5h" value="Evaluator" />
     </node>
-    <node concept="CLx5C" id="4VnbJ42rBaI" role="CLm5g" />
     <node concept="1GnNjC" id="4VnbJ42rBd5" role="CLm5g">
       <property role="TrG5h" value="evaluate" />
       <node concept="37vLTG" id="4VnbJ42rBd6" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="4VnbJ42rBd7" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="4VnbJ42rBPJ" role="3clF46">
@@ -503,7 +502,7 @@
       <node concept="37vLTG" id="4VnbJ42rpi3" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="4VnbJ42rpi4" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="3clFbS" id="4VnbJ42rpi5" role="3clF47">
@@ -576,7 +575,7 @@
       <node concept="37vLTG" id="4VnbJ42rUIY" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="4VnbJ42rUIZ" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="4VnbJ42rV2k" role="3clF46">
@@ -613,7 +612,7 @@
       <node concept="37vLTG" id="4VnbJ42rMNU" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="4VnbJ42rMNV" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="4VnbJ42rMXI" role="3clF46">
@@ -672,7 +671,7 @@
       <node concept="37vLTG" id="4VnbJ42rT1Z" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="4VnbJ42rT20" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="4VnbJ42rT21" role="3clF46">
@@ -731,7 +730,7 @@
       <node concept="37vLTG" id="4VnbJ42rBLP" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="4VnbJ42rBLQ" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="4VnbJ42rBNy" role="3clF46">
@@ -776,7 +775,7 @@
       <node concept="37vLTG" id="4VnbJ42rLS5" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="4VnbJ42rLS6" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="4VnbJ42rLS7" role="3clF46">
@@ -816,7 +815,7 @@
       <node concept="37vLTG" id="4VnbJ42rulA" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="4VnbJ42rulB" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="4VnbJ42ruqQ" role="3clF46">
@@ -938,8 +937,8 @@
   </node>
   <node concept="1GnNiK" id="4VnbJ42GQsU">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="TrG5h" value="CodeGen_Evaluator_LogicalExpressionsEcore" />
-    <ref role="1GHRfG" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+    <property role="TrG5h" value="CodeGen_Evaluator_ExpressionsEcore" />
+    <ref role="1GHRfG" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
     <node concept="1vbBpf" id="4VnbJ42GQsV" role="1ukcCD">
       <ref role="1vbBpc" node="4VnbJ42rpi0" resolve="Evaluator" />
     </node>
@@ -948,7 +947,7 @@
       <node concept="37vLTG" id="4VnbJ42GQsY" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="4VnbJ42GQsZ" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="3clFbS" id="4VnbJ42GQt0" role="3clF47">
@@ -956,7 +955,7 @@
           <node concept="3cpWsn" id="4VnbJ43a_Lp" role="1Duv9x">
             <property role="TrG5h" value="intExp" />
             <node concept="CMjq$" id="4VnbJ43a_RB" role="1tU5fm">
-              <ref role="CMYPG" node="6K_nk43cGYP" resolve="IntExp" />
+              <ref role="CMYPG" node="6K_nk43cGYP" resolve="Exp" />
             </node>
           </node>
           <node concept="3clFbS" id="4VnbJ43a_Lq" role="2LFqv$">
@@ -1007,7 +1006,7 @@
             </node>
             <node concept="1lBOk0" id="4VnbJ43aAvt" role="2OqNvi">
               <node concept="CMjq$" id="4VnbJ43aAvv" role="1lB3kv">
-                <ref role="CMYPG" node="6K_nk43cGYP" resolve="IntExp" />
+                <ref role="CMYPG" node="6K_nk43cGYP" resolve="Exp" />
               </node>
             </node>
           </node>
@@ -1015,14 +1014,14 @@
       </node>
       <node concept="3cqZAl" id="4VnbJ42GQtd" role="3clF45" />
     </node>
-    <node concept="CLx5C" id="7ZeQXjOMOjS" role="CLm5g" />
+    <node concept="CLx5C" id="1Phqyz30QEC" role="CLm5g" />
     <node concept="2$21wx" id="7ZeQXjON101" role="CLm5g">
       <property role="TrG5h" value="mainLE" />
       <ref role="1cv9Xz" node="4VnbJ42rpi2" resolve="main" />
       <node concept="37vLTG" id="7ZeQXjON102" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="7ZeQXjON103" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="3XlGCx" id="7ZeQXjON105" role="3clF47" />
@@ -1036,13 +1035,13 @@
       <node concept="37vLTG" id="7ZeQXjON1Oq" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="7ZeQXjON1Or" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="7ZeQXjON1Qu" role="3clF46">
         <property role="TrG5h" value="exp" />
         <node concept="CMjq$" id="7ZeQXjON1Qv" role="1tU5fm">
-          <ref role="CMYPG" node="6K_nk43cGYP" resolve="IntExp" />
+          <ref role="CMYPG" node="6K_nk43cGYP" resolve="Exp" />
         </node>
       </node>
       <node concept="3XlGCx" id="7ZeQXjON1Ot" role="3clF47" />
@@ -1058,7 +1057,7 @@
       <node concept="37vLTG" id="7ZeQXjONjTU" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="7ZeQXjONjTV" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="7ZeQXjONjW2" role="3clF46">
@@ -1080,13 +1079,13 @@
       <node concept="37vLTG" id="7ZeQXjOOUJz" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="7ZeQXjOOUJ$" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="7ZeQXjOOUR1" role="3clF46">
         <property role="TrG5h" value="expIntOp" />
         <node concept="CMjq$" id="7ZeQXjOOUR2" role="1tU5fm">
-          <ref role="CMYPG" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+          <ref role="CMYPG" node="6K_nk43cH0Z" resolve="ExpOp" />
         </node>
       </node>
       <node concept="3XlGCx" id="7ZeQXjOOUJA" role="3clF47" />
@@ -1123,13 +1122,13 @@
       <node concept="37vLTG" id="7ZeQXjOOV3L" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="7ZeQXjOOV3M" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="7ZeQXjOOVaG" role="3clF46">
         <property role="TrG5h" value="expIntOp" />
         <node concept="CMjq$" id="7ZeQXjOOVaH" role="1tU5fm">
-          <ref role="CMYPG" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+          <ref role="CMYPG" node="6K_nk43cH0Z" resolve="ExpOp" />
         </node>
       </node>
       <node concept="3XlGCx" id="7ZeQXjOOV3O" role="3clF47" />
@@ -1166,7 +1165,7 @@
       <node concept="37vLTG" id="7ZeQXjONkil" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="7ZeQXjONkim" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="7ZeQXjONklx" role="3clF46">
@@ -1188,7 +1187,7 @@
       <node concept="37vLTG" id="7ZeQXjONkpg" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="7ZeQXjONkph" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="7ZeQXjONkpi" role="3clF46">
@@ -1210,13 +1209,13 @@
       <node concept="37vLTG" id="7ZeQXjONkwi" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="7ZeQXjONkwj" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="7ZeQXjONkxc" role="3clF46">
         <property role="TrG5h" value="exp" />
         <node concept="CMjq$" id="7ZeQXjONkxd" role="1tU5fm">
-          <ref role="CMYPG" node="6K_nk43cGYP" resolve="IntExp" />
+          <ref role="CMYPG" node="6K_nk43cGYP" resolve="Exp" />
         </node>
       </node>
       <node concept="3XlGCx" id="7ZeQXjONkuw" role="3clF47" />
@@ -1233,8 +1232,8 @@
   <node concept="2oAaVg" id="4VnbJ43yuUF">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="TrG5h" value="InstanceLE" />
-    <ref role="19kf5F" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+    <property role="TrG5h" value="InstanceExp" />
+    <ref role="19kf5F" node="6K_nk43cHk1" resolve="Expressions" />
     <node concept="2oAaW5" id="4VnbJ43yuUK" role="2oAaxa">
       <property role="TrG5h" value="1Minus2" />
       <node concept="2oAaXF" id="4VnbJ43yuUL" role="2oAawq">
@@ -1510,12 +1509,12 @@
   <node concept="2oAaVg" id="6K_nk43lBf0">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="TrG5h" value="InstanceLEEcore" />
-    <ref role="19kf5F" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+    <property role="TrG5h" value="InstanceExpEcore" />
+    <ref role="19kf5F" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
     <node concept="2oAaW5" id="6K_nk43lCIv" role="2oAaxa">
       <property role="TrG5h" value="1Minus2Plus2" />
       <node concept="2oAaXF" id="6K_nk43lCJr" role="2oAawq">
-        <ref role="3aaZtz" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+        <ref role="3aaZtz" node="6K_nk43cH0Z" resolve="ExpOp" />
       </node>
     </node>
     <node concept="2oAaW5" id="6K_nk43oLA8" role="2oAaxa">
@@ -1557,7 +1556,7 @@
     <node concept="2oAaW5" id="4VnbJ43vx6o" role="2oAaxa">
       <property role="TrG5h" value="1Minus2" />
       <node concept="2oAaXF" id="4VnbJ43vxca" role="2oAawq">
-        <ref role="3aaZtz" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+        <ref role="3aaZtz" node="6K_nk43cH0Z" resolve="ExpOp" />
       </node>
     </node>
     <node concept="2jq5PB" id="6K_nk43oLuX" role="2oAaxa" />
@@ -1671,12 +1670,12 @@
     </node>
   </node>
   <node concept="1J9JzD" id="6sIGfUjvaoJ">
-    <property role="TrG5h" value="LinkingModel_InstanceLEEcore_InstanceLE" />
-    <ref role="3OEYSe" node="4VnbJ43yuUF" resolve="InstanceLE" />
-    <ref role="3OEYSx" node="6K_nk43lBf0" resolve="InstanceLEEcore" />
-    <ref role="1J9JgV" node="6K_nk43cJrq" resolve="Transf_transf_LogicalExpressionsEcore_LogicalExpressions" />
-    <ref role="1J9JgQ" node="6K_nk43cHk1" resolve="LogicalExpressions" />
-    <ref role="1J9JgG" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+    <property role="TrG5h" value="LinkingModel_InstanceExpEcore_InstanceExp" />
+    <ref role="3OEYSe" node="4VnbJ43yuUF" resolve="InstanceExp" />
+    <ref role="3OEYSx" node="6K_nk43lBf0" resolve="InstanceExpEcore" />
+    <ref role="1J9JgV" node="6K_nk43cJrq" resolve="Transf_transf_ExpressionsEcore_Expressions" />
+    <ref role="1J9JgQ" node="6K_nk43cHk1" resolve="Expressions" />
+    <ref role="1J9JgG" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
     <node concept="3Ok_32" id="7ZeQXjOMcUl" role="3Ok_Md">
       <ref role="3Ok_31" node="4VnbJ43yuV2" resolve="1" />
       <ref role="3Ok_33" node="6K_nk43oLuv" resolve="1" />
@@ -1732,7 +1731,7 @@
       </node>
     </node>
     <node concept="3OkBih" id="6sIGfUjxJOD" role="3Ok_Mg">
-      <ref role="3OkahR" node="6K_nk43cGYP" resolve="IntExp" />
+      <ref role="3OkahR" node="6K_nk43cGYP" resolve="Exp" />
       <ref role="3OkahP" node="6K_nk43cI1g" resolve="Expression" />
     </node>
     <node concept="3OkBih" id="4VnbJ43BLZA" role="3Ok_Mg">
@@ -1749,7 +1748,7 @@
     </node>
     <node concept="3OkBih" id="6sIGfUjxKaL" role="3Ok_Mg">
       <ref role="3OkahP" node="6K_nk43cI7D" resolve="Binary" />
-      <ref role="3OkahR" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+      <ref role="3OkahR" node="6K_nk43cH0Z" resolve="ExpOp" />
     </node>
     <node concept="3OkBih" id="6sIGfUjxKm9" role="3Ok_Mg">
       <ref role="3OkahR" node="6K_nk43cHa1" resolve="ExpConstantInt" />
@@ -1760,22 +1759,22 @@
       <ref role="3OkahP" node="6K_nk43cItu" resolve="Integer" />
     </node>
     <node concept="3OkBih" id="6sIGfUjxL2A" role="3Ok_Mg">
-      <ref role="3OkahR" node="6K_nk43cGYP" resolve="IntExp" />
+      <ref role="3OkahR" node="6K_nk43cGYP" resolve="Exp" />
       <ref role="3OkahP" node="6K_nk43cI8M" resolve="Unary" />
     </node>
     <node concept="3OkBih" id="6sIGfUjxLe9" role="3Ok_Mg">
       <ref role="3OkahP" node="6K_nk43cI9W" resolve="Add" />
-      <ref role="3OkahR" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+      <ref role="3OkahR" node="6K_nk43cH0Z" resolve="ExpOp" />
     </node>
     <node concept="3OkBih" id="6sIGfUjxLpG" role="3Ok_Mg">
       <ref role="3OkahP" node="6K_nk43cIb4" resolve="Minus" />
-      <ref role="3OkahR" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+      <ref role="3OkahR" node="6K_nk43cH0Z" resolve="ExpOp" />
     </node>
   </node>
   <node concept="2oAaVg" id="6K_nk43cHk1">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="TrG5h" value="LogicalExpressions" />
+    <property role="TrG5h" value="Expressions" />
     <node concept="2oAaW5" id="6K_nk43cI1g" role="2oAaxa">
       <property role="TrG5h" value="Expression" />
       <node concept="gqqVs" id="4VnbJ43BOv4" role="lGtFl">
@@ -2620,9 +2619,9 @@
   <node concept="2oAaVg" id="6K_nk43cGYM">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="true" />
-    <property role="TrG5h" value="LogicalExpressionsEcore" />
+    <property role="TrG5h" value="ExpressionsEcore" />
     <node concept="2oAaW5" id="6K_nk43cGYP" role="2oAaxa">
-      <property role="TrG5h" value="IntExp" />
+      <property role="TrG5h" value="Exp" />
       <node concept="gqqVs" id="4VnbJ43BMjX" role="lGtFl">
         <property role="gqqTZ" value="553.0" />
         <property role="gqqTW" value="17.00009822845459" />
@@ -2632,7 +2631,7 @@
       </node>
     </node>
     <node concept="2oAaW5" id="6K_nk43cGZQ" role="2oAaxa">
-      <property role="TrG5h" value="IntOp" />
+      <property role="TrG5h" value="Op" />
       <node concept="gqqVs" id="4VnbJ43BMjT" role="lGtFl">
         <property role="gqqTZ" value="515.0" />
         <property role="gqqTW" value="362.0000982284546" />
@@ -2642,7 +2641,7 @@
       </node>
     </node>
     <node concept="2oAaW5" id="6K_nk43cH0Z" role="2oAaxa">
-      <property role="TrG5h" value="ExpIntOp" />
+      <property role="TrG5h" value="ExpOp" />
       <node concept="gqqVs" id="4VnbJ43BMjh" role="lGtFl">
         <property role="gqqTZ" value="461.0" />
         <property role="gqqTW" value="230.0002899169922" />
@@ -2706,10 +2705,10 @@
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6K_nk43cHpP" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="IntExp" />
+        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="Exp" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHpv" role="2oAawD">
-        <ref role="3aaZtz" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+        <ref role="3aaZtz" node="6K_nk43cH0Z" resolve="ExpOp" />
       </node>
       <node concept="2VclpC" id="4VnbJ43BMk0" role="lGtFl">
         <node concept="2VclrF" id="4VnbJ43BMk1" role="2Vcluh">
@@ -2722,7 +2721,7 @@
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6K_nk43cHqY" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="IntExp" />
+        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="Exp" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHsm" role="2oAawD">
         <ref role="3aaZtz" node="6K_nk43cHa1" resolve="ExpConstantInt" />
@@ -2738,7 +2737,7 @@
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6K_nk43cHtu" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="IntExp" />
+        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="Exp" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHx1" role="2oAawD">
         <ref role="3aaZtz" node="6K_nk43cH55" resolve="ExpMinus" />
@@ -2758,7 +2757,7 @@
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6K_nk43cHup" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="IntExp" />
+        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="Exp" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHxo" role="2oAawD">
         <ref role="3aaZtz" node="6K_nk43cH7H" resolve="ExpPlus" />
@@ -2778,7 +2777,7 @@
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6K_nk43cHvn" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="IntExp" />
+        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="Exp" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHxJ" role="2oAawD">
         <ref role="3aaZtz" node="6K_nk43cH2K" resolve="ExpBracket" />
@@ -2796,10 +2795,10 @@
       <property role="2XbFU$" value="1" />
       <property role="TrG5h" value="left" />
       <node concept="2oAaXF" id="6K_nk43cHlw" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="IntExp" />
+        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="Exp" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHkI" role="2oAawD">
-        <ref role="3aaZtz" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+        <ref role="3aaZtz" node="6K_nk43cH0Z" resolve="ExpOp" />
       </node>
       <node concept="2VclpC" id="4VnbJ43BMlw" role="lGtFl">
         <node concept="2VclrF" id="4VnbJ43BMlx" role="2Vcluh">
@@ -2817,10 +2816,10 @@
       <property role="2XbFU$" value="1" />
       <property role="TrG5h" value="right" />
       <node concept="2oAaXF" id="6K_nk43cHmw" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="IntExp" />
+        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="Exp" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHmx" role="2oAawD">
-        <ref role="3aaZtz" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+        <ref role="3aaZtz" node="6K_nk43cH0Z" resolve="ExpOp" />
       </node>
       <node concept="2VclpC" id="4VnbJ43BMlN" role="lGtFl">
         <node concept="2VclrF" id="4VnbJ43BMlO" role="2Vcluh">
@@ -2838,10 +2837,10 @@
       <property role="2XbFU$" value="1" />
       <property role="TrG5h" value="op" />
       <node concept="2oAaXF" id="6K_nk43cHIA" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGZQ" resolve="IntOp" />
+        <ref role="3aaZtz" node="6K_nk43cGZQ" resolve="Op" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHHm" role="2oAawD">
-        <ref role="3aaZtz" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+        <ref role="3aaZtz" node="6K_nk43cH0Z" resolve="ExpOp" />
       </node>
       <node concept="2VclpC" id="4VnbJ43BMm4" role="lGtFl" />
     </node>
@@ -2871,7 +2870,7 @@
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6K_nk43cHVe" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGZQ" resolve="IntOp" />
+        <ref role="3aaZtz" node="6K_nk43cGZQ" resolve="Op" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHUN" role="2oAawD">
         <ref role="3aaZtz" node="6K_nk43cHL5" resolve="MinusOp" />
@@ -2891,7 +2890,7 @@
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="6K_nk43cHWX" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGZQ" resolve="IntOp" />
+        <ref role="3aaZtz" node="6K_nk43cGZQ" resolve="Op" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHZr" role="2oAawD">
         <ref role="3aaZtz" node="6K_nk43cHPl" resolve="PlusOp" />
@@ -2913,7 +2912,7 @@
       <property role="2XbFU$" value="1" />
       <property role="TrG5h" value="sub" />
       <node concept="2oAaXF" id="6K_nk43cH$z" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="IntExp" />
+        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="Exp" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHzM" role="2oAawD">
         <ref role="3aaZtz" node="6K_nk43cH2K" resolve="ExpBracket" />
@@ -2930,7 +2929,7 @@
       <property role="2XbFU$" value="1" />
       <property role="TrG5h" value="sub" />
       <node concept="2oAaXF" id="6K_nk43cH_U" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="IntExp" />
+        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="Exp" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHEN" role="2oAawD">
         <ref role="3aaZtz" node="6K_nk43cH55" resolve="ExpMinus" />
@@ -2951,7 +2950,7 @@
       <property role="2XbFU$" value="1" />
       <property role="TrG5h" value="sub" />
       <node concept="2oAaXF" id="6K_nk43cHBU" role="2oAawB">
-        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="IntExp" />
+        <ref role="3aaZtz" node="6K_nk43cGYP" resolve="Exp" />
       </node>
       <node concept="2oAaXF" id="6K_nk43cHFb" role="2oAawD">
         <ref role="3aaZtz" node="6K_nk43cH7H" resolve="ExpPlus" />
@@ -3606,9 +3605,9 @@
   </node>
   <node concept="1naDz7" id="6K_nk43cJrq">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="TrG5h" value="Transf_transf_LogicalExpressionsEcore_LogicalExpressions" />
-    <ref role="1GHRfG" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
-    <ref role="1nQOZZ" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+    <property role="TrG5h" value="Transf_transf_ExpressionsEcore_Expressions" />
+    <ref role="1GHRfG" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
+    <ref role="1nQOZZ" node="6K_nk43cHk1" resolve="Expressions" />
     <node concept="1vbBhR" id="6K_nk43cJrr" role="1ukcCD">
       <property role="TrG5h" value="transf" />
     </node>
@@ -3618,13 +3617,13 @@
       <node concept="37vLTG" id="6K_nk43dacT" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="6K_nk43dacU" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43dacW" role="3clF46">
         <property role="TrG5h" value="outputGroup" />
         <node concept="1l_8MK" id="6K_nk43dacX" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="3clFbS" id="6K_nk43dacY" role="3clF47">
@@ -3635,7 +3634,7 @@
             </node>
             <node concept="1ui5XH" id="6sIGfUjohYy" role="2OqNvi">
               <node concept="Xl_RD" id="6sIGfUjohYM" role="emeI9">
-                <property role="Xl_RC" value="InstanceLE" />
+                <property role="Xl_RC" value="InstanceExp" />
               </node>
             </node>
           </node>
@@ -3645,7 +3644,7 @@
           <node concept="3cpWsn" id="6K_nk43damA" role="1Duv9x">
             <property role="TrG5h" value="intExp" />
             <node concept="CMjq$" id="6K_nk43dasO" role="1tU5fm">
-              <ref role="CMYPG" node="6K_nk43cGYP" resolve="IntExp" />
+              <ref role="CMYPG" node="6K_nk43cGYP" resolve="Exp" />
             </node>
           </node>
           <node concept="3clFbS" id="6K_nk43damB" role="2LFqv$">
@@ -3670,7 +3669,7 @@
             </node>
             <node concept="1lBOk0" id="6K_nk43daY8" role="2OqNvi">
               <node concept="CMjq$" id="6K_nk43daYa" role="1lB3kv">
-                <ref role="CMYPG" node="6K_nk43cGYP" resolve="IntExp" />
+                <ref role="CMYPG" node="6K_nk43cGYP" resolve="Exp" />
               </node>
             </node>
           </node>
@@ -3684,19 +3683,19 @@
       <node concept="37vLTG" id="6K_nk43cSse" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="6K_nk43cSsf" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43cSsh" role="3clF46">
         <property role="TrG5h" value="outputGroup" />
         <node concept="1l_8MK" id="6K_nk43cSv$" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43cSvE" role="3clF46">
         <property role="TrG5h" value="intExp" />
         <node concept="CMjq$" id="6K_nk43cSvO" role="1tU5fm">
-          <ref role="CMYPG" node="6K_nk43cGYP" resolve="IntExp" />
+          <ref role="CMYPG" node="6K_nk43cGYP" resolve="Exp" />
         </node>
       </node>
       <node concept="3clFbS" id="6K_nk43cSsi" role="3clF47">
@@ -3811,7 +3810,7 @@
               </node>
               <node concept="1lWEKl" id="6sIGfUjj5vQ" role="2OqNvi">
                 <node concept="CMjq$" id="6sIGfUjj5vS" role="1lWEKm">
-                  <ref role="CMYPG" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+                  <ref role="CMYPG" node="6K_nk43cH0Z" resolve="ExpOp" />
                 </node>
               </node>
             </node>
@@ -3831,7 +3830,7 @@
                     </node>
                     <node concept="1fHQjy" id="6sIGfUjj9FE" role="2OqNvi">
                       <node concept="CMjq$" id="6sIGfUjj9FG" role="1fHO_7">
-                        <ref role="CMYPG" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+                        <ref role="CMYPG" node="6K_nk43cH0Z" resolve="ExpOp" />
                       </node>
                     </node>
                   </node>
@@ -3908,13 +3907,13 @@
       <node concept="37vLTG" id="6K_nk43cWzp" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="6K_nk43cWzq" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43cWzs" role="3clF46">
         <property role="TrG5h" value="outputGroup" />
         <node concept="1l_8MK" id="6K_nk43cW_U" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43cWA0" role="3clF46">
@@ -4050,13 +4049,13 @@
       <node concept="37vLTG" id="6K_nk43d0aZ" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="6K_nk43d0b0" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43d0b2" role="3clF46">
         <property role="TrG5h" value="outputGroup" />
         <node concept="1l_8MK" id="6K_nk43d0eF" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43d0eL" role="3clF46">
@@ -4193,13 +4192,13 @@
       <node concept="37vLTG" id="6K_nk43d0CK" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="6K_nk43d0CL" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43d0CN" role="3clF46">
         <property role="TrG5h" value="outputGroup" />
         <node concept="1l_8MK" id="6K_nk43d0Ho" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43d0Hu" role="3clF46">
@@ -4243,19 +4242,19 @@
       <node concept="37vLTG" id="6K_nk43cJvA" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="6K_nk43cJvB" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43cJvD" role="3clF46">
         <property role="TrG5h" value="outputGroup" />
         <node concept="1l_8MK" id="6K_nk43cO4M" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43cO4U" role="3clF46">
         <property role="TrG5h" value="expIntOp" />
         <node concept="CMjq$" id="6K_nk43cO54" role="1tU5fm">
-          <ref role="CMYPG" node="6K_nk43cH0Z" resolve="ExpIntOp" />
+          <ref role="CMYPG" node="6K_nk43cH0Z" resolve="ExpOp" />
         </node>
       </node>
       <node concept="3clFbS" id="6K_nk43cJvE" role="3clF47">
@@ -4276,7 +4275,7 @@
           <node concept="3cpWsn" id="6K_nk43cOoY" role="3cpWs9">
             <property role="TrG5h" value="operator" />
             <node concept="CMjq$" id="6K_nk43cOoT" role="1tU5fm">
-              <ref role="CMYPG" node="6K_nk43cGZQ" resolve="IntOp" />
+              <ref role="CMYPG" node="6K_nk43cGZQ" resolve="Op" />
             </node>
             <node concept="2OqwBi" id="6K_nk43cPdg" role="33vP2m">
               <node concept="2OqwBi" id="6K_nk43cOr$" role="2Oq$k0">
@@ -4525,13 +4524,13 @@
       <node concept="37vLTG" id="6K_nk43lCVS" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="6K_nk43lCVT" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43lCVV" role="3clF46">
         <property role="TrG5h" value="outputGroup" />
         <node concept="1l_8MK" id="6K_nk43lCVW" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43lD9U" role="3clF46">
@@ -4666,13 +4665,13 @@
       <node concept="37vLTG" id="6K_nk43lGp$" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="6K_nk43lGp_" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="LogicalExpressionsEcore" />
+          <ref role="1l_bkj" node="6K_nk43cGYM" resolve="ExpressionsEcore" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43lGpB" role="3clF46">
         <property role="TrG5h" value="outputGroup" />
         <node concept="1l_8MK" id="6K_nk43lGpC" role="1tU5fm">
-          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="LogicalExpressions" />
+          <ref role="1l_bkj" node="6K_nk43cHk1" resolve="Expressions" />
         </node>
       </node>
       <node concept="37vLTG" id="6K_nk43lGwe" role="3clF46">
