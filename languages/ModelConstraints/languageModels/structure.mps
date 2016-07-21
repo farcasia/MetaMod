@@ -59,6 +59,12 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="21UhnxnHhOW" resolve="ListOfIndexToTransf" />
     </node>
+    <node concept="1TJgyj" id="7ZeQXjOOD9_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="preConditionBody" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
+    </node>
     <node concept="PrWs8" id="48Ebtxmlpja" role="PzmwI">
       <ref role="PrY4T" node="48EbtxmlfXk" resolve="IMethodsContainerContents" />
     </node>
@@ -469,7 +475,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="21UhnxnHhOX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="indexToTransformations" />
+      <property role="20kJfa" value="indexesToTransformations" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="21UhnxnHeMn" resolve="IndexToTransformation" />
     </node>

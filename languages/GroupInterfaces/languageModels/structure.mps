@@ -32,7 +32,6 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
-        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
@@ -62,12 +61,6 @@
       <property role="20kJfa" value="body" />
       <ref role="20ksaX" to="tpee:fzclF7Z" />
       <ref role="20lvS9" node="6YtJRaiMRlj" resolve="StatementListSignature" />
-    </node>
-    <node concept="1TJgyj" id="7ZeQXjOOD9_" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="preConditionBody" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
     </node>
   </node>
   <node concept="1TIwiD" id="6YtJRaiMRlj">

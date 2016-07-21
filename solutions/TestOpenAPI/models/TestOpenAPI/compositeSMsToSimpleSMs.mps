@@ -166,7 +166,9 @@
         <child id="7169015349702231151" name="facet" index="1vbB4l" />
       </concept>
       <concept id="5319102428749892554" name="CodeGeneration.structure.CodeGenMethodsContainer" flags="ng" index="1GnNiK" />
-      <concept id="5319102428749892498" name="CodeGeneration.structure.CodeGenMethod" flags="ng" index="1GnNjC" />
+      <concept id="5319102428749892498" name="CodeGeneration.structure.CodeGenMethod" flags="ng" index="1GnNjC">
+        <reference id="5681061067617972626" name="delegatedMet" index="1cv9Xz" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -326,14 +328,8 @@
         <reference id="2340259339543466793" name="metTransf" index="1RJhph" />
       </concept>
       <concept id="2340259339542273340" name="GenericGroupMethods.structure.ListOfIndexToTransf" flags="ng" index="1RNPx4">
-        <child id="2340259339542273341" name="indexToTransformations" index="1RNPx5" />
+        <child id="2340259339542273341" name="indexesToTransformations" index="1RNPx5" />
       </concept>
-    </language>
-    <language id="7cbc13ed-9875-4738-a307-276eb1aa9679" name="GroupInterfaces">
-      <concept id="5414200760481809094" name="GroupInterfaces.structure.MethodSignature" flags="ng" index="2$21wx">
-        <reference id="5681061067617972626" name="defferedMet" index="1cv9Xz" />
-      </concept>
-      <concept id="8042795008363558227" name="GroupInterfaces.structure.StatementListSignature" flags="ig" index="3XlGCx" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -2723,8 +2719,8 @@
   </node>
   <node concept="1vbSxi" id="7ZeQXjP1BoC">
     <property role="1vYpmj" value="CodeGen" />
-    <node concept="1vbBpf" id="1Phqyz49Q5r" role="1vbB4l">
-      <ref role="1vbBpc" node="7ZeQXjP0lWf" resolve="transfCompSM2SM" />
+    <node concept="1vbBpf" id="21UhnxnZcUE" role="1vbB4l">
+      <ref role="1vbBpc" node="7ZeQXjP0j_t" resolve="ModelChecking" />
     </node>
   </node>
   <node concept="2oAaVg" id="7ZeQXjOQJna">
@@ -3417,82 +3413,103 @@
     <node concept="1vbBpf" id="21UhnxnIrjB" role="1ukcCD">
       <ref role="1vbBpc" node="7ZeQXjP0j_t" resolve="ModelChecking" />
     </node>
-    <node concept="2$21wx" id="21UhnxnJHdr" role="CLm5g">
-      <property role="1cvb0n" value="true" />
+    <node concept="1GnNjC" id="21Uhnxo1HqW" role="CLm5g">
       <property role="TrG5h" value="checkPropertyX" />
-      <ref role="1cv9Xz" node="7ZeQXjP0j_v" resolve="checkPropertyX" />
-      <node concept="37vLTG" id="21UhnxnJHds" role="3clF46">
+      <property role="1cvb0n" value="true" />
+      <ref role="1cv9Xz" node="21Uhnxo1HqW" resolve="checkPropertyX" />
+      <node concept="37vLTG" id="21Uhnxo1HrK" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
-        <node concept="1l_8MK" id="21UhnxnJHdt" role="1tU5fm">
+        <node concept="1l_8MK" id="21Uhnxo1HrL" role="1tU5fm">
           <ref role="1l_bkj" node="7ZeQXjOQJQ5" resolve="CompositeStateMachines" />
         </node>
       </node>
-      <node concept="37vLTG" id="21UhnxnLOhS" role="3clF46">
+      <node concept="37vLTG" id="21Uhnxo1HrY" role="3clF46">
         <property role="TrG5h" value="simpleState" />
-        <node concept="CMjq$" id="21UhnxnLOi0" role="1tU5fm">
+        <node concept="CMjq$" id="21Uhnxo1HrZ" role="1tU5fm">
           <ref role="CMYPG" node="7ZeQXjOQJWD" resolve="SimpleState" />
         </node>
       </node>
-      <node concept="3XlGCx" id="21UhnxnJHdv" role="3clF47" />
-      <node concept="10P_77" id="21UhnxnLOis" role="3clF45" />
-      <node concept="1RNPx4" id="21UhnxnMFjX" role="1RNXnZ">
-        <node concept="1RNEBJ" id="21UhnxnMFjZ" role="1RNPx5">
+      <node concept="3clFbS" id="21Uhnxo1HqZ" role="3clF47">
+        <node concept="3cpWs6" id="21Uhnxo1Hsb" role="3cqZAp">
+          <node concept="3clFbT" id="21Uhnxo1Hsm" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="21Uhnxo1Hs8" role="3clF45" />
+      <node concept="1RNPx4" id="21Uhnxo1HsN" role="1RNXnZ">
+        <node concept="1RNEBJ" id="21Uhnxo1HsY" role="1RNPx5">
           <property role="1RNFke" value="1" />
           <ref role="1RJhph" node="7ZeQXjP0rGp" resolve="SimpleState2State" />
         </node>
       </node>
     </node>
     <node concept="CLx5C" id="21UhnxnLOiv" role="CLm5g" />
-    <node concept="2$21wx" id="21UhnxnLOiM" role="CLm5g">
+    <node concept="1GnNjC" id="21Uhnxo1Igt" role="CLm5g">
       <property role="TrG5h" value="modelCheckSM" />
       <property role="1cvb0n" value="true" />
       <ref role="1cv9Xz" node="7ZeQXjP0jTp" resolve="modelCheckSM" />
-      <node concept="37vLTG" id="21UhnxnLOiN" role="3clF46">
+      <node concept="37vLTG" id="21Uhnxo1Igu" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
-        <node concept="1l_8MK" id="21UhnxnLOiO" role="1tU5fm">
+        <node concept="1l_8MK" id="21Uhnxo1Igv" role="1tU5fm">
           <ref role="1l_bkj" node="7ZeQXjOQJQ5" resolve="CompositeStateMachines" />
         </node>
       </node>
-      <node concept="37vLTG" id="21UhnxnLO_s" role="3clF46">
+      <node concept="37vLTG" id="21Uhnxo1IhM" role="3clF46">
         <property role="TrG5h" value="stateMachine" />
-        <node concept="CMjq$" id="21UhnxnLO_$" role="1tU5fm">
+        <node concept="CMjq$" id="21Uhnxo1IhU" role="1tU5fm">
           <ref role="CMYPG" node="7ZeQXjOQJS4" resolve="StateMachine" />
         </node>
       </node>
-      <node concept="3XlGCx" id="21UhnxnLOiQ" role="3clF47" />
-      <node concept="10P_77" id="21UhnxnLOA2" role="3clF45" />
-      <node concept="1RNPx4" id="21UhnxnMFAr" role="1RNXnZ">
-        <node concept="1RNEBJ" id="21UhnxnMFAt" role="1RNPx5">
+      <node concept="3clFbS" id="21Uhnxo1Igw" role="3clF47">
+        <node concept="3cpWs6" id="21Uhnxo1Iix" role="3cqZAp">
+          <node concept="3clFbT" id="21Uhnxo1IiI" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="21Uhnxo1Iiu" role="3clF45" />
+      <node concept="1RNPx4" id="21Uhnxo1Ik3" role="1RNXnZ">
+        <node concept="1RNEBJ" id="21Uhnxo1Ike" role="1RNPx5">
           <property role="1RNFke" value="1" />
           <ref role="1RJhph" node="7ZeQXjP0lWY" resolve="StateMachine2StateMachine" />
         </node>
       </node>
     </node>
-    <node concept="CLx5C" id="21UhnxnLOSe" role="CLm5g" />
-    <node concept="2$21wx" id="21UhnxnLOSL" role="CLm5g">
-      <property role="1cvb0n" value="true" />
+    <node concept="CLx5C" id="21Uhnxo1Iha" role="CLm5g" />
+    <node concept="1GnNjC" id="21Uhnxo1ICA" role="CLm5g">
       <property role="TrG5h" value="main" />
-      <ref role="1cv9Xz" node="7ZeQXjP0k8_" resolve="main" />
-      <node concept="37vLTG" id="21UhnxnLOSM" role="3clF46">
+      <property role="1cvb0n" value="false" />
+      <node concept="37vLTG" id="21Uhnxo1ICB" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
-        <node concept="1l_8MK" id="21UhnxnLOSN" role="1tU5fm">
+        <node concept="1l_8MK" id="21Uhnxo1ICC" role="1tU5fm">
           <ref role="1l_bkj" node="7ZeQXjOQJQ5" resolve="CompositeStateMachines" />
         </node>
       </node>
-      <node concept="37vLTG" id="21UhnxnLOTs" role="3clF46">
-        <property role="TrG5h" value="stateMachine" />
-        <node concept="CMjq$" id="21UhnxnLOT$" role="1tU5fm">
-          <ref role="CMYPG" node="7ZeQXjOQJS4" resolve="StateMachine" />
+      <node concept="3clFbS" id="21Uhnxo1ICD" role="3clF47">
+        <node concept="3clFbF" id="21Uhnxo3iEq" role="3cqZAp">
+          <node concept="3otQA" id="21Uhnxo3iEp" role="3clFbG">
+            <ref role="37wK5l" node="21Uhnxo1Igt" resolve="modelCheckSM" />
+            <node concept="37vLTw" id="21Uhnxo3iEy" role="37wK5m">
+              <ref role="3cqZAo" node="21Uhnxo1ICB" resolve="inputGroup" />
+            </node>
+            <node concept="2OqwBi" id="21Uhnxo3jyW" role="37wK5m">
+              <node concept="2OqwBi" id="21Uhnxo3iHJ" role="2Oq$k0">
+                <node concept="37vLTw" id="21Uhnxo3iHf" role="2Oq$k0">
+                  <ref role="3cqZAo" node="21Uhnxo1ICB" resolve="inputGroup" />
+                </node>
+                <node concept="1lBOk0" id="21Uhnxo3iVr" role="2OqNvi">
+                  <node concept="CMjq$" id="21Uhnxo3iVt" role="1lB3kv">
+                    <ref role="CMYPG" node="7ZeQXjOQJS4" resolve="StateMachine" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="21Uhnxo3ksZ" role="2OqNvi" />
+            </node>
+          </node>
         </node>
       </node>
-      <node concept="3XlGCx" id="21UhnxnLOSP" role="3clF47" />
-      <node concept="3cqZAl" id="21UhnxnLOTT" role="3clF45" />
-      <node concept="1RNPx4" id="21UhnxnMFAv" role="1RNXnZ">
-        <node concept="1RNEBJ" id="21UhnxnMFAx" role="1RNPx5">
-          <property role="1RNFke" value="1" />
-          <ref role="1RJhph" node="7ZeQXjP0lWY" resolve="StateMachine2StateMachine" />
-        </node>
-      </node>
+      <node concept="3cqZAl" id="21Uhnxo1IDp" role="3clF45" />
     </node>
   </node>
 </model>

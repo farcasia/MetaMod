@@ -10,7 +10,6 @@
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
-    <import index="anrw" ref="r:f7f50153-a977-4fee-b5c8-7e4385be5a22(CodeGeneration.structure)" implicit="true" />
     <import index="xxun" ref="r:6d9c017b-f042-47bc-8385-20fba6d818a3(GroupInterfaces.structure)" implicit="true" />
   </imports>
   <registry>
@@ -108,13 +107,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
-        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
-      </concept>
-      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
-      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
-        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
-      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -241,7 +233,7 @@
           <property role="3F0ifm" value="{" />
         </node>
         <node concept="3F1sOY" id="7ZeQXjOO92H" role="3EZMnx">
-          <ref role="1NtTu8" to="xxun:7ZeQXjOOD9_" />
+          <ref role="1NtTu8" to="1o5n:7ZeQXjOOD9_" />
         </node>
         <node concept="3F0ifn" id="7ZeQXjOO8QF" role="3EZMnx">
           <property role="3F0ifm" value="}" />
@@ -250,15 +242,10 @@
         <node concept="pkWqt" id="7ZeQXjOO8pd" role="pqm2j">
           <node concept="3clFbS" id="7ZeQXjOO8pe" role="2VODD2">
             <node concept="3clFbF" id="7ZeQXjOO8us" role="3cqZAp">
-              <node concept="2OqwBi" id="7ZeQXjOO8ut" role="3clFbG">
-                <node concept="2OqwBi" id="7ZeQXjOO8uu" role="2Oq$k0">
-                  <node concept="pncrf" id="7ZeQXjOO8uv" role="2Oq$k0" />
-                  <node concept="2Rxl7S" id="7ZeQXjOO8uw" role="2OqNvi" />
-                </node>
-                <node concept="1mIQ4w" id="7ZeQXjOO8ux" role="2OqNvi">
-                  <node concept="chp4Y" id="7ZeQXjOO8uy" role="cj9EA">
-                    <ref role="cht4Q" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
-                  </node>
+              <node concept="2OqwBi" id="21Uhnxo0ZnZ" role="3clFbG">
+                <node concept="pncrf" id="21Uhnxo0Zbm" role="2Oq$k0" />
+                <node concept="3TrcHB" id="21Uhnxo10Uo" role="2OqNvi">
+                  <ref role="3TsBF5" to="1o5n:4VnbJ42ETVA" resolve="showDelegate" />
                 </node>
               </node>
             </node>
