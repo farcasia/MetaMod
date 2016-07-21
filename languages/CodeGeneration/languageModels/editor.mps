@@ -179,7 +179,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="4VnbJ42EY6T" role="3EZMnx">
-          <property role="3F0ifm" value="@defer" />
+          <property role="3F0ifm" value="@delegate" />
         </node>
         <node concept="2iRfu4" id="4VnbJ42EY6U" role="2iSdaV" />
         <node concept="1iCGBv" id="4VnbJ42EY6V" role="3EZMnx">
