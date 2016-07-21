@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:20efe26b-b5dc-4796-9546-d9f51f83f6c6(CodeGeneration.intentions)">
+<model ref="r:e0556978-e64d-4682-af66-9eed4a7fcc38(GenericGroupMethods.intentions)">
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="anrw" ref="r:f7f50153-a977-4fee-b5c8-7e4385be5a22(CodeGeneration.structure)" implicit="true" />
+    <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -58,35 +58,35 @@
       </concept>
     </language>
   </registry>
-  <node concept="2S6QgY" id="6K_nk43g_$M">
-    <property role="TrG5h" value="ToggleShowOverride" />
+  <node concept="2S6QgY" id="4VnbJ42F5jh">
+    <property role="TrG5h" value="ToggleShowDefer" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
-    <node concept="2S6ZIM" id="6K_nk43g_$N" role="2ZfVej">
-      <node concept="3clFbS" id="6K_nk43g_$O" role="2VODD2">
-        <node concept="3clFbF" id="6K_nk43g_NB" role="3cqZAp">
-          <node concept="Xl_RD" id="6K_nk43g_NA" role="3clFbG">
-            <property role="Xl_RC" value="Toggle show override" />
+    <ref role="2ZfgGC" to="1o5n:7MhXM5kjFTb" resolve="Method" />
+    <node concept="2S6ZIM" id="4VnbJ42F5ji" role="2ZfVej">
+      <node concept="3clFbS" id="4VnbJ42F5jj" role="2VODD2">
+        <node concept="3clFbF" id="4VnbJ42F5jk" role="3cqZAp">
+          <node concept="Xl_RD" id="4VnbJ42F5jl" role="3clFbG">
+            <property role="Xl_RC" value="Toggle show delegate" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2Sbjvc" id="6K_nk43g_$P" role="2ZfgGD">
-      <node concept="3clFbS" id="6K_nk43g_$Q" role="2VODD2">
-        <node concept="3clFbF" id="6K_nk43gAl5" role="3cqZAp">
-          <node concept="37vLTI" id="6K_nk43gBWx" role="3clFbG">
-            <node concept="3fqX7Q" id="6K_nk43gC1x" role="37vLTx">
-              <node concept="2OqwBi" id="6K_nk43gCck" role="3fr31v">
-                <node concept="2Sf5sV" id="6K_nk43gC1Y" role="2Oq$k0" />
-                <node concept="3TrcHB" id="6K_nk43gD$m" role="2OqNvi">
-                  <ref role="3TsBF5" to="anrw:6K_nk43gzgr" resolve="showOverride" />
+    <node concept="2Sbjvc" id="4VnbJ42F5jm" role="2ZfgGD">
+      <node concept="3clFbS" id="4VnbJ42F5jn" role="2VODD2">
+        <node concept="3clFbF" id="4VnbJ42F5jo" role="3cqZAp">
+          <node concept="37vLTI" id="4VnbJ42F5jp" role="3clFbG">
+            <node concept="3fqX7Q" id="4VnbJ42F5jq" role="37vLTx">
+              <node concept="2OqwBi" id="4VnbJ42F5jr" role="3fr31v">
+                <node concept="2Sf5sV" id="4VnbJ42F5js" role="2Oq$k0" />
+                <node concept="3TrcHB" id="21UhnxnLv7p" role="2OqNvi">
+                  <ref role="3TsBF5" to="1o5n:4VnbJ42ETVA" resolve="showDelegate" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="6K_nk43gAtg" role="37vLTJ">
-              <node concept="2Sf5sV" id="6K_nk43gAl4" role="2Oq$k0" />
-              <node concept="3TrcHB" id="6K_nk43gBN1" role="2OqNvi">
-                <ref role="3TsBF5" to="anrw:6K_nk43gzgr" resolve="showOverride" />
+            <node concept="2OqwBi" id="4VnbJ42F5ju" role="37vLTJ">
+              <node concept="2Sf5sV" id="4VnbJ42F5jv" role="2Oq$k0" />
+              <node concept="3TrcHB" id="21UhnxnLupq" role="2OqNvi">
+                <ref role="3TsBF5" to="1o5n:4VnbJ42ETVA" resolve="showDelegate" />
               </node>
             </node>
           </node>

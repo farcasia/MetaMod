@@ -187,7 +187,7 @@
       <concept id="5319102428749892498" name="CodeGeneration.structure.CodeGenMethod" flags="ng" index="1GnNjC">
         <property id="5681061067617967846" name="showDefer" index="1cvb0n" />
         <property id="7792737264043439131" name="showOverride" index="1JpQ_q" />
-        <reference id="5681061067617972626" name="defferedMet" index="1cv9Xz" />
+        <reference id="5681061067617972626" name="delegatedMet" index="1cv9Xz" />
       </concept>
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
@@ -285,6 +285,9 @@
       <concept id="8976227254847137350" name="GenericGroupMethods.structure.EmptyLine" flags="ng" index="CLx5C" />
       <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$">
         <reference id="8976227254847281741" name="namedConcept" index="CMYPG" />
+      </concept>
+      <concept id="8976227254846537291" name="GenericGroupMethods.structure.Method" flags="ng" index="CRO_E">
+        <property id="5681061067617967846" name="showDelegate" index="1cvb0o" />
       </concept>
       <concept id="2425717513163134577" name="GenericGroupMethods.structure.strValue" flags="ng" index="388rt8" />
       <concept id="2425717513163102942" name="GenericGroupMethods.structure.intValue" flags="ng" index="38bzJB" />
@@ -4192,6 +4195,7 @@
     <node concept="1GnNjC" id="4VnbJ42EGxr" role="CLm5g">
       <property role="TrG5h" value="mainLE" />
       <property role="1cvb0n" value="true" />
+      <property role="1cvb0o" value="true" />
       <ref role="1cv9Xz" node="4VnbJ42rpi2" resolve="mainLE" />
       <node concept="37vLTG" id="4VnbJ42EGxs" role="3clF46">
         <property role="TrG5h" value="inputGroup" />

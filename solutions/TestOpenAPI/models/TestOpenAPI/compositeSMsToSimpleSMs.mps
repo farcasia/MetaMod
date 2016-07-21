@@ -18,9 +18,18 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="2a4f5bab-551b-46ab-a40c-28d5229d6214" name="Helpers" version="-1" />
     <use id="d59fee7e-5b44-4695-b6c9-ea88342965e6" name="LinkingModel" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
+    <use id="21063c66-85ba-4e98-839b-036445b17ae2" name="de.itemis.mps.editor.layout" version="0" />
+    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
+    <use id="7cbc13ed-9875-4738-a307-276eb1aa9679" name="GroupInterfaces" version="0" />
     <generationPart ref="b9d9f978-d2e1-4cb8-a4c8-9c34c6661669(AddMainMethodGenerationLanguage)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="xxun" ref="r:6d9c017b-f042-47bc-8385-20fba6d818a3(GroupInterfaces.structure)" />
+  </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -262,6 +271,10 @@
       <concept id="8976227254847193477" name="GenericGroupMethods.structure.ConceptType" flags="ig" index="CMjq$">
         <reference id="8976227254847281741" name="namedConcept" index="CMYPG" />
       </concept>
+      <concept id="8976227254846537291" name="GenericGroupMethods.structure.Method" flags="ng" index="CRO_E">
+        <property id="5681061067617967846" name="showDelegate" index="1cvb0n" />
+        <child id="2340259339542302855" name="listTransfs" index="1RNXnZ" />
+      </concept>
       <concept id="2425717513163134577" name="GenericGroupMethods.structure.strValue" flags="ng" index="388rt8" />
       <concept id="2425717513163135315" name="GenericGroupMethods.structure.boolValue" flags="ng" index="388rxE" />
       <concept id="4221107578599573016" name="GenericGroupMethods.structure.AsConceptType" flags="ng" index="1fHQjy">
@@ -308,6 +321,19 @@
       <concept id="7169015349705498819" name="GenericGroupMethods.structure.IAspect" flags="ng" index="1vYpmT">
         <property id="7169015349705498857" name="aspect" index="1vYpmj" />
       </concept>
+      <concept id="2340259339542260887" name="GenericGroupMethods.structure.IndexToTransformation" flags="ng" index="1RNEBJ">
+        <property id="2340259339542261878" name="index" index="1RNFke" />
+        <reference id="2340259339543466793" name="metTransf" index="1RJhph" />
+      </concept>
+      <concept id="2340259339542273340" name="GenericGroupMethods.structure.ListOfIndexToTransf" flags="ng" index="1RNPx4">
+        <child id="2340259339542273341" name="indexToTransformations" index="1RNPx5" />
+      </concept>
+    </language>
+    <language id="7cbc13ed-9875-4738-a307-276eb1aa9679" name="GroupInterfaces">
+      <concept id="5414200760481809094" name="GroupInterfaces.structure.MethodSignature" flags="ng" index="2$21wx">
+        <reference id="5681061067617972626" name="defferedMet" index="1cv9Xz" />
+      </concept>
+      <concept id="8042795008363558227" name="GroupInterfaces.structure.StatementListSignature" flags="ig" index="3XlGCx" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -3381,6 +3407,91 @@
       <ref role="3Ok_31" node="21UhnxnFoZy" resolve="true" />
       <node concept="2b25ox" id="21UhnxnFp0s" role="2b27X4">
         <ref role="2b27Gu" node="7ZeQXjP0BQ_" resolve="Boolean2Boolean" />
+      </node>
+    </node>
+  </node>
+  <node concept="1GnNiK" id="21UhnxnIrjw">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="TrG5h" value="CodeGen_ModelChecking_CompositeStateMachines" />
+    <ref role="1GHRfG" node="7ZeQXjOQJQ5" resolve="CompositeStateMachines" />
+    <node concept="1vbBpf" id="21UhnxnIrjB" role="1ukcCD">
+      <ref role="1vbBpc" node="7ZeQXjP0j_t" resolve="ModelChecking" />
+    </node>
+    <node concept="2$21wx" id="21UhnxnJHdr" role="CLm5g">
+      <property role="1cvb0n" value="true" />
+      <property role="TrG5h" value="checkPropertyX" />
+      <ref role="1cv9Xz" node="7ZeQXjP0j_v" resolve="checkPropertyX" />
+      <node concept="37vLTG" id="21UhnxnJHds" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="21UhnxnJHdt" role="1tU5fm">
+          <ref role="1l_bkj" node="7ZeQXjOQJQ5" resolve="CompositeStateMachines" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="21UhnxnLOhS" role="3clF46">
+        <property role="TrG5h" value="simpleState" />
+        <node concept="CMjq$" id="21UhnxnLOi0" role="1tU5fm">
+          <ref role="CMYPG" node="7ZeQXjOQJWD" resolve="SimpleState" />
+        </node>
+      </node>
+      <node concept="3XlGCx" id="21UhnxnJHdv" role="3clF47" />
+      <node concept="10P_77" id="21UhnxnLOis" role="3clF45" />
+      <node concept="1RNPx4" id="21UhnxnMFjX" role="1RNXnZ">
+        <node concept="1RNEBJ" id="21UhnxnMFjZ" role="1RNPx5">
+          <property role="1RNFke" value="1" />
+          <ref role="1RJhph" node="7ZeQXjP0rGp" resolve="SimpleState2State" />
+        </node>
+      </node>
+    </node>
+    <node concept="CLx5C" id="21UhnxnLOiv" role="CLm5g" />
+    <node concept="2$21wx" id="21UhnxnLOiM" role="CLm5g">
+      <property role="TrG5h" value="modelCheckSM" />
+      <property role="1cvb0n" value="true" />
+      <ref role="1cv9Xz" node="7ZeQXjP0jTp" resolve="modelCheckSM" />
+      <node concept="37vLTG" id="21UhnxnLOiN" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="21UhnxnLOiO" role="1tU5fm">
+          <ref role="1l_bkj" node="7ZeQXjOQJQ5" resolve="CompositeStateMachines" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="21UhnxnLO_s" role="3clF46">
+        <property role="TrG5h" value="stateMachine" />
+        <node concept="CMjq$" id="21UhnxnLO_$" role="1tU5fm">
+          <ref role="CMYPG" node="7ZeQXjOQJS4" resolve="StateMachine" />
+        </node>
+      </node>
+      <node concept="3XlGCx" id="21UhnxnLOiQ" role="3clF47" />
+      <node concept="10P_77" id="21UhnxnLOA2" role="3clF45" />
+      <node concept="1RNPx4" id="21UhnxnMFAr" role="1RNXnZ">
+        <node concept="1RNEBJ" id="21UhnxnMFAt" role="1RNPx5">
+          <property role="1RNFke" value="1" />
+          <ref role="1RJhph" node="7ZeQXjP0lWY" resolve="StateMachine2StateMachine" />
+        </node>
+      </node>
+    </node>
+    <node concept="CLx5C" id="21UhnxnLOSe" role="CLm5g" />
+    <node concept="2$21wx" id="21UhnxnLOSL" role="CLm5g">
+      <property role="1cvb0n" value="true" />
+      <property role="TrG5h" value="main" />
+      <ref role="1cv9Xz" node="7ZeQXjP0k8_" resolve="main" />
+      <node concept="37vLTG" id="21UhnxnLOSM" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="21UhnxnLOSN" role="1tU5fm">
+          <ref role="1l_bkj" node="7ZeQXjOQJQ5" resolve="CompositeStateMachines" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="21UhnxnLOTs" role="3clF46">
+        <property role="TrG5h" value="stateMachine" />
+        <node concept="CMjq$" id="21UhnxnLOT$" role="1tU5fm">
+          <ref role="CMYPG" node="7ZeQXjOQJS4" resolve="StateMachine" />
+        </node>
+      </node>
+      <node concept="3XlGCx" id="21UhnxnLOSP" role="3clF47" />
+      <node concept="3cqZAl" id="21UhnxnLOTT" role="3clF45" />
+      <node concept="1RNPx4" id="21UhnxnMFAv" role="1RNXnZ">
+        <node concept="1RNEBJ" id="21UhnxnMFAx" role="1RNPx5">
+          <property role="1RNFke" value="1" />
+          <ref role="1RJhph" node="7ZeQXjP0lWY" resolve="StateMachine2StateMachine" />
+        </node>
       </node>
     </node>
   </node>

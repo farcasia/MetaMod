@@ -8,6 +8,7 @@
   <imports>
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="y8bh" ref="r:4f23f377-46e9-4e4f-9ac0-1c09502afcac(ModelTransformations.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -48,6 +49,16 @@
   <node concept="1TIwiD" id="7MhXM5kjFTb">
     <property role="TrG5h" value="Method" />
     <ref role="1TJDcQ" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+    <node concept="1TJgyi" id="4VnbJ42ETVA" role="1TKVEl">
+      <property role="TrG5h" value="showDelegate" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="21UhnxnHp27" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="listTransfs" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="21UhnxnHhOW" resolve="ListOfIndexToTransf" />
+    </node>
     <node concept="PrWs8" id="48Ebtxmlpja" role="PzmwI">
       <ref role="PrY4T" node="48EbtxmlfXk" resolve="IMethodsContainerContents" />
     </node>
@@ -435,6 +446,32 @@
       <property role="20kJfa" value="exp" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="21UhnxnHeMn">
+    <property role="TrG5h" value="IndexToTransformation" />
+    <property role="3GE5qa" value="TransformationRelated" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="21UhnxnHf1Q" role="1TKVEl">
+      <property role="TrG5h" value="index" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="21UhnxnLPcD" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="metTransf" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="y8bh:6pihOoLujwQ" resolve="TransformationMethod" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="21UhnxnHhOW">
+    <property role="TrG5h" value="ListOfIndexToTransf" />
+    <property role="3GE5qa" value="TransformationRelated" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="21UhnxnHhOX" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="indexToTransformations" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="21UhnxnHeMn" resolve="IndexToTransformation" />
     </node>
   </node>
 </model>
