@@ -12,6 +12,8 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="y8bh" ref="r:4f23f377-46e9-4e4f-9ac0-1c09502afcac(ModelTransformations.structure)" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
+    <import index="e8rz" ref="r:083b7c65-fc02-4f55-a8f5-1148dd299597(LinkingModel.structure)" />
+    <import index="wz6r" ref="r:395bdffb-840e-4312-80d8-b18c172eee46(RuntimeClasses.runtime)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
@@ -109,7 +111,9 @@
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
-      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -616,7 +620,7 @@
                   <node concept="2OqwBi" id="6K_nk4346hz" role="2Oq$k0">
                     <node concept="2OqwBi" id="6K_nk4345P2" role="2Oq$k0">
                       <node concept="37vLTw" id="6K_nk4345M4" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="group" />
+                        <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="inputGroup" />
                       </node>
                       <node concept="I4A8Y" id="6K_nk434638" role="2OqNvi" />
                     </node>
@@ -669,7 +673,7 @@
             <node concept="2OqwBi" id="6K_nk4359Ku" role="3clFbG">
               <node concept="2OqwBi" id="6K_nk4359jh" role="2Oq$k0">
                 <node concept="37vLTw" id="6K_nk4359cp" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="group" />
+                  <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="inputGroup" />
                 </node>
                 <node concept="I4A8Y" id="6K_nk4359ym" role="2OqNvi" />
               </node>
@@ -685,16 +689,28 @@
             <node concept="1rXfSq" id="6K_nk42Woyd" role="3clFbG">
               <ref role="37wK5l" node="6K_nk42WowE" resolve="mainTransformation" />
               <node concept="37vLTw" id="6K_nk42WoyS" role="37wK5m">
-                <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="group" />
+                <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="inputGroup" />
               </node>
               <node concept="37vLTw" id="6K_nk42WoJI" role="37wK5m">
                 <ref role="3cqZAo" node="6K_nk42Wo$Z" resolve="outputGroup" />
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="21UhnxnwKl3" role="3cqZAp" />
+          <node concept="3clFbF" id="21UhnxnAnv$" role="3cqZAp">
+            <node concept="1rXfSq" id="21UhnxnAnvy" role="3clFbG">
+              <ref role="37wK5l" to="wz6r:21UhnxnAdKr" resolve="createLinkingModel" />
+              <node concept="37vLTw" id="21UhnxnAnAd" role="37wK5m">
+                <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="inputGroup" />
+              </node>
+              <node concept="37vLTw" id="21UhnxnAnDF" role="37wK5m">
+                <ref role="3cqZAo" node="6K_nk42Wo$Z" resolve="outputGroup" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="37vLTG" id="6pihOoLuJ5i" role="3clF46">
-          <property role="TrG5h" value="group" />
+          <property role="TrG5h" value="inputGroup" />
           <node concept="3Tqbb2" id="6K_nk42TKyJ" role="1tU5fm">
             <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
           </node>
@@ -725,6 +741,9 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6K_nk42WovA" role="1B3o_S" />
+      <node concept="3uibUv" id="21UhnxmZF02" role="1zkMxy">
+        <ref role="3uigEE" to="wz6r:45NpebPjv7X" resolve="CodeGen" />
+      </node>
     </node>
   </node>
 </model>
