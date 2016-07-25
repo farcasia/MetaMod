@@ -26,6 +26,7 @@
         <dependency reexport="false">d59fee7e-5b44-4695-b6c9-ea88342965e6(LinkingModel)</dependency>
         <dependency reexport="false">f97cf326-3077-4de7-b16c-71ef42a55a01(ModelTransformations)</dependency>
         <dependency reexport="false">7cbc13ed-9875-4738-a307-276eb1aa9679(GroupInterfaces)</dependency>
+        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
