@@ -590,7 +590,7 @@
           </node>
         </node>
         <node concept="x79VA" id="20nTeIl4Qh3" role="x79VK">
-          <property role="x79VB" value="A new LambdaTerm with lambda applications evalauated." />
+          <property role="x79VB" value="A new LambdaTerm with lambda applications evaluated." />
         </node>
       </node>
       <node concept="37vLTG" id="20nTeIl9CN5" role="3clF46">

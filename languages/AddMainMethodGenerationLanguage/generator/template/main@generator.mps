@@ -14,6 +14,7 @@
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" />
     <import index="e8rz" ref="r:083b7c65-fc02-4f55-a8f5-1148dd299597(LinkingModel.structure)" />
     <import index="wz6r" ref="r:395bdffb-840e-4312-80d8-b18c172eee46(RuntimeClasses.runtime)" />
+    <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
@@ -696,7 +697,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="21UhnxnwKl3" role="3cqZAp" />
           <node concept="3clFbF" id="21UhnxnAnv$" role="3cqZAp">
             <node concept="1rXfSq" id="21UhnxnAnvy" role="3clFbG">
               <ref role="37wK5l" to="wz6r:21UhnxnAdKr" resolve="createLinkingModel" />
