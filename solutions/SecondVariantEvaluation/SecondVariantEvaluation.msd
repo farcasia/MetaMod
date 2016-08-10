@@ -20,11 +20,21 @@
     <usedLanguage>f97cf326-3077-4de7-b16c-71ef42a55a01(ModelTransformations)</usedLanguage>
     <usedLanguage>d59fee7e-5b44-4695-b6c9-ea88342965e6(LinkingModel)</usedLanguage>
     <usedLanguage>b9d9f978-d2e1-4cb8-a4c8-9c34c6661669(AddMainMethodGenerationLanguage)</usedLanguage>
+    <usedLanguage>47849989-c2df-46a8-aba5-1c5a21bbef1f(Constraints)</usedLanguage>
+    <usedLanguage>fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)</usedLanguage>
+    <usedLanguage>7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</usedLanguage>
+    <usedLanguage>c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</usedLanguage>
+    <usedLanguage>af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)</usedLanguage>
+    <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
+    <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
+    <usedLanguage>7cbc13ed-9875-4738-a307-276eb1aa9679(GroupInterfaces)</usedLanguage>
   </usedLanguages>
   <languageVersions>
     <language id="b9d9f978-d2e1-4cb8-a4c8-9c34c6661669" fqName="AddMainMethodGenerationLanguage" version="0" />
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" fqName="CodeGeneration" version="0" />
+    <language id="47849989-c2df-46a8-aba5-1c5a21bbef1f" fqName="Constraints" version="0" />
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
+    <language id="7cbc13ed-9875-4738-a307-276eb1aa9679" fqName="GroupInterfaces" version="0" />
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" fqName="LambdaCalculus" version="0" />
     <language id="d59fee7e-5b44-4695-b6c9-ea88342965e6" fqName="LinkingModel" version="0" />
     <language id="f97cf326-3077-4de7-b16c-71ef42a55a01" fqName="ModelTransformations" version="0" />

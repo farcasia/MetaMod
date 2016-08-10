@@ -39,6 +39,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/ModulesSolution/ModulesSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/PhilipsDSL/PhilipsDSL.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/RuntimeClasses/RuntimeClasses.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/SecondVariantEvaluation/SecondVariantEvaluation.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ShowCaseNBCS/ShowCaseNBCS.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TestForDiagram/TestForDiagram.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TestOpenAPI/TestOpenAPI.msd" folder="" />
