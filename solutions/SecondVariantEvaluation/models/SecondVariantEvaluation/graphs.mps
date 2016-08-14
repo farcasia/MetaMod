@@ -1222,6 +1222,27 @@
           </node>
         </node>
         <node concept="3clFbH" id="38r6edB3kAe" role="3cqZAp" />
+        <node concept="34ab3g" id="38r6edBpfO6" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="38r6edBpg3F" role="34bqiv">
+            <node concept="2OqwBi" id="38r6edBphQN" role="3uHU7w">
+              <node concept="2OqwBi" id="38r6edBpgkr" role="2Oq$k0">
+                <node concept="37vLTw" id="38r6edBpg3Z" role="2Oq$k0">
+                  <ref role="3cqZAo" node="38r6edApaEj" resolve="alreadyTouched" />
+                </node>
+                <node concept="1uHKPH" id="38r6edBph4a" role="2OqNvi" />
+              </node>
+              <node concept="1lWEKl" id="38r6edBpi5X" role="2OqNvi">
+                <node concept="CMjq$" id="38r6edBpi5Z" role="1lWEKm">
+                  <ref role="CMYPG" node="1QHqpFmkyAp" resolve="InitialState" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="38r6edBpfO8" role="3uHU7B">
+              <property role="Xl_RC" value="TouchedNodes first if initial: " />
+            </node>
+          </node>
+        </node>
         <node concept="34ab3g" id="38r6edB3kLq" role="3cqZAp">
           <property role="35gtTG" value="info" />
           <node concept="3cpWs3" id="38r6edB3l26" role="34bqiv">
