@@ -1861,7 +1861,7 @@
   </node>
   <node concept="2oAaVg" id="1gcKwu1Agnc">
     <property role="1ewt2y" value="false" />
-    <property role="3uBway" value="true" />
+    <property role="3uBway" value="false" />
     <property role="3GE5qa" value="StateMachines" />
     <property role="TrG5h" value="SomeStateMachine" />
     <ref role="19kf5F" node="1gcKwu1v3i5" resolve="SimpleStateMachine" />
