@@ -305,7 +305,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="owiSk5g_VH" role="3cqZAp" />
             </node>
             <node concept="3clFbC" id="owiSk5grPz" role="3clFbw">
               <node concept="28GBK8" id="owiSk5gtT0" role="3uHU7w">
@@ -315,6 +314,7 @@
               <node concept="gBGtZ" id="owiSk5i6dF" role="3uHU7B" />
             </node>
           </node>
+          <node concept="3clFbH" id="owiSk5pGNb" role="3cqZAp" />
           <node concept="3cpWs8" id="2TStaYk1POh" role="3cqZAp">
             <node concept="3cpWsn" id="2TStaYjTZMs" role="3cpWs9">
               <property role="TrG5h" value="reachableFacets" />

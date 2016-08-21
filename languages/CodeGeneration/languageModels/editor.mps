@@ -59,6 +59,7 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
@@ -212,6 +213,9 @@
         </node>
         <node concept="3F1sOY" id="21UhnxnJKyu" role="3EZMnx">
           <ref role="1NtTu8" to="1o5n:21UhnxnHp27" />
+          <node concept="3vyZuw" id="owiSk5mURb" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="2iRfu4" id="21UhnxnHpa5" role="2iSdaV" />
         <node concept="pkWqt" id="21UhnxnHpzl" role="pqm2j">
@@ -234,16 +238,13 @@
         <node concept="3F0ifn" id="21Uhnxo11mS" role="3EZMnx">
           <property role="3F0ifm" value="@precondition" />
         </node>
-        <node concept="3F0ifn" id="21Uhnxo1HRi" role="3EZMnx">
-          <property role="3F0ifm" value="{" />
-        </node>
         <node concept="3F1sOY" id="21Uhnxo11vK" role="3EZMnx">
           <property role="39s7Ar" value="true" />
           <property role="1$x2rV" value=" " />
           <ref role="1NtTu8" to="1o5n:7ZeQXjOOD9_" />
-        </node>
-        <node concept="3F0ifn" id="21Uhnxo1I5$" role="3EZMnx">
-          <property role="3F0ifm" value="}" />
+          <node concept="3vyZuw" id="owiSk5nk4l" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="2iRfu4" id="21Uhnxo11mT" role="2iSdaV" />
         <node concept="pkWqt" id="21Uhnxo11vO" role="pqm2j">
