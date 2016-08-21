@@ -65,6 +65,11 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
     </node>
+    <node concept="1TJgyj" id="owiSk52UaK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="delegatedMet" />
+      <ref role="20lvS9" to="tpee:fz7wK6G" resolve="BaseMethodCall" />
+    </node>
     <node concept="PrWs8" id="48Ebtxmlpja" role="PzmwI">
       <ref role="PrY4T" node="48EbtxmlfXk" resolve="IMethodsContainerContents" />
     </node>

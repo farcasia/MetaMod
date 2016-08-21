@@ -187,14 +187,8 @@
           <property role="3F0ifm" value="@delegate" />
         </node>
         <node concept="2iRfu4" id="4VnbJ42EY6U" role="2iSdaV" />
-        <node concept="1iCGBv" id="4VnbJ42EY6V" role="3EZMnx">
-          <ref role="1NtTu8" to="anrw:4VnbJ42EV6i" />
-          <node concept="1sVBvm" id="4VnbJ42EY6W" role="1sWHZn">
-            <node concept="3F0A7n" id="4VnbJ42EY6X" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
+        <node concept="3F1sOY" id="owiSk57I6O" role="3EZMnx">
+          <ref role="1NtTu8" to="anrw:owiSk52UVi" />
         </node>
         <node concept="pkWqt" id="4VnbJ42EY6Y" role="pqm2j">
           <node concept="3clFbS" id="4VnbJ42EY6Z" role="2VODD2">

@@ -56,10 +56,11 @@
       <property role="20kJfa" value="overrideMet" />
       <ref role="20lvS9" node="4BhfRC_zwIi" resolve="CodeGenMethod" />
     </node>
-    <node concept="1TJgyj" id="4VnbJ42EV6i" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
+    <node concept="1TJgyj" id="owiSk52UVi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="delegatedMet" />
-      <ref role="20lvS9" node="4BhfRC_zwIi" resolve="CodeGenMethod" />
+      <ref role="20lvS9" node="4X4Jbdc9m4l" resolve="CodeGenMethodCall" />
+      <ref role="20ksaX" to="1o5n:owiSk52UaK" />
     </node>
   </node>
   <node concept="1TIwiD" id="4BhfRC_zwJa">
