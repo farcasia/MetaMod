@@ -107,6 +107,9 @@
     <node concept="PrWs8" id="6dXtnCXbrVX" role="PzmwI">
       <ref role="PrY4T" node="6dXtnCWxe33" resolve="IAspect" />
     </node>
+    <node concept="PrWs8" id="owiSk5rrKP" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7MhXM5klYp6">
     <property role="TrG5h" value="EmptyLine" />
