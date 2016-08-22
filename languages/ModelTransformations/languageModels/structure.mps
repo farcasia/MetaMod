@@ -78,5 +78,9 @@
     <property role="TrG5h" value="HelperTransfMethod" />
     <ref role="1TJDcQ" node="6pihOoLujwQ" resolve="TransformationMethod" />
   </node>
+  <node concept="1TIwiD" id="owiSk5x6C0">
+    <property role="TrG5h" value="ConversionMethod" />
+    <ref role="1TJDcQ" node="6pihOoLujwQ" resolve="TransformationMethod" />
+  </node>
 </model>
 
