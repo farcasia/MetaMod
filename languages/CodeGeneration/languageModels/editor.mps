@@ -45,9 +45,6 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
-      <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
-        <property id="1221209241505" name="value" index="1lJzqX" />
-      </concept>
       <concept id="1081293058843" name="jetbrains.mps.lang.editor.structure.CellKeyMapDeclaration" flags="ig" index="325Ffw">
         <reference id="1139445935125" name="applicableConcept" index="1chiOs" />
         <child id="1136930944870" name="item" index="2QnnpI" />
@@ -519,9 +516,6 @@
         </node>
         <node concept="3F0ifn" id="2TStaYjY$3d" role="3EZMnx">
           <property role="3F0ifm" value="replace" />
-          <node concept="VSNWy" id="2TStaYjYANN" role="3F10Kt">
-            <property role="1lJzqX" value="16" />
-          </node>
         </node>
         <node concept="1iCGBv" id="2TStaYjY$3E" role="3EZMnx">
           <ref role="1NtTu8" to="anrw:2TStaYjWuV5" />
@@ -540,15 +534,9 @@
         </node>
         <node concept="3F0ifn" id="2TStaYjWwWb" role="3EZMnx">
           <property role="3F0ifm" value="code" />
-          <node concept="VSNWy" id="2TStaYjWwWc" role="3F10Kt">
-            <property role="1lJzqX" value="16" />
-          </node>
         </node>
         <node concept="3F0ifn" id="2TStaYjYB0P" role="3EZMnx">
           <property role="3F0ifm" value="generation" />
-          <node concept="VSNWy" id="2TStaYjYB2E" role="3F10Kt">
-            <property role="1lJzqX" value="16" />
-          </node>
         </node>
         <node concept="3F0A7n" id="2TStaYjWz9b" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

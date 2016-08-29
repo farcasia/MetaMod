@@ -147,9 +147,6 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
-      <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
-        <child id="1145567471833" name="createdType" index="2T96Bj" />
-      </concept>
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
@@ -188,7 +185,6 @@
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
-      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
@@ -679,27 +675,16 @@
           <node concept="3cpWs8" id="2ZU8GAlQCWz" role="3cqZAp">
             <node concept="3cpWsn" id="2ZU8GAlQCW$" role="3cpWs9">
               <property role="TrG5h" value="listOfAccesibleGroups" />
-              <node concept="2ShNRf" id="2ZU8GAlR7lg" role="33vP2m">
-                <node concept="2T8Vx0" id="2ZU8GAlR8Bw" role="2ShVmc">
-                  <node concept="2I9FWS" id="2ZU8GAlR8By" role="2T96Bj">
-                    <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
-                  </node>
+              <node concept="2OqwBi" id="1B$hzDeGZLK" role="33vP2m">
+                <node concept="37vLTw" id="1B$hzDeGZuO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2ZU8GAlQCWr" resolve="forGroup" />
+                </node>
+                <node concept="2qgKlT" id="1B$hzDeHaPq" role="2OqNvi">
+                  <ref role="37wK5l" to="z64h:6pihOoL19Ab" resolve="getAllNamedInnerGroupsPlusSelf" />
                 </node>
               </node>
               <node concept="2I9FWS" id="2ZU8GAlQCWC" role="1tU5fm">
                 <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="2ZU8GAlQNeR" role="3cqZAp">
-            <node concept="2OqwBi" id="2ZU8GAlQOco" role="3clFbG">
-              <node concept="37vLTw" id="2ZU8GAlQNeP" role="2Oq$k0">
-                <ref role="3cqZAo" node="2ZU8GAlQCW$" resolve="listOfAccesibleGroups" />
-              </node>
-              <node concept="TSZUe" id="2ZU8GAlQTtA" role="2OqNvi">
-                <node concept="37vLTw" id="2ZU8GAlQTLY" role="25WWJ7">
-                  <ref role="3cqZAo" node="2ZU8GAlQCWr" resolve="forGroup" />
-                </node>
               </node>
             </node>
           </node>
@@ -711,8 +696,8 @@
               </node>
               <node concept="2OqwBi" id="2ZU8GAlQCWL" role="33vP2m">
                 <node concept="2OqwBi" id="2ZU8GAlQCWM" role="2Oq$k0">
-                  <node concept="2qgKlT" id="2ZU8GAlQUpL" role="2OqNvi">
-                    <ref role="37wK5l" to="93in:3OCrrxNYZ$C" resolve="getReusedFacets" />
+                  <node concept="2qgKlT" id="1B$hzDeJf4M" role="2OqNvi">
+                    <ref role="37wK5l" to="93in:2TStaYk1BnJ" resolve="getAllFacets" />
                   </node>
                   <node concept="2OqwBi" id="2ZU8GAlQCWO" role="2Oq$k0">
                     <node concept="2OqwBi" id="2ZU8GAlQCWP" role="2Oq$k0">
