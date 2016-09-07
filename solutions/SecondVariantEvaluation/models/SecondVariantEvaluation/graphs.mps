@@ -6697,6 +6697,23 @@
       <node concept="3XlGCx" id="4uifaOWAi_N" role="3clF47" />
       <node concept="10P_77" id="4uifaOWAiBe" role="3clF45" />
     </node>
+    <node concept="2$21wx" id="5EZvnkvJI28" role="CLm5g">
+      <property role="TrG5h" value="fanIn" />
+      <node concept="37vLTG" id="5EZvnkvJI29" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="5EZvnkvJI2a" role="1tU5fm">
+          <ref role="1l_bkj" node="1gcKwu1v3i5" resolve="SimpleStateMachine" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5EZvnkvJI34" role="3clF46">
+        <property role="TrG5h" value="state" />
+        <node concept="CMjq$" id="5EZvnkvJLOL" role="1tU5fm">
+          <ref role="CMYPG" node="1gcKwu1v9WR" resolve="State" />
+        </node>
+      </node>
+      <node concept="3XlGCx" id="5EZvnkvJI2c" role="3clF47" />
+      <node concept="10Oyi0" id="5EZvnkvJNcl" role="3clF45" />
+    </node>
   </node>
   <node concept="1naDz7" id="owiSk5xvYT">
     <property role="1vYpmj" value="CodeGen" />
