@@ -272,13 +272,14 @@
           </node>
           <node concept="3clFbJ" id="owiSk5gmF_" role="3cqZAp">
             <node concept="3clFbS" id="owiSk5gmFB" role="3clFbx">
-              <node concept="3clFbF" id="owiSk5gzpY" role="3cqZAp">
-                <node concept="2OqwBi" id="owiSk5fGTV" role="3clFbG">
-                  <node concept="37vLTw" id="owiSk5fFTd" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6YtJRaiPm6m" resolve="listOfAccesibleGroups" />
+              <node concept="3cpWs8" id="6ADyagNjWM6" role="3cqZAp">
+                <node concept="3cpWsn" id="6ADyagNjWM9" role="3cpWs9">
+                  <property role="TrG5h" value="baseGroups" />
+                  <node concept="2I9FWS" id="6ADyagNjWM1" role="1tU5fm">
+                    <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                   </node>
-                  <node concept="X8dFx" id="owiSk5fLZs" role="2OqNvi">
-                    <node concept="2OqwBi" id="owiSk5g9L_" role="25WWJ7">
+                  <node concept="2OqwBi" id="6ADyagNl7PB" role="33vP2m">
+                    <node concept="2OqwBi" id="owiSk5g9L_" role="2Oq$k0">
                       <node concept="2OqwBi" id="owiSk5fQVw" role="2Oq$k0">
                         <node concept="2OqwBi" id="owiSk5fMnN" role="2Oq$k0">
                           <node concept="1Q6Npb" id="owiSk5fMnO" role="2Oq$k0" />
@@ -325,7 +326,44 @@
                         <ref role="13MTZf" to="1o5n:6pihOoLygyT" />
                       </node>
                     </node>
+                    <node concept="ANE8D" id="6ADyagNlbnF" role="2OqNvi" />
                   </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="6ADyagNl1fW" role="3cqZAp" />
+              <node concept="3SKdUt" id="6ADyagNjTfI" role="3cqZAp">
+                <node concept="3SKdUq" id="6ADyagNjTyp" role="3SKWNk">
+                  <property role="3SKdUp" value="We also add the subgroups of the base groups." />
+                </node>
+              </node>
+              <node concept="1DcWWT" id="6ADyagNkbet" role="3cqZAp">
+                <node concept="3clFbS" id="6ADyagNkbev" role="2LFqv$">
+                  <node concept="3clFbF" id="6ADyagNknaL" role="3cqZAp">
+                    <node concept="2OqwBi" id="6ADyagNkpNJ" role="3clFbG">
+                      <node concept="37vLTw" id="6ADyagNknaJ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6YtJRaiPm6m" resolve="listOfAccesibleGroups" />
+                      </node>
+                      <node concept="X8dFx" id="6ADyagNkww3" role="2OqNvi">
+                        <node concept="2OqwBi" id="6ADyagNkzRK" role="25WWJ7">
+                          <node concept="37vLTw" id="6ADyagNkyED" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6ADyagNkbew" resolve="baseGroup" />
+                          </node>
+                          <node concept="2qgKlT" id="6ADyagNkMjY" role="2OqNvi">
+                            <ref role="37wK5l" to="z64h:6pihOoL19Ab" resolve="getAllNamedInnerGroupsPlusSelf" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWsn" id="6ADyagNkbew" role="1Duv9x">
+                  <property role="TrG5h" value="baseGroup" />
+                  <node concept="3Tqbb2" id="6ADyagNkc9k" role="1tU5fm">
+                    <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6ADyagNkl_S" role="1DdaDG">
+                  <ref role="3cqZAo" node="6ADyagNjWM9" resolve="baseGroups" />
                 </node>
               </node>
             </node>

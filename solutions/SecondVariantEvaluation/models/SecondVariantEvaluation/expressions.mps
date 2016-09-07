@@ -53,7 +53,6 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1068431790191" name="jetbrains.mps.baseLanguage.structure.Expression" flags="nn" index="33vP2n" />
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -2887,6 +2886,45 @@
         </node>
       </node>
       <node concept="10P_77" id="32FhR2g054C" role="3clF45" />
+      <node concept="3otQA" id="6ADyagNmJ4L" role="3aY$P">
+        <ref role="37wK5l" node="1B$hzDeGjnG" resolve="topLevelExp" />
+        <node concept="37vLTw" id="6ADyagNmWta" role="37wK5m">
+          <ref role="3cqZAo" node="6ADyagNmU04" resolve="outputGroup" />
+        </node>
+        <node concept="37vLTw" id="6ADyagNmWvr" role="37wK5m">
+          <ref role="3cqZAo" node="6ADyagNmU0V" resolve="expression" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6ADyagNmU06" role="1RNXnZ">
+        <node concept="3cpWs8" id="6ADyagNmU01" role="3cqZAp">
+          <node concept="3cpWsn" id="6ADyagNmU04" role="3cpWs9">
+            <property role="TrG5h" value="outputGroup" />
+            <node concept="1l_8MK" id="6ADyagNmU00" role="1tU5fm">
+              <ref role="1l_bkj" node="32FhR2fZyx1" resolve="MetaModExpsAssembly" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6ADyagNmU0S" role="3cqZAp">
+          <node concept="3cpWsn" id="6ADyagNmU0V" role="3cpWs9">
+            <property role="TrG5h" value="expression" />
+            <node concept="CMjq$" id="6ADyagNmU0Q" role="1tU5fm">
+              <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+            </node>
+            <node concept="3otQA" id="6ADyagNmU1B" role="33vP2m">
+              <ref role="37wK5l" node="6K_nk43cSsd" resolve="IntExp2Expression" />
+              <node concept="37vLTw" id="6ADyagNmU1P" role="37wK5m">
+                <ref role="3cqZAo" node="32FhR2g053D" resolve="inputGroup" />
+              </node>
+              <node concept="37vLTw" id="6ADyagNmU2$" role="37wK5m">
+                <ref role="3cqZAo" node="6ADyagNmU04" resolve="outputGroup" />
+              </node>
+              <node concept="37vLTw" id="6ADyagNmU3s" role="37wK5m">
+                <ref role="3cqZAo" node="32FhR2g054l" resolve="exp" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="CLx5C" id="32FhR2g06lU" role="CLm5g" />
     <node concept="1GnNjC" id="32FhR2g06nb" role="CLm5g">
@@ -2917,7 +2955,9 @@
         <node concept="37vLTw" id="32FhR2g0bR7" role="37wK5m">
           <ref role="3cqZAo" node="32FhR2g0bNA" resolve="outputGroup" />
         </node>
-        <node concept="33vP2n" id="32FhR2g0bRh" role="37wK5m" />
+        <node concept="37vLTw" id="6ADyagNmMzy" role="37wK5m">
+          <ref role="3cqZAo" node="32FhR2g0bRD" resolve="expression" />
+        </node>
       </node>
       <node concept="3clFbS" id="32FhR2g0bNC" role="1RNXnZ">
         <node concept="3cpWs8" id="32FhR2g0bNz" role="3cqZAp">
@@ -2930,7 +2970,22 @@
         </node>
         <node concept="3cpWs8" id="32FhR2g0bRA" role="3cqZAp">
           <node concept="3cpWsn" id="32FhR2g0bRD" role="3cpWs9">
-            <node concept="CMjq$" id="32FhR2g0bR$" role="1tU5fm" />
+            <property role="TrG5h" value="expression" />
+            <node concept="CMjq$" id="32FhR2g0bR$" role="1tU5fm">
+              <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+            </node>
+            <node concept="3otQA" id="6ADyagNmMzN" role="33vP2m">
+              <ref role="37wK5l" node="6K_nk43cSsd" resolve="IntExp2Expression" />
+              <node concept="37vLTw" id="6ADyagNmM$a" role="37wK5m">
+                <ref role="3cqZAo" node="32FhR2g06nc" resolve="inputGroup" />
+              </node>
+              <node concept="37vLTw" id="6ADyagNmM_9" role="37wK5m">
+                <ref role="3cqZAo" node="32FhR2g0bNA" resolve="outputGroup" />
+              </node>
+              <node concept="37vLTw" id="6ADyagNmMAi" role="37wK5m">
+                <ref role="3cqZAo" node="32FhR2g06o2" resolve="exp" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
