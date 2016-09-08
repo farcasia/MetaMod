@@ -129,6 +129,12 @@
       <concept id="1225894555487" name="jetbrains.mps.baseLanguage.structure.BitwiseNotExpression" flags="nn" index="1H0AT2">
         <child id="1225894555490" name="expression" index="1H0ATZ" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="320030840061144153" name="jetbrains.mps.baseLanguage.structure.ShiftRightUnsignedExpression" flags="nn" index="1ZsPo3" />
     </language>
@@ -2896,6 +2902,11 @@
         </node>
       </node>
       <node concept="3clFbS" id="6ADyagNmU06" role="1RNXnZ">
+        <node concept="3SKdUt" id="6ADyagNodaO" role="3cqZAp">
+          <node concept="3SKdUq" id="6ADyagNodcw" role="3SKWNk">
+            <property role="3SKdUp" value="This is the type of base model that we are making use of." />
+          </node>
+        </node>
         <node concept="3cpWs8" id="6ADyagNmU01" role="3cqZAp">
           <node concept="3cpWsn" id="6ADyagNmU04" role="3cpWs9">
             <property role="TrG5h" value="outputGroup" />
@@ -2922,6 +2933,17 @@
                 <ref role="3cqZAo" node="32FhR2g054l" resolve="exp" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6ADyagNodRX" role="3cqZAp">
+          <node concept="3SKdUq" id="6ADyagNodTF" role="3SKWNk">
+            <property role="3SKdUp" value="This is the type of the return." />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6ADyagNod5t" role="3cqZAp">
+          <node concept="3cpWsn" id="6ADyagNod5w" role="3cpWs9">
+            <property role="TrG5h" value="retDelegated" />
+            <node concept="10Oyi0" id="6ADyagNod5r" role="1tU5fm" />
           </node>
         </node>
       </node>
@@ -2986,6 +3008,12 @@
                 <ref role="3cqZAo" node="32FhR2g06o2" resolve="exp" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6ADyagNod87" role="3cqZAp">
+          <node concept="3cpWsn" id="6ADyagNod8a" role="3cpWs9">
+            <property role="TrG5h" value="retDelegated" />
+            <node concept="10Oyi0" id="6ADyagNod85" role="1tU5fm" />
           </node>
         </node>
       </node>

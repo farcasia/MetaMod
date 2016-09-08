@@ -55,7 +55,13 @@
     </node>
     <node concept="1TJgyj" id="21UhnxnHp27" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="listTransfs" />
+      <property role="20kJfa" value="conversionsIn" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
+    </node>
+    <node concept="1TJgyj" id="6Tq8_yeN9Jn" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conversionsOut" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
     </node>
