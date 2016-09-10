@@ -284,6 +284,10 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
+        <child id="1226511765987" name="elementType" index="2hN53Y" />
+      </concept>
+      <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -1444,7 +1448,7 @@
             </node>
           </node>
           <node concept="37vLTw" id="2TStaYk2rET" role="1DdaDG">
-            <ref role="3cqZAo" node="2TStaYk2qDv" resolve="codeGenMetContainters" />
+            <ref role="3cqZAo" node="2TStaYk2qDv" resolve="codeGenMetContainers" />
           </node>
         </node>
         <node concept="3clFbH" id="DTk9ZDduVg" role="3cqZAp" />
@@ -1465,7 +1469,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2TStaYk2qDv" role="3clF46">
-        <property role="TrG5h" value="codeGenMetContainters" />
+        <property role="TrG5h" value="codeGenMetContainers" />
         <node concept="2I9FWS" id="2TStaYk2qDD" role="1tU5fm">
           <ref role="2I9WkF" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
         </node>
@@ -2110,88 +2114,26 @@
       <property role="TrG5h" value="replacement" />
       <node concept="3Tm1VV" id="2TStaYk3E2J" role="1B3o_S" />
       <node concept="3clFbS" id="2TStaYk3E2K" role="3clF47">
-        <node concept="1DcWWT" id="2TStaYk3E3x" role="3cqZAp">
-          <node concept="3cpWsn" id="2TStaYk3E3y" role="1Duv9x">
-            <property role="TrG5h" value="container" />
-            <node concept="3Tqbb2" id="2TStaYk3E9K" role="1tU5fm">
-              <ref role="ehGHo" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="2TStaYk3E3z" role="2LFqv$">
-            <node concept="3clFbJ" id="2TStaYk3FaH" role="3cqZAp">
-              <node concept="3clFbS" id="2TStaYk3FaI" role="3clFbx">
-                <node concept="1DcWWT" id="2TStaYk3L6S" role="3cqZAp">
-                  <node concept="3cpWsn" id="2TStaYk3L6T" role="1Duv9x">
-                    <property role="TrG5h" value="replaced" />
-                    <node concept="3Tqbb2" id="2TStaYk3Ld9" role="1tU5fm">
-                      <ref role="ehGHo" to="anrw:2TStaYjWuFM" resolve="ReplaceCodeGenMethod" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="2TStaYk3L6U" role="2LFqv$">
-                    <node concept="3clFbJ" id="2TStaYk3XUM" role="3cqZAp">
-                      <node concept="3clFbS" id="2TStaYk3XUN" role="3clFbx">
-                        <node concept="3cpWs6" id="2TStaYk3ZR6" role="3cqZAp">
-                          <node concept="37vLTw" id="2TStaYk3ZRl" role="3cqZAk">
-                            <ref role="3cqZAo" node="2TStaYk3L6T" resolve="replaced" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbC" id="2TStaYk3ZJu" role="3clFbw">
-                        <node concept="13iPFW" id="2TStaYk3ZOI" role="3uHU7w" />
-                        <node concept="2OqwBi" id="2TStaYk3Y8c" role="3uHU7B">
-                          <node concept="37vLTw" id="2TStaYk3XV0" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2TStaYk3L6T" resolve="replaced" />
-                          </node>
-                          <node concept="3TrEf2" id="2TStaYk3Zzi" role="2OqNvi">
-                            <ref role="3Tt5mk" to="anrw:2TStaYjWuV5" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="2TStaYk3LAq" role="1DdaDG">
-                    <node concept="37vLTw" id="2TStaYk3Lx0" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2TStaYk3E3y" resolve="container" />
-                    </node>
-                    <node concept="2Rf3mk" id="2TStaYk3M7S" role="2OqNvi">
-                      <node concept="1xMEDy" id="2TStaYk3M7U" role="1xVPHs">
-                        <node concept="chp4Y" id="2TStaYk3Mv8" role="ri$Ld">
-                          <ref role="cht4Q" to="anrw:2TStaYjWuFM" resolve="ReplaceCodeGenMethod" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
+        <node concept="3cpWs8" id="2Hrt$vlE$$T" role="3cqZAp">
+          <node concept="3cpWsn" id="2Hrt$vlE$$W" role="3cpWs9">
+            <property role="TrG5h" value="replacements" />
+            <node concept="2hMVRd" id="2Hrt$vlE$$P" role="1tU5fm">
+              <node concept="3Tqbb2" id="2Hrt$vlE$Ei" role="2hN53Y">
+                <ref role="ehGHo" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
               </node>
-              <node concept="2OqwBi" id="2TStaYk3FWi" role="3clFbw">
-                <node concept="37vLTw" id="2TStaYk3FaT" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2TStaYk3E2U" resolve="activeFacets" />
-                </node>
-                <node concept="3JPx81" id="2TStaYk3K7g" role="2OqNvi">
-                  <node concept="2OqwBi" id="2TStaYk3KEm" role="25WWJ7">
-                    <node concept="2OqwBi" id="2TStaYk3Kbh" role="2Oq$k0">
-                      <node concept="37vLTw" id="2TStaYk3K8k" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2TStaYk3E3y" resolve="container" />
-                      </node>
-                      <node concept="3TrEf2" id="2TStaYk3Krp" role="2OqNvi">
-                        <ref role="3Tt5mk" to="1o5n:6dXtnCXbrXj" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="2TStaYk3KWr" role="2OqNvi">
-                      <ref role="37wK5l" to="93in:2TStaYk24uZ" resolve="getFacet" />
-                    </node>
-                  </node>
+            </node>
+            <node concept="2ShNRf" id="2Hrt$vlE$Ff" role="33vP2m">
+              <node concept="2i4dXS" id="2Hrt$vlECHv" role="2ShVmc">
+                <node concept="3Tqbb2" id="2Hrt$vlECM9" role="HW$YZ">
+                  <ref role="ehGHo" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="37vLTw" id="2TStaYk3Est" role="1DdaDG">
-            <ref role="3cqZAo" node="2TStaYk3E3e" resolve="containers" />
           </node>
         </node>
-        <node concept="3clFbH" id="2TStaYk3KZd" role="3cqZAp" />
-        <node concept="3cpWs6" id="2TStaYk3L0V" role="3cqZAp">
-          <node concept="10Nm6u" id="2TStaYk3L1j" role="3cqZAk" />
+        <node concept="3clFbH" id="2Hrt$vlEFck" role="3cqZAp" />
+        <node concept="3cpWs6" id="2Hrt$vlEFdp" role="3cqZAp">
+          <node concept="13iPFW" id="2Hrt$vlEFe8" role="3cqZAk" />
         </node>
       </node>
       <node concept="3Tqbb2" id="2TStaYk3E2Q" role="3clF45">
@@ -2204,14 +2146,20 @@
         </node>
       </node>
       <node concept="37vLTG" id="2TStaYk3E3e" role="3clF46">
-        <property role="TrG5h" value="containers" />
-        <node concept="2I9FWS" id="2TStaYk3E3m" role="1tU5fm">
-          <ref role="2I9WkF" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
+        <property role="TrG5h" value="callingGroup" />
+        <node concept="3Tqbb2" id="2Hrt$vlCGPe" role="1tU5fm">
+          <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2Hrt$vlCHpf" role="3clF46">
+        <property role="TrG5h" value="currentGroup" />
+        <node concept="3Tqbb2" id="2Hrt$vlCHu9" role="1tU5fm">
+          <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
         </node>
       </node>
     </node>
     <node concept="13i0hz" id="DTk9ZD9qbg" role="13h7CS">
-      <property role="TrG5h" value="facetsRuleCondition" />
+      <property role="TrG5h" value="facetActiveCondition" />
       <node concept="3Tm1VV" id="DTk9ZD9qbh" role="1B3o_S" />
       <node concept="3clFbS" id="DTk9ZD9qbi" role="3clF47">
         <node concept="3cpWs8" id="6dXtnCWnaz6" role="3cqZAp">
@@ -2283,61 +2231,20 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="2TStaYk3bPz" role="3cqZAp">
-          <node concept="3cpWsn" id="2TStaYk3bPD" role="3cpWs9">
-            <property role="TrG5h" value="replacedMethods" />
-            <node concept="2I9FWS" id="2TStaYk3ce4" role="1tU5fm">
-              <ref role="2I9WkF" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
-            </node>
-            <node concept="2YIFZM" id="2TStaYk3gE7" role="33vP2m">
-              <ref role="37wK5l" node="2TStaYk2qqt" resolve="replacedMethods" />
-              <ref role="1Pybhc" node="2TStaYk2qpd" resolve="CodeGenUtilityMethods" />
-              <node concept="37vLTw" id="2TStaYk3gZS" role="37wK5m">
-                <ref role="3cqZAo" node="6dXtnCWneiH" resolve="activeFacets" />
-              </node>
-              <node concept="2OqwBi" id="2TStaYk3nIe" role="37wK5m">
-                <node concept="2OqwBi" id="2TStaYk3m96" role="2Oq$k0">
-                  <node concept="13iPFW" id="DTk9ZD9tym" role="2Oq$k0" />
-                  <node concept="I4A8Y" id="2TStaYk3mVD" role="2OqNvi" />
-                </node>
-                <node concept="1j9C0f" id="2TStaYk3o57" role="2OqNvi">
-                  <ref role="1j9C0d" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="6dXtnCWneXj" role="3cqZAp" />
         <node concept="3SKdUt" id="2TStaYk3CPy" role="3cqZAp">
           <node concept="3SKdUq" id="2TStaYk3D7W" role="3SKWNk">
-            <property role="3SKdUp" value="We transform the method if it is in a code generation section with an active" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="2TStaYk3D_2" role="3cqZAp">
-          <node concept="3SKdUq" id="2TStaYk3DJT" role="3SKWNk">
-            <property role="3SKdUp" value="facet and it was not replaced in the active facets!" />
+            <property role="3SKdUp" value="We transform the method if it is in a code generation section with an active facet." />
           </node>
         </node>
         <node concept="3cpWs6" id="6dXtnCWnf2x" role="3cqZAp">
-          <node concept="1Wc70l" id="2TStaYk3oRT" role="3cqZAk">
-            <node concept="3fqX7Q" id="2TStaYk3p81" role="3uHU7w">
-              <node concept="2OqwBi" id="2TStaYk3sfD" role="3fr31v">
-                <node concept="37vLTw" id="2TStaYk3po6" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2TStaYk3bPD" resolve="replacedMethods" />
-                </node>
-                <node concept="3JPx81" id="2TStaYk3C2H" role="2OqNvi">
-                  <node concept="13iPFW" id="DTk9ZD9tEM" role="25WWJ7" />
-                </node>
-              </node>
+          <node concept="2OqwBi" id="2TStaYjW6t9" role="3cqZAk">
+            <node concept="37vLTw" id="2TStaYjW2J1" role="2Oq$k0">
+              <ref role="3cqZAo" node="6dXtnCWneiH" resolve="activeFacets" />
             </node>
-            <node concept="2OqwBi" id="2TStaYjW6t9" role="3uHU7B">
-              <node concept="37vLTw" id="2TStaYjW2J1" role="2Oq$k0">
-                <ref role="3cqZAo" node="6dXtnCWneiH" resolve="activeFacets" />
-              </node>
-              <node concept="3JPx81" id="2TStaYjWaRg" role="2OqNvi">
-                <node concept="37vLTw" id="2TStaYjWb3V" role="25WWJ7">
-                  <ref role="3cqZAo" node="6dXtnCWn5jq" resolve="facetOfMet" />
-                </node>
+            <node concept="3JPx81" id="2TStaYjWaRg" role="2OqNvi">
+              <node concept="37vLTw" id="2TStaYjWb3V" role="25WWJ7">
+                <ref role="3cqZAo" node="6dXtnCWn5jq" resolve="facetOfMet" />
               </node>
             </node>
           </node>
