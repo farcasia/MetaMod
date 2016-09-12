@@ -2327,16 +2327,17 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="2Vxly_VYap9" role="3cqZAp" />
           </node>
-          <node concept="3clFbC" id="2Hrt$vlHrNU" role="MpTkK">
-            <node concept="3cmrfG" id="2Hrt$vlHt19" role="3uHU7w">
-              <property role="3cmrfH" value="0" />
-            </node>
+          <node concept="3y3z36" id="2Vxly_VY7cs" role="MpTkK">
             <node concept="2OqwBi" id="2Hrt$vlHeXY" role="3uHU7B">
               <node concept="37vLTw" id="2Hrt$vlHbn6" role="2Oq$k0">
                 <ref role="3cqZAo" node="2Hrt$vlH4nG" resolve="replacing" />
               </node>
               <node concept="34oBXx" id="2Hrt$vlHruB" role="2OqNvi" />
+            </node>
+            <node concept="3cmrfG" id="2Hrt$vlHt19" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
             </node>
           </node>
         </node>
@@ -2354,18 +2355,6 @@
         <property role="TrG5h" value="activeFacets" />
         <node concept="2I9FWS" id="2TStaYk3E2T" role="1tU5fm">
           <ref role="2I9WkF" to="1o5n:6dXtnCWkK4d" resolve="Facet" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="2TStaYk3E3e" role="3clF46">
-        <property role="TrG5h" value="callingGroup" />
-        <node concept="3Tqbb2" id="2Hrt$vlCGPe" role="1tU5fm">
-          <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="2Hrt$vlCHpf" role="3clF46">
-        <property role="TrG5h" value="currentGroup" />
-        <node concept="3Tqbb2" id="2Hrt$vlCHu9" role="1tU5fm">
-          <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
         </node>
       </node>
     </node>
