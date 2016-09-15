@@ -1005,23 +1005,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1Phqyz3jI$H" role="3cqZAp">
-          <node concept="37vLTI" id="1Phqyz3jISu" role="3clFbG">
-            <node concept="2ShNRf" id="1Phqyz3jIVE" role="37vLTx">
-              <node concept="3rGOSV" id="1Phqyz3jIVu" role="2ShVmc">
-                <node concept="3Tqbb2" id="1Phqyz3jIVv" role="3rHrn6">
-                  <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
-                </node>
-                <node concept="2I9FWS" id="1Phqyz4aVng" role="3rHtpV">
-                  <ref role="2I9WkF" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
-                </node>
-              </node>
-            </node>
-            <node concept="37vLTw" id="1Phqyz3jI$F" role="37vLTJ">
-              <ref role="3cqZAo" to="wz6r:1Phqyz3hF3C" resolve="invResolveMap" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="2Hrt$vjEYeT" role="3cqZAp" />
         <node concept="3clFbF" id="1rccYvCulcD" role="3cqZAp">
           <node concept="37vLTI" id="1rccYvCulcE" role="3clFbG">
