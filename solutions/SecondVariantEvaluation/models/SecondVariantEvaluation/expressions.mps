@@ -4682,10 +4682,10 @@
           <node concept="3cpWsn" id="6sIGfUjiZTt" role="3cpWs9">
             <property role="TrG5h" value="expMinus" />
             <node concept="CMjq$" id="6sIGfUjiZTo" role="1tU5fm">
-              <ref role="CMYPG" node="2YYVDcHR$$X" resolve="ExpMinus" />
+              <ref role="CMYPG" node="2YYVDcHR$$X" resolve="Negation" />
             </node>
             <node concept="1ui4Ww" id="6sIGfUjiZVh" role="33vP2m">
-              <ref role="1ui4Wx" node="2YYVDcHR$$X" resolve="ExpMinus" />
+              <ref role="1ui4Wx" node="2YYVDcHR$$X" resolve="Negation" />
             </node>
           </node>
         </node>
@@ -4794,7 +4794,7 @@
         </node>
       </node>
       <node concept="CMjq$" id="6K_nk43cWAK" role="3clF45">
-        <ref role="CMYPG" node="2YYVDcHR$$X" resolve="ExpMinus" />
+        <ref role="CMYPG" node="2YYVDcHR$$X" resolve="Negation" />
       </node>
     </node>
     <node concept="CLx5B" id="6K_nk43cSp8" role="CLm5g" />
@@ -4825,10 +4825,10 @@
             <property role="TrG5h" value="expPlus" />
             <property role="3TUv4t" value="false" />
             <node concept="CMjq$" id="6K_nk43d0f$" role="1tU5fm">
-              <ref role="CMYPG" node="2YYVDcHR$DK" resolve="ExpPlus" />
+              <ref role="CMYPG" node="2YYVDcHR$DK" resolve="Plus" />
             </node>
             <node concept="1ui4Ww" id="6sIGfUjj1R0" role="33vP2m">
-              <ref role="1ui4Wx" node="2YYVDcHR$DK" resolve="ExpPlus" />
+              <ref role="1ui4Wx" node="2YYVDcHR$DK" resolve="Plus" />
             </node>
           </node>
         </node>
@@ -4937,7 +4937,7 @@
         </node>
       </node>
       <node concept="CMjq$" id="6sIGfUjj1Rk" role="3clF45">
-        <ref role="CMYPG" node="2YYVDcHR$DK" resolve="ExpPlus" />
+        <ref role="CMYPG" node="2YYVDcHR$DK" resolve="Plus" />
       </node>
     </node>
     <node concept="CLx5B" id="6K_nk43d0w2" role="CLm5g" />
@@ -7053,14 +7053,14 @@
   <node concept="2oAaVg" id="2YYVDcHR$$n">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.MinusPlus" />
-    <property role="TrG5h" value="ExpMinus" />
+    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="TrG5h" value="Negation" />
     <node concept="2oAaYs" id="2YYVDcHR$$o" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
     </node>
     <node concept="2jq5PB" id="2YYVDcHR$$q" role="2oAaxa" />
     <node concept="2oAaW5" id="2YYVDcHR$$X" role="2oAaxa">
-      <property role="TrG5h" value="ExpMinus" />
+      <property role="TrG5h" value="Negation" />
     </node>
     <node concept="2jq5PB" id="2YYVDcHR$$I" role="2oAaxa" />
     <node concept="2oAaZ9" id="2YYVDcHR$$x" role="2oAaxa">
@@ -7070,21 +7070,21 @@
         <ref role="3aaZtz" node="2YYVDcHRi6s" resolve="Unary" />
       </node>
       <node concept="2oAaXF" id="2YYVDcHR$D0" role="2oAawD">
-        <ref role="3aaZtz" node="2YYVDcHR$$X" resolve="ExpMinus" />
+        <ref role="3aaZtz" node="2YYVDcHR$$X" resolve="Negation" />
       </node>
     </node>
   </node>
   <node concept="2oAaVg" id="2YYVDcHR$DA">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.MinusPlus" />
-    <property role="TrG5h" value="ExpPlus" />
+    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="TrG5h" value="Plus" />
     <node concept="2oAaYs" id="2YYVDcHR$DB" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
     </node>
     <node concept="2jq5PB" id="2YYVDcHR$DD" role="2oAaxa" />
     <node concept="2oAaW5" id="2YYVDcHR$DK" role="2oAaxa">
-      <property role="TrG5h" value="ExpPlus" />
+      <property role="TrG5h" value="Plus" />
     </node>
     <node concept="2jq5PB" id="2YYVDcHR$FJ" role="2oAaxa" />
     <node concept="2oAaZ9" id="2YYVDcHR$G2" role="2oAaxa">
@@ -7094,7 +7094,7 @@
         <ref role="3aaZtz" node="2YYVDcHRi6s" resolve="Unary" />
       </node>
       <node concept="2oAaXF" id="2YYVDcHR$Gn" role="2oAawD">
-        <ref role="3aaZtz" node="2YYVDcHR$DK" resolve="ExpPlus" />
+        <ref role="3aaZtz" node="2YYVDcHR$DK" resolve="Plus" />
       </node>
     </node>
   </node>
@@ -8381,7 +8381,7 @@
           <node concept="3clFbS" id="32FhR2fZBCr" role="3clFbx">
             <node concept="3cpWs6" id="32FhR2fZBRs" role="3cqZAp">
               <node concept="3otQA" id="32FhR2fZBUt" role="3cqZAk">
-                <ref role="37wK5l" node="32FhR2fYGBo" resolve="evaluateExpMinusInteger" />
+                <ref role="37wK5l" node="32FhR2fYGBo" resolve="evaluateNegationInteger" />
                 <node concept="37vLTw" id="32FhR2fZC4$" role="37wK5m">
                   <ref role="3cqZAo" node="5EZvnkvKjtw" resolve="inputGroup" />
                 </node>
@@ -8391,7 +8391,7 @@
                   </node>
                   <node concept="1fHQjy" id="32FhR2fZClv" role="2OqNvi">
                     <node concept="CMjq$" id="32FhR2fZClx" role="1fHO_7">
-                      <ref role="CMYPG" node="2YYVDcHR$$X" resolve="ExpMinus" />
+                      <ref role="CMYPG" node="2YYVDcHR$$X" resolve="Negation" />
                     </node>
                   </node>
                 </node>
@@ -8404,7 +8404,7 @@
             </node>
             <node concept="1lWEKl" id="32FhR2fZBQa" role="2OqNvi">
               <node concept="CMjq$" id="32FhR2fZBQc" role="1lWEKm">
-                <ref role="CMYPG" node="2YYVDcHR$$X" resolve="ExpMinus" />
+                <ref role="CMYPG" node="2YYVDcHR$$X" resolve="Negation" />
               </node>
             </node>
           </node>
@@ -8414,7 +8414,7 @@
           <node concept="3clFbS" id="32FhR2fZDy7" role="3clFbx">
             <node concept="3cpWs6" id="32FhR2fZDy8" role="3cqZAp">
               <node concept="3otQA" id="32FhR2fZDy9" role="3cqZAk">
-                <ref role="37wK5l" node="32FhR2fYL9G" resolve="evaluateExpPlusInteger" />
+                <ref role="37wK5l" node="32FhR2fYL9G" resolve="evaluatePlusInteger" />
                 <node concept="37vLTw" id="32FhR2fZDya" role="37wK5m">
                   <ref role="3cqZAo" node="5EZvnkvKjtw" resolve="inputGroup" />
                 </node>
@@ -8424,7 +8424,7 @@
                   </node>
                   <node concept="1fHQjy" id="32FhR2fZDyd" role="2OqNvi">
                     <node concept="CMjq$" id="32FhR2fZDye" role="1fHO_7">
-                      <ref role="CMYPG" node="2YYVDcHR$DK" resolve="ExpPlus" />
+                      <ref role="CMYPG" node="2YYVDcHR$DK" resolve="Plus" />
                     </node>
                   </node>
                 </node>
@@ -8437,7 +8437,7 @@
             </node>
             <node concept="1lWEKl" id="32FhR2fZDyh" role="2OqNvi">
               <node concept="CMjq$" id="32FhR2fZDyi" role="1lWEKm">
-                <ref role="CMYPG" node="2YYVDcHR$DK" resolve="ExpPlus" />
+                <ref role="CMYPG" node="2YYVDcHR$DK" resolve="Plus" />
               </node>
             </node>
           </node>
@@ -9766,7 +9766,7 @@
       <ref role="1vbBpc" node="4VnbJ42rpi0" resolve="Evaluator" />
     </node>
     <node concept="1GnNjC" id="32FhR2fYyYp" role="CLm5g">
-      <property role="TrG5h" value="evaluateBooleanBool" />
+      <property role="TrG5h" value="evaluateBooleanBoolean" />
       <node concept="37vLTG" id="32FhR2fYyYq" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="32FhR2fYyYr" role="1tU5fm">
@@ -10011,24 +10011,24 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fYGBm">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.MinusPlus.CodeGen" />
-    <property role="TrG5h" value="CodeGen_Evaluator_ExpMinus" />
-    <ref role="1GHRfG" node="2YYVDcHR$$n" resolve="ExpMinus" />
+    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen" />
+    <property role="TrG5h" value="CodeGen_Evaluator_Negation" />
+    <ref role="1GHRfG" node="2YYVDcHR$$n" resolve="Negation" />
     <node concept="1vbBpf" id="32FhR2fYGBn" role="1ukcCD">
       <ref role="1vbBpc" node="4VnbJ42rpi0" resolve="Evaluator" />
     </node>
     <node concept="1GnNjC" id="32FhR2fYGBo" role="CLm5g">
-      <property role="TrG5h" value="evaluateExpMinusInteger" />
+      <property role="TrG5h" value="evaluateNegationInteger" />
       <node concept="37vLTG" id="32FhR2fYGBp" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="32FhR2fYGBq" role="1tU5fm">
-          <ref role="1l_bkj" node="2YYVDcHR$$n" resolve="ExpMinus" />
+          <ref role="1l_bkj" node="2YYVDcHR$$n" resolve="Negation" />
         </node>
       </node>
       <node concept="37vLTG" id="32FhR2fYGBr" role="3clF46">
         <property role="TrG5h" value="expMinus" />
         <node concept="CMjq$" id="32FhR2fYGBs" role="1tU5fm">
-          <ref role="CMYPG" node="2YYVDcHR$$X" resolve="ExpMinus" />
+          <ref role="CMYPG" node="2YYVDcHR$$X" resolve="Negation" />
         </node>
       </node>
       <node concept="3clFbS" id="32FhR2fYGBt" role="3clF47">
@@ -10062,24 +10062,24 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fYL9E">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.MinusPlus.CodeGen" />
-    <property role="TrG5h" value="CodeGen_Evaluator_ExpPlus" />
-    <ref role="1GHRfG" node="2YYVDcHR$DA" resolve="ExpPlus" />
+    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen" />
+    <property role="TrG5h" value="CodeGen_Evaluator_Plus" />
+    <ref role="1GHRfG" node="2YYVDcHR$DA" resolve="Plus" />
     <node concept="1vbBpf" id="32FhR2fYL9F" role="1ukcCD">
       <ref role="1vbBpc" node="4VnbJ42rpi0" resolve="Evaluator" />
     </node>
     <node concept="1GnNjC" id="32FhR2fYL9G" role="CLm5g">
-      <property role="TrG5h" value="evaluateExpPlusInteger" />
+      <property role="TrG5h" value="evaluatePlusInteger" />
       <node concept="37vLTG" id="32FhR2fYL9H" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="32FhR2fYL9I" role="1tU5fm">
-          <ref role="1l_bkj" node="2YYVDcHR$DA" resolve="ExpPlus" />
+          <ref role="1l_bkj" node="2YYVDcHR$DA" resolve="Plus" />
         </node>
       </node>
       <node concept="37vLTG" id="32FhR2fYL9J" role="3clF46">
         <property role="TrG5h" value="expPlus" />
         <node concept="CMjq$" id="32FhR2fYL9K" role="1tU5fm">
-          <ref role="CMYPG" node="2YYVDcHR$DK" resolve="ExpPlus" />
+          <ref role="CMYPG" node="2YYVDcHR$DK" resolve="Plus" />
         </node>
       </node>
       <node concept="3clFbS" id="32FhR2fYL9L" role="3clF47">
@@ -10198,13 +10198,13 @@
   <node concept="2oAaVg" id="32FhR2fYR7M">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.MinusPlus" />
-    <property role="TrG5h" value="PlusMinus" />
+    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="TrG5h" value="PlusNegation" />
     <node concept="2oAaYs" id="32FhR2fYR7N" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR$$n" resolve="ExpMinus" />
+      <ref role="3aaZtz" node="2YYVDcHR$$n" resolve="Negation" />
     </node>
     <node concept="2oAaYs" id="32FhR2fYR7S" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR$DA" resolve="ExpPlus" />
+      <ref role="3aaZtz" node="2YYVDcHR$DA" resolve="Plus" />
     </node>
   </node>
   <node concept="2oAaVg" id="32FhR2fYSNy">
@@ -12431,7 +12431,7 @@
       <ref role="3aaZtz" node="2YYVDcHR_eg" resolve="AddSub" />
     </node>
     <node concept="2oAaYs" id="32FhR2fZyx7" role="2oAaxa">
-      <ref role="3aaZtz" node="32FhR2fYR7M" resolve="PlusMinus" />
+      <ref role="3aaZtz" node="32FhR2fYR7M" resolve="PlusNegation" />
     </node>
     <node concept="2oAaYs" id="32FhR2g0en9" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fYSNy" resolve="Comparisons" />
