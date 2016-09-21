@@ -9,6 +9,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="47849989-c2df-46a8-aba5-1c5a21bbef1f" name="Constraints" version="-1" />
     <generationPart ref="b9d9f978-d2e1-4cb8-a4c8-9c34c6661669(AddMainMethodGenerationLanguage)" />
   </languages>
   <imports>
@@ -336,7 +337,7 @@
   </registry>
   <node concept="1GnNiK" id="32FhR2fYGBm">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Negation" />
     <ref role="1GHRfG" node="2YYVDcHR$$n" resolve="Negation" />
     <node concept="1vbBpf" id="2bNndrzr2BK" role="1ukcCD">
@@ -494,7 +495,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fXq6d">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_EqualTo" />
     <ref role="1GHRfG" node="2YYVDcHRx34" resolve="EqualTo" />
     <node concept="1vbBpf" id="2bNndrzr5tU" role="1ukcCD">
@@ -759,10 +760,10 @@
   <node concept="2oAaVg" id="2YYVDcHRsxn">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="Addition" />
     <node concept="2oAaYs" id="2YYVDcHRsxo" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4TD2" resolve="Arithmetic" />
     </node>
     <node concept="2jq5PB" id="2YYVDcHRsxq" role="2oAaxa" />
     <node concept="2oAaW5" id="2YYVDcHRsxx" role="2oAaxa">
@@ -772,8 +773,8 @@
     <node concept="2oAaZ9" id="2YYVDcHRs_G" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="2YYVDcHRsAl" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi5f" resolve="Binary" />
+      <node concept="2oAaXF" id="2bNndr_4Y4x" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4TIc" resolve="ArithmeticBinary" />
       </node>
       <node concept="2oAaXF" id="2YYVDcHRsA4" role="2oAawD">
         <ref role="3aaZtz" node="2YYVDcHRsxx" resolve="Addition" />
@@ -783,7 +784,7 @@
   <node concept="2oAaVg" id="32FhR2fZ9p0">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise" />
     <property role="TrG5h" value="BitwiseExpressions" />
     <node concept="2oAaYs" id="32FhR2fZ9p1" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fZ9oG" resolve="BitwiseAnd" />
@@ -809,7 +810,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fZtwH">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_BitwiseRightShift" />
     <ref role="1GHRfG" node="32FhR2fZswt" resolve="BitwiseRightShift" />
     <node concept="1vbBpf" id="2bNndrzr49j" role="1ukcCD">
@@ -964,10 +965,10 @@
   <node concept="2oAaVg" id="2YYVDcHRsJQ">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="Multiplication" />
     <node concept="2oAaYs" id="2YYVDcHRsJR" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4TD2" resolve="Arithmetic" />
     </node>
     <node concept="2jq5PB" id="2YYVDcHRsJT" role="2oAaxa" />
     <node concept="2oAaW5" id="2YYVDcHRsK0" role="2oAaxa">
@@ -977,8 +978,8 @@
     <node concept="2oAaZ9" id="2YYVDcHRsYS" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="2YYVDcHRsZG" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi5f" resolve="Binary" />
+      <node concept="2oAaXF" id="2bNndr_59Ts" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4TIc" resolve="ArithmeticBinary" />
       </node>
       <node concept="2oAaXF" id="2YYVDcHRsZn" role="2oAawD">
         <ref role="3aaZtz" node="2YYVDcHRsK0" resolve="Multiplication" />
@@ -988,10 +989,10 @@
   <node concept="2oAaVg" id="1B$hzDeGl7S">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.Numbers" />
     <property role="TrG5h" value="Float" />
     <node concept="2oAaYs" id="1B$hzDeGl7T" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4nLl" resolve="Numbers" />
     </node>
     <node concept="2jq5PB" id="1B$hzDeGl7U" role="2oAaxa" />
     <node concept="2oAaW5" id="1B$hzDeGl7V" role="2oAaxa">
@@ -1001,8 +1002,8 @@
     <node concept="2oAaZ9" id="1B$hzDeGl7X" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="5EZvnkvK7xt" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi7G" resolve="Primitive" />
+      <node concept="2oAaXF" id="2bNndr_4pNi" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4nLv" resolve="Number" />
       </node>
       <node concept="2oAaXF" id="1B$hzDeGl7Z" role="2oAawD">
         <ref role="3aaZtz" node="1B$hzDeGl7V" resolve="Float" />
@@ -1011,7 +1012,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fXHfz">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_GreaterThan" />
     <ref role="1GHRfG" node="2YYVDcHRwXJ" resolve="GreaterThan" />
     <node concept="1vbBpf" id="2bNndrzr665" role="1ukcCD">
@@ -1276,7 +1277,7 @@
   <node concept="2oAaVg" id="32FhR2fYSNy">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational" />
     <property role="TrG5h" value="Comparisons" />
     <node concept="2oAaYs" id="32FhR2fYSNz" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHRwmJ" resolve="LessThan" />
@@ -1299,7 +1300,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fYL9E">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Plus" />
     <ref role="1GHRfG" node="2YYVDcHR$DA" resolve="Plus" />
     <node concept="1vbBpf" id="2bNndrzr2G0" role="1ukcCD">
@@ -1437,7 +1438,7 @@
   <node concept="2oAaVg" id="2YYVDcHRzpy">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.Boolean" />
     <property role="TrG5h" value="Boolean" />
     <node concept="2oAaYs" id="2YYVDcHRzpz" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
@@ -1460,7 +1461,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fZ6fc">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_NotEqualTo" />
     <ref role="1GHRfG" node="32FhR2fZ5fm" resolve="NotEqualTo" />
     <node concept="1vbBpf" id="2bNndrzr6Zo" role="1ukcCD">
@@ -1725,7 +1726,7 @@
   <node concept="2oAaVg" id="2YYVDcHRwXJ">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational" />
     <property role="TrG5h" value="GreaterThan" />
     <node concept="2oAaYs" id="2YYVDcHRwXK" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2g0p40" resolve="Relational" />
@@ -1749,7 +1750,7 @@
   <node concept="2oAaVg" id="2YYVDcHRwq3">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical" />
     <property role="TrG5h" value="Logical" />
     <node concept="2oAaYs" id="2YYVDcHRwq4" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
@@ -1761,7 +1762,20 @@
     <node concept="2oAaW5" id="32FhR2fYE0d" role="2oAaxa">
       <property role="TrG5h" value="LogicalU" />
     </node>
+    <node concept="2oAaW5" id="2bNndr_kaBQ" role="2oAaxa">
+      <property role="TrG5h" value="Logical" />
+    </node>
     <node concept="2jq5PB" id="2YYVDcHRwqq" role="2oAaxa" />
+    <node concept="2oAaZ9" id="2bNndr_kaF6" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_kaFY" role="2oAawB">
+        <ref role="3aaZtz" node="2YYVDcHRi3Q" resolve="Expression" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_kaFD" role="2oAawD">
+        <ref role="3aaZtz" node="2bNndr_kaBQ" resolve="Logical" />
+      </node>
+    </node>
     <node concept="2oAaZ9" id="2YYVDcHRwqd" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
@@ -1782,10 +1796,30 @@
         <ref role="3aaZtz" node="32FhR2fYE0d" resolve="LogicalU" />
       </node>
     </node>
+    <node concept="2oAaZ9" id="2bNndr_kaGM" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_kaHH" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_kaBQ" resolve="Logical" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_kaHo" role="2oAawD">
+        <ref role="3aaZtz" node="2YYVDcHRwqD" resolve="LogicalB" />
+      </node>
+    </node>
+    <node concept="2oAaZ9" id="2bNndr_kaIw" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_kaJJ" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_kaBQ" resolve="Logical" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_kaJs" role="2oAawD">
+        <ref role="3aaZtz" node="32FhR2fYE0d" resolve="LogicalU" />
+      </node>
+    </node>
   </node>
   <node concept="1GnNiK" id="32FhR2fZ11Q">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Decrement" />
     <ref role="1GHRfG" node="32FhR2fYWw9" resolve="Decrement" />
     <node concept="1vbBpf" id="2bNndrzr0re" role="1ukcCD">
@@ -1942,7 +1976,7 @@
   </node>
   <node concept="1GnNiK" id="1B$hzDeGk5R">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Addition" />
     <ref role="1GHRfG" node="2YYVDcHRsxn" resolve="Addition" />
     <node concept="1vbBpf" id="2bNndrz$K9m" role="1ukcCD">
@@ -2456,7 +2490,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fYy7k">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Double" />
     <ref role="1GHRfG" node="1B$hzDeGla0" resolve="Double" />
     <node concept="1vbBpf" id="2bNndrzr56P" role="1ukcCD">
@@ -2496,10 +2530,10 @@
   <node concept="2oAaVg" id="2YYVDcHR$DA">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="Plus" />
     <node concept="2oAaYs" id="2YYVDcHR$DB" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4TD2" resolve="Arithmetic" />
     </node>
     <node concept="2jq5PB" id="2YYVDcHR$DD" role="2oAaxa" />
     <node concept="2oAaW5" id="2YYVDcHR$DK" role="2oAaxa">
@@ -2509,8 +2543,8 @@
     <node concept="2oAaZ9" id="2YYVDcHR$G2" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="2YYVDcHR$G$" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi6s" resolve="Unary" />
+      <node concept="2oAaXF" id="2bNndr_5bSa" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4TMK" resolve="ArithmeticUnary" />
       </node>
       <node concept="2oAaXF" id="2YYVDcHR$Gn" role="2oAawD">
         <ref role="3aaZtz" node="2YYVDcHR$DK" resolve="Plus" />
@@ -2519,7 +2553,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fZjw8">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_BitwiseXor" />
     <ref role="1GHRfG" node="32FhR2fZ9pl" resolve="BitwiseXor" />
     <node concept="1vbBpf" id="2bNndrzr4pq" role="1ukcCD">
@@ -2674,7 +2708,7 @@
   <node concept="2oAaVg" id="32FhR2fYl3y">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical" />
     <property role="TrG5h" value="And" />
     <node concept="2oAaYs" id="32FhR2fYl3z" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHRwq3" resolve="Logical" />
@@ -2697,7 +2731,7 @@
   </node>
   <node concept="1GnNiK" id="5EZvnkvK3Mb">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_MultDivModulo" />
     <ref role="1GHRfG" node="2YYVDcHR_IJ" resolve="MultDivModulo" />
     <node concept="1vbBpf" id="2bNndrzr29s" role="1ukcCD">
@@ -2840,7 +2874,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fYWBD">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Increment" />
     <ref role="1GHRfG" node="32FhR2fYWsK" resolve="Increment" />
     <node concept="1vbBpf" id="2bNndrz_zkr" role="1ukcCD">
@@ -3002,7 +3036,7 @@
   <node concept="2oAaVg" id="2YYVDcHRx_n">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational" />
     <property role="TrG5h" value="LessEqualTo" />
     <node concept="2oAaYs" id="2YYVDcHRx_o" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2g0p40" resolve="Relational" />
@@ -3026,7 +3060,7 @@
   <node concept="2oAaVg" id="32FhR2fZswt">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise" />
     <property role="TrG5h" value="BitwiseRightShift" />
     <node concept="2oAaYs" id="32FhR2fZswu" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fZ9oO" resolve="Bitwise" />
@@ -3049,7 +3083,7 @@
   </node>
   <node concept="1GnNiK" id="5EZvnkvJXFS">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Modulo" />
     <ref role="1GHRfG" node="2YYVDcHRvPB" resolve="Modulo" />
     <node concept="1vbBpf" id="2bNndrzr1Na" role="1ukcCD">
@@ -3550,7 +3584,7 @@
   </node>
   <node concept="1GnNiK" id="5EZvnkvK19j">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Multiplication" />
     <ref role="1GHRfG" node="2YYVDcHRsJQ" resolve="Multiplication" />
     <node concept="1vbBpf" id="5EZvnkvK19k" role="1ukcCD">
@@ -4051,7 +4085,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fYO9S">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Xor" />
     <ref role="1GHRfG" node="32FhR2fYNht" resolve="Xor" />
     <node concept="1vbBpf" id="2bNndrzr50D" role="1ukcCD">
@@ -4214,7 +4248,7 @@
   <node concept="2oAaVg" id="32FhR2fZvJp">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise" />
     <property role="TrG5h" value="BitwiseZeroFillRightShift" />
     <node concept="2oAaYs" id="32FhR2fZvJq" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fZ9oO" resolve="Bitwise" />
@@ -4238,7 +4272,7 @@
   <node concept="2oAaVg" id="32FhR2fYrS$">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical" />
     <property role="TrG5h" value="Not" />
     <node concept="2oAaYs" id="32FhR2fYrS_" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHRwq3" resolve="Logical" />
@@ -4261,7 +4295,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fZo_p">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_BitwiseLeftShift" />
     <ref role="1GHRfG" node="32FhR2fZovC" resolve="BitwiseLeftShift" />
     <node concept="1vbBpf" id="2bNndrzr3CH" role="1ukcCD">
@@ -4416,7 +4450,7 @@
   <node concept="2oAaVg" id="2YYVDcHR_IJ">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="MultDivModulo" />
     <node concept="2oAaYs" id="2YYVDcHR_IK" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHRsJQ" resolve="Multiplication" />
@@ -4431,7 +4465,7 @@
   <node concept="2oAaVg" id="32FhR2fZ9pl">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise" />
     <property role="TrG5h" value="BitwiseXor" />
     <node concept="2oAaYs" id="32FhR2fZ9pm" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fZ9oO" resolve="Bitwise" />
@@ -4454,7 +4488,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fZ9nC">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_BitwiseCompliment" />
     <ref role="1GHRfG" node="32FhR2fZ9p5" resolve="BitwiseCompliment" />
     <node concept="1vbBpf" id="2bNndrzr3wi" role="1ukcCD">
@@ -4549,7 +4583,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fZ9nf">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_BitwiseAnd" />
     <ref role="1GHRfG" node="32FhR2fZ9oG" resolve="BitwiseAnd" />
     <node concept="1vbBpf" id="2bNndrzr3jv" role="1ukcCD">
@@ -4704,10 +4738,10 @@
   <node concept="2oAaVg" id="2YYVDcHRvPB">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="Modulo" />
     <node concept="2oAaYs" id="2YYVDcHRvPC" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4TD2" resolve="Arithmetic" />
     </node>
     <node concept="2jq5PB" id="2YYVDcHRvPE" role="2oAaxa" />
     <node concept="2oAaW5" id="2YYVDcHRsV$" role="2oAaxa">
@@ -4717,8 +4751,8 @@
     <node concept="2oAaZ9" id="2YYVDcHRt1h" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="2YYVDcHRt1i" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi5f" resolve="Binary" />
+      <node concept="2oAaXF" id="2bNndr_57Vn" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4TIc" resolve="ArithmeticBinary" />
       </node>
       <node concept="2oAaXF" id="2YYVDcHRt39" role="2oAawD">
         <ref role="3aaZtz" node="2YYVDcHRsV$" resolve="Modulo" />
@@ -4728,7 +4762,7 @@
   <node concept="2oAaVg" id="2YYVDcHR_eg">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="AddSub" />
     <node concept="2oAaYs" id="2YYVDcHR_eh" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHRsxn" resolve="Addition" />
@@ -4739,7 +4773,7 @@
   </node>
   <node concept="1GnNiK" id="1B$hzDeG13e">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Expression" />
     <ref role="1GHRfG" node="2YYVDcHR8_5" resolve="Expression" />
     <node concept="1GnNjC" id="1B$hzDeGlHU" role="CLm5g">
@@ -4782,7 +4816,7 @@
   <node concept="2oAaVg" id="32FhR2fYNht">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical" />
     <property role="TrG5h" value="Xor" />
     <node concept="2oAaYs" id="32FhR2fYNhu" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHRwq3" resolve="Logical" />
@@ -4806,7 +4840,7 @@
   <node concept="2oAaVg" id="2YYVDcHRwmJ">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational" />
     <property role="TrG5h" value="LessThan" />
     <node concept="2oAaYs" id="2YYVDcHRwmK" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2g0p40" resolve="Relational" />
@@ -4830,10 +4864,10 @@
   <node concept="2oAaVg" id="2YYVDcHRyQM">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.Numbers" />
     <property role="TrG5h" value="Int" />
     <node concept="2oAaYs" id="2YYVDcHRyQN" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4nLl" resolve="Numbers" />
     </node>
     <node concept="2jq5PB" id="2YYVDcHRyQO" role="2oAaxa" />
     <node concept="2oAaW5" id="2YYVDcHRyQP" role="2oAaxa">
@@ -4843,8 +4877,8 @@
     <node concept="2oAaZ9" id="2YYVDcHRyQR" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="5EZvnkvK7yh" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi7G" resolve="Primitive" />
+      <node concept="2oAaXF" id="2bNndr_4pMr" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4nLv" resolve="Number" />
       </node>
       <node concept="2oAaXF" id="2YYVDcHRyQT" role="2oAawD">
         <ref role="3aaZtz" node="2YYVDcHRyQP" resolve="Int" />
@@ -4854,7 +4888,7 @@
   <node concept="2oAaVg" id="32FhR2fZ5fm">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational" />
     <property role="TrG5h" value="NotEqualTo" />
     <node concept="2oAaYs" id="32FhR2fZ5fn" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2g0p40" resolve="Relational" />
@@ -4878,7 +4912,7 @@
   <node concept="2oAaVg" id="32FhR2fZ9pd">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise" />
     <property role="TrG5h" value="BitwiseOr" />
     <node concept="2oAaYs" id="32FhR2fZ9pe" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fZ9oO" resolve="Bitwise" />
@@ -4902,7 +4936,7 @@
   <node concept="2oAaVg" id="2YYVDcHRydj">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational" />
     <property role="TrG5h" value="GreaterEqualTo" />
     <node concept="2oAaYs" id="2YYVDcHRydk" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2g0p40" resolve="Relational" />
@@ -4925,7 +4959,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fYyYn">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Boolean" />
     <ref role="1GHRfG" node="2YYVDcHRzpy" resolve="Boolean" />
     <node concept="1vbBpf" id="2bNndrzr55s" role="1ukcCD">
@@ -4965,7 +4999,7 @@
   <node concept="2oAaVg" id="32FhR2fZovC">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise" />
     <property role="TrG5h" value="BitwiseLeftShift" />
     <node concept="2oAaYs" id="32FhR2fZovD" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fZ9oO" resolve="Bitwise" />
@@ -4986,33 +5020,9 @@
       </node>
     </node>
   </node>
-  <node concept="2oAaVg" id="2YYVDcHRyht">
-    <property role="1ewt2y" value="false" />
-    <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives" />
-    <property role="TrG5h" value="String" />
-    <node concept="2oAaYs" id="2YYVDcHRyhu" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
-    </node>
-    <node concept="2jq5PB" id="2YYVDcHRyhw" role="2oAaxa" />
-    <node concept="2oAaW5" id="2YYVDcHRyhB" role="2oAaxa">
-      <property role="TrG5h" value="String" />
-    </node>
-    <node concept="2jq5PB" id="2YYVDcHRylS" role="2oAaxa" />
-    <node concept="2oAaZ9" id="2YYVDcHRym9" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
-      <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="5EZvnkvK7x4" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi7G" resolve="Primitive" />
-      </node>
-      <node concept="2oAaXF" id="2YYVDcHRyms" role="2oAawD">
-        <ref role="3aaZtz" node="2YYVDcHRyhB" resolve="String" />
-      </node>
-    </node>
-  </node>
   <node concept="1GnNiK" id="32FhR2fZvOJ">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_BitwiseZeroFillRightShift" />
     <ref role="1GHRfG" node="32FhR2fZvJp" resolve="BitwiseZeroFillRightShift" />
     <node concept="1vbBpf" id="2bNndrzr4Bh" role="1ukcCD">
@@ -5166,7 +5176,7 @@
   </node>
   <node concept="1GnNiK" id="1B$hzDeGBH5">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_AddSub" />
     <ref role="1GHRfG" node="2YYVDcHR_eg" resolve="AddSub" />
     <node concept="1vbBpf" id="2bNndrz$E4s" role="1ukcCD">
@@ -5290,7 +5300,7 @@
   <node concept="2oAaVg" id="32FhR2fZ9p5">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise" />
     <property role="TrG5h" value="BitwiseCompliment" />
     <node concept="2oAaYs" id="32FhR2fZ9p6" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fZ9oO" resolve="Bitwise" />
@@ -5313,7 +5323,7 @@
   </node>
   <node concept="1GnNiK" id="1B$hzDeG$cS">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Subtraction" />
     <ref role="1GHRfG" node="2YYVDcHRtxX" resolve="Subtraction" />
     <node concept="1vbBpf" id="2bNndrzr2WW" role="1ukcCD">
@@ -5815,7 +5825,7 @@
   <node concept="2oAaVg" id="2YYVDcHRx34">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational" />
     <property role="TrG5h" value="EqualTo" />
     <node concept="2oAaYs" id="2YYVDcHRx35" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2g0p40" resolve="Relational" />
@@ -5838,7 +5848,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fXJhS">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_LessThan" />
     <ref role="1GHRfG" node="2YYVDcHRwmJ" resolve="LessThan" />
     <node concept="1vbBpf" id="2bNndrzr6EW" role="1ukcCD">
@@ -6102,7 +6112,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fXJgJ">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_LessEqualTo" />
     <ref role="1GHRfG" node="2YYVDcHRx_n" resolve="LessEqualTo" />
     <node concept="1vbBpf" id="2bNndrzr6ms" role="1ukcCD">
@@ -6367,7 +6377,7 @@
   <node concept="2oAaVg" id="32FhR2fZ9oO">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise" />
     <property role="TrG5h" value="Bitwise" />
     <node concept="2oAaYs" id="32FhR2fZ9oP" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
@@ -6404,7 +6414,7 @@
   <node concept="2oAaVg" id="32FhR2g0p40">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational" />
     <property role="TrG5h" value="Relational" />
     <node concept="2oAaYs" id="32FhR2g0p41" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
@@ -6427,7 +6437,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fYCFK">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Or" />
     <ref role="1GHRfG" node="32FhR2fYr4_" resolve="Or" />
     <node concept="1vbBpf" id="2bNndrzr4Qj" role="1ukcCD">
@@ -6590,7 +6600,7 @@
   <node concept="2oAaVg" id="32FhR2fYR7M">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="PlusNegation" />
     <node concept="2oAaYs" id="32FhR2fYR7N" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHR$$n" resolve="Negation" />
@@ -6602,20 +6612,21 @@
   <node concept="2oAaVg" id="2YYVDcHRtxX">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="Subtraction" />
     <node concept="2oAaYs" id="2YYVDcHRtVD" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4TD2" resolve="Arithmetic" />
     </node>
     <node concept="2jq5PB" id="2YYVDcHRtVO" role="2oAaxa" />
     <node concept="2oAaW5" id="2YYVDcHRsyB" role="2oAaxa">
       <property role="TrG5h" value="Subtraction" />
     </node>
+    <node concept="2jq5PB" id="2bNndr_5dQq" role="2oAaxa" />
     <node concept="2oAaZ9" id="2YYVDcHRsGh" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="2YYVDcHRsGZ" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi5f" resolve="Binary" />
+      <node concept="2oAaXF" id="2bNndr_5dQL" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4TIc" resolve="ArithmeticBinary" />
       </node>
       <node concept="2oAaXF" id="2YYVDcHRsGI" role="2oAawD">
         <ref role="3aaZtz" node="2YYVDcHRsyB" resolve="Subtraction" />
@@ -6624,7 +6635,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fYAhg">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_And" />
     <ref role="1GHRfG" node="32FhR2fYl3y" resolve="And" />
     <node concept="1vbBpf" id="2bNndrzr4I6" role="1ukcCD">
@@ -6787,7 +6798,7 @@
   <node concept="2oAaVg" id="2YYVDcHR$H1">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical" />
     <property role="TrG5h" value="LogicalExpressions" />
     <node concept="2oAaYs" id="32FhR2fYtFe" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fYl3y" resolve="And" />
@@ -6805,7 +6816,7 @@
   <node concept="2oAaVg" id="32FhR2fZ9oG">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise" />
     <property role="TrG5h" value="BitwiseAnd" />
     <node concept="2oAaYs" id="32FhR2fZ9oH" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fZ9oO" resolve="Bitwise" />
@@ -6829,10 +6840,10 @@
   <node concept="2oAaVg" id="32FhR2fYWw9">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="Decrement" />
     <node concept="2oAaYs" id="32FhR2fYWwa" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4TD2" resolve="Arithmetic" />
     </node>
     <node concept="2jq5PB" id="32FhR2fYWwb" role="2oAaxa" />
     <node concept="2oAaW5" id="32FhR2fYWwc" role="2oAaxa">
@@ -6842,8 +6853,8 @@
     <node concept="2oAaZ9" id="32FhR2fYWwe" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="32FhR2fYWwf" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi6s" resolve="Unary" />
+      <node concept="2oAaXF" id="2bNndr_5030" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4TMK" resolve="ArithmeticUnary" />
       </node>
       <node concept="2oAaXF" id="32FhR2fYWwg" role="2oAawD">
         <ref role="3aaZtz" node="32FhR2fYWwc" resolve="Decrement" />
@@ -6853,10 +6864,10 @@
   <node concept="2oAaVg" id="1B$hzDeGla0">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.Numbers" />
     <property role="TrG5h" value="Double" />
     <node concept="2oAaYs" id="1B$hzDeGla1" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4nLl" resolve="Numbers" />
     </node>
     <node concept="2jq5PB" id="1B$hzDeGla2" role="2oAaxa" />
     <node concept="2oAaW5" id="1B$hzDeGla3" role="2oAaxa">
@@ -6866,8 +6877,8 @@
     <node concept="2oAaZ9" id="1B$hzDeGla5" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="5EZvnkvK7xQ" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi7G" resolve="Primitive" />
+      <node concept="2oAaXF" id="2bNndr_4pNS" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4nLv" resolve="Number" />
       </node>
       <node concept="2oAaXF" id="1B$hzDeGla7" role="2oAawD">
         <ref role="3aaZtz" node="1B$hzDeGla3" resolve="Double" />
@@ -6876,7 +6887,7 @@
   </node>
   <node concept="1GnNiK" id="5EZvnkvK8dP">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Integer" />
     <ref role="1GHRfG" node="2YYVDcHRyQM" resolve="Int" />
     <node concept="1vbBpf" id="2bNndrzr594" role="1ukcCD">
@@ -6916,10 +6927,10 @@
   <node concept="2oAaVg" id="2YYVDcHRvkI">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="Division" />
     <node concept="2oAaYs" id="2YYVDcHRvla" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4TD2" resolve="Arithmetic" />
     </node>
     <node concept="2jq5PB" id="2YYVDcHRvli" role="2oAaxa" />
     <node concept="2oAaW5" id="2YYVDcHRsPa" role="2oAaxa">
@@ -6929,8 +6940,8 @@
     <node concept="2oAaZ9" id="2YYVDcHRt0$" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="2YYVDcHRt0_" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi5f" resolve="Binary" />
+      <node concept="2oAaXF" id="2bNndr_5218" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4TIc" resolve="ArithmeticBinary" />
       </node>
       <node concept="2oAaXF" id="2YYVDcHRt2p" role="2oAawD">
         <ref role="3aaZtz" node="2YYVDcHRsPa" resolve="Division" />
@@ -6939,7 +6950,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2g0gi1">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Comparisons" />
     <ref role="1GHRfG" node="32FhR2fYSNy" resolve="Comparisons" />
     <node concept="1vbBpf" id="2bNndrzr7Bc" role="1ukcCD">
@@ -7180,7 +7191,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fYvIf">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Float" />
     <ref role="1GHRfG" node="1B$hzDeGl7S" resolve="Float" />
     <node concept="1vbBpf" id="2bNndrzr57W" role="1ukcCD">
@@ -7220,7 +7231,7 @@
   <node concept="2oAaVg" id="32FhR2fYr4_">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical" />
     <property role="TrG5h" value="Or" />
     <node concept="2oAaYs" id="32FhR2fYr4A" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHRwq3" resolve="Logical" />
@@ -7243,7 +7254,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fYCYk">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Not" />
     <ref role="1GHRfG" node="32FhR2fYrS$" resolve="Not" />
     <node concept="1vbBpf" id="2bNndrzr4M6" role="1ukcCD">
@@ -7341,10 +7352,10 @@
   <node concept="2oAaVg" id="32FhR2fYWsK">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="Increment" />
     <node concept="2oAaYs" id="32FhR2fYWsL" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4TD2" resolve="Arithmetic" />
     </node>
     <node concept="2jq5PB" id="32FhR2fYWsM" role="2oAaxa" />
     <node concept="2oAaW5" id="32FhR2fYWsN" role="2oAaxa">
@@ -7354,8 +7365,8 @@
     <node concept="2oAaZ9" id="32FhR2fYWsP" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="32FhR2fYWvs" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi6s" resolve="Unary" />
+      <node concept="2oAaXF" id="2bNndr_55Xi" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4TMK" resolve="ArithmeticUnary" />
       </node>
       <node concept="2oAaXF" id="32FhR2fYWsR" role="2oAawD">
         <ref role="3aaZtz" node="32FhR2fYWsN" resolve="Increment" />
@@ -7364,7 +7375,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fXC$O">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_GreaterEqualTo" />
     <ref role="1GHRfG" node="2YYVDcHRydj" resolve="GreaterEqualTo" />
     <node concept="1vbBpf" id="2bNndrzr5PI" role="1ukcCD">
@@ -7629,10 +7640,10 @@
   <node concept="2oAaVg" id="2YYVDcHR$$n">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="Negation" />
     <node concept="2oAaYs" id="2YYVDcHR$$o" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4TD2" resolve="Arithmetic" />
     </node>
     <node concept="2jq5PB" id="2YYVDcHR$$q" role="2oAaxa" />
     <node concept="2oAaW5" id="2YYVDcHR$$X" role="2oAaxa">
@@ -7642,8 +7653,8 @@
     <node concept="2oAaZ9" id="2YYVDcHR$$x" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="2YYVDcHR$Db" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi6s" resolve="Unary" />
+      <node concept="2oAaXF" id="2bNndr_59U5" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4TMK" resolve="ArithmeticUnary" />
       </node>
       <node concept="2oAaXF" id="2YYVDcHR$D0" role="2oAawD">
         <ref role="3aaZtz" node="2YYVDcHR$$X" resolve="Negation" />
@@ -7652,7 +7663,7 @@
   </node>
   <node concept="1GnNiK" id="32FhR2fZhya">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_BitwiseOr" />
     <ref role="1GHRfG" node="32FhR2fZ9pd" resolve="BitwiseOr" />
     <node concept="1vbBpf" id="2bNndrzr3Vs" role="1ukcCD">
@@ -7806,7 +7817,7 @@
   </node>
   <node concept="1GnNiK" id="5EZvnkvJSqS">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Division" />
     <ref role="1GHRfG" node="2YYVDcHRvkI" resolve="Division" />
     <node concept="1vbBpf" id="2bNndrzr0LK" role="1ukcCD">
@@ -8308,8 +8319,8 @@
   <node concept="2oAaVg" id="32FhR2fZ4kG">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
-    <property role="TrG5h" value="Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
+    <property role="TrG5h" value="ArithmeticExpressions" />
     <node concept="2oAaYs" id="32FhR2fZ4kH" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHR_eg" resolve="AddSub" />
     </node>
@@ -8329,7 +8340,7 @@
   <node concept="2oAaVg" id="2YYVDcHR8_5">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod" />
     <property role="TrG5h" value="Expression" />
     <node concept="2oAaW5" id="2YYVDcHRi3Q" role="2oAaxa">
       <property role="TrG5h" value="Expression" />
@@ -8413,10 +8424,10 @@
   <node concept="2oAaVg" id="2bNndrzr7P_">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="Exponentiation" />
     <node concept="2oAaYs" id="2bNndrzr7PA" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+      <ref role="3aaZtz" node="2bNndr_4TD2" resolve="Arithmetic" />
     </node>
     <node concept="2jq5PB" id="2bNndrzr7PB" role="2oAaxa" />
     <node concept="2oAaW5" id="2bNndrzr7PC" role="2oAaxa">
@@ -8426,8 +8437,8 @@
     <node concept="2oAaZ9" id="2bNndrzr7PE" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="2bNndrzr7Uh" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRi5f" resolve="Binary" />
+      <node concept="2oAaXF" id="2bNndr_53Zd" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4TIc" resolve="ArithmeticBinary" />
       </node>
       <node concept="2oAaXF" id="2bNndrzr7PG" role="2oAawD">
         <ref role="3aaZtz" node="2bNndrzr7PC" resolve="Exponentiation" />
@@ -8436,7 +8447,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzr9rP">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Exponentiation" />
     <ref role="1GHRfG" node="2bNndrzr7P_" resolve="Exponentiation" />
     <node concept="1vbBpf" id="2bNndrzr9rQ" role="1ukcCD">
@@ -8912,7 +8923,7 @@
   <node concept="2oAaVg" id="2bNndrzrgMP">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Assignment" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Assignment" />
     <property role="TrG5h" value="Assignment" />
     <node concept="2oAaYs" id="2bNndrzrh0c" role="2oAaxa">
       <ref role="3aaZtz" node="2bNndrzrgNS" resolve="Variable" />
@@ -8960,11 +8971,14 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="TrG5h" value="Variable" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Variables" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Variables" />
     <node concept="2oAaYs" id="2bNndrzrh5H" role="2oAaxa">
       <ref role="3aaZtz" node="2bNndrzrh52" resolve="Type" />
     </node>
-    <node concept="2jq5PB" id="2bNndrzrgPt" role="2oAaxa" />
+    <node concept="2oAaYs" id="2bNndr_4xJe" role="2oAaxa">
+      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+    </node>
+    <node concept="2jq5PB" id="2bNndr_4xIQ" role="2oAaxa" />
     <node concept="2oAaW5" id="2bNndrzrgNT" role="2oAaxa">
       <property role="TrG5h" value="Variable" />
     </node>
@@ -8995,13 +9009,10 @@
   <node concept="2oAaVg" id="2bNndrzrgWV">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.Numbers" />
     <property role="TrG5h" value="Primitives" />
     <node concept="2oAaYs" id="2bNndrzrgWW" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHRzpy" resolve="Boolean" />
-    </node>
-    <node concept="2oAaYs" id="2bNndrzrgX1" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHRyht" resolve="String" />
     </node>
     <node concept="2oAaYs" id="2bNndrzrgX9" role="2oAaxa">
       <ref role="3aaZtz" node="1B$hzDeGl7S" resolve="Float" />
@@ -9016,34 +9027,22 @@
   <node concept="2oAaVg" id="2bNndrzrh52">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Types" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Types" />
     <property role="TrG5h" value="Type" />
-    <node concept="2oAaYs" id="2bNndrzrhwo" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
-    </node>
-    <node concept="2jq5PB" id="2bNndrzrhwB" role="2oAaxa" />
     <node concept="2oAaW5" id="2bNndrzrgPI" role="2oAaxa">
       <property role="TrG5h" value="Type" />
-    </node>
-    <node concept="2jq5PB" id="2bNndrzrhx0" role="2oAaxa" />
-    <node concept="2oAaZ9" id="2bNndrzrgSv" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
-      <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="2bNndrzrgT8" role="2oAawB">
-        <ref role="3aaZtz" node="2bNndrzrgPI" resolve="Type" />
-      </node>
-      <node concept="2oAaXF" id="2bNndrzrgST" role="2oAawD">
-        <ref role="3aaZtz" node="2YYVDcHRi7G" resolve="Primitive" />
-      </node>
     </node>
   </node>
   <node concept="2oAaVg" id="2bNndrzrjze">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Types" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Types" />
     <property role="TrG5h" value="TypeConversion" />
     <node concept="2oAaYs" id="2bNndrzrj$8" role="2oAaxa">
       <ref role="3aaZtz" node="2bNndrzrh52" resolve="Type" />
+    </node>
+    <node concept="2oAaYs" id="2bNndr_4vJc" role="2oAaxa">
+      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
     </node>
     <node concept="2jq5PB" id="2bNndrzrj$a" role="2oAaxa" />
     <node concept="2oAaW5" id="2bNndrzrj$n" role="2oAaxa">
@@ -9085,7 +9084,7 @@
     </node>
   </node>
   <node concept="312cEu" id="2bNndrzrjLp">
-    <property role="3GE5qa" value="ExpresssionsMetaMod.HelperClasses" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.CodeGen.HelperClasses" />
     <property role="TrG5h" value="Environment" />
     <node concept="312cEg" id="2bNndrzrmAM" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -9496,7 +9495,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzrs36">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Variables" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Variables.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Variable" />
     <ref role="1GHRfG" node="2bNndrzrgNS" resolve="Variable" />
     <node concept="1GnNjC" id="2bNndrzrseg" role="CLm5g">
@@ -9549,7 +9548,7 @@
   <node concept="2oAaVg" id="2bNndrzsdah">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
     <property role="TrG5h" value="IncDec" />
     <node concept="2oAaYs" id="2bNndrzsdai" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fYWsK" resolve="Increment" />
@@ -9559,7 +9558,7 @@
     </node>
   </node>
   <node concept="312cEu" id="2bNndrzseG8">
-    <property role="3GE5qa" value="ExpresssionsMetaMod.HelperClasses" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.CodeGen.HelperClasses" />
     <property role="TrG5h" value="Types" />
     <node concept="Wx3nA" id="2bNndrzsg4s" role="jymVt">
       <property role="2dlcS1" value="false" />
@@ -9810,7 +9809,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzvS09">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_IncDec" />
     <ref role="1GHRfG" node="2bNndrzsdah" resolve="IncDec" />
     <node concept="1GnNjC" id="2bNndrzvS2P" role="CLm5g">
@@ -9920,7 +9919,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$iRR">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_PlusNegation" />
     <ref role="1GHRfG" node="32FhR2fYR7M" resolve="PlusNegation" />
     <node concept="1GnNjC" id="2bNndrz$iTS" role="CLm5g">
@@ -10030,15 +10029,15 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$mMq">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Arithmetic" />
-    <ref role="1GHRfG" node="32FhR2fZ4kG" resolve="Arithmetic" />
+    <ref role="1GHRfG" node="32FhR2fZ4kG" resolve="ArithmeticExpressions" />
     <node concept="1GnNjC" id="2bNndrz$mOr" role="CLm5g">
       <property role="TrG5h" value="evaluateArithmetic" />
       <node concept="37vLTG" id="2bNndrz$mOs" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="2bNndrz$mOt" role="1tU5fm">
-          <ref role="1l_bkj" node="32FhR2fZ4kG" resolve="Arithmetic" />
+          <ref role="1l_bkj" node="32FhR2fZ4kG" resolve="ArithmeticExpressions" />
         </node>
       </node>
       <node concept="37vLTG" id="2bNndrz$mOu" role="3clF46">
@@ -10123,7 +10122,7 @@
           <node concept="3clFbS" id="2bNndrz$ptg" role="3clFbx">
             <node concept="3cpWs6" id="2bNndrz$pth" role="3cqZAp">
               <node concept="3otQA" id="2bNndrz$pti" role="3cqZAk">
-                <ref role="37wK5l" node="2Hrt$vkQB8a" resolve="evaluateAddSub" />
+                <ref role="37wK5l" node="2bNndrz$yrq" resolve="evaluateAddSub" />
                 <node concept="37vLTw" id="2bNndrz$ptj" role="37wK5m">
                   <ref role="3cqZAo" node="2bNndrz$mOs" resolve="inputGroup" />
                 </node>
@@ -10271,7 +10270,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$sU0">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Assignment.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Assignment.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Assignment" />
     <ref role="1GHRfG" node="2bNndrzrgMP" resolve="Assignment" />
     <node concept="1vbBpf" id="2bNndrz$sU1" role="1ukcCD">
@@ -10309,7 +10308,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yro">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_AddSub" />
     <ref role="1GHRfG" node="2YYVDcHR_eg" resolve="AddSub" />
     <node concept="1vbBpf" id="2bNndrz$yrp" role="1ukcCD">
@@ -10420,7 +10419,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$ys5">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Addition" />
     <ref role="1GHRfG" node="2YYVDcHRsxn" resolve="Addition" />
     <node concept="1vbBpf" id="2bNndrz$ys6" role="1ukcCD">
@@ -10922,15 +10921,15 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yvh">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Arithmetic" />
-    <ref role="1GHRfG" node="32FhR2fZ4kG" resolve="Arithmetic" />
+    <ref role="1GHRfG" node="32FhR2fZ4kG" resolve="ArithmeticExpressions" />
     <node concept="1GnNjC" id="2bNndrz$yvi" role="CLm5g">
       <property role="TrG5h" value="evaluateArithmetic" />
       <node concept="37vLTG" id="2bNndrz$yvj" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="2bNndrz$yvk" role="1tU5fm">
-          <ref role="1l_bkj" node="32FhR2fZ4kG" resolve="Arithmetic" />
+          <ref role="1l_bkj" node="32FhR2fZ4kG" resolve="ArithmeticExpressions" />
         </node>
       </node>
       <node concept="37vLTG" id="2bNndrz$yvl" role="3clF46">
@@ -11184,7 +11183,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$ywO">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Decrement" />
     <ref role="1GHRfG" node="32FhR2fYWw9" resolve="Decrement" />
     <node concept="1vbBpf" id="2bNndrz_wMo" role="1ukcCD">
@@ -11350,7 +11349,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yxM">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Division" />
     <ref role="1GHRfG" node="2YYVDcHRvkI" resolve="Division" />
     <node concept="1vbBpf" id="2bNndrz_Hvu" role="1ukcCD">
@@ -11863,7 +11862,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$y$X">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Exponentiation" />
     <ref role="1GHRfG" node="2bNndrzr7P_" resolve="Exponentiation" />
     <node concept="1vbBpf" id="2bNndrzA360" role="1ukcCD">
@@ -12434,7 +12433,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yBR">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_IncDec" />
     <ref role="1GHRfG" node="2bNndrzsdah" resolve="IncDec" />
     <node concept="1GnNjC" id="2bNndrz$yBS" role="CLm5g">
@@ -12556,7 +12555,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yCz">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_Increment" />
     <ref role="1GHRfG" node="32FhR2fYWsK" resolve="Increment" />
     <node concept="1vbBpf" id="2bNndrz$yC$" role="1ukcCD">
@@ -12708,7 +12707,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yDw">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Modulo" />
     <ref role="1GHRfG" node="2YYVDcHRvPB" resolve="Modulo" />
     <node concept="1vbBpf" id="2bNndrz_Z1V" role="1ukcCD">
@@ -13221,7 +13220,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yGF">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_MultDivModulo" />
     <ref role="1GHRfG" node="2YYVDcHR_IJ" resolve="MultDivModulo" />
     <node concept="1vbBpf" id="2bNndrzA1jG" role="1ukcCD">
@@ -13379,7 +13378,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yH_">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Multiplication" />
     <ref role="1GHRfG" node="2YYVDcHRsJQ" resolve="Multiplication" />
     <node concept="1vbBpf" id="2bNndrz_QjI" role="1ukcCD">
@@ -13892,7 +13891,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yKK">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Negation" />
     <ref role="1GHRfG" node="2YYVDcHR$$n" resolve="Negation" />
     <node concept="1vbBpf" id="2bNndrz_ou8" role="1ukcCD">
@@ -14059,7 +14058,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yLK">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Plus" />
     <ref role="1GHRfG" node="2YYVDcHR$DA" resolve="Plus" />
     <node concept="1vbBpf" id="2bNndrz_qsy" role="1ukcCD">
@@ -14205,7 +14204,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yMB">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_PlusNegation" />
     <ref role="1GHRfG" node="32FhR2fYR7M" resolve="PlusNegation" />
     <node concept="1GnNjC" id="2bNndrz$yMC" role="CLm5g">
@@ -14327,7 +14326,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yNj">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Subtraction" />
     <ref role="1GHRfG" node="2YYVDcHRtxX" resolve="Subtraction" />
     <node concept="1vbBpf" id="2bNndrz$WZ8" role="1ukcCD">
@@ -14840,7 +14839,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrz$yZa">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Expression" />
     <ref role="1GHRfG" node="2YYVDcHR8_5" resolve="Expression" />
     <node concept="1GnNjC" id="2bNndrz$yZb" role="CLm5g">
@@ -14884,11 +14883,14 @@
       <node concept="1vbBpf" id="2bNndrz$Blc" role="1eREs9">
         <ref role="1vbBpc" node="2bNndrz$_Py" resolve="Common" />
       </node>
+      <node concept="1vbBpf" id="2bNndr_kEYV" role="1eREs9">
+        <ref role="1vbBpc" node="2bNndr_jthN" resolve="TypeChecking" />
+      </node>
     </node>
   </node>
   <node concept="1GnNiK" id="2bNndrz$_Pk">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.CodeGen.Common" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.CodeGen.Common" />
     <property role="TrG5h" value="CodeGen_Common_Expression" />
     <ref role="1GHRfG" node="2YYVDcHR8_5" resolve="Expression" />
     <node concept="1vbBhR" id="2bNndrz$_Py" role="1ukcCD">
@@ -15021,7 +15023,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzA93j">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Assignment.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Assignment.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Assignment" />
     <ref role="1GHRfG" node="2bNndrzrgMP" resolve="Assignment" />
     <node concept="1vbBpf" id="2bNndrzA93J" role="1ukcCD">
@@ -15234,7 +15236,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzFSQ6">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_BitwiseExpressions" />
     <ref role="1GHRfG" node="32FhR2fZ9p0" resolve="BitwiseExpressions" />
     <node concept="1vbBpf" id="2bNndrzFSQ7" role="1ukcCD">
@@ -15472,7 +15474,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzG15J">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_BitwiseAnd" />
     <ref role="1GHRfG" node="32FhR2fZ9oG" resolve="BitwiseAnd" />
     <node concept="1vbBpf" id="2bNndrzG3sr" role="1ukcCD">
@@ -15638,7 +15640,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzG18L">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_BitwiseCompliment" />
     <ref role="1GHRfG" node="32FhR2fZ9p5" resolve="BitwiseCompliment" />
     <node concept="1vbBpf" id="2bNndrzG7YA" role="1ukcCD">
@@ -15742,7 +15744,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzG19F">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_BitwiseExpressions" />
     <ref role="1GHRfG" node="32FhR2fZ9p0" resolve="BitwiseExpressions" />
     <node concept="1vbBpf" id="2bNndrzGBgd" role="1ukcCD">
@@ -16004,7 +16006,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzG1bb">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_BitwiseLeftShift" />
     <ref role="1GHRfG" node="32FhR2fZovC" resolve="BitwiseLeftShift" />
     <node concept="1vbBpf" id="2bNndrzGd3J" role="1ukcCD">
@@ -16170,7 +16172,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzG1ed">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_BitwiseOr" />
     <ref role="1GHRfG" node="32FhR2fZ9pd" resolve="BitwiseOr" />
     <node concept="1vbBpf" id="2bNndrzGhbt" role="1ukcCD">
@@ -16336,7 +16338,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzG1hf">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_BitwiseRightShift" />
     <ref role="1GHRfG" node="32FhR2fZswt" resolve="BitwiseRightShift" />
     <node concept="1vbBpf" id="2bNndrzGnTg" role="1ukcCD">
@@ -16502,7 +16504,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzG1kh">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_BitwiseXor" />
     <ref role="1GHRfG" node="32FhR2fZ9pl" resolve="BitwiseXor" />
     <node concept="1vbBpf" id="2bNndrzGujT" role="1ukcCD">
@@ -16668,7 +16670,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzG1nj">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Bitwise.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_BitwiseZeroFillRightShift" />
     <ref role="1GHRfG" node="32FhR2fZvJp" resolve="BitwiseZeroFillRightShift" />
     <node concept="1vbBpf" id="2bNndrzG$EO" role="1ukcCD">
@@ -16834,7 +16836,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzHwni">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_And" />
     <ref role="1GHRfG" node="32FhR2fYl3y" resolve="And" />
     <node concept="1vbBpf" id="2bNndrzHwxs" role="1ukcCD">
@@ -17008,7 +17010,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzHwok">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Not" />
     <ref role="1GHRfG" node="32FhR2fYrS$" resolve="Not" />
     <node concept="1vbBpf" id="2bNndrzHyQD" role="1ukcCD">
@@ -17114,7 +17116,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzHwoV">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Or" />
     <ref role="1GHRfG" node="32FhR2fYr4_" resolve="Or" />
     <node concept="1vbBpf" id="2bNndrzH_h0" role="1ukcCD">
@@ -17288,7 +17290,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzHwpX">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Logical.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Xor" />
     <ref role="1GHRfG" node="32FhR2fYNht" resolve="Xor" />
     <node concept="1vbBpf" id="2bNndrzHBE3" role="1ukcCD">
@@ -17462,7 +17464,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzHMOD">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Boolean" />
     <ref role="1GHRfG" node="2YYVDcHRzpy" resolve="Boolean" />
     <node concept="1vbBpf" id="2bNndrzHMPY" role="1ukcCD">
@@ -17507,7 +17509,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzHMOR">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Double" />
     <ref role="1GHRfG" node="1B$hzDeGla0" resolve="Double" />
     <node concept="1vbBpf" id="2bNndrzHMQ_" role="1ukcCD">
@@ -17552,7 +17554,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzHMP5">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Float" />
     <ref role="1GHRfG" node="1B$hzDeGl7S" resolve="Float" />
     <node concept="1vbBpf" id="2bNndrzHMRc" role="1ukcCD">
@@ -17597,7 +17599,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzHMPj">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Int" />
     <ref role="1GHRfG" node="2YYVDcHRyQM" resolve="Int" />
     <node concept="1vbBpf" id="2bNndrzHMRW" role="1ukcCD">
@@ -17642,7 +17644,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzKOe6">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_Comparisons" />
     <ref role="1GHRfG" node="32FhR2fYSNy" resolve="Comparisons" />
     <node concept="1vbBpf" id="2bNndrzKOxE" role="1ukcCD">
@@ -17907,7 +17909,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzKOfB">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_EqualTo" />
     <ref role="1GHRfG" node="2YYVDcHRx34" resolve="EqualTo" />
     <node concept="1vbBpf" id="2bNndrzKODn" role="1ukcCD">
@@ -18183,7 +18185,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzKOhi">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_GreaterEqualTo" />
     <ref role="1GHRfG" node="2YYVDcHRydj" resolve="GreaterEqualTo" />
     <node concept="1vbBpf" id="2bNndrzL0ak" role="1ukcCD">
@@ -18459,7 +18461,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzKOiX">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_GreaterThan" />
     <ref role="1GHRfG" node="2YYVDcHRwXJ" resolve="GreaterThan" />
     <node concept="1vbBpf" id="2bNndrzKZGj" role="1ukcCD">
@@ -18735,7 +18737,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzKOkC">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_LessEqualTo" />
     <ref role="1GHRfG" node="2YYVDcHRx_n" resolve="LessEqualTo" />
     <node concept="1vbBpf" id="2bNndrzKWXp" role="1ukcCD">
@@ -19011,7 +19013,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzKOmj">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_LessThan" />
     <ref role="1GHRfG" node="2YYVDcHRwmJ" resolve="LessThan" />
     <node concept="1vbBpf" id="2bNndrzKUei" role="1ukcCD">
@@ -19287,7 +19289,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzKOnY">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Relational.CodeGen.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_NotEqualTo" />
     <ref role="1GHRfG" node="32FhR2fZ5fm" resolve="NotEqualTo" />
     <node concept="1vbBpf" id="2bNndrzKR$G" role="1ukcCD">
@@ -19563,7 +19565,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzL8qq">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Types.Evaluator" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Types.Evaluator" />
     <property role="TrG5h" value="CodeGen_Evaluator_TypeConversion" />
     <ref role="1GHRfG" node="2bNndrzrjze" resolve="TypeConversion" />
     <node concept="1vbBpf" id="2bNndrzLaFI" role="1ukcCD">
@@ -19667,7 +19669,7 @@
   </node>
   <node concept="1GnNiK" id="2bNndrzLvgp">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="ExpresssionsMetaMod.Types.EvaluatorEnv" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Types.EvaluatorEnv" />
     <property role="TrG5h" value="CodeGen_EvaluatorEnv_TypeConversion" />
     <ref role="1GHRfG" node="2bNndrzrjze" resolve="TypeConversion" />
     <node concept="1vbBpf" id="2bNndrzLvnC" role="1ukcCD">
@@ -19781,12 +19783,13 @@
   <node concept="2oAaVg" id="2bNndrzLD8B">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="TrG5h" value="Assembly" />
+    <property role="TrG5h" value="AssemblyCompArithAssIntFloat" />
+    <property role="3GE5qa" value="Test0Variant1" />
     <node concept="2oAaYs" id="2bNndrzLD8C" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fYSNy" resolve="Comparisons" />
     </node>
     <node concept="2oAaYs" id="2bNndrzLD8H" role="2oAaxa">
-      <ref role="3aaZtz" node="32FhR2fZ4kG" resolve="Arithmetic" />
+      <ref role="3aaZtz" node="32FhR2fZ4kG" resolve="ArithmeticExpressions" />
     </node>
     <node concept="2oAaYs" id="2bNndrzLUyk" role="2oAaxa">
       <ref role="3aaZtz" node="2bNndrzrgMP" resolve="Assignment" />
@@ -19794,17 +19797,21 @@
     <node concept="2oAaYs" id="2bNndrzNdbE" role="2oAaxa">
       <ref role="3aaZtz" node="2YYVDcHRyQM" resolve="Int" />
     </node>
+    <node concept="2oAaYs" id="2bNndr_5o6n" role="2oAaxa">
+      <ref role="3aaZtz" node="1B$hzDeGl7S" resolve="Float" />
+    </node>
   </node>
   <node concept="1GnNiK" id="2bNndrzLK1f">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="TrG5h" value="CodeGen_EvaluatorEnv_Assembly" />
-    <ref role="1GHRfG" node="2bNndrzLD8B" resolve="Assembly" />
+    <property role="TrG5h" value="CodeGen_EvaluatorEnv_AssemblyCompArithAssIntFloat" />
+    <property role="3GE5qa" value="Test0Variant1" />
+    <ref role="1GHRfG" node="2bNndrzLD8B" resolve="AssemblyCompArithAssIntFloat" />
     <node concept="1GnNjC" id="2bNndrzLU8y" role="CLm5g">
-      <property role="TrG5h" value="main" />
+      <property role="TrG5h" value="mainA" />
       <node concept="37vLTG" id="2bNndrzLU8z" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="2bNndrzLU8$" role="1tU5fm">
-          <ref role="1l_bkj" node="2bNndrzLD8B" resolve="Assembly" />
+          <ref role="1l_bkj" node="2bNndrzLD8B" resolve="AssemblyCompArithAssIntFloat" />
         </node>
       </node>
       <node concept="3clFbS" id="2bNndrzLU8_" role="3clF47">
@@ -19947,8 +19954,11 @@
       <node concept="3cqZAl" id="2bNndrzLUbN" role="3clF45" />
     </node>
     <node concept="CLx5B" id="2bNndrzLU2t" role="CLm5g" />
-    <node concept="1vbBpf" id="2bNndrzLK1g" role="1ukcCD">
-      <ref role="1vbBpc" node="2bNndrz$yZo" resolve="EvaluatorEnv" />
+    <node concept="1vbBhR" id="2bNndr_G$$B" role="1ukcCD">
+      <property role="TrG5h" value="Dummy" />
+      <node concept="1vbBpf" id="2bNndr_G$$E" role="1eREs9">
+        <ref role="1vbBpc" node="2bNndrz$yZo" resolve="EvaluatorEnv" />
+      </node>
     </node>
     <node concept="2XypTt" id="2bNndrzLK1O" role="CLm5g">
       <property role="TrG5h" value="evaluateEnv" />
@@ -19956,7 +19966,7 @@
       <node concept="37vLTG" id="2bNndrzLK1P" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="2bNndrzLK1Q" role="1tU5fm">
-          <ref role="1l_bkj" node="2bNndrzLD8B" resolve="Assembly" />
+          <ref role="1l_bkj" node="2bNndrzLD8B" resolve="AssemblyCompArithAssIntFloat" />
         </node>
       </node>
       <node concept="37vLTG" id="2bNndrzLK22" role="3clF46">
@@ -20312,6 +20322,43 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2bNndr_5oVb" role="3cqZAp" />
+        <node concept="3clFbJ" id="2bNndr_5pug" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_5puh" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_5pui" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_5puj" role="3cqZAk">
+                <ref role="37wK5l" node="2bNndrzHMP7" resolve="evaluateFloat" />
+                <node concept="37vLTw" id="2bNndr_5puk" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndrzLK1P" resolve="inputGroup" />
+                </node>
+                <node concept="2OqwBi" id="2bNndr_5pul" role="37wK5m">
+                  <node concept="37vLTw" id="2bNndr_5pum" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndrzLK22" resolve="exp" />
+                  </node>
+                  <node concept="1fHQjy" id="2bNndr_5pun" role="2OqNvi">
+                    <node concept="CMjq$" id="2bNndr_5puo" role="1fHO_7">
+                      <ref role="CMYPG" node="1B$hzDeGl7V" resolve="Float" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bNndr_5pup" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndrzLK2n" resolve="env" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_5puq" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_5pur" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndrzLK22" resolve="exp" />
+            </node>
+            <node concept="1lWEKl" id="2bNndr_5pus" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_5put" role="1lWEKm">
+                <ref role="CMYPG" node="1B$hzDeGl7V" resolve="Float" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_5pco" role="3cqZAp" />
         <node concept="3clFbH" id="2bNndrzNgFy" role="3cqZAp" />
         <node concept="34ab3g" id="2bNndrzMUBW" role="3cqZAp">
           <property role="35gtTG" value="error" />
@@ -20344,8 +20391,9 @@
   <node concept="2oAaVg" id="2bNndrzNd0h">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="TrG5h" value="Model" />
-    <ref role="19kf5F" node="2bNndrzLD8B" resolve="Assembly" />
+    <property role="TrG5h" value="ModelTest0" />
+    <property role="3GE5qa" value="Test0Variant1" />
+    <ref role="19kf5F" node="2bNndrzLD8B" resolve="AssemblyCompArithAssIntFloat" />
     <node concept="2oAaW5" id="2bNndrzNd0i" role="2oAaxa">
       <property role="TrG5h" value="A0" />
       <node concept="2oAaXF" id="2bNndrzNd29" role="2oAawq">
@@ -20359,60 +20407,27 @@
       </node>
     </node>
     <node concept="2oAaW5" id="2bNndrzNd65" role="2oAaxa">
-      <property role="TrG5h" value="Add12" />
-      <node concept="2oAaXF" id="2bNndrzNd9e" role="2oAawq">
-        <ref role="3aaZtz" node="2YYVDcHRsxx" resolve="Addition" />
+      <property role="TrG5h" value="Mult12" />
+      <node concept="2oAaXF" id="2bNndr_lzvF" role="2oAawq">
+        <ref role="3aaZtz" node="2YYVDcHRsK0" resolve="Multiplication" />
       </node>
     </node>
     <node concept="2oAaW5" id="2bNndrzNdal" role="2oAaxa">
       <property role="TrG5h" value="1" />
-      <node concept="2oAaXF" id="2bNndrzNjma" role="2oAawq">
-        <ref role="3aaZtz" node="2YYVDcHRyQP" resolve="Int" />
+      <node concept="2oAaXF" id="2bNndr_jm$x" role="2oAawq">
+        <ref role="3aaZtz" node="1B$hzDeGl7V" resolve="Float" />
       </node>
     </node>
     <node concept="2oAaW5" id="2bNndrzNjnp" role="2oAaxa">
       <property role="TrG5h" value="2" />
-      <node concept="2oAaXF" id="2bNndrzNjq3" role="2oAawq">
+      <node concept="2oAaXF" id="2bNndr_joCz" role="2oAawq">
         <ref role="3aaZtz" node="2YYVDcHRyQP" resolve="Int" />
       </node>
     </node>
     <node concept="2oAaW5" id="2bNndrzNmQy" role="2oAaxa">
-      <property role="TrG5h" value="int" />
+      <property role="TrG5h" value="float" />
       <node concept="2oAaXF" id="2bNndrzUItM" role="2oAawq">
         <ref role="3aaZtz" node="2bNndrzrgPI" resolve="Type" />
-      </node>
-    </node>
-    <node concept="2oAaW5" id="2bNndr_3mRV" role="2oAaxa">
-      <property role="TrG5h" value="v0ComparedAdd12" />
-      <node concept="2oAaXF" id="2bNndr_3n0s" role="2oAawq">
-        <ref role="3aaZtz" node="2YYVDcHRydm" resolve="GreaterEqualTo" />
-      </node>
-    </node>
-    <node concept="2jq5PB" id="2bNndr_3n2i" role="2oAaxa" />
-    <node concept="2oAaUa" id="2bNndr_3n3X" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
-      <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="2bNndr_3n7U" role="2oAawB">
-        <ref role="3aaZtz" node="2bNndrzNd34" resolve="v0" />
-      </node>
-      <node concept="2oAaXF" id="2bNndr_3n4W" role="2oAawD">
-        <ref role="3aaZtz" node="2bNndr_3mRV" resolve="v0ComparedAdd12" />
-      </node>
-      <node concept="2oAawe" id="2bNndr_3n6O" role="2oAawy">
-        <ref role="3aaZtz" node="2YYVDcHRjeT" resolve="left" />
-      </node>
-    </node>
-    <node concept="2oAaUa" id="2bNndr_3naH" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
-      <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="2bNndr_3pdI" role="2oAawB">
-        <ref role="3aaZtz" node="2bNndrzNdal" resolve="1" />
-      </node>
-      <node concept="2oAaXF" id="2bNndr_3nbK" role="2oAawD">
-        <ref role="3aaZtz" node="2bNndr_3mRV" resolve="v0ComparedAdd12" />
-      </node>
-      <node concept="2oAawe" id="2bNndr_3ndC" role="2oAawy">
-        <ref role="3aaZtz" node="2YYVDcHRrv8" resolve="right" />
       </node>
     </node>
     <node concept="2jq5PB" id="2bNndr_3mRa" role="2oAaxa" />
@@ -20423,7 +20438,7 @@
         <ref role="3aaZtz" node="2bNndrzNdal" resolve="1" />
       </node>
       <node concept="2oAaXF" id="2bNndrzNjse" role="2oAawD">
-        <ref role="3aaZtz" node="2bNndrzNd65" resolve="Add12" />
+        <ref role="3aaZtz" node="2bNndrzNd65" resolve="Mult12" />
       </node>
       <node concept="2oAawe" id="2bNndrzNju2" role="2oAawy">
         <ref role="3aaZtz" node="2YYVDcHRjeT" resolve="left" />
@@ -20436,7 +20451,7 @@
         <ref role="3aaZtz" node="2bNndrzNjnp" resolve="2" />
       </node>
       <node concept="2oAaXF" id="2bNndrzNjz7" role="2oAawD">
-        <ref role="3aaZtz" node="2bNndrzNd65" resolve="Add12" />
+        <ref role="3aaZtz" node="2bNndrzNd65" resolve="Mult12" />
       </node>
       <node concept="2oAawe" id="2bNndrzNj$V" role="2oAawy">
         <ref role="3aaZtz" node="2YYVDcHRrv8" resolve="right" />
@@ -20460,7 +20475,7 @@
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2bNndrzNjNL" role="2oAawB">
-        <ref role="3aaZtz" node="2bNndrzNd65" resolve="Add12" />
+        <ref role="3aaZtz" node="2bNndrzNd65" resolve="Mult12" />
       </node>
       <node concept="2oAaXF" id="2bNndrzNjKV" role="2oAawD">
         <ref role="3aaZtz" node="2bNndrzNd0i" resolve="A0" />
@@ -20469,17 +20484,1916 @@
         <ref role="3aaZtz" node="2bNndrzrh2q" resolve="assign" />
       </node>
     </node>
-    <node concept="2jq5PB" id="2bNndrzNmJb" role="2oAaxa" />
+    <node concept="2jq5PB" id="2bNndr_3Cqj" role="2oAaxa" />
     <node concept="2oAaUa" id="2bNndrzNpf4" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="2bNndrzNphY" role="2oAawB">
-        <ref role="3aaZtz" node="2bNndrzNmQy" resolve="int" />
+        <ref role="3aaZtz" node="2bNndrzNmQy" resolve="float" />
       </node>
       <node concept="2oAaXF" id="2bNndrzNpfS" role="2oAawD">
         <ref role="3aaZtz" node="2bNndrzNd34" resolve="v0" />
       </node>
       <node concept="2oAawe" id="2bNndrzNpgV" role="2oAawy">
+        <ref role="3aaZtz" node="2bNndrzrgTY" resolve="type" />
+      </node>
+    </node>
+  </node>
+  <node concept="2oAaVg" id="2bNndr_4nLl">
+    <property role="1ewt2y" value="false" />
+    <property role="3uBway" value="false" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.Numbers" />
+    <property role="TrG5h" value="Numbers" />
+    <node concept="2oAaYs" id="2bNndr_4nLm" role="2oAaxa">
+      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+    </node>
+    <node concept="2jq5PB" id="2bNndr_4nLo" role="2oAaxa" />
+    <node concept="2oAaW5" id="2bNndr_4nLv" role="2oAaxa">
+      <property role="TrG5h" value="Number" />
+    </node>
+    <node concept="2jq5PB" id="2bNndr_4nNG" role="2oAaxa" />
+    <node concept="2oAaZ9" id="2bNndr_4nOh" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_4nOJ" role="2oAawB">
+        <ref role="3aaZtz" node="2YYVDcHRi7G" resolve="Primitive" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_4nO$" role="2oAawD">
+        <ref role="3aaZtz" node="2bNndr_4nLv" resolve="Number" />
+      </node>
+    </node>
+  </node>
+  <node concept="2oAaVg" id="2bNndr_4rMP">
+    <property role="1ewt2y" value="false" />
+    <property role="3uBway" value="false" />
+    <property role="3GE5qa" value="CombinationExpressionsMetaMod" />
+    <property role="TrG5h" value="ArithmeticNumbers" />
+    <node concept="2oAaYs" id="2bNndr_4zZ2" role="2oAaxa">
+      <ref role="3aaZtz" node="2bNndr_4TD2" resolve="Arithmetic" />
+    </node>
+    <node concept="2oAaYs" id="2bNndr_4zZ7" role="2oAaxa">
+      <ref role="3aaZtz" node="2bNndr_4nLl" resolve="Numbers" />
+    </node>
+  </node>
+  <node concept="2oAaVg" id="2bNndr_4DQN">
+    <property role="1ewt2y" value="false" />
+    <property role="3uBway" value="false" />
+    <property role="3GE5qa" value="CombinationExpressionsMetaMod" />
+    <property role="TrG5h" value="ArithmeticNumbersVariables" />
+    <node concept="2oAaYs" id="2bNndr_4DQQ" role="2oAaxa">
+      <ref role="3aaZtz" node="2bNndr_4rMP" resolve="ArithmeticNumbers" />
+    </node>
+    <node concept="2oAaYs" id="2bNndr_4DQZ" role="2oAaxa">
+      <ref role="3aaZtz" node="2bNndrzrgNS" resolve="Variable" />
+    </node>
+  </node>
+  <node concept="2oAaVg" id="2bNndr_4TD2">
+    <property role="1ewt2y" value="false" />
+    <property role="3uBway" value="false" />
+    <property role="3GE5qa" value="IntegralExpresssionsMetaMod.Arithmetic" />
+    <property role="TrG5h" value="Arithmetic" />
+    <node concept="2oAaYs" id="2bNndr_4TD3" role="2oAaxa">
+      <ref role="3aaZtz" node="2YYVDcHR8_5" resolve="Expression" />
+    </node>
+    <node concept="2jq5PB" id="2bNndr_4TD5" role="2oAaxa" />
+    <node concept="2oAaW5" id="2bNndr_4TDc" role="2oAaxa">
+      <property role="TrG5h" value="Arithmetic" />
+    </node>
+    <node concept="2oAaW5" id="2bNndr_4TIc" role="2oAaxa">
+      <property role="TrG5h" value="ArithmeticBinary" />
+    </node>
+    <node concept="2oAaW5" id="2bNndr_4TMK" role="2oAaxa">
+      <property role="TrG5h" value="ArithmeticUnary" />
+    </node>
+    <node concept="2jq5PB" id="2bNndr_4TQP" role="2oAaxa" />
+    <node concept="2oAaZ9" id="2bNndr_4TRm" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_4TSa" role="2oAawB">
+        <ref role="3aaZtz" node="2YYVDcHRi3Q" resolve="Expression" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_4TRP" role="2oAawD">
+        <ref role="3aaZtz" node="2bNndr_4TDc" resolve="Arithmetic" />
+      </node>
+    </node>
+    <node concept="2oAaZ9" id="2bNndr_4TTe" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_4TU5" role="2oAawB">
+        <ref role="3aaZtz" node="2YYVDcHRi5f" resolve="Binary" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_4TTK" role="2oAawD">
+        <ref role="3aaZtz" node="2bNndr_4TIc" resolve="ArithmeticBinary" />
+      </node>
+    </node>
+    <node concept="2oAaZ9" id="2bNndr_4U0L" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_4U1D" role="2oAawB">
+        <ref role="3aaZtz" node="2YYVDcHRi6s" resolve="Unary" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_4U1k" role="2oAawD">
+        <ref role="3aaZtz" node="2bNndr_4TMK" resolve="ArithmeticUnary" />
+      </node>
+    </node>
+    <node concept="2jq5PB" id="2bNndr_4U1W" role="2oAaxa" />
+    <node concept="2oAaZ9" id="2bNndr_4U2L" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_4U44" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4TDc" resolve="Arithmetic" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_4U3J" role="2oAawD">
+        <ref role="3aaZtz" node="2bNndr_4TIc" resolve="ArithmeticBinary" />
+      </node>
+    </node>
+    <node concept="2oAaZ9" id="2bNndr_4U4S" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_4U5T" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_4TDc" resolve="Arithmetic" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_4U5$" role="2oAawD">
+        <ref role="3aaZtz" node="2bNndr_4TMK" resolve="ArithmeticUnary" />
+      </node>
+    </node>
+  </node>
+  <node concept="1GnNiK" id="2bNndr_jthM">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.CodeGen.TypeChecking" />
+    <property role="TrG5h" value="CodeGen_TypeChecking_Expression" />
+    <ref role="1GHRfG" node="2YYVDcHR8_5" resolve="Expression" />
+    <node concept="1vbBhR" id="2bNndr_jthN" role="1ukcCD">
+      <property role="TrG5h" value="TypeChecking" />
+    </node>
+    <node concept="1GnNjC" id="2bNndr_jthP" role="CLm5g">
+      <property role="TrG5h" value="checkTypes" />
+      <node concept="37vLTG" id="2bNndr_jthQ" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="2bNndr_jthR" role="1tU5fm">
+          <ref role="1l_bkj" node="2YYVDcHR8_5" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_jti3" role="3clF46">
+        <property role="TrG5h" value="exp" />
+        <node concept="CMjq$" id="2bNndr_jtib" role="1tU5fm">
+          <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_jtio" role="3clF46">
+        <property role="TrG5h" value="expectedType" />
+        <node concept="3uibUv" id="2bNndr_jtiL" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+          <node concept="3qTvmN" id="2bNndr_jtj1" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_jtjG" role="3clF46">
+        <property role="TrG5h" value="typeMap" />
+        <node concept="3rvAFt" id="2bNndr_jtow" role="1tU5fm">
+          <node concept="3uibUv" id="2bNndr_jtp4" role="3rvSg0">
+            <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+            <node concept="3qTvmN" id="2bNndr_jvnn" role="11_B2D" />
+          </node>
+          <node concept="CMjq$" id="2bNndr_jtoL" role="3rvQeY">
+            <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="2bNndr_jthS" role="3clF47">
+        <node concept="34ab3g" id="2bNndr_jxm3" role="3cqZAp">
+          <property role="35gtTG" value="error" />
+          <node concept="Xl_RD" id="2bNndr_jxm5" role="34bqiv">
+            <property role="Xl_RC" value="Replace this method with an actual implementation!" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_jxnL" role="3cqZAp" />
+        <node concept="3cpWs6" id="2bNndr_jxnU" role="3cqZAp">
+          <node concept="10Nm6u" id="2bNndr_jX4y" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="2bNndr_jUXB" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+        <node concept="3qTvmN" id="2bNndr_jX1L" role="11_B2D" />
+      </node>
+    </node>
+  </node>
+  <node concept="1GnNiK" id="2bNndr_jznj">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical.CodeGen.TypeChecking" />
+    <property role="TrG5h" value="CodeGen_TypeChecking_Logical" />
+    <ref role="1GHRfG" node="2YYVDcHRwq3" resolve="Logical" />
+    <node concept="1vbBpf" id="2bNndr_jznk" role="1ukcCD">
+      <ref role="1vbBpc" node="2bNndr_jthN" resolve="TypeChecking" />
+    </node>
+    <node concept="1GnNjC" id="2bNndr_jznm" role="CLm5g">
+      <property role="TrG5h" value="checkTypesLogical" />
+      <node concept="37vLTG" id="2bNndr_jznn" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="2bNndr_jzno" role="1tU5fm">
+          <ref role="1l_bkj" node="2YYVDcHRwq3" resolve="Logical" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_jzn$" role="3clF46">
+        <property role="TrG5h" value="logical" />
+        <node concept="CMjq$" id="2bNndr_jznG" role="1tU5fm">
+          <ref role="CMYPG" node="2bNndr_kaBQ" resolve="Logical" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_jznP" role="3clF46">
+        <property role="TrG5h" value="expectedType" />
+        <node concept="3uibUv" id="2bNndr_jznZ" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+          <node concept="3qTvmN" id="2bNndr_jzof" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_jzp9" role="3clF46">
+        <property role="TrG5h" value="typeMap" />
+        <node concept="3rvAFt" id="2bNndr_jzpm" role="1tU5fm">
+          <node concept="3uibUv" id="2bNndr_jzpU" role="3rvSg0">
+            <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+            <node concept="3qTvmN" id="2bNndr_jzqt" role="11_B2D" />
+          </node>
+          <node concept="CMjq$" id="2bNndr_jzpB" role="3rvQeY">
+            <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="2bNndr_jznp" role="3clF47">
+        <node concept="3clFbJ" id="2bNndr_jzWP" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_jzWR" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_jL5O" role="3cqZAp">
+              <node concept="3EllGN" id="2bNndr_jL5R" role="3cqZAk">
+                <node concept="37vLTw" id="2bNndr_jL5S" role="3ElVtu">
+                  <ref role="3cqZAo" node="2bNndr_jzn$" resolve="logical" />
+                </node>
+                <node concept="37vLTw" id="2bNndr_jL5T" role="3ElQJh">
+                  <ref role="3cqZAo" node="2bNndr_jzp9" resolve="typeMap" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="2bNndr_j_59" role="3clFbw">
+            <node concept="10Nm6u" id="2bNndr_j_6k" role="3uHU7w" />
+            <node concept="3EllGN" id="2bNndr_j$js" role="3uHU7B">
+              <node concept="37vLTw" id="2bNndr_j$mh" role="3ElVtu">
+                <ref role="3cqZAo" node="2bNndr_jzn$" resolve="logical" />
+              </node>
+              <node concept="37vLTw" id="2bNndr_j$29" role="3ElQJh">
+                <ref role="3cqZAo" node="2bNndr_jzp9" resolve="typeMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_jNov" role="3cqZAp" />
+        <node concept="3cpWs8" id="2bNndr_jNvE" role="3cqZAp">
+          <node concept="3cpWsn" id="2bNndr_jNvF" role="3cpWs9">
+            <property role="TrG5h" value="left" />
+            <node concept="3uibUv" id="2bNndr_jNvC" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+              <node concept="3qTvmN" id="2bNndr_jNyi" role="11_B2D" />
+            </node>
+            <node concept="3otQA" id="2bNndr_jNzS" role="33vP2m">
+              <ref role="37wK5l" node="2bNndr_jthP" resolve="checkTypes" />
+              <node concept="37vLTw" id="2bNndr_jNAF" role="37wK5m">
+                <ref role="3cqZAo" node="2bNndr_jznn" resolve="inputGroup" />
+              </node>
+              <node concept="2OqwBi" id="2bNndr_jP0P" role="37wK5m">
+                <node concept="2OqwBi" id="2bNndr_jNKZ" role="2Oq$k0">
+                  <node concept="37vLTw" id="2bNndr_jNG_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_jzn$" resolve="logical" />
+                  </node>
+                  <node concept="khloQ" id="2bNndr_jO8_" role="2OqNvi">
+                    <ref role="khl7h" node="2YYVDcHRjeT" resolve="left" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="2bNndr_jPNM" role="2OqNvi" />
+              </node>
+              <node concept="10Nm6u" id="2bNndr_jPVf" role="37wK5m" />
+              <node concept="37vLTw" id="2bNndr_jQ3b" role="37wK5m">
+                <ref role="3cqZAo" node="2bNndr_jzp9" resolve="typeMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2bNndr_jQlY" role="3cqZAp">
+          <node concept="3cpWsn" id="2bNndr_jQlZ" role="3cpWs9">
+            <property role="TrG5h" value="right" />
+            <node concept="3uibUv" id="2bNndr_jQlW" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+              <node concept="3qTvmN" id="2bNndr_jQte" role="11_B2D" />
+            </node>
+            <node concept="3otQA" id="2bNndr_jQuq" role="33vP2m">
+              <ref role="37wK5l" node="2bNndr_jthP" resolve="checkTypes" />
+              <node concept="37vLTw" id="2bNndr_jQxd" role="37wK5m">
+                <ref role="3cqZAo" node="2bNndr_jznn" resolve="inputGroup" />
+              </node>
+              <node concept="2OqwBi" id="2bNndr_jRHG" role="37wK5m">
+                <node concept="2OqwBi" id="2bNndr_jQFx" role="2Oq$k0">
+                  <node concept="37vLTw" id="2bNndr_jQB7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_jzn$" resolve="logical" />
+                  </node>
+                  <node concept="khloQ" id="2bNndr_jR37" role="2OqNvi">
+                    <ref role="khl7h" node="2YYVDcHRrv8" resolve="right" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="2bNndr_jSwD" role="2OqNvi" />
+              </node>
+              <node concept="10Nm6u" id="2bNndr_jSC6" role="37wK5m" />
+              <node concept="37vLTw" id="2bNndr_jSKi" role="37wK5m">
+                <ref role="3cqZAo" node="2bNndr_jzp9" resolve="typeMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2bNndr_k6jd" role="3cqZAp">
+          <node concept="3cpWsn" id="2bNndr_k6je" role="3cpWs9">
+            <property role="TrG5h" value="commonLR" />
+            <node concept="3uibUv" id="2bNndr_k6jb" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+              <node concept="3qTvmN" id="2bNndr_k6q$" role="11_B2D" />
+            </node>
+            <node concept="2YIFZM" id="2bNndr_k6vO" role="33vP2m">
+              <ref role="37wK5l" node="2bNndr_k03B" resolve="commonClass" />
+              <ref role="1Pybhc" node="2bNndr_k02S" resolve="UtilsExpressionsMetaMod" />
+              <node concept="37vLTw" id="2bNndr_k6wx" role="37wK5m">
+                <ref role="3cqZAo" node="2bNndr_jNvF" resolve="left" />
+              </node>
+              <node concept="37vLTw" id="2bNndr_k6yy" role="37wK5m">
+                <ref role="3cqZAo" node="2bNndr_jQlZ" resolve="right" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_jSPE" role="3cqZAp" />
+        <node concept="3clFbJ" id="2bNndr_k6FV" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_k6FX" role="3clFbx">
+            <node concept="3clFbJ" id="2bNndr_khDY" role="3cqZAp">
+              <node concept="3clFbS" id="2bNndr_khE0" role="3clFbx">
+                <node concept="34ab3g" id="2bNndr_kkQ5" role="3cqZAp">
+                  <property role="35gtTG" value="error" />
+                  <node concept="3cpWs3" id="2bNndr_knMx" role="34bqiv">
+                    <node concept="Xl_RD" id="2bNndr_knQM" role="3uHU7w">
+                      <property role="Xl_RC" value=" was inferred!" />
+                    </node>
+                    <node concept="3cpWs3" id="2bNndr_kmFZ" role="3uHU7B">
+                      <node concept="3cpWs3" id="2bNndr_km4I" role="3uHU7B">
+                        <node concept="3cpWs3" id="2bNndr_klyE" role="3uHU7B">
+                          <node concept="3cpWs3" id="2bNndr_klgj" role="3uHU7B">
+                            <node concept="Xl_RD" id="2bNndr_kkQ7" role="3uHU7B">
+                              <property role="Xl_RC" value="Type " />
+                            </node>
+                            <node concept="37vLTw" id="2bNndr_klh4" role="3uHU7w">
+                              <ref role="3cqZAo" node="2bNndr_jznP" resolve="expectedType" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="2bNndr_klA9" role="3uHU7w">
+                            <property role="Xl_RC" value=" was expected " />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="2bNndr_km8r" role="3uHU7w">
+                          <property role="Xl_RC" value=" but type " />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="2bNndr_kmJU" role="3uHU7w">
+                        <ref role="3cqZAo" node="2bNndr_k6je" resolve="commonLR" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="2bNndr_kouw" role="3cqZAp" />
+                <node concept="3cpWs6" id="2bNndr_ki8A" role="3cqZAp">
+                  <node concept="10Nm6u" id="2bNndr_kihR" role="3cqZAk" />
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="2bNndr_k$w5" role="3clFbw">
+                <node concept="2YIFZM" id="2bNndr_k$w7" role="3fr31v">
+                  <ref role="37wK5l" node="2bNndr_kdcn" resolve="isWideninig" />
+                  <ref role="1Pybhc" node="2bNndr_k02S" resolve="UtilsExpressionsMetaMod" />
+                  <node concept="37vLTw" id="2bNndr_k$w8" role="37wK5m">
+                    <ref role="3cqZAo" node="2bNndr_k6je" resolve="commonLR" />
+                  </node>
+                  <node concept="37vLTw" id="2bNndr_k$w9" role="37wK5m">
+                    <ref role="3cqZAo" node="2bNndr_jznP" resolve="expectedType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="2bNndr_k6YQ" role="3clFbw">
+            <node concept="10Nm6u" id="2bNndr_k6Zi" role="3uHU7w" />
+            <node concept="37vLTw" id="2bNndr_k6Of" role="3uHU7B">
+              <ref role="3cqZAo" node="2bNndr_jznP" resolve="expectedType" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_k6ZK" role="3cqZAp" />
+        <node concept="3clFbJ" id="2bNndr_kqTd" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_kqTf" role="3clFbx">
+            <node concept="34ab3g" id="2bNndr_kr$S" role="3cqZAp">
+              <property role="35gtTG" value="error" />
+              <node concept="3cpWs3" id="2bNndr_kthA" role="34bqiv">
+                <node concept="37vLTw" id="2bNndr_ktlj" role="3uHU7w">
+                  <ref role="3cqZAo" node="2bNndr_jQlZ" resolve="right" />
+                </node>
+                <node concept="3cpWs3" id="2bNndr_ksQi" role="3uHU7B">
+                  <node concept="3cpWs3" id="2bNndr_ksii" role="3uHU7B">
+                    <node concept="Xl_RD" id="2bNndr_krGr" role="3uHU7B">
+                      <property role="Xl_RC" value="The provided left and/or right types are not allowed for logical expressions " />
+                    </node>
+                    <node concept="37vLTw" id="2bNndr_ksj3" role="3uHU7w">
+                      <ref role="3cqZAo" node="2bNndr_jNvF" resolve="left" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="2bNndr_ksTL" role="3uHU7w">
+                    <property role="Xl_RC" value=", " />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2bNndr_kBk_" role="3cqZAp" />
+            <node concept="3cpWs6" id="2bNndr_kBmy" role="3cqZAp">
+              <node concept="10Nm6u" id="2bNndr_kB$y" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="2bNndr_kreN" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_kr78" role="3uHU7B">
+              <ref role="3cqZAo" node="2bNndr_k6je" resolve="commonLR" />
+            </node>
+            <node concept="10Nm6u" id="2bNndr_krlZ" role="3uHU7w" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_krmL" role="3cqZAp" />
+        <node concept="3clFbF" id="2bNndr_kCgb" role="3cqZAp">
+          <node concept="37vLTI" id="2bNndr_kCPV" role="3clFbG">
+            <node concept="37vLTw" id="2bNndr_kCUh" role="37vLTx">
+              <ref role="3cqZAo" node="2bNndr_k6je" resolve="commonLR" />
+            </node>
+            <node concept="3EllGN" id="2bNndr_kCGq" role="37vLTJ">
+              <node concept="37vLTw" id="2bNndr_kCKi" role="3ElVtu">
+                <ref role="3cqZAo" node="2bNndr_jzn$" resolve="logical" />
+              </node>
+              <node concept="37vLTw" id="2bNndr_kCg9" role="3ElQJh">
+                <ref role="3cqZAo" node="2bNndr_jzp9" resolve="typeMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_kBM2" role="3cqZAp" />
+        <node concept="3cpWs6" id="2bNndr_k7gL" role="3cqZAp">
+          <node concept="37vLTw" id="2bNndr_k7x4" role="3cqZAk">
+            <ref role="3cqZAo" node="2bNndr_k6je" resolve="commonLR" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="2bNndr_jIZV" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+        <node concept="3qTvmN" id="2bNndr_jL2M" role="11_B2D" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="2bNndr_k02S">
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.CodeGen.HelperClasses" />
+    <property role="TrG5h" value="UtilsExpressionsMetaMod" />
+    <node concept="2YIFZL" id="2bNndr_k03B" role="jymVt">
+      <property role="TrG5h" value="commonClass" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2bNndr_k03E" role="3clF47">
+        <node concept="3clFbJ" id="2bNndr_k05D" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_k05E" role="3clFbx">
+            <node concept="3clFbJ" id="2bNndr_k0ps" role="3cqZAp">
+              <node concept="3clFbS" id="2bNndr_k0pt" role="3clFbx">
+                <node concept="3cpWs6" id="2bNndr_k0CT" role="3cqZAp">
+                  <node concept="3VsKOn" id="2bNndr_k0FM" role="3cqZAk">
+                    <ref role="3VsUkX" to="e2lb:~Boolean" resolve="Boolean" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="2bNndr_k22x" role="3clFbw">
+                <node concept="3VsKOn" id="2bNndr_k24B" role="3uHU7w">
+                  <ref role="3VsUkX" to="e2lb:~Boolean" resolve="Boolean" />
+                </node>
+                <node concept="37vLTw" id="2bNndr_k1UR" role="3uHU7B">
+                  <ref role="3cqZAo" node="2bNndr_k04l" resolve="y" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2bNndr_k1RR" role="3clFbw">
+            <node concept="3VsKOn" id="2bNndr_k1TZ" role="3uHU7w">
+              <ref role="3VsUkX" to="e2lb:~Boolean" resolve="Boolean" />
+            </node>
+            <node concept="37vLTw" id="2bNndr_k1Kn" role="3uHU7B">
+              <ref role="3cqZAo" node="2bNndr_k045" resolve="x" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_k0J1" role="3cqZAp" />
+        <node concept="3cpWs6" id="2bNndr_k0Kz" role="3cqZAp">
+          <node concept="10Nm6u" id="2bNndr_k0MT" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2bNndr_k03s" role="1B3o_S" />
+      <node concept="3uibUv" id="2bNndr_k03M" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+        <node concept="3qTvmN" id="2bNndr_k03W" role="11_B2D" />
+      </node>
+      <node concept="37vLTG" id="2bNndr_k045" role="3clF46">
+        <property role="TrG5h" value="x" />
+        <node concept="3uibUv" id="2bNndr_k044" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+          <node concept="3qTvmN" id="2bNndr_k04T" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_k04l" role="3clF46">
+        <property role="TrG5h" value="y" />
+        <node concept="3uibUv" id="2bNndr_k04v" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+          <node concept="3qTvmN" id="2bNndr_k05g" role="11_B2D" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2bNndr_kd7C" role="jymVt" />
+    <node concept="2YIFZL" id="2bNndr_kdcn" role="jymVt">
+      <property role="TrG5h" value="isWideninig" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2bNndr_kdcq" role="3clF47">
+        <node concept="3clFbJ" id="2bNndr_kdgA" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_kdgB" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_kdoG" role="3cqZAp">
+              <node concept="3clFbT" id="2bNndr_kdpr" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2bNndr_kdnD" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_kdo7" role="3uHU7w">
+              <ref role="3cqZAo" node="2bNndr_kdfq" resolve="widening" />
+            </node>
+            <node concept="37vLTw" id="2bNndr_kdgW" role="3uHU7B">
+              <ref role="3cqZAo" node="2bNndr_kde6" resolve="widened" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_kdq0" role="3cqZAp" />
+        <node concept="3cpWs6" id="2bNndr_kdqt" role="3cqZAp">
+          <node concept="3clFbT" id="2bNndr_kdrX" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2bNndr_kdaH" role="1B3o_S" />
+      <node concept="10P_77" id="2bNndr_kde1" role="3clF45" />
+      <node concept="37vLTG" id="2bNndr_kde6" role="3clF46">
+        <property role="TrG5h" value="widened" />
+        <node concept="3uibUv" id="2bNndr_kde5" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+          <node concept="3qTvmN" id="2bNndr_kdew" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_kdfq" role="3clF46">
+        <property role="TrG5h" value="widening" />
+        <node concept="3uibUv" id="2bNndr_kdf_" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+          <node concept="3qTvmN" id="2bNndr_kdg0" role="11_B2D" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="2bNndr_k02T" role="1B3o_S" />
+  </node>
+  <node concept="1GnNiK" id="2bNndr_kH0d">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Assignment.CodeGen.TypeChecking" />
+    <property role="TrG5h" value="CodeGen_TypeChecking_Assignment" />
+    <ref role="1GHRfG" node="2bNndrzrgMP" resolve="Assignment" />
+    <node concept="1GnNjC" id="2bNndr_kH8i" role="CLm5g">
+      <property role="TrG5h" value="checkTypesAssignment" />
+      <node concept="37vLTG" id="2bNndr_kH8j" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="2bNndr_kH8k" role="1tU5fm">
+          <ref role="1l_bkj" node="2bNndrzrgMP" resolve="Assignment" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_kH8l" role="3clF46">
+        <property role="TrG5h" value="assign" />
+        <node concept="CMjq$" id="2bNndr_kH8m" role="1tU5fm">
+          <ref role="CMYPG" node="2bNndrzLXaA" resolve="Assignment" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_kH8n" role="3clF46">
+        <property role="TrG5h" value="expectedType" />
+        <node concept="3uibUv" id="2bNndr_kH8o" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+          <node concept="3qTvmN" id="2bNndr_kH8p" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_kH8q" role="3clF46">
+        <property role="TrG5h" value="typeMap" />
+        <node concept="3rvAFt" id="2bNndr_kH8r" role="1tU5fm">
+          <node concept="3uibUv" id="2bNndr_kH8s" role="3rvSg0">
+            <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+            <node concept="3qTvmN" id="2bNndr_kH8t" role="11_B2D" />
+          </node>
+          <node concept="CMjq$" id="2bNndr_kH8u" role="3rvQeY">
+            <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="2bNndr_kH8v" role="3clF47">
+        <node concept="3clFbJ" id="2bNndr_kH8_" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_kH8A" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_kH8B" role="3cqZAp">
+              <node concept="3EllGN" id="2bNndr_kH8C" role="3cqZAk">
+                <node concept="37vLTw" id="2bNndr_kH8D" role="3ElVtu">
+                  <ref role="3cqZAo" node="2bNndr_kH8l" resolve="assign" />
+                </node>
+                <node concept="37vLTw" id="2bNndr_kH8E" role="3ElQJh">
+                  <ref role="3cqZAo" node="2bNndr_kH8q" resolve="typeMap" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="2bNndr_kH8F" role="3clFbw">
+            <node concept="10Nm6u" id="2bNndr_kH8G" role="3uHU7w" />
+            <node concept="3EllGN" id="2bNndr_kH8H" role="3uHU7B">
+              <node concept="37vLTw" id="2bNndr_kH8I" role="3ElVtu">
+                <ref role="3cqZAo" node="2bNndr_kH8l" resolve="assign" />
+              </node>
+              <node concept="37vLTw" id="2bNndr_kH8J" role="3ElQJh">
+                <ref role="3cqZAo" node="2bNndr_kH8q" resolve="typeMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_kH8K" role="3cqZAp" />
+        <node concept="3cpWs8" id="2bNndr_kH8L" role="3cqZAp">
+          <node concept="3cpWsn" id="2bNndr_kH8M" role="3cpWs9">
+            <property role="TrG5h" value="type" />
+            <node concept="3uibUv" id="2bNndr_kH8N" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+              <node concept="3qTvmN" id="2bNndr_kH8O" role="11_B2D" />
+            </node>
+            <node concept="3otQA" id="2bNndr_lqJV" role="33vP2m">
+              <ref role="37wK5l" node="2bNndr_jthP" resolve="checkTypes" />
+              <node concept="37vLTw" id="2bNndr_lqSy" role="37wK5m">
+                <ref role="3cqZAo" node="2bNndr_kH8j" resolve="inputGroup" />
+              </node>
+              <node concept="2OqwBi" id="2bNndr_kPYj" role="37wK5m">
+                <node concept="2OqwBi" id="2bNndr_kOyC" role="2Oq$k0">
+                  <node concept="37vLTw" id="2bNndr_kOox" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_kH8l" resolve="assign" />
+                  </node>
+                  <node concept="khloQ" id="2bNndr_kOS4" role="2OqNvi">
+                    <ref role="khl7h" node="2bNndrzLXgB" resolve="variable" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="2bNndr_kQS3" role="2OqNvi" />
+              </node>
+              <node concept="10Nm6u" id="2bNndr_lrt9" role="37wK5m" />
+              <node concept="37vLTw" id="2bNndr_lstA" role="37wK5m">
+                <ref role="3cqZAo" node="2bNndr_kH8q" resolve="typeMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_l4VF" role="3cqZAp" />
+        <node concept="3clFbJ" id="2bNndr_l5fH" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_l5fJ" role="3clFbx">
+            <node concept="34ab3g" id="2bNndr_l5u$" role="3cqZAp">
+              <property role="35gtTG" value="error" />
+              <node concept="3cpWs3" id="2bNndr_l5PE" role="34bqiv">
+                <node concept="37vLTw" id="2bNndr_l5Qe" role="3uHU7w">
+                  <ref role="3cqZAo" node="2bNndr_kH8l" resolve="assign" />
+                </node>
+                <node concept="Xl_RD" id="2bNndr_l5uA" role="3uHU7B">
+                  <property role="Xl_RC" value="Type of assignment not recognized " />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2bNndr_l5T9" role="3cqZAp" />
+            <node concept="3cpWs6" id="2bNndr_l5TA" role="3cqZAp">
+              <node concept="10Nm6u" id="2bNndr_l60d" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="2bNndr_l5tq" role="3clFbw">
+            <node concept="10Nm6u" id="2bNndr_l5tY" role="3uHU7w" />
+            <node concept="37vLTw" id="2bNndr_l5mA" role="3uHU7B">
+              <ref role="3cqZAo" node="2bNndr_kH8M" resolve="type" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_l52l" role="3cqZAp" />
+        <node concept="3cpWs8" id="2bNndr_kH8Y" role="3cqZAp">
+          <node concept="3cpWsn" id="2bNndr_kH8Z" role="3cpWs9">
+            <property role="TrG5h" value="right" />
+            <node concept="3uibUv" id="2bNndr_kH90" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+              <node concept="3qTvmN" id="2bNndr_kH91" role="11_B2D" />
+            </node>
+            <node concept="3otQA" id="2bNndr_kH92" role="33vP2m">
+              <ref role="37wK5l" node="2bNndr_jthP" resolve="checkTypes" />
+              <node concept="37vLTw" id="2bNndr_kH93" role="37wK5m">
+                <ref role="3cqZAo" node="2bNndr_kH8j" resolve="inputGroup" />
+              </node>
+              <node concept="2OqwBi" id="2bNndr_kH94" role="37wK5m">
+                <node concept="2OqwBi" id="2bNndr_kH95" role="2Oq$k0">
+                  <node concept="37vLTw" id="2bNndr_kH96" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_kH8l" resolve="assign" />
+                  </node>
+                  <node concept="khloQ" id="2bNndr_kH97" role="2OqNvi">
+                    <ref role="khl7h" node="2bNndrzrh2q" resolve="assign" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="2bNndr_kH98" role="2OqNvi" />
+              </node>
+              <node concept="37vLTw" id="2bNndr_l1uB" role="37wK5m">
+                <ref role="3cqZAo" node="2bNndr_kH8M" resolve="type" />
+              </node>
+              <node concept="37vLTw" id="2bNndr_kH9a" role="37wK5m">
+                <ref role="3cqZAo" node="2bNndr_kH8q" resolve="typeMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_kH9i" role="3cqZAp" />
+        <node concept="3clFbJ" id="2bNndr_l6dN" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_l6dP" role="3clFbx">
+            <node concept="34ab3g" id="2bNndr_l6vX" role="3cqZAp">
+              <property role="35gtTG" value="error" />
+              <node concept="3cpWs3" id="2bNndr_l6KT" role="34bqiv">
+                <node concept="Xl_RD" id="2bNndr_l6vZ" role="3uHU7B">
+                  <property role="Xl_RC" value="Assignment initialization type unknown " />
+                </node>
+                <node concept="37vLTw" id="2bNndr_l6Pf" role="3uHU7w">
+                  <ref role="3cqZAo" node="2bNndr_kH8l" resolve="assign" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2bNndr_l94G" role="3cqZAp" />
+            <node concept="3cpWs6" id="2bNndr_l95z" role="3cqZAp">
+              <node concept="10Nm6u" id="2bNndr_l96c" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="2bNndr_l6uD" role="3clFbw">
+            <node concept="10Nm6u" id="2bNndr_l6vi" role="3uHU7w" />
+            <node concept="37vLTw" id="2bNndr_l6nL" role="3uHU7B">
+              <ref role="3cqZAo" node="2bNndr_kH8Z" resolve="right" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_l4P2" role="3cqZAp" />
+        <node concept="3clFbF" id="2bNndr_kH9Z" role="3cqZAp">
+          <node concept="37vLTI" id="2bNndr_kHa0" role="3clFbG">
+            <node concept="37vLTw" id="2bNndr_l4xL" role="37vLTx">
+              <ref role="3cqZAo" node="2bNndr_kH8M" resolve="type" />
+            </node>
+            <node concept="3EllGN" id="2bNndr_kHa2" role="37vLTJ">
+              <node concept="37vLTw" id="2bNndr_kHa3" role="3ElVtu">
+                <ref role="3cqZAo" node="2bNndr_kH8l" resolve="assign" />
+              </node>
+              <node concept="37vLTw" id="2bNndr_kHa4" role="3ElQJh">
+                <ref role="3cqZAo" node="2bNndr_kH8q" resolve="typeMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_kHa5" role="3cqZAp" />
+        <node concept="3cpWs6" id="2bNndr_kHa6" role="3cqZAp">
+          <node concept="37vLTw" id="2bNndr_l4zp" role="3cqZAk">
+            <ref role="3cqZAo" node="2bNndr_kH8M" resolve="type" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="2bNndr_kHa8" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+        <node concept="3qTvmN" id="2bNndr_kHa9" role="11_B2D" />
+      </node>
+    </node>
+    <node concept="1vbBpf" id="2bNndr_kH0e" role="1ukcCD">
+      <ref role="1vbBpc" node="2bNndr_jthN" resolve="TypeChecking" />
+    </node>
+  </node>
+  <node concept="1GnNiK" id="2bNndr_ldBy">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Primitives.CodeGen.TypeChecking" />
+    <property role="TrG5h" value="CodeGen_TypeChecking_Boolean" />
+    <ref role="1GHRfG" node="2YYVDcHRzpy" resolve="Boolean" />
+    <node concept="1GnNjC" id="2bNndr_ldHW" role="CLm5g">
+      <property role="TrG5h" value="checkTypesBoolean" />
+      <node concept="37vLTG" id="2bNndr_ldHX" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="2bNndr_ldHY" role="1tU5fm">
+          <ref role="1l_bkj" node="2YYVDcHRzpy" resolve="Boolean" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_ldHZ" role="3clF46">
+        <property role="TrG5h" value="bool" />
+        <node concept="CMjq$" id="2bNndr_ldI0" role="1tU5fm">
+          <ref role="CMYPG" node="2YYVDcHRzpG" resolve="Boolean" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_ldI1" role="3clF46">
+        <property role="TrG5h" value="expectedType" />
+        <node concept="3uibUv" id="2bNndr_ldI2" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+          <node concept="3qTvmN" id="2bNndr_ldI3" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_ldI4" role="3clF46">
+        <property role="TrG5h" value="typeMap" />
+        <node concept="3rvAFt" id="2bNndr_ldI5" role="1tU5fm">
+          <node concept="3uibUv" id="2bNndr_ldI6" role="3rvSg0">
+            <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+            <node concept="3qTvmN" id="2bNndr_ldI7" role="11_B2D" />
+          </node>
+          <node concept="CMjq$" id="2bNndr_ldI8" role="3rvQeY">
+            <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="2bNndr_ldI9" role="3clF47">
+        <node concept="3clFbJ" id="2bNndr_ldIa" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_ldIb" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_ldIc" role="3cqZAp">
+              <node concept="3EllGN" id="2bNndr_ldId" role="3cqZAk">
+                <node concept="37vLTw" id="2bNndr_ldIe" role="3ElVtu">
+                  <ref role="3cqZAo" node="2bNndr_ldHZ" resolve="bool" />
+                </node>
+                <node concept="37vLTw" id="2bNndr_ldIf" role="3ElQJh">
+                  <ref role="3cqZAo" node="2bNndr_ldI4" resolve="typeMap" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="2bNndr_ldIg" role="3clFbw">
+            <node concept="10Nm6u" id="2bNndr_ldIh" role="3uHU7w" />
+            <node concept="3EllGN" id="2bNndr_ldIi" role="3uHU7B">
+              <node concept="37vLTw" id="2bNndr_ldIj" role="3ElVtu">
+                <ref role="3cqZAo" node="2bNndr_ldHZ" resolve="bool" />
+              </node>
+              <node concept="37vLTw" id="2bNndr_ldIk" role="3ElQJh">
+                <ref role="3cqZAo" node="2bNndr_ldI4" resolve="typeMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_ldIl" role="3cqZAp" />
+        <node concept="3cpWs8" id="2bNndr_ldIm" role="3cqZAp">
+          <node concept="3cpWsn" id="2bNndr_ldIn" role="3cpWs9">
+            <property role="TrG5h" value="type" />
+            <node concept="3uibUv" id="2bNndr_ldIo" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+              <node concept="3qTvmN" id="2bNndr_ldIp" role="11_B2D" />
+            </node>
+            <node concept="3VsKOn" id="2bNndr_leof" role="33vP2m">
+              <ref role="3VsUkX" to="e2lb:~Boolean" resolve="Boolean" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_ldIA" role="3cqZAp" />
+        <node concept="3clFbF" id="2bNndr_ldJf" role="3cqZAp">
+          <node concept="37vLTI" id="2bNndr_ldJg" role="3clFbG">
+            <node concept="37vLTw" id="2bNndr_ldJh" role="37vLTx">
+              <ref role="3cqZAo" node="2bNndr_ldIn" resolve="type" />
+            </node>
+            <node concept="3EllGN" id="2bNndr_ldJi" role="37vLTJ">
+              <node concept="37vLTw" id="2bNndr_ldJj" role="3ElVtu">
+                <ref role="3cqZAo" node="2bNndr_ldHZ" resolve="bool" />
+              </node>
+              <node concept="37vLTw" id="2bNndr_ldJk" role="3ElQJh">
+                <ref role="3cqZAo" node="2bNndr_ldI4" resolve="typeMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_ldJl" role="3cqZAp" />
+        <node concept="3cpWs6" id="2bNndr_ldJm" role="3cqZAp">
+          <node concept="37vLTw" id="2bNndr_ldJn" role="3cqZAk">
+            <ref role="3cqZAo" node="2bNndr_ldIn" resolve="type" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="2bNndr_ldJo" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+        <node concept="3qTvmN" id="2bNndr_ldJp" role="11_B2D" />
+      </node>
+    </node>
+    <node concept="1vbBpf" id="2bNndr_ldBz" role="1ukcCD">
+      <ref role="1vbBpc" node="2bNndr_jthN" resolve="TypeChecking" />
+    </node>
+  </node>
+  <node concept="1GnNiK" id="2bNndr_lkWw">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="CommonExpresssionsMetaMod.Variables.CodeGen" />
+    <property role="TrG5h" value="CodeGen_TypeChecking_Variable" />
+    <ref role="1GHRfG" node="2bNndrzrgNS" resolve="Variable" />
+    <node concept="1GnNjC" id="2bNndr_ln68" role="CLm5g">
+      <property role="TrG5h" value="checkTypesVariable" />
+      <node concept="37vLTG" id="2bNndr_ln69" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="2bNndr_ln6a" role="1tU5fm">
+          <ref role="1l_bkj" node="2bNndrzrgNS" resolve="Variable" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_ln6b" role="3clF46">
+        <property role="TrG5h" value="var" />
+        <node concept="CMjq$" id="2bNndr_ln6c" role="1tU5fm">
+          <ref role="CMYPG" node="2bNndrzrgNT" resolve="Variable" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_ln6d" role="3clF46">
+        <property role="TrG5h" value="expectedType" />
+        <node concept="3uibUv" id="2bNndr_ln6e" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+          <node concept="3qTvmN" id="2bNndr_ln6f" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_ln6g" role="3clF46">
+        <property role="TrG5h" value="typeMap" />
+        <node concept="3rvAFt" id="2bNndr_ln6h" role="1tU5fm">
+          <node concept="3uibUv" id="2bNndr_ln6i" role="3rvSg0">
+            <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+            <node concept="3qTvmN" id="2bNndr_ln6j" role="11_B2D" />
+          </node>
+          <node concept="CMjq$" id="2bNndr_ln6k" role="3rvQeY">
+            <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="2bNndr_ln6l" role="3clF47">
+        <node concept="3clFbJ" id="2bNndr_ln6m" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_ln6n" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_ln6o" role="3cqZAp">
+              <node concept="3EllGN" id="2bNndr_ln6p" role="3cqZAk">
+                <node concept="37vLTw" id="2bNndr_ln6q" role="3ElVtu">
+                  <ref role="3cqZAo" node="2bNndr_ln6b" resolve="var" />
+                </node>
+                <node concept="37vLTw" id="2bNndr_ln6r" role="3ElQJh">
+                  <ref role="3cqZAo" node="2bNndr_ln6g" resolve="typeMap" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="2bNndr_ln6s" role="3clFbw">
+            <node concept="10Nm6u" id="2bNndr_ln6t" role="3uHU7w" />
+            <node concept="3EllGN" id="2bNndr_ln6u" role="3uHU7B">
+              <node concept="37vLTw" id="2bNndr_ln6v" role="3ElVtu">
+                <ref role="3cqZAo" node="2bNndr_ln6b" resolve="var" />
+              </node>
+              <node concept="37vLTw" id="2bNndr_ln6w" role="3ElQJh">
+                <ref role="3cqZAo" node="2bNndr_ln6g" resolve="typeMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_ln6x" role="3cqZAp" />
+        <node concept="3cpWs8" id="2bNndr_ln6y" role="3cqZAp">
+          <node concept="3cpWsn" id="2bNndr_ln6z" role="3cpWs9">
+            <property role="TrG5h" value="type" />
+            <node concept="3uibUv" id="2bNndr_ln6$" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+              <node concept="3qTvmN" id="2bNndr_ln6_" role="11_B2D" />
+            </node>
+            <node concept="2YIFZM" id="2bNndr_ln6A" role="33vP2m">
+              <ref role="1Pybhc" node="2bNndrzseG8" resolve="Types" />
+              <ref role="37wK5l" node="2bNndrzASDI" resolve="getClass" />
+              <node concept="2OqwBi" id="2bNndr_ln6B" role="37wK5m">
+                <node concept="2OqwBi" id="2bNndr_ln6C" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2bNndr_ln6D" role="2Oq$k0">
+                    <node concept="37vLTw" id="2bNndr_ln6G" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2bNndr_ln6b" resolve="var" />
+                    </node>
+                    <node concept="khloQ" id="2bNndr_ln6J" role="2OqNvi">
+                      <ref role="khl7h" node="2bNndrzrgTY" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="1uHKPH" id="2bNndr_ln6K" role="2OqNvi" />
+                </node>
+                <node concept="388rt8" id="2bNndr_ln6L" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_ln6M" role="3cqZAp" />
+        <node concept="3clFbJ" id="2bNndr_ln6N" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_ln6O" role="3clFbx">
+            <node concept="34ab3g" id="2bNndr_ln6P" role="3cqZAp">
+              <property role="35gtTG" value="error" />
+              <node concept="3cpWs3" id="2bNndr_ln6Q" role="34bqiv">
+                <node concept="37vLTw" id="2bNndr_ln6R" role="3uHU7w">
+                  <ref role="3cqZAo" node="2bNndr_ln6b" resolve="var" />
+                </node>
+                <node concept="Xl_RD" id="2bNndr_ln6S" role="3uHU7B">
+                  <property role="Xl_RC" value="Type of assignment not recognized " />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2bNndr_ln6T" role="3cqZAp" />
+            <node concept="3cpWs6" id="2bNndr_ln6U" role="3cqZAp">
+              <node concept="10Nm6u" id="2bNndr_ln6V" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="2bNndr_ln6W" role="3clFbw">
+            <node concept="10Nm6u" id="2bNndr_ln6X" role="3uHU7w" />
+            <node concept="37vLTw" id="2bNndr_ln6Y" role="3uHU7B">
+              <ref role="3cqZAo" node="2bNndr_ln6z" resolve="type" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_ln6Z" role="3cqZAp" />
+        <node concept="3clFbF" id="2bNndr_ln7r" role="3cqZAp">
+          <node concept="37vLTI" id="2bNndr_ln7s" role="3clFbG">
+            <node concept="37vLTw" id="2bNndr_ln7t" role="37vLTx">
+              <ref role="3cqZAo" node="2bNndr_ln6z" resolve="type" />
+            </node>
+            <node concept="3EllGN" id="2bNndr_ln7u" role="37vLTJ">
+              <node concept="37vLTw" id="2bNndr_ln7v" role="3ElVtu">
+                <ref role="3cqZAo" node="2bNndr_ln6b" resolve="var" />
+              </node>
+              <node concept="37vLTw" id="2bNndr_ln7w" role="3ElQJh">
+                <ref role="3cqZAo" node="2bNndr_ln6g" resolve="typeMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_ln7x" role="3cqZAp" />
+        <node concept="3cpWs6" id="2bNndr_ln7y" role="3cqZAp">
+          <node concept="37vLTw" id="2bNndr_ln7z" role="3cqZAk">
+            <ref role="3cqZAo" node="2bNndr_ln6z" resolve="type" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="2bNndr_ln7$" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+        <node concept="3qTvmN" id="2bNndr_ln7_" role="11_B2D" />
+      </node>
+    </node>
+    <node concept="1vbBpf" id="2bNndr_lkWx" role="1ukcCD">
+      <ref role="1vbBpc" node="2bNndr_jthN" resolve="TypeChecking" />
+    </node>
+  </node>
+  <node concept="2oAaVg" id="2bNndr_l_Tk">
+    <property role="1ewt2y" value="false" />
+    <property role="3uBway" value="false" />
+    <property role="TrG5h" value="AssemblyLogicalBooleanAss" />
+    <property role="3GE5qa" value="Test1Variant1" />
+    <node concept="2oAaYs" id="2bNndr_l_Tm" role="2oAaxa">
+      <ref role="3aaZtz" node="2YYVDcHR$H1" resolve="LogicalExpressions" />
+    </node>
+    <node concept="2oAaYs" id="2bNndr_l_Tn" role="2oAaxa">
+      <ref role="3aaZtz" node="2bNndrzrgMP" resolve="Assignment" />
+    </node>
+    <node concept="2oAaYs" id="2bNndr_l_Tp" role="2oAaxa">
+      <ref role="3aaZtz" node="2YYVDcHRzpy" resolve="Boolean" />
+    </node>
+  </node>
+  <node concept="1GnNiK" id="2bNndr_l_Tq">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="TrG5h" value="CodeGen_EvaluatorEnv_AssemblyLogicalBooleanAss" />
+    <property role="3GE5qa" value="Test1Variant1" />
+    <ref role="1GHRfG" node="2bNndr_l_Tk" resolve="AssemblyLogicalBooleanAss" />
+    <node concept="1GnNjC" id="2bNndr_l_Tr" role="CLm5g">
+      <property role="TrG5h" value="main" />
+      <node concept="37vLTG" id="2bNndr_l_Ts" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="2bNndr_l_Tt" role="1tU5fm">
+          <ref role="1l_bkj" node="2bNndr_l_Tk" resolve="AssemblyLogicalBooleanAss" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2bNndr_l_Tu" role="3clF47">
+        <node concept="3cpWs8" id="2bNndr_mel0" role="3cqZAp">
+          <node concept="3cpWsn" id="2bNndr_mel3" role="3cpWs9">
+            <property role="TrG5h" value="typeMap" />
+            <node concept="3rvAFt" id="2bNndr_mekU" role="1tU5fm">
+              <node concept="3uibUv" id="2bNndr_meq9" role="3rvSg0">
+                <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+                <node concept="3qTvmN" id="2bNndr_meqK" role="11_B2D" />
+              </node>
+              <node concept="CMjq$" id="2bNndr_mepQ" role="3rvQeY">
+                <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="2bNndr_metd" role="33vP2m">
+              <node concept="3rGOSV" id="2bNndr_met1" role="2ShVmc">
+                <node concept="CMjq$" id="2bNndr_met2" role="3rHrn6">
+                  <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+                </node>
+                <node concept="3uibUv" id="2bNndr_met3" role="3rHtpV">
+                  <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+                  <node concept="3qTvmN" id="2bNndr_met4" role="11_B2D" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_mj_0" role="3cqZAp" />
+        <node concept="1DcWWT" id="2bNndr_mbA8" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_mbA9" role="2LFqv$">
+            <node concept="34ab3g" id="2bNndr_mgL0" role="3cqZAp">
+              <property role="35gtTG" value="info" />
+              <node concept="3cpWs3" id="2bNndr_mhk5" role="34bqiv">
+                <node concept="3cpWs3" id="2bNndr_mh3y" role="3uHU7B">
+                  <node concept="3cpWs3" id="2bNndr_mh01" role="3uHU7B">
+                    <node concept="Xl_RD" id="2bNndr_mgL2" role="3uHU7B">
+                      <property role="Xl_RC" value="TypeCheck(" />
+                    </node>
+                    <node concept="37vLTw" id="2bNndr_mh0l" role="3uHU7w">
+                      <ref role="3cqZAo" node="2bNndr_mbAf" resolve="assign" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="2bNndr_mh3_" role="3uHU7w">
+                    <property role="Xl_RC" value=") = " />
+                  </node>
+                </node>
+                <node concept="3otQA" id="2bNndr_mbYe" role="3uHU7w">
+                  <ref role="37wK5l" node="2bNndr_lZ1e" resolve="checkTypes" />
+                  <node concept="37vLTw" id="2bNndr_mbYy" role="37wK5m">
+                    <ref role="3cqZAo" node="2bNndr_l_Ts" resolve="inputGroup" />
+                  </node>
+                  <node concept="37vLTw" id="2bNndr_mc18" role="37wK5m">
+                    <ref role="3cqZAo" node="2bNndr_mbAf" resolve="assign" />
+                  </node>
+                  <node concept="10Nm6u" id="2bNndr_mc43" role="37wK5m" />
+                  <node concept="37vLTw" id="2bNndr_mgFE" role="37wK5m">
+                    <ref role="3cqZAo" node="2bNndr_mel3" resolve="typeMap" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="2bNndr_mbAf" role="1Duv9x">
+            <property role="TrG5h" value="assign" />
+            <node concept="CMjq$" id="2bNndr_mbAg" role="1tU5fm">
+              <ref role="CMYPG" node="2bNndrzLXaA" resolve="Assignment" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_mbAh" role="1DdaDG">
+            <node concept="37vLTw" id="2bNndr_mbAi" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_l_Ts" resolve="inputGroup" />
+            </node>
+            <node concept="1lBOk0" id="2bNndr_mbAj" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_mbAk" role="1lB3kv">
+                <ref role="CMYPG" node="2bNndrzLXaA" resolve="Assignment" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_mbsM" role="3cqZAp" />
+        <node concept="3cpWs8" id="2bNndr_l_Tv" role="3cqZAp">
+          <node concept="3cpWsn" id="2bNndr_l_Tw" role="3cpWs9">
+            <property role="TrG5h" value="env" />
+            <node concept="3uibUv" id="2bNndr_l_Tx" role="1tU5fm">
+              <ref role="3uigEE" node="2bNndrzrjLp" resolve="Environment" />
+            </node>
+            <node concept="2ShNRf" id="2bNndr_l_Ty" role="33vP2m">
+              <node concept="HV5vD" id="2bNndr_l_Tz" role="2ShVmc">
+                <ref role="HV5vE" node="2bNndrzrjLp" resolve="Environment" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_l_T$" role="3cqZAp" />
+        <node concept="3SKdUt" id="2bNndr_l_T_" role="3cqZAp">
+          <node concept="3SKdUq" id="2bNndr_l_TA" role="3SKWNk">
+            <property role="3SKdUp" value="We populate the environment with variables." />
+          </node>
+        </node>
+        <node concept="1DcWWT" id="2bNndr_l_TB" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_l_TC" role="2LFqv$">
+            <node concept="3clFbF" id="2bNndr_l_TD" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_l_TE" role="3clFbG">
+                <ref role="37wK5l" node="2bNndr_l_Uo" resolve="evaluateEnv" />
+                <node concept="37vLTw" id="2bNndr_l_TF" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Ts" resolve="inputGroup" />
+                </node>
+                <node concept="37vLTw" id="2bNndr_l_TG" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_TI" resolve="assign" />
+                </node>
+                <node concept="37vLTw" id="2bNndr_l_TH" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Tw" resolve="env" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="2bNndr_l_TI" role="1Duv9x">
+            <property role="TrG5h" value="assign" />
+            <node concept="CMjq$" id="2bNndr_l_TJ" role="1tU5fm">
+              <ref role="CMYPG" node="2bNndrzLXaA" resolve="Assignment" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_l_TK" role="1DdaDG">
+            <node concept="37vLTw" id="2bNndr_l_TL" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_l_Ts" resolve="inputGroup" />
+            </node>
+            <node concept="1lBOk0" id="2bNndr_l_TM" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_l_TN" role="1lB3kv">
+                <ref role="CMYPG" node="2bNndrzLXaA" resolve="Assignment" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_l_TO" role="3cqZAp" />
+        <node concept="1DcWWT" id="2bNndr_l_TP" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_l_TQ" role="2LFqv$">
+            <node concept="3clFbJ" id="2bNndr_l_TR" role="3cqZAp">
+              <node concept="3clFbS" id="2bNndr_l_TS" role="3clFbx">
+                <node concept="34ab3g" id="2bNndr_l_TT" role="3cqZAp">
+                  <property role="35gtTG" value="info" />
+                  <node concept="3cpWs3" id="2bNndr_l_TU" role="34bqiv">
+                    <node concept="3otQA" id="2bNndr_l_TV" role="3uHU7w">
+                      <ref role="37wK5l" node="2bNndr_l_Uo" resolve="evaluateEnv" />
+                      <node concept="37vLTw" id="2bNndr_l_TW" role="37wK5m">
+                        <ref role="3cqZAo" node="2bNndr_l_Ts" resolve="inputGroup" />
+                      </node>
+                      <node concept="37vLTw" id="2bNndr_l_TX" role="37wK5m">
+                        <ref role="3cqZAo" node="2bNndr_l_Uf" resolve="exp" />
+                      </node>
+                      <node concept="37vLTw" id="2bNndr_l_TY" role="37wK5m">
+                        <ref role="3cqZAo" node="2bNndr_l_Tw" resolve="env" />
+                      </node>
+                    </node>
+                    <node concept="3cpWs3" id="2bNndr_l_TZ" role="3uHU7B">
+                      <node concept="3cpWs3" id="2bNndr_l_U0" role="3uHU7B">
+                        <node concept="Xl_RD" id="2bNndr_l_U1" role="3uHU7B">
+                          <property role="Xl_RC" value="Evaluate(" />
+                        </node>
+                        <node concept="37vLTw" id="2bNndr_l_U2" role="3uHU7w">
+                          <ref role="3cqZAo" node="2bNndr_l_Uf" resolve="exp" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="2bNndr_l_U3" role="3uHU7w">
+                        <property role="Xl_RC" value=") = " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="2bNndr_l_U4" role="3clFbw">
+                <node concept="3clFbC" id="2bNndr_l_U5" role="3uHU7w">
+                  <node concept="3cmrfG" id="2bNndr_l_U6" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="2OqwBi" id="2bNndr_l_U7" role="3uHU7B">
+                    <node concept="2OqwBi" id="2bNndr_l_U8" role="2Oq$k0">
+                      <node concept="37vLTw" id="2bNndr_l_U9" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2bNndr_l_Uf" resolve="exp" />
+                      </node>
+                      <node concept="knPHN" id="2bNndr_l_Ua" role="2OqNvi">
+                        <ref role="knPHO" node="2bNndrzrh2q" resolve="assign" />
+                      </node>
+                    </node>
+                    <node concept="34oBXx" id="2bNndr_l_Ub" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3otQA" id="2bNndr_l_Uc" role="3uHU7B">
+                  <ref role="37wK5l" node="2bNndrz$_Pz" resolve="topLevelExp" />
+                  <node concept="37vLTw" id="2bNndr_l_Ud" role="37wK5m">
+                    <ref role="3cqZAo" node="2bNndr_l_Ts" resolve="inputGroup" />
+                  </node>
+                  <node concept="37vLTw" id="2bNndr_l_Ue" role="37wK5m">
+                    <ref role="3cqZAo" node="2bNndr_l_Uf" resolve="exp" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="2bNndr_l_Uf" role="1Duv9x">
+            <property role="TrG5h" value="exp" />
+            <node concept="CMjq$" id="2bNndr_l_Ug" role="1tU5fm">
+              <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_l_Uh" role="1DdaDG">
+            <node concept="37vLTw" id="2bNndr_l_Ui" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_l_Ts" resolve="inputGroup" />
+            </node>
+            <node concept="1lBOk0" id="2bNndr_l_Uj" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_l_Uk" role="1lB3kv">
+                <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="2bNndr_l_Ul" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="2bNndr_l_Um" role="CLm5g" />
+    <node concept="1vbBpf" id="2bNndr_l_Un" role="1ukcCD">
+      <ref role="1vbBpc" node="2bNndrz$yZo" resolve="EvaluatorEnv" />
+    </node>
+    <node concept="2XypTt" id="2bNndr_l_Uo" role="CLm5g">
+      <property role="TrG5h" value="evaluateEnv" />
+      <ref role="2XypDE" node="2bNndrz$yZb" resolve="evaluateEnv" />
+      <node concept="37vLTG" id="2bNndr_l_Up" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="2bNndr_l_Uq" role="1tU5fm">
+          <ref role="1l_bkj" node="2bNndr_l_Tk" resolve="AssemblyLogicalBooleanAss" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_l_Ur" role="3clF46">
+        <property role="TrG5h" value="exp" />
+        <node concept="CMjq$" id="2bNndr_l_Us" role="1tU5fm">
+          <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_l_Ut" role="3clF46">
+        <property role="TrG5h" value="env" />
+        <node concept="3uibUv" id="2bNndr_l_Uu" role="1tU5fm">
+          <ref role="3uigEE" node="2bNndrzrjLp" resolve="Environment" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2bNndr_l_Uv" role="3clF47">
+        <node concept="3clFbJ" id="2bNndr_l_Uw" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_l_Ux" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_l_Uy" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_l_Uz" role="3cqZAk">
+                <ref role="37wK5l" node="2bNndrzHwnk" resolve="evaluateAnd" />
+                <node concept="37vLTw" id="2bNndr_l_U$" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Up" resolve="inputGroup" />
+                </node>
+                <node concept="2OqwBi" id="2bNndr_lKIy" role="37wK5m">
+                  <node concept="37vLTw" id="2bNndr_l_U_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+                  </node>
+                  <node concept="1fHQjy" id="2bNndr_lL2n" role="2OqNvi">
+                    <node concept="CMjq$" id="2bNndr_lL2p" role="1fHO_7">
+                      <ref role="CMYPG" node="32FhR2fYl3_" resolve="And" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bNndr_l_UA" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Ut" resolve="env" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_l_UC" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_l_UD" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+            </node>
+            <node concept="1lWEKl" id="2bNndr_l_UE" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_l_UF" role="1lWEKm">
+                <ref role="CMYPG" node="32FhR2fYl3_" resolve="And" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2bNndr_lMrI" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_lMrJ" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_lMrK" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_lMrL" role="3cqZAk">
+                <ref role="37wK5l" node="2bNndrzHwoX" resolve="evaluateOr" />
+                <node concept="37vLTw" id="2bNndr_lMrM" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Up" resolve="inputGroup" />
+                </node>
+                <node concept="2OqwBi" id="2bNndr_lMrN" role="37wK5m">
+                  <node concept="37vLTw" id="2bNndr_lMrO" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+                  </node>
+                  <node concept="1fHQjy" id="2bNndr_lMrP" role="2OqNvi">
+                    <node concept="CMjq$" id="2bNndr_lMrQ" role="1fHO_7">
+                      <ref role="CMYPG" node="32FhR2fYr4C" resolve="Or" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bNndr_lMrR" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Ut" resolve="env" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_lMrS" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_lMrT" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+            </node>
+            <node concept="1lWEKl" id="2bNndr_lMrU" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_lMrV" role="1lWEKm">
+                <ref role="CMYPG" node="32FhR2fYr4C" resolve="Or" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2bNndr_lMID" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_lMIE" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_lMIF" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_lMIG" role="3cqZAk">
+                <ref role="37wK5l" node="2bNndrzHwpZ" resolve="evaluateXor" />
+                <node concept="37vLTw" id="2bNndr_lMIH" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Up" resolve="inputGroup" />
+                </node>
+                <node concept="2OqwBi" id="2bNndr_lMII" role="37wK5m">
+                  <node concept="37vLTw" id="2bNndr_lMIJ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+                  </node>
+                  <node concept="1fHQjy" id="2bNndr_lMIK" role="2OqNvi">
+                    <node concept="CMjq$" id="2bNndr_lMIL" role="1fHO_7">
+                      <ref role="CMYPG" node="32FhR2fYNhw" resolve="Xor" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bNndr_lMIM" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Ut" resolve="env" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_lMIN" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_lMIO" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+            </node>
+            <node concept="1lWEKl" id="2bNndr_lMIP" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_lMIQ" role="1lWEKm">
+                <ref role="CMYPG" node="32FhR2fYNhw" resolve="Xor" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2bNndr_lN2G" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_lN2H" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_lN2I" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_lN2J" role="3cqZAk">
+                <ref role="37wK5l" node="2bNndrzHwom" resolve="evaluateNot" />
+                <node concept="37vLTw" id="2bNndr_lN2K" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Up" resolve="inputGroup" />
+                </node>
+                <node concept="2OqwBi" id="2bNndr_lN2L" role="37wK5m">
+                  <node concept="37vLTw" id="2bNndr_lN2M" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+                  </node>
+                  <node concept="1fHQjy" id="2bNndr_lN2N" role="2OqNvi">
+                    <node concept="CMjq$" id="2bNndr_lN2O" role="1fHO_7">
+                      <ref role="CMYPG" node="32FhR2fYrSB" resolve="Not" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bNndr_lN2P" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Ut" resolve="env" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_lN2Q" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_lN2R" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+            </node>
+            <node concept="1lWEKl" id="2bNndr_lN2S" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_lN2T" role="1lWEKm">
+                <ref role="CMYPG" node="32FhR2fYrSB" resolve="Not" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_l_Vo" role="3cqZAp" />
+        <node concept="3clFbJ" id="2bNndr_l_W1" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_l_W2" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_l_W3" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_l_W4" role="3cqZAk">
+                <ref role="37wK5l" node="2bNndrzA93l" resolve="evaluateAssignment" />
+                <node concept="37vLTw" id="2bNndr_l_W5" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Up" resolve="inputGroup" />
+                </node>
+                <node concept="2OqwBi" id="2bNndr_l_W6" role="37wK5m">
+                  <node concept="37vLTw" id="2bNndr_l_W7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+                  </node>
+                  <node concept="1fHQjy" id="2bNndr_l_W8" role="2OqNvi">
+                    <node concept="CMjq$" id="2bNndr_l_W9" role="1fHO_7">
+                      <ref role="CMYPG" node="2bNndrzLXaA" resolve="Assignment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bNndr_l_Wa" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Ut" resolve="env" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_l_Wb" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_l_Wc" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+            </node>
+            <node concept="1lWEKl" id="2bNndr_l_Wd" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_l_We" role="1lWEKm">
+                <ref role="CMYPG" node="2bNndrzLXaA" resolve="Assignment" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_l_Wf" role="3cqZAp" />
+        <node concept="3clFbJ" id="2bNndr_l_Wg" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_l_Wh" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_l_Wi" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_l_Wj" role="3cqZAk">
+                <ref role="37wK5l" node="2bNndrzrseg" resolve="evaluateVariable" />
+                <node concept="37vLTw" id="2bNndr_l_Wk" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Up" resolve="inputGroup" />
+                </node>
+                <node concept="2OqwBi" id="2bNndr_l_Wl" role="37wK5m">
+                  <node concept="37vLTw" id="2bNndr_l_Wm" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+                  </node>
+                  <node concept="1fHQjy" id="2bNndr_l_Wn" role="2OqNvi">
+                    <node concept="CMjq$" id="2bNndr_l_Wo" role="1fHO_7">
+                      <ref role="CMYPG" node="2bNndrzrgNT" resolve="Variable" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bNndr_l_Wp" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Ut" resolve="env" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_l_Wq" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_l_Wr" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+            </node>
+            <node concept="1lWEKl" id="2bNndr_l_Ws" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_l_Wt" role="1lWEKm">
+                <ref role="CMYPG" node="2bNndrzrgNT" resolve="Variable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_l_Wu" role="3cqZAp" />
+        <node concept="3clFbJ" id="2bNndr_l_Wv" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_l_Ww" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_l_Wx" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_l_Wy" role="3cqZAk">
+                <ref role="37wK5l" node="2bNndrzHMOF" resolve="evaluateBoolean" />
+                <node concept="37vLTw" id="2bNndr_l_Wz" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Up" resolve="inputGroup" />
+                </node>
+                <node concept="2OqwBi" id="2bNndr_l_W$" role="37wK5m">
+                  <node concept="37vLTw" id="2bNndr_l_W_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+                  </node>
+                  <node concept="1fHQjy" id="2bNndr_l_WA" role="2OqNvi">
+                    <node concept="CMjq$" id="2bNndr_l_WB" role="1fHO_7">
+                      <ref role="CMYPG" node="2YYVDcHRzpG" resolve="Boolean" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bNndr_l_WC" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_l_Ut" resolve="env" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_l_WD" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_l_WE" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+            </node>
+            <node concept="1lWEKl" id="2bNndr_l_WF" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_l_WG" role="1lWEKm">
+                <ref role="CMYPG" node="2YYVDcHRzpG" resolve="Boolean" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_l_WH" role="3cqZAp" />
+        <node concept="34ab3g" id="2bNndr_l_WY" role="3cqZAp">
+          <property role="35gtTG" value="error" />
+          <node concept="3cpWs3" id="2bNndr_l_WZ" role="34bqiv">
+            <node concept="37vLTw" id="2bNndr_l_X0" role="3uHU7w">
+              <ref role="3cqZAo" node="2bNndr_l_Ur" resolve="exp" />
+            </node>
+            <node concept="Xl_RD" id="2bNndr_l_X1" role="3uHU7B">
+              <property role="Xl_RC" value="Type of expression does not exist in evaluateEnv " />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_l_X2" role="3cqZAp" />
+        <node concept="3cpWs6" id="2bNndr_l_X3" role="3cqZAp">
+          <node concept="10Nm6u" id="2bNndr_l_X4" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="2bNndr_l_X5" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+      </node>
+    </node>
+    <node concept="CLx5B" id="2bNndr_lY9W" role="CLm5g" />
+    <node concept="2XypTt" id="2bNndr_lZ1e" role="CLm5g">
+      <property role="TrG5h" value="checkTypes" />
+      <ref role="2XypDE" node="2bNndr_jthP" resolve="checkTypes" />
+      <node concept="37vLTG" id="2bNndr_lZ1f" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="2bNndr_lZ1g" role="1tU5fm">
+          <ref role="1l_bkj" node="2bNndr_l_Tk" resolve="AssemblyLogicalBooleanAss" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_m2FB" role="3clF46">
+        <property role="TrG5h" value="exp" />
+        <node concept="CMjq$" id="2bNndr_m2FJ" role="1tU5fm">
+          <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_m2FY" role="3clF46">
+        <property role="TrG5h" value="expectedType" />
+        <node concept="3uibUv" id="2bNndr_m2G8" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+          <node concept="3qTvmN" id="2bNndr_m2Go" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bNndr_m2H3" role="3clF46">
+        <property role="TrG5h" value="typeMap" />
+        <node concept="3rvAFt" id="2bNndr_m2Hg" role="1tU5fm">
+          <node concept="3uibUv" id="2bNndr_m2HO" role="3rvSg0">
+            <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+            <node concept="3qTvmN" id="2bNndr_m2In" role="11_B2D" />
+          </node>
+          <node concept="CMjq$" id="2bNndr_m2Hx" role="3rvQeY">
+            <ref role="CMYPG" node="2YYVDcHRi3Q" resolve="Expression" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="2bNndr_lZ1h" role="3clF47">
+        <node concept="3clFbJ" id="2bNndr_m3b2" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_m3b3" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_m3l8" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_m3lz" role="3cqZAk">
+                <ref role="37wK5l" node="2bNndr_jznm" resolve="checkTypesLogical" />
+                <node concept="37vLTw" id="2bNndr_m3mO" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_lZ1f" resolve="inputGroup" />
+                </node>
+                <node concept="2OqwBi" id="2bNndr_m3ro" role="37wK5m">
+                  <node concept="37vLTw" id="2bNndr_m3pA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_m2FB" resolve="exp" />
+                  </node>
+                  <node concept="1fHQjy" id="2bNndr_m3xo" role="2OqNvi">
+                    <node concept="CMjq$" id="2bNndr_m3xq" role="1fHO_7">
+                      <ref role="CMYPG" node="2bNndr_kaBQ" resolve="Logical" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bNndr_m3A7" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_m2FY" resolve="expectedType" />
+                </node>
+                <node concept="37vLTw" id="2bNndr_m3El" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_m2H3" resolve="typeMap" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_m3bE" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_m3be" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_m2FB" resolve="exp" />
+            </node>
+            <node concept="1lWEKl" id="2bNndr_m3kM" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_m3kO" role="1lWEKm">
+                <ref role="CMYPG" node="2bNndr_kaBQ" resolve="Logical" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2bNndr_m51t" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_m51u" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_m51v" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_m51w" role="3cqZAk">
+                <ref role="37wK5l" node="2bNndr_kH8i" resolve="checkTypesAssignment" />
+                <node concept="37vLTw" id="2bNndr_m51x" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_lZ1f" resolve="inputGroup" />
+                </node>
+                <node concept="2OqwBi" id="2bNndr_m51y" role="37wK5m">
+                  <node concept="37vLTw" id="2bNndr_m51z" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_m2FB" resolve="exp" />
+                  </node>
+                  <node concept="1fHQjy" id="2bNndr_m51$" role="2OqNvi">
+                    <node concept="CMjq$" id="2bNndr_m51_" role="1fHO_7">
+                      <ref role="CMYPG" node="2bNndrzLXaA" resolve="Assignment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bNndr_m51A" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_m2FY" resolve="expectedType" />
+                </node>
+                <node concept="37vLTw" id="2bNndr_m51B" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_m2H3" resolve="typeMap" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_m51C" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_m51D" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_m2FB" resolve="exp" />
+            </node>
+            <node concept="1lWEKl" id="2bNndr_m51E" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_m51F" role="1lWEKm">
+                <ref role="CMYPG" node="2bNndrzLXaA" resolve="Assignment" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2bNndr_m5im" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_m5in" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_m5io" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_m5ip" role="3cqZAk">
+                <ref role="37wK5l" node="2bNndr_ln68" resolve="checkTypesVariable" />
+                <node concept="37vLTw" id="2bNndr_m5iq" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_lZ1f" resolve="inputGroup" />
+                </node>
+                <node concept="2OqwBi" id="2bNndr_m5ir" role="37wK5m">
+                  <node concept="37vLTw" id="2bNndr_m5is" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_m2FB" resolve="exp" />
+                  </node>
+                  <node concept="1fHQjy" id="2bNndr_m5it" role="2OqNvi">
+                    <node concept="CMjq$" id="2bNndr_m5iu" role="1fHO_7">
+                      <ref role="CMYPG" node="2bNndrzrgNT" resolve="Variable" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bNndr_m5iv" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_m2FY" resolve="expectedType" />
+                </node>
+                <node concept="37vLTw" id="2bNndr_m5iw" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_m2H3" resolve="typeMap" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_m5ix" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_m5iy" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_m2FB" resolve="exp" />
+            </node>
+            <node concept="1lWEKl" id="2bNndr_m5iz" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_m5i$" role="1lWEKm">
+                <ref role="CMYPG" node="2bNndrzrgNT" resolve="Variable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2bNndr_m5i_" role="3cqZAp">
+          <node concept="3clFbS" id="2bNndr_m5iA" role="3clFbx">
+            <node concept="3cpWs6" id="2bNndr_m5iB" role="3cqZAp">
+              <node concept="3otQA" id="2bNndr_m5iC" role="3cqZAk">
+                <ref role="37wK5l" node="2bNndr_ldHW" resolve="checkTypesBoolean" />
+                <node concept="37vLTw" id="2bNndr_m5iD" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_lZ1f" resolve="inputGroup" />
+                </node>
+                <node concept="2OqwBi" id="2bNndr_m5iE" role="37wK5m">
+                  <node concept="37vLTw" id="2bNndr_m5iF" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2bNndr_m2FB" resolve="exp" />
+                  </node>
+                  <node concept="1fHQjy" id="2bNndr_m5iG" role="2OqNvi">
+                    <node concept="CMjq$" id="2bNndr_m5iH" role="1fHO_7">
+                      <ref role="CMYPG" node="2YYVDcHRzpG" resolve="Boolean" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2bNndr_m5iI" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_m2FY" resolve="expectedType" />
+                </node>
+                <node concept="37vLTw" id="2bNndr_m5iJ" role="37wK5m">
+                  <ref role="3cqZAo" node="2bNndr_m2H3" resolve="typeMap" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2bNndr_m5iK" role="3clFbw">
+            <node concept="37vLTw" id="2bNndr_m5iL" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bNndr_m2FB" resolve="exp" />
+            </node>
+            <node concept="1lWEKl" id="2bNndr_m5iM" role="2OqNvi">
+              <node concept="CMjq$" id="2bNndr_m5iN" role="1lWEKm">
+                <ref role="CMYPG" node="2YYVDcHRzpG" resolve="Boolean" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_m3Hw" role="3cqZAp" />
+        <node concept="34ab3g" id="2bNndr_m8jx" role="3cqZAp">
+          <property role="35gtTG" value="error" />
+          <node concept="3cpWs3" id="2bNndr_m8jy" role="34bqiv">
+            <node concept="37vLTw" id="2bNndr_m8jz" role="3uHU7w">
+              <ref role="3cqZAo" node="2bNndr_m2FB" resolve="exp" />
+            </node>
+            <node concept="Xl_RD" id="2bNndr_m8j$" role="3uHU7B">
+              <property role="Xl_RC" value="Type of expression does not exist in checkTypes " />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bNndr_m8j_" role="3cqZAp" />
+        <node concept="3cpWs6" id="2bNndr_m8jA" role="3cqZAp">
+          <node concept="10Nm6u" id="2bNndr_m8jB" role="3cqZAk" />
+        </node>
+        <node concept="3clFbH" id="2bNndr_m89b" role="3cqZAp" />
+      </node>
+      <node concept="3uibUv" id="2bNndr_m2IT" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+        <node concept="3qTvmN" id="2bNndr_m2J9" role="11_B2D" />
+      </node>
+    </node>
+  </node>
+  <node concept="2oAaVg" id="2bNndr_l_X6">
+    <property role="1ewt2y" value="false" />
+    <property role="3uBway" value="false" />
+    <property role="TrG5h" value="ModelTest1" />
+    <property role="3GE5qa" value="Test1Variant1" />
+    <ref role="19kf5F" node="2bNndr_l_Tk" resolve="AssemblyLogicalBooleanAss" />
+    <node concept="2oAaW5" id="2bNndr_l_X7" role="2oAaxa">
+      <property role="TrG5h" value="A0" />
+      <node concept="2oAaXF" id="2bNndr_l_X8" role="2oAawq">
+        <ref role="3aaZtz" node="2bNndrzLXaA" resolve="Assignment" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="2bNndr_l_X9" role="2oAaxa">
+      <property role="TrG5h" value="v0" />
+      <node concept="2oAaXF" id="2bNndr_l_Xa" role="2oAawq">
+        <ref role="3aaZtz" node="2bNndrzrgNT" resolve="Variable" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="2bNndr_l_Xb" role="2oAaxa">
+      <property role="TrG5h" value="true&amp;false" />
+      <node concept="2oAaXF" id="2bNndr_lVFM" role="2oAawq">
+        <ref role="3aaZtz" node="32FhR2fYl3_" resolve="And" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="2bNndr_l_Xd" role="2oAaxa">
+      <property role="TrG5h" value="true" />
+      <node concept="2oAaXF" id="2bNndr_lVMQ" role="2oAawq">
+        <ref role="3aaZtz" node="2YYVDcHRzpG" resolve="Boolean" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="2bNndr_l_Xf" role="2oAaxa">
+      <property role="TrG5h" value="false" />
+      <node concept="2oAaXF" id="2bNndr_lVQ6" role="2oAawq">
+        <ref role="3aaZtz" node="2YYVDcHRzpG" resolve="Boolean" />
+      </node>
+    </node>
+    <node concept="2oAaW5" id="2bNndr_l_Xh" role="2oAaxa">
+      <property role="TrG5h" value="boolean" />
+      <node concept="2oAaXF" id="2bNndr_l_Xi" role="2oAawq">
+        <ref role="3aaZtz" node="2bNndrzrgPI" resolve="Type" />
+      </node>
+    </node>
+    <node concept="2jq5PB" id="2bNndr_l_Xj" role="2oAaxa" />
+    <node concept="2oAaUa" id="2bNndr_l_Xk" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_l_Xl" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_l_Xd" resolve="true" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_l_Xm" role="2oAawD">
+        <ref role="3aaZtz" node="2bNndr_l_Xb" resolve="true&amp;false" />
+      </node>
+      <node concept="2oAawe" id="2bNndr_lVW9" role="2oAawy">
+        <ref role="3aaZtz" node="2YYVDcHRjeT" resolve="left" />
+      </node>
+    </node>
+    <node concept="2oAaUa" id="2bNndr_l_Xo" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_l_Xp" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_l_Xf" resolve="false" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_l_Xq" role="2oAawD">
+        <ref role="3aaZtz" node="2bNndr_l_Xb" resolve="true&amp;false" />
+      </node>
+      <node concept="2oAawe" id="2bNndr_lVYi" role="2oAawy">
+        <ref role="3aaZtz" node="2YYVDcHRrv8" resolve="right" />
+      </node>
+    </node>
+    <node concept="2jq5PB" id="2bNndr_l_Xs" role="2oAaxa" />
+    <node concept="2oAaUa" id="2bNndr_l_Xt" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_l_Xu" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_l_X9" resolve="v0" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_l_Xv" role="2oAawD">
+        <ref role="3aaZtz" node="2bNndr_l_X7" resolve="A0" />
+      </node>
+      <node concept="2oAawe" id="2bNndr_l_Xw" role="2oAawy">
+        <ref role="3aaZtz" node="2bNndrzLXgB" resolve="variable" />
+      </node>
+    </node>
+    <node concept="2oAaUa" id="2bNndr_l_Xx" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_l_Xy" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_l_Xb" resolve="true&amp;false" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_l_Xz" role="2oAawD">
+        <ref role="3aaZtz" node="2bNndr_l_X7" resolve="A0" />
+      </node>
+      <node concept="2oAawe" id="2bNndr_lW13" role="2oAawy">
+        <ref role="3aaZtz" node="2bNndrzrh2q" resolve="assign" />
+      </node>
+    </node>
+    <node concept="2jq5PB" id="2bNndr_l_X_" role="2oAaxa" />
+    <node concept="2oAaUa" id="2bNndr_l_XA" role="2oAaxa">
+      <property role="2XbFUA" value="0..*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="2bNndr_l_XB" role="2oAawB">
+        <ref role="3aaZtz" node="2bNndr_l_Xh" resolve="boolean" />
+      </node>
+      <node concept="2oAaXF" id="2bNndr_l_XC" role="2oAawD">
+        <ref role="3aaZtz" node="2bNndr_l_X9" resolve="v0" />
+      </node>
+      <node concept="2oAawe" id="2bNndr_l_XD" role="2oAawy">
         <ref role="3aaZtz" node="2bNndrzrgTY" resolve="type" />
       </node>
     </node>
