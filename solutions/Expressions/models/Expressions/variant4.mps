@@ -3,9 +3,22 @@
   <persistence version="9" />
   <languages>
     <use id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models" version="-1" />
+    <use id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
   <imports />
   <registry>
+    <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration">
+      <concept id="5319102428749892554" name="CodeGeneration.structure.CodeGenMethodsContainer" flags="ng" index="1GnNiK" />
+    </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
       <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
       <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
@@ -35,6 +48,16 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods">
+      <concept id="8976227254846920304" name="GenericGroupMethods.structure.MethodsContainer" flags="ng" index="CLm5h">
+        <reference id="5319102428747287702" name="group" index="1GHRfG" />
+        <child id="7169015349716565843" name="facet" index="1ukcCD" />
+      </concept>
+      <concept id="7169015349702230285" name="GenericGroupMethods.structure.Facet" flags="ng" index="1vbBhR" />
+      <concept id="7169015349705498819" name="GenericGroupMethods.structure.IAspect" flags="ng" index="1vYpmT">
+        <property id="7169015349705498857" name="aspect" index="1vYpmj" />
       </concept>
     </language>
   </registry>
@@ -923,6 +946,15 @@
       <node concept="2oAaXF" id="2bNndrzsbEb" role="2oAawD">
         <ref role="3aaZtz" node="2bNndrzsb_S" resolve="Integer" />
       </node>
+    </node>
+  </node>
+  <node concept="1GnNiK" id="2bNndrBnnym">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="ExpresssionsMetaMod.FloatOperations" />
+    <property role="TrG5h" value="CodeGen_TypeChecking_FloatExpressions" />
+    <ref role="1GHRfG" node="2bNndrzs9uf" resolve="FloatExpressions" />
+    <node concept="1vbBhR" id="2bNndrBnnyM" role="1ukcCD">
+      <property role="TrG5h" value="TypeChecking" />
     </node>
   </node>
 </model>
