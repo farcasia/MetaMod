@@ -20,6 +20,7 @@
     <use id="7cbc13ed-9875-4738-a307-276eb1aa9679" name="GroupInterfaces" version="0" />
     <use id="47849989-c2df-46a8-aba5-1c5a21bbef1f" name="Constraints" version="-1" />
     <generationPart ref="b9d9f978-d2e1-4cb8-a4c8-9c34c6661669(AddMainMethodGenerationLanguage)" />
+    <generationPart ref="2fc8d595-dbc3-42a6-805f-e347b19e9f52(LinkingMetamodelCreation)" />
   </languages>
   <imports>
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
