@@ -239,6 +239,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -1488,71 +1489,14 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2TStaYk44Wm" role="3clF47">
-        <node concept="3cpWs8" id="6dXtnCWnoBt" role="3cqZAp">
-          <node concept="3cpWsn" id="6dXtnCWnoBw" role="3cpWs9">
-            <property role="TrG5h" value="configFiles" />
-            <node concept="2I9FWS" id="6dXtnCWnoQs" role="1tU5fm">
-              <ref role="2I9WkF" to="anrw:6dXtnCWkJOC" resolve="ConfigurationCodeGen" />
-            </node>
-            <node concept="2OqwBi" id="6dXtnCWnhlA" role="33vP2m">
-              <node concept="2OqwBi" id="6dXtnCWnfQa" role="2Oq$k0">
-                <node concept="37vLTw" id="2TStaYk4hou" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2TStaYk46L1" resolve="node" />
-                </node>
-                <node concept="I4A8Y" id="6dXtnCWng_I" role="2OqNvi" />
+        <node concept="3cpWs6" id="2feKG9k4IrC" role="3cqZAp">
+          <node concept="1rXfSq" id="2feKG9k4Iu$" role="3cqZAk">
+            <ref role="37wK5l" node="2feKG9k4CjX" resolve="enabledFacet" />
+            <node concept="2OqwBi" id="2feKG9k4Iyd" role="37wK5m">
+              <node concept="37vLTw" id="2feKG9k4Ixj" role="2Oq$k0">
+                <ref role="3cqZAo" node="2TStaYk46L1" resolve="node" />
               </node>
-              <node concept="1j9C0f" id="6dXtnCWnh$i" role="2OqNvi">
-                <ref role="1j9C0d" to="anrw:6dXtnCWkJOC" resolve="ConfigurationCodeGen" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6dXtnCWnqbd" role="3cqZAp" />
-        <node concept="3clFbJ" id="6dXtnCWnoah" role="3cqZAp">
-          <node concept="3clFbS" id="6dXtnCWnoaj" role="3clFbx">
-            <node concept="34ab3g" id="6dXtnCWny0s" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="Xl_RD" id="6dXtnCWny0u" role="34bqiv">
-                <property role="Xl_RC" value="There should be at least one configuration file for code generation!" />
-              </node>
-            </node>
-            <node concept="3clFbH" id="5atMD4NDNNo" role="3cqZAp" />
-            <node concept="3cpWs6" id="6dXtnCWn$1e" role="3cqZAp">
-              <node concept="10Nm6u" id="2TStaYk4huX" role="3cqZAk" />
-            </node>
-          </node>
-          <node concept="3clFbC" id="1e3OgxFTPl3" role="3clFbw">
-            <node concept="2OqwBi" id="6dXtnCWnrjZ" role="3uHU7B">
-              <node concept="37vLTw" id="6dXtnCWnqzd" role="2Oq$k0">
-                <ref role="3cqZAo" node="6dXtnCWnoBw" resolve="configFiles" />
-              </node>
-              <node concept="34oBXx" id="6dXtnCWnw7Z" role="2OqNvi" />
-            </node>
-            <node concept="3cmrfG" id="6dXtnCWnxO2" role="3uHU7w">
-              <property role="3cmrfH" value="0" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6dXtnCWnnKT" role="3cqZAp" />
-        <node concept="3cpWs6" id="2TStaYk4hyC" role="3cqZAp">
-          <node concept="2OqwBi" id="6dXtnCWnmXR" role="3cqZAk">
-            <node concept="2OqwBi" id="6dXtnCWnmeo" role="2Oq$k0">
-              <node concept="2OqwBi" id="6dXtnCWni$o" role="2Oq$k0">
-                <node concept="34jXtK" id="6dXtnCWnlPh" role="2OqNvi">
-                  <node concept="3cmrfG" id="6dXtnCWnm0Y" role="25WWJ7">
-                    <property role="3cmrfH" value="0" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="6dXtnCWnqne" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6dXtnCWnoBw" resolve="configFiles" />
-                </node>
-              </node>
-              <node concept="3TrEf2" id="6dXtnCWnm$L" role="2OqNvi">
-                <ref role="3Tt5mk" to="anrw:6dXtnCWkKhJ" />
-              </node>
-            </node>
-            <node concept="3TrEf2" id="6dXtnCWvxRF" role="2OqNvi">
-              <ref role="3Tt5mk" to="1o5n:6dXtnCWkKcQ" />
+              <node concept="I4A8Y" id="2feKG9k4IIo" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -1567,6 +1511,89 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6YtJRaiOkfY" role="jymVt" />
+    <node concept="2YIFZL" id="2feKG9k4CjX" role="jymVt">
+      <property role="TrG5h" value="enabledFacet" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2feKG9k4CjY" role="3clF47">
+        <node concept="3cpWs8" id="2feKG9k4CjZ" role="3cqZAp">
+          <node concept="3cpWsn" id="2feKG9k4Ck0" role="3cpWs9">
+            <property role="TrG5h" value="configFiles" />
+            <node concept="2I9FWS" id="2feKG9k4Ck1" role="1tU5fm">
+              <ref role="2I9WkF" to="anrw:6dXtnCWkJOC" resolve="ConfigurationCodeGen" />
+            </node>
+            <node concept="2OqwBi" id="2feKG9k4Ck2" role="33vP2m">
+              <node concept="1j9C0f" id="2feKG9k4Ck6" role="2OqNvi">
+                <ref role="1j9C0d" to="anrw:6dXtnCWkJOC" resolve="ConfigurationCodeGen" />
+              </node>
+              <node concept="37vLTw" id="2feKG9k4HD4" role="2Oq$k0">
+                <ref role="3cqZAo" node="2feKG9k4Ckw" resolve="model" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2feKG9k4Ck7" role="3cqZAp" />
+        <node concept="3clFbJ" id="2feKG9k4Ck8" role="3cqZAp">
+          <node concept="3clFbS" id="2feKG9k4Ck9" role="3clFbx">
+            <node concept="34ab3g" id="2feKG9k4Cka" role="3cqZAp">
+              <property role="35gtTG" value="error" />
+              <node concept="Xl_RD" id="2feKG9k4Ckb" role="34bqiv">
+                <property role="Xl_RC" value="There should be at least one configuration file for code generation!" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="2feKG9k4Ckc" role="3cqZAp" />
+            <node concept="3cpWs6" id="2feKG9k4Ckd" role="3cqZAp">
+              <node concept="10Nm6u" id="2feKG9k4Cke" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="2feKG9k4Ckf" role="3clFbw">
+            <node concept="2OqwBi" id="2feKG9k4Ckg" role="3uHU7B">
+              <node concept="37vLTw" id="2feKG9k4Ckh" role="2Oq$k0">
+                <ref role="3cqZAo" node="2feKG9k4Ck0" resolve="configFiles" />
+              </node>
+              <node concept="34oBXx" id="2feKG9k4Cki" role="2OqNvi" />
+            </node>
+            <node concept="3cmrfG" id="2feKG9k4Ckj" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2feKG9k4Ckk" role="3cqZAp" />
+        <node concept="3cpWs6" id="2feKG9k4Ckl" role="3cqZAp">
+          <node concept="2OqwBi" id="2feKG9k4Ckm" role="3cqZAk">
+            <node concept="2OqwBi" id="2feKG9k4Ckn" role="2Oq$k0">
+              <node concept="2OqwBi" id="2feKG9k4Cko" role="2Oq$k0">
+                <node concept="34jXtK" id="2feKG9k4Ckp" role="2OqNvi">
+                  <node concept="3cmrfG" id="2feKG9k4Ckq" role="25WWJ7">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2feKG9k4Ckr" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2feKG9k4Ck0" resolve="configFiles" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="2feKG9k4Cks" role="2OqNvi">
+                <ref role="3Tt5mk" to="anrw:6dXtnCWkKhJ" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="2feKG9k4Ckt" role="2OqNvi">
+              <ref role="3Tt5mk" to="1o5n:6dXtnCWkKcQ" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2feKG9k4Cku" role="1B3o_S" />
+      <node concept="3Tqbb2" id="2feKG9k4Ckv" role="3clF45">
+        <ref role="ehGHo" to="1o5n:6dXtnCWkK4d" resolve="Facet" />
+      </node>
+      <node concept="37vLTG" id="2feKG9k4Ckw" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="2feKG9k4HmN" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2feKG9k4Bsu" role="jymVt" />
+    <node concept="2tJIrI" id="2feKG9k4BhF" role="jymVt" />
     <node concept="2YIFZL" id="6YtJRaiOkAq" role="jymVt">
       <property role="TrG5h" value="listOfAccesibleGroups" />
       <property role="od$2w" value="false" />

@@ -29,6 +29,7 @@
     <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
     <usedLanguage>7cbc13ed-9875-4738-a307-276eb1aa9679(GroupInterfaces)</usedLanguage>
     <usedLanguage>193b41ad-fdd1-4b8b-9a99-08e11cef6509(RuntimeInformation)</usedLanguage>
+    <usedLanguage>2fc8d595-dbc3-42a6-805f-e347b19e9f52(LinkingMetamodelCreation)</usedLanguage>
   </usedLanguages>
   <languageVersions>
     <language id="b9d9f978-d2e1-4cb8-a4c8-9c34c6661669" fqName="AddMainMethodGenerationLanguage" version="0" />
@@ -37,6 +38,7 @@
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
     <language id="7cbc13ed-9875-4738-a307-276eb1aa9679" fqName="GroupInterfaces" version="0" />
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" fqName="LambdaCalculus" version="0" />
+    <language id="2fc8d595-dbc3-42a6-805f-e347b19e9f52" fqName="LinkingMetamodelCreation" version="-1" />
     <language id="d59fee7e-5b44-4695-b6c9-ea88342965e6" fqName="LinkingModel" version="0" />
     <language id="f97cf326-3077-4de7-b16c-71ef42a55a01" fqName="ModelTransformations" version="0" />
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" fqName="Models" version="1" />

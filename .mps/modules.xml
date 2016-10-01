@@ -13,6 +13,7 @@
       <modulePath path="$PROJECT_DIR$/languages/Helpers/Helpers.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/LambdaCalculus/LambdaCalculus.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/LanguageConfiguration/LanguageConfiguration.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/LinkingMetamodelCreation/LinkingMetamodelCreation.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/LinkingModel/LinkingModel.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/MainMethodModify/MainMethodModify.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/MappingChangeableModules/MappingChangeableModules.mpl" folder="" />
