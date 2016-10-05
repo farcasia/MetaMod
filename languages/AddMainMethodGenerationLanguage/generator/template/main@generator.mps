@@ -91,6 +91,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -194,6 +195,12 @@
         <child id="1216860049632" name="inputNode" index="1iwH7V" />
       </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -705,7 +712,29 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="1H8IJ1b9Ia_" role="3cqZAp">
+            <node concept="1rXfSq" id="1H8IJ1b9Iaz" role="3clFbG">
+              <ref role="37wK5l" to="wz6r:1H8IJ1b7rAL" resolve="createLinkingModel" />
+              <node concept="37vLTw" id="1H8IJ1b9IiT" role="37wK5m">
+                <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="inputGroup" />
+              </node>
+              <node concept="37vLTw" id="1H8IJ1b9Imz" role="37wK5m">
+                <ref role="3cqZAo" node="6K_nk42Wo$Z" resolve="outputGroup" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbH" id="2feKG9nR8lV" role="3cqZAp" />
+          <node concept="34ab3g" id="1H8IJ1bLR7z" role="3cqZAp">
+            <property role="35gtTG" value="warn" />
+            <node concept="3cpWs3" id="1H8IJ1bLRvF" role="34bqiv">
+              <node concept="37vLTw" id="1H8IJ1bLRze" role="3uHU7w">
+                <ref role="3cqZAo" to="wz6r:1H8IJ1b9n1j" resolve="linkingGroup" />
+              </node>
+              <node concept="Xl_RD" id="1H8IJ1bLR7_" role="3uHU7B">
+                <property role="Xl_RC" value="Before main transformation: " />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="6K_nk42Woye" role="3cqZAp">
             <node concept="1rXfSq" id="6K_nk42Woyd" role="3clFbG">
               <ref role="37wK5l" node="6K_nk42WowE" resolve="mainTransformation" />
@@ -713,6 +742,23 @@
                 <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="inputGroup" />
               </node>
               <node concept="37vLTw" id="6K_nk42WoJI" role="37wK5m">
+                <ref role="3cqZAo" node="6K_nk42Wo$Z" resolve="outputGroup" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="1H8IJ1blhwV" role="3cqZAp" />
+          <node concept="3SKdUt" id="1H8IJ1bli3i" role="3cqZAp">
+            <node concept="3SKdUq" id="1H8IJ1bli8T" role="3SKWNk">
+              <property role="3SKdUp" value="For second variant." />
+            </node>
+          </node>
+          <node concept="3clFbF" id="1H8IJ1blhIn" role="3cqZAp">
+            <node concept="1rXfSq" id="1H8IJ1blhIl" role="3clFbG">
+              <ref role="37wK5l" to="wz6r:1H8IJ1bkGu_" resolve="completeLinkingModel" />
+              <node concept="37vLTw" id="1H8IJ1blhRg" role="37wK5m">
+                <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="inputGroup" />
+              </node>
+              <node concept="37vLTw" id="1H8IJ1blhVc" role="37wK5m">
                 <ref role="3cqZAo" node="6K_nk42Wo$Z" resolve="outputGroup" />
               </node>
             </node>
