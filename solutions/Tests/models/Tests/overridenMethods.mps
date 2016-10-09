@@ -14,6 +14,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="193b41ad-fdd1-4b8b-9a99-08e11cef6509" name="RuntimeInformation" version="-1" />
   </languages>
   <imports>
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -147,7 +148,7 @@
   </registry>
   <node concept="2oAaVg" id="5xh0q4nsuSM">
     <property role="1ewt2y" value="false" />
-    <property role="3uBway" value="false" />
+    <property role="3uBway" value="true" />
     <property role="TrG5h" value="Overriden" />
     <node concept="2oAaW5" id="5xh0q4nsuSN" role="2oAaxa">
       <property role="TrG5h" value="A1" />
@@ -168,18 +169,18 @@
       <node concept="2oAaXF" id="5xh0q4nsuV1" role="2oAawB">
         <ref role="3aaZtz" node="5xh0q4nsuT4" resolve="B" />
       </node>
-      <node concept="2oAaXF" id="5xh0q4nsuUQ" role="2oAawD">
-        <ref role="3aaZtz" node="5xh0q4nsuSN" resolve="A1" />
+      <node concept="2oAaXF" id="5xh0q4nP7_3" role="2oAawD">
+        <ref role="3aaZtz" node="5xh0q4nsuTu" resolve="A2" />
       </node>
     </node>
     <node concept="2oAaZ9" id="5xh0q4nsuWh" role="2oAaxa">
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="5xh0q4nsuX3" role="2oAawB">
-        <ref role="3aaZtz" node="5xh0q4nsuT4" resolve="B" />
-      </node>
-      <node concept="2oAaXF" id="5xh0q4nsuWC" role="2oAawD">
+      <node concept="2oAaXF" id="5xh0q4nP7_x" role="2oAawB">
         <ref role="3aaZtz" node="5xh0q4nsuTu" resolve="A2" />
+      </node>
+      <node concept="2oAaXF" id="5xh0q4nP7_i" role="2oAawD">
+        <ref role="3aaZtz" node="5xh0q4nsuSN" resolve="A1" />
       </node>
     </node>
     <node concept="2oAaZ9" id="5xh0q4nsuY$" role="2oAaxa">
