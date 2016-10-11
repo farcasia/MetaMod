@@ -6,6 +6,9 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">657e0c3a-18ad-472d-9f8c-8b4a0cfc788c(SecondVariantEvaluation)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>ce9c9ba2-4d34-47b0-9248-280025ca8256(Models)</usedLanguage>
     <usedLanguage>5f140b5b-a1d2-4d50-af71-7c64c190dbb9(CodeGeneration)</usedLanguage>
@@ -20,14 +23,22 @@
     <usedLanguage>fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)</usedLanguage>
     <usedLanguage>760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</usedLanguage>
     <usedLanguage>193b41ad-fdd1-4b8b-9a99-08e11cef6509(RuntimeInformation)</usedLanguage>
+    <usedLanguage>f97cf326-3077-4de7-b16c-71ef42a55a01(ModelTransformations)</usedLanguage>
+    <usedLanguage>8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</usedLanguage>
+    <usedLanguage>b9d9f978-d2e1-4cb8-a4c8-9c34c6661669(AddMainMethodGenerationLanguage)</usedLanguage>
+    <usedLanguage>d59fee7e-5b44-4695-b6c9-ea88342965e6(LinkingModel)</usedLanguage>
   </usedLanguages>
   <languageVersions>
+    <language id="b9d9f978-d2e1-4cb8-a4c8-9c34c6661669" fqName="AddMainMethodGenerationLanguage" version="0" />
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" fqName="CodeGeneration" version="0" />
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" fqName="LambdaCalculus" version="0" />
+    <language id="d59fee7e-5b44-4695-b6c9-ea88342965e6" fqName="LinkingModel" version="0" />
+    <language id="f97cf326-3077-4de7-b16c-71ef42a55a01" fqName="ModelTransformations" version="0" />
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" fqName="Models" version="1" />
     <language id="ae311dd6-db78-4e5e-a31b-7988fcde0010" fqName="Modules" version="0" />
     <language id="193b41ad-fdd1-4b8b-9a99-08e11cef6509" fqName="RuntimeInformation" version="0" />
+    <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" fqName="de.itemis.mps.editor.diagram.layout" version="0" />
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />

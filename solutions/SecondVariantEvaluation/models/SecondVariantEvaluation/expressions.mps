@@ -2952,7 +2952,7 @@
                   <ref role="3cqZAo" node="32FhR2g054l" resolve="exp" />
                 </node>
                 <node concept="khloQ" id="1H8IJ1enp6x" role="2OqNvi">
-                  <ref role="khl7h" node="1H8IJ1dazGU" resolve="compExp_ComparisonExpression2Relational" />
+                  <ref role="khl7h" node="5xh0q4jGkNl" resolve="compExp_ComparisonExpression2Relational" />
                 </node>
               </node>
               <node concept="1uHKPH" id="1H8IJ1cEH4r" role="2OqNvi" />
@@ -3030,7 +3030,7 @@
                   <ref role="3cqZAo" node="32FhR2g06o2" resolve="exp" />
                 </node>
                 <node concept="khloQ" id="1H8IJ1cEIQx" role="2OqNvi">
-                  <ref role="khl7h" node="1H8IJ1dazGU" resolve="compExp_ComparisonExpression2Relational" />
+                  <ref role="khl7h" node="5xh0q4jGkNl" resolve="compExp_ComparisonExpression2Relational" />
                 </node>
               </node>
               <node concept="1uHKPH" id="1H8IJ1cEIQy" role="2OqNvi" />
@@ -5486,7 +5486,7 @@
   </node>
   <node concept="2oAaVg" id="5o_WEO0Rq5t">
     <property role="1ewt2y" value="false" />
-    <property role="3uBway" value="false" />
+    <property role="3uBway" value="true" />
     <property role="3GE5qa" value="ExpressionsPhillips.Metamodels" />
     <property role="TrG5h" value="PhillipsMachineExcerpt" />
     <node concept="2jq5PB" id="5o_WEO1AEeS" role="2oAaxa" />
@@ -9011,7 +9011,7 @@
   <node concept="1GnNiK" id="5EZvnkvK8dP">
     <property role="1vYpmj" value="CodeGen" />
     <property role="3GE5qa" value="ExpresssionsMetaMod.Primitives.CodeGen" />
-    <property role="TrG5h" value="CodeGen_Evaluator_Integer" />
+    <property role="TrG5h" value="CodeGen_Evaluator_Int" />
     <ref role="1GHRfG" node="2YYVDcHRyQM" resolve="Int" />
     <node concept="1vbBpf" id="5EZvnkvK8dQ" role="1ukcCD">
       <ref role="1vbBpc" node="4VnbJ42rpi0" resolve="Evaluator" />
@@ -13205,7 +13205,7 @@
   <node concept="1GnNiK" id="32FhR2g0gi1">
     <property role="1vYpmj" value="CodeGen" />
     <property role="3GE5qa" value="ExpresssionsMetaMod.Relational.CodeGen" />
-    <property role="TrG5h" value="CodeGen_Evaluator_Relational" />
+    <property role="TrG5h" value="CodeGen_Evaluator_Comparisons" />
     <ref role="1GHRfG" node="32FhR2fYSNy" resolve="Comparisons" />
     <node concept="1vbBpf" id="32FhR2g0gi2" role="1ukcCD">
       <ref role="1vbBpc" node="4VnbJ42rpi0" resolve="Evaluator" />
