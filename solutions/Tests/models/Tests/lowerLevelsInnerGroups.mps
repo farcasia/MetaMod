@@ -13,10 +13,17 @@
     <use id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -35,6 +42,7 @@
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
     </language>
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration">
@@ -49,12 +57,19 @@
       <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <property id="4406892874363944218" name="partial" index="1ewt2y" />
         <property id="9017624775202900822" name="main" index="3uBway" />
+        <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
       <concept id="8717972784948762846" name="Models.structure.NamedGroup" flags="ng" index="2oAaVg" />
       <concept id="8717972784948763026" name="Models.structure.RefToNamedGroup" flags="ng" index="2oAaYs" />
       <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
         <reference id="3040834594469888400" name="ref" index="3aaZtz" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -68,6 +83,7 @@
         <child id="8976227254846920305" name="contents" index="CLm5g" />
         <child id="7169015349716565843" name="facet" index="1ukcCD" />
       </concept>
+      <concept id="8976227254847137350" name="GenericGroupMethods.structure.EmptyLine" flags="ng" index="CLx5B" />
       <concept id="1522810226732341093" name="GenericGroupMethods.structure.GroupType" flags="ig" index="1l_8MK">
         <reference id="1522810226732347078" name="group" index="1l_bkj" />
       </concept>
@@ -105,6 +121,27 @@
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="CodeGen_testLower_G" />
     <ref role="1GHRfG" node="2feKG9l3sMM" resolve="G" />
+    <node concept="1GnNjC" id="2pY12Wez4NU" role="CLm5g">
+      <property role="TrG5h" value="main" />
+      <node concept="37vLTG" id="2pY12Wez4NV" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="2pY12Wez4NW" role="1tU5fm">
+          <ref role="1l_bkj" node="2feKG9l3sMM" resolve="G" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2pY12Wez4NX" role="3clF47">
+        <node concept="3clFbF" id="2pY12Wez4Oq" role="3cqZAp">
+          <node concept="3otQA" id="2pY12Wez4Op" role="3clFbG">
+            <ref role="37wK5l" node="2feKG9l3sN$" resolve="g" />
+            <node concept="37vLTw" id="2pY12Wez4Oy" role="37wK5m">
+              <ref role="3cqZAo" node="2pY12Wez4NV" resolve="inputGroup" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="2pY12Wez4Om" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="2pY12Wez4Nv" role="CLm5g" />
     <node concept="1vbBhR" id="2feKG9l3sMU" role="1ukcCD">
       <property role="TrG5h" value="testLower" />
     </node>
@@ -120,11 +157,17 @@
         <node concept="3clFbF" id="2feKG9l3sNQ" role="3cqZAp">
           <node concept="3otQA" id="2feKG9l3sNP" role="3clFbG">
             <ref role="37wK5l" node="2feKG9l3sNj" resolve="sg" />
+            <node concept="37vLTw" id="2pY12WeywDG" role="37wK5m">
+              <ref role="3cqZAo" node="2feKG9l3sN_" resolve="inputGroup" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="2feKG9l3sO4" role="3cqZAp">
           <node concept="3otQA" id="2feKG9l3sO2" role="3clFbG">
             <ref role="37wK5l" node="2feKG9l3sN2" resolve="ssg" />
+            <node concept="37vLTw" id="2pY12WeywEt" role="37wK5m">
+              <ref role="3cqZAo" node="2feKG9l3sN_" resolve="inputGroup" />
+            </node>
           </node>
         </node>
       </node>
@@ -146,7 +189,14 @@
           <ref role="1l_bkj" node="2feKG9l3sMN" resolve="SG" />
         </node>
       </node>
-      <node concept="3clFbS" id="2feKG9l3sNm" role="3clF47" />
+      <node concept="3clFbS" id="2feKG9l3sNm" role="3clF47">
+        <node concept="34ab3g" id="2pY12Wez4KW" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="Xl_RD" id="2pY12Wez4Kn" role="34bqiv">
+            <property role="Xl_RC" value="I am sg!" />
+          </node>
+        </node>
+      </node>
       <node concept="3cqZAl" id="2feKG9l3sNx" role="3clF45" />
     </node>
   </node>
@@ -165,7 +215,14 @@
           <ref role="1l_bkj" node="2feKG9l3sMO" resolve="SSG" />
         </node>
       </node>
-      <node concept="3clFbS" id="2feKG9l3sN5" role="3clF47" />
+      <node concept="3clFbS" id="2feKG9l3sN5" role="3clF47">
+        <node concept="34ab3g" id="2pY12Wez4M6" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="Xl_RD" id="2pY12Wez4M7" role="34bqiv">
+            <property role="Xl_RC" value="I am ssg!" />
+          </node>
+        </node>
+      </node>
       <node concept="3cqZAl" id="2feKG9l3sNg" role="3clF45" />
     </node>
   </node>
@@ -174,6 +231,12 @@
     <node concept="1vbBpf" id="2feKG9l3tsl" role="1vbB4l">
       <ref role="1vbBpc" node="2feKG9l3sMU" resolve="testLower" />
     </node>
+  </node>
+  <node concept="2oAaVg" id="2pY12Wez4P$">
+    <property role="1ewt2y" value="false" />
+    <property role="3uBway" value="false" />
+    <property role="TrG5h" value="ModelG" />
+    <ref role="19kf5F" node="2feKG9l3sMM" resolve="G" />
   </node>
 </model>
 

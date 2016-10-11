@@ -357,12 +357,21 @@
           <node concept="37vLTw" id="4L1k0SocHJl" role="37wK5m">
             <ref role="3cqZAo" node="4L1k0SocHBV" resolve="group" />
           </node>
+          <node concept="37vLTw" id="2pY12WexQzb" role="37wK5m">
+            <ref role="3cqZAo" node="2pY12WexQmq" resolve="callingContext" />
+          </node>
         </node>
       </node>
       <node concept="37vLTG" id="4L1k0SocHBV" role="3clF46">
         <property role="TrG5h" value="group" />
         <node concept="3Tqbb2" id="4L1k0SocHBU" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2pY12WexQmq" role="3clF46">
+        <property role="TrG5h" value="callingContext" />
+        <node concept="3uibUv" id="5Cn5eQRQqeu" role="1tU5fm">
+          <ref role="3uigEE" to="wz6r:5Cn5eQRP3li" resolve="MetamodelClass" />
         </node>
       </node>
       <node concept="17Uvod" id="4L1k0SocHMR" role="lGtFl">

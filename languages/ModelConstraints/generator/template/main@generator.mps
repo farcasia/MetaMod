@@ -2268,7 +2268,7 @@
                       <ref role="3cqZAo" node="2bNndrA3LhI" resolve="callingContext" />
                     </node>
                     <node concept="2OwXpG" id="2bNndrA45Ht" role="2OqNvi">
-                      <ref role="2Oxat5" to="wz6r:4X4Jbdc3ugE" resolve="group" />
+                      <ref role="2Oxat5" to="wz6r:5Cn5eQRP3lF" resolve="group" />
                     </node>
                   </node>
                   <node concept="2qgKlT" id="2bNndrA46xz" role="2OqNvi">
@@ -2281,7 +2281,7 @@
                               <ref role="3cqZAo" node="2bNndrA3LhI" resolve="callingContext" />
                             </node>
                             <node concept="2OwXpG" id="2bNndrA3VWd" role="2OqNvi">
-                              <ref role="2Oxat5" to="wz6r:4X4Jbdc3ugE" resolve="group" />
+                              <ref role="2Oxat5" to="wz6r:5Cn5eQRP3lF" resolve="group" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="2bNndrA3Xdj" role="2OqNvi">
@@ -2430,8 +2430,8 @@
       </node>
       <node concept="37vLTG" id="2bNndrA3LhI" role="3clF46">
         <property role="TrG5h" value="callingContext" />
-        <node concept="3uibUv" id="2bNndrA3Lrr" role="1tU5fm">
-          <ref role="3uigEE" to="wz6r:45NpebPjv7X" resolve="CodeGen" />
+        <node concept="3uibUv" id="5Cn5eQRPS82" role="1tU5fm">
+          <ref role="3uigEE" to="wz6r:5Cn5eQRP3li" resolve="MetamodelClass" />
         </node>
       </node>
     </node>

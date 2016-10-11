@@ -662,12 +662,21 @@
           <node concept="37vLTw" id="4X4Jbdc9k35" role="37wK5m">
             <ref role="3cqZAo" node="4X4Jbdc8Sqw" resolve="group" />
           </node>
+          <node concept="37vLTw" id="2pY12WexRwr" role="37wK5m">
+            <ref role="3cqZAo" node="2pY12WexR3Q" resolve="callingContext" />
+          </node>
         </node>
       </node>
       <node concept="37vLTG" id="4X4Jbdc8Sqw" role="3clF46">
         <property role="TrG5h" value="group" />
         <node concept="3Tqbb2" id="4X4Jbdc8Sqv" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2pY12WexR3Q" role="3clF46">
+        <property role="TrG5h" value="callingContext" />
+        <node concept="3uibUv" id="5Cn5eQRQqL3" role="1tU5fm">
+          <ref role="3uigEE" to="wz6r:5Cn5eQRP3li" resolve="MetamodelClass" />
         </node>
       </node>
       <node concept="17Uvod" id="4X4Jbdc8Src" role="lGtFl">
