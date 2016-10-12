@@ -978,6 +978,9 @@
           <node concept="37vLTw" id="4X4Jbdc9k35" role="37wK5m">
             <ref role="3cqZAo" node="4X4Jbdc8Sqw" resolve="group" />
           </node>
+          <node concept="37vLTw" id="2a5hLSZNXki" role="37wK5m">
+            <ref role="3cqZAo" node="2a5hLSZNVkT" resolve="inputGroup" />
+          </node>
           <node concept="37vLTw" id="2pY12WelWl0" role="37wK5m">
             <ref role="3cqZAo" node="2pY12WelUd7" resolve="callingContext" />
           </node>
@@ -986,6 +989,12 @@
       <node concept="37vLTG" id="4X4Jbdc8Sqw" role="3clF46">
         <property role="TrG5h" value="group" />
         <node concept="3Tqbb2" id="4X4Jbdc8Sqv" role="1tU5fm">
+          <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2a5hLSZNVkT" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="3Tqbb2" id="2a5hLSZNXaV" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
         </node>
       </node>
