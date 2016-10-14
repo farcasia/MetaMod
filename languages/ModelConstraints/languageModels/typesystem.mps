@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" implicit="true" />
     <import index="z64h" ref="r:52e1580a-16d3-4b41-b86d-411ead3ce794(Models.behavior)" implicit="true" />
@@ -143,6 +144,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -1164,6 +1166,30 @@
     <node concept="1YaCAy" id="6pihOoLuPXK" role="1YuTPh">
       <property role="TrG5h" value="groupType" />
       <ref role="1YaFvo" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4hQr7qF2kq$">
+    <property role="TrG5h" value="typeof_GetModel" />
+    <property role="3GE5qa" value="Operations" />
+    <node concept="3clFbS" id="4hQr7qF2kq_" role="18ibNy">
+      <node concept="1Z5TYs" id="4hQr7qF2kRW" role="3cqZAp">
+        <node concept="mw_s8" id="4hQr7qF2kRZ" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4hQr7qF2kJt" role="mwGJk">
+            <node concept="1YBJjd" id="4hQr7qF2kJT" role="1Z2MuG">
+              <ref role="1YBMHb" node="4hQr7qF2kqB" resolve="getModel" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4hQr7qF2BDd" role="1ZfhKB">
+          <node concept="2c44tf" id="4hQr7qF2BD7" role="mwGJk">
+            <node concept="H_c77" id="4hQr7qF2BDz" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4hQr7qF2kqB" role="1YuTPh">
+      <property role="TrG5h" value="getModel" />
+      <ref role="1YaFvo" to="1o5n:4hQr7qF2iR2" resolve="GetModel" />
     </node>
   </node>
 </model>

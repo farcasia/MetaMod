@@ -494,5 +494,14 @@
       <ref role="20lvS9" node="21UhnxnHeMn" resolve="IndexToTransformation" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4hQr7qF2iR2">
+    <property role="3GE5qa" value="Operations" />
+    <property role="TrG5h" value="GetModel" />
+    <property role="34LRSv" value="get model" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="PrWs8" id="4hQr7qF4PUF" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+  </node>
 </model>
 
