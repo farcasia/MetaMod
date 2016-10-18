@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5a56a164-b0c0-4bc9-967c-7d184287bf97(Expressions.variant4SimplerMoreComplete)">
+<model ref="r:5a56a164-b0c0-4bc9-967c-7d184287bf97(CodeGenerationTypeCheckingDirected)">
   <persistence version="9" />
   <languages>
     <use id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models" version="-1" />
@@ -1030,184 +1030,6 @@
       </node>
     </node>
   </node>
-  <node concept="1GnNiK" id="2feKG9juaNx">
-    <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical.CodeGen.Evaluator" />
-    <property role="TrG5h" value="CodeGen_Evaluator_Xor" />
-    <ref role="1GHRfG" node="32FhR2fYNht" resolve="Xor" />
-    <node concept="1vbBpf" id="2feKG9judMJ" role="1ukcCD">
-      <ref role="1vbBpc" node="2feKG9jthW3" resolve="Evaluator" />
-    </node>
-    <node concept="1GnNjC" id="2feKG9juaNz" role="CLm5g">
-      <property role="TrG5h" value="evaluate" />
-      <property role="1JpQ_q" value="true" />
-      <ref role="1JpQ_h" node="2feKG9jthVP" resolve="evaluate" />
-      <node concept="37vLTG" id="2feKG9juaN$" role="3clF46">
-        <property role="TrG5h" value="inputGroup" />
-        <node concept="1l_8MK" id="2feKG9juaN_" role="1tU5fm">
-          <ref role="1l_bkj" node="32FhR2fYNht" resolve="Xor" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="2feKG9juaNA" role="3clF46">
-        <property role="TrG5h" value="xor" />
-        <node concept="CMjq$" id="2feKG9juaNB" role="1tU5fm">
-          <ref role="CMYPG" node="32FhR2fYNhw" resolve="Xor" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="2feKG9juaNC" role="3clF46">
-        <property role="TrG5h" value="arguments" />
-        <node concept="8X2XB" id="2feKG9judPs" role="1tU5fm">
-          <node concept="3uibUv" id="2feKG9judMM" role="8Xvag">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbS" id="2feKG9juaNE" role="3clF47">
-        <node concept="3cpWs8" id="2feKG9juaNF" role="3cqZAp">
-          <node concept="3cpWsn" id="2feKG9juaNG" role="3cpWs9">
-            <property role="TrG5h" value="left" />
-            <node concept="3uibUv" id="2feKG9juaNH" role="1tU5fm">
-              <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-            </node>
-            <node concept="3otQA" id="2feKG9juaNI" role="33vP2m">
-              <ref role="37wK5l" node="2feKG9jthVP" resolve="evaluate" />
-              <node concept="37vLTw" id="2feKG9juaNJ" role="37wK5m">
-                <ref role="3cqZAo" node="2feKG9juaN$" resolve="inputGroup" />
-              </node>
-              <node concept="2OqwBi" id="2feKG9juaNK" role="37wK5m">
-                <node concept="2OqwBi" id="2feKG9juaNL" role="2Oq$k0">
-                  <node concept="37vLTw" id="2feKG9juaNM" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2feKG9juaNA" resolve="xor" />
-                  </node>
-                  <node concept="khloQ" id="2feKG9juaNN" role="2OqNvi">
-                    <ref role="khl7h" node="2YYVDcHRjeT" resolve="left" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="2feKG9juaNO" role="2OqNvi" />
-              </node>
-              <node concept="37vLTw" id="2feKG9juaNP" role="37wK5m">
-                <ref role="3cqZAo" node="2feKG9juaNC" resolve="arguments" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2feKG9juaNQ" role="3cqZAp">
-          <node concept="3cpWsn" id="2feKG9juaNR" role="3cpWs9">
-            <property role="TrG5h" value="right" />
-            <node concept="3uibUv" id="2feKG9juaNS" role="1tU5fm">
-              <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-            </node>
-            <node concept="3otQA" id="2feKG9juaNT" role="33vP2m">
-              <ref role="37wK5l" node="2feKG9jthVP" resolve="evaluate" />
-              <node concept="37vLTw" id="2feKG9juaNU" role="37wK5m">
-                <ref role="3cqZAo" node="2feKG9juaN$" resolve="inputGroup" />
-              </node>
-              <node concept="2OqwBi" id="2feKG9juaNV" role="37wK5m">
-                <node concept="2OqwBi" id="2feKG9juaNW" role="2Oq$k0">
-                  <node concept="37vLTw" id="2feKG9juaNX" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2feKG9juaNA" resolve="xor" />
-                  </node>
-                  <node concept="khloQ" id="2feKG9juaNY" role="2OqNvi">
-                    <ref role="khl7h" node="2YYVDcHRrv8" resolve="right" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="2feKG9juaNZ" role="2OqNvi" />
-              </node>
-              <node concept="37vLTw" id="2feKG9juaO0" role="37wK5m">
-                <ref role="3cqZAo" node="2feKG9juaNC" resolve="arguments" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2feKG9juaO1" role="3cqZAp" />
-        <node concept="3clFbJ" id="2feKG9juaO2" role="3cqZAp">
-          <node concept="3clFbS" id="2feKG9juaO3" role="3clFbx">
-            <node concept="3clFbH" id="2feKG9juaO4" role="3cqZAp" />
-            <node concept="3clFbJ" id="2feKG9juaO5" role="3cqZAp">
-              <node concept="3clFbS" id="2feKG9juaO6" role="3clFbx">
-                <node concept="3cpWs6" id="2feKG9juaO7" role="3cqZAp">
-                  <node concept="pVQyQ" id="2feKG9juaO8" role="3cqZAk">
-                    <node concept="1eOMI4" id="2feKG9juaO9" role="3uHU7B">
-                      <node concept="0kSF2" id="2feKG9juaOa" role="1eOMHV">
-                        <node concept="3uibUv" id="2feKG9juaOb" role="0kSFW">
-                          <ref role="3uigEE" to="e2lb:~Boolean" resolve="Boolean" />
-                        </node>
-                        <node concept="37vLTw" id="2feKG9juaOc" role="0kSFX">
-                          <ref role="3cqZAo" node="2feKG9juaNG" resolve="left" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1eOMI4" id="2feKG9juaOd" role="3uHU7w">
-                      <node concept="0kSF2" id="2feKG9juaOe" role="1eOMHV">
-                        <node concept="3uibUv" id="2feKG9juaOf" role="0kSFW">
-                          <ref role="3uigEE" to="e2lb:~Boolean" resolve="Boolean" />
-                        </node>
-                        <node concept="37vLTw" id="2feKG9juaOg" role="0kSFX">
-                          <ref role="3cqZAo" node="2feKG9juaNR" resolve="right" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2ZW3vV" id="2feKG9juaOh" role="3clFbw">
-                <node concept="3uibUv" id="2feKG9juaOi" role="2ZW6by">
-                  <ref role="3uigEE" to="e2lb:~Boolean" resolve="Boolean" />
-                </node>
-                <node concept="37vLTw" id="2feKG9juaOj" role="2ZW6bz">
-                  <ref role="3cqZAo" node="2feKG9juaNR" resolve="right" />
-                </node>
-              </node>
-              <node concept="9aQIb" id="2feKG9juaOk" role="9aQIa">
-                <node concept="3clFbS" id="2feKG9juaOl" role="9aQI4">
-                  <node concept="34ab3g" id="2feKG9juaOm" role="3cqZAp">
-                    <property role="35gtTG" value="error" />
-                    <node concept="3cpWs3" id="2feKG9juaOn" role="34bqiv">
-                      <node concept="37vLTw" id="2feKG9juaOo" role="3uHU7w">
-                        <ref role="3cqZAo" node="2feKG9juaNA" resolve="xor" />
-                      </node>
-                      <node concept="Xl_RD" id="2feKG9juaOp" role="3uHU7B">
-                        <property role="Xl_RC" value="Right-hand side of xor does not evaluate to a boolean " />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3cpWs6" id="2feKG9juaOq" role="3cqZAp">
-                    <node concept="10Nm6u" id="2feKG9juaOr" role="3cqZAk" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2ZW3vV" id="2feKG9juaOs" role="3clFbw">
-            <node concept="3uibUv" id="2feKG9juaOt" role="2ZW6by">
-              <ref role="3uigEE" to="e2lb:~Boolean" resolve="Boolean" />
-            </node>
-            <node concept="37vLTw" id="2feKG9juaOu" role="2ZW6bz">
-              <ref role="3cqZAo" node="2feKG9juaNG" resolve="left" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2feKG9juaOv" role="3cqZAp" />
-        <node concept="34ab3g" id="2feKG9juaOw" role="3cqZAp">
-          <property role="35gtTG" value="error" />
-          <node concept="3cpWs3" id="2feKG9juaOx" role="34bqiv">
-            <node concept="37vLTw" id="2feKG9juaOy" role="3uHU7w">
-              <ref role="3cqZAo" node="2feKG9juaNA" resolve="xor" />
-            </node>
-            <node concept="Xl_RD" id="2feKG9juaOz" role="3uHU7B">
-              <property role="Xl_RC" value="Left-hand side of xor does not evaluate to a boolean " />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="2feKG9juaO$" role="3cqZAp">
-          <node concept="10Nm6u" id="2feKG9juaO_" role="3cqZAk" />
-        </node>
-      </node>
-      <node concept="3uibUv" id="2feKG9juaOA" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-      </node>
-    </node>
-  </node>
   <node concept="1GnNiK" id="2bNndr_jznj">
     <property role="1vYpmj" value="CodeGen" />
     <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical.CodeGen.TypeChecking" />
@@ -1787,9 +1609,6 @@
     <node concept="2oAaYs" id="32FhR2fYtFt" role="2oAaxa">
       <ref role="3aaZtz" node="32FhR2fYrS$" resolve="Not" />
     </node>
-    <node concept="2oAaYs" id="32FhR2fYRXH" role="2oAaxa">
-      <ref role="3aaZtz" node="32FhR2fYNht" resolve="Xor" />
-    </node>
   </node>
   <node concept="2oAaVg" id="32FhR2fYrS$">
     <property role="1ewt2y" value="false" />
@@ -1836,30 +1655,6 @@
       </node>
       <node concept="2oAaXF" id="32FhR2fYr4G" role="2oAawD">
         <ref role="3aaZtz" node="32FhR2fYr4C" resolve="Or" />
-      </node>
-    </node>
-  </node>
-  <node concept="2oAaVg" id="32FhR2fYNht">
-    <property role="1ewt2y" value="false" />
-    <property role="3uBway" value="false" />
-    <property role="3GE5qa" value="BooleanExpresssionsMetaMod.Logical" />
-    <property role="TrG5h" value="Xor" />
-    <node concept="2oAaYs" id="32FhR2fYNhu" role="2oAaxa">
-      <ref role="3aaZtz" node="2YYVDcHRwq3" resolve="Logical" />
-    </node>
-    <node concept="2jq5PB" id="32FhR2fYNhv" role="2oAaxa" />
-    <node concept="2oAaW5" id="32FhR2fYNhw" role="2oAaxa">
-      <property role="TrG5h" value="Xor" />
-    </node>
-    <node concept="2jq5PB" id="32FhR2fYNhx" role="2oAaxa" />
-    <node concept="2oAaZ9" id="32FhR2fYNhy" role="2oAaxa">
-      <property role="2XbFUA" value="0..*" />
-      <property role="2XbFU$" value="0..1" />
-      <node concept="2oAaXF" id="32FhR2fYNhz" role="2oAawB">
-        <ref role="3aaZtz" node="2YYVDcHRwqD" resolve="LogicalB" />
-      </node>
-      <node concept="2oAaXF" id="32FhR2fYNh$" role="2oAawD">
-        <ref role="3aaZtz" node="32FhR2fYNhw" resolve="Xor" />
       </node>
     </node>
   </node>
@@ -16531,7 +16326,7 @@
   </node>
   <node concept="1GnNiK" id="2a5hLT2q4sI">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="NumericExpresssionsMetaMod.Arithmetic.CodeGen" />
+    <property role="3GE5qa" value="NumericExpresssionsMetaMod.Arithmetic.CodeGen.TypeChecking" />
     <property role="TrG5h" value="CodeGen_TypeChecking_Arithmetic" />
     <ref role="1GHRfG" node="2bNndr_4TD2" resolve="Arithmetic" />
     <node concept="1GnNjC" id="2a5hLT2q4sJ" role="CLm5g">
@@ -16856,7 +16651,7 @@
   </node>
   <node concept="1GnNiK" id="2a5hLT2q_p9">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="IntervalExpressionsMetaMod.Arithmetic.CodeGen" />
+    <property role="3GE5qa" value="IntervalExpressionsMetaMod.Arithmetic.CodeGen.TypeChecking" />
     <property role="TrG5h" value="CodeGen_TypeChecking_ArithmeticIntervals" />
     <ref role="1GHRfG" node="2a5hLT2qvQX" resolve="ArithmeticIntervals" />
     <node concept="1GnNjC" id="2a5hLT2q_v6" role="CLm5g">
