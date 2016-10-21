@@ -884,6 +884,57 @@
       <ref role="1N5Vy1" to="v0yp:7zWtwVwpdQB" />
       <node concept="13QW63" id="5udWXWXH8RF" role="1N6uqs">
         <node concept="3clFbS" id="5udWXWXH8RH" role="2VODD2">
+          <node concept="3clFbJ" id="6iY9Px2FGk" role="3cqZAp">
+            <node concept="3clFbS" id="6iY9Px2FGm" role="3clFbx">
+              <node concept="3cpWs8" id="6iY9Px2G_m" role="3cqZAp">
+                <node concept="3cpWsn" id="6iY9Px2G_p" role="3cpWs9">
+                  <property role="TrG5h" value="model" />
+                  <node concept="3Tqbb2" id="6iY9Px2G_k" role="1tU5fm">
+                    <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+                  </node>
+                  <node concept="1PxgMI" id="6iY9Px2IXQ" role="33vP2m">
+                    <ref role="1PxNhF" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+                    <node concept="2OqwBi" id="6iY9Px2Imw" role="1PxMeX">
+                      <node concept="21POm0" id="6iY9Px2Iay" role="2Oq$k0" />
+                      <node concept="2Rxl7S" id="6iY9Px2IGx" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="6iY9Px2JwH" role="3cqZAp" />
+              <node concept="3cpWs6" id="6iY9Px2K4z" role="3cqZAp">
+                <node concept="2ShNRf" id="6iY9Px2KlR" role="3cqZAk">
+                  <node concept="1pGfFk" id="6iY9Px2KCS" role="2ShVmc">
+                    <ref role="37wK5l" to="6xgk:7lHSllLpTWM" resolve="NamedElementsScope" />
+                    <node concept="2OqwBi" id="6iY9Px2MO5" role="37wK5m">
+                      <node concept="2OqwBi" id="6iY9Px2L6i" role="2Oq$k0">
+                        <node concept="37vLTw" id="6iY9Px2KOz" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6iY9Px2G_p" resolve="model" />
+                        </node>
+                        <node concept="2qgKlT" id="6iY9Px2LAP" role="2OqNvi">
+                          <ref role="37wK5l" to="z64h:2kO$Kh_gvk1" resolve="getConcepts" />
+                          <node concept="10Nm6u" id="6iY9Px2LX0" role="37wK5m" />
+                        </node>
+                      </node>
+                      <node concept="v3k3i" id="6iY9Px2QyK" role="2OqNvi">
+                        <node concept="chp4Y" id="6iY9Px2QJN" role="v3oSu">
+                          <ref role="cht4Q" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="6iY9PwZcvg" role="3clFbw">
+              <node concept="28GBK8" id="6iY9PwZcEC" role="3uHU7w">
+                <ref role="28GBKb" to="v0yp:6iY9Pwzxd4" resolve="EquivalenceConcepts" />
+                <ref role="28H3Ia" to="v0yp:6iY9Pwz$kJ" />
+              </node>
+              <node concept="gBGtZ" id="6iY9PwZch1" role="3uHU7B" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="6iY9Px2Ftr" role="3cqZAp" />
           <node concept="3SKdUt" id="5udWXWXH8S5" role="3cqZAp">
             <node concept="3SKdUq" id="5udWXWXH8Sr" role="3SKWNk">
               <property role="3SKdUp" value="We want to see just the list of concepts of the metamodel in the menu completion for when we are" />
@@ -905,10 +956,7 @@
                   <node concept="2YIFZM" id="20nTeIkI8OQ" role="33vP2m">
                     <ref role="37wK5l" to="z64h:20nTeIkHf6L" resolve="searchNearestMetamodel" />
                     <ref role="1Pybhc" to="z64h:1vxM8_OCb4Z" resolve="UtilityMethods" />
-                    <node concept="1PxgMI" id="20nTeIkI97R" role="37wK5m">
-                      <ref role="1PxNhF" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
-                      <node concept="21POm0" id="20nTeIkI8XR" role="1PxMeX" />
-                    </node>
+                    <node concept="21POm0" id="20nTeIkI8XR" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -3585,6 +3633,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="6iY9Pw_1_z">
+    <property role="3GE5qa" value="EquivalenceCkasses" />
+    <ref role="1M2myG" to="v0yp:6iY9Pwzxd4" resolve="EquivalenceConcepts" />
   </node>
 </model>
 

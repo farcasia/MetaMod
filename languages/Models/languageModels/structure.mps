@@ -74,11 +74,25 @@
       <property role="TrG5h" value="main" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="6iY9Pw$Uur" role="1TKVEl">
+      <property role="TrG5h" value="showHidden" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6iY9PwB7K3" role="1TKVEl">
+      <property role="TrG5h" value="version" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="7zWtwVwpdT4" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contains" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+    </node>
+    <node concept="1TJgyj" id="6iY9PwzAWY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="equivalenceConcepts" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6iY9Pwzxd4" resolve="EquivalenceConcepts" />
     </node>
     <node concept="1TJgyj" id="2ZZRdXAFMQO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -460,6 +474,20 @@
   <node concept="Az7Fb" id="7O7EsH2WkUJ">
     <property role="TrG5h" value="Multiplicity" />
     <property role="FLfZY" value="[[0-9]|[1-9][0..9]+]..[[0-9]|[1-9][0..9]+|*]|[[1-9]|[1-9][0-9]+|*]" />
+  </node>
+  <node concept="1TIwiD" id="6iY9Pwzxd4">
+    <property role="TrG5h" value="EquivalenceConcepts" />
+    <property role="3GE5qa" value="EquivalenceCkasses" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6iY9Pwzxf6" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6iY9Pwz$kJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="concepts" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7zWtwVwpd__" resolve="RefToNamedConcept" />
+    </node>
   </node>
 </model>
 
