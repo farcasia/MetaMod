@@ -41,6 +41,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -705,6 +708,15 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="6iY9Pylcxh" role="3cqZAp">
+            <node concept="2YIFZM" id="6iY9PylcY6" role="3clFbG">
+              <ref role="1Pybhc" to="wz6r:6e92Hp0Zr$o" resolve="Utils" />
+              <ref role="37wK5l" to="wz6r:6iY9Pyl984" resolve="computeEquivalences" />
+              <node concept="37vLTw" id="6iY9Pyld0p" role="37wK5m">
+                <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="inputGroup" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="1H8IJ1b9Ia_" role="3cqZAp">
             <node concept="1rXfSq" id="1H8IJ1b9Iaz" role="3clFbG">
               <ref role="37wK5l" to="wz6r:1H8IJ1b7rAL" resolve="createLinkingModel" />
@@ -716,7 +728,16 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="2feKG9nR8lV" role="3cqZAp" />
+          <node concept="3clFbF" id="6iY9Pylsm4" role="3cqZAp">
+            <node concept="2YIFZM" id="6iY9Pylsm5" role="3clFbG">
+              <ref role="1Pybhc" to="wz6r:6e92Hp0Zr$o" resolve="Utils" />
+              <ref role="37wK5l" to="wz6r:6iY9Pyl984" resolve="computeEquivalences" />
+              <node concept="37vLTw" id="6iY9Pylsm6" role="37wK5m">
+                <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="inputGroup" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="6iY9PylseW" role="3cqZAp" />
           <node concept="3clFbF" id="6K_nk42Woye" role="3cqZAp">
             <node concept="1rXfSq" id="6K_nk42Woyd" role="3clFbG">
               <ref role="37wK5l" node="6K_nk42WowE" resolve="mainTransformation" />
@@ -745,7 +766,16 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="2feKG9mt82f" role="3cqZAp" />
+          <node concept="3clFbF" id="6iY9PymDYW" role="3cqZAp">
+            <node concept="2YIFZM" id="6iY9PymE6X" role="3clFbG">
+              <ref role="37wK5l" to="wz6r:6iY9Pyl984" resolve="computeEquivalences" />
+              <ref role="1Pybhc" to="wz6r:6e92Hp0Zr$o" resolve="Utils" />
+              <node concept="37vLTw" id="6iY9PymEaZ" role="37wK5m">
+                <ref role="3cqZAo" node="6pihOoLuJ5i" resolve="inputGroup" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="6iY9PymDPL" role="3cqZAp" />
           <node concept="3SKdUt" id="2feKG9nR8fr" role="3cqZAp">
             <node concept="3SKdUq" id="2feKG9nR8l6" role="3SKWNk">
               <property role="3SKdUp" value="For first variant." />

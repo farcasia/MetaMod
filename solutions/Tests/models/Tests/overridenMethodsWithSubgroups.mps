@@ -78,8 +78,10 @@
       <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <property id="4406892874363944218" name="partial" index="1ewt2y" />
         <property id="9017624775202900822" name="main" index="3uBway" />
+        <property id="113426295452105731" name="version" index="1x3Ciu" />
         <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
+        <child id="113426295451184958" name="equivalenceConcepts" index="1x79uz" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
         <property id="3979997632601093222" name="targetCard" index="2XbFU$" />
@@ -93,6 +95,9 @@
       <concept id="8717972784948763079" name="Models.structure.Subtype" flags="ng" index="2oAaZ9" />
       <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
         <reference id="3040834594469888400" name="ref" index="3aaZtz" />
+      </concept>
+      <concept id="113426295451161412" name="Models.structure.EquivalenceConcepts" flags="ng" index="1x7eJp">
+        <child id="113426295451174191" name="concepts" index="1x7bQM" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -462,6 +467,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="TrG5h" value="ModelOverriden" />
+    <property role="1x3Ciu" value="1186503445" />
     <ref role="19kf5F" node="5xh0q4nsuSM" resolve="Overriden" />
     <node concept="2oAaW5" id="5xh0q4nsxEp" role="2oAaxa">
       <property role="TrG5h" value="b" />
@@ -487,20 +493,58 @@
         <ref role="3aaZtz" node="5xh0q4nsuY0" resolve="C" />
       </node>
     </node>
+    <node concept="1x7eJp" id="6iY9PyA11Z" role="1x79uz">
+      <property role="TrG5h" value="b" />
+      <node concept="2oAaXF" id="6iY9PyA120" role="1x7bQM">
+        <ref role="3aaZtz" node="5xh0q4nsxEp" resolve="b" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="6iY9PyA121" role="1x79uz">
+      <property role="TrG5h" value="a1" />
+      <node concept="2oAaXF" id="6iY9PyA122" role="1x7bQM">
+        <ref role="3aaZtz" node="5xh0q4nsxEV" resolve="a1" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="6iY9PyA123" role="1x79uz">
+      <property role="TrG5h" value="a2" />
+      <node concept="2oAaXF" id="6iY9PyA124" role="1x7bQM">
+        <ref role="3aaZtz" node="5xh0q4nsxFF" resolve="a2" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="6iY9PyA125" role="1x79uz">
+      <property role="TrG5h" value="c" />
+      <node concept="2oAaXF" id="6iY9PyA126" role="1x7bQM">
+        <ref role="3aaZtz" node="5xh0q4nsxGu" resolve="c" />
+      </node>
+    </node>
   </node>
   <node concept="2oAaVg" id="5xh0q4nsuSM">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="true" />
     <property role="TrG5h" value="Overriden" />
+    <property role="1x3Ciu" value="1186503445" />
     <node concept="2oAaVg" id="2a5hLT1Ij90" role="2oAaxa">
       <property role="1ewt2y" value="false" />
       <property role="3uBway" value="false" />
       <property role="TrG5h" value="OverridenASubgroup" />
+      <property role="1x3Ciu" value="1186503445" />
       <node concept="2oAaW5" id="5xh0q4nsuT4" role="2oAaxa">
         <property role="TrG5h" value="B" />
       </node>
       <node concept="2oAaW5" id="5xh0q4nsuY0" role="2oAaxa">
         <property role="TrG5h" value="C" />
+      </node>
+      <node concept="1x7eJp" id="6iY9PyA12b" role="1x79uz">
+        <property role="TrG5h" value="B" />
+        <node concept="2oAaXF" id="6iY9PyA12c" role="1x7bQM">
+          <ref role="3aaZtz" node="5xh0q4nsuT4" resolve="B" />
+        </node>
+      </node>
+      <node concept="1x7eJp" id="6iY9PyA12d" role="1x79uz">
+        <property role="TrG5h" value="C" />
+        <node concept="2oAaXF" id="6iY9PyA12e" role="1x7bQM">
+          <ref role="3aaZtz" node="5xh0q4nsuY0" resolve="C" />
+        </node>
       </node>
     </node>
     <node concept="2jq5PB" id="2a5hLT1Ik0I" role="2oAaxa" />
@@ -538,6 +582,30 @@
         <ref role="3aaZtz" node="5xh0q4nsuSN" resolve="A1" />
       </node>
       <node concept="2oAaXF" id="5xh0q4nsuZ1" role="2oAawD">
+        <ref role="3aaZtz" node="5xh0q4nsuY0" resolve="C" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="6iY9PyA127" role="1x79uz">
+      <property role="TrG5h" value="A1" />
+      <node concept="2oAaXF" id="6iY9PyA128" role="1x7bQM">
+        <ref role="3aaZtz" node="5xh0q4nsuSN" resolve="A1" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="6iY9PyA129" role="1x79uz">
+      <property role="TrG5h" value="A2" />
+      <node concept="2oAaXF" id="6iY9PyA12a" role="1x7bQM">
+        <ref role="3aaZtz" node="5xh0q4nsuTu" resolve="A2" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="6iY9PyA12f" role="1x79uz">
+      <property role="TrG5h" value="B" />
+      <node concept="2oAaXF" id="6iY9PyA12g" role="1x7bQM">
+        <ref role="3aaZtz" node="5xh0q4nsuT4" resolve="B" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="6iY9PyA12h" role="1x79uz">
+      <property role="TrG5h" value="C" />
+      <node concept="2oAaXF" id="6iY9PyA12i" role="1x7bQM">
         <ref role="3aaZtz" node="5xh0q4nsuY0" resolve="C" />
       </node>
     </node>

@@ -10,8 +10,10 @@
     <import index="wz6r" ref="r:395bdffb-840e-4312-80d8-b18c172eee46(RuntimeClasses.runtime)" />
     <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
     <import index="tq5e" ref="r:f8f1accd-77c1-49bc-9817-61a06bf54373(RuntimeInformation.structure)" />
+    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="v0yp" ref="r:86a4248e-5c5f-4e5d-95f9-ca709673f402(Models.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -128,11 +130,18 @@
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
+      </concept>
+      <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
+        <reference id="1176109685394" name="concept" index="3lApI3" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -741,18 +750,66 @@
             <property role="3SKdUp" value="We make sure we have the latest equivalence classes computed!" />
           </node>
         </node>
-        <node concept="3clFbF" id="6iY9PwJJei" role="3cqZAp">
-          <node concept="2OqwBi" id="6iY9PwJJSz" role="3clFbG">
-            <node concept="2OqwBi" id="6iY9PwJJka" role="2Oq$k0">
-              <node concept="2Sf5sV" id="6iY9PwJJeg" role="2Oq$k0" />
-              <node concept="3TrEf2" id="6iY9PwJJAx" role="2OqNvi">
-                <ref role="3Tt5mk" to="v0yp:2ZZRdXAFMQO" />
+        <node concept="3cpWs8" id="6iY9Px$PwG" role="3cqZAp">
+          <node concept="3cpWsn" id="6iY9Px$PwH" role="3cpWs9">
+            <property role="TrG5h" value="version" />
+            <node concept="17QB3L" id="6iY9Px$PwI" role="1tU5fm" />
+            <node concept="2YIFZM" id="6iY9Px$PwJ" role="33vP2m">
+              <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+              <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+              <node concept="2OqwBi" id="6iY9Px$PwK" role="37wK5m">
+                <node concept="2ShNRf" id="6iY9Px$PwL" role="2Oq$k0">
+                  <node concept="1pGfFk" id="6iY9Px$PwM" role="2ShVmc">
+                    <ref role="37wK5l" to="k7g3:~Random.&lt;init&gt;(long)" resolve="Random" />
+                    <node concept="2YIFZM" id="6iY9Px$PwN" role="37wK5m">
+                      <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                      <ref role="37wK5l" to="e2lb:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="6iY9Px$PwO" role="2OqNvi">
+                  <ref role="37wK5l" to="k7g3:~Random.nextInt():int" resolve="nextInt" />
+                </node>
               </node>
             </node>
-            <node concept="2qgKlT" id="6iY9PwJKbr" role="2OqNvi">
-              <ref role="37wK5l" to="z64h:6iY9Pw_XZS" resolve="createEquivalenceConcepts" />
-              <node concept="Xl_RD" id="6iY9PxgLUj" role="37wK5m">
-                <property role="Xl_RC" value="-1" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6iY9Px$PwP" role="3cqZAp" />
+        <node concept="1DcWWT" id="6iY9Px$PwQ" role="3cqZAp">
+          <node concept="3clFbS" id="6iY9Px$PwR" role="2LFqv$">
+            <node concept="3clFbF" id="6iY9Px$PwS" role="3cqZAp">
+              <node concept="2OqwBi" id="6iY9Px$PwT" role="3clFbG">
+                <node concept="37vLTw" id="6iY9Px$PwU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6iY9Px$PwX" resolve="topLevelGroup" />
+                </node>
+                <node concept="2qgKlT" id="6iY9Px$PwV" role="2OqNvi">
+                  <ref role="37wK5l" to="z64h:6iY9Pw_XZS" resolve="createEquivalenceConcepts" />
+                  <node concept="37vLTw" id="6iY9Px$PwW" role="37wK5m">
+                    <ref role="3cqZAo" node="6iY9Px$PwH" resolve="version" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="6iY9Px$PwX" role="1Duv9x">
+            <property role="TrG5h" value="topLevelGroup" />
+            <node concept="3Tqbb2" id="6iY9Px$PwY" role="1tU5fm">
+              <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6iY9Px$PwZ" role="1DdaDG">
+            <node concept="2OqwBi" id="6iY9Px$Px0" role="2Oq$k0">
+              <node concept="2OqwBi" id="6iY9Px$Px1" role="2Oq$k0">
+                <node concept="2Sf5sV" id="6iY9Px$Px2" role="2Oq$k0" />
+                <node concept="I4A8Y" id="6iY9Px$Px3" role="2OqNvi" />
+              </node>
+              <node concept="3lApI0" id="6iY9Px$Px4" role="2OqNvi">
+                <ref role="3lApI3" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="6iY9Px$Px5" role="2OqNvi">
+              <node concept="chp4Y" id="6iY9Px$Px6" role="v3oSu">
+                <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
               </node>
             </node>
           </node>
@@ -985,7 +1042,7 @@
   </node>
   <node concept="2S6QgY" id="6iY9PwJKUE">
     <property role="TrG5h" value="ComputeEquivalenceConceptsForMain" />
-    <ref role="2ZfgGC" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2S6ZIM" id="6iY9PwJKUF" role="2ZfVej">
       <node concept="3clFbS" id="6iY9PwJKUG" role="2VODD2">
         <node concept="3clFbF" id="6iY9PwJLkK" role="3cqZAp">
@@ -997,26 +1054,67 @@
     </node>
     <node concept="2Sbjvc" id="6iY9PwJKUH" role="2ZfgGD">
       <node concept="3clFbS" id="6iY9PwJKUI" role="2VODD2">
-        <node concept="3clFbF" id="6iY9PwJNfi" role="3cqZAp">
-          <node concept="2OqwBi" id="6iY9PwJNh7" role="3clFbG">
-            <node concept="2Sf5sV" id="6iY9PwJNfh" role="2Oq$k0" />
-            <node concept="2qgKlT" id="6iY9PwJNxz" role="2OqNvi">
-              <ref role="37wK5l" to="z64h:6iY9Pw_XZS" resolve="createEquivalenceConcepts" />
-              <node concept="Xl_RD" id="6iY9Pxg2HW" role="37wK5m">
-                <property role="Xl_RC" value="-1" />
+        <node concept="3cpWs8" id="6iY9Pxz$W3" role="3cqZAp">
+          <node concept="3cpWsn" id="6iY9Pxz$W6" role="3cpWs9">
+            <property role="TrG5h" value="version" />
+            <node concept="17QB3L" id="6iY9Pxz$W1" role="1tU5fm" />
+            <node concept="2YIFZM" id="6iY9Pxz_6I" role="33vP2m">
+              <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+              <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+              <node concept="2OqwBi" id="6iY9Px$Ovo" role="37wK5m">
+                <node concept="2ShNRf" id="6iY9Pxz_7w" role="2Oq$k0">
+                  <node concept="1pGfFk" id="6iY9Px$NyQ" role="2ShVmc">
+                    <ref role="37wK5l" to="k7g3:~Random.&lt;init&gt;(long)" resolve="Random" />
+                    <node concept="2YIFZM" id="6iY9Px$N_M" role="37wK5m">
+                      <ref role="37wK5l" to="e2lb:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                      <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="6iY9Px$OIu" role="2OqNvi">
+                  <ref role="37wK5l" to="k7g3:~Random.nextInt():int" resolve="nextInt" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="6iY9PwJMkr" role="2ZfVeh">
-      <node concept="3clFbS" id="6iY9PwJMks" role="2VODD2">
-        <node concept="3cpWs6" id="6iY9PwJMLg" role="3cqZAp">
-          <node concept="2OqwBi" id="6iY9PwJMSQ" role="3cqZAk">
-            <node concept="2Sf5sV" id="6iY9PwJMO2" role="2Oq$k0" />
-            <node concept="3TrcHB" id="6iY9PwJN6f" role="2OqNvi">
-              <ref role="3TsBF5" to="v0yp:7O_2vizIKHm" resolve="main" />
+        <node concept="3clFbH" id="6iY9Px$OTl" role="3cqZAp" />
+        <node concept="1DcWWT" id="6iY9Pxz8s0" role="3cqZAp">
+          <node concept="3clFbS" id="6iY9Pxz8s4" role="2LFqv$">
+            <node concept="3clFbF" id="6iY9Pxz8s1" role="3cqZAp">
+              <node concept="2OqwBi" id="6iY9PxzaB9" role="3clFbG">
+                <node concept="37vLTw" id="6iY9Pxzayj" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6iY9Pxz8s5" resolve="topLevelGroup" />
+                </node>
+                <node concept="2qgKlT" id="6iY9PxzaOF" role="2OqNvi">
+                  <ref role="37wK5l" to="z64h:6iY9Pw_XZS" resolve="createEquivalenceConcepts" />
+                  <node concept="37vLTw" id="6iY9Px$P4K" role="37wK5m">
+                    <ref role="3cqZAo" node="6iY9Pxz$W6" resolve="version" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="6iY9Pxz8s5" role="1Duv9x">
+            <property role="TrG5h" value="topLevelGroup" />
+            <node concept="3Tqbb2" id="6iY9Pxz8yz" role="1tU5fm">
+              <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6iY9PxzbtR" role="1DdaDG">
+            <node concept="2OqwBi" id="6iY9Pxz9c4" role="2Oq$k0">
+              <node concept="2OqwBi" id="6iY9Pxz8XE" role="2Oq$k0">
+                <node concept="2Sf5sV" id="6iY9Pxz8V9" role="2Oq$k0" />
+                <node concept="I4A8Y" id="6iY9Pxz95a" role="2OqNvi" />
+              </node>
+              <node concept="3lApI0" id="6iY9Pxz9q$" role="2OqNvi">
+                <ref role="3lApI3" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="6iY9PxzfD_" role="2OqNvi">
+              <node concept="chp4Y" id="6iY9PxzfMz" role="v3oSu">
+                <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+              </node>
             </node>
           </node>
         </node>
