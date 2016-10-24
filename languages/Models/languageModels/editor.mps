@@ -39,6 +39,7 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
+      <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
@@ -97,6 +98,15 @@
         <child id="1136930944870" name="item" index="2QnnpI" />
       </concept>
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
+      <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
+        <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
+        <child id="1139535219969" name="item" index="1h_SK8" />
+      </concept>
+      <concept id="1139535280617" name="jetbrains.mps.lang.editor.structure.CellActionMapItem" flags="lg" index="1hA7zw">
+        <property id="1139535298778" name="actionId" index="1hAc7j" />
+        <child id="1139535280620" name="executeFunction" index="1hA7z_" />
+      </concept>
+      <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -113,6 +123,7 @@
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <reference id="1081339532145" name="keyMap" index="34QXea" />
+        <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
@@ -787,6 +798,7 @@
     <property role="3GE5qa" value="References" />
     <ref role="1XX52x" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
     <node concept="3EZMnI" id="6iY9PyQuSr" role="2wV5jI">
+      <ref role="1ERwB7" node="6iY9P$6lry" resolve="RefToNamedConceptPrefix" />
       <node concept="2iRfu4" id="6iY9PyQuSs" role="2iSdaV" />
       <node concept="3EZMnI" id="6iY9PyQuTh" role="3EZMnx">
         <node concept="VPM3Z" id="6iY9PyQuTj" role="3F10Kt">
@@ -4618,6 +4630,25 @@
             <ref role="1NtTu8" to="v0yp:2r2_whluuu5" />
           </node>
           <node concept="2iRfu4" id="6eV9lTfKqYE" role="2iSdaV" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="6iY9P$6lry">
+    <property role="TrG5h" value="RefToNamedConceptPrefix" />
+    <ref role="1h_SK9" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
+    <node concept="1hA7zw" id="6iY9P$6lRv" role="1h_SK8">
+      <property role="1hAc7j" value="complete_action_id" />
+      <node concept="1hAIg9" id="6iY9P$6lRw" role="1hA7z_">
+        <node concept="3clFbS" id="6iY9P$6lRx" role="2VODD2">
+          <node concept="3clFbF" id="6iY9P$6lRA" role="3cqZAp">
+            <node concept="2OqwBi" id="6iY9P$6lU3" role="3clFbG">
+              <node concept="0IXxy" id="6iY9P$6lR_" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6iY9P$6m9R" role="2OqNvi">
+                <ref role="37wK5l" to="z64h:6iY9PzWUG8" resolve="createPrefix" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

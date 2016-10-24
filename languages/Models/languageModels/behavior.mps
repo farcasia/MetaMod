@@ -2073,6 +2073,42 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6iY9P$qSQI" role="3cqZAp" />
+        <node concept="3SKdUt" id="6iY9P$qUHu" role="3cqZAp">
+          <node concept="3SKdUq" id="6iY9P$qUKi" role="3SKWNk">
+            <property role="3SKdUp" value="We update the reference to named concepts at the end of an equivalence concepts creation!" />
+          </node>
+        </node>
+        <node concept="1DcWWT" id="6iY9P$qXLi" role="3cqZAp">
+          <node concept="3clFbS" id="6iY9P$qXLk" role="2LFqv$">
+            <node concept="3clFbF" id="6iY9P$rX67" role="3cqZAp">
+              <node concept="2OqwBi" id="6iY9P$rX8_" role="3clFbG">
+                <node concept="37vLTw" id="6iY9P$rX65" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6iY9P$qXLl" resolve="refToNamedConcept" />
+                </node>
+                <node concept="2qgKlT" id="6iY9P$rXAT" role="2OqNvi">
+                  <ref role="37wK5l" node="6iY9PzWUG8" resolve="createPrefix" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="6iY9P$qXLl" role="1Duv9x">
+            <property role="TrG5h" value="refToNamedConcept" />
+            <node concept="3Tqbb2" id="6iY9P$qYSp" role="1tU5fm">
+              <ref role="ehGHo" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6iY9P$qZaM" role="1DdaDG">
+            <node concept="13iPFW" id="6iY9P$qZ3r" role="2Oq$k0" />
+            <node concept="2Rf3mk" id="6iY9P$qZGC" role="2OqNvi">
+              <node concept="1xMEDy" id="6iY9P$qZGE" role="1xVPHs">
+                <node concept="chp4Y" id="6iY9P$r03R" role="ri$Ld">
+                  <ref role="cht4Q" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3cqZAl" id="6iY9PwAgIk" role="3clF45" />
       <node concept="P$JXv" id="6iY9PwC2vw" role="lGtFl">
@@ -17223,8 +17259,10 @@
   <node concept="13h7C7" id="20nTeIl8wmn">
     <property role="3GE5qa" value="References" />
     <ref role="13h7C2" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
-    <node concept="13hLZK" id="20nTeIl8wmo" role="13h7CW">
-      <node concept="3clFbS" id="20nTeIl8wmp" role="2VODD2">
+    <node concept="13i0hz" id="6iY9PzWUG8" role="13h7CS">
+      <property role="TrG5h" value="createPrefix" />
+      <node concept="3Tm1VV" id="6iY9PzWUG9" role="1B3o_S" />
+      <node concept="3clFbS" id="6iY9PzWUGa" role="3clF47">
         <node concept="3cpWs8" id="6iY9PyQwlr" role="3cqZAp">
           <node concept="3cpWsn" id="6iY9PyQwlu" role="3cpWs9">
             <property role="TrG5h" value="owningGroup" />
@@ -17240,7 +17278,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6iY9PyQwoa" role="3cqZAp" />
+        <node concept="3clFbH" id="6iY9PzWTqQ" role="3cqZAp" />
         <node concept="1DcWWT" id="6iY9PyQzjz" role="3cqZAp">
           <node concept="3clFbS" id="6iY9PyQzjN" role="2LFqv$">
             <node concept="3clFbJ" id="6iY9PyQ$Oy" role="3cqZAp">
@@ -17258,6 +17296,12 @@
                             <ref role="3TsBF5" to="v0yp:6iY9PyQocA" resolve="prefix" />
                           </node>
                         </node>
+                      </node>
+                    </node>
+                    <node concept="34ab3g" id="6iY9PzWWuW" role="3cqZAp">
+                      <property role="35gtTG" value="warn" />
+                      <node concept="Xl_RD" id="6iY9PzWWuY" role="34bqiv">
+                        <property role="Xl_RC" value="We create prefix nothing!" />
                       </node>
                     </node>
                     <node concept="3cpWs6" id="6iY9PyQM1S" role="3cqZAp" />
@@ -17310,12 +17354,12 @@
                   <node concept="37vLTw" id="6iY9PyQ$OI" role="2Oq$k0">
                     <ref role="3cqZAo" node="6iY9PyQzjO" resolve="eqConcepts" />
                   </node>
-                  <node concept="3TrcHB" id="6iY9PyQ_50" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  <node concept="3Tsc0h" id="6iY9PzK7sn" role="2OqNvi">
+                    <ref role="3TtcxE" to="v0yp:6iY9Pwz$kJ" />
                   </node>
                 </node>
                 <node concept="liA8E" id="6iY9PyQA5u" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="k7g3:~List.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="2OqwBi" id="6iY9PyQATN" role="37wK5m">
                     <node concept="2OqwBi" id="6iY9PyQAc3" role="2Oq$k0">
                       <node concept="13iPFW" id="6iY9PyQA5S" role="2Oq$k0" />
@@ -17374,6 +17418,20 @@
                           <node concept="3TrcHB" id="6iY9PyQOBa" role="2OqNvi">
                             <ref role="3TsBF5" to="v0yp:6iY9PyQocA" resolve="prefix" />
                           </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="34ab3g" id="6iY9PzWW$s" role="3cqZAp">
+                      <property role="35gtTG" value="warn" />
+                      <node concept="3cpWs3" id="6iY9PzWWIf" role="34bqiv">
+                        <node concept="2OqwBi" id="6iY9PzWWPX" role="3uHU7w">
+                          <node concept="13iPFW" id="6iY9PzWWIz" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="6iY9PzWX4u" role="2OqNvi">
+                            <ref role="3TsBF5" to="v0yp:6iY9PyQocA" resolve="prefix" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="6iY9PzWW$u" role="3uHU7B">
+                          <property role="Xl_RC" value="We create prefix " />
                         </node>
                       </node>
                     </node>
@@ -17487,6 +17545,10 @@
           </node>
         </node>
       </node>
+      <node concept="3cqZAl" id="6iY9PzWV7S" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="20nTeIl8wmo" role="13h7CW">
+      <node concept="3clFbS" id="20nTeIl8wmp" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="20nTeIl8wmq" role="13h7CS">
       <property role="13i0it" value="false" />

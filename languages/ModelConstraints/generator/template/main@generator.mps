@@ -1857,6 +1857,26 @@
                                       <property role="2qtEX9" value="value" />
                                       <node concept="3zFVjK" id="6iY9PxQZO3" role="3zH0cK">
                                         <node concept="3clFbS" id="6iY9PxQZO4" role="2VODD2">
+                                          <node concept="3SKdUt" id="6iY9P$yetA" role="3cqZAp">
+                                            <node concept="3SKdUq" id="6iY9P$yeKk" role="3SKWNk">
+                                              <property role="3SKdUp" value="TODO: we shall compute the prefix of the concept based on the equivalence classes of" />
+                                            </node>
+                                          </node>
+                                          <node concept="3SKdUt" id="6iY9P$yfce" role="3cqZAp">
+                                            <node concept="3SKdUq" id="6iY9P$yfn7" role="3SKWNk">
+                                              <property role="3SKdUp" value="TODO: ... we are here looking into the isConceptOrSubconcept of the metamodel" />
+                                            </node>
+                                          </node>
+                                          <node concept="3SKdUt" id="6iY9P$yfLM" role="3cqZAp">
+                                            <node concept="3SKdUq" id="6iY9P$yg4_" role="3SKWNk">
+                                              <property role="3SKdUp" value="TODO: of the outputGroup ... is that what we want? Yes, we will have the uppermost" />
+                                            </node>
+                                          </node>
+                                          <node concept="3SKdUt" id="6iY9P$ygZl" role="3cqZAp">
+                                            <node concept="3SKdUq" id="6iY9P$yhi9" role="3SKWNk">
+                                              <property role="3SKdUp" value="TODO: metamodel ..." />
+                                            </node>
+                                          </node>
                                           <node concept="3clFbF" id="6iY9PxR05u" role="3cqZAp">
                                             <node concept="2OqwBi" id="6iY9PxR0By" role="3clFbG">
                                               <node concept="2OqwBi" id="4o4IMwnJd1w" role="2Oq$k0">
@@ -2430,6 +2450,11 @@
                               <property role="2qtEX9" value="value" />
                               <node concept="3zFVjK" id="6iY9PxZ8ji" role="3zH0cK">
                                 <node concept="3clFbS" id="6iY9PxZ8jj" role="2VODD2">
+                                  <node concept="3SKdUt" id="6iY9P$yb_B" role="3cqZAp">
+                                    <node concept="3SKdUq" id="6iY9P$ybQI" role="3SKWNk">
+                                      <property role="3SKdUp" value="TODO: We shall compute the prefix of the concept based on the equivalence classes of the callingContext" />
+                                    </node>
+                                  </node>
                                   <node concept="3clFbF" id="6iY9PxZ8yy" role="3cqZAp">
                                     <node concept="2OqwBi" id="6iY9PxZ92d" role="3clFbG">
                                       <node concept="2OqwBi" id="6iY9PxZ7o7" role="2Oq$k0">
