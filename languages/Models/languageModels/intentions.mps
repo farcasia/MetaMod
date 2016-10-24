@@ -750,68 +750,11 @@
             <property role="3SKdUp" value="We make sure we have the latest equivalence classes computed!" />
           </node>
         </node>
-        <node concept="3cpWs8" id="6iY9Px$PwG" role="3cqZAp">
-          <node concept="3cpWsn" id="6iY9Px$PwH" role="3cpWs9">
-            <property role="TrG5h" value="version" />
-            <node concept="17QB3L" id="6iY9Px$PwI" role="1tU5fm" />
-            <node concept="2YIFZM" id="6iY9Px$PwJ" role="33vP2m">
-              <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-              <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-              <node concept="2OqwBi" id="6iY9Px$PwK" role="37wK5m">
-                <node concept="2ShNRf" id="6iY9Px$PwL" role="2Oq$k0">
-                  <node concept="1pGfFk" id="6iY9Px$PwM" role="2ShVmc">
-                    <ref role="37wK5l" to="k7g3:~Random.&lt;init&gt;(long)" resolve="Random" />
-                    <node concept="2YIFZM" id="6iY9Px$PwN" role="37wK5m">
-                      <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
-                      <ref role="37wK5l" to="e2lb:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="6iY9Px$PwO" role="2OqNvi">
-                  <ref role="37wK5l" to="k7g3:~Random.nextInt():int" resolve="nextInt" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6iY9Px$PwP" role="3cqZAp" />
-        <node concept="1DcWWT" id="6iY9Px$PwQ" role="3cqZAp">
-          <node concept="3clFbS" id="6iY9Px$PwR" role="2LFqv$">
-            <node concept="3clFbF" id="6iY9Px$PwS" role="3cqZAp">
-              <node concept="2OqwBi" id="6iY9Px$PwT" role="3clFbG">
-                <node concept="37vLTw" id="6iY9Px$PwU" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6iY9Px$PwX" resolve="topLevelGroup" />
-                </node>
-                <node concept="2qgKlT" id="6iY9Px$PwV" role="2OqNvi">
-                  <ref role="37wK5l" to="z64h:6iY9Pw_XZS" resolve="createEquivalenceConcepts" />
-                  <node concept="37vLTw" id="6iY9Px$PwW" role="37wK5m">
-                    <ref role="3cqZAo" node="6iY9Px$PwH" resolve="version" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWsn" id="6iY9Px$PwX" role="1Duv9x">
-            <property role="TrG5h" value="topLevelGroup" />
-            <node concept="3Tqbb2" id="6iY9Px$PwY" role="1tU5fm">
-              <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="6iY9Px$PwZ" role="1DdaDG">
-            <node concept="2OqwBi" id="6iY9Px$Px0" role="2Oq$k0">
-              <node concept="2OqwBi" id="6iY9Px$Px1" role="2Oq$k0">
-                <node concept="2Sf5sV" id="6iY9Px$Px2" role="2Oq$k0" />
-                <node concept="I4A8Y" id="6iY9Px$Px3" role="2OqNvi" />
-              </node>
-              <node concept="3lApI0" id="6iY9Px$Px4" role="2OqNvi">
-                <ref role="3lApI3" to="v0yp:7zWtwVwpdxn" resolve="Group" />
-              </node>
-            </node>
-            <node concept="v3k3i" id="6iY9Px$Px5" role="2OqNvi">
-              <node concept="chp4Y" id="6iY9Px$Px6" role="v3oSu">
-                <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
-              </node>
-            </node>
+        <node concept="3clFbF" id="6iY9PyR7ep" role="3cqZAp">
+          <node concept="2YIFZM" id="6iY9PyR7k2" role="3clFbG">
+            <ref role="37wK5l" to="wz6r:6iY9Pyl984" resolve="computeEquivalences" />
+            <ref role="1Pybhc" to="wz6r:6e92Hp0Zr$o" resolve="Utils" />
+            <node concept="2Sf5sV" id="6iY9PyR7oK" role="37wK5m" />
           </node>
         </node>
         <node concept="3clFbH" id="6iY9PwJJ9p" role="3cqZAp" />
