@@ -17,6 +17,7 @@
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" />
     <import index="wz6r" ref="r:395bdffb-840e-4312-80d8-b18c172eee46(RuntimeClasses.runtime)" />
     <import index="z64h" ref="r:52e1580a-16d3-4b41-b86d-411ead3ce794(Models.behavior)" />
+    <import index="93in" ref="r:66387152-22f1-400f-a531-d1c947e7589b(GenericGroupMethods.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
@@ -1857,49 +1858,23 @@
                                       <property role="2qtEX9" value="value" />
                                       <node concept="3zFVjK" id="6iY9PxQZO3" role="3zH0cK">
                                         <node concept="3clFbS" id="6iY9PxQZO4" role="2VODD2">
-                                          <node concept="3SKdUt" id="6iY9P$yetA" role="3cqZAp">
-                                            <node concept="3SKdUq" id="6iY9P$yeKk" role="3SKWNk">
-                                              <property role="3SKdUp" value="TODO: we shall compute the prefix of the concept based on the equivalence classes of" />
-                                            </node>
-                                          </node>
-                                          <node concept="3SKdUt" id="6iY9P$yfce" role="3cqZAp">
-                                            <node concept="3SKdUq" id="6iY9P$yfn7" role="3SKWNk">
-                                              <property role="3SKdUp" value="TODO: ... we are here looking into the isConceptOrSubconcept of the metamodel" />
-                                            </node>
-                                          </node>
-                                          <node concept="3SKdUt" id="6iY9P$yfLM" role="3cqZAp">
-                                            <node concept="3SKdUq" id="6iY9P$yg4_" role="3SKWNk">
-                                              <property role="3SKdUp" value="TODO: of the outputGroup ... is that what we want? Yes, we will have the uppermost" />
-                                            </node>
-                                          </node>
-                                          <node concept="3SKdUt" id="6iY9P$ygZl" role="3cqZAp">
-                                            <node concept="3SKdUq" id="6iY9P$yhi9" role="3SKWNk">
-                                              <property role="3SKdUp" value="TODO: metamodel ..." />
-                                            </node>
-                                          </node>
-                                          <node concept="3clFbF" id="6iY9PxR05u" role="3cqZAp">
-                                            <node concept="2OqwBi" id="6iY9PxR0By" role="3clFbG">
-                                              <node concept="2OqwBi" id="4o4IMwnJd1w" role="2Oq$k0">
-                                                <node concept="2OqwBi" id="4o4IMwnJd1x" role="2Oq$k0">
-                                                  <node concept="1PxgMI" id="4o4IMwnJd1y" role="2Oq$k0">
-                                                    <ref role="1PxNhF" to="1o5n:1ky6Xl0JlVl" resolve="ConceptsOfType" />
-                                                    <node concept="2OqwBi" id="4o4IMwnJd1z" role="1PxMeX">
-                                                      <node concept="30H73N" id="4o4IMwnJd1$" role="2Oq$k0" />
-                                                      <node concept="3TrEf2" id="4o4IMwnJd1_" role="2OqNvi">
-                                                        <ref role="3Tt5mk" to="tpee:hqOqNr4" />
-                                                      </node>
+                                          <node concept="3clFbF" id="6iY9P_8SjM" role="3cqZAp">
+                                            <node concept="2YIFZM" id="6iY9P_8UhY" role="3clFbG">
+                                              <ref role="37wK5l" to="93in:6iY9P_8R8x" resolve="getStringFromConceptType" />
+                                              <ref role="1Pybhc" to="93in:6iY9P_8QW9" resolve="CommonCodeGenerator" />
+                                              <node concept="2OqwBi" id="6iY9P_bono" role="37wK5m">
+                                                <node concept="1PxgMI" id="6iY9P_bmvK" role="2Oq$k0">
+                                                  <ref role="1PxNhF" to="1o5n:1ky6Xl0JlVl" resolve="ConceptsOfType" />
+                                                  <node concept="2OqwBi" id="6iY9P_bkat" role="1PxMeX">
+                                                    <node concept="30H73N" id="6iY9P_8UyV" role="2Oq$k0" />
+                                                    <node concept="3TrEf2" id="6iY9P_blZI" role="2OqNvi">
+                                                      <ref role="3Tt5mk" to="tpee:hqOqNr4" />
                                                     </node>
                                                   </node>
-                                                  <node concept="3TrEf2" id="4o4IMwnJd1A" role="2OqNvi">
-                                                    <ref role="3Tt5mk" to="1o5n:1ky6Xl0JyVa" />
-                                                  </node>
                                                 </node>
-                                                <node concept="3TrEf2" id="4o4IMwnJd1B" role="2OqNvi">
-                                                  <ref role="3Tt5mk" to="1o5n:7MhXM5kmxDd" />
+                                                <node concept="3TrEf2" id="6iY9P_bp1g" role="2OqNvi">
+                                                  <ref role="3Tt5mk" to="1o5n:1ky6Xl0JyVa" />
                                                 </node>
-                                              </node>
-                                              <node concept="3TrcHB" id="6iY9PxR0ZF" role="2OqNvi">
-                                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                               </node>
                                             </node>
                                           </node>
@@ -3088,17 +3063,11 @@
                                         <property role="2qtEX9" value="value" />
                                         <node concept="3zFVjK" id="6pihOoKSOE3" role="3zH0cK">
                                           <node concept="3clFbS" id="6pihOoKSOE4" role="2VODD2">
-                                            <node concept="3clFbF" id="6pihOoKSOE5" role="3cqZAp">
-                                              <node concept="2OqwBi" id="6pihOoKSOE6" role="3clFbG">
-                                                <node concept="2OqwBi" id="6pihOoKSOE7" role="2Oq$k0">
-                                                  <node concept="30H73N" id="6pihOoKSOE8" role="2Oq$k0" />
-                                                  <node concept="3TrEf2" id="6pihOoKSOE9" role="2OqNvi">
-                                                    <ref role="3Tt5mk" to="1o5n:6VsEH8K_enN" />
-                                                  </node>
-                                                </node>
-                                                <node concept="3TrcHB" id="6pihOoKSOEa" role="2OqNvi">
-                                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                                </node>
+                                            <node concept="3clFbF" id="6iY9P_cEkN" role="3cqZAp">
+                                              <node concept="2YIFZM" id="6iY9P_cEFs" role="3clFbG">
+                                                <ref role="37wK5l" to="93in:6iY9P_czdU" resolve="getStringFromNewConceptType" />
+                                                <ref role="1Pybhc" to="93in:6iY9P_8QW9" resolve="CommonCodeGenerator" />
+                                                <node concept="30H73N" id="6iY9P_cEQP" role="37wK5m" />
                                               </node>
                                             </node>
                                           </node>
@@ -4383,17 +4352,11 @@
                                         <property role="2qtEX9" value="value" />
                                         <node concept="3zFVjK" id="6pihOoLErvT" role="3zH0cK">
                                           <node concept="3clFbS" id="6pihOoLErvU" role="2VODD2">
-                                            <node concept="3clFbF" id="6pihOoLErvV" role="3cqZAp">
-                                              <node concept="2OqwBi" id="6pihOoLErvW" role="3clFbG">
-                                                <node concept="2OqwBi" id="6pihOoLErvX" role="2Oq$k0">
-                                                  <node concept="30H73N" id="6pihOoLErvY" role="2Oq$k0" />
-                                                  <node concept="3TrEf2" id="6pihOoLErvZ" role="2OqNvi">
-                                                    <ref role="3Tt5mk" to="1o5n:6VsEH8K_enN" />
-                                                  </node>
-                                                </node>
-                                                <node concept="3TrcHB" id="6pihOoLErw0" role="2OqNvi">
-                                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                                </node>
+                                            <node concept="3clFbF" id="6iY9P_cFgF" role="3cqZAp">
+                                              <node concept="2YIFZM" id="6iY9P_cFgG" role="3clFbG">
+                                                <ref role="37wK5l" to="93in:6iY9P_czdU" resolve="getStringFromNewConceptType" />
+                                                <ref role="1Pybhc" to="93in:6iY9P_8QW9" resolve="CommonCodeGenerator" />
+                                                <node concept="30H73N" id="6iY9P_cFgH" role="37wK5m" />
                                               </node>
                                             </node>
                                           </node>
@@ -4793,29 +4756,23 @@
                                       <property role="2qtEX9" value="value" />
                                       <node concept="3zFVjK" id="6iY9PxR2Kj" role="3zH0cK">
                                         <node concept="3clFbS" id="6iY9PxR2Kk" role="2VODD2">
-                                          <node concept="3clFbF" id="6iY9PxR31J" role="3cqZAp">
-                                            <node concept="2OqwBi" id="6iY9PxR3zN" role="3clFbG">
-                                              <node concept="2OqwBi" id="6pihOoLER6W" role="2Oq$k0">
-                                                <node concept="2OqwBi" id="6pihOoLER6X" role="2Oq$k0">
-                                                  <node concept="1PxgMI" id="6pihOoLER6Y" role="2Oq$k0">
-                                                    <ref role="1PxNhF" to="1o5n:1ky6Xl0JlVl" resolve="ConceptsOfType" />
-                                                    <node concept="2OqwBi" id="6pihOoLER6Z" role="1PxMeX">
-                                                      <node concept="30H73N" id="6pihOoLER70" role="2Oq$k0" />
-                                                      <node concept="3TrEf2" id="6pihOoLER71" role="2OqNvi">
-                                                        <ref role="3Tt5mk" to="tpee:hqOqNr4" />
-                                                      </node>
+                                          <node concept="3clFbF" id="6iY9P_bqoF" role="3cqZAp">
+                                            <node concept="2YIFZM" id="6iY9P_bqoG" role="3clFbG">
+                                              <ref role="1Pybhc" to="93in:6iY9P_8QW9" resolve="CommonCodeGenerator" />
+                                              <ref role="37wK5l" to="93in:6iY9P_8R8x" resolve="getStringFromConceptType" />
+                                              <node concept="2OqwBi" id="6iY9P_bqoH" role="37wK5m">
+                                                <node concept="1PxgMI" id="6iY9P_bqoI" role="2Oq$k0">
+                                                  <ref role="1PxNhF" to="1o5n:1ky6Xl0JlVl" resolve="ConceptsOfType" />
+                                                  <node concept="2OqwBi" id="6iY9P_bqoJ" role="1PxMeX">
+                                                    <node concept="30H73N" id="6iY9P_bqoK" role="2Oq$k0" />
+                                                    <node concept="3TrEf2" id="6iY9P_bqoL" role="2OqNvi">
+                                                      <ref role="3Tt5mk" to="tpee:hqOqNr4" />
                                                     </node>
                                                   </node>
-                                                  <node concept="3TrEf2" id="6pihOoLER72" role="2OqNvi">
-                                                    <ref role="3Tt5mk" to="1o5n:1ky6Xl0JyVa" />
-                                                  </node>
                                                 </node>
-                                                <node concept="3TrEf2" id="6pihOoLER73" role="2OqNvi">
-                                                  <ref role="3Tt5mk" to="1o5n:7MhXM5kmxDd" />
+                                                <node concept="3TrEf2" id="6iY9P_bqoM" role="2OqNvi">
+                                                  <ref role="3Tt5mk" to="1o5n:1ky6Xl0JyVa" />
                                                 </node>
-                                              </node>
-                                              <node concept="3TrcHB" id="6iY9PxR3VW" role="2OqNvi">
-                                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                               </node>
                                             </node>
                                           </node>
