@@ -673,7 +673,7 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="1078367618" />
     <property role="TrG5h" value="ModelGroup3" />
-    <property role="1x0lW6" value="false" />
+    <property role="1x0lW6" value="true" />
     <ref role="19kf5F" node="6iY9PzqZDl" resolve="Group3" />
     <node concept="2oAaYs" id="7aCZPg0i$X0" role="2oAaxa">
       <ref role="3aaZtz" node="7aCZPg0i$EM" resolve="ModelGroup2" />
