@@ -865,6 +865,17 @@
         <property role="TrG5h" value="name" />
         <node concept="17QB3L" id="6iY9PwHo6g" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="7aCZPg0aW3y" role="lGtFl">
+        <node concept="TUZQ0" id="7aCZPg0aW3_" role="TUOzN">
+          <property role="TUZQ4" value="of the concepts in the EquivalenceConcepts" />
+          <node concept="zr_55" id="7aCZPg0aW3B" role="zr_5Q">
+            <ref role="zr_51" node="6iY9PwHo6h" resolve="name" />
+          </node>
+        </node>
+        <node concept="x79VA" id="7aCZPg0aW3C" role="x79VK">
+          <property role="x79VB" value="the list of EquivalenceConcepts that have concepts with name &quot;name&quot;" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6iY9PyZZkN" role="13h7CS">
       <property role="TrG5h" value="addEquivalenceConcepts" />
