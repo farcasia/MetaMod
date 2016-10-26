@@ -1049,7 +1049,7 @@
                 <node concept="10Nm6u" id="6iY9PyZZlg" role="33vP2m" />
               </node>
             </node>
-            <node concept="3clFbH" id="6iY9PyZZlh" role="3cqZAp" />
+            <node concept="3clFbH" id="7aCZPg0HQMo" role="3cqZAp" />
             <node concept="3clFbJ" id="6iY9PyZZlk" role="3cqZAp">
               <node concept="3clFbS" id="6iY9PyZZll" role="3clFbx">
                 <node concept="1DcWWT" id="6iY9PyZZlm" role="3cqZAp">
@@ -2021,6 +2021,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="6iY9Pz8zLh" role="3cqZAp" />
+        <node concept="3SKdUt" id="7aCZPg0BrJc" role="3cqZAp">
+          <node concept="3SKdUq" id="7aCZPg0BtZ0" role="3SKWNk">
+            <property role="3SKdUp" value="Handle own concepts first!" />
+          </node>
+        </node>
         <node concept="1DcWWT" id="6iY9PwIFQR" role="3cqZAp">
           <node concept="3clFbS" id="6iY9PwIFQT" role="2LFqv$">
             <node concept="3SKdUt" id="6iY9PwIQT5" role="3cqZAp">
@@ -2190,6 +2195,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="6iY9PwIEih" role="3cqZAp" />
+        <node concept="3SKdUt" id="7aCZPg0BvY2" role="3cqZAp">
+          <node concept="3SKdUq" id="7aCZPg0ByOJ" role="3SKWNk">
+            <property role="3SKdUp" value="We create equivalence concepts of reused groups and add equivalence concepts that are unique!" />
+          </node>
+        </node>
         <node concept="1DcWWT" id="6iY9PyZb8g" role="3cqZAp">
           <node concept="3clFbS" id="6iY9PyZb8h" role="2LFqv$">
             <node concept="3clFbF" id="6iY9PyZb8i" role="3cqZAp">
@@ -2269,6 +2279,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="6iY9PyZavx" role="3cqZAp" />
+        <node concept="3SKdUt" id="7aCZPg0B$M4" role="3cqZAp">
+          <node concept="3SKdUq" id="7aCZPg0BBq0" role="3SKWNk">
+            <property role="3SKdUp" value="We add equivalence concepts that are not unique!" />
+          </node>
+        </node>
         <node concept="1DcWWT" id="6iY9PyUsNl" role="3cqZAp">
           <node concept="3clFbS" id="6iY9PyUsNm" role="2LFqv$">
             <node concept="3clFbF" id="6iY9PyUwyH" role="3cqZAp">
@@ -2314,6 +2329,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="6iY9PyUsNA" role="3cqZAp" />
+        <node concept="3SKdUt" id="7aCZPg0BE51" role="3cqZAp">
+          <node concept="3SKdUq" id="7aCZPg0BFM3" role="3SKWNk">
+            <property role="3SKdUp" value="We create and add equivalence concepts of subgroups!" />
+          </node>
+        </node>
         <node concept="1DcWWT" id="6iY9PyUsNB" role="3cqZAp">
           <node concept="3clFbS" id="6iY9PyUsNC" role="2LFqv$">
             <node concept="3clFbF" id="6iY9PyUwTO" role="3cqZAp">
@@ -2335,7 +2355,13 @@
                 <node concept="37vLTw" id="6iY9PyUwTV" role="37wK5m">
                   <ref role="3cqZAo" node="6iY9PyUsNI" resolve="innerGroup" />
                 </node>
-                <node concept="10Nm6u" id="6iY9PyUASP" role="37wK5m" />
+                <node concept="2ShNRf" id="7aCZPg0EQXj" role="37wK5m">
+                  <node concept="2T8Vx0" id="7aCZPg0ESeb" role="2ShVmc">
+                    <node concept="2I9FWS" id="7aCZPg0ESed" role="2T96Bj">
+                      <ref role="2I9WkF" to="v0yp:7zWtwVwpd__" resolve="RefToNamedConcept" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
