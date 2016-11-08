@@ -50,6 +50,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
@@ -926,6 +927,12 @@
         <node concept="3F2HdR" id="6iY9PyR6qU" role="3EZMnx">
           <ref role="1NtTu8" to="v0yp:6iY9PyR4Wh" />
           <node concept="2iRkQZ" id="6iY9PyR6qX" role="2czzBx" />
+          <node concept="3vyZuw" id="24DEMssj7nK" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="3mBrxOYMmef" role="2czzBI">
+            <property role="3F0ifm" value="" />
+          </node>
         </node>
         <node concept="2iRfu4" id="6iY9PyR6jN" role="2iSdaV" />
       </node>
@@ -950,6 +957,7 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="24DEMssiXVt" role="3cqZAp" />
           <node concept="3clFbJ" id="7O7EsH2P5VS" role="3cqZAp">
             <node concept="3clFbS" id="7O7EsH2P5VT" role="3clFbx">
               <node concept="3cpWs6" id="7O7EsH2P9be" role="3cqZAp">
