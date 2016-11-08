@@ -92,6 +92,7 @@
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
+        <property id="1195213689297" name="overrides" index="18ip37" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
@@ -148,6 +149,7 @@
   <node concept="1YbPZF" id="4X4Jbdca5pt">
     <property role="TrG5h" value="typeof_CodeGenMethodCall" />
     <property role="3GE5qa" value="Operations" />
+    <property role="18ip37" value="true" />
     <node concept="3clFbS" id="4X4Jbdca5pu" role="18ibNy">
       <node concept="1Z5TYs" id="4X4Jbdca6cM" role="3cqZAp">
         <node concept="mw_s8" id="4X4Jbdca6dd" role="1ZfhKB">
