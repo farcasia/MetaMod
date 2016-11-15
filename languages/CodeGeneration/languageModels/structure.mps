@@ -48,7 +48,11 @@
     <property role="TrG5h" value="CodeGenMethod" />
     <ref role="1TJDcQ" to="1o5n:7MhXM5kjFTb" resolve="Method" />
     <node concept="1TJgyi" id="6K_nk43gzgr" role="1TKVEl">
-      <property role="TrG5h" value="showOverride" />
+      <property role="TrG5h" value="override" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="23adspZRHzF" role="1TKVEl">
+      <property role="TrG5h" value="multimethod" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="6K_nk43gzgg" role="1TKVEi">
