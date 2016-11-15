@@ -2282,8 +2282,8 @@
             <node concept="3clFbF" id="23adsq02fNY" role="3cqZAp">
               <node concept="2OqwBi" id="23adsq02fO0" role="3clFbG">
                 <node concept="30H73N" id="23adsq02fO1" role="2Oq$k0" />
-                <node concept="2qgKlT" id="23adsq02fO2" role="2OqNvi">
-                  <ref role="37wK5l" to="z64h:4X4Jbdc5y5v" resolve="getAllNamedInnerGroups" />
+                <node concept="2qgKlT" id="591Miw1w45x" role="2OqNvi">
+                  <ref role="37wK5l" to="z64h:6pihOoL19Ab" resolve="getAllNamedInnerGroupsPlusSelf" />
                 </node>
               </node>
             </node>
@@ -2344,10 +2344,10 @@
                 <node concept="2I9FWS" id="23adsq01Ihn" role="1tU5fm">
                   <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                 </node>
-                <node concept="2OqwBi" id="23adsq02uyo" role="33vP2m">
-                  <node concept="1iwH7S" id="23adsq02qTm" role="2Oq$k0" />
-                  <node concept="1bhEwm" id="23adsq02x3a" role="2OqNvi">
-                    <ref role="1bhEwk" node="23adsq01q9J" resolve="innerGroups" />
+                <node concept="2OqwBi" id="591Miw1vY2H" role="33vP2m">
+                  <node concept="30H73N" id="591Miw1vY2I" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="591Miw1vY2J" role="2OqNvi">
+                    <ref role="37wK5l" to="z64h:4X4Jbdc5y5v" resolve="getAllNamedInnerGroups" />
                   </node>
                 </node>
               </node>
