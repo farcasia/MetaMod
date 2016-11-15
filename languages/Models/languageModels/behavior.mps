@@ -459,6 +459,113 @@
   </registry>
   <node concept="13h7C7" id="5udWXWX$JPf">
     <ref role="13h7C2" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+    <node concept="13i0hz" id="23adsq0l1OJ" role="13h7CS">
+      <property role="TrG5h" value="getDirectNamedInnerGroups" />
+      <node concept="3Tm1VV" id="23adsq0l1OK" role="1B3o_S" />
+      <node concept="3clFbS" id="23adsq0l1OL" role="3clF47">
+        <node concept="3cpWs8" id="23adsq0locJ" role="3cqZAp">
+          <node concept="3cpWsn" id="23adsq0locM" role="3cpWs9">
+            <property role="TrG5h" value="directNamedInnerGroups" />
+            <node concept="2I9FWS" id="23adsq0locI" role="1tU5fm">
+              <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+            </node>
+            <node concept="2ShNRf" id="23adsq0lodA" role="33vP2m">
+              <node concept="2T8Vx0" id="23adsq0lqyP" role="2ShVmc">
+                <node concept="2I9FWS" id="23adsq0lqyR" role="2T96Bj">
+                  <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="23adsq0lqCV" role="3cqZAp" />
+        <node concept="1DcWWT" id="23adsq0lqDs" role="3cqZAp">
+          <node concept="3clFbS" id="23adsq0lqDu" role="2LFqv$">
+            <node concept="3clFbF" id="23adsq0lym_" role="3cqZAp">
+              <node concept="2OqwBi" id="23adsq0lz6m" role="3clFbG">
+                <node concept="37vLTw" id="23adsq0lymz" role="2Oq$k0">
+                  <ref role="3cqZAo" node="23adsq0locM" resolve="directNamedInnerGroups" />
+                </node>
+                <node concept="TSZUe" id="23adsq0lBYR" role="2OqNvi">
+                  <node concept="2OqwBi" id="23adsq0lCeu" role="25WWJ7">
+                    <node concept="37vLTw" id="23adsq0lC5u" role="2Oq$k0">
+                      <ref role="3cqZAo" node="23adsq0lqDv" resolve="refToNG" />
+                    </node>
+                    <node concept="3TrEf2" id="23adsq0lCK6" role="2OqNvi">
+                      <ref role="3Tt5mk" to="v0yp:7zWtwVwpdQQ" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="23adsq0lqDv" role="1Duv9x">
+            <property role="TrG5h" value="refToNG" />
+            <node concept="3Tqbb2" id="23adsq0lqJX" role="1tU5fm">
+              <ref role="ehGHo" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedGroup" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="23adsq0ltrq" role="1DdaDG">
+            <node concept="2OqwBi" id="23adsq0lrfA" role="2Oq$k0">
+              <node concept="13iPFW" id="23adsq0lr9d" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="23adsq0lrFp" role="2OqNvi">
+                <ref role="3TtcxE" to="v0yp:7zWtwVwpdT4" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="23adsq0ly7k" role="2OqNvi">
+              <node concept="chp4Y" id="23adsq0lyeV" role="v3oSu">
+                <ref role="cht4Q" to="v0yp:7zWtwVwpdAi" resolve="RefToNamedGroup" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="23adsq0lCR0" role="3cqZAp" />
+        <node concept="1DcWWT" id="23adsq0lD6m" role="3cqZAp">
+          <node concept="3clFbS" id="23adsq0lD6o" role="2LFqv$">
+            <node concept="3clFbF" id="23adsq0lHWj" role="3cqZAp">
+              <node concept="2OqwBi" id="23adsq0lIJ4" role="3clFbG">
+                <node concept="37vLTw" id="23adsq0lHWh" role="2Oq$k0">
+                  <ref role="3cqZAo" node="23adsq0locM" resolve="directNamedInnerGroups" />
+                </node>
+                <node concept="TSZUe" id="23adsq0lNDY" role="2OqNvi">
+                  <node concept="37vLTw" id="23adsq0lNK_" role="25WWJ7">
+                    <ref role="3cqZAo" node="23adsq0lD6p" resolve="ng" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="23adsq0lD6p" role="1Duv9x">
+            <property role="TrG5h" value="ng" />
+            <node concept="3Tqbb2" id="23adsq0lDrw" role="1tU5fm">
+              <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="23adsq0lFka" role="1DdaDG">
+            <node concept="2OqwBi" id="23adsq0lDLY" role="2Oq$k0">
+              <node concept="13iPFW" id="23adsq0lDHf" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="23adsq0lEdL" role="2OqNvi">
+                <ref role="3TtcxE" to="v0yp:7zWtwVwpdT4" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="23adsq0lHGV" role="2OqNvi">
+              <node concept="chp4Y" id="23adsq0lHOy" role="v3oSu">
+                <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="23adsq0lNQG" role="3cqZAp" />
+        <node concept="3cpWs6" id="23adsq0lOFP" role="3cqZAp">
+          <node concept="37vLTw" id="23adsq0lP8b" role="3cqZAk">
+            <ref role="3cqZAo" node="23adsq0locM" resolve="directNamedInnerGroups" />
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="23adsq0lnn_" role="3clF45">
+        <ref role="2I9WkF" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+      </node>
+    </node>
     <node concept="13i0hz" id="6iY9P_8cYF" role="13h7CS">
       <property role="TrG5h" value="findMembershipEqConcepts" />
       <node concept="3Tm1VV" id="6iY9P_8cYG" role="1B3o_S" />
@@ -17412,6 +17519,50 @@
   </node>
   <node concept="13h7C7" id="20nTeIl8pLr">
     <ref role="13h7C2" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+    <node concept="13i0hz" id="23adsq0b_LT" role="13h7CS">
+      <property role="TrG5h" value="processingUnitName" />
+      <node concept="3Tm1VV" id="23adsq0b_LU" role="1B3o_S" />
+      <node concept="3clFbS" id="23adsq0b_LV" role="3clF47">
+        <node concept="3cpWs6" id="23adsq0bHy4" role="3cqZAp">
+          <node concept="3cpWs3" id="23adsq0bHLs" role="3cqZAk">
+            <node concept="2OqwBi" id="23adsq0bHQP" role="3uHU7w">
+              <node concept="13iPFW" id="23adsq0bHLJ" role="2Oq$k0" />
+              <node concept="3TrcHB" id="23adsq0bI5k" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="23adsq0bHyh" role="3uHU7B">
+              <property role="Xl_RC" value="CodeGen_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="23adsq0bHxX" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="23adsq0bI94" role="13h7CS">
+      <property role="TrG5h" value="interfaceName" />
+      <node concept="3Tm1VV" id="23adsq0bI95" role="1B3o_S" />
+      <node concept="3clFbS" id="23adsq0bI96" role="3clF47">
+        <node concept="3cpWs6" id="23adsq0bJm9" role="3cqZAp">
+          <node concept="3cpWs3" id="23adsq0bJsP" role="3cqZAk">
+            <node concept="2OqwBi" id="23adsq0bJye" role="3uHU7w">
+              <node concept="13iPFW" id="23adsq0bJt8" role="2Oq$k0" />
+              <node concept="3TrcHB" id="23adsq0bJKH" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="23adsq0bJmo" role="3uHU7B">
+              <property role="Xl_RC" value="Interface_" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="23adsq0bJm2" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+      </node>
+    </node>
     <node concept="13i0hz" id="20nTeIl8pNp" role="13h7CS">
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />

@@ -35,6 +35,7 @@
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
         <usedLanguage>a00bbccc-dbff-45c7-aa54-02d1f94db9b5(LanguageConfiguration)</usedLanguage>
         <usedLanguage>5f140b5b-a1d2-4d50-af71-7c64c190dbb9(CodeGeneration)</usedLanguage>
+        <usedLanguage>8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
