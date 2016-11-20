@@ -1793,11 +1793,6 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="6iY9PxR58z" role="3cqZAp">
-          <node concept="3SKdUq" id="6iY9PxR5su" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: We will have to change the name with prefix ..." />
-          </node>
-        </node>
         <node concept="3clFbF" id="2SWtdi29pYE" role="3cqZAp">
           <node concept="2OqwBi" id="2SWtdi2972I" role="3clFbG">
             <node concept="2Sg_IR" id="2SWtdi296VJ" role="2Oq$k0">
@@ -1955,6 +1950,14 @@
       <node concept="3cqZAl" id="2SWtdi29WO4" role="3clF45" />
       <node concept="3Tm1VV" id="2SWtdi29WO5" role="1B3o_S" />
       <node concept="3clFbS" id="2SWtdi29WO6" role="3clF47">
+        <node concept="3cpWs8" id="2$vcPaA0or1" role="3cqZAp">
+          <node concept="3cpWsn" id="2$vcPaA0or2" role="3cpWs9">
+            <property role="TrG5h" value="callingContext" />
+            <node concept="3uibUv" id="2$vcPaA0or3" role="1tU5fm">
+              <ref role="3uigEE" to="wz6r:45NpebPjv7X" resolve="CodeGen" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2SWtdi29WO7" role="3cqZAp">
           <node concept="2OqwBi" id="2SWtdi29WO8" role="3clFbG">
             <node concept="2Sg_IR" id="2SWtdi29WO9" role="2Oq$k0">
@@ -1966,8 +1969,13 @@
                         <node concept="2OqwBi" id="2SWtdi2cbyU" role="2Oq$k0">
                           <node concept="2OqwBi" id="2SWtdi2a1fG" role="2Oq$k0">
                             <node concept="2OqwBi" id="2SWtdi29Y7F" role="2Oq$k0">
-                              <node concept="37vLTw" id="2SWtdi29XVc" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2SWtdi29WOS" resolve="inputGroup" />
+                              <node concept="2OqwBi" id="2$vcPaA0ppA" role="2Oq$k0">
+                                <node concept="37vLTw" id="2$vcPaA0oC9" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2$vcPaA0or2" resolve="callingContext" />
+                                </node>
+                                <node concept="2OwXpG" id="2$vcPaA0q8C" role="2OqNvi">
+                                  <ref role="2Oxat5" to="wz6r:2a5hLSZMTRE" resolve="inputGroup" />
+                                </node>
                               </node>
                               <node concept="2qgKlT" id="2SWtdi29YBn" role="2OqNvi">
                                 <ref role="37wK5l" to="z64h:6za56b2K0AC" resolve="getRelationsWithSourceConcept" />
@@ -2123,6 +2131,14 @@
       <node concept="3cqZAl" id="2SWtdi2adQL" role="3clF45" />
       <node concept="3Tm1VV" id="2SWtdi2adQM" role="1B3o_S" />
       <node concept="3clFbS" id="2SWtdi2adQN" role="3clF47">
+        <node concept="3cpWs8" id="2$vcPaA0GV0" role="3cqZAp">
+          <node concept="3cpWsn" id="2$vcPaA0GV1" role="3cpWs9">
+            <property role="TrG5h" value="callingContext" />
+            <node concept="3uibUv" id="2$vcPaA0GV2" role="1tU5fm">
+              <ref role="3uigEE" to="wz6r:45NpebPjv7X" resolve="CodeGen" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2SWtdi2adQO" role="3cqZAp">
           <node concept="2OqwBi" id="2SWtdi2adQP" role="3clFbG">
             <node concept="2Sg_IR" id="2SWtdi2adQQ" role="2Oq$k0">
@@ -2134,8 +2150,13 @@
                         <node concept="2OqwBi" id="2SWtdi2c6_P" role="2Oq$k0">
                           <node concept="2OqwBi" id="2SWtdi2adQU" role="2Oq$k0">
                             <node concept="2OqwBi" id="2SWtdi2adQV" role="2Oq$k0">
-                              <node concept="37vLTw" id="2SWtdi2adQW" role="2Oq$k0">
-                                <ref role="3cqZAo" node="2SWtdi2adRF" resolve="inputGroup" />
+                              <node concept="2OqwBi" id="2$vcPaA0HrX" role="2Oq$k0">
+                                <node concept="37vLTw" id="2$vcPaA0H8u" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2$vcPaA0GV1" resolve="callingContext" />
+                                </node>
+                                <node concept="2OwXpG" id="2$vcPaA0I7W" role="2OqNvi">
+                                  <ref role="2Oxat5" to="wz6r:2a5hLSZMTRE" resolve="inputGroup" />
+                                </node>
                               </node>
                               <node concept="2qgKlT" id="2SWtdi2adQX" role="2OqNvi">
                                 <ref role="37wK5l" to="z64h:6za56b2K0Co" resolve="getRelationsWithTargetConcept" />
@@ -2312,7 +2333,7 @@
         </node>
         <node concept="3SKdUt" id="6iY9PxR7WU" role="3cqZAp">
           <node concept="3SKdUq" id="6iY9PxR7WV" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: We will have to change the name with prefix ..." />
+            <property role="3SKdUp" value="TODO: This ignores the linking model ..." />
           </node>
         </node>
         <node concept="3clFbJ" id="2bNndrA3L7m" role="3cqZAp">
@@ -2425,11 +2446,6 @@
                               <property role="2qtEX9" value="value" />
                               <node concept="3zFVjK" id="6iY9PxZ8ji" role="3zH0cK">
                                 <node concept="3clFbS" id="6iY9PxZ8jj" role="2VODD2">
-                                  <node concept="3SKdUt" id="6iY9P$yb_B" role="3cqZAp">
-                                    <node concept="3SKdUq" id="6iY9P$ybQI" role="3SKWNk">
-                                      <property role="3SKdUp" value="TODO: We shall compute the prefix of the concept based on the equivalence classes of the callingContext" />
-                                    </node>
-                                  </node>
                                   <node concept="3clFbF" id="6iY9PxZ8yy" role="3cqZAp">
                                     <node concept="2YIFZM" id="3mBrxP09HYg" role="3clFbG">
                                       <ref role="37wK5l" to="93in:6iY9P_8R8x" resolve="getStringFromConceptType" />
@@ -3794,9 +3810,6 @@
                         <node concept="2OqwBi" id="6pihOoLDANn" role="2Oq$k0">
                           <node concept="2OqwBi" id="6pihOoLDANo" role="2Oq$k0">
                             <node concept="2OqwBi" id="6pihOoLDANp" role="2Oq$k0">
-                              <node concept="37vLTw" id="6pihOoLDANq" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6pihOoLDAOi" resolve="outputGroup" />
-                              </node>
                               <node concept="2qgKlT" id="6pihOoLDANr" role="2OqNvi">
                                 <ref role="37wK5l" to="z64h:6za56b2K0AC" resolve="getRelationsWithSourceConcept" />
                                 <node concept="10Nm6u" id="6pihOoLDANs" role="37wK5m">
@@ -3816,6 +3829,9 @@
                                   </node>
                                 </node>
                                 <node concept="10Nm6u" id="6pihOoLDAN$" role="37wK5m" />
+                              </node>
+                              <node concept="37vLTw" id="2$vcPaA0Fpk" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6pihOoLDAOi" resolve="outputGroup" />
                               </node>
                             </node>
                             <node concept="3zZkjj" id="6pihOoLDAN_" role="2OqNvi">
@@ -4865,9 +4881,6 @@
                         <node concept="2OqwBi" id="1H8IJ1cFf_5" role="2Oq$k0">
                           <node concept="2OqwBi" id="1H8IJ1cFf_6" role="2Oq$k0">
                             <node concept="2OqwBi" id="1H8IJ1cFf_7" role="2Oq$k0">
-                              <node concept="37vLTw" id="1H8IJ1cFf_8" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1H8IJ1cFfA0" resolve="linkingGroup" />
-                              </node>
                               <node concept="2qgKlT" id="1H8IJ1cFf_9" role="2OqNvi">
                                 <ref role="37wK5l" to="z64h:6za56b2K0AC" resolve="getRelationsWithSourceConcept" />
                                 <node concept="10Nm6u" id="1H8IJ1cFf_a" role="37wK5m">
@@ -4887,6 +4900,9 @@
                                   </node>
                                 </node>
                                 <node concept="10Nm6u" id="1H8IJ1cFf_i" role="37wK5m" />
+                              </node>
+                              <node concept="37vLTw" id="2$vcPaA0D_e" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1H8IJ1cFfA0" resolve="linkingGroup" />
                               </node>
                             </node>
                             <node concept="3zZkjj" id="1H8IJ1cFf_j" role="2OqNvi">

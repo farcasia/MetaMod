@@ -175,11 +175,17 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods">
+      <concept id="4767673562711423982" name="GenericGroupMethods.structure.AsSource" flags="ng" index="khloQ">
+        <reference id="4767673562711424009" name="refAssoc" index="khl7h" />
+      </concept>
       <concept id="8976227254846920304" name="GenericGroupMethods.structure.MethodsContainer" flags="ng" index="CLm5h">
         <reference id="5319102428747287702" name="group" index="1GHRfG" />
         <child id="8976227254846920305" name="contents" index="CLm5g" />
@@ -214,6 +220,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
     </language>
   </registry>
   <node concept="2oAaVg" id="4wJBZF9EZTA">
@@ -221,6 +228,7 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="1973810269" />
     <property role="TrG5h" value="ExpressionsAndTypes" />
+    <property role="3GE5qa" value="ExpressionsAndTypes" />
     <node concept="2oAaW5" id="4wJBZF9F9SG" role="2oAaxa">
       <property role="TrG5h" value="Expression" />
     </node>
@@ -398,6 +406,7 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="1973810269" />
     <property role="TrG5h" value="UnaryExpressions" />
+    <property role="3GE5qa" value="UnaryExpressions" />
     <node concept="2oAaYs" id="4wJBZF9FiDB" role="2oAaxa">
       <ref role="3aaZtz" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
     </node>
@@ -548,6 +557,7 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="1973810269" />
     <property role="TrG5h" value="DotExpressions" />
+    <property role="3GE5qa" value="DotExpressions" />
     <node concept="2oAaYs" id="4wJBZF9Fj34" role="2oAaxa">
       <ref role="3aaZtz" node="4wJBZF9FitJ" resolve="UnaryExpressions" />
     </node>
@@ -719,6 +729,7 @@
   <node concept="1GnNiK" id="4wJBZF9FlhP">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_Behaviour_ExpressionsAndTypes" />
+    <property role="3GE5qa" value="ExpressionsAndTypes.Behaviour" />
     <ref role="1GHRfG" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
     <node concept="1vbBhR" id="4wJBZF9FlhQ" role="1ukcCD">
       <property role="TrG5h" value="Behaviour" />
@@ -805,6 +816,7 @@
   <node concept="1GnNiK" id="2$vcPa_ZAmU">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_BehaviourIStackContainmentMember_ExpressionsAndTypes" />
+    <property role="3GE5qa" value="ExpressionsAndTypes.Behaviour" />
     <ref role="1GHRfG" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
     <node concept="1GnNjC" id="2$vcPa_Z9gC" role="CLm5g">
       <property role="TrG5h" value="hideInStack" />
@@ -897,6 +909,7 @@
   <node concept="1GnNiK" id="2$vcPa_ZAE7">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_BehaviourIMayHaveEffect_ExpressionsAndTypes" />
+    <property role="3GE5qa" value="ExpressionsAndTypes.Behaviour" />
     <ref role="1GHRfG" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
     <node concept="1GnNjC" id="2$vcPa_ZfYN" role="CLm5g">
       <property role="TrG5h" value="hasEffect" />
@@ -960,6 +973,7 @@
   <node concept="1GnNiK" id="2$vcPa_ZBcA">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_BehaviourIRef_ExpressionsAndTypes" />
+    <property role="3GE5qa" value="ExpressionsAndTypes.Behaviour" />
     <ref role="1GHRfG" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
     <node concept="1GnNjC" id="2$vcPa_ZhS$" role="CLm5g">
       <property role="TrG5h" value="target" />
@@ -1046,6 +1060,7 @@
   <node concept="1GnNiK" id="2$vcPa_ZBJQ">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_BehaviourIDisallowSideEffect_ExpressionsAndTypes" />
+    <property role="3GE5qa" value="ExpressionsAndTypes.Behaviour" />
     <ref role="1GHRfG" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
     <node concept="1GnNjC" id="2$vcPa_Zfz5" role="CLm5g">
       <property role="TrG5h" value="nodeThatMustNodeHaveASideEffect" />
@@ -1076,6 +1091,7 @@
   <node concept="1GnNiK" id="2$vcPa_ZC1$">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_BehaviourType_ExpressionsAndTypes" />
+    <property role="3GE5qa" value="ExpressionsAndTypes.Behaviour" />
     <ref role="1GHRfG" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
     <node concept="1GnNjC" id="2$vcPa_Zk0m" role="CLm5g">
       <property role="TrG5h" value="applicableConstraints" />
@@ -1141,6 +1157,7 @@
   <node concept="1GnNiK" id="2$vcPa_ZChI">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_BehaviourIOptionallyTyped_ExpressionsAndTypes" />
+    <property role="3GE5qa" value="ExpressionsAndTypes.Behaviour" />
     <ref role="1GHRfG" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
     <node concept="1GnNjC" id="2$vcPa_Zhgv" role="CLm5g">
       <property role="TrG5h" value="getNodeFromWhichToDeriveType" />
@@ -1171,6 +1188,7 @@
   <node concept="1GnNiK" id="2$vcPa_ZCLK">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_BehaviourAbstractLiteral_ExpressionsAndTypes" />
+    <property role="3GE5qa" value="ExpressionsAndTypes.Behaviour" />
     <ref role="1GHRfG" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
     <node concept="1GnNjC" id="2$vcPa_Z8Cu" role="CLm5g">
       <property role="TrG5h" value="isStaticallyEvaluatable" />
@@ -1207,6 +1225,7 @@
   <node concept="1GnNiK" id="2$vcPa_ZD3n">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_BehaviourExpression_ExpressionsAndTypes" />
+    <property role="3GE5qa" value="ExpressionsAndTypes.Behaviour" />
     <ref role="1GHRfG" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
     <node concept="1GnNjC" id="4wJBZF9FlhS" role="CLm5g">
       <property role="TrG5h" value="renderReadable" />
@@ -1402,6 +1421,104 @@
     <node concept="CLx5B" id="4wJBZF9FoHm" role="CLm5g" />
     <node concept="1vbBhR" id="2$vcPa_ZD3o" role="1ukcCD">
       <property role="TrG5h" value="BehaviourExpression" />
+    </node>
+  </node>
+  <node concept="1GnNiK" id="2$vcPa_ZFVW">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="UnaryExpressions.Behaviour" />
+    <property role="TrG5h" value="PU_Behaviour_UnaryExpressions" />
+    <ref role="1GHRfG" node="4wJBZF9FitJ" resolve="UnaryExpressions" />
+    <node concept="1GnNjC" id="2$vcPa_ZHVG" role="CLm5g">
+      <property role="TrG5h" value="priority" />
+      <property role="1v5eOH" value="true" />
+      <node concept="37vLTG" id="2$vcPa_ZHVH" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="2$vcPa_ZHVI" role="1tU5fm">
+          <ref role="1l_bkj" node="4wJBZF9FitJ" resolve="UnaryExpressions" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2$vcPa_ZI3s" role="3clF46">
+        <property role="TrG5h" value="unary" />
+        <node concept="CMjq$" id="2$vcPa_ZI3$" role="1tU5fm">
+          <ref role="CMYPG" node="4wJBZF9FiyC" resolve="UnaryExpression" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2$vcPa_ZHVJ" role="3clF47">
+        <node concept="3cpWs6" id="2$vcPa_ZIaQ" role="3cqZAp">
+          <node concept="3cmrfG" id="2$vcPa_ZIb3" role="3cqZAk">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="2$vcPa_ZI3H" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="2$vcPa_ZHVe" role="CLm5g" />
+    <node concept="1GnNjC" id="2$vcPa_ZHMr" role="CLm5g">
+      <property role="TrG5h" value="isLeftAssociative" />
+      <property role="1v5eOH" value="true" />
+      <node concept="37vLTG" id="2$vcPa_ZHMs" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="2$vcPa_ZHMt" role="1tU5fm">
+          <ref role="1l_bkj" node="4wJBZF9FitJ" resolve="UnaryExpressions" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2$vcPa_ZHMV" role="3clF46">
+        <property role="TrG5h" value="unary" />
+        <node concept="CMjq$" id="2$vcPa_ZHN3" role="1tU5fm">
+          <ref role="CMYPG" node="4wJBZF9FiyC" resolve="UnaryExpression" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2$vcPa_ZHMu" role="3clF47">
+        <node concept="3cpWs6" id="2$vcPa_ZHNc" role="3cqZAp">
+          <node concept="3clFbT" id="2$vcPa_ZHNn" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2$vcPa_ZHNB" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="2$vcPa_ZHLS" role="CLm5g" />
+    <node concept="1vbBpf" id="2$vcPa_ZFVZ" role="1ukcCD">
+      <ref role="1vbBpc" node="4wJBZF9FlhQ" resolve="Behaviour" />
+    </node>
+    <node concept="1GnNjC" id="2$vcPa_ZG2A" role="CLm5g">
+      <property role="TrG5h" value="isStaticallyEvaluatable" />
+      <property role="1JpQ_q" value="true" />
+      <ref role="1JpQ_h" node="4wJBZF9FoI5" resolve="isStaticallyEvaluatable" />
+      <node concept="37vLTG" id="2$vcPa_ZG2B" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="2$vcPa_ZG2C" role="1tU5fm">
+          <ref role="1l_bkj" node="4wJBZF9FitJ" resolve="UnaryExpressions" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2$vcPa_ZG2O" role="3clF46">
+        <property role="TrG5h" value="unary" />
+        <node concept="CMjq$" id="2$vcPa_ZG2W" role="1tU5fm">
+          <ref role="CMYPG" node="4wJBZF9FiyC" resolve="UnaryExpression" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2$vcPa_ZG2D" role="3clF47">
+        <node concept="3cpWs6" id="2$vcPa_ZG38" role="3cqZAp">
+          <node concept="3otQA" id="2$vcPa_ZGae" role="3cqZAk">
+            <ref role="37wK5l" node="4wJBZF9FoI5" resolve="isStaticallyEvaluatable" />
+            <node concept="37vLTw" id="2$vcPa_ZGap" role="37wK5m">
+              <ref role="3cqZAo" node="2$vcPa_ZG2B" resolve="inputGroup" />
+            </node>
+            <node concept="2OqwBi" id="2$vcPa_ZGRB" role="37wK5m">
+              <node concept="2OqwBi" id="2$vcPa_ZGbP" role="2Oq$k0">
+                <node concept="37vLTw" id="2$vcPa_ZGaL" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2$vcPa_ZG2O" resolve="unary" />
+                </node>
+                <node concept="khloQ" id="2$vcPa_ZGrO" role="2OqNvi">
+                  <ref role="khl7h" node="4wJBZF9FiBQ" resolve="expr" />
+                </node>
+              </node>
+              <node concept="1uHKPH" id="2$vcPa_ZHC2" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2$vcPa_ZG35" role="3clF45" />
     </node>
   </node>
 </model>
