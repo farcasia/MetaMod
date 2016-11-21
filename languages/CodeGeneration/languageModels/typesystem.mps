@@ -100,6 +100,7 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -736,6 +737,48 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="2$vcPaAbdbw" role="3cqZAp" />
+          <node concept="3clFbJ" id="2$vcPaAbdpz" role="3cqZAp">
+            <node concept="3clFbS" id="2$vcPaAbdp_" role="3clFbx">
+              <node concept="2MkqsV" id="2$vcPaAboS9" role="3cqZAp">
+                <node concept="Xl_RD" id="2$vcPaAbrMd" role="2MkJ7o">
+                  <property role="Xl_RC" value="The return type of the overridding method is different from the return type of the overridden method!" />
+                </node>
+                <node concept="2OqwBi" id="2$vcPaAbp0K" role="2OEOjV">
+                  <node concept="1YBJjd" id="2$vcPaAboSo" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2$vcPaA9G9T" resolve="codeGenMet" />
+                  </node>
+                  <node concept="3TrEf2" id="2$vcPaAbrJq" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tpee:fzclF7X" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="2$vcPaAbEAx" role="3clFbw">
+              <node concept="2OqwBi" id="2$vcPaAbKYb" role="3uHU7w">
+                <node concept="2OqwBi" id="2$vcPaAbG8Y" role="2Oq$k0">
+                  <node concept="1YBJjd" id="2$vcPaAbG06" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2$vcPaA9G9T" resolve="codeGenMet" />
+                  </node>
+                  <node concept="3TrEf2" id="2$vcPaAbIRY" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tpee:fzclF7X" />
+                  </node>
+                </node>
+                <node concept="3JvlWi" id="2$vcPaAbMoK" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="2$vcPaAb_Cy" role="3uHU7B">
+                <node concept="2OqwBi" id="2$vcPaAbi46" role="2Oq$k0">
+                  <node concept="37vLTw" id="2$vcPaAbhU5" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2$vcPaA9Iz7" resolve="overriddenMet" />
+                  </node>
+                  <node concept="3TrEf2" id="2$vcPaAbjp6" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tpee:fzclF7X" />
+                  </node>
+                </node>
+                <node concept="3JvlWi" id="2$vcPaAbBmW" role="2OqNvi" />
               </node>
             </node>
           </node>

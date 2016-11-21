@@ -4735,7 +4735,7 @@
       <node concept="3clFbS" id="6uuPbCA2FGj" role="3clF47">
         <node concept="3cpWs8" id="6uuPbCA2WjK" role="3cqZAp">
           <node concept="3cpWsn" id="6uuPbCA2WjN" role="3cpWs9">
-            <property role="TrG5h" value="namedRelationsWithSourceBM" />
+            <property role="TrG5h" value="namedRelationsWithSourceNC" />
             <node concept="2I9FWS" id="6uuPbCA2WjI" role="1tU5fm">
               <ref role="2I9WkF" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
             </node>
@@ -4759,7 +4759,7 @@
               <node concept="2qgKlT" id="16zLRPr14ng" role="2OqNvi">
                 <ref role="37wK5l" node="3HBHAq6LHyu" resolve="getAllSuperConceptsPlusSelf" />
                 <node concept="37vLTw" id="16zLRPr14s6" role="37wK5m">
-                  <ref role="3cqZAo" node="6uuPbCA2SDC" resolve="namedBasicModel" />
+                  <ref role="3cqZAo" node="6uuPbCA2SDC" resolve="namedConcept" />
                 </node>
               </node>
             </node>
@@ -4773,7 +4773,7 @@
                 <node concept="3clFbF" id="6uuPbCA32$E" role="3cqZAp">
                   <node concept="2OqwBi" id="6uuPbCA33wb" role="3clFbG">
                     <node concept="37vLTw" id="6uuPbCA32$D" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6uuPbCA2WjN" resolve="namedRelationsWithSourceBM" />
+                      <ref role="3cqZAo" node="6uuPbCA2WjN" resolve="namedRelationsWithSourceNC" />
                     </node>
                     <node concept="TSZUe" id="6uuPbCA38hv" role="2OqNvi">
                       <node concept="37vLTw" id="6uuPbCA38q2" role="25WWJ7">
@@ -4843,7 +4843,7 @@
                 <node concept="3clFbF" id="6uuPbCAa0BJ" role="3cqZAp">
                   <node concept="2OqwBi" id="6uuPbCAa1lC" role="3clFbG">
                     <node concept="37vLTw" id="6uuPbCAa0BH" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6uuPbCA2WjN" resolve="namedRelationsWithSourceBM" />
+                      <ref role="3cqZAo" node="6uuPbCA2WjN" resolve="namedRelationsWithSourceNC" />
                     </node>
                     <node concept="TSZUe" id="6uuPbCAa5Oy" role="2OqNvi">
                       <node concept="37vLTw" id="6uuPbCAa5X5" role="25WWJ7">
@@ -4949,7 +4949,7 @@
         <node concept="3clFbH" id="6uuPbCA2XXq" role="3cqZAp" />
         <node concept="3cpWs6" id="6uuPbCA2Yb_" role="3cqZAp">
           <node concept="37vLTw" id="6uuPbCA2Yqt" role="3cqZAk">
-            <ref role="3cqZAo" node="6uuPbCA2WjN" resolve="namedRelationsWithSourceBM" />
+            <ref role="3cqZAo" node="6uuPbCA2WjN" resolve="namedRelationsWithSourceNC" />
           </node>
         </node>
       </node>
@@ -4957,7 +4957,7 @@
         <ref role="2I9WkF" to="v0yp:7zWtwVwpdyL" resolve="NamedRelation" />
       </node>
       <node concept="37vLTG" id="6uuPbCA2SDC" role="3clF46">
-        <property role="TrG5h" value="namedBasicModel" />
+        <property role="TrG5h" value="namedConcept" />
         <node concept="3Tqbb2" id="6uuPbCA2SDB" role="1tU5fm">
           <ref role="ehGHo" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
         </node>
