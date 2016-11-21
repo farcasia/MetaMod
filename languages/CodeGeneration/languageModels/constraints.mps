@@ -193,6 +193,7 @@
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
@@ -813,35 +814,88 @@
                       <node concept="3clFbS" id="23adspZTBT3" role="1bW5cS">
                         <node concept="3SKdUt" id="23adspZU$Vw" role="3cqZAp">
                           <node concept="3SKdUq" id="23adspZUABl" role="3SKWNk">
-                            <property role="3SKdUp" value="We do not call overridden methods. We can call only the original multimethod." />
+                            <property role="3SKdUp" value="We do not call overridden methods in general, we can call only the original multimethod." />
+                          </node>
+                        </node>
+                        <node concept="3SKdUt" id="2$vcPaA7sU0" role="3cqZAp">
+                          <node concept="3SKdUq" id="2$vcPaA7v9$" role="3SKWNk">
+                            <property role="3SKdUp" value="We can call overriden methods of the same method only." />
                           </node>
                         </node>
                         <node concept="3clFbF" id="23adspZTDbA" role="3cqZAp">
-                          <node concept="22lmx$" id="23adspZTLQS" role="3clFbG">
-                            <node concept="1eOMI4" id="23adspZTO3p" role="3uHU7w">
-                              <node concept="3clFbC" id="23adspZUgrr" role="1eOMHV">
-                                <node concept="10Nm6u" id="23adspZUgPu" role="3uHU7w" />
-                                <node concept="2OqwBi" id="23adspZUauo" role="3uHU7B">
-                                  <node concept="1PxgMI" id="23adspZTSa5" role="2Oq$k0">
-                                    <ref role="1PxNhF" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
-                                    <node concept="37vLTw" id="23adspZTPOi" role="1PxMeX">
-                                      <ref role="3cqZAo" node="23adspZTBT4" resolve="it" />
+                          <node concept="22lmx$" id="2$vcPaA835Y" role="3clFbG">
+                            <node concept="1eOMI4" id="2$vcPaA83__" role="3uHU7w">
+                              <node concept="1Wc70l" id="2$vcPaA8jgC" role="1eOMHV">
+                                <node concept="2OqwBi" id="2$vcPaA8psi" role="3uHU7B">
+                                  <node concept="37vLTw" id="2$vcPaA8kec" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="23adspZTBT4" resolve="it" />
+                                  </node>
+                                  <node concept="1mIQ4w" id="2$vcPaA8sbT" role="2OqNvi">
+                                    <node concept="chp4Y" id="2$vcPaA8u0G" role="cj9EA">
+                                      <ref role="cht4Q" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
                                     </node>
                                   </node>
-                                  <node concept="3TrEf2" id="23adspZUdZ8" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="anrw:6K_nk43gzgg" />
+                                </node>
+                                <node concept="3clFbC" id="2$vcPaA8A3O" role="3uHU7w">
+                                  <node concept="2OqwBi" id="2$vcPaA8w4v" role="3uHU7B">
+                                    <node concept="1PxgMI" id="2$vcPaA87aK" role="2Oq$k0">
+                                      <ref role="1PxNhF" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
+                                      <node concept="37vLTw" id="2$vcPaA84Vd" role="1PxMeX">
+                                        <ref role="3cqZAo" node="23adspZTBT4" resolve="it" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="2$vcPaA8zbQ" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="anrw:6K_nk43gzgg" />
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="2$vcPaA8VKY" role="3uHU7w">
+                                    <node concept="2OqwBi" id="2$vcPaA8RGW" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="2$vcPaA8JXU" role="2Oq$k0">
+                                        <node concept="2OqwBi" id="2$vcPaA8Epl" role="2Oq$k0">
+                                          <node concept="21POm0" id="2$vcPaA8DRz" role="2Oq$k0" />
+                                          <node concept="z$bX8" id="2$vcPaA8F5b" role="2OqNvi">
+                                            <node concept="1xIGOp" id="2$vcPaA8I4P" role="1xVPHs" />
+                                          </node>
+                                        </node>
+                                        <node concept="v3k3i" id="2$vcPaA8NNq" role="2OqNvi">
+                                          <node concept="chp4Y" id="2$vcPaA8PCV" role="v3oSu">
+                                            <ref role="cht4Q" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="1uHKPH" id="2$vcPaA8SXX" role="2OqNvi" />
+                                    </node>
+                                    <node concept="3TrEf2" id="2$vcPaA8XHu" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="anrw:6K_nk43gzgg" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
                             </node>
-                            <node concept="3fqX7Q" id="23adspZTKQi" role="3uHU7B">
-                              <node concept="2OqwBi" id="23adspZTKQk" role="3fr31v">
-                                <node concept="37vLTw" id="23adspZTKQl" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="23adspZTBT4" resolve="it" />
+                            <node concept="1eOMI4" id="23adspZTO3p" role="3uHU7B">
+                              <node concept="1Wc70l" id="2$vcPaA89o4" role="1eOMHV">
+                                <node concept="2OqwBi" id="2$vcPaA8d0G" role="3uHU7B">
+                                  <node concept="37vLTw" id="2$vcPaA8aKw" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="23adspZTBT4" resolve="it" />
+                                  </node>
+                                  <node concept="1mIQ4w" id="2$vcPaA8fe5" role="2OqNvi">
+                                    <node concept="chp4Y" id="2$vcPaA8h0C" role="cj9EA">
+                                      <ref role="cht4Q" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
+                                    </node>
+                                  </node>
                                 </node>
-                                <node concept="1mIQ4w" id="23adspZTKQm" role="2OqNvi">
-                                  <node concept="chp4Y" id="23adspZTKQn" role="cj9EA">
-                                    <ref role="cht4Q" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
+                                <node concept="3clFbC" id="23adspZUgrr" role="3uHU7w">
+                                  <node concept="10Nm6u" id="23adspZUgPu" role="3uHU7w" />
+                                  <node concept="2OqwBi" id="23adspZUauo" role="3uHU7B">
+                                    <node concept="1PxgMI" id="23adspZTSa5" role="2Oq$k0">
+                                      <ref role="1PxNhF" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
+                                      <node concept="37vLTw" id="23adspZTPOi" role="1PxMeX">
+                                        <ref role="3cqZAo" node="23adspZTBT4" resolve="it" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="23adspZUdZ8" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="anrw:6K_nk43gzgg" />
+                                    </node>
                                   </node>
                                 </node>
                               </node>
