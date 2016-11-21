@@ -9,6 +9,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="anrw" ref="r:f7f50153-a977-4fee-b5c8-7e4385be5a22(CodeGeneration.structure)" implicit="true" />
   </imports>
   <registry>
@@ -73,6 +74,9 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
+        <child id="1144226360166" name="iterable" index="1DdaDG" />
+      </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
@@ -116,6 +120,8 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -550,6 +556,206 @@
     <node concept="1YaCAy" id="2TStaYjYCfG" role="1YuTPh">
       <property role="TrG5h" value="replaceCodeGenMethod" />
       <ref role="1YaFvo" to="anrw:2TStaYjWuFM" resolve="ReplaceCodeGenMethod" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2$vcPaA9G79">
+    <property role="TrG5h" value="CheckSignaturesOfOverridenMethods" />
+    <node concept="3clFbS" id="2$vcPaA9G7a" role="18ibNy">
+      <node concept="3clFbJ" id="2$vcPaA9Gae" role="3cqZAp">
+        <node concept="3clFbS" id="2$vcPaA9Gaf" role="3clFbx">
+          <node concept="3cpWs8" id="2$vcPaA9Iz4" role="3cqZAp">
+            <node concept="3cpWsn" id="2$vcPaA9Iz7" role="3cpWs9">
+              <property role="TrG5h" value="overriddenMet" />
+              <node concept="3Tqbb2" id="2$vcPaA9Iz2" role="1tU5fm">
+                <ref role="ehGHo" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
+              </node>
+              <node concept="2OqwBi" id="2$vcPaA9IFX" role="33vP2m">
+                <node concept="1YBJjd" id="2$vcPaA9IzJ" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2$vcPaA9G9T" resolve="codeGenMet" />
+                </node>
+                <node concept="3TrEf2" id="2$vcPaA9K48" role="2OqNvi">
+                  <ref role="3Tt5mk" to="anrw:6K_nk43gzgg" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="2$vcPaA9Izj" role="3cqZAp" />
+          <node concept="3clFbJ" id="2$vcPaA9IyL" role="3cqZAp">
+            <node concept="3clFbS" id="2$vcPaA9IyM" role="3clFbx">
+              <node concept="2MkqsV" id="2$vcPaA9NN7" role="3cqZAp">
+                <node concept="Xl_RD" id="2$vcPaA9NZh" role="2MkJ7o">
+                  <property role="Xl_RC" value="The name of the method should be the same as the name of the overridden method!" />
+                </node>
+                <node concept="1YBJjd" id="2$vcPaA9NVD" role="2OEOjV">
+                  <ref role="1YBMHb" node="2$vcPaA9G9T" resolve="codeGenMet" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="2$vcPaA9N_O" role="3clFbw">
+              <node concept="2OqwBi" id="2$vcPaA9N_Q" role="3fr31v">
+                <node concept="2OqwBi" id="2$vcPaA9N_R" role="2Oq$k0">
+                  <node concept="37vLTw" id="2$vcPaA9N_S" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2$vcPaA9Iz7" resolve="overriddenMet" />
+                  </node>
+                  <node concept="3TrcHB" id="2$vcPaA9N_T" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="2$vcPaA9N_U" role="2OqNvi">
+                  <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="2OqwBi" id="2$vcPaA9N_V" role="37wK5m">
+                    <node concept="1YBJjd" id="2$vcPaA9N_W" role="2Oq$k0">
+                      <ref role="1YBMHb" node="2$vcPaA9G9T" resolve="codeGenMet" />
+                    </node>
+                    <node concept="3TrcHB" id="2$vcPaA9N_X" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="2$vcPaA9O6Z" role="3cqZAp" />
+          <node concept="3clFbJ" id="2$vcPaA9OaG" role="3cqZAp">
+            <node concept="3clFbS" id="2$vcPaA9OaI" role="3clFbx">
+              <node concept="2MkqsV" id="2$vcPaAaed5" role="3cqZAp">
+                <node concept="Xl_RD" id="2$vcPaAaed6" role="2MkJ7o">
+                  <property role="Xl_RC" value="The number of parameters of the method should be the same as the number of parameters of the overridden method!" />
+                </node>
+                <node concept="1YBJjd" id="2$vcPaAaed7" role="2OEOjV">
+                  <ref role="1YBMHb" node="2$vcPaA9G9T" resolve="codeGenMet" />
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="2$vcPaAa3Zx" role="3clFbw">
+              <node concept="2OqwBi" id="2$vcPaAa8hr" role="3uHU7w">
+                <node concept="2OqwBi" id="2$vcPaAa4ir" role="2Oq$k0">
+                  <node concept="1YBJjd" id="2$vcPaAa436" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2$vcPaA9G9T" resolve="codeGenMet" />
+                  </node>
+                  <node concept="3Tsc0h" id="2$vcPaAa5Nl" role="2OqNvi">
+                    <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="2$vcPaAae7C" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="2$vcPaA9S3W" role="3uHU7B">
+                <node concept="2OqwBi" id="2$vcPaA9Oof" role="2Oq$k0">
+                  <node concept="37vLTw" id="2$vcPaA9Oee" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2$vcPaA9Iz7" resolve="overriddenMet" />
+                  </node>
+                  <node concept="3Tsc0h" id="2$vcPaA9PHf" role="2OqNvi">
+                    <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="2$vcPaAa3D_" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="9aQIb" id="2$vcPaAb4iM" role="9aQIa">
+              <node concept="3clFbS" id="2$vcPaAb4iN" role="9aQI4">
+                <node concept="1DcWWT" id="2$vcPaAaei$" role="3cqZAp">
+                  <node concept="3clFbS" id="2$vcPaAaeiA" role="2LFqv$">
+                    <node concept="3clFbJ" id="2$vcPaAaeLd" role="3cqZAp">
+                      <node concept="3clFbS" id="2$vcPaAaeLf" role="3clFbx">
+                        <node concept="2MkqsV" id="2$vcPaAaHmi" role="3cqZAp">
+                          <node concept="Xl_RD" id="2$vcPaAaHmj" role="2MkJ7o">
+                            <property role="Xl_RC" value="Parameters of the overridding method should be subtypes of the parameters of the overriden method!" />
+                          </node>
+                          <node concept="2OqwBi" id="2$vcPaAaM_j" role="2OEOjV">
+                            <node concept="2OqwBi" id="2$vcPaAaHuO" role="2Oq$k0">
+                              <node concept="1YBJjd" id="2$vcPaAaHmk" role="2Oq$k0">
+                                <ref role="1YBMHb" node="2$vcPaA9G9T" resolve="codeGenMet" />
+                              </node>
+                              <node concept="3Tsc0h" id="2$vcPaAaKbX" role="2OqNvi">
+                                <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                              </node>
+                            </node>
+                            <node concept="34jXtK" id="2$vcPaAaTVG" role="2OqNvi">
+                              <node concept="2OqwBi" id="2$vcPaAaUaT" role="25WWJ7">
+                                <node concept="37vLTw" id="2$vcPaAaTWV" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2$vcPaAaeiB" resolve="paramDeclOM" />
+                                </node>
+                                <node concept="2bSWHS" id="2$vcPaAaUHA" role="2OqNvi" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3fqX7Q" id="2$vcPaAaFX8" role="3clFbw">
+                        <node concept="2OqwBi" id="2$vcPaAaFXa" role="3fr31v">
+                          <node concept="2OqwBi" id="2$vcPaAaFXb" role="2Oq$k0">
+                            <node concept="37vLTw" id="2$vcPaAaFXc" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2$vcPaAaeiB" resolve="paramDeclOM" />
+                            </node>
+                            <node concept="3TrEf2" id="2$vcPaAaFXd" role="2OqNvi">
+                              <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="2$vcPaAaFXe" role="2OqNvi">
+                            <ref role="37wK5l" to="tpek:hKBOZqh" resolve="isSupersetOf" />
+                            <node concept="2OqwBi" id="2$vcPaAaFXf" role="37wK5m">
+                              <node concept="2OqwBi" id="2$vcPaAaFXg" role="2Oq$k0">
+                                <node concept="2OqwBi" id="2$vcPaAaFXh" role="2Oq$k0">
+                                  <node concept="1YBJjd" id="2$vcPaAaFXi" role="2Oq$k0">
+                                    <ref role="1YBMHb" node="2$vcPaA9G9T" resolve="codeGenMet" />
+                                  </node>
+                                  <node concept="3Tsc0h" id="2$vcPaAaFXj" role="2OqNvi">
+                                    <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                                  </node>
+                                </node>
+                                <node concept="34jXtK" id="2$vcPaAaFXk" role="2OqNvi">
+                                  <node concept="2OqwBi" id="2$vcPaAaFXl" role="25WWJ7">
+                                    <node concept="37vLTw" id="2$vcPaAaFXm" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2$vcPaAaeiB" resolve="paramDeclOM" />
+                                    </node>
+                                    <node concept="2bSWHS" id="2$vcPaAaFXn" role="2OqNvi" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3TrEf2" id="2$vcPaAaFXo" role="2OqNvi">
+                                <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWsn" id="2$vcPaAaeiB" role="1Duv9x">
+                    <property role="TrG5h" value="paramDeclOM" />
+                    <node concept="3Tqbb2" id="2$vcPaAaeoU" role="1tU5fm">
+                      <ref role="ehGHo" to="tpee:fz7vLUk" resolve="ParameterDeclaration" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="2$vcPaAai4Q" role="1DdaDG">
+                    <node concept="37vLTw" id="2$vcPaAahHO" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2$vcPaA9Iz7" resolve="overriddenMet" />
+                    </node>
+                    <node concept="3Tsc0h" id="2$vcPaAaiSL" role="2OqNvi">
+                      <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="2$vcPaA9IvT" role="3clFbw">
+          <node concept="10Nm6u" id="2$vcPaA9Iwv" role="3uHU7w" />
+          <node concept="2OqwBi" id="2$vcPaA9Gkr" role="3uHU7B">
+            <node concept="1YBJjd" id="2$vcPaA9Gaq" role="2Oq$k0">
+              <ref role="1YBMHb" node="2$vcPaA9G9T" resolve="codeGenMet" />
+            </node>
+            <node concept="3TrEf2" id="2$vcPaA9HEk" role="2OqNvi">
+              <ref role="3Tt5mk" to="anrw:6K_nk43gzgg" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2$vcPaA9G9T" role="1YuTPh">
+      <property role="TrG5h" value="codeGenMet" />
+      <ref role="1YaFvo" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
     </node>
   </node>
 </model>
