@@ -2017,24 +2017,89 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="6iY9P_bJ2d" role="3cqZAp">
+          <node concept="3cpWsn" id="6iY9P_bJ2g" role="3cpWs9">
+            <property role="TrG5h" value="containigGroup" />
+            <node concept="3Tqbb2" id="6iY9P_bJ2b" role="1tU5fm">
+              <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+            </node>
+            <node concept="2OqwBi" id="6iY9P_bKK6" role="33vP2m">
+              <node concept="37vLTw" id="6iY9P_bKrx" role="2Oq$k0">
+                <ref role="3cqZAo" node="6iY9P_bu9M" resolve="metContainer" />
+              </node>
+              <node concept="3TrEf2" id="6iY9P_bL7g" role="2OqNvi">
+                <ref role="3Tt5mk" to="1o5n:6pihOoLygyT" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="6iY9P_bwHo" role="3cqZAp" />
         <node concept="3clFbJ" id="6iY9P_bwxg" role="3cqZAp">
           <node concept="3clFbS" id="6iY9P_bwxi" role="3clFbx">
-            <node concept="34ab3g" id="6iY9P_bD4$" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="6iY9P_bHEx" role="34bqiv">
-                <node concept="37vLTw" id="6iY9P_cDeV" role="3uHU7w">
-                  <ref role="3cqZAo" node="6iY9P_czhu" resolve="node" />
-                </node>
-                <node concept="Xl_RD" id="6iY9P_bD4A" role="3uHU7B">
-                  <property role="Xl_RC" value="The concept in new concept type should be part of the 'to' metamodel of the MethodsContainer! " />
+            <node concept="3clFbJ" id="7yvC56evvEO" role="3cqZAp">
+              <node concept="3clFbS" id="7yvC56evvEP" role="3clFbx">
+                <node concept="3clFbF" id="7yvC56ev_Wv" role="3cqZAp">
+                  <node concept="37vLTI" id="7yvC56ev_ZV" role="3clFbG">
+                    <node concept="2OqwBi" id="7yvC56evA5d" role="37vLTx">
+                      <node concept="37vLTw" id="7yvC56evA1t" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6iY9P_bu9M" resolve="metContainer" />
+                      </node>
+                      <node concept="3TrEf2" id="7yvC56evAh_" role="2OqNvi">
+                        <ref role="3Tt5mk" to="1o5n:4BhfRC_p$Mm" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="7yvC56ev_Wu" role="37vLTJ">
+                      <ref role="3cqZAo" node="6iY9P_bJ2g" resolve="containigGroup" />
+                    </node>
+                  </node>
                 </node>
               </node>
-            </node>
-            <node concept="3clFbH" id="6iY9P_bI9q" role="3cqZAp" />
-            <node concept="3cpWs6" id="6iY9P_bI9F" role="3cqZAp">
-              <node concept="Xl_RD" id="6iY9P_cd$Y" role="3cqZAk">
-                <property role="Xl_RC" value="" />
+              <node concept="2OqwBi" id="7yvC56evxRS" role="3clFbw">
+                <node concept="2OqwBi" id="7yvC56evwxi" role="2Oq$k0">
+                  <node concept="2OqwBi" id="7yvC56evvSj" role="2Oq$k0">
+                    <node concept="37vLTw" id="7yvC56evvPg" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6iY9P_bu9M" resolve="metContainer" />
+                    </node>
+                    <node concept="3TrEf2" id="7yvC56evwhp" role="2OqNvi">
+                      <ref role="3Tt5mk" to="1o5n:4BhfRC_p$Mm" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="7yvC56evwYw" role="2OqNvi">
+                    <ref role="37wK5l" to="z64h:2kO$Kh_gvk1" resolve="getConcepts" />
+                    <node concept="10Nm6u" id="7yvC56evxaS" role="37wK5m" />
+                  </node>
+                </node>
+                <node concept="3JPx81" id="7yvC56ev_vw" role="2OqNvi">
+                  <node concept="2OqwBi" id="7yvC56ev_$S" role="25WWJ7">
+                    <node concept="37vLTw" id="7yvC56ev_yt" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6iY9P_czhu" resolve="node" />
+                    </node>
+                    <node concept="3TrEf2" id="7yvC56ev_SB" role="2OqNvi">
+                      <ref role="3Tt5mk" to="1o5n:6VsEH8K_enN" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="7yvC56evATG" role="9aQIa">
+                <node concept="3clFbS" id="7yvC56evATH" role="9aQI4">
+                  <node concept="34ab3g" id="6iY9P_bD4$" role="3cqZAp">
+                    <property role="35gtTG" value="warn" />
+                    <node concept="3cpWs3" id="6iY9P_bHEx" role="34bqiv">
+                      <node concept="37vLTw" id="6iY9P_cDeV" role="3uHU7w">
+                        <ref role="3cqZAo" node="6iY9P_czhu" resolve="node" />
+                      </node>
+                      <node concept="Xl_RD" id="6iY9P_bD4A" role="3uHU7B">
+                        <property role="Xl_RC" value="The concept in new concept type should be part of the 'from' or 'to' metamodel of the MethodsContainer! " />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="6iY9P_bI9q" role="3cqZAp" />
+                  <node concept="3cpWs6" id="6iY9P_bI9F" role="3cqZAp">
+                    <node concept="Xl_RD" id="6iY9P_cd$Y" role="3cqZAk">
+                      <property role="Xl_RC" value="" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2068,23 +2133,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="6iY9P_bI_h" role="3cqZAp" />
-        <node concept="3cpWs8" id="6iY9P_bJ2d" role="3cqZAp">
-          <node concept="3cpWsn" id="6iY9P_bJ2g" role="3cpWs9">
-            <property role="TrG5h" value="containigGroup" />
-            <node concept="3Tqbb2" id="6iY9P_bJ2b" role="1tU5fm">
-              <ref role="ehGHo" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
-            </node>
-            <node concept="2OqwBi" id="6iY9P_bKK6" role="33vP2m">
-              <node concept="37vLTw" id="6iY9P_bKrx" role="2Oq$k0">
-                <ref role="3cqZAo" node="6iY9P_bu9M" resolve="metContainer" />
-              </node>
-              <node concept="3TrEf2" id="6iY9P_bL7g" role="2OqNvi">
-                <ref role="3Tt5mk" to="1o5n:6pihOoLygyT" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6iY9P_bLo3" role="3cqZAp" />
         <node concept="3clFbJ" id="6iY9P_bMka" role="3cqZAp">
           <node concept="3clFbS" id="6iY9P_bMkc" role="3clFbx">
             <node concept="3cpWs6" id="6iY9P_cjv9" role="3cqZAp">
