@@ -66,7 +66,8 @@
       </concept>
       <concept id="5319102428749892554" name="CodeGeneration.structure.CodeGenMethodsContainer" flags="ng" index="1GnNiK" />
       <concept id="5319102428749892498" name="CodeGeneration.structure.CodeGenMethod" flags="ng" index="1GnNjC">
-        <property id="7792737264043439131" name="showOverride" index="1JpQ_q" />
+        <property id="2362760081174354155" name="multimethod" index="1v5eOH" />
+        <property id="7792737264043439131" name="override" index="1JpQ_q" />
         <reference id="7792737264043439120" name="overrideMet" index="1JpQ_h" />
       </concept>
     </language>
@@ -84,8 +85,10 @@
       <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <property id="4406892874363944218" name="partial" index="1ewt2y" />
         <property id="9017624775202900822" name="main" index="3uBway" />
+        <property id="113426295452105731" name="version" index="1x3Ciu" />
         <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
+        <child id="113426295451184958" name="equivalenceConcepts" index="1x79uz" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
         <property id="3979997632601093222" name="targetCard" index="2XbFU$" />
@@ -95,10 +98,17 @@
       </concept>
       <concept id="8717972784948762846" name="Models.structure.NamedGroup" flags="ng" index="2oAaVg" />
       <concept id="8717972784948762891" name="Models.structure.NamedConcept" flags="ng" index="2oAaW5" />
-      <concept id="8717972784948762981" name="Models.structure.RefToNamedConcept" flags="ng" index="2oAaXF" />
+      <concept id="8717972784948762981" name="Models.structure.RefToNamedConcept" flags="ng" index="2oAaXF">
+        <property id="113426295489659686" name="prefix" index="1ziRIV" />
+      </concept>
+      <concept id="8717972784948763026" name="Models.structure.RefToNamedGroup" flags="ng" index="2oAaYs" />
       <concept id="8717972784948763079" name="Models.structure.Subtype" flags="ng" index="2oAaZ9" />
       <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
         <reference id="3040834594469888400" name="ref" index="3aaZtz" />
+      </concept>
+      <concept id="113426295451161412" name="Models.structure.EquivalenceConcepts" flags="ng" index="1x7eJp">
+        <child id="113426295451174191" name="concepts" index="1x7bQM" />
+        <child id="113426295518036353" name="allGroups" index="1_67$s" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -150,6 +160,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="true" />
     <property role="TrG5h" value="Overriden" />
+    <property role="1x3Ciu" value="1656163091" />
     <node concept="2oAaW5" id="5xh0q4nsuSN" role="2oAaxa">
       <property role="TrG5h" value="A1" />
     </node>
@@ -167,9 +178,11 @@
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="5xh0q4nsuV1" role="2oAawB">
+        <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="5xh0q4nsuT4" resolve="B" />
       </node>
       <node concept="2oAaXF" id="5xh0q4nP7_3" role="2oAawD">
+        <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="5xh0q4nsuTu" resolve="A2" />
       </node>
     </node>
@@ -177,9 +190,11 @@
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="5xh0q4nP7_x" role="2oAawB">
+        <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="5xh0q4nsuTu" resolve="A2" />
       </node>
       <node concept="2oAaXF" id="5xh0q4nP7_i" role="2oAawD">
+        <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="5xh0q4nsuSN" resolve="A1" />
       </node>
     </node>
@@ -187,10 +202,52 @@
       <property role="2XbFUA" value="0..*" />
       <property role="2XbFU$" value="0..1" />
       <node concept="2oAaXF" id="5xh0q4nsuZe" role="2oAawB">
+        <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="5xh0q4nsuSN" resolve="A1" />
       </node>
       <node concept="2oAaXF" id="5xh0q4nsuZ1" role="2oAawD">
+        <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="5xh0q4nsuY0" resolve="C" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="7yvC56egCbZ" role="1x79uz">
+      <property role="TrG5h" value="A1" />
+      <node concept="2oAaXF" id="7yvC56egCc0" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="5xh0q4nsuSN" resolve="A1" />
+      </node>
+      <node concept="2oAaYs" id="7yvC56egCc1" role="1_67$s">
+        <ref role="3aaZtz" node="5xh0q4nsuSM" resolve="Overriden" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="7yvC56egCc2" role="1x79uz">
+      <property role="TrG5h" value="B" />
+      <node concept="2oAaXF" id="7yvC56egCc3" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="5xh0q4nsuT4" resolve="B" />
+      </node>
+      <node concept="2oAaYs" id="7yvC56egCc4" role="1_67$s">
+        <ref role="3aaZtz" node="5xh0q4nsuSM" resolve="Overriden" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="7yvC56egCc5" role="1x79uz">
+      <property role="TrG5h" value="A2" />
+      <node concept="2oAaXF" id="7yvC56egCc6" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="5xh0q4nsuTu" resolve="A2" />
+      </node>
+      <node concept="2oAaYs" id="7yvC56egCc7" role="1_67$s">
+        <ref role="3aaZtz" node="5xh0q4nsuSM" resolve="Overriden" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="7yvC56egCc8" role="1x79uz">
+      <property role="TrG5h" value="C" />
+      <node concept="2oAaXF" id="7yvC56egCc9" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="5xh0q4nsuY0" resolve="C" />
+      </node>
+      <node concept="2oAaYs" id="7yvC56egCca" role="1_67$s">
+        <ref role="3aaZtz" node="5xh0q4nsuSM" resolve="Overriden" />
       </node>
     </node>
   </node>
@@ -412,6 +469,7 @@
     </node>
     <node concept="1GnNjC" id="5xh0q4nsv20" role="CLm5g">
       <property role="TrG5h" value="testing" />
+      <property role="1v5eOH" value="true" />
       <node concept="37vLTG" id="5xh0q4nsv21" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="5xh0q4nsv22" role="1tU5fm">
@@ -542,29 +600,74 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="TrG5h" value="ModelOverriden" />
+    <property role="1x3Ciu" value="1669629303" />
     <ref role="19kf5F" node="5xh0q4nsuSM" resolve="Overriden" />
     <node concept="2oAaW5" id="5xh0q4nsxEp" role="2oAaxa">
       <property role="TrG5h" value="b" />
       <node concept="2oAaXF" id="5xh0q4nsxEK" role="2oAawq">
+        <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="5xh0q4nsuT4" resolve="B" />
       </node>
     </node>
     <node concept="2oAaW5" id="5xh0q4nsxEV" role="2oAaxa">
       <property role="TrG5h" value="a1" />
       <node concept="2oAaXF" id="5xh0q4nsxFq" role="2oAawq">
+        <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="5xh0q4nsuSN" resolve="A1" />
       </node>
     </node>
     <node concept="2oAaW5" id="5xh0q4nsxFF" role="2oAaxa">
       <property role="TrG5h" value="a2" />
       <node concept="2oAaXF" id="5xh0q4nsxH9" role="2oAawq">
+        <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="5xh0q4nsuTu" resolve="A2" />
       </node>
     </node>
     <node concept="2oAaW5" id="5xh0q4nsxGu" role="2oAaxa">
       <property role="TrG5h" value="c" />
       <node concept="2oAaXF" id="5xh0q4nsxGX" role="2oAawq">
+        <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="5xh0q4nsuY0" resolve="C" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="7yvC56egCcb" role="1x79uz">
+      <property role="TrG5h" value="b" />
+      <node concept="2oAaXF" id="7yvC56egCcc" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="5xh0q4nsxEp" resolve="b" />
+      </node>
+      <node concept="2oAaYs" id="7yvC56egCcd" role="1_67$s">
+        <ref role="3aaZtz" node="5xh0q4nsxEo" resolve="ModelOverriden" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="7yvC56egCce" role="1x79uz">
+      <property role="TrG5h" value="a1" />
+      <node concept="2oAaXF" id="7yvC56egCcf" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="5xh0q4nsxEV" resolve="a1" />
+      </node>
+      <node concept="2oAaYs" id="7yvC56egCcg" role="1_67$s">
+        <ref role="3aaZtz" node="5xh0q4nsxEo" resolve="ModelOverriden" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="7yvC56egCch" role="1x79uz">
+      <property role="TrG5h" value="a2" />
+      <node concept="2oAaXF" id="7yvC56egCci" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="5xh0q4nsxFF" resolve="a2" />
+      </node>
+      <node concept="2oAaYs" id="7yvC56egCcj" role="1_67$s">
+        <ref role="3aaZtz" node="5xh0q4nsxEo" resolve="ModelOverriden" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="7yvC56egCck" role="1x79uz">
+      <property role="TrG5h" value="c" />
+      <node concept="2oAaXF" id="7yvC56egCcl" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="5xh0q4nsxGu" resolve="c" />
+      </node>
+      <node concept="2oAaYs" id="7yvC56egCcm" role="1_67$s">
+        <ref role="3aaZtz" node="5xh0q4nsxEo" resolve="ModelOverriden" />
       </node>
     </node>
   </node>
