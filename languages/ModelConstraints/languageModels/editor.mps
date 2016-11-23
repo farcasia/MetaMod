@@ -420,8 +420,8 @@
     <property role="3GE5qa" value="Operations" />
     <ref role="1XX52x" to="1o5n:48EbtxmrRJI" resolve="AsSource" />
     <node concept="3EZMnI" id="48EbtxmrRMg" role="2wV5jI">
-      <node concept="3F0ifn" id="48EbtxmtmN8" role="3EZMnx">
-        <property role="3F0ifm" value="asSourceFor" />
+      <node concept="PMmxH" id="7yvC56dyYKE" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="3F0ifn" id="5X829TycDMX" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -458,8 +458,8 @@
     <property role="3GE5qa" value="Operations" />
     <ref role="1XX52x" to="1o5n:48EbtxmtnqF" resolve="AsTarget" />
     <node concept="3EZMnI" id="48Ebtxmtnu_" role="2wV5jI">
-      <node concept="3F0ifn" id="48EbtxmtnuA" role="3EZMnx">
-        <property role="3F0ifm" value="asTargetFor" />
+      <node concept="PMmxH" id="7yvC56dyZgm" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="3F0ifn" id="5X829TycEF5" role="3EZMnx">
         <property role="3F0ifm" value="(" />

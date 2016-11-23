@@ -772,14 +772,14 @@
   </node>
   <node concept="13h7C7" id="48EbtxmtKRW">
     <property role="3GE5qa" value="Operations" />
-    <ref role="13h7C2" to="1o5n:48EbtxmrRJI" resolve="AsSource" />
+    <ref role="13h7C2" to="1o5n:48EbtxmrRJI" resolve="AsSourceFor" />
     <node concept="13hLZK" id="48EbtxmtKRX" role="13h7CW">
       <node concept="3clFbS" id="48EbtxmtKRY" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="48EbtxmtKUv">
     <property role="3GE5qa" value="Operations" />
-    <ref role="13h7C2" to="1o5n:48EbtxmtnqF" resolve="AsTarget" />
+    <ref role="13h7C2" to="1o5n:48EbtxmtnqF" resolve="AsTargetFor" />
     <node concept="13hLZK" id="48EbtxmtKUw" role="13h7CW">
       <node concept="3clFbS" id="48EbtxmtKUx" role="2VODD2" />
     </node>
