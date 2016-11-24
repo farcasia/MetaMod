@@ -128,6 +128,12 @@
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -763,7 +769,12 @@
             <node concept="2Sf5sV" id="6iY9PyR7oK" role="37wK5m" />
           </node>
         </node>
-        <node concept="3clFbH" id="6iY9PwJJ9p" role="3cqZAp" />
+        <node concept="34ab3g" id="2U630q5Kr8b" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="2U630q5Kr8d" role="34bqiv">
+            <property role="Xl_RC" value="Before create class in runtime!" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="2Hrt$vl$bVQ" role="3cqZAp">
           <node concept="3cpWsn" id="2Hrt$vl$bVR" role="3cpWs9">
             <property role="TrG5h" value="codeGen" />
@@ -803,7 +814,12 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="32_s9JrxzkU" role="3cqZAp" />
+        <node concept="34ab3g" id="2U630q5KrdH" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="2U630q5KrdJ" role="34bqiv">
+            <property role="Xl_RC" value="After create class in runtime!" />
+          </node>
+        </node>
         <node concept="3clFbF" id="3Nl4fss$1av" role="3cqZAp">
           <node concept="2OqwBi" id="45NpebPmZQJ" role="3clFbG">
             <node concept="37vLTw" id="2Hrt$vl$cu_" role="2Oq$k0">
@@ -985,7 +1001,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="6iY9PwJKUE">
-    <property role="TrG5h" value="ComputeEquivalenceConceptsForMain" />
+    <property role="TrG5h" value="ComputeEquivalenceConcepts" />
     <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2S6ZIM" id="6iY9PwJKUF" role="2ZfVej">
       <node concept="3clFbS" id="6iY9PwJKUG" role="2VODD2">

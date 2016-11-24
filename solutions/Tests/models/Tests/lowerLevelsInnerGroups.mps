@@ -57,6 +57,7 @@
       <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <property id="4406892874363944218" name="partial" index="1ewt2y" />
         <property id="9017624775202900822" name="main" index="3uBway" />
+        <property id="113426295452105731" name="version" index="1x3Ciu" />
         <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
       </concept>
@@ -98,8 +99,9 @@
   </registry>
   <node concept="2oAaVg" id="2feKG9l3sMM">
     <property role="1ewt2y" value="false" />
-    <property role="3uBway" value="false" />
+    <property role="3uBway" value="true" />
     <property role="TrG5h" value="G" />
+    <property role="1x3Ciu" value="802522033" />
     <node concept="2oAaYs" id="2feKG9l3sMP" role="2oAaxa">
       <ref role="3aaZtz" node="2feKG9l3sMN" resolve="SG" />
     </node>
@@ -108,6 +110,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="TrG5h" value="SG" />
+    <property role="1x3Ciu" value="802522033" />
     <node concept="2oAaYs" id="2feKG9l3sMR" role="2oAaxa">
       <ref role="3aaZtz" node="2feKG9l3sMO" resolve="SSG" />
     </node>
@@ -116,6 +119,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="TrG5h" value="SSG" />
+    <property role="1x3Ciu" value="802522033" />
   </node>
   <node concept="1GnNiK" id="2feKG9l3sMT">
     <property role="1vYpmj" value="CodeGen" />
@@ -236,6 +240,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="TrG5h" value="ModelG" />
+    <property role="1x3Ciu" value="802522033" />
     <ref role="19kf5F" node="2feKG9l3sMM" resolve="G" />
   </node>
 </model>

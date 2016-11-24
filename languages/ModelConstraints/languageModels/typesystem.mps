@@ -852,6 +852,11 @@
           <property role="3SKdUp" value="metamodels." />
         </node>
       </node>
+      <node concept="3SKdUt" id="2U630q5IIfU" role="3cqZAp">
+        <node concept="3SKdUq" id="2U630q5IJdM" role="3SKWNk">
+          <property role="3SKdUp" value="TODO: treat the ConcepTypes depending on the group that the ConcepType is associated with." />
+        </node>
+      </node>
       <node concept="3clFbJ" id="7jr6xHY6oom" role="3cqZAp">
         <node concept="3clFbS" id="7jr6xHY6ooo" role="3clFbx">
           <node concept="3clFbF" id="7aCZPfZSHD0" role="3cqZAp">
@@ -1758,6 +1763,15 @@
     <node concept="1YaCAy" id="2U630q5u_LW" role="1YuTPh">
       <property role="TrG5h" value="conceptType1" />
       <ref role="1YaFvo" to="1o5n:7MhXM5kmc65" resolve="ConceptType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2U630q5ILsd">
+    <property role="TrG5h" value="typeof_Concept" />
+    <property role="3GE5qa" value="Types" />
+    <node concept="3clFbS" id="2U630q5ILse" role="18ibNy" />
+    <node concept="1YaCAy" id="2U630q5ILsg" role="1YuTPh">
+      <property role="TrG5h" value="concept" />
+      <ref role="1YaFvo" to="1o5n:2U630q5ILnD" resolve="Concept" />
     </node>
   </node>
 </model>
