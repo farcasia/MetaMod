@@ -296,10 +296,10 @@
       </concept>
     </language>
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods">
-      <concept id="4767673562711423982" name="GenericGroupMethods.structure.AsSource" flags="ng" index="khloQ">
+      <concept id="4767673562711423982" name="GenericGroupMethods.structure.AsSourceFor" flags="ng" index="khloQ">
         <reference id="4767673562711424009" name="refAssoc" index="khl7h" />
       </concept>
-      <concept id="4767673562711815851" name="GenericGroupMethods.structure.AsTarget" flags="ng" index="knPHN">
+      <concept id="4767673562711815851" name="GenericGroupMethods.structure.AsTargetFor" flags="ng" index="knPHN">
         <reference id="4767673562711815852" name="refAssoc" index="knPHO" />
       </concept>
       <concept id="8976227254846920304" name="GenericGroupMethods.structure.MethodsContainer" flags="ng" index="CLm5h">
@@ -19805,7 +19805,7 @@
   </node>
   <node concept="2oAaVg" id="2bNndrzLD8B">
     <property role="1ewt2y" value="false" />
-    <property role="3uBway" value="false" />
+    <property role="3uBway" value="true" />
     <property role="TrG5h" value="AssemblyCompArithAssIntFloat" />
     <property role="3GE5qa" value="Test0Variant1" />
     <node concept="2oAaYs" id="2bNndrzLD8C" role="2oAaxa">

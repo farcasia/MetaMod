@@ -3064,7 +3064,7 @@
               <node concept="3fqX7Q" id="2$vcPaA9AD8" role="3clFbw">
                 <node concept="2OqwBi" id="2$vcPaA9ADa" role="3fr31v">
                   <node concept="3otQA" id="2$vcPaA9ADb" role="2Oq$k0">
-                    <ref role="37wK5l" node="2$vcPa_ZDW8" resolve="allSuperTypes" />
+                    <ref role="37wK5l" node="2$vcPa_ZDW8" resolve="superTypeOf" />
                     <node concept="37vLTw" id="2$vcPaA9ADc" role="37wK5m">
                       <ref role="3cqZAo" node="2$vcPaA9ukn" resolve="inputGroup" />
                     </node>
@@ -3177,7 +3177,7 @@
     </node>
     <node concept="CLx5B" id="2$vcPaA9C1e" role="CLm5g" />
     <node concept="1GnNjC" id="2$vcPa_ZDW8" role="CLm5g">
-      <property role="TrG5h" value="allSuperTypes" />
+      <property role="TrG5h" value="superTypeOf" />
       <property role="1v5eOH" value="true" />
       <node concept="37vLTG" id="2$vcPa_ZDW9" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
@@ -3201,25 +3201,6 @@
       </node>
     </node>
     <node concept="CLx5B" id="2$vcPaA9Dck" role="CLm5g" />
-    <node concept="1GnNjC" id="2$vcPaA9Dd3" role="CLm5g">
-      <property role="TrG5h" value="interpret" />
-      <property role="1v5eOH" value="true" />
-      <node concept="37vLTG" id="2$vcPaA9Dd4" role="3clF46">
-        <property role="TrG5h" value="inputGroup" />
-        <node concept="1l_8MK" id="2$vcPaA9Dd5" role="1tU5fm">
-          <ref role="1l_bkj" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="2$vcPaA9Dd6" role="3clF47">
-        <node concept="3cpWs6" id="2$vcPaA9DpN" role="3cqZAp">
-          <node concept="10Nm6u" id="2$vcPaA9DpZ" role="3cqZAk" />
-        </node>
-      </node>
-      <node concept="3uibUv" id="2$vcPaA9DdD" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-      </node>
-    </node>
-    <node concept="CLx5B" id="2$vcPaAsNM2" role="CLm5g" />
     <node concept="1GnNjC" id="2$vcPaAsNN1" role="CLm5g">
       <property role="TrG5h" value="operationType" />
       <property role="1v5eOH" value="true" />
@@ -3268,10 +3249,136 @@
         <property role="TrG5h" value="type" />
         <node concept="CMjq$" id="70$7KiYpXB1" role="1tU5fm" />
       </node>
-      <node concept="3clFbS" id="70$7KiYpX7F" role="3clF47" />
-      <node concept="3cqZAl" id="70$7KiYsq9v" role="3clF45" />
+      <node concept="3clFbS" id="70$7KiYpX7F" role="3clF47">
+        <node concept="3cpWs6" id="cjbULZSKXT" role="3cqZAp">
+          <node concept="3clFbT" id="cjbULZSKY4" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="cjbULZSKds" role="3clF45" />
     </node>
     <node concept="CLx5B" id="2$vcPaA9C1p" role="CLm5g" />
+    <node concept="1GnNjC" id="cjbULZSIF8" role="CLm5g">
+      <property role="TrG5h" value="replace" />
+      <property role="1v5eOH" value="true" />
+      <node concept="37vLTG" id="cjbULZSIF9" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="cjbULZSIFa" role="1tU5fm">
+          <ref role="1l_bkj" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="cjbULZSIFb" role="3clF46">
+        <property role="TrG5h" value="type1" />
+        <node concept="CMjq$" id="cjbULZSIFc" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="cjbULZSIGi" role="3clF46">
+        <property role="TrG5h" value="type2" />
+        <node concept="CMjq$" id="cjbULZSIGs" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="cjbULZSIFd" role="3clF47">
+        <node concept="3cpWs6" id="cjbULZSKYf" role="3cqZAp">
+          <node concept="3clFbT" id="cjbULZSKYm" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="cjbULZSIGB" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="cjbULZSIDN" role="CLm5g" />
+    <node concept="1GnNjC" id="cjbULZSLKO" role="CLm5g">
+      <property role="TrG5h" value="inferSubType" />
+      <property role="1v5eOH" value="false" />
+      <node concept="37vLTG" id="cjbULZSLKP" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="cjbULZSLKQ" role="1tU5fm">
+          <ref role="1l_bkj" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="cjbULZSLKR" role="3clF46">
+        <property role="TrG5h" value="type1" />
+        <node concept="CMjq$" id="cjbULZSLKS" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="cjbULZSLKT" role="3clF46">
+        <property role="TrG5h" value="type2" />
+        <node concept="CMjq$" id="cjbULZSLKU" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="cjbULZSLKV" role="3clF47">
+        <node concept="3SKdUt" id="cjbULZSLQe" role="3cqZAp">
+          <node concept="3SKdUq" id="cjbULZSLQs" role="3SKWNk">
+            <property role="3SKdUp" value="TODO only with the generic operations that we have in Common!" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="cjbULZSLKW" role="3cqZAp">
+          <node concept="3clFbT" id="cjbULZSLKX" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="cjbULZSLKY" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="cjbULZSLQw" role="CLm5g" />
+    <node concept="1GnNjC" id="cjbULZSLTd" role="CLm5g">
+      <property role="TrG5h" value="inferSuperType" />
+      <node concept="37vLTG" id="cjbULZSLTe" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="cjbULZSLTf" role="1tU5fm">
+          <ref role="1l_bkj" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="cjbULZSLUN" role="3clF46">
+        <property role="TrG5h" value="type1" />
+        <node concept="CMjq$" id="cjbULZSLUV" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="cjbULZSLV6" role="3clF46">
+        <property role="TrG5h" value="type2" />
+        <node concept="CMjq$" id="cjbULZSLVg" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="cjbULZSLTg" role="3clF47">
+        <node concept="3SKdUt" id="cjbULZSLW1" role="3cqZAp">
+          <node concept="3SKdUq" id="cjbULZSLW2" role="3SKWNk">
+            <property role="3SKdUp" value="TODO only with the generic operations that we have in Common!" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="cjbULZSLVq" role="3cqZAp">
+          <node concept="3clFbT" id="cjbULZSLVx" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="cjbULZSLVn" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="cjbULZSLIZ" role="CLm5g" />
+    <node concept="1GnNjC" id="cjbULZSLYT" role="CLm5g">
+      <property role="TrG5h" value="inferSameType" />
+      <node concept="37vLTG" id="cjbULZSLYU" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="cjbULZSLYV" role="1tU5fm">
+          <ref role="1l_bkj" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="cjbULZSLYW" role="3clF46">
+        <property role="TrG5h" value="type1" />
+        <node concept="CMjq$" id="cjbULZSLYX" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="cjbULZSLYY" role="3clF46">
+        <property role="TrG5h" value="type2" />
+        <node concept="CMjq$" id="cjbULZSLYZ" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="cjbULZSLZ0" role="3clF47">
+        <node concept="3SKdUt" id="cjbULZSLZ1" role="3cqZAp">
+          <node concept="3SKdUq" id="cjbULZSLZ2" role="3SKWNk">
+            <property role="3SKdUp" value="TODO only with the generic operations that we have in Common!" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="cjbULZSLZ3" role="3cqZAp">
+          <node concept="3clFbT" id="cjbULZSLZ4" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="cjbULZSLZ5" role="3clF45" />
+    </node>
     <node concept="1vbBhR" id="2$vcPaA9B$0" role="1ukcCD">
       <property role="TrG5h" value="TypeSystemETComnon" />
     </node>

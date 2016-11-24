@@ -418,7 +418,7 @@
   </node>
   <node concept="24kQdi" id="48EbtxmrRL5">
     <property role="3GE5qa" value="Operations" />
-    <ref role="1XX52x" to="1o5n:48EbtxmrRJI" resolve="AsSource" />
+    <ref role="1XX52x" to="1o5n:48EbtxmrRJI" resolve="AsSourceFor" />
     <node concept="3EZMnI" id="48EbtxmrRMg" role="2wV5jI">
       <node concept="PMmxH" id="7yvC56dyYKE" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -456,7 +456,7 @@
   </node>
   <node concept="24kQdi" id="48EbtxmtnsV">
     <property role="3GE5qa" value="Operations" />
-    <ref role="1XX52x" to="1o5n:48EbtxmtnqF" resolve="AsTarget" />
+    <ref role="1XX52x" to="1o5n:48EbtxmtnqF" resolve="AsTargetFor" />
     <node concept="3EZMnI" id="48Ebtxmtnu_" role="2wV5jI">
       <node concept="PMmxH" id="7yvC56dyZgm" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
