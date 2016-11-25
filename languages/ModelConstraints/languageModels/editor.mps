@@ -901,27 +901,6 @@
       <node concept="2iRfu4" id="6pihOoKPclI" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="6pihOoKTC3P">
-    <property role="3GE5qa" value="Operations" />
-    <ref role="1XX52x" to="1o5n:6pihOoKTBNq" resolve="modelType" />
-    <node concept="3EZMnI" id="6pihOoKTC3R" role="2wV5jI">
-      <node concept="PMmxH" id="6pihOoKTEFJ" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      </node>
-      <node concept="3F0ifn" id="6pihOoKTC44" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
-      </node>
-      <node concept="3F1sOY" id="6pihOoKTDW0" role="3EZMnx">
-        <ref role="1NtTu8" to="1o5n:6pihOoKTC3I" />
-      </node>
-      <node concept="3F0ifn" id="6pihOoKTC4c" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
-      </node>
-      <node concept="2iRfu4" id="6pihOoKTC3U" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="21UhnxnHf2s">
     <property role="3GE5qa" value="TransformationRelated" />
     <ref role="1XX52x" to="1o5n:21UhnxnHeMn" resolve="IndexToTransformation" />

@@ -1495,30 +1495,6 @@
       <ref role="1YaFvo" to="1o5n:6pihOoKPbzv" resolve="addToContents" />
     </node>
   </node>
-  <node concept="1YbPZF" id="6pihOoKTF1c">
-    <property role="TrG5h" value="typeof_modelType" />
-    <property role="3GE5qa" value="Operations" />
-    <node concept="3clFbS" id="6pihOoKTF1d" role="18ibNy">
-      <node concept="1Z5TYs" id="6pihOoKTF1j" role="3cqZAp">
-        <node concept="mw_s8" id="6pihOoKTF26" role="1ZfhKB">
-          <node concept="2c44tf" id="6pihOoKTF22" role="mwGJk">
-            <node concept="3cqZAl" id="6pihOoKTF2p" role="2c44tc" />
-          </node>
-        </node>
-        <node concept="mw_s8" id="6pihOoKTF1t" role="1ZfhK$">
-          <node concept="1Z2H0r" id="6pihOoKTF1p" role="mwGJk">
-            <node concept="1YBJjd" id="6pihOoKTF1I" role="1Z2MuG">
-              <ref role="1YBMHb" node="6pihOoKTF1f" resolve="modelType" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="6pihOoKTF1f" role="1YuTPh">
-      <property role="TrG5h" value="modelType" />
-      <ref role="1YaFvo" to="1o5n:6pihOoKTBNq" resolve="modelType" />
-    </node>
-  </node>
   <node concept="2sgARr" id="6pihOoLuPNl">
     <property role="3GE5qa" value="Types" />
     <property role="TrG5h" value="supertypesOf_GroupType" />

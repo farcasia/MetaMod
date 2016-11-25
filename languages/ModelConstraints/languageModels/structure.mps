@@ -467,21 +467,6 @@
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6pihOoKTBNq">
-    <property role="3GE5qa" value="Operations" />
-    <property role="TrG5h" value="modelType" />
-    <property role="34LRSv" value="model type" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="PrWs8" id="6pihOoKTBNr" role="PzmwI">
-      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
-    </node>
-    <node concept="1TJgyj" id="6pihOoKTC3I" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="exp" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="21UhnxnHeMn">
     <property role="TrG5h" value="IndexToTransformation" />
     <property role="3GE5qa" value="TransformationRelated" />
