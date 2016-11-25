@@ -468,7 +468,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6pihOoKTBNq">
-    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="3GE5qa" value="Operations" />
     <property role="TrG5h" value="modelType" />
     <property role="34LRSv" value="model type" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
@@ -519,16 +519,17 @@
   </node>
   <node concept="1TIwiD" id="2U630q5ILnD">
     <property role="3GE5qa" value="Types" />
-    <property role="TrG5h" value="Concept" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
-    <node concept="1TJgyi" id="2U630q5IMce" role="1TKVEl">
-      <property role="TrG5h" value="prefix" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="2U630q5IMcc" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="namedConcept" />
-      <ref role="20lvS9" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+    <property role="TrG5h" value="ConceptT" />
+    <property role="34LRSv" value="Concept&lt; &gt;" />
+    <ref role="1TJDcQ" node="7MhXM5kmc65" resolve="ConceptType" />
+  </node>
+  <node concept="1TIwiD" id="2roNPs2vueE">
+    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="TrG5h" value="type" />
+    <property role="34LRSv" value="type" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="PrWs8" id="2roNPs2vueF" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
     </node>
   </node>
 </model>
