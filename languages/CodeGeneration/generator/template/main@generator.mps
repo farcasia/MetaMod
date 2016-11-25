@@ -75,9 +75,6 @@
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
@@ -152,6 +149,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -2093,7 +2091,12 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="23adsq01Co9" role="3cqZAp" />
+                <node concept="3clFbH" id="2roNPs1wvf7" role="3cqZAp" />
+                <node concept="3SKdUt" id="2roNPs1wrra" role="3cqZAp">
+                  <node concept="3SKdUq" id="2roNPs1wz34" role="3SKWNk">
+                    <property role="3SKdUp" value="We assume that the last group is the innerGroups is the principal group." />
+                  </node>
+                </node>
                 <node concept="3clFbF" id="23adsq01Coa" role="3cqZAp">
                   <node concept="2YIFZM" id="23adsq01Cob" role="3clFbG">
                     <ref role="37wK5l" to="k7g3:~Collections.sort(java.util.List,java.util.Comparator):void" resolve="sort" />
@@ -2101,9 +2104,24 @@
                     <node concept="37vLTw" id="23adsq01Coc" role="37wK5m">
                       <ref role="3cqZAo" node="23adsq01CnO" resolve="listCodeGenMet" />
                     </node>
-                    <node concept="10M0yZ" id="23adsq01Cod" role="37wK5m">
-                      <ref role="3cqZAo" to="wz6r:5xh0q4nDrKl" resolve="conceptTypeSpecificToGeneral" />
-                      <ref role="1PxDUh" to="wz6r:6e92Hp0Zr$o" resolve="Utils" />
+                    <node concept="2OqwBi" id="2roNPs1uUfr" role="37wK5m">
+                      <node concept="2ShNRf" id="2roNPs1uKCh" role="2Oq$k0">
+                        <node concept="1pGfFk" id="2roNPs1uQun" role="2ShVmc">
+                          <ref role="37wK5l" to="wz6r:2roNPs1tQP3" resolve="ComparatorPerGroup" />
+                          <node concept="2OqwBi" id="2roNPs1whxE" role="37wK5m">
+                            <node concept="2OqwBi" id="2roNPs1w8Q7" role="2Oq$k0">
+                              <node concept="1iwH7S" id="2roNPs1w54q" role="2Oq$k0" />
+                              <node concept="1bhEwm" id="2roNPs1wcHH" role="2OqNvi">
+                                <ref role="1bhEwl" node="23adsq01q9J" resolve="innerGroups" />
+                              </node>
+                            </node>
+                            <node concept="1yVyf7" id="2roNPs1wnD4" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OwXpG" id="2roNPs1uXp2" role="2OqNvi">
+                        <ref role="2Oxat5" to="wz6r:2roNPs1tO1y" resolve="conceptTypeSpecificToGeneral" />
+                      </node>
                     </node>
                   </node>
                 </node>
