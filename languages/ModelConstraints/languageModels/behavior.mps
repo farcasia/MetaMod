@@ -764,21 +764,21 @@
     </node>
   </node>
   <node concept="13h7C7" id="48EbtxmrL8p">
-    <property role="3GE5qa" value="Operations" />
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
     <ref role="13h7C2" to="1o5n:1ky6Xl0JlVl" resolve="ConceptsOfType" />
     <node concept="13hLZK" id="48EbtxmrL8q" role="13h7CW">
       <node concept="3clFbS" id="48EbtxmrL8r" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="48EbtxmtKRW">
-    <property role="3GE5qa" value="Operations" />
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
     <ref role="13h7C2" to="1o5n:48EbtxmrRJI" resolve="AsSourceFor" />
     <node concept="13hLZK" id="48EbtxmtKRX" role="13h7CW">
       <node concept="3clFbS" id="48EbtxmtKRY" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="48EbtxmtKUv">
-    <property role="3GE5qa" value="Operations" />
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
     <ref role="13h7C2" to="1o5n:48EbtxmtnqF" resolve="AsTargetFor" />
     <node concept="13hLZK" id="48EbtxmtKUw" role="13h7CW">
       <node concept="3clFbS" id="48EbtxmtKUx" role="2VODD2" />
@@ -1670,7 +1670,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1CbK6AekI79">
-    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="3GE5qa" value="Operations.UpdateOperations" />
     <ref role="13h7C2" to="1o5n:1CbK6AejRJj" resolve="DeleteConcept" />
     <node concept="13hLZK" id="1CbK6AekI7a" role="13h7CW">
       <node concept="3clFbS" id="1CbK6AekI7b" role="2VODD2" />
@@ -2617,7 +2617,7 @@
     <node concept="3Tm1VV" id="6iY9P_8QWa" role="1B3o_S" />
   </node>
   <node concept="13h7C7" id="6iY9P_bSQx">
-    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="3GE5qa" value="Operations.UpdateOperations" />
     <ref role="13h7C2" to="1o5n:6VsEH8K_enM" resolve="NewConceptType" />
     <node concept="13i0hz" id="6iY9P_bSQ$" role="13h7CS">
       <property role="TrG5h" value="createPrefix" />

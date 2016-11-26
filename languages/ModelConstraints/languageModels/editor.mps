@@ -35,6 +35,7 @@
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
       </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -378,7 +379,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1ky6Xl0JlVt">
-    <property role="3GE5qa" value="Operations" />
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
     <ref role="1XX52x" to="1o5n:1ky6Xl0JlVl" resolve="ConceptsOfType" />
     <node concept="3EZMnI" id="1ky6Xl0JyVJ" role="2wV5jI">
       <node concept="2iRfu4" id="1ky6Xl0JyVK" role="2iSdaV" />
@@ -399,7 +400,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1ky6Xl0Obva">
-    <property role="3GE5qa" value="Operations" />
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
     <ref role="1XX52x" to="1o5n:1ky6Xl0Obv0" resolve="IsTypeOf" />
     <node concept="3EZMnI" id="1ky6Xl0Obvc" role="2wV5jI">
       <node concept="PMmxH" id="1ky6Xl0Obvm" role="3EZMnx">
@@ -420,7 +421,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="48EbtxmrRL5">
-    <property role="3GE5qa" value="Operations" />
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
     <ref role="1XX52x" to="1o5n:48EbtxmrRJI" resolve="AsSourceFor" />
     <node concept="3EZMnI" id="48EbtxmrRMg" role="2wV5jI">
       <node concept="PMmxH" id="7yvC56dyYKE" role="3EZMnx">
@@ -458,7 +459,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="48EbtxmtnsV">
-    <property role="3GE5qa" value="Operations" />
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
     <ref role="1XX52x" to="1o5n:48EbtxmtnqF" resolve="AsTargetFor" />
     <node concept="3EZMnI" id="48Ebtxmtnu_" role="2wV5jI">
       <node concept="PMmxH" id="7yvC56dyZgm" role="3EZMnx">
@@ -553,7 +554,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6VsEH8K_34q">
-    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="3GE5qa" value="Operations.UpdateOperations" />
     <ref role="1XX52x" to="1o5n:6VsEH8K$Xct" resolve="NewRelationType" />
     <node concept="3EZMnI" id="6VsEH8K_efl" role="2wV5jI">
       <node concept="3F0ifn" id="6VsEH8K_efs" role="3EZMnx">
@@ -612,7 +613,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6VsEH8K_enU">
-    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="3GE5qa" value="Operations.UpdateOperations" />
     <ref role="1XX52x" to="1o5n:6VsEH8K_enM" resolve="NewConceptType" />
     <node concept="3EZMnI" id="6VsEH8K_enW" role="2wV5jI">
       <ref role="1ERwB7" node="6iY9P_bZ$0" resolve="NewConceptTypePrefix" />
@@ -688,7 +689,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6VsEH8K_rI2">
-    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="3GE5qa" value="Operations.UpdateOperations" />
     <ref role="1XX52x" to="1o5n:6VsEH8K_rHU" resolve="SetSource" />
     <node concept="3EZMnI" id="6VsEH8KA65h" role="2wV5jI">
       <node concept="PMmxH" id="2viqW8DzGoQ" role="3EZMnx">
@@ -709,7 +710,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6VsEH8K_rLw">
-    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="3GE5qa" value="Operations.UpdateOperations" />
     <ref role="1XX52x" to="1o5n:6VsEH8K_fmZ" resolve="SetName" />
     <node concept="3EZMnI" id="6VsEH8KA5ZX" role="2wV5jI">
       <node concept="PMmxH" id="2viqW8DzGoA" role="3EZMnx">
@@ -730,7 +731,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6VsEH8K_rOY">
-    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="3GE5qa" value="Operations.UpdateOperations" />
     <ref role="1XX52x" to="1o5n:6VsEH8K_rNY" resolve="SetTarget" />
     <node concept="3EZMnI" id="6VsEH8KA66C" role="2wV5jI">
       <node concept="PMmxH" id="2viqW8DzGp8" role="3EZMnx">
@@ -802,7 +803,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3EkoJDP8KsN">
-    <property role="3GE5qa" value="Operations" />
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
     <ref role="1XX52x" to="1o5n:3EkoJDP8Koo" resolve="AsConceptType" />
     <node concept="3EZMnI" id="3EkoJDP8MIu" role="2wV5jI">
       <node concept="3F0ifn" id="3EkoJDP8MI_" role="3EZMnx">
@@ -823,7 +824,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1CbK6AekaXN">
-    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="3GE5qa" value="Operations.UpdateOperations" />
     <ref role="1XX52x" to="1o5n:1CbK6AejRJj" resolve="DeleteConcept" />
     <node concept="3EZMnI" id="1CbK6Aekxls" role="2wV5jI">
       <node concept="2iRfu4" id="1CbK6Aekxlv" role="2iSdaV" />
@@ -844,7 +845,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3u2$VLDb6iC">
-    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="3GE5qa" value="Operations.UpdateOperations" />
     <ref role="1XX52x" to="1o5n:3u2$VLDb6e8" resolve="NewGroupType" />
     <node concept="3EZMnI" id="3u2$VLDb863" role="2wV5jI">
       <node concept="3F0ifn" id="3u2$VLDb86a" role="3EZMnx">
@@ -874,14 +875,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="3u2$VLDbam7">
-    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="3GE5qa" value="Operations.UpdateOperations" />
     <ref role="1XX52x" to="1o5n:3u2$VLDb9Sj" resolve="addRootToModelSpace" />
     <node concept="PMmxH" id="3u2$VLDbamc" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="6pihOoKPbzD">
-    <property role="3GE5qa" value="Operations.WriteOperations" />
+    <property role="3GE5qa" value="Operations.UpdateOperations" />
     <ref role="1XX52x" to="1o5n:6pihOoKPbzv" resolve="addToContents" />
     <node concept="3EZMnI" id="6pihOoKPclF" role="2wV5jI">
       <node concept="PMmxH" id="6pihOoKPclP" role="3EZMnx">
@@ -932,7 +933,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4hQr7qF2jc_">
-    <property role="3GE5qa" value="Operations" />
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
     <ref role="1XX52x" to="1o5n:4hQr7qF2iR2" resolve="GetModel" />
     <node concept="PMmxH" id="4hQr7qF2jDG" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -1063,6 +1064,54 @@
       <node concept="Vb9p2" id="2roNPs2vwZt" role="3F10Kt">
         <property role="Vbekb" value="BOLD" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2roNPs2zAkY">
+    <property role="3GE5qa" value="Operations.NavigationOperations.BooleanOperations" />
+    <ref role="1XX52x" to="1o5n:2roNPs2zuUF" resolve="collectImmediateSuperConcepts" />
+    <node concept="PMmxH" id="2roNPs2zAl0" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="2roNPs2Dm0q">
+    <property role="3GE5qa" value="Operations.NavigationOperations.BooleanOperations" />
+    <property role="TrG5h" value="CompleteIsRelationConcept" />
+    <ref role="1XX52x" to="1o5n:2roNPs2zAYL" resolve="IIsRelationConcept" />
+    <node concept="3EZMnI" id="2roNPs2AFgT" role="2wV5jI">
+      <node concept="PMmxH" id="2roNPs2zB10" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="2roNPs2AFh4" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F1sOY" id="2roNPs2AFhD" role="3EZMnx">
+        <ref role="1NtTu8" to="1o5n:2roNPs2AF6S" />
+      </node>
+      <node concept="3F0ifn" id="2roNPs2AFhc" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="2iRfu4" id="2roNPs2AFgU" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2roNPs2DmVk">
+    <property role="3GE5qa" value="Operations.NavigationOperations.BooleanOperations" />
+    <ref role="1XX52x" to="1o5n:2roNPs2zuUe" resolve="isSameConcept" />
+    <node concept="PMmxH" id="2roNPs2DmVm" role="2wV5jI">
+      <ref role="PMmxG" node="2roNPs2Dm0q" resolve="CompleteIsRelationConcept" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2roNPs2Dn0N">
+    <property role="3GE5qa" value="Operations.NavigationOperations.BooleanOperations" />
+    <ref role="1XX52x" to="1o5n:2roNPs2zuN6" resolve="isSubConcept" />
+    <node concept="PMmxH" id="2roNPs2Dn1k" role="2wV5jI">
+      <ref role="PMmxG" node="2roNPs2Dm0q" resolve="CompleteIsRelationConcept" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2roNPs2Dn1r">
+    <property role="3GE5qa" value="Operations.NavigationOperations.BooleanOperations" />
+    <ref role="1XX52x" to="1o5n:2roNPs2zuNV" resolve="isSuperConcept" />
+    <node concept="PMmxH" id="2roNPs2Dn1t" role="2wV5jI">
+      <ref role="PMmxG" node="2roNPs2Dm0q" resolve="CompleteIsRelationConcept" />
     </node>
   </node>
 </model>
