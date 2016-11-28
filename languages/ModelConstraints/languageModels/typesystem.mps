@@ -2239,8 +2239,8 @@
                 <node concept="37vLTw" id="2roNPs2vyLQ" role="2Oq$k0">
                   <ref role="3cqZAo" node="2roNPs2vyk$" resolve="conceptT" />
                 </node>
-                <node concept="3TrEf2" id="2roNPs2vzgk" role="2OqNvi">
-                  <ref role="3Tt5mk" to="1o5n:7MhXM5kmxDd" />
+                <node concept="3TrEf2" id="154Paq6IJUD" role="2OqNvi">
+                  <ref role="3Tt5mk" to="1o5n:154Paq6EErb" />
                 </node>
               </node>
             </node>
@@ -2263,7 +2263,7 @@
                   <ref role="3cqZAo" node="2roNPs2vyk$" resolve="conceptT" />
                 </node>
                 <node concept="3TrcHB" id="2roNPs2vB$o" role="2OqNvi">
-                  <ref role="3TsBF5" to="1o5n:6iY9P$YnbD" resolve="prefix" />
+                  <ref role="3TsBF5" to="1o5n:154Paq6EEnD" resolve="prefix" />
                 </node>
               </node>
             </node>
@@ -2333,30 +2333,6 @@
     <node concept="1YaCAy" id="2roNPs2_NBx" role="1YuTPh">
       <property role="TrG5h" value="isSubConcept" />
       <ref role="1YaFvo" to="1o5n:2roNPs2zuN6" resolve="isSubConcept" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="2roNPs2_NRY">
-    <property role="TrG5h" value="typeof_isSuperConcept" />
-    <property role="3GE5qa" value="Operations.NavigationOperations.BooleanOperations" />
-    <node concept="3clFbS" id="2roNPs2_NRZ" role="18ibNy">
-      <node concept="1Z5TYs" id="2roNPs2_NSq" role="3cqZAp">
-        <node concept="mw_s8" id="2roNPs2_NSr" role="1ZfhKB">
-          <node concept="2c44tf" id="2roNPs2_NSs" role="mwGJk">
-            <node concept="10P_77" id="2roNPs2_NSt" role="2c44tc" />
-          </node>
-        </node>
-        <node concept="mw_s8" id="2roNPs2_NSu" role="1ZfhK$">
-          <node concept="1Z2H0r" id="2roNPs2_NSv" role="mwGJk">
-            <node concept="1YBJjd" id="2roNPs2_O_w" role="1Z2MuG">
-              <ref role="1YBMHb" node="2roNPs2_NS1" resolve="isSuperConcept" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="2roNPs2_NS1" role="1YuTPh">
-      <property role="TrG5h" value="isSuperConcept" />
-      <ref role="1YaFvo" to="1o5n:2roNPs2zuNV" resolve="isSuperConcept" />
     </node>
   </node>
   <node concept="1YbPZF" id="2roNPs2_ONZ">

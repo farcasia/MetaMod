@@ -541,18 +541,6 @@
       <ref role="PrY4T" node="2roNPs2zAYL" resolve="IIsRelationConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2roNPs2zuNV">
-    <property role="3GE5qa" value="Operations.NavigationOperations.BooleanOperations" />
-    <property role="TrG5h" value="isSuperConcept" />
-    <property role="34LRSv" value="isSuperConcept" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="PrWs8" id="2roNPs2zuSf" role="PzmwI">
-      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
-    </node>
-    <node concept="PrWs8" id="2roNPs2zBfM" role="PzmwI">
-      <ref role="PrY4T" node="2roNPs2zAYL" resolve="IIsRelationConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2roNPs2zuUF">
     <property role="3GE5qa" value="Operations.NavigationOperations.BooleanOperations" />
     <property role="TrG5h" value="collectImmediateSuperConcepts" />

@@ -1107,13 +1107,6 @@
       <ref role="PMmxG" node="2roNPs2Dm0q" resolve="CompleteIsRelationConcept" />
     </node>
   </node>
-  <node concept="24kQdi" id="2roNPs2Dn1r">
-    <property role="3GE5qa" value="Operations.NavigationOperations.BooleanOperations" />
-    <ref role="1XX52x" to="1o5n:2roNPs2zuNV" resolve="isSuperConcept" />
-    <node concept="PMmxH" id="2roNPs2Dn1t" role="2wV5jI">
-      <ref role="PMmxG" node="2roNPs2Dm0q" resolve="CompleteIsRelationConcept" />
-    </node>
-  </node>
   <node concept="1h_SRR" id="154Paq6EHbA">
     <property role="3GE5qa" value="Types" />
     <property role="TrG5h" value="ConceptTPrefix" />
