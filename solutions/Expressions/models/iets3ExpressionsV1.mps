@@ -17097,5 +17097,38 @@
       <node concept="10Oyi0" id="1glZBhiERP8" role="3clF45" />
     </node>
   </node>
+  <node concept="1GnNiK" id="1glZBhiKwzR">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="SimpleTypes.Boolean.SystemWide" />
+    <property role="TrG5h" value="SystemWide_Boolean" />
+    <ref role="1GHRfG" node="2$vcPaAtNOg" resolve="Boolean" />
+    <node concept="1vbBpf" id="1glZBhiKy2Z" role="1ukcCD">
+      <ref role="1vbBpc" node="70$7KiYrYtl" resolve="SystemWide" />
+    </node>
+    <node concept="1GnNjC" id="1glZBhiKy3h" role="CLm5g">
+      <property role="TrG5h" value="createBooleanType" />
+      <property role="1JpQ_q" value="true" />
+      <ref role="1JpQ_h" node="70$7KiYrKRq" resolve="createBooleanType" />
+      <node concept="37vLTG" id="1glZBhiKy3i" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="1glZBhiKy3j" role="1tU5fm">
+          <ref role="1l_bkj" node="2$vcPaAtNOg" resolve="Boolean" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1glZBhiKy3k" role="3clF47">
+        <node concept="3cpWs6" id="1glZBhiKAzq" role="3cqZAp">
+          <node concept="2OqwBi" id="1glZBhiKC9v" role="3cqZAk">
+            <node concept="1ui4Ww" id="1glZBhiKC7s" role="2Oq$k0">
+              <ref role="1ui4Wx" node="2$vcPaAtOCy" resolve="BooleanType" />
+            </node>
+            <node concept="$DiNX" id="1glZBhiKCk1" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="2FfhBJ" id="1glZBhiK_41" role="3clF45">
+        <ref role="2nVB9H" node="4wJBZF9F9UE" resolve="Type" />
+      </node>
+    </node>
+  </node>
 </model>
 
