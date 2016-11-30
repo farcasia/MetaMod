@@ -19,6 +19,7 @@
     <import index="wz6r" ref="r:395bdffb-840e-4312-80d8-b18c172eee46(RuntimeClasses.runtime)" />
     <import index="tpfo" ref="r:00000000-0000-4000-0000-011c89590518(jetbrains.mps.baseLanguage.regexp.structure)" />
     <import index="epq1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
+    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" implicit="true" />
   </imports>
   <registry>
@@ -156,6 +157,7 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
@@ -298,6 +300,7 @@
       </concept>
       <concept id="2799215141023560643" name="GenericGroupMethods.structure.VarRefIsRelationConcept" flags="ng" index="$gBMk" />
       <concept id="2799215141022723726" name="GenericGroupMethods.structure.isSameConcept" flags="ng" index="$li7p" />
+      <concept id="2799215141022723755" name="GenericGroupMethods.structure.collectImmediateSuperConcepts" flags="ng" index="$li7W" />
       <concept id="2799215141022756785" name="GenericGroupMethods.structure.IIsRelationConcept" flags="ng" index="$lE3A">
         <child id="2799215141023560120" name="paramIsRelationConcept" index="$gBVJ" />
       </concept>
@@ -321,6 +324,11 @@
       <concept id="4221107578599573016" name="GenericGroupMethods.structure.AsConceptType" flags="ng" index="1fHQjy">
         <child id="4221107578599582653" name="conceptType" index="1fHO_7" />
       </concept>
+      <concept id="6741447020959204252" name="GenericGroupMethods.structure.RelationType" flags="ig" index="1hVuR5">
+        <reference id="6741447020959214515" name="target" index="1hVsnE" />
+        <reference id="6741447020959214514" name="source" index="1hVsnF" />
+        <reference id="6741447020959214516" name="relation" index="1hVsnH" />
+      </concept>
       <concept id="1522810226732341093" name="GenericGroupMethods.structure.GroupType" flags="ig" index="1l_8MK">
         <reference id="1522810226732347078" name="group" index="1l_bkj" />
       </concept>
@@ -333,6 +341,11 @@
       <concept id="7988447658783335922" name="GenericGroupMethods.structure.NewConceptType" flags="ng" index="1ui4Ww">
         <property id="113426295528832251" name="prefix" index="1$JshA" />
         <reference id="7988447658783335923" name="concept" index="1ui4Wx" />
+      </concept>
+      <concept id="7988447658783265565" name="GenericGroupMethods.structure.NewRelationType" flags="ng" index="1ujRBf">
+        <reference id="7988447658783289606" name="target" index="1ui9Jk" />
+        <reference id="7988447658783289604" name="source" index="1ui9Jm" />
+        <reference id="7988447658783289609" name="relation" index="1ui9Jr" />
       </concept>
       <concept id="7169015349702230285" name="GenericGroupMethods.structure.Facet" flags="ng" index="1vbBhR">
         <child id="4406892874368993969" name="reusedFacets" index="1eREs9" />
@@ -3330,9 +3343,79 @@
         </node>
       </node>
     </node>
+    <node concept="CLx5B" id="1glZBhiwCfn" role="CLm5g" />
+    <node concept="1GnNjC" id="1glZBhiwCfQ" role="CLm5g">
+      <property role="TrG5h" value="allSupertypes" />
+      <property role="1v5eOH" value="true" />
+      <node concept="37vLTG" id="1glZBhiwCfR" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="1glZBhiwCfS" role="1tU5fm">
+          <ref role="1l_bkj" node="4wJBZF9EZTA" resolve="ExpressionsAndTypes" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1glZBhiwCgk" role="3clF46">
+        <property role="TrG5h" value="conceptType" />
+        <node concept="CMjq$" id="1glZBhiwCgs" role="1tU5fm">
+          <ref role="CMYPG" node="4wJBZF9F9UE" resolve="Type" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1glZBhiwCfT" role="3clF47">
+        <node concept="3cpWs6" id="1glZBhiwFf1" role="3cqZAp">
+          <node concept="2OqwBi" id="1glZBhiwFOI" role="3cqZAk">
+            <node concept="2OqwBi" id="1glZBhiwFqi" role="2Oq$k0">
+              <node concept="37vLTw" id="1glZBhiwFpt" role="2Oq$k0">
+                <ref role="3cqZAo" node="1glZBhiwCgk" resolve="conceptType" />
+              </node>
+              <node concept="$DiNX" id="1glZBhiwFAy" role="2OqNvi" />
+            </node>
+            <node concept="$li7W" id="1glZBhiwG1h" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="1glZBhiwDg1" role="3clF45">
+        <node concept="2FfhBJ" id="1glZBhiwEf_" role="_ZDj9" />
+      </node>
+    </node>
     <node concept="CLx5B" id="2$vcPa_ZDP5" role="CLm5g" />
     <node concept="1vbBhR" id="cjbULZTl_J" role="1ukcCD">
       <property role="TrG5h" value="Behaviour" />
+    </node>
+    <node concept="16uJyJ" id="1glZBhiwCfe" role="lGtFl">
+      <node concept="TZ5HA" id="1glZBhiwCff" role="TZ5H$">
+        <node concept="1dT_AC" id="1glZBhiwCfg" role="1dT_Ay">
+          <property role="1dT_AB" value="We have not considered the simplification of the expressions!" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="1glZBhi$2GB" role="TZ5H$">
+        <node concept="1dT_AC" id="1glZBhi$2GC" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="1glZBhi$4Z5" role="TZ5H$">
+        <node concept="1dT_AC" id="1glZBhi$4Z6" role="1dT_Ay">
+          <property role="1dT_AB" value="We have also not considered the capability requirements methods!" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="1glZBhi$4Ys" role="TZ5H$">
+        <node concept="1dT_AC" id="1glZBhi$4Yt" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="1glZBhi$2L7" role="TZ5H$">
+        <node concept="1dT_AC" id="1glZBhi$2L8" role="1dT_Ay">
+          <property role="1dT_AB" value="We have a weird situation with typeOf_type ... I would need the operand type to determine the" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="1glZBhi$2PD" role="TZ5H$">
+        <node concept="1dT_AC" id="1glZBhi$2PE" role="1dT_Ay">
+          <property role="1dT_AB" value="typeOf_type, but type is part of a DotExpression that says that it depends on the type of the" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="1glZBhi$2Ud" role="TZ5H$">
+        <node concept="1dT_AC" id="1glZBhi$2Ue" role="1dT_Ay">
+          <property role="1dT_AB" value="operand as well." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1GnNiK" id="70$7KiYrKRl">
@@ -12107,10 +12190,148 @@
     <property role="1vYpmj" value="CodeGen" />
     <property role="3GE5qa" value="SimpleTypes.Numeric.Behaviour" />
     <property role="TrG5h" value="Beaviour_NumberType" />
+    <ref role="1GHRfG" node="1glZBhik5xy" resolve="Precision" />
+    <node concept="1GnNjC" id="1glZBhi$cJZ" role="CLm5g">
+      <property role="TrG5h" value="setRange" />
+      <node concept="37vLTG" id="1glZBhi$cK0" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="1glZBhi$cK1" role="1tU5fm">
+          <ref role="1l_bkj" node="1glZBhik5xy" resolve="Precision" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1glZBhi$cKU" role="3clF46">
+        <property role="TrG5h" value="noType" />
+        <node concept="CMjq$" id="1glZBhi$cL2" role="1tU5fm">
+          <property role="1_qSDO" value="" />
+          <ref role="CMYPG" node="1glZBhimpcx" resolve="NumberType" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1glZBhi$cLh" role="3clF46">
+        <property role="TrG5h" value="min" />
+        <node concept="17QB3L" id="1glZBhi$cLr" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1glZBhi$cLD" role="3clF46">
+        <property role="TrG5h" value="max" />
+        <node concept="17QB3L" id="1glZBhi$cLP" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="1glZBhi$cK2" role="3clF47">
+        <node concept="3cpWs8" id="1glZBhi$fMx" role="3cqZAp">
+          <node concept="3cpWsn" id="1glZBhi$fM$" role="3cpWs9">
+            <property role="TrG5h" value="r" />
+            <node concept="CMjq$" id="1glZBhi$fMw" role="1tU5fm">
+              <ref role="CMYPG" node="1glZBhimnDO" resolve="NumberRangeSpec" />
+            </node>
+            <node concept="1ui4Ww" id="1glZBhi$hNh" role="33vP2m">
+              <property role="1$JshA" value="" />
+              <ref role="1ui4Wx" node="1glZBhimnDO" resolve="NumberRangeSpec" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1glZBhi$j8b" role="3cqZAp">
+          <node concept="3cpWsn" id="1glZBhi$j8e" role="3cpWs9">
+            <property role="TrG5h" value="minR" />
+            <node concept="1hVuR5" id="1glZBhi$j89" role="1tU5fm">
+              <ref role="1hVsnH" node="1glZBhimxdP" resolve="min" />
+              <ref role="1hVsnF" node="1glZBhimnDO" resolve="NumberRangeSpec" />
+              <ref role="1hVsnE" node="1glZBhimfPe" resolve="MetaModInteger" />
+            </node>
+            <node concept="1ujRBf" id="1glZBhi$o1l" role="33vP2m">
+              <ref role="1ui9Jr" node="1glZBhimxdP" resolve="min" />
+              <ref role="1ui9Jm" node="1glZBhimnDO" resolve="NumberRangeSpec" />
+              <ref role="1ui9Jk" node="1glZBhimfPe" resolve="MetaModInteger" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1glZBhi$oeR" role="3cqZAp">
+          <node concept="3cpWsn" id="1glZBhi$oeU" role="3cpWs9">
+            <property role="TrG5h" value="maxR" />
+            <node concept="1hVuR5" id="1glZBhi$oeV" role="1tU5fm">
+              <ref role="1hVsnF" node="1glZBhimnDO" resolve="NumberRangeSpec" />
+              <ref role="1hVsnE" node="1glZBhimfPe" resolve="MetaModInteger" />
+              <ref role="1hVsnH" node="1glZBhimz3f" resolve="max" />
+            </node>
+            <node concept="1ujRBf" id="1glZBhi$oeW" role="33vP2m">
+              <ref role="1ui9Jm" node="1glZBhimnDO" resolve="NumberRangeSpec" />
+              <ref role="1ui9Jk" node="1glZBhimfPe" resolve="MetaModInteger" />
+              <ref role="1ui9Jr" node="1glZBhimz3f" resolve="max" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1glZBhi$oeb" role="3cqZAp" />
+        <node concept="3clFbF" id="1glZBhi$iOf" role="3cqZAp">
+          <node concept="2OqwBi" id="1glZBhi$pCl" role="3clFbG">
+            <node concept="37vLTw" id="1glZBhi$pz3" role="2Oq$k0">
+              <ref role="3cqZAo" node="1glZBhi$cLh" resolve="min" />
+            </node>
+            <node concept="1B$H19" id="1glZBhi$pCq" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="1glZBhi$eMm" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="1glZBhi$cIA" role="CLm5g" />
+    <node concept="1vbBpf" id="1glZBhiwBf8" role="1ukcCD">
+      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    </node>
+    <node concept="1GnNjC" id="1glZBhiwBfa" role="CLm5g">
+      <property role="TrG5h" value="cloneWithRange" />
+      <node concept="37vLTG" id="1glZBhiwBfb" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="1glZBhiwBfc" role="1tU5fm">
+          <ref role="1l_bkj" node="1glZBhik5xy" resolve="Precision" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1glZBhiwBfo" role="3clF46">
+        <property role="TrG5h" value="noType" />
+        <node concept="CMjq$" id="1glZBhiwBfw" role="1tU5fm">
+          <ref role="CMYPG" node="1glZBhimpcx" resolve="NumberType" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1glZBhi$92B" role="3clF46">
+        <property role="TrG5h" value="lower" />
+        <node concept="17QB3L" id="1glZBhi$936" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1glZBhi$93o" role="3clF46">
+        <property role="TrG5h" value="upper" />
+        <node concept="17QB3L" id="1glZBhi$93T" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="1glZBhiwBfd" role="3clF47">
+        <node concept="3cpWs8" id="1glZBhi$7YT" role="3cqZAp">
+          <node concept="3cpWsn" id="1glZBhi$7YW" role="3cpWs9">
+            <property role="TrG5h" value="nt" />
+            <node concept="CMjq$" id="1glZBhi$7YS" role="1tU5fm">
+              <ref role="CMYPG" node="1glZBhimpcx" resolve="NumberType" />
+            </node>
+            <node concept="1ui4Ww" id="1glZBhi$b$K" role="33vP2m">
+              <ref role="1ui4Wx" node="1glZBhimpcx" resolve="NumberType" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1glZBhi$80n" role="3cqZAp" />
+        <node concept="3clFbF" id="1glZBhi$b_m" role="3cqZAp">
+          <node concept="2OqwBi" id="1glZBhi$bAu" role="3clFbG">
+            <node concept="37vLTw" id="1glZBhi$b_k" role="2Oq$k0">
+              <ref role="3cqZAo" node="1glZBhi$7YW" resolve="nt" />
+            </node>
+            <node concept="1B$H19" id="1glZBhi$bAz" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="1glZBhi$82k" role="3cqZAp" />
+        <node concept="3cpWs6" id="1glZBhi$80L" role="3cqZAp">
+          <node concept="37vLTw" id="1glZBhi$81u" role="3cqZAk">
+            <ref role="3cqZAo" node="1glZBhi$7YW" resolve="nt" />
+          </node>
+        </node>
+      </node>
+      <node concept="CMjq$" id="1glZBhi$6Za" role="3clF45">
+        <ref role="CMYPG" node="1glZBhimpcx" resolve="NumberType" />
+      </node>
+    </node>
   </node>
   <node concept="1GnNiK" id="1glZBhiwzgY">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="BaseExpr.ExpressionsAndTypes.Behaviour" />
+    <property role="3GE5qa" value="SimpleTypes.Numeric.Behaviour" />
+    <property role="TrG5h" value="Behaviour_NumberType" />
   </node>
 </model>
 
