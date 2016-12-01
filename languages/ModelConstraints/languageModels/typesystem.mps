@@ -11,6 +11,7 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="z64h" ref="r:52e1580a-16d3-4b41-b86d-411ead3ce794(Models.behavior)" />
+    <import index="ua2a" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.typesystem.inference(MPS.Core/jetbrains.mps.typesystem.inference@java_stub)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -2407,10 +2408,10 @@
                     <node concept="1PxgMI" id="2roNPs2_R8f" role="2Oq$k0">
                       <ref role="1PxNhF" to="tpee:hqOqwz4" resolve="DotExpression" />
                       <node concept="2OqwBi" id="2roNPs2_Qwp" role="1PxMeX">
-                        <node concept="1YBJjd" id="2roNPs2_Qtg" role="2Oq$k0">
+                        <node concept="1YBJjd" id="1glZBhiPMfz" role="2Oq$k0">
                           <ref role="1YBMHb" node="2roNPs2_P4b" resolve="collectImmediateSuperConcepts" />
                         </node>
-                        <node concept="1mfA1w" id="2roNPs2_QGG" role="2OqNvi" />
+                        <node concept="1mfA1w" id="1glZBhiPMr6" role="2OqNvi" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="2roNPs2_RFF" role="2OqNvi">
@@ -2449,10 +2450,10 @@
                     <node concept="1PxgMI" id="2roNPs2_SNJ" role="2Oq$k0">
                       <ref role="1PxNhF" to="tpee:hqOqwz4" resolve="DotExpression" />
                       <node concept="2OqwBi" id="2roNPs2_SNK" role="1PxMeX">
-                        <node concept="1YBJjd" id="2roNPs2_SNL" role="2Oq$k0">
+                        <node concept="1YBJjd" id="1glZBhiPMtN" role="2Oq$k0">
                           <ref role="1YBMHb" node="2roNPs2_P4b" resolve="collectImmediateSuperConcepts" />
                         </node>
-                        <node concept="1mfA1w" id="2roNPs2_SNM" role="2OqNvi" />
+                        <node concept="1mfA1w" id="1glZBhiPMD9" role="2OqNvi" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="2roNPs2_SNN" role="2OqNvi">
@@ -2472,7 +2473,7 @@
             <node concept="1PxgMI" id="1glZBhiLEsp" role="2Oq$k0">
               <ref role="1PxNhF" to="tpee:hqOqwz4" resolve="DotExpression" />
               <node concept="2OqwBi" id="1glZBhiLE3x" role="1PxMeX">
-                <node concept="1YBJjd" id="1glZBhiLE1i" role="2Oq$k0">
+                <node concept="1YBJjd" id="1glZBhiPMeG" role="2Oq$k0">
                   <ref role="1YBMHb" node="2roNPs2_P4b" resolve="collectImmediateSuperConcepts" />
                 </node>
                 <node concept="1mfA1w" id="1glZBhiLEfP" role="2OqNvi" />

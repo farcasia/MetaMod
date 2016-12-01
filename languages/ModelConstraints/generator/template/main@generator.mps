@@ -4975,11 +4975,6 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="6iY9PxR6jJ" role="3cqZAp">
-          <node concept="3SKdUq" id="6iY9PxR6jK" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: We will have to change the name with prefix ..." />
-          </node>
-        </node>
         <node concept="3clFbF" id="6pihOoLER6w" role="3cqZAp">
           <node concept="2OqwBi" id="6pihOoLER6x" role="3clFbG">
             <node concept="2Sg_IR" id="6pihOoLER6y" role="2Oq$k0">
