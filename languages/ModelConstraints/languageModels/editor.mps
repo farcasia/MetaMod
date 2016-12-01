@@ -49,13 +49,9 @@
       <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
         <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
       </concept>
-      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
-        <child id="1186403803051" name="query" index="VblUZ" />
-      </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
-      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
         <child id="1223387335081" name="query" index="3n$kyP" />
@@ -72,9 +68,6 @@
       <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
-      </concept>
-      <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
-        <property id="1225456424731" name="value" index="1iTho6" />
       </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
@@ -652,16 +645,25 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="6VsEH8K_efO" role="3EZMnx">
+      <node concept="3F0ifn" id="7I7rEyEOydb" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
-      <node concept="2iRfu4" id="6VsEH8K_efo" role="2iSdaV" />
-      <node concept="Veino" id="6cRXBRmtZg7" role="3F10Kt">
-        <node concept="1iSF2X" id="6cRXBRmtZg9" role="VblUZ">
-          <property role="1iTho6" value="66FFFF" />
-        </node>
+      <node concept="3F0ifn" id="7I7rEyEMJhX" role="3EZMnx">
+        <property role="3F0ifm" value="in" />
       </node>
+      <node concept="3F0ifn" id="7I7rEyEMJix" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hFCSAw$" resolve="LeftParen" />
+      </node>
+      <node concept="3F1sOY" id="7I7rEyEMJk4" role="3EZMnx">
+        <ref role="1NtTu8" to="1o5n:7I7rEyEMJ5N" />
+      </node>
+      <node concept="3F0ifn" id="7I7rEyEMJj7" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="2iRfu4" id="6VsEH8K_efo" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="6VsEH8K_enU">

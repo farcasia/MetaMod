@@ -319,6 +319,12 @@
     <property role="TrG5h" value="NewRelationType" />
     <property role="34LRSv" value="create relation" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="7I7rEyEMJ5N" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="varRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz7vLUo" resolve="VariableReference" />
+    </node>
     <node concept="1TJgyj" id="6VsEH8K_344" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
