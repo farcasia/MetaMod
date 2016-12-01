@@ -467,7 +467,7 @@
                           <ref role="3TtcxE" to="tpee:fzclF7Y" />
                         </node>
                       </node>
-                      <node concept="iy90A" id="owiSk5oQZU" role="37wK5m" />
+                      <node concept="iy90A" id="7I7rEyE0zl2" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -1972,6 +1972,28 @@
             <node concept="3O6GUB" id="owiSk5rs6p" role="2OqNvi">
               <node concept="chp4Y" id="owiSk5rs7o" role="3QVz_e">
                 <ref role="cht4Q" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7I7rEyE1WD8" role="3cqZAp" />
+        <node concept="3clFbJ" id="7I7rEyE1hgB" role="3cqZAp">
+          <node concept="3clFbS" id="7I7rEyE1hgD" role="3clFbx">
+            <node concept="3cpWs6" id="7I7rEyE1nuQ" role="3cqZAp">
+              <node concept="2ShNRf" id="7I7rEyE25P1" role="3cqZAk">
+                <node concept="1pGfFk" id="7I7rEyE28WG" role="2ShVmc">
+                  <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7I7rEyE1k6E" role="3clFbw">
+            <node concept="37vLTw" id="7I7rEyE1iCt" role="2Oq$k0">
+              <ref role="3cqZAo" node="owiSk5rrS3" resolve="kind" />
+            </node>
+            <node concept="3O6GUB" id="7I7rEyE1lVH" role="2OqNvi">
+              <node concept="chp4Y" id="7I7rEyE1lXd" role="3QVz_e">
+                <ref role="cht4Q" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
               </node>
             </node>
           </node>
