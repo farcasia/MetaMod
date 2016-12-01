@@ -187,13 +187,19 @@
   <node concept="1TIwiD" id="1ky6Xl0Obv0">
     <property role="3GE5qa" value="Operations.NavigationOperations" />
     <property role="TrG5h" value="IsTypeOf" />
-    <property role="34LRSv" value="isTypeOf" />
+    <property role="34LRSv" value="is type of" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="1ky6Xl0Obv3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="conceptType" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7MhXM5kmc65" resolve="ConceptType" />
+    </node>
+    <node concept="1TJgyj" id="7I7rEyEYscZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="varRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz7vLUo" resolve="VariableReference" />
     </node>
     <node concept="PrWs8" id="1ky6Xl0Obv1" role="PzmwI">
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
