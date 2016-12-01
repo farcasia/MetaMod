@@ -610,6 +610,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2roNPs2AFcT" resolve="IParamIsRelationConcept" />
     </node>
+    <node concept="1TJgyj" id="7I7rEyF89vg" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="varRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz7vLUo" resolve="VariableReference" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2roNPs2AFcT">
     <property role="3GE5qa" value="" />

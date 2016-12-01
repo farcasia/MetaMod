@@ -328,6 +328,7 @@
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" name="GenericGroupMethods">
       <concept id="4767673562711423982" name="GenericGroupMethods.structure.AsSourceFor" flags="ng" index="khloQ">
         <reference id="4767673562711424009" name="refAssoc" index="khl7h" />
+        <child id="8901204859208575562" name="varRef" index="3hBcjy" />
       </concept>
       <concept id="4767673562711815851" name="GenericGroupMethods.structure.AsTargetFor" flags="ng" index="knPHN">
         <reference id="4767673562711815852" name="refAssoc" index="knPHO" />
@@ -478,6 +479,9 @@
                   </node>
                   <node concept="khloQ" id="70$7KiYpuyz" role="2OqNvi">
                     <ref role="khl7h" node="2$vcPaAtMLa" resolve="then" />
+                    <node concept="37vLTw" id="7I7rEyFb1G4" role="3hBcjy">
+                      <ref role="3cqZAo" node="70$7KiYps8N" resolve="inputGroup" />
+                    </node>
                   </node>
                 </node>
                 <node concept="1uHKPH" id="70$7KiYpvNC" role="2OqNvi" />
@@ -495,6 +499,9 @@
                   </node>
                   <node concept="khloQ" id="70$7KiYpsJM" role="2OqNvi">
                     <ref role="khl7h" node="2$vcPaAtMoi" resolve="when" />
+                    <node concept="37vLTw" id="7I7rEyFb1F6" role="3hBcjy">
+                      <ref role="3cqZAo" node="70$7KiYps8N" resolve="inputGroup" />
+                    </node>
                   </node>
                 </node>
                 <node concept="1uHKPH" id="70$7KiYpu0I" role="2OqNvi" />
@@ -536,6 +543,9 @@
                     </node>
                     <node concept="khloQ" id="70$7KiYpx21" role="2OqNvi">
                       <ref role="khl7h" node="2$vcPaAtMoi" resolve="when" />
+                      <node concept="37vLTw" id="7I7rEyFb1H2" role="3hBcjy">
+                        <ref role="3cqZAo" node="70$7KiYpvQh" resolve="inputGroup" />
+                      </node>
                     </node>
                   </node>
                   <node concept="1uHKPH" id="70$7KiYpyiX" role="2OqNvi" />
@@ -557,6 +567,9 @@
                   </node>
                   <node concept="khloQ" id="70$7KiYpz7A" role="2OqNvi">
                     <ref role="khl7h" node="2$vcPaAtMLa" resolve="then" />
+                    <node concept="37vLTw" id="7I7rEyFb1I0" role="3hBcjy">
+                      <ref role="3cqZAo" node="70$7KiYpvQh" resolve="inputGroup" />
+                    </node>
                   </node>
                 </node>
                 <node concept="1uHKPH" id="70$7KiYpz7B" role="2OqNvi" />
@@ -602,6 +615,9 @@
                   </node>
                   <node concept="khloQ" id="70$7KiYpAwS" role="2OqNvi">
                     <ref role="khl7h" node="2$vcPaAtMoi" resolve="when" />
+                    <node concept="37vLTw" id="7I7rEyFb1IY" role="3hBcjy">
+                      <ref role="3cqZAo" node="70$7KiYp$7w" resolve="inputGroup" />
+                    </node>
                   </node>
                 </node>
                 <node concept="1uHKPH" id="70$7KiYpAwT" role="2OqNvi" />
