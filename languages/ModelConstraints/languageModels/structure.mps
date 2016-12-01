@@ -585,6 +585,12 @@
     <property role="TrG5h" value="collectImmediateSuperConcepts" />
     <property role="34LRSv" value="collectImmediateSuperConcepts" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="7I7rEyFclvW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="varRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz7vLUo" resolve="VariableReference" />
+    </node>
     <node concept="PrWs8" id="2roNPs2zuUG" role="PzmwI">
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
     </node>

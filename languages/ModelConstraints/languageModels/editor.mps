@@ -1151,8 +1151,25 @@
   <node concept="24kQdi" id="2roNPs2zAkY">
     <property role="3GE5qa" value="Operations.NavigationOperations.BooleanOperations" />
     <ref role="1XX52x" to="1o5n:2roNPs2zuUF" resolve="collectImmediateSuperConcepts" />
-    <node concept="PMmxH" id="2roNPs2zAl0" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    <node concept="3EZMnI" id="7I7rEyFclxQ" role="2wV5jI">
+      <node concept="2iRfu4" id="7I7rEyFclxR" role="2iSdaV" />
+      <node concept="PMmxH" id="2roNPs2zAl0" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="7I7rEyFclCt" role="3EZMnx">
+        <property role="3F0ifm" value="in" />
+      </node>
+      <node concept="3F0ifn" id="7I7rEyFclC_" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hFCSAw$" resolve="LeftParen" />
+      </node>
+      <node concept="3F1sOY" id="7I7rEyFclD2" role="3EZMnx">
+        <ref role="1NtTu8" to="1o5n:7I7rEyFclvW" />
+      </node>
+      <node concept="3F0ifn" id="7I7rEyFclCJ" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="2roNPs2Dm0q">
