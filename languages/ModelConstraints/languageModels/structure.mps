@@ -253,7 +253,7 @@
   <node concept="1TIwiD" id="26DSjBDxXFu">
     <property role="TrG5h" value="intValue" />
     <property role="34LRSv" value="intValue" />
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="PrWs8" id="26DSjBDETod" role="PzmwI">
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
@@ -261,7 +261,7 @@
   </node>
   <node concept="1TIwiD" id="26DSjBDy5pL">
     <property role="TrG5h" value="strValue" />
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <property role="34LRSv" value="strValue" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="PrWs8" id="26DSjBDAE3T" role="PzmwI">
@@ -270,7 +270,7 @@
   </node>
   <node concept="1TIwiD" id="26DSjBDy5_j">
     <property role="TrG5h" value="boolValue" />
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <property role="34LRSv" value="boolValue" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="PrWs8" id="26DSjBDGlKz" role="PzmwI">
@@ -563,7 +563,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2roNPs2vueE">
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <property role="TrG5h" value="type" />
     <property role="34LRSv" value="type" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />

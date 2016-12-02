@@ -785,7 +785,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="26DSjBDzSTn">
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <ref role="13h7C2" to="1o5n:26DSjBDxXFu" resolve="intValue" />
     <node concept="13hLZK" id="26DSjBDzSTo" role="13h7CW">
       <node concept="3clFbS" id="26DSjBDzSTp" role="2VODD2" />
@@ -823,7 +823,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="26DSjBDACab">
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <ref role="13h7C2" to="1o5n:26DSjBDy5pL" resolve="strValue" />
     <node concept="13hLZK" id="26DSjBDACac" role="13h7CW">
       <node concept="3clFbS" id="26DSjBDACad" role="2VODD2" />
@@ -861,7 +861,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="26DSjBDACJ0">
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <ref role="13h7C2" to="1o5n:26DSjBDy5_j" resolve="boolValue" />
     <node concept="13hLZK" id="26DSjBDACJ1" role="13h7CW">
       <node concept="3clFbS" id="26DSjBDACJ2" role="2VODD2" />

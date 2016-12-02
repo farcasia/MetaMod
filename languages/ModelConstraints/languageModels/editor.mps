@@ -557,21 +557,21 @@
     </node>
   </node>
   <node concept="24kQdi" id="26DSjBDy4IF">
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <ref role="1XX52x" to="1o5n:26DSjBDxXFu" resolve="intValue" />
     <node concept="PMmxH" id="26DSjBDDX5A" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="26DSjBDy5pR">
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <ref role="1XX52x" to="1o5n:26DSjBDy5pL" resolve="strValue" />
     <node concept="PMmxH" id="26DSjBDy5pT" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="26DSjBDy5_p">
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <ref role="1XX52x" to="1o5n:26DSjBDy5_j" resolve="boolValue" />
     <node concept="PMmxH" id="26DSjBDy5_r" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -1157,7 +1157,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2roNPs2vugk">
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <ref role="1XX52x" to="1o5n:2roNPs2vueE" resolve="type" />
     <node concept="PMmxH" id="2roNPs2vugm" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />

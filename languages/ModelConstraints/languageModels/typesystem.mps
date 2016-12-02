@@ -234,7 +234,7 @@
   </registry>
   <node concept="1YbPZF" id="26DSjBDzSuR">
     <property role="TrG5h" value="typeof_intValue" />
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <node concept="3clFbS" id="26DSjBDzSuS" role="18ibNy">
       <node concept="3SKdUt" id="26DSjBDLVV5" role="3cqZAp">
         <node concept="3SKWN0" id="26DSjBDLVVs" role="3SKWNk">
@@ -304,7 +304,7 @@
   </node>
   <node concept="1YbPZF" id="26DSjBDAC2C">
     <property role="TrG5h" value="typeof_boolValue" />
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <node concept="3clFbS" id="26DSjBDAC2D" role="18ibNy">
       <node concept="1Z5TYs" id="26DSjBDAC5L" role="3cqZAp">
         <node concept="mw_s8" id="26DSjBDAC65" role="1ZfhKB">
@@ -328,7 +328,7 @@
   </node>
   <node concept="1YbPZF" id="26DSjBDACEK">
     <property role="TrG5h" value="typeof_strValue" />
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <node concept="3clFbS" id="26DSjBDACEL" role="18ibNy">
       <node concept="1Z5TYs" id="26DSjBDACHx" role="3cqZAp">
         <node concept="mw_s8" id="26DSjBDACHP" role="1ZfhKB">
@@ -1513,14 +1513,52 @@
         </node>
       </node>
       <node concept="3clFbH" id="6pihOoLuQ18" role="3cqZAp" />
-      <node concept="3clFbF" id="6pihOoLuQ1z" role="3cqZAp">
-        <node concept="2OqwBi" id="6pihOoLuQkQ" role="3clFbG">
-          <node concept="37vLTw" id="6pihOoLuQ1x" role="2Oq$k0">
-            <ref role="3cqZAo" node="6pihOoLuQ13" resolve="res" />
+      <node concept="3clFbJ" id="35O7LeiIMnD" role="3cqZAp">
+        <node concept="3clFbS" id="35O7LeiIMnE" role="3clFbx">
+          <node concept="3clFbF" id="35O7LeiIMnF" role="3cqZAp">
+            <node concept="2OqwBi" id="35O7LeiIMnG" role="3clFbG">
+              <node concept="37vLTw" id="35O7LeiIMnH" role="2Oq$k0">
+                <ref role="3cqZAo" node="6pihOoLuQ13" resolve="res" />
+              </node>
+              <node concept="TSZUe" id="35O7LeiIMnI" role="2OqNvi">
+                <node concept="2c44tf" id="35O7LeiIMnJ" role="25WWJ7">
+                  <node concept="3uibUv" id="35O7LeiIMnK" role="2c44tc">
+                    <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
-          <node concept="TSZUe" id="6pihOoLuSoV" role="2OqNvi">
-            <node concept="2c44tf" id="6pihOoLuSs4" role="25WWJ7">
-              <node concept="1l_8MK" id="6pihOoLuSvn" role="2c44tc" />
+        </node>
+        <node concept="2OqwBi" id="35O7LeiIMnL" role="3clFbw">
+          <node concept="2OqwBi" id="35O7LeiIMnM" role="2Oq$k0">
+            <node concept="1YBJjd" id="35O7LeiINzL" role="2Oq$k0">
+              <ref role="1YBMHb" node="6pihOoLuPXK" resolve="groupType" />
+            </node>
+            <node concept="3TrEf2" id="35O7LeiINY_" role="2OqNvi">
+              <ref role="3Tt5mk" to="1o5n:1ky6Xl0HEV6" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="35O7LeiIMnP" role="2OqNvi" />
+        </node>
+        <node concept="9aQIb" id="35O7LeiIMnQ" role="9aQIa">
+          <node concept="3clFbS" id="35O7LeiIMnR" role="9aQI4">
+            <node concept="3SKdUt" id="35O7LeiIMnS" role="3cqZAp">
+              <node concept="3SKdUq" id="35O7LeiIMnT" role="3SKWNk">
+                <property role="3SKdUp" value="The GroupType&lt;&gt; with no group is a supertype of any GroupType&lt;&gt;." />
+              </node>
+            </node>
+            <node concept="3clFbF" id="35O7LeiIMnU" role="3cqZAp">
+              <node concept="2OqwBi" id="35O7LeiIMnV" role="3clFbG">
+                <node concept="37vLTw" id="35O7LeiIMnW" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6pihOoLuQ13" resolve="res" />
+                </node>
+                <node concept="TSZUe" id="35O7LeiIMnX" role="2OqNvi">
+                  <node concept="2c44tf" id="35O7LeiIMnY" role="25WWJ7">
+                    <node concept="1l_8MK" id="35O7LeiIO3d" role="2c44tc" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2193,7 +2231,7 @@
   </node>
   <node concept="1YbPZF" id="2roNPs2vyib">
     <property role="TrG5h" value="typeof_type" />
-    <property role="3GE5qa" value="Operations.OperationsPrimitives" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
     <node concept="3clFbS" id="2roNPs2vyic" role="18ibNy">
       <node concept="3cpWs8" id="2roNPs2vykx" role="3cqZAp">
         <node concept="3cpWsn" id="2roNPs2vyk$" role="3cpWs9">
