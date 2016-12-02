@@ -106,15 +106,6 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ">
-        <child id="1214996921760" name="bound" index="3ztrMU" />
-      </concept>
-      <concept id="1109279851642" name="jetbrains.mps.baseLanguage.structure.GenericDeclaration" flags="ng" index="16eOlS">
-        <child id="1109279881614" name="typeVariableDeclaration" index="16eVyc" />
-      </concept>
-      <concept id="1109283449304" name="jetbrains.mps.baseLanguage.structure.TypeVariableReference" flags="in" index="16syzq">
-        <reference id="1109283546497" name="typeVariableDeclaration" index="16sUi3" />
-      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -17433,12 +17424,10 @@
     <node concept="312cEg" id="35O7LeiC9rD" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="groupType" />
+      <property role="TrG5h" value="groupForType" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="35O7LeiC9rw" role="1B3o_S" />
-      <node concept="16syzq" id="35O7LeiC9rM" role="1tU5fm">
-        <ref role="16sUi3" node="35O7LeiDBk8" resolve="G" />
-      </node>
+      <node concept="1l_8MK" id="35O7LeiHl5F" role="1tU5fm" />
     </node>
     <node concept="312cEg" id="35O7LeiC9sb" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -17446,9 +17435,7 @@
       <property role="TrG5h" value="conceptType" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="35O7LeiC9rZ" role="1B3o_S" />
-      <node concept="16syzq" id="35O7LeiC9sn" role="1tU5fm">
-        <ref role="16sUi3" node="35O7LeiC7Qj" resolve="C" />
-      </node>
+      <node concept="CMjq$" id="35O7LeiHl6a" role="1tU5fm" />
     </node>
     <node concept="2tJIrI" id="35O7LeiD$1S" role="jymVt" />
     <node concept="3clFb_" id="35O7LeiD$2t" role="jymVt">
@@ -17474,6 +17461,23 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="35O7LeiHDD0" role="3cqZAp">
+          <node concept="3cpWsn" id="35O7LeiHDD3" role="3cpWs9">
+            <property role="TrG5h" value="otherConcept" />
+            <node concept="2FfhBJ" id="35O7LeiHDCY" role="1tU5fm" />
+            <node concept="2OqwBi" id="35O7LeiHDY5" role="33vP2m">
+              <node concept="2OqwBi" id="35O7LeiHDH$" role="2Oq$k0">
+                <node concept="37vLTw" id="35O7LeiHDGK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="35O7LeiD$IR" resolve="otherType" />
+                </node>
+                <node concept="2OwXpG" id="35O7LeiHDSc" role="2OqNvi">
+                  <ref role="2Oxat5" node="35O7LeiC9sb" resolve="conceptType" />
+                </node>
+              </node>
+              <node concept="$DiNX" id="35O7LeiHE4P" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="35O7LeiD$HI" role="3cqZAp" />
         <node concept="3clFbJ" id="35O7LeiD$4J" role="3cqZAp">
           <node concept="3clFbS" id="35O7LeiD$4K" role="3clFbx">
@@ -17490,15 +17494,42 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="35O7LeiD$R5" role="3cqZAp" />
-        <node concept="3clFbJ" id="35O7LeiD$Te" role="3cqZAp">
-          <node concept="3clFbS" id="35O7LeiD$Tg" role="3clFbx">
-            <node concept="3clFbH" id="35O7LeiD$Tf" role="3cqZAp" />
+        <node concept="3clFbH" id="35O7LeiGZcw" role="3cqZAp" />
+        <node concept="3SKdUt" id="35O7LeiH7cg" role="3cqZAp">
+          <node concept="3SKdUq" id="35O7LeiH7eb" role="3SKWNk">
+            <property role="3SKdUp" value="We can't cast conceptType to ConceptType&lt;&gt; unfortunatetlly. It needs" />
           </node>
-          <node concept="0kSF2" id="35O7LeiDDda" role="3clFbw">
-            <node concept="3uibUv" id="35O7LeiDDdb" role="0kSFW" />
-            <node concept="37vLTw" id="35O7LeiDASZ" role="0kSFX">
-              <ref role="3cqZAo" node="35O7LeiC9sb" resolve="conceptType" />
+        </node>
+        <node concept="3SKdUt" id="35O7LeiH8M2" role="3cqZAp">
+          <node concept="3SKdUq" id="35O7LeiH8Na" role="3SKWNk">
+            <property role="3SKdUp" value="that ConceptType be a classifier type ... we need other tricks." />
+          </node>
+        </node>
+        <node concept="3clFbH" id="35O7LeiHj5v" role="3cqZAp" />
+        <node concept="3clFbJ" id="35O7LeiHFJJ" role="3cqZAp">
+          <node concept="3clFbS" id="35O7LeiHFJL" role="3clFbx">
+            <node concept="3cpWs6" id="35O7LeiHFO6" role="3cqZAp">
+              <node concept="3clFbT" id="35O7LeiHFPG" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="35O7LeiHFM5" role="3clFbw">
+            <node concept="2OqwBi" id="35O7LeiHjkt" role="3fr31v">
+              <node concept="37vLTw" id="35O7LeiHjfC" role="2Oq$k0">
+                <ref role="3cqZAo" node="35O7LeiC9sb" resolve="conceptType" />
+              </node>
+              <node concept="2OqwBi" id="35O7LeiHlhP" role="2OqNvi">
+                <node concept="$DiNX" id="35O7LeiHlbV" role="2Oq$k0" />
+                <node concept="$li7p" id="35O7LeiHlRp" role="2OqNvi">
+                  <node concept="37vLTw" id="35O7LeiHmkQ" role="3gDZ_S">
+                    <ref role="3cqZAo" node="35O7LeiC9rD" resolve="groupForType" />
+                  </node>
+                  <node concept="$gBMk" id="35O7LeiHE7c" role="$gBVJ">
+                    <ref role="3cqZAo" node="35O7LeiHDD3" resolve="otherConcept" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -17513,14 +17544,6 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="35O7LeiBSwJ" role="1B3o_S" />
-    <node concept="16euLQ" id="35O7LeiDBk8" role="16eVyc">
-      <property role="TrG5h" value="G" />
-      <node concept="1l_8MK" id="35O7LeiDBrL" role="3ztrMU" />
-    </node>
-    <node concept="16euLQ" id="35O7LeiC7Qj" role="16eVyc">
-      <property role="TrG5h" value="C" />
-      <node concept="CMjq$" id="35O7LeiFppL" role="3ztrMU" />
-    </node>
   </node>
 </model>
 
