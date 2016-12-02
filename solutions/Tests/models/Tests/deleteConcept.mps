@@ -52,9 +52,6 @@
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
       <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
-      <concept id="8717972784948762665" name="Models.structure.Concept" flags="ng" index="2oAaSB">
-        <child id="8717972784948764180" name="conformsTo" index="2oAawq" />
-      </concept>
       <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
         <property id="4406892874363944218" name="partial" index="1ewt2y" />
         <property id="9017624775202900822" name="main" index="3uBway" />
@@ -123,7 +120,7 @@
   <node concept="2oAaVg" id="1QzqmUpUjNa">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="true" />
-    <property role="1x3Ciu" value="1720049652" />
+    <property role="1x3Ciu" value="1829511240" />
     <property role="TrG5h" value="Delete" />
     <node concept="2oAaW5" id="1QzqmUpUjNb" role="2oAaxa">
       <property role="TrG5h" value="C" />
@@ -145,23 +142,23 @@
         <ref role="3aaZtz" node="1QzqmUpUjNb" resolve="C" />
       </node>
     </node>
-    <node concept="1x7eJp" id="1QzqmUq3nJs" role="1x79uz">
+    <node concept="1x7eJp" id="1QzqmUq3nL_" role="1x79uz">
       <property role="TrG5h" value="C" />
-      <node concept="2oAaXF" id="1QzqmUq3nJt" role="1x7bQM">
+      <node concept="2oAaXF" id="1QzqmUq3nLA" role="1x7bQM">
         <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="1QzqmUpUjNb" resolve="C" />
       </node>
-      <node concept="2oAaYs" id="1QzqmUq3nJu" role="1_67$s">
+      <node concept="2oAaYs" id="1QzqmUq3nLB" role="1_67$s">
         <ref role="3aaZtz" node="1QzqmUpUjNa" resolve="Delete" />
       </node>
     </node>
-    <node concept="1x7eJp" id="1QzqmUq3nJv" role="1x79uz">
+    <node concept="1x7eJp" id="1QzqmUq3nLC" role="1x79uz">
       <property role="TrG5h" value="D" />
-      <node concept="2oAaXF" id="1QzqmUq3nJw" role="1x7bQM">
+      <node concept="2oAaXF" id="1QzqmUq3nLD" role="1x7bQM">
         <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="1QzqmUpUjNs" resolve="D" />
       </node>
-      <node concept="2oAaYs" id="1QzqmUq3nJx" role="1_67$s">
+      <node concept="2oAaYs" id="1QzqmUq3nLE" role="1_67$s">
         <ref role="3aaZtz" node="1QzqmUpUjNa" resolve="Delete" />
       </node>
     </node>
@@ -225,43 +222,9 @@
   <node concept="2oAaVg" id="1QzqmUq22ZS">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="1x3Ciu" value="1796229934" />
+    <property role="1x3Ciu" value="1829511240" />
     <property role="TrG5h" value="TestDelete" />
     <ref role="19kf5F" node="1QzqmUpUjNa" resolve="Delete" />
-    <node concept="2oAaVg" id="1QzqmUq23A1" role="2oAaxa">
-      <property role="1ewt2y" value="false" />
-      <property role="3uBway" value="false" />
-      <property role="1x3Ciu" value="1796229934" />
-      <property role="TrG5h" value="SomeInner" />
-      <node concept="2oAaW5" id="1QzqmUq23$u" role="2oAaxa">
-        <property role="TrG5h" value="d0" />
-        <node concept="2oAaXF" id="1QzqmUq23_p" role="2oAawq">
-          <property role="1ziRIV" value="" />
-          <ref role="3aaZtz" node="1QzqmUpUjNs" resolve="D" />
-        </node>
-      </node>
-      <node concept="2jq5PB" id="1QzqmUq23yW" role="2oAaxa" />
-      <node concept="1x7eJp" id="1QzqmUq3nJI" role="1x79uz">
-        <property role="TrG5h" value="d0" />
-        <node concept="2oAaXF" id="1QzqmUq3nJJ" role="1x7bQM">
-          <property role="1ziRIV" value="" />
-          <ref role="3aaZtz" node="1QzqmUq23$u" resolve="d0" />
-        </node>
-        <node concept="2oAaYs" id="1QzqmUq3nJK" role="1_67$s">
-          <ref role="3aaZtz" node="1QzqmUq23A1" resolve="SomeInner" />
-        </node>
-      </node>
-    </node>
-    <node concept="1x7eJp" id="1QzqmUq3nJL" role="1x79uz">
-      <property role="TrG5h" value="d0" />
-      <node concept="2oAaXF" id="1QzqmUq3nJM" role="1x7bQM">
-        <property role="1ziRIV" value="" />
-        <ref role="3aaZtz" node="1QzqmUq23$u" resolve="d0" />
-      </node>
-      <node concept="2oAaYs" id="1QzqmUq3nJN" role="1_67$s">
-        <ref role="3aaZtz" node="1QzqmUq23A1" resolve="SomeInner" />
-      </node>
-    </node>
   </node>
 </model>
 

@@ -11,7 +11,6 @@
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="anrw" ref="r:f7f50153-a977-4fee-b5c8-7e4385be5a22(CodeGeneration.structure)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -745,7 +744,7 @@
             <node concept="3clFbS" id="2$vcPaAbdp_" role="3clFbx">
               <node concept="2MkqsV" id="2$vcPaAboS9" role="3cqZAp">
                 <node concept="Xl_RD" id="2$vcPaAbrMd" role="2MkJ7o">
-                  <property role="Xl_RC" value="The return type of the overridding method is different from the return type of the overridden method!" />
+                  <property role="Xl_RC" value="The return type of the overridding method is not a subtype of the return type of the overridden method!" />
                 </node>
                 <node concept="2OqwBi" id="2$vcPaAbp0K" role="2OEOjV">
                   <node concept="1YBJjd" id="2$vcPaAboSo" role="2Oq$k0">
@@ -759,33 +758,23 @@
             </node>
             <node concept="3fqX7Q" id="2roNPs2vmUA" role="3clFbw">
               <node concept="2OqwBi" id="2roNPs2vmUC" role="3fr31v">
-                <node concept="2OqwBi" id="2roNPs2vmUD" role="2Oq$k0">
-                  <node concept="2OqwBi" id="2roNPs2vmUE" role="2Oq$k0">
-                    <node concept="37vLTw" id="2roNPs2vmUF" role="2Oq$k0">
+                <node concept="2qgKlT" id="35O7LeiDaVx" role="2OqNvi">
+                  <ref role="37wK5l" to="tpek:hKBOZqh" resolve="isSupersetOf" />
+                  <node concept="2OqwBi" id="35O7LeiDbd2" role="37wK5m">
+                    <node concept="37vLTw" id="35O7LeiDaXe" role="2Oq$k0">
                       <ref role="3cqZAo" node="2$vcPaA9Iz7" resolve="overriddenMet" />
                     </node>
-                    <node concept="3TrEf2" id="2roNPs2vmUG" role="2OqNvi">
+                    <node concept="3TrEf2" id="35O7LeiDdMw" role="2OqNvi">
                       <ref role="3Tt5mk" to="tpee:fzclF7X" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="154Paq6EsWW" role="2OqNvi">
-                    <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
-                  </node>
                 </node>
-                <node concept="liA8E" id="2roNPs2vmUI" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                  <node concept="2OqwBi" id="2roNPs2vmUJ" role="37wK5m">
-                    <node concept="2OqwBi" id="2roNPs2vmUK" role="2Oq$k0">
-                      <node concept="1YBJjd" id="2roNPs2vmUL" role="2Oq$k0">
-                        <ref role="1YBMHb" node="2$vcPaA9G9T" resolve="codeGenMet" />
-                      </node>
-                      <node concept="3TrEf2" id="2roNPs2vmUM" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:fzclF7X" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="154Paq6HLTo" role="2OqNvi">
-                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
-                    </node>
+                <node concept="2OqwBi" id="2roNPs2vmUK" role="2Oq$k0">
+                  <node concept="1YBJjd" id="2roNPs2vmUL" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2$vcPaA9G9T" resolve="codeGenMet" />
+                  </node>
+                  <node concept="3TrEf2" id="2roNPs2vmUM" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tpee:fzclF7X" />
                   </node>
                 </node>
               </node>
