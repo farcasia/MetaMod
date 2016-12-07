@@ -341,6 +341,10 @@
       <concept id="1174557878319" name="jetbrains.mps.baseLanguage.regexp.structure.CharacterSymbolClassPart" flags="ng" index="1T6I$Y">
         <property id="1174557887320" name="character" index="1T6KD9" />
       </concept>
+      <concept id="1174558301835" name="jetbrains.mps.baseLanguage.regexp.structure.IntervalSymbolClassPart" flags="ng" index="1T8lYq">
+        <property id="1174558315290" name="start" index="1T8p8b" />
+        <property id="1174558317822" name="end" index="1T8pRJ" />
+      </concept>
       <concept id="1174653354106" name="jetbrains.mps.baseLanguage.regexp.structure.RegexpUsingConstruction" flags="ng" index="1YMW5F">
         <child id="1174653387388" name="regexp" index="1YN4dH" />
       </concept>
@@ -11711,8 +11715,11 @@
                       <property role="1OCb_u" value="(-?)" />
                     </node>
                     <node concept="1OJ37Q" id="1glZBhippiT" role="1OLqdY">
-                      <node concept="1OC9wW" id="1glZBhipntw" role="1OLpdg">
-                        <property role="1OCb_u" value="[1-9]" />
+                      <node concept="1SSJmt" id="4vPxJhsvksd" role="1OLpdg">
+                        <node concept="1T8lYq" id="4vPxJhsvksk" role="1T5LoC">
+                          <property role="1T8p8b" value="1" />
+                          <property role="1T8pRJ" value="9" />
+                        </node>
                       </node>
                       <node concept="1OCmVF" id="1glZBhippj4" role="1OLqdY">
                         <node concept="1SYyG9" id="1glZBhippiW" role="1OLDsb">
@@ -14151,8 +14158,12 @@
               <ref role="3cqZAo" node="1glZBhiGNTh" resolve="precMMInt" />
             </node>
             <node concept="1ui5XH" id="1glZBhiGTVa" role="2OqNvi">
-              <node concept="37vLTw" id="1glZBhiGTVl" role="emeI9">
-                <ref role="3cqZAo" node="1glZBhiGI7P" resolve="precInt" />
+              <node concept="2YIFZM" id="4vPxJht7SJF" role="emeI9">
+                <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                <node concept="37vLTw" id="4vPxJht7SK$" role="37wK5m">
+                  <ref role="3cqZAo" node="1glZBhiGI7P" resolve="precInt" />
+                </node>
               </node>
             </node>
           </node>

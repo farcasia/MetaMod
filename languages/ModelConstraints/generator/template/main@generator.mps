@@ -2340,25 +2340,16 @@
       <node concept="3cqZAl" id="3u2$VLDbGKs" role="3clF45" />
       <node concept="3Tm1VV" id="3u2$VLDbGKt" role="1B3o_S" />
       <node concept="3clFbS" id="3u2$VLDbGKu" role="3clF47">
+        <node concept="3SKdUt" id="5gXRBORrfiI" role="3cqZAp">
+          <node concept="3SKdUq" id="5gXRBORrfkD" role="3SKWNk">
+            <property role="3SKdUp" value="AddRootToModelSpace should only be used for debugging and only in methods with inputGroup." />
+          </node>
+        </node>
         <node concept="3clFbF" id="3u2$VLDbGKM" role="3cqZAp">
           <node concept="2OqwBi" id="3u2$VLDbHtO" role="3clFbG">
             <node concept="2OqwBi" id="3u2$VLDbGNg" role="2Oq$k0">
-              <node concept="37vLTw" id="3u2$VLDbGKL" role="2Oq$k0">
+              <node concept="37vLTw" id="5gXRBORrfdI" role="2Oq$k0">
                 <ref role="3cqZAo" node="3u2$VLDbGK_" resolve="inputGroup" />
-                <node concept="29HgVG" id="1rccYvDAB8t" role="lGtFl">
-                  <node concept="3NFfHV" id="1rccYvDAB8u" role="3NFExx">
-                    <node concept="3clFbS" id="1rccYvDAB8v" role="2VODD2">
-                      <node concept="3clFbF" id="1rccYvDAB8_" role="3cqZAp">
-                        <node concept="2OqwBi" id="1rccYvDAB8w" role="3clFbG">
-                          <node concept="3TrEf2" id="1rccYvDAB8z" role="2OqNvi">
-                            <ref role="3Tt5mk" to="tpee:hqOq$gm" />
-                          </node>
-                          <node concept="30H73N" id="1rccYvDAB8$" role="2Oq$k0" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
               </node>
               <node concept="I4A8Y" id="3u2$VLDbHeS" role="2OqNvi" />
             </node>
