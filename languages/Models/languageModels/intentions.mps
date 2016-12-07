@@ -830,12 +830,6 @@
             <ref role="1Pybhc" to="wz6r:6e92Hp0Zr$o" resolve="Utils" />
           </node>
         </node>
-        <node concept="3clFbF" id="4vPxJhrrrtj" role="3cqZAp">
-          <node concept="2YIFZM" id="4vPxJhrrs4c" role="3clFbG">
-            <ref role="37wK5l" to="e2lb:~System.gc():void" resolve="gc" />
-            <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="2SaL7w" id="5IUjw$$s7y" role="2ZfVeh">

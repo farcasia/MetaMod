@@ -2177,19 +2177,9 @@
                           <node concept="Xl_RD" id="YoseeTXgN2" role="3uHU7B">
                             <property role="Xl_RC" value="Group_" />
                           </node>
-                          <node concept="2OqwBi" id="YoseeTXg0r" role="3uHU7w">
-                            <node concept="2ShNRf" id="YoseeTX8Mk" role="2Oq$k0">
-                              <node concept="1pGfFk" id="YoseeTXeIp" role="2ShVmc">
-                                <ref role="37wK5l" to="k7g3:~Random.&lt;init&gt;(long)" resolve="Random" />
-                                <node concept="2YIFZM" id="YoseeTXfP8" role="37wK5m">
-                                  <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
-                                  <ref role="37wK5l" to="e2lb:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="YoseeTXgoF" role="2OqNvi">
-                              <ref role="37wK5l" to="k7g3:~Random.nextInt():int" resolve="nextInt" />
-                            </node>
+                          <node concept="2YIFZM" id="5gXRBOTCiiW" role="3uHU7w">
+                            <ref role="37wK5l" to="wz6r:5gXRBOTt2I7" resolve="nextInt" />
+                            <ref role="1Pybhc" to="wz6r:6e92Hp0Zr$o" resolve="Utils" />
                           </node>
                         </node>
                       </node>
@@ -2623,19 +2613,9 @@
                       </node>
                       <node concept="2qgKlT" id="YoseeWHFKo" role="2OqNvi">
                         <ref role="37wK5l" to="z64h:6iY9Pw_XZS" resolve="createEquivalenceConcepts" />
-                        <node concept="2OqwBi" id="YoseeWLKmo" role="37wK5m">
-                          <node concept="2ShNRf" id="YoseeWLKmp" role="2Oq$k0">
-                            <node concept="1pGfFk" id="YoseeWLKmq" role="2ShVmc">
-                              <ref role="37wK5l" to="k7g3:~Random.&lt;init&gt;(long)" resolve="Random" />
-                              <node concept="2YIFZM" id="YoseeWLKmr" role="37wK5m">
-                                <ref role="37wK5l" to="e2lb:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
-                                <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="YoseeWLKms" role="2OqNvi">
-                            <ref role="37wK5l" to="k7g3:~Random.nextInt():int" resolve="nextInt" />
-                          </node>
+                        <node concept="2YIFZM" id="5gXRBOTCgwI" role="37wK5m">
+                          <ref role="37wK5l" to="wz6r:5gXRBOTt2I7" resolve="nextInt" />
+                          <ref role="1Pybhc" to="wz6r:6e92Hp0Zr$o" resolve="Utils" />
                         </node>
                       </node>
                     </node>
