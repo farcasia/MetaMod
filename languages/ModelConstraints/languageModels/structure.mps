@@ -197,9 +197,9 @@
     </node>
     <node concept="1TJgyj" id="7I7rEyEYscZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="varRef" />
+      <property role="20kJfa" value="exp" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fz7vLUo" resolve="VariableReference" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="1ky6Xl0Obv1" role="PzmwI">
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
@@ -224,9 +224,9 @@
     </node>
     <node concept="1TJgyj" id="7I7rEyE6UDa" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="varRef" />
+      <property role="20kJfa" value="exp" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fz7vLUo" resolve="VariableReference" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="48EbtxmtnqF">
@@ -245,9 +245,9 @@
     </node>
     <node concept="1TJgyj" id="7I7rEyEgMhR" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="varRef" />
+      <property role="20kJfa" value="exp" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fz7vLUo" resolve="VariableReference" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="26DSjBDxXFu">
