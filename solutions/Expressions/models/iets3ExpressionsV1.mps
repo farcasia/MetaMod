@@ -184,6 +184,9 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="1171903916106" name="jetbrains.mps.baseLanguage.structure.UpperBoundType" flags="in" index="3qUE_q">
+        <child id="1171903916107" name="bound" index="3qUE_r" />
+      </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
@@ -200,6 +203,12 @@
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
+        <child id="1144226360166" name="iterable" index="1DdaDG" />
+      </concept>
+      <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
+        <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
@@ -469,15 +478,15 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
+        <child id="4611582986551314344" name="requestedType" index="UnYnz" />
+      </concept>
       <concept id="1205753243362" name="jetbrains.mps.baseLanguage.collections.structure.ChunkOperation" flags="nn" index="2WvAvU">
         <child id="1205753261887" name="length" index="2WvESB" />
       </concept>
       <concept id="1205753630278" name="jetbrains.mps.baseLanguage.collections.structure.TailOperation" flags="nn" index="2Wx4Xu" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
-      <concept id="5232196642625575054" name="jetbrains.mps.baseLanguage.collections.structure.TailListOperation" flags="nn" index="1eb2uI">
-        <child id="5232196642625575056" name="fromIndex" index="1eb2uK" />
-      </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
@@ -491,8 +500,8 @@
     <property role="3GE5qa" value="BaseExpr.Alternatives.Behaviour" />
     <property role="TrG5h" value="Behaviour_AltOption" />
     <ref role="1GHRfG" node="2$vcPaAtHIc" resolve="Alternatives" />
-    <node concept="1vbBpf" id="cjbULZTp5W" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVSBCw" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVS_bN" resolve="Behaviour_Alternatives" />
     </node>
     <node concept="1GnNjC" id="70$7KiYps8M" role="CLm5g">
       <property role="TrG5h" value="isStaticallyEvaluatable" />
@@ -560,6 +569,7 @@
     <node concept="CLx5B" id="70$7KiYpvPn" role="CLm5g" />
     <node concept="1GnNjC" id="70$7KiYpvQg" role="CLm5g">
       <property role="TrG5h" value="renderReadable" />
+      <property role="1JpQ_q" value="false" />
       <node concept="37vLTG" id="70$7KiYpvQh" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="70$7KiYpvQi" role="1tU5fm">
@@ -568,7 +578,7 @@
       </node>
       <node concept="37vLTG" id="70$7KiYpwji" role="3clF46">
         <property role="TrG5h" value="altOpt" />
-        <node concept="CMjq$" id="2U630q5I4Mr" role="1tU5fm">
+        <node concept="CMjq$" id="3wJrMHlwSic" role="1tU5fm">
           <ref role="CMYPG" node="2$vcPaAtHIm" resolve="AltOption" />
         </node>
       </node>
@@ -680,9 +690,6 @@
     <property role="3GE5qa" value="BaseExpr.Alternatives.Behaviour" />
     <property role="TrG5h" value="Behaviour_AlternativesExpression" />
     <ref role="1GHRfG" node="2$vcPaAtHIc" resolve="Alternatives" />
-    <node concept="1vbBpf" id="cjbULZTqbp" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
-    </node>
     <node concept="1GnNjC" id="70$7KiYolXj" role="CLm5g">
       <property role="TrG5h" value="isStaticallyEvaluatable" />
       <property role="1JpQ_q" value="true" />
@@ -826,12 +833,30 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="70$7KiYpev8" role="3cqZAp" />
-        <node concept="2Gpval" id="70$7KiYpgGY" role="3cqZAp">
-          <node concept="2GrKxI" id="70$7KiYpgH0" role="2Gsz3X">
-            <property role="TrG5h" value="a" />
+        <node concept="3cpWs8" id="3wJrMHlvnMM" role="3cqZAp">
+          <node concept="3cpWsn" id="3wJrMHlvnMP" role="3cpWs9">
+            <property role="TrG5h" value="altOpts" />
+            <node concept="2OqwBi" id="70$7KiYpha1" role="33vP2m">
+              <node concept="37vLTw" id="70$7KiYpha2" role="2Oq$k0">
+                <ref role="3cqZAo" node="70$7KiYp47i" resolve="alts" />
+              </node>
+              <node concept="khloQ" id="70$7KiYpha3" role="2OqNvi">
+                <ref role="khl7h" node="2$vcPaAtKaI" resolve="alternatives" />
+                <node concept="37vLTw" id="35O7LeiNBqu" role="3hBcjy">
+                  <ref role="3cqZAo" node="70$7KiYp3Am" resolve="inputGroup" />
+                </node>
+              </node>
+            </node>
+            <node concept="_YKpA" id="3wJrMHlwYO7" role="1tU5fm">
+              <node concept="3qUE_q" id="3wJrMHlx1LZ" role="_ZDj9">
+                <node concept="CMjq$" id="3wJrMHlx25H" role="3qUE_r" />
+              </node>
+            </node>
           </node>
-          <node concept="3clFbS" id="70$7KiYpgH2" role="2LFqv$">
+        </node>
+        <node concept="3clFbH" id="70$7KiYpev8" role="3cqZAp" />
+        <node concept="1DcWWT" id="5gXRBOW2sWW" role="3cqZAp">
+          <node concept="3clFbS" id="5gXRBOW2sWY" role="2LFqv$">
             <node concept="3clFbF" id="70$7KiYpjFQ" role="3cqZAp">
               <node concept="2OqwBi" id="70$7KiYpjIU" role="3clFbG">
                 <node concept="37vLTw" id="70$7KiYpjFP" role="2Oq$k0">
@@ -848,12 +873,12 @@
                         <property role="Xl_RC" value="\n   |" />
                       </node>
                       <node concept="3otQA" id="70$7KiYplRu" role="3uHU7w">
-                        <ref role="37wK5l" node="4wJBZF9FlhS" resolve="renderReadable" />
+                        <ref role="37wK5l" node="70$7KiYpvQg" resolve="renderReadable" />
                         <node concept="37vLTw" id="70$7KiYpm5c" role="37wK5m">
                           <ref role="3cqZAo" node="70$7KiYp3Am" resolve="inputGroup" />
                         </node>
-                        <node concept="2GrUjf" id="70$7KiYpmAY" role="37wK5m">
-                          <ref role="2Gs0qQ" node="70$7KiYpgH0" resolve="a" />
+                        <node concept="37vLTw" id="5gXRBOW2wQV" role="37wK5m">
+                          <ref role="3cqZAo" node="5gXRBOW2sWZ" resolve="altOpt" />
                         </node>
                       </node>
                     </node>
@@ -862,21 +887,34 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="70$7KiYphD0" role="2GsD0m">
-            <node concept="2OqwBi" id="70$7KiYpha1" role="2Oq$k0">
-              <node concept="37vLTw" id="70$7KiYpha2" role="2Oq$k0">
-                <ref role="3cqZAo" node="70$7KiYp47i" resolve="alts" />
-              </node>
-              <node concept="khloQ" id="70$7KiYpha3" role="2OqNvi">
-                <ref role="khl7h" node="2$vcPaAtKaI" resolve="alternatives" />
-                <node concept="37vLTw" id="35O7LeiNBqu" role="3hBcjy">
-                  <ref role="3cqZAo" node="70$7KiYp3Am" resolve="inputGroup" />
+          <node concept="3cpWsn" id="5gXRBOW2sWZ" role="1Duv9x">
+            <property role="TrG5h" value="altOpt" />
+            <node concept="CMjq$" id="5gXRBOW2t8l" role="1tU5fm">
+              <ref role="CMYPG" node="2$vcPaAtHIm" resolve="AltOption" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3wJrMHlx5QW" role="1DdaDG">
+            <node concept="2OqwBi" id="70$7KiYphD0" role="2Oq$k0">
+              <node concept="2Wx4Xu" id="3wJrMHlvnst" role="2OqNvi">
+                <node concept="3cpWsd" id="3wJrMHlvrHm" role="2WvESB">
+                  <node concept="3cmrfG" id="3wJrMHlvrHp" role="3uHU7w">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                  <node concept="2OqwBi" id="3wJrMHlvpoP" role="3uHU7B">
+                    <node concept="37vLTw" id="3wJrMHlvoQc" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3wJrMHlvnMP" resolve="altOpts" />
+                    </node>
+                    <node concept="34oBXx" id="3wJrMHlvqqM" role="2OqNvi" />
+                  </node>
                 </node>
               </node>
+              <node concept="37vLTw" id="3wJrMHlvoAi" role="2Oq$k0">
+                <ref role="3cqZAo" node="3wJrMHlvnMP" resolve="altOpts" />
+              </node>
             </node>
-            <node concept="1eb2uI" id="70$7KiYpjdw" role="2OqNvi">
-              <node concept="3cmrfG" id="70$7KiYpjeT" role="1eb2uK">
-                <property role="3cmrfH" value="1" />
+            <node concept="UnYns" id="3wJrMHlxaHF" role="2OqNvi">
+              <node concept="CMjq$" id="3wJrMHlxaQN" role="UnYnz">
+                <ref role="CMYPG" node="2$vcPaAtHIm" resolve="AltOption" />
               </node>
             </node>
           </node>
@@ -921,14 +959,20 @@
       </node>
       <node concept="17QB3L" id="70$7KiYpoV0" role="3clF45" />
     </node>
+    <node concept="1vbBhR" id="5gXRBOVS_bN" role="1ukcCD">
+      <property role="TrG5h" value="Behaviour_Alternatives" />
+      <node concept="1vbBpf" id="5gXRBOVS_cQ" role="1eREs9">
+        <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+      </node>
+    </node>
   </node>
   <node concept="1GnNiK" id="70$7KiYs1Rf">
     <property role="1vYpmj" value="CodeGen" />
     <property role="3GE5qa" value="BaseExpr.Alternatives.TypeSystem" />
     <property role="TrG5h" value="TypeSystem_AltOption" />
     <ref role="1GHRfG" node="2$vcPaAtHIc" resolve="Alternatives" />
-    <node concept="1vbBpf" id="cjbULZTqhu" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBpf" id="5gXRBOVSGf5" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSDOm" resolve="TypeSystem_Alternatives" />
     </node>
     <node concept="1GnNjC" id="70$7KiYs1Rk" role="CLm5g">
       <property role="TrG5h" value="typeOf" />
@@ -1109,9 +1153,6 @@
     <property role="3GE5qa" value="BaseExpr.Alternatives.TypeSystem" />
     <property role="TrG5h" value="TypeSystem_AlternativesExpression" />
     <ref role="1GHRfG" node="2$vcPaAtHIc" resolve="Alternatives" />
-    <node concept="1vbBpf" id="cjbULZTr3S" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
-    </node>
     <node concept="1GnNjC" id="70$7KiYskbw" role="CLm5g">
       <property role="1JpQ_q" value="true" />
       <property role="TrG5h" value="typeOf" />
@@ -1179,6 +1220,15 @@
       </node>
       <node concept="3uibUv" id="4ScfGZRSTEc" role="3clF45">
         <ref role="3uigEE" to="wz6r:35O7LeiBSwI" resolve="TypeConcept" />
+      </node>
+    </node>
+    <node concept="1vbBhR" id="5gXRBOVSDOm" role="1ukcCD">
+      <property role="TrG5h" value="TypeSystem_Alternatives" />
+      <node concept="1vbBpf" id="5gXRBOVSDOE" role="1eREs9">
+        <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVSDOJ" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVS_bN" resolve="Behaviour_Alternatives" />
       </node>
     </node>
   </node>
@@ -1435,8 +1485,8 @@
     <property role="3GE5qa" value="BaseExpr.Binary.Behaviour" />
     <property role="TrG5h" value="Behaviour_BinaryComparisonExpression" />
     <ref role="1GHRfG" node="2$vcPaAt3Fd" resolve="Binary" />
-    <node concept="1vbBpf" id="cjbULZTtqj" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVSIJU" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSGr_" resolve="Behaviour_Binary" />
     </node>
     <node concept="1GnNjC" id="2$vcPaAtu1s" role="CLm5g">
       <property role="TrG5h" value="priority" />
@@ -1469,8 +1519,8 @@
     <property role="3GE5qa" value="BaseExpr.Binary.Behaviour" />
     <property role="TrG5h" value="Behaviour_BinaryEqualityExpression" />
     <ref role="1GHRfG" node="2$vcPaAt3Fd" resolve="Binary" />
-    <node concept="1vbBpf" id="cjbULZTtqE" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVSIKf" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSGr_" resolve="Behaviour_Binary" />
     </node>
     <node concept="1GnNjC" id="2$vcPaAttFJ" role="CLm5g">
       <property role="TrG5h" value="priority" />
@@ -1555,8 +1605,11 @@
       <node concept="10Oyi0" id="2$vcPaAtigt" role="3clF45" />
     </node>
     <node concept="CLx5B" id="2$vcPaAtjE2" role="CLm5g" />
-    <node concept="1vbBpf" id="cjbULZTt_k" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBhR" id="5gXRBOVSGr_" role="1ukcCD">
+      <property role="TrG5h" value="Behaviour_Binary" />
+      <node concept="1vbBpf" id="5gXRBOVSGsP" role="1eREs9">
+        <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+      </node>
     </node>
     <node concept="1GnNjC" id="2$vcPaAteVF" role="CLm5g">
       <property role="TrG5h" value="isStaticallyEvaluatable" />
@@ -1782,8 +1835,8 @@
     <property role="3GE5qa" value="BaseExpr.Binary.Behaviour" />
     <property role="TrG5h" value="Behaviour_DivExpression" />
     <ref role="1GHRfG" node="2$vcPaAt3Fd" resolve="Binary" />
-    <node concept="1vbBpf" id="cjbULZTt_G" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVSIMs" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSGr_" resolve="Behaviour_Binary" />
     </node>
     <node concept="1GnNjC" id="2$vcPaAt$9f" role="CLm5g">
       <property role="TrG5h" value="priority" />
@@ -1816,8 +1869,8 @@
     <property role="3GE5qa" value="BaseExpr.Binary.Behaviour" />
     <property role="TrG5h" value="Behaviour_LogicalAndExpression" />
     <ref role="1GHRfG" node="2$vcPaAt3Fd" resolve="Binary" />
-    <node concept="1vbBpf" id="cjbULZTtA4" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVSIMM" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSGr_" resolve="Behaviour_Binary" />
     </node>
     <node concept="1GnNjC" id="2$vcPaAtCsj" role="CLm5g">
       <property role="TrG5h" value="priority" />
@@ -1850,8 +1903,8 @@
     <property role="3GE5qa" value="BaseExpr.Binary.Behaviour" />
     <property role="TrG5h" value="Behaviour_LogicalIffExpression" />
     <ref role="1GHRfG" node="2$vcPaAt3Fd" resolve="Binary" />
-    <node concept="1vbBpf" id="cjbULZTtAs" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVSIN8" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSGr_" resolve="Behaviour_Binary" />
     </node>
     <node concept="1GnNjC" id="2$vcPaAtDwe" role="CLm5g">
       <property role="TrG5h" value="priority" />
@@ -1884,8 +1937,8 @@
     <property role="3GE5qa" value="BaseExpr.Binary.Behaviour" />
     <property role="TrG5h" value="Behaviour_LogicalImpliesExpression" />
     <ref role="1GHRfG" node="2$vcPaAt3Fd" resolve="Binary" />
-    <node concept="1vbBpf" id="cjbULZTtAO" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVSINu" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSGr_" resolve="Behaviour_Binary" />
     </node>
     <node concept="1GnNjC" id="2$vcPaAtDRG" role="CLm5g">
       <property role="TrG5h" value="priority" />
@@ -1918,8 +1971,8 @@
     <property role="3GE5qa" value="BaseExpr.Binary.Behaviour" />
     <property role="TrG5h" value="Behaviour_LogicalOrExpression" />
     <ref role="1GHRfG" node="2$vcPaAt3Fd" resolve="Binary" />
-    <node concept="1vbBpf" id="cjbULZTtBc" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVSINO" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSGr_" resolve="Behaviour_Binary" />
     </node>
     <node concept="1GnNjC" id="2$vcPaAtCNp" role="CLm5g">
       <property role="TrG5h" value="priority" />
@@ -1952,8 +2005,8 @@
     <property role="3GE5qa" value="BaseExpr.Binary.Behaviour" />
     <property role="TrG5h" value="Behaviour_MinusExpression" />
     <ref role="1GHRfG" node="2$vcPaAt3Fd" resolve="Binary" />
-    <node concept="1vbBpf" id="cjbULZTtB$" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVSIOa" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSGr_" resolve="Behaviour_Binary" />
     </node>
     <node concept="1GnNjC" id="2$vcPaAt$v1" role="CLm5g">
       <property role="TrG5h" value="priority" />
@@ -1986,8 +2039,8 @@
     <property role="3GE5qa" value="BaseExpr.Binary.Behaviour" />
     <property role="TrG5h" value="Behaviour_MulExpression" />
     <ref role="1GHRfG" node="2$vcPaAt3Fd" resolve="Binary" />
-    <node concept="1vbBpf" id="cjbULZTtBW" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVSIOw" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSGr_" resolve="Behaviour_Binary" />
     </node>
     <node concept="1GnNjC" id="2$vcPaAtza7" role="CLm5g">
       <property role="TrG5h" value="priority" />
@@ -2020,8 +2073,8 @@
     <property role="3GE5qa" value="BaseExpr.Binary.Behaviour" />
     <property role="TrG5h" value="Behaviour_PlusExpression" />
     <ref role="1GHRfG" node="2$vcPaAt3Fd" resolve="Binary" />
-    <node concept="1vbBpf" id="cjbULZTtCk" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVSIOQ" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSGr_" resolve="Behaviour_Binary" />
     </node>
     <node concept="1GnNjC" id="2$vcPaAtB6g" role="CLm5g">
       <property role="TrG5h" value="priority" />
@@ -2054,8 +2107,14 @@
     <property role="3GE5qa" value="BaseExpr.Binary.TypeSystem" />
     <property role="TrG5h" value="TypeSystem_BinaryExpression" />
     <ref role="1GHRfG" node="2$vcPaAt3Fd" resolve="Binary" />
-    <node concept="1vbBpf" id="cjbULZTtIf" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBhR" id="5gXRBOVSL20" role="1ukcCD">
+      <property role="TrG5h" value="TypeSystem_Binary" />
+      <node concept="1vbBpf" id="5gXRBOVSL2p" role="1eREs9">
+        <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVSL2u" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSGr_" resolve="Behaviour_Binary" />
+      </node>
     </node>
     <node concept="1GnNjC" id="7yvC56dAO9n" role="CLm5g">
       <property role="TrG5h" value="typeOf" />
@@ -2946,7 +3005,7 @@
       </node>
       <node concept="37vLTG" id="4wJBZF9Flm6" role="3clF46">
         <property role="TrG5h" value="expr" />
-        <node concept="CMjq$" id="2U630q5IfpG" role="1tU5fm">
+        <node concept="CMjq$" id="3wJrMHlwPHe" role="1tU5fm">
           <ref role="CMYPG" node="4wJBZF9F9SG" resolve="Expression" />
         </node>
       </node>
@@ -5100,8 +5159,11 @@
     <property role="3GE5qa" value="BaseExpr.UnaryExpressions.DotExpressions.Behaviour" />
     <property role="TrG5h" value="Behaviour_DotExpression" />
     <ref role="1GHRfG" node="4wJBZF9Fj0W" resolve="DotExpressions" />
-    <node concept="1vbBpf" id="cjbULZTIIO" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBhR" id="5gXRBOVSPHB" role="1ukcCD">
+      <property role="TrG5h" value="Behaviour_DotExpression" />
+      <node concept="1vbBpf" id="5gXRBOVSPIM" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSNod" resolve="Behaviour_Unary" />
+      </node>
     </node>
     <node concept="1GnNjC" id="2$vcPaA9ETU" role="CLm5g">
       <property role="TrG5h" value="priority" />
@@ -5334,8 +5396,8 @@
     <property role="3GE5qa" value="BaseExpr.UnaryExpressions.DotExpressions.Behaviour" />
     <property role="TrG5h" value="Behaviour_IDotTarget" />
     <ref role="1GHRfG" node="4wJBZF9Fj0W" resolve="DotExpressions" />
-    <node concept="1vbBpf" id="cjbULZTILV" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVSS3S" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSPHB" resolve="Behaviour_DotExpression" />
     </node>
     <node concept="1GnNjC" id="2$vcPaAsvAS" role="CLm5g">
       <property role="TrG5h" value="requiresContextToBeSideEffectFree" />
@@ -5460,8 +5522,11 @@
         <ref role="3uigEE" to="wz6r:35O7LeiBSwI" resolve="TypeConcept" />
       </node>
     </node>
-    <node concept="1vbBpf" id="cjbULZTJea" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBhR" id="5gXRBOVSS6r" role="1ukcCD">
+      <property role="TrG5h" value="TypeSystem_DotExpression" />
+      <node concept="1vbBpf" id="5gXRBOVSUm4" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSS93" resolve="TypeSystem_Unary" />
+      </node>
     </node>
   </node>
   <node concept="2oAaVg" id="4wJBZF9Fj0W">
@@ -5687,8 +5752,11 @@
     <property role="3GE5qa" value="BaseExpr.UnaryExpressions.LogicalNot.Behaviour" />
     <property role="TrG5h" value="Behaviour_LogicalNotExpression" />
     <ref role="1GHRfG" node="7yvC56dxRvD" resolve="LogicalNot" />
-    <node concept="1vbBpf" id="cjbULZTKQo" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBhR" id="5gXRBOVSUtp" role="1ukcCD">
+      <property role="TrG5h" value="Behaviour_LogicalNot" />
+      <node concept="1vbBpf" id="5gXRBOVSUtC" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSNod" resolve="Behaviour_Unary" />
+      </node>
     </node>
     <node concept="1GnNjC" id="7yvC56dypPF" role="CLm5g">
       <property role="TrG5h" value="priority" />
@@ -6091,8 +6159,11 @@
       <node concept="10P_77" id="2$vcPa_ZHNB" role="3clF45" />
     </node>
     <node concept="CLx5B" id="2$vcPa_ZHLS" role="CLm5g" />
-    <node concept="1vbBpf" id="cjbULZTMql" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBhR" id="5gXRBOVSNod" role="1ukcCD">
+      <property role="TrG5h" value="Behaviour_Unary" />
+      <node concept="1vbBpf" id="5gXRBOVSNor" role="1eREs9">
+        <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+      </node>
     </node>
     <node concept="1GnNjC" id="2$vcPa_ZG2A" role="CLm5g">
       <property role="TrG5h" value="isStaticallyEvaluatable" />
@@ -6142,8 +6213,14 @@
     <property role="3GE5qa" value="BaseExpr.UnaryExpressions.TypeSystem" />
     <property role="TrG5h" value="TypeSystem_UnaryExpression" />
     <ref role="1GHRfG" node="4wJBZF9FitJ" resolve="UnaryExpressions" />
-    <node concept="1vbBpf" id="cjbULZTMuT" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBhR" id="5gXRBOVSS93" role="1ukcCD">
+      <property role="TrG5h" value="TypeSystem_Unary" />
+      <node concept="1vbBpf" id="5gXRBOVSS9h" role="1eREs9">
+        <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVSSbH" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSNod" resolve="Behaviour_Unary" />
+      </node>
     </node>
     <node concept="1GnNjC" id="2$vcPaAsOjW" role="CLm5g">
       <property role="TrG5h" value="typeOf" />
@@ -6263,8 +6340,11 @@
     <property role="3GE5qa" value="BaseExpr.UnaryExpressions.UnaryMinus.Behaviour" />
     <property role="TrG5h" value="Behaviour_UnaryMinusExpression" />
     <ref role="1GHRfG" node="7yvC56dxSPC" resolve="UnaryMinus" />
-    <node concept="1vbBpf" id="cjbULZTO5s" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBhR" id="5gXRBOVSWJh" role="1ukcCD">
+      <property role="TrG5h" value="Behaviour_UnaryMinus" />
+      <node concept="1vbBpf" id="5gXRBOVSWJw" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSNod" resolve="Behaviour_Unary" />
+      </node>
     </node>
     <node concept="1GnNjC" id="7yvC56dxXPS" role="CLm5g">
       <property role="TrG5h" value="renderReadable" />
@@ -7122,8 +7202,14 @@
     <property role="3GE5qa" value="BaseExprAndSimpleTypes.BaseExprAndBoolean.TypeSystem" />
     <property role="TrG5h" value="TypeSystem_BaseExprAndBoolean" />
     <ref role="1GHRfG" node="7d4pZo9qgP1" resolve="BaseExprAndBoolean" />
-    <node concept="1vbBpf" id="cjbULZTQS0" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBhR" id="5gXRBOVTbXF" role="1ukcCD">
+      <property role="TrG5h" value="TypeSystem_BaseExprAndBoolean" />
+      <node concept="1vbBpf" id="5gXRBOVWtX8" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVTYRt" resolve="TypeSystem_BaseExpr" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVWtXd" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVT3A7" resolve="TypeSystem_Boolean" />
+      </node>
     </node>
     <node concept="1GnNjC" id="7d4pZo9qjzS" role="CLm5g">
       <property role="TrG5h" value="operationType" />
@@ -7721,8 +7807,14 @@
     <property role="3GE5qa" value="BaseExprAndSimpleTypes.BaseExprAndString.TypeSystem" />
     <property role="TrG5h" value="TypeSystem_BaseExprAndString" />
     <ref role="1GHRfG" node="7yvC56dACVL" resolve="BaseExprAndString" />
-    <node concept="1vbBpf" id="cjbULZTQSO" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBhR" id="5gXRBOVWyHI" role="1ukcCD">
+      <property role="TrG5h" value="TypeSystem_BaseExprAndString" />
+      <node concept="1vbBpf" id="5gXRBOVWyHN" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVTYRt" resolve="TypeSystem_BaseExpr" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVWyHS" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSZ8W" resolve="TypeSystem_String" />
+      </node>
     </node>
     <node concept="1GnNjC" id="7yvC56dACY4" role="CLm5g">
       <property role="TrG5h" value="operationType" />
@@ -8258,8 +8350,14 @@
     <property role="3GE5qa" value="BaseExprAndSimpleTypes.Behaviour" />
     <property role="TrG5h" value="Behaviour_BaseExprAndSimpleTypes" />
     <ref role="1GHRfG" node="2$vcPaA9pfd" resolve="BaseExprAndSimpleTypes" />
-    <node concept="1vbBpf" id="cjbULZTR2I" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBhR" id="5gXRBOVXq$0" role="1ukcCD">
+      <property role="TrG5h" value="Behaviour_BaseExprAndSimpleTypes" />
+      <node concept="1vbBpf" id="5gXRBOVXqED" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVUNUc" resolve="Behaviour_BaseExpr" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVZ2H5" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVYd$t" resolve="Behaviour_SimpleTypes" />
+      </node>
     </node>
     <node concept="1GnNjC" id="70$7KiYpD8g" role="CLm5g">
       <property role="TrG5h" value="getAllOtherwiseSiblings" />
@@ -8367,8 +8465,8 @@
     <property role="3GE5qa" value="BaseExprAndSimpleTypes.Behaviour" />
     <property role="TrG5h" value="Behaviour_IValidOtherwiseContainer" />
     <ref role="1GHRfG" node="2$vcPaA9pfd" resolve="BaseExprAndSimpleTypes" />
-    <node concept="1vbBpf" id="cjbULZTR3J" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVZ7UB" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVXq$0" resolve="Behaviour_BaseExprAndSimpleTypes" />
     </node>
     <node concept="1GnNjC" id="70$7KiYpBJO" role="CLm5g">
       <property role="1v5eOH" value="true" />
@@ -9232,8 +9330,20 @@
       </node>
       <node concept="3cqZAl" id="7yvC56eGXpR" role="3clF45" />
     </node>
-    <node concept="1vbBpf" id="cjbULZTRcV" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBhR" id="5gXRBOVW_7k" role="1ukcCD">
+      <property role="TrG5h" value="TypeSystem_BaseExprAndSimpleTypes" />
+      <node concept="1vbBpf" id="5gXRBOVW_7x" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVTbXF" resolve="TypeSystem_BaseExprAndBoolean" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVW_7A" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVWvhu" resolve="TypeSystem_BaseExprAndNumeric" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVW_7I" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVWyHI" resolve="TypeSystem_BaseExprAndString" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVZ4P2" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVYd$t" resolve="Behaviour_SimpleTypes" />
+      </node>
     </node>
     <node concept="16uJyJ" id="5b0BMS6z95w" role="lGtFl">
       <node concept="TZ5HA" id="5b0BMS6z95x" role="TZ5H$">
@@ -9827,8 +9937,11 @@
     <property role="3GE5qa" value="SimpleTypes.Boolean.Behaviour" />
     <property role="TrG5h" value="Behaviour_BooleanLiteral" />
     <ref role="1GHRfG" node="2$vcPaAtNOg" resolve="Boolean" />
-    <node concept="1vbBpf" id="cjbULZTRX1" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBhR" id="5gXRBOVSZdd" role="1ukcCD">
+      <property role="TrG5h" value="Behaviour_Boolean" />
+      <node concept="1vbBpf" id="5gXRBOVSZdg" role="1eREs9">
+        <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+      </node>
     </node>
     <node concept="1GnNjC" id="7d4pZo9p_Y$" role="CLm5g">
       <property role="TrG5h" value="isStaticallyEvaluatable" />
@@ -9944,8 +10057,8 @@
       <node concept="10P_77" id="7d4pZo9q0_Z" role="3clF45" />
     </node>
     <node concept="CLx5B" id="7d4pZo9q0Bm" role="CLm5g" />
-    <node concept="1vbBpf" id="cjbULZTRYx" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVT1lS" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSZdd" resolve="Behaviour_Boolean" />
     </node>
   </node>
   <node concept="1GnNiK" id="7d4pZo9pGTW">
@@ -10035,8 +10148,8 @@
       <node concept="10P_77" id="7d4pZo9q1D9" role="3clF45" />
     </node>
     <node concept="CLx5B" id="7d4pZo9q1By" role="CLm5g" />
-    <node concept="1vbBpf" id="cjbULZTS01" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVT1no" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSZdd" resolve="Behaviour_Boolean" />
     </node>
   </node>
   <node concept="1GnNiK" id="7d4pZo9pFM3">
@@ -10126,8 +10239,8 @@
       <node concept="10P_77" id="7d4pZo9q0Ux" role="3clF45" />
     </node>
     <node concept="CLx5B" id="7d4pZo9q0SU" role="CLm5g" />
-    <node concept="1vbBpf" id="cjbULZTS1x" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVT1oS" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVSZdd" resolve="Behaviour_Boolean" />
     </node>
   </node>
   <node concept="1GnNiK" id="7d4pZo9pulV">
@@ -10203,8 +10316,17 @@
         </node>
       </node>
     </node>
-    <node concept="1vbBpf" id="cjbULZTV3r" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBhR" id="5gXRBOVT3A7" role="1ukcCD">
+      <property role="TrG5h" value="TypeSystem_Boolean" />
+      <node concept="1vbBpf" id="5gXRBOVT3Ac" role="1eREs9">
+        <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVT3Ah" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSZdd" resolve="Behaviour_Boolean" />
+      </node>
+      <node concept="1vbBpf" id="3wJrMHlh0VN" role="1eREs9">
+        <ref role="1vbBpc" node="3wJrMHlgYHK" resolve="SystemWide_Boolean" />
+      </node>
     </node>
   </node>
   <node concept="2oAaVg" id="2$vcPaAtNOg">
@@ -10466,11 +10588,14 @@
   </node>
   <node concept="1GnNiK" id="7d4pZo9pIBE">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="SimpleTypes.String.StrBehaviour" />
+    <property role="3GE5qa" value="SimpleTypes.String.Behaviour" />
     <property role="TrG5h" value="Behaviour_StringLiteral" />
     <ref role="1GHRfG" node="2$vcPaA9oOm" resolve="String" />
-    <node concept="1vbBpf" id="cjbULZTZg0" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBhR" id="5gXRBOVSWTT" role="1ukcCD">
+      <property role="TrG5h" value="Behaviour_String" />
+      <node concept="1vbBpf" id="5gXRBOVSWU9" role="1eREs9">
+        <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+      </node>
     </node>
     <node concept="1GnNjC" id="7d4pZo9pWRV" role="CLm5g">
       <property role="TrG5h" value="isSameAs" />
@@ -10640,7 +10765,7 @@
   </node>
   <node concept="1GnNiK" id="7d4pZo9qd8W">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="3GE5qa" value="SimpleTypes.String.StrTypeSystem" />
+    <property role="3GE5qa" value="SimpleTypes.String.TypeSystem" />
     <property role="TrG5h" value="TypeSystem_StringLiteral" />
     <ref role="1GHRfG" node="2$vcPaA9oOm" resolve="String" />
     <node concept="1GnNjC" id="7d4pZo9qd8X" role="CLm5g">
@@ -10711,8 +10836,17 @@
         </node>
       </node>
     </node>
-    <node concept="1vbBpf" id="154Paq6JqF0" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBhR" id="5gXRBOVSZ8W" role="1ukcCD">
+      <property role="TrG5h" value="TypeSystem_String" />
+      <node concept="1vbBpf" id="5gXRBOVSZ91" role="1eREs9">
+        <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVSZ96" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSWTT" resolve="Behaviour_String" />
+      </node>
+      <node concept="1vbBpf" id="3wJrMHlh6e_" role="1eREs9">
+        <ref role="1vbBpc" node="3wJrMHlh42P" resolve="SystemWide_String" />
+      </node>
     </node>
   </node>
   <node concept="2oAaVg" id="2$vcPaA9oOm">
@@ -11102,8 +11236,8 @@
   </node>
   <node concept="1vbSxi" id="2$vcPaAtuET">
     <property role="1vYpmj" value="CodeGen" />
-    <node concept="1vbBpf" id="cjbULZU1va" role="1vbB4l">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBpf" id="5gXRBOW2sHI" role="1vbB4l">
+      <ref role="1vbBpc" node="5gXRBOW1_$h" resolve="Alternatives" />
     </node>
   </node>
   <node concept="2oAaVg" id="1glZBhijRC_">
@@ -11511,9 +11645,9 @@
     <property role="TrG5h" value="Constraints_NumberLiteral" />
     <ref role="1GHRfG" node="1glZBhijRC_" resolve="Numeric" />
     <node concept="1vbBhR" id="1glZBhimVN0" role="1ukcCD">
-      <property role="TrG5h" value="Constraints" />
-      <node concept="1vbBpf" id="1glZBhin151" role="1eREs9">
-        <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+      <property role="TrG5h" value="Constraints_Numeric" />
+      <node concept="1vbBpf" id="5gXRBOVT8u8" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVT54G" resolve="Behaviour_Numeric" />
       </node>
     </node>
     <node concept="1GnNjC" id="1glZBhimWFc" role="CLm5g">
@@ -11580,8 +11714,8 @@
     <property role="3GE5qa" value="SimpleTypes.Numeric.Behaviour" />
     <property role="TrG5h" value="Behaviour_NumberLiteral" />
     <ref role="1GHRfG" node="1glZBhijRC_" resolve="Numeric" />
-    <node concept="1vbBpf" id="1glZBhin1Xz" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVT6Nc" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVT54G" resolve="Behaviour_Numeric" />
     </node>
     <node concept="1GnNjC" id="1glZBhin2PT" role="CLm5g">
       <property role="TrG5h" value="isZero" />
@@ -12253,8 +12387,8 @@
     <property role="3GE5qa" value="SimpleTypes.Numeric.Behaviour" />
     <property role="TrG5h" value="Behaviour_LimitExpressionExpression" />
     <ref role="1GHRfG" node="1glZBhik5xp" resolve="Limit" />
-    <node concept="1vbBpf" id="1glZBhiqLWC" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVT6xL" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVT54G" resolve="Behaviour_Numeric" />
     </node>
     <node concept="1GnNjC" id="1glZBhiqLWE" role="CLm5g">
       <property role="TrG5h" value="isStaticallyEvaluatable" />
@@ -12320,8 +12454,8 @@
     <property role="3GE5qa" value="SimpleTypes.Numeric.Behaviour" />
     <property role="TrG5h" value="Behaviour_ConvertPrecisionNumberExpression" />
     <ref role="1GHRfG" node="1glZBhik5xy" resolve="Precision" />
-    <node concept="1vbBpf" id="1glZBhivJ_Z" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVT6x3" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVT54G" resolve="Behaviour_Numeric" />
     </node>
     <node concept="1GnNjC" id="1glZBhivKz0" role="CLm5g">
       <property role="TrG5h" value="renderReadable" />
@@ -12400,8 +12534,8 @@
     <property role="3GE5qa" value="SimpleTypes.Numeric.Behaviour" />
     <property role="TrG5h" value="Behaviour_RoundingMode" />
     <ref role="1GHRfG" node="1glZBhik5xy" resolve="Precision" />
-    <node concept="1vbBpf" id="1glZBhivV70" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVT6Xj" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVT54G" resolve="Behaviour_Numeric" />
     </node>
     <node concept="1GnNjC" id="1glZBhivV72" role="CLm5g">
       <property role="TrG5h" value="targetPrecision" />
@@ -12507,8 +12641,8 @@
     <property role="3GE5qa" value="SimpleTypes.Numeric.Behaviour" />
     <property role="TrG5h" value="Behaviour_RoundDownRoundingMode" />
     <ref role="1GHRfG" node="1glZBhik5xy" resolve="Precision" />
-    <node concept="1vbBpf" id="1glZBhiwhg2" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVT6RJ" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVT54G" resolve="Behaviour_Numeric" />
     </node>
     <node concept="1GnNjC" id="1glZBhiwhg4" role="CLm5g">
       <property role="TrG5h" value="process" />
@@ -12579,8 +12713,8 @@
     <property role="3GE5qa" value="SimpleTypes.Numeric.Behaviour" />
     <property role="TrG5h" value="Behaviour_RoundUpRoundingMode" />
     <ref role="1GHRfG" node="1glZBhik5xy" resolve="Precision" />
-    <node concept="1vbBpf" id="1glZBhiwoQ9" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVT6TY" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVT54G" resolve="Behaviour_Numeric" />
     </node>
     <node concept="1GnNjC" id="1glZBhiwoQa" role="CLm5g">
       <property role="TrG5h" value="process" />
@@ -12639,8 +12773,8 @@
     <property role="3GE5qa" value="SimpleTypes.Numeric.Behaviour" />
     <property role="TrG5h" value="Behaviour_TruncateRoundingMode" />
     <ref role="1GHRfG" node="1glZBhik5xy" resolve="Precision" />
-    <node concept="1vbBpf" id="1glZBhiwt0O" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVT70l" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVT54G" resolve="Behaviour_Numeric" />
     </node>
     <node concept="1GnNjC" id="1glZBhiwt0P" role="CLm5g">
       <property role="TrG5h" value="process" />
@@ -13267,9 +13401,6 @@
       <node concept="3cqZAl" id="1glZBhi$eMm" role="3clF45" />
     </node>
     <node concept="CLx5B" id="1glZBhi$cIA" role="CLm5g" />
-    <node concept="1vbBpf" id="1glZBhiwBf8" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
-    </node>
     <node concept="1GnNjC" id="1glZBhiwBfa" role="CLm5g">
       <property role="TrG5h" value="cloneWithRange" />
       <node concept="37vLTG" id="1glZBhiwBfb" role="3clF46">
@@ -15431,6 +15562,12 @@
         </node>
       </node>
     </node>
+    <node concept="1vbBhR" id="5gXRBOVT54G" role="1ukcCD">
+      <property role="TrG5h" value="Behaviour_Numeric" />
+      <node concept="1vbBpf" id="5gXRBOVT5bC" role="1eREs9">
+        <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="1glZBhiBWyW">
     <property role="3GE5qa" value="BaseExpr.ExpressionsAndTypes.Behaviour" />
@@ -15503,8 +15640,8 @@
     <property role="3GE5qa" value="SimpleTypes.Numeric.Behaviour" />
     <property role="TrG5h" value="InfHelper" />
     <ref role="1GHRfG" node="1glZBhijRC_" resolve="Numeric" />
-    <node concept="1vbBpf" id="1glZBhiCqTM" role="1ukcCD">
-      <ref role="1vbBpc" node="cjbULZTl_J" resolve="Behaviour" />
+    <node concept="1vbBpf" id="5gXRBOVT8hD" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVT54G" resolve="Behaviour_Numeric" />
     </node>
     <node concept="1GnNjC" id="1glZBhiCrXy" role="CLm5g">
       <property role="TrG5h" value="negInf" />
@@ -17910,8 +18047,11 @@
     <property role="3GE5qa" value="SimpleTypes.Boolean.SystemWide" />
     <property role="TrG5h" value="SystemWide_Boolean" />
     <ref role="1GHRfG" node="2$vcPaAtNOg" resolve="Boolean" />
-    <node concept="1vbBpf" id="1glZBhiKy2Z" role="1ukcCD">
-      <ref role="1vbBpc" node="70$7KiYrYtl" resolve="SystemWide" />
+    <node concept="1vbBhR" id="3wJrMHlgYHK" role="1ukcCD">
+      <property role="TrG5h" value="SystemWide_Boolean" />
+      <node concept="1vbBpf" id="3wJrMHlgYHP" role="1eREs9">
+        <ref role="1vbBpc" node="70$7KiYrYtl" resolve="SystemWide" />
+      </node>
     </node>
     <node concept="1GnNjC" id="154Paq6DdOK" role="CLm5g">
       <property role="TrG5h" value="createBooleanType" />
@@ -18176,8 +18316,11 @@
     <property role="3GE5qa" value="SimpleTypes.String.SystemWide" />
     <property role="TrG5h" value="SystemWide_String" />
     <ref role="1GHRfG" node="2$vcPaA9oOm" resolve="String" />
-    <node concept="1vbBpf" id="1glZBhiNy1L" role="1ukcCD">
-      <ref role="1vbBpc" node="70$7KiYrYtl" resolve="SystemWide" />
+    <node concept="1vbBhR" id="3wJrMHlh42P" role="1ukcCD">
+      <property role="TrG5h" value="SystemWide_String" />
+      <node concept="1vbBpf" id="3wJrMHlh42S" role="1eREs9">
+        <ref role="1vbBpc" node="70$7KiYrYtl" resolve="SystemWide" />
+      </node>
     </node>
     <node concept="1GnNjC" id="1glZBhiNy1N" role="CLm5g">
       <property role="TrG5h" value="createStringType" />
@@ -19006,8 +19149,11 @@
       </node>
     </node>
     <node concept="CLx5B" id="5b0BMS6ezxH" role="CLm5g" />
-    <node concept="1vbBpf" id="1glZBhiNG_2" role="1ukcCD">
-      <ref role="1vbBpc" node="70$7KiYrYtl" resolve="SystemWide" />
+    <node concept="1vbBhR" id="3wJrMHlgUHc" role="1ukcCD">
+      <property role="TrG5h" value="SystemWide_Numeric" />
+      <node concept="1vbBpf" id="3wJrMHlgWr8" role="1eREs9">
+        <ref role="1vbBpc" node="70$7KiYrYtl" resolve="SystemWide" />
+      </node>
     </node>
     <node concept="1GnNjC" id="1glZBhiNI4H" role="CLm5g">
       <property role="TrG5h" value="createIntegerType" />
@@ -19160,7 +19306,7 @@
         </node>
         <node concept="3clFbF" id="5b0BMS6eFEA" role="3cqZAp">
           <node concept="3otQA" id="5b0BMS6eFEB" role="3clFbG">
-            <ref role="37wK5l" node="1glZBhiGF22" resolve="setPrecision" />
+            <ref role="37wK5l" node="1glZBhiGThH" resolve="setPrecisionFromValue" />
             <node concept="2OqwBi" id="5b0BMS6eFEC" role="37wK5m">
               <node concept="37vLTw" id="5b0BMS6eFED" role="2Oq$k0">
                 <ref role="3cqZAo" node="5b0BMS6eFEo" resolve="res" />
@@ -19177,12 +19323,8 @@
                 <ref role="2Oxat5" to="wz6r:35O7LeiC9sb" resolve="conceptType" />
               </node>
             </node>
-            <node concept="2YIFZM" id="2LuQUitHoDx" role="37wK5m">
-              <ref role="37wK5l" to="e2lb:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
-              <node concept="37vLTw" id="2LuQUitHoE1" role="37wK5m">
-                <ref role="3cqZAo" node="1glZBhiOwg4" resolve="value" />
-              </node>
+            <node concept="37vLTw" id="5gXRBOUEixA" role="37wK5m">
+              <ref role="3cqZAo" node="1glZBhiOwg4" resolve="value" />
             </node>
           </node>
         </node>
@@ -19756,8 +19898,8 @@
         <ref role="3uigEE" to="wz6r:35O7LeiBSwI" resolve="TypeConcept" />
       </node>
     </node>
-    <node concept="1vbBpf" id="5b0BMS6iGIK" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBpf" id="5gXRBOVTbRk" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVTaRj" resolve="TypeSystem_Numeric" />
     </node>
   </node>
   <node concept="1GnNiK" id="5b0BMS6iW0q">
@@ -19765,8 +19907,8 @@
     <property role="3GE5qa" value="SimpleTypes.Numeric.TypeSystem" />
     <property role="TrG5h" value="TypeSystem_IntegerType" />
     <ref role="1GHRfG" node="1glZBhijRC_" resolve="Numeric" />
-    <node concept="1vbBpf" id="5b0BMS6iW54" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBpf" id="5gXRBOVTbzk" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVTaRj" resolve="TypeSystem_Numeric" />
     </node>
     <node concept="1GnNjC" id="5b0BMS6iXMn" role="CLm5g">
       <property role="TrG5h" value="superTypesOf" />
@@ -19838,8 +19980,17 @@
     <property role="3GE5qa" value="SimpleTypes.Numeric.TypeSystem" />
     <property role="TrG5h" value="TypeSystem_NumberType" />
     <ref role="1GHRfG" node="1glZBhijRC_" resolve="Numeric" />
-    <node concept="1vbBpf" id="5b0BMS6jubu" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBhR" id="5gXRBOVTaRj" role="1ukcCD">
+      <property role="TrG5h" value="TypeSystem_Numeric" />
+      <node concept="1vbBpf" id="5gXRBOVTaRN" role="1eREs9">
+        <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVTaRI" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVT54G" resolve="Behaviour_Numeric" />
+      </node>
+      <node concept="1vbBpf" id="3wJrMHlh3kI" role="1eREs9">
+        <ref role="1vbBpc" node="3wJrMHlgUHc" resolve="SystemWide_Numeric" />
+      </node>
     </node>
     <node concept="1GnNjC" id="5b0BMS6jubw" role="CLm5g">
       <property role="TrG5h" value="superTypesOf" />
@@ -20412,8 +20563,8 @@
       <node concept="10P_77" id="5b0BMS6uQQU" role="3clF45" />
     </node>
     <node concept="CLx5B" id="5b0BMS6uAxd" role="CLm5g" />
-    <node concept="1vbBpf" id="5b0BMS6mVnG" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBpf" id="5gXRBOVTbtI" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVTaRj" resolve="TypeSystem_Numeric" />
     </node>
     <node concept="1GnNjC" id="5b0BMS6mYTW" role="CLm5g">
       <property role="TrG5h" value="typeOf" />
@@ -21556,8 +21707,8 @@
       <node concept="10P_77" id="5b0BMS6wciC" role="3clF45" />
     </node>
     <node concept="CLx5B" id="5b0BMS6wcgB" role="CLm5g" />
-    <node concept="1vbBpf" id="5b0BMS6qcVT" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBpf" id="5gXRBOVTbNK" role="1ukcCD">
+      <ref role="1vbBpc" node="5gXRBOVTaRj" resolve="TypeSystem_Numeric" />
     </node>
     <node concept="1GnNjC" id="5b0BMS6qcVV" role="CLm5g">
       <property role="TrG5h" value="typeOf" />
@@ -22082,8 +22233,14 @@
     <property role="3GE5qa" value="BaseExprAndSimpleTypes.BaseExprAndNumeric.TypeSystem" />
     <property role="TrG5h" value="TypeSystem_BaseExprAndNumeric" />
     <ref role="1GHRfG" node="5b0BMS6xcCp" resolve="BaseExprAndNumeric" />
-    <node concept="1vbBpf" id="5b0BMS6xeH8" role="1ukcCD">
-      <ref role="1vbBpc" node="2$vcPaA9tUM" resolve="TypeSystem" />
+    <node concept="1vbBhR" id="5gXRBOVWvhu" role="1ukcCD">
+      <property role="TrG5h" value="TypeSystem_BaseExprAndNumeric" />
+      <node concept="1vbBpf" id="5gXRBOVWvma" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVTYRt" resolve="TypeSystem_BaseExpr" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVWvmf" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVTaRj" resolve="TypeSystem_Numeric" />
+      </node>
     </node>
     <node concept="1GnNjC" id="5b0BMS6xeH9" role="CLm5g">
       <property role="TrG5h" value="operationType" />
@@ -23883,6 +24040,138 @@
       <node concept="2oAaYs" id="YoseeXV2lH" role="1_67$s">
         <ref role="3aaZtz" node="29ZfiwlJA_g" resolve="ModelSimple" />
       </node>
+    </node>
+  </node>
+  <node concept="1GnNiK" id="5gXRBOVTYRs">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="BaseExpr.TypeSystem" />
+    <property role="TrG5h" value="TypeSystem_BaseExpr" />
+    <ref role="1GHRfG" node="2$vcPaA9oCV" resolve="BaseExpr" />
+    <node concept="1vbBhR" id="5gXRBOVTYRt" role="1ukcCD">
+      <property role="TrG5h" value="TypeSystem_BaseExpr" />
+      <node concept="1vbBpf" id="5gXRBOVTYRv" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSDOm" resolve="TypeSystem_Alternatives" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVTYR$" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSS6r" resolve="TypeSystem_DotExpression" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVTYT5" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSL20" resolve="TypeSystem_Binary" />
+      </node>
+    </node>
+  </node>
+  <node concept="1GnNiK" id="5gXRBOVUNUb">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="TrG5h" value="Behaviour_BaseExpr" />
+    <property role="3GE5qa" value="BaseExpr.Behaviour" />
+    <ref role="1GHRfG" node="2$vcPaA9oCV" resolve="BaseExpr" />
+    <node concept="1vbBhR" id="5gXRBOVUNUc" role="1ukcCD">
+      <property role="TrG5h" value="Behaviour_BaseExpr" />
+      <node concept="1vbBpf" id="5gXRBOVUNUe" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVS_bN" resolve="Behaviour_Alternatives" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVUNUj" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSGr_" resolve="Behaviour_Binary" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVUNUr" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSPHB" resolve="Behaviour_DotExpression" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVUNU_" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSUtp" resolve="Behaviour_LogicalNot" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVUNUL" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSWJh" resolve="Behaviour_UnaryMinus" />
+      </node>
+    </node>
+  </node>
+  <node concept="1GnNiK" id="5gXRBOVYd$s">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="SimpleTypes.Behaviour" />
+    <property role="TrG5h" value="Behaviour_SimpleTypes" />
+    <ref role="1GHRfG" node="2$vcPaA9oib" resolve="SimpleTypes" />
+    <node concept="1vbBhR" id="5gXRBOVYd$t" role="1ukcCD">
+      <property role="TrG5h" value="Behaviour_SimpleTypes" />
+      <node concept="1vbBpf" id="5gXRBOVYd$v" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVT54G" resolve="Behaviour_Numeric" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVYd$$" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSZdd" resolve="Behaviour_Boolean" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOVYd$G" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSWTT" resolve="Behaviour_String" />
+      </node>
+    </node>
+  </node>
+  <node concept="2oAaVg" id="5gXRBOVZXz3">
+    <property role="1ewt2y" value="false" />
+    <property role="3uBway" value="false" />
+    <property role="1x3Ciu" value="-1" />
+    <property role="3GE5qa" value="BaseExpr.Alternatives.Models" />
+    <property role="TrG5h" value="AlternativesIsolation" />
+    <ref role="19kf5F" node="2$vcPaAtHIc" resolve="Alternatives" />
+    <node concept="2oAaW5" id="5gXRBOVZXAO" role="2oAaxa">
+      <property role="TrG5h" value="1" />
+      <node concept="2oAaXF" id="5gXRBOVZXAR" role="2oAawq">
+        <ref role="3aaZtz" node="1glZBhimfPe" resolve="MetaModInteger" />
+      </node>
+    </node>
+  </node>
+  <node concept="1GnNiK" id="5gXRBOW1_$b">
+    <property role="1vYpmj" value="CodeGen" />
+    <property role="3GE5qa" value="BaseExpr.Alternatives.Models" />
+    <property role="TrG5h" value="PU_Alternatives" />
+    <ref role="1GHRfG" node="2$vcPaAtHIc" resolve="Alternatives" />
+    <node concept="1vbBhR" id="5gXRBOW1_$h" role="1ukcCD">
+      <property role="TrG5h" value="Alternatives" />
+      <node concept="1vbBpf" id="5gXRBOW1_$j" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVS_bN" resolve="Behaviour_Alternatives" />
+      </node>
+      <node concept="1vbBpf" id="5gXRBOW1_$o" role="1eREs9">
+        <ref role="1vbBpc" node="5gXRBOVSDOm" resolve="TypeSystem_Alternatives" />
+      </node>
+    </node>
+    <node concept="1GnNjC" id="3wJrMHllmDH" role="CLm5g">
+      <property role="TrG5h" value="main" />
+      <node concept="37vLTG" id="3wJrMHllmDI" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="3wJrMHllmDJ" role="1tU5fm">
+          <ref role="1l_bkj" node="2$vcPaAtHIc" resolve="Alternatives" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3wJrMHllmDK" role="3clF47">
+        <node concept="1DcWWT" id="3wJrMHlltZz" role="3cqZAp">
+          <node concept="3cpWsn" id="3wJrMHlltZ$" role="1Duv9x">
+            <property role="TrG5h" value="altExp" />
+            <node concept="CMjq$" id="3wJrMHllu5M" role="1tU5fm">
+              <ref role="CMYPG" node="2$vcPaAtHKU" resolve="AlternativesExpression" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="3wJrMHlltZ_" role="2LFqv$">
+            <node concept="3clFbF" id="3wJrMHllyrh" role="3cqZAp">
+              <node concept="3otQA" id="3wJrMHllyrg" role="3clFbG">
+                <ref role="37wK5l" node="4wJBZF9FlhS" resolve="renderReadable" />
+                <node concept="37vLTw" id="3wJrMHllyrn" role="37wK5m">
+                  <ref role="3cqZAo" node="3wJrMHllmDI" resolve="inputGroup" />
+                </node>
+                <node concept="37vLTw" id="3wJrMHllyr$" role="37wK5m">
+                  <ref role="3cqZAo" node="3wJrMHlltZ$" resolve="altExp" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3wJrMHllvif" role="1DdaDG">
+            <node concept="37vLTw" id="3wJrMHlluyF" role="2Oq$k0">
+              <ref role="3cqZAo" node="3wJrMHllmDI" resolve="inputGroup" />
+            </node>
+            <node concept="1lBOk0" id="3wJrMHllvHd" role="2OqNvi">
+              <node concept="CMjq$" id="3wJrMHllvHf" role="1lB3kv">
+                <ref role="CMYPG" node="2$vcPaAtHKU" resolve="AlternativesExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3wJrMHllqrj" role="3clF45" />
     </node>
   </node>
 </model>
