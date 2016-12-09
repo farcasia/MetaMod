@@ -211,7 +211,7 @@
   <node concept="1TIwiD" id="48EbtxmrRJI">
     <property role="3GE5qa" value="Operations.NavigationOperations" />
     <property role="TrG5h" value="AsSourceFor" />
-    <property role="34LRSv" value="as source for" />
+    <property role="34LRSv" value="@src" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="48EbtxmrRK9" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -232,7 +232,7 @@
   <node concept="1TIwiD" id="48EbtxmtnqF">
     <property role="3GE5qa" value="Operations.NavigationOperations" />
     <property role="TrG5h" value="AsTargetFor" />
-    <property role="34LRSv" value="asTargetFor" />
+    <property role="34LRSv" value="@tgt" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="48EbtxmtnqG" role="1TKVEi">
       <property role="20lmBu" value="reference" />

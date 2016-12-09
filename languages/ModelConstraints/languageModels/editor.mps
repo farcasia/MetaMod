@@ -460,15 +460,11 @@
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="3F0ifn" id="5X829TycDMX" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
+        <property role="3F0ifm" value="#" />
         <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
-      </node>
-      <node concept="3F0ifn" id="23puUW1k9y5" role="3EZMnx">
-        <property role="3F0ifm" value="RelationType" />
-      </node>
-      <node concept="3F0ifn" id="23puUW1k9_T" role="3EZMnx">
-        <property role="3F0ifm" value="&lt;" />
-        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+        <node concept="Vb9p2" id="5H3neDt26$g" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
       </node>
       <node concept="1iCGBv" id="48EbtxmrXlB" role="3EZMnx">
         <ref role="1NtTu8" to="1o5n:48EbtxmrRK9" />
@@ -476,16 +472,11 @@
           <node concept="3F0A7n" id="48EbtxmrXlL" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="Vb9p2" id="5H3neDt26Gz" role="3F10Kt">
+              <property role="Vbekb" value="ITALIC" />
+            </node>
           </node>
         </node>
-      </node>
-      <node concept="3F0ifn" id="23puUW1k9Af" role="3EZMnx">
-        <property role="3F0ifm" value="&gt;" />
-        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
-      </node>
-      <node concept="3F0ifn" id="5X829TycDNb" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="48EbtxmrRMj" role="2iSdaV" />
       <node concept="3F0ifn" id="1glZBhiQjTd" role="3EZMnx">
@@ -511,33 +502,21 @@
       <node concept="PMmxH" id="7I7rEyEgMIK" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
-      <node concept="3F0ifn" id="7I7rEyEgMIL" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
-      </node>
-      <node concept="3F0ifn" id="7I7rEyEgMIM" role="3EZMnx">
-        <property role="3F0ifm" value="RelationType" />
-      </node>
       <node concept="3F0ifn" id="7I7rEyEgMIN" role="3EZMnx">
-        <property role="3F0ifm" value="&lt;" />
+        <property role="3F0ifm" value="#" />
         <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+        <node concept="Vb9p2" id="5H3neDt37lV" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
       </node>
       <node concept="1iCGBv" id="7I7rEyEgMIO" role="3EZMnx">
-        <ref role="1NtTu8" to="1o5n:48EbtxmrRK9" />
+        <ref role="1NtTu8" to="1o5n:48EbtxmtnqG" />
         <node concept="1sVBvm" id="7I7rEyEgMIP" role="1sWHZn">
           <node concept="3F0A7n" id="7I7rEyEgMIQ" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
-      </node>
-      <node concept="3F0ifn" id="7I7rEyEgMIR" role="3EZMnx">
-        <property role="3F0ifm" value="&gt;" />
-        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
-      </node>
-      <node concept="3F0ifn" id="7I7rEyEgMIS" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="7I7rEyEgMIT" role="2iSdaV" />
       <node concept="3F0ifn" id="7I7rEyEgMIU" role="3EZMnx">
@@ -548,7 +527,7 @@
         <ref role="1k5W1q" to="tpen:hFCSAw$" resolve="LeftParen" />
       </node>
       <node concept="3F1sOY" id="7I7rEyEgMIW" role="3EZMnx">
-        <ref role="1NtTu8" to="1o5n:7I7rEyE6UDa" />
+        <ref role="1NtTu8" to="1o5n:7I7rEyEgMhR" />
       </node>
       <node concept="3F0ifn" id="7I7rEyEgMIX" role="3EZMnx">
         <property role="3F0ifm" value=")" />
