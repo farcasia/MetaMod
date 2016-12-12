@@ -584,7 +584,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2roNPs2zuUF">
-    <property role="3GE5qa" value="Operations.NavigationOperations.BooleanOperations" />
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
     <property role="TrG5h" value="collectImmediateSuperConcepts" />
     <property role="34LRSv" value="collectImmediateSuperConcepts" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
@@ -646,6 +646,51 @@
       <node concept="trNpa" id="1glZBhirKPI" role="EQaZv">
         <ref role="trN6q" node="7MhXM5kl9pK" resolve="MethodsContainer" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5CDYCupSf$3">
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
+    <property role="TrG5h" value="parent" />
+    <property role="34LRSv" value="parent" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="5CDYCupSxz4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="5CDYCupSfP4" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5CDYCupT5QZ">
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
+    <property role="TrG5h" value="ancestors" />
+    <property role="34LRSv" value="ancestors" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="5CDYCupT5R2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="5CDYCupT5R0" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5CDYCupTmnm">
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
+    <property role="TrG5h" value="descendants" />
+    <property role="34LRSv" value="descendants" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="PrWs8" id="5CDYCupTmnn" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+    <node concept="1TJgyj" id="5CDYCupTmAt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
 </model>

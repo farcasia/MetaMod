@@ -1146,7 +1146,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2roNPs2zAkY">
-    <property role="3GE5qa" value="Operations.NavigationOperations.BooleanOperations" />
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
     <ref role="1XX52x" to="1o5n:2roNPs2zuUF" resolve="collectImmediateSuperConcepts" />
     <node concept="3EZMnI" id="7I7rEyFclxQ" role="2wV5jI">
       <node concept="2iRfu4" id="7I7rEyFclxR" role="2iSdaV" />
@@ -1335,6 +1335,81 @@
       </node>
       <node concept="2SsqMj" id="7lVCwDcxPzc" role="3EZMnx" />
       <node concept="l2Vlx" id="4CW56HZFII7" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5CDYCupSfPg">
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
+    <ref role="1XX52x" to="1o5n:5CDYCupSf$3" resolve="parent" />
+    <node concept="3EZMnI" id="5CDYCupSxz8" role="2wV5jI">
+      <node concept="2iRfu4" id="5CDYCupSxz9" role="2iSdaV" />
+      <node concept="PMmxH" id="5CDYCupSlIm" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="Vb9p2" id="5CDYCupSoTG" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5CDYCupSxzk" role="3EZMnx">
+        <property role="3F0ifm" value="in" />
+      </node>
+      <node concept="3F0ifn" id="5CDYCupSxzu" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+      </node>
+      <node concept="3F1sOY" id="5CDYCupSx$4" role="3EZMnx">
+        <ref role="1NtTu8" to="1o5n:5CDYCupSxz4" />
+      </node>
+      <node concept="3F0ifn" id="5CDYCupSxzE" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5CDYCupT5R9">
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
+    <ref role="1XX52x" to="1o5n:5CDYCupT5QZ" resolve="ancestors" />
+    <node concept="3EZMnI" id="5CDYCupT5Rb" role="2wV5jI">
+      <node concept="PMmxH" id="5CDYCupT5Ri" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="5CDYCupT5Rn" role="3EZMnx">
+        <property role="3F0ifm" value="in" />
+      </node>
+      <node concept="3F0ifn" id="5CDYCupT5Rv" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+      </node>
+      <node concept="3F1sOY" id="5CDYCupT5RP" role="3EZMnx">
+        <ref role="1NtTu8" to="1o5n:5CDYCupT5R2" />
+      </node>
+      <node concept="3F0ifn" id="5CDYCupT5RD" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="2iRfu4" id="5CDYCupT5Re" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5CDYCupTmIT">
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
+    <ref role="1XX52x" to="1o5n:5CDYCupTmnm" resolve="descendants" />
+    <node concept="3EZMnI" id="5CDYCupTmJg" role="2wV5jI">
+      <node concept="PMmxH" id="5CDYCupTmJh" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0ifn" id="5CDYCupTmJi" role="3EZMnx">
+        <property role="3F0ifm" value="in" />
+      </node>
+      <node concept="3F0ifn" id="5CDYCupTmJj" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+      </node>
+      <node concept="3F1sOY" id="5CDYCupTmJk" role="3EZMnx">
+        <ref role="1NtTu8" to="1o5n:5CDYCupTmAt" />
+      </node>
+      <node concept="3F0ifn" id="5CDYCupTmJl" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="2iRfu4" id="5CDYCupTmJm" role="2iSdaV" />
     </node>
   </node>
 </model>
