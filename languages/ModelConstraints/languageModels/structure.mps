@@ -145,7 +145,7 @@
   <node concept="1TIwiD" id="7MhXM5kmc65">
     <property role="TrG5h" value="ConceptType" />
     <property role="3GE5qa" value="Types" />
-    <property role="34LRSv" value="ConceptType&lt;&gt;" />
+    <property role="34LRSv" value="ConceptType##" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyj" id="7MhXM5kmxDd" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -547,7 +547,7 @@
   <node concept="1TIwiD" id="2U630q5ILnD">
     <property role="3GE5qa" value="Types" />
     <property role="TrG5h" value="ConceptT" />
-    <property role="34LRSv" value="Concept&lt; &gt;" />
+    <property role="34LRSv" value="Concept##" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyj" id="154Paq6EErb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -691,6 +691,40 @@
       <property role="20kJfa" value="exp" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="B9nFqdQ6uQ">
+    <property role="TrG5h" value="AuxiliaryTypeInfo" />
+    <property role="3GE5qa" value="Auxiliary" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="B9nFqdQ6uR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conceptType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7MhXM5kmc65" resolve="ConceptType" />
+    </node>
+    <node concept="1TJgyj" id="B9nFqdTPyI" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="group" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="B9nFqdXV2g">
+    <property role="TrG5h" value="AuxiliaryTypeTInfo" />
+    <property role="3GE5qa" value="Auxiliary" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="B9nFqdXV2h" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conceptT" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2U630q5ILnD" resolve="ConceptT" />
+    </node>
+    <node concept="1TJgyj" id="B9nFqdXV2i" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="group" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     </node>
   </node>
 </model>
