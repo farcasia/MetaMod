@@ -178,7 +178,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="23adspZRHJa" role="3EZMnx">
-        <property role="3F0ifm" value="@multioperation" />
+        <property role="3F0ifm" value="@multi-operation" />
         <node concept="pkWqt" id="23adspZRJNk" role="pqm2j">
           <node concept="3clFbS" id="23adspZRJNl" role="2VODD2">
             <node concept="3clFbF" id="23adspZRJU1" role="3cqZAp">
