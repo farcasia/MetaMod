@@ -82,6 +82,10 @@
       <ref role="20lvS9" node="4BhfRC_zwIi" resolve="CodeGenMethod" />
       <ref role="20ksaX" to="tpee:fz7wK6H" />
     </node>
+    <node concept="1TJgyi" id="1yIOEAu4cZT" role="1TKVEl">
+      <property role="TrG5h" value="base" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6dXtnCWkJOC">
     <property role="TrG5h" value="ConfigurationCodeGen" />

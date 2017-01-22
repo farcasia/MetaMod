@@ -2848,6 +2848,37 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2O_vJMxoI0K" role="3cqZAp">
+          <node concept="37vLTI" id="2O_vJMxoI0L" role="3clFbG">
+            <node concept="37vLTw" id="2O_vJMxoI0M" role="37vLTJ">
+              <ref role="3cqZAo" node="6K_nk43dAIX" resolve="name" />
+            </node>
+            <node concept="2ShNRf" id="2O_vJMxoI0N" role="37vLTx">
+              <node concept="1pGfFk" id="2O_vJMxoI0O" role="2ShVmc">
+                <ref role="37wK5l" to="e2lb:~StringBuffer.&lt;init&gt;(java.lang.String)" resolve="StringBuffer" />
+                <node concept="2OqwBi" id="2O_vJMxoI0P" role="37wK5m">
+                  <node concept="2OqwBi" id="2O_vJMxoI0Q" role="2Oq$k0">
+                    <node concept="37vLTw" id="2O_vJMxoI0R" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6K_nk43dAIX" resolve="name" />
+                    </node>
+                    <node concept="liA8E" id="2O_vJMxoI0S" role="2OqNvi">
+                      <ref role="37wK5l" to="e2lb:~StringBuffer.toString():java.lang.String" resolve="toString" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2O_vJMxoI0T" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="2O_vJMxoI0U" role="37wK5m">
+                      <property role="Xl_RC" value="#" />
+                    </node>
+                    <node concept="Xl_RD" id="2O_vJMxoI0V" role="37wK5m">
+                      <property role="Xl_RC" value="" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="7yvC56eeFGG" role="3cqZAp" />
         <node concept="3cpWs6" id="6K_nk43dCWo" role="3cqZAp">
           <node concept="2OqwBi" id="7yvC56eizAq" role="3cqZAk">
