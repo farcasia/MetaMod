@@ -111,5 +111,27 @@
       <ref role="20lvS9" node="4BhfRC_zwIi" resolve="CodeGenMethod" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1yIOEAv6wsd">
+    <property role="TrG5h" value="Constraint" />
+    <property role="3GE5qa" value="Constraints" />
+    <ref role="1TJDcQ" node="4BhfRC_zwIi" resolve="CodeGenMethod" />
+    <node concept="1TJgyj" id="1yIOEAv6NvN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dependsOn" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1yIOEAv6zvl" resolve="RefToConstraint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1yIOEAv6zvl">
+    <property role="TrG5h" value="RefToConstraint" />
+    <property role="3GE5qa" value="Constraints" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1yIOEAv6zvm" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1yIOEAv6wsd" resolve="Constraint" />
+    </node>
+  </node>
 </model>
 
