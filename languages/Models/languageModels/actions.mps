@@ -88,6 +88,9 @@
         <reference id="1177333551023" name="concept" index="uz4UX" />
         <child id="1177333559040" name="part" index="uz6Si" />
       </concept>
+      <concept id="1177409831820" name="jetbrains.mps.lang.actions.structure.RemovePart" flags="ng" index="z64au">
+        <reference id="1177409838946" name="conceptToRemove" index="z65TK" />
+      </concept>
       <concept id="1177497140107" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_sourceNode" flags="nn" index="Cj7Ep" />
       <concept id="1177498013932" name="jetbrains.mps.lang.actions.structure.SimpleSideTransformMenuPart" flags="ng" index="Cmt7Y">
         <child id="1177498166690" name="matchingText" index="Cn2iK" />
@@ -108,6 +111,7 @@
       </concept>
       <concept id="1112058030570" name="jetbrains.mps.lang.actions.structure.NodeSubstituteActionsBuilder" flags="ig" index="3FOIzC">
         <reference id="1112058088712" name="applicableConcept" index="3FOWKa" />
+        <child id="1177324142645" name="part" index="tZc4B" />
         <child id="1178781708614" name="commonInitializer" index="1ORn1k" />
       </concept>
       <concept id="1178781654714" name="jetbrains.mps.lang.actions.structure.QueryFunction_Substitute_CommonInitializer" flags="in" index="1OR9YC" />
@@ -565,7 +569,7 @@
     </node>
   </node>
   <node concept="3FK_9_" id="6T1a$wB7Xww">
-    <property role="TrG5h" value="CreateEqClassesRelation" />
+    <property role="TrG5h" value="CreateEqClassesForGroup" />
     <node concept="3FOIzC" id="6T1a$wB7Xwx" role="3FOPby">
       <ref role="3FOWKa" to="v0yp:7zWtwVwpdy4" resolve="Relation" />
       <node concept="1OR9YC" id="6T1a$wBbA9F" role="1ORn1k">
@@ -726,6 +730,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="3FOIzC" id="6T1a$wBiDb8" role="3FOPby">
+      <ref role="3FOWKa" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+      <node concept="z64au" id="6T1a$wBiDes" role="tZc4B">
+        <ref role="z65TK" to="v0yp:2r2_whlAvcO" resolve="Boolean" />
       </node>
     </node>
   </node>
