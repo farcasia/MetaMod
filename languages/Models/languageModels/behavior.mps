@@ -25969,6 +25969,72 @@
       <node concept="10Oyi0" id="4r$sIq1_3no" role="3clF45" />
       <node concept="3Tm1VV" id="4r$sIq1_3mv" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="6T1a$wAIJlK" role="jymVt" />
+    <node concept="2YIFZL" id="6T1a$wAIJrV" role="jymVt">
+      <property role="TrG5h" value="createEqClassesForTopLevel" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6T1a$wAIJrY" role="3clF47">
+        <node concept="3cpWs8" id="7O7EsH2P8xh" role="3cqZAp">
+          <node concept="3cpWsn" id="7O7EsH2P8xn" role="3cpWs9">
+            <property role="TrG5h" value="topLevel" />
+            <node concept="3Tqbb2" id="7O7EsH2P8Ax" role="1tU5fm">
+              <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+            </node>
+            <node concept="2YIFZM" id="7O7EsH2P6KX" role="33vP2m">
+              <ref role="37wK5l" node="5SyC5TNSidr" resolve="topLevelGroup" />
+              <ref role="1Pybhc" node="1vxM8_OCb4Z" resolve="UtilityMethods" />
+              <node concept="37vLTw" id="6T1a$wAINfq" role="37wK5m">
+                <ref role="3cqZAo" node="6T1a$wAIJyL" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6T1a$wAIE3Y" role="3cqZAp">
+          <node concept="3SKdUq" id="6T1a$wAIEfq" role="3SKWNk">
+            <property role="3SKdUp" value="This is a hack. We are taking advantage of the fact that we can have side-effects" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6T1a$wAIEwJ" role="3cqZAp">
+          <node concept="3SKdUq" id="6T1a$wAIEGd" role="3SKWNk">
+            <property role="3SKdUp" value="in this component." />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6T1a$wA$Qa5" role="3cqZAp">
+          <node concept="2OqwBi" id="6T1a$wA$QOL" role="3clFbG">
+            <node concept="37vLTw" id="6T1a$wA$Qa3" role="2Oq$k0">
+              <ref role="3cqZAo" node="7O7EsH2P8xn" resolve="topLevel" />
+            </node>
+            <node concept="2qgKlT" id="6T1a$wA$Spz" role="2OqNvi">
+              <ref role="37wK5l" node="6iY9Pw_XZS" resolve="createEquivalenceConcepts" />
+              <node concept="2OqwBi" id="6T1a$wA_bGF" role="37wK5m">
+                <node concept="2ShNRf" id="6T1a$wA$Sxe" role="2Oq$k0">
+                  <node concept="1pGfFk" id="6T1a$wA_85x" role="2ShVmc">
+                    <ref role="37wK5l" to="k7g3:~Random.&lt;init&gt;(long)" resolve="Random" />
+                    <node concept="2YIFZM" id="6T1a$wA_94n" role="37wK5m">
+                      <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                      <ref role="37wK5l" to="e2lb:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="6T1a$wA_c33" role="2OqNvi">
+                  <ref role="37wK5l" to="k7g3:~Random.nextInt():int" resolve="nextInt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6T1a$wAIJp8" role="1B3o_S" />
+      <node concept="3cqZAl" id="6T1a$wAIJuS" role="3clF45" />
+      <node concept="37vLTG" id="6T1a$wAIJyL" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="6T1a$wAIJyK" role="1tU5fm">
+          <ref role="ehGHo" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="4r$sIq1_1oX" role="1B3o_S" />
   </node>
   <node concept="13h7C7" id="1DJ_GQZpNLi">
