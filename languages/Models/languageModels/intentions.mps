@@ -1066,40 +1066,5 @@
       </node>
     </node>
   </node>
-  <node concept="2S6QgY" id="6iY9PwJNFp">
-    <property role="TrG5h" value="ToggleHidden" />
-    <ref role="2ZfgGC" to="v0yp:7zWtwVwpdxn" resolve="Group" />
-    <node concept="2S6ZIM" id="6iY9PwJNFq" role="2ZfVej">
-      <node concept="3clFbS" id="6iY9PwJNFr" role="2VODD2">
-        <node concept="3clFbF" id="6iY9PwJNUe" role="3cqZAp">
-          <node concept="Xl_RD" id="6iY9PwJNUd" role="3clFbG">
-            <property role="Xl_RC" value="Toggle hidden" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="6iY9PwJNFs" role="2ZfgGD">
-      <node concept="3clFbS" id="6iY9PwJNFt" role="2VODD2">
-        <node concept="3clFbF" id="6iY9PwJO9H" role="3cqZAp">
-          <node concept="37vLTI" id="6iY9PwJOQl" role="3clFbG">
-            <node concept="3fqX7Q" id="6iY9PwJOQD" role="37vLTx">
-              <node concept="2OqwBi" id="6iY9PwJOWW" role="3fr31v">
-                <node concept="2Sf5sV" id="6iY9PwJOUo" role="2Oq$k0" />
-                <node concept="3TrcHB" id="6iY9PwJPjr" role="2OqNvi">
-                  <ref role="3TsBF5" to="v0yp:6iY9Pw$Uur" resolve="showHidden" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="6iY9PwJOby" role="37vLTJ">
-              <node concept="2Sf5sV" id="6iY9PwJO9G" role="2Oq$k0" />
-              <node concept="3TrcHB" id="6iY9PwJOxc" role="2OqNvi">
-                <ref role="3TsBF5" to="v0yp:6iY9Pw$Uur" resolve="showHidden" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
 </model>
 
