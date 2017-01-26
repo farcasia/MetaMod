@@ -295,7 +295,6 @@
     <property role="3GE5qa" value="Types" />
     <ref role="1XX52x" to="1o5n:7MhXM5kmc65" resolve="ConceptType" />
     <node concept="3EZMnI" id="7MhXM5kmc8b" role="2wV5jI">
-      <ref role="1ERwB7" node="6iY9P$Yngr" resolve="ConceptTypePrefix" />
       <node concept="3F0ifn" id="7MhXM5kmc8i" role="3EZMnx">
         <property role="3F0ifm" value="ConceptType" />
         <node concept="3$7jql" id="7MhXM5kmFXT" role="3F10Kt">
@@ -1071,25 +1070,6 @@
     <ref role="1XX52x" to="1o5n:4hQr7qF2iR2" resolve="GetModel" />
     <node concept="PMmxH" id="4hQr7qF2jDG" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-    </node>
-  </node>
-  <node concept="1h_SRR" id="6iY9P$Yngr">
-    <property role="TrG5h" value="ConceptTypePrefix" />
-    <ref role="1h_SK9" to="1o5n:7MhXM5kmc65" resolve="ConceptType" />
-    <node concept="1hA7zw" id="6iY9P$YS1P" role="1h_SK8">
-      <property role="1hAc7j" value="complete_action_id" />
-      <node concept="1hAIg9" id="6iY9P$YS1Q" role="1hA7z_">
-        <node concept="3clFbS" id="6iY9P$YS1R" role="2VODD2">
-          <node concept="3clFbF" id="6iY9P$YS3q" role="3cqZAp">
-            <node concept="2OqwBi" id="6iY9P$YS5x" role="3clFbG">
-              <node concept="0IXxy" id="6iY9P$YS3p" role="2Oq$k0" />
-              <node concept="2qgKlT" id="6iY9P$YSx0" role="2OqNvi">
-                <ref role="37wK5l" to="93in:6iY9PzWUG8" resolve="createPrefix" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="1h_SRR" id="6iY9P_bZ$0">
