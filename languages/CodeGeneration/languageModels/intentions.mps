@@ -711,7 +711,7 @@
       <node concept="3clFbS" id="23adspZRNqj" role="2VODD2">
         <node concept="3clFbF" id="23adspZRNT4" role="3cqZAp">
           <node concept="Xl_RD" id="23adspZRNT3" role="3clFbG">
-            <property role="Xl_RC" value="Enable/disable multimethod" />
+            <property role="Xl_RC" value="Enable/disable multi-operation" />
           </node>
         </node>
       </node>
