@@ -705,7 +705,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="23adspZRNqh">
-    <property role="TrG5h" value="EnableDisableMultimethod" />
+    <property role="TrG5h" value="EnableDisableMultioperation" />
     <ref role="2ZfgGC" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
     <node concept="2S6ZIM" id="23adspZRNqi" role="2ZfVej">
       <node concept="3clFbS" id="23adspZRNqj" role="2VODD2">
