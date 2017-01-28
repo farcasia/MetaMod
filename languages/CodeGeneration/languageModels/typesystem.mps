@@ -8,6 +8,7 @@
   <imports>
     <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
@@ -67,6 +68,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -117,8 +121,14 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -778,6 +788,146 @@
     <node concept="1YaCAy" id="2$vcPaA9G9T" role="1YuTPh">
       <property role="TrG5h" value="codeGenMet" />
       <ref role="1YaFvo" to="anrw:4BhfRC_zwIi" resolve="CodeGenMethod" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7AwCC9S9rkc">
+    <property role="TrG5h" value="CheckSignatureOfConstraint" />
+    <node concept="3clFbS" id="7AwCC9S9rkd" role="18ibNy">
+      <node concept="3clFbJ" id="7AwCC9S9rkA" role="3cqZAp">
+        <node concept="3clFbS" id="7AwCC9S9rkB" role="3clFbx">
+          <node concept="2MkqsV" id="7AwCC9S9rkC" role="3cqZAp">
+            <node concept="Xl_RD" id="7AwCC9S9rkD" role="2MkJ7o">
+              <property role="Xl_RC" value="A constraint should only have one parameter, the GroupType!" />
+            </node>
+            <node concept="1YBJjd" id="7AwCC9S9rkE" role="2OEOjV">
+              <ref role="1YBMHb" node="7AwCC9S9rlL" resolve="constraint" />
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="7AwCC9S9rkF" role="3clFbw">
+          <node concept="3cmrfG" id="7AwCC9S9zpE" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="7AwCC9S9rkL" role="3uHU7B">
+            <node concept="2OqwBi" id="7AwCC9S9rkM" role="2Oq$k0">
+              <node concept="1YBJjd" id="7AwCC9S9zlP" role="2Oq$k0">
+                <ref role="1YBMHb" node="7AwCC9S9rlL" resolve="constraint" />
+              </node>
+              <node concept="3Tsc0h" id="7AwCC9S9rkO" role="2OqNvi">
+                <ref role="3TtcxE" to="tpee:fzclF7Y" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="7AwCC9S9rkP" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="9aQIb" id="7AwCC9S9rkQ" role="9aQIa">
+          <node concept="3clFbS" id="7AwCC9S9rkR" role="9aQI4">
+            <node concept="1DcWWT" id="7AwCC9S9rkS" role="3cqZAp">
+              <node concept="3clFbS" id="7AwCC9S9rkT" role="2LFqv$">
+                <node concept="3clFbJ" id="7AwCC9S9rkU" role="3cqZAp">
+                  <node concept="3clFbS" id="7AwCC9S9rkV" role="3clFbx">
+                    <node concept="2MkqsV" id="7AwCC9S9rkW" role="3cqZAp">
+                      <node concept="Xl_RD" id="7AwCC9S9rkX" role="2MkJ7o">
+                        <property role="Xl_RC" value="First parameter should be of GrouptType!" />
+                      </node>
+                      <node concept="2OqwBi" id="7AwCC9S9rkY" role="2OEOjV">
+                        <node concept="2OqwBi" id="7AwCC9S9rkZ" role="2Oq$k0">
+                          <node concept="1YBJjd" id="7AwCC9S9rl0" role="2Oq$k0">
+                            <ref role="1YBMHb" node="7AwCC9S9rlL" resolve="constraint" />
+                          </node>
+                          <node concept="3Tsc0h" id="7AwCC9S9rl1" role="2OqNvi">
+                            <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                          </node>
+                        </node>
+                        <node concept="34jXtK" id="7AwCC9S9rl2" role="2OqNvi">
+                          <node concept="2OqwBi" id="7AwCC9S9rl3" role="25WWJ7">
+                            <node concept="37vLTw" id="7AwCC9S9rl4" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7AwCC9S9rlm" resolve="paramDecl" />
+                            </node>
+                            <node concept="2bSWHS" id="7AwCC9S9rl5" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3fqX7Q" id="7AwCC9S9rl6" role="3clFbw">
+                    <node concept="1eOMI4" id="7AwCC9S9Elu" role="3fr31v">
+                      <node concept="2OqwBi" id="7AwCC9Sad_q" role="1eOMHV">
+                        <node concept="2OqwBi" id="7AwCC9S9FPH" role="2Oq$k0">
+                          <node concept="37vLTw" id="7AwCC9S9FJm" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7AwCC9S9rlm" resolve="paramDecl" />
+                          </node>
+                          <node concept="3TrEf2" id="7AwCC9S9J5C" role="2OqNvi">
+                            <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" />
+                          </node>
+                        </node>
+                        <node concept="1mIQ4w" id="7AwCC9SadWn" role="2OqNvi">
+                          <node concept="chp4Y" id="7AwCC9SbcMa" role="cj9EA">
+                            <ref role="cht4Q" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWsn" id="7AwCC9S9rlm" role="1Duv9x">
+                <property role="TrG5h" value="paramDecl" />
+                <node concept="3Tqbb2" id="7AwCC9S9rln" role="1tU5fm">
+                  <ref role="ehGHo" to="tpee:fz7vLUk" resolve="ParameterDeclaration" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7AwCC9S9rlo" role="1DdaDG">
+                <node concept="1YBJjd" id="7AwCC9S9$P$" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7AwCC9S9rlL" resolve="constraint" />
+                </node>
+                <node concept="3Tsc0h" id="7AwCC9S9rlq" role="2OqNvi">
+                  <ref role="3TtcxE" to="tpee:fzclF7Y" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="7AwCC9S9rlr" role="3cqZAp" />
+      <node concept="3clFbJ" id="7AwCC9S9rls" role="3cqZAp">
+        <node concept="3clFbS" id="7AwCC9S9rlt" role="3clFbx">
+          <node concept="2MkqsV" id="7AwCC9S9rlu" role="3cqZAp">
+            <node concept="Xl_RD" id="7AwCC9S9rlv" role="2MkJ7o">
+              <property role="Xl_RC" value="The return type of a constraint should be a boolean!!" />
+            </node>
+            <node concept="2OqwBi" id="7AwCC9S9rlw" role="2OEOjV">
+              <node concept="1YBJjd" id="7AwCC9S9rlx" role="2Oq$k0">
+                <ref role="1YBMHb" node="7AwCC9S9rlL" resolve="constraint" />
+              </node>
+              <node concept="3TrEf2" id="7AwCC9S9rly" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:fzclF7X" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="7AwCC9S9rlz" role="3clFbw">
+          <node concept="2OqwBi" id="7AwCC9S9rl$" role="3fr31v">
+            <node concept="1mIQ4w" id="7AwCC9Saen6" role="2OqNvi">
+              <node concept="chp4Y" id="7AwCC9Saepu" role="cj9EA">
+                <ref role="cht4Q" to="tpee:f_0P_4Y" resolve="BooleanType" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7AwCC9S9rlD" role="2Oq$k0">
+              <node concept="1YBJjd" id="7AwCC9S9rlE" role="2Oq$k0">
+                <ref role="1YBMHb" node="7AwCC9S9rlL" resolve="constraint" />
+              </node>
+              <node concept="3TrEf2" id="7AwCC9S9rlF" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:fzclF7X" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7AwCC9S9rlL" role="1YuTPh">
+      <property role="TrG5h" value="constraint" />
+      <ref role="1YaFvo" to="anrw:1yIOEAv6wsd" resolve="Constraint" />
     </node>
   </node>
 </model>

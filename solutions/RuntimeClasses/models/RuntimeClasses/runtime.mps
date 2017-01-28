@@ -31863,6 +31863,12 @@
       <node concept="3Tm1VV" id="2OK7N8p4HPy" role="1B3o_S" />
       <node concept="10P_77" id="2OK7N8p4HPz" role="3clF45" />
       <node concept="3clFbS" id="2OK7N8p4HP$" role="3clF47">
+        <node concept="34ab3g" id="7AwCC9SbLp8" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="7AwCC9SbLpa" role="34bqiv">
+            <property role="Xl_RC" value="In check this Square" />
+          </node>
+        </node>
         <node concept="3clFbJ" id="2OK7N8p4HP_" role="3cqZAp">
           <node concept="3clFbS" id="2OK7N8p4HPA" role="3clFbx">
             <node concept="3cpWs6" id="2OK7N8p4HPB" role="3cqZAp">
@@ -32393,9 +32399,20 @@
       <node concept="10P_77" id="1yIOEAv9Q_l" role="3clF45" />
       <node concept="3Tm1VV" id="2OK7N8p4Ilp" role="1B3o_S" />
       <node concept="3clFbS" id="2OK7N8p4Ilq" role="3clF47">
-        <node concept="3clFbH" id="2OK7N8p4Ilr" role="3cqZAp" />
+        <node concept="34ab3g" id="7AwCC9SbMc4" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="7AwCC9SbMc6" role="34bqiv">
+            <property role="Xl_RC" value="In lengthAndWidthEqual" />
+          </node>
+        </node>
         <node concept="1DcWWT" id="2OK7N8p3QUZ" role="3cqZAp">
           <node concept="3clFbS" id="2OK7N8p3QV1" role="2LFqv$">
+            <node concept="34ab3g" id="7AwCC9Sc09J" role="3cqZAp">
+              <property role="35gtTG" value="warn" />
+              <node concept="Xl_RD" id="7AwCC9Sc09L" role="34bqiv">
+                <property role="Xl_RC" value="We have a square or so" />
+              </node>
+            </node>
             <node concept="3clFbJ" id="2OK7N8p3S$T" role="3cqZAp">
               <node concept="3clFbS" id="2OK7N8p3S$V" role="3clFbx">
                 <node concept="34ab3g" id="2OK7N8p3TR7" role="3cqZAp">

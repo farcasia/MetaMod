@@ -83,7 +83,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -522,20 +521,6 @@
           </node>
         </node>
       </node>
-      <node concept="34ab3g" id="B9nFqeaOq8" role="3cqZAp">
-        <property role="35gtTG" value="info" />
-        <node concept="3cpWs3" id="B9nFqeaOIg" role="34bqiv">
-          <node concept="2OqwBi" id="B9nFqeaONB" role="3uHU7w">
-            <node concept="37vLTw" id="B9nFqeaOI$" role="2Oq$k0">
-              <ref role="3cqZAo" node="7aCZPg01Y$l" resolve="listType" />
-            </node>
-            <node concept="2Rxl7S" id="B9nFqeaPVr" role="2OqNvi" />
-          </node>
-          <node concept="Xl_RD" id="B9nFqeaOqa" role="3uHU7B">
-            <property role="Xl_RC" value="is conceptsOfType in list in auxiliary info " />
-          </node>
-        </node>
-      </node>
       <node concept="3clFbH" id="7aCZPg01YGn" role="3cqZAp" />
       <node concept="1Z5TYs" id="26DSjBDHwCC" role="3cqZAp">
         <node concept="mw_s8" id="26DSjBDHwCG" role="1ZfhK$">
@@ -551,22 +536,6 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbH" id="B9nFqeaPYt" role="3cqZAp" />
-      <node concept="34ab3g" id="B9nFqeaQ5C" role="3cqZAp">
-        <property role="35gtTG" value="info" />
-        <node concept="3cpWs3" id="B9nFqeaQ5D" role="34bqiv">
-          <node concept="2OqwBi" id="B9nFqeaQ5E" role="3uHU7w">
-            <node concept="37vLTw" id="B9nFqeaQ5F" role="2Oq$k0">
-              <ref role="3cqZAo" node="7aCZPg01Y$l" resolve="listType" />
-            </node>
-            <node concept="2Rxl7S" id="B9nFqeaQ5G" role="2OqNvi" />
-          </node>
-          <node concept="Xl_RD" id="B9nFqeaQ5H" role="3uHU7B">
-            <property role="Xl_RC" value="after is conceptsOfType in list in auxiliary info " />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="B9nFqeaQ1e" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="26DSjBDHwC8" role="1YuTPh">
       <property role="TrG5h" value="conceptsOfType" />
