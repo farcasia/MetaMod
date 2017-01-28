@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -32,6 +33,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -44,6 +48,9 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
@@ -86,9 +93,6 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
-        <child id="1185788644032" name="normalType" index="mwGJk" />
-      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -109,14 +113,6 @@
       </concept>
       <concept id="1174650418652" name="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" flags="nn" index="1YBJjd">
         <reference id="1174650432090" name="applicableNode" index="1YBMHb" />
-      </concept>
-      <concept id="1174657487114" name="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" flags="nn" index="1Z2H0r">
-        <child id="1174657509053" name="term" index="1Z2MuG" />
-      </concept>
-      <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
-      <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
-        <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
-        <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -157,27 +153,12 @@
     <property role="3GE5qa" value="Operations" />
     <property role="18ip37" value="true" />
     <node concept="3clFbS" id="4X4Jbdca5pu" role="18ibNy">
-      <node concept="1Z5TYs" id="4X4Jbdca6cM" role="3cqZAp">
-        <node concept="mw_s8" id="4X4Jbdca6dd" role="1ZfhKB">
-          <node concept="2OqwBi" id="4X4Jbdca6YB" role="mwGJk">
-            <node concept="2OqwBi" id="4X4Jbdca6fx" role="2Oq$k0">
-              <node concept="1YBJjd" id="4X4Jbdca6db" role="2Oq$k0">
-                <ref role="1YBMHb" node="4X4Jbdca5pw" resolve="codeGenMethodCall" />
-              </node>
-              <node concept="3TrEf2" id="4X4JbdcaCY1" role="2OqNvi">
-                <ref role="3Tt5mk" to="anrw:4X4Jbdca$w5" />
-              </node>
-            </node>
-            <node concept="3TrEf2" id="4X4Jbdca8lP" role="2OqNvi">
-              <ref role="3Tt5mk" to="tpee:fzclF7X" />
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="4X4Jbdca6cP" role="1ZfhK$">
-          <node concept="1Z2H0r" id="4X4Jbdca5Tg" role="mwGJk">
-            <node concept="1YBJjd" id="4X4Jbdca5TG" role="1Z2MuG">
-              <ref role="1YBMHb" node="4X4Jbdca5pw" resolve="codeGenMethodCall" />
-            </node>
+      <node concept="3clFbF" id="5bMTuDbXF7y" role="3cqZAp">
+        <node concept="2YIFZM" id="5bMTuDbXGD1" role="3clFbG">
+          <ref role="37wK5l" to="tpeh:5bMTuDbXbSR" resolve="calculateTypesForStaticMethod" />
+          <ref role="1Pybhc" to="tpeh:5bMTuDbOcMt" resolve="TypeVariableMatchUtil" />
+          <node concept="1YBJjd" id="2OK7N8nYzXR" role="37wK5m">
+            <ref role="1YBMHb" node="4X4Jbdca5pw" resolve="codeGenMethodCall" />
           </node>
         </node>
       </node>

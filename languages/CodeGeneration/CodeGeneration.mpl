@@ -87,6 +87,7 @@
     <dependency reexport="false">a00bbccc-dbff-45c7-aa54-02d1f94db9b5(LanguageConfiguration)</dependency>
     <dependency reexport="false">e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)</dependency>
     <dependency reexport="false">f97cf326-3077-4de7-b16c-71ef42a55a01(ModelTransformations)</dependency>
+    <dependency reexport="false">8a5ffd84-4b2e-475c-803b-24d3ac9331ee(GenericGroupMethods)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)</usedLanguage>
