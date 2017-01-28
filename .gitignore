@@ -1,7 +1,6 @@
 workspace.xml
 build.properties
 solutions/PhilipsDSL
-OOTICourseShapes.mps
 OOTICourseRoute.mps
 
 # Ignore all directories containing generated
