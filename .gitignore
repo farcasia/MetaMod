@@ -1,7 +1,6 @@
 workspace.xml
 build.properties
 solutions/PhilipsDSL
-OOTICourseRoute.mps
 
 # Ignore all directories containing generated
 # java classes and java source files
