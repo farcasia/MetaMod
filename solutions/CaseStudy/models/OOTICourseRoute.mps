@@ -1480,17 +1480,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="6oEY$y8mvR5" role="3cqZAp" />
-        <node concept="34ab3g" id="6oEY$y8mv9F" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="6oEY$y8mvAK" role="34bqiv">
-            <node concept="37vLTw" id="6oEY$y8mvBc" role="3uHU7w">
-              <ref role="3cqZAo" node="7lBTIShAOPV" resolve="listCom" />
-            </node>
-            <node concept="Xl_RD" id="6oEY$y8mv9H" role="3uHU7B">
-              <property role="Xl_RC" value="list is " />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="7lBTIShB1cJ" role="3cqZAp">
           <node concept="37vLTw" id="7lBTIShB1le" role="3cqZAk">
             <ref role="3cqZAo" node="7lBTIShAOPV" resolve="listCom" />
@@ -2448,44 +2437,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7lBTIShA$dO" role="3cqZAp" />
-        <node concept="34ab3g" id="6oEY$y8sKEy" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="6oEY$y8sKVZ" role="34bqiv">
-            <node concept="2OqwBi" id="6oEY$y8sL1b" role="3uHU7w">
-              <node concept="37vLTw" id="6oEY$y8sKY3" role="2Oq$k0">
-                <ref role="3cqZAo" node="7lBTIShAwFB" resolve="currentDirectionAndPoint" />
-              </node>
-              <node concept="liA8E" id="6oEY$y8sLbI" role="2OqNvi">
-                <ref role="37wK5l" node="7lBTIShAiD$" resolve="getCurrentDirection" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="6oEY$y8sKE$" role="3uHU7B">
-              <property role="Xl_RC" value="direction " />
-            </node>
-          </node>
-        </node>
-        <node concept="34ab3g" id="6oEY$y8sJlo" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="6oEY$y8sKsq" role="34bqiv">
-            <node concept="37vLTw" id="6oEY$y8sKxh" role="3uHU7w">
-              <ref role="3cqZAo" node="7lBTIShAwZG" resolve="second_point" />
-            </node>
-            <node concept="3cpWs3" id="6oEY$y8sJDf" role="3uHU7B">
-              <node concept="3cpWs3" id="6oEY$y8sJzM" role="3uHU7B">
-                <node concept="Xl_RD" id="6oEY$y8sJlq" role="3uHU7B">
-                  <property role="Xl_RC" value="first_point " />
-                </node>
-                <node concept="37vLTw" id="6oEY$y8sJ_Q" role="3uHU7w">
-                  <ref role="3cqZAo" node="7lBTIShAwEG" resolve="first_point" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="6oEY$y8sJHS" role="3uHU7w">
-                <property role="Xl_RC" value=" second_point " />
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbH" id="4yrLJ336w6I" role="3cqZAp" />
         <node concept="3clFbF" id="7lBTIShA$ij" role="3cqZAp">
           <node concept="2OqwBi" id="7lBTIShA$kX" role="3clFbG">
             <node concept="37vLTw" id="7lBTIShA$ih" role="2Oq$k0">
@@ -2644,23 +2596,6 @@
               <node concept="37vLTw" id="7lBTIShAFzG" role="3hvEQn">
                 <ref role="3cqZAo" node="7lBTIShA_u2" resolve="inputGroup" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6oEY$y8sLsL" role="3cqZAp" />
-        <node concept="34ab3g" id="6oEY$y8sLum" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="6oEY$y8sLEq" role="34bqiv">
-            <node concept="2OqwBi" id="6oEY$y8sLI4" role="3uHU7w">
-              <node concept="37vLTw" id="6oEY$y8sLF6" role="2Oq$k0">
-                <ref role="3cqZAo" node="7lBTIShA_uz" resolve="dirAndPoint" />
-              </node>
-              <node concept="liA8E" id="6oEY$y8sLSB" role="2OqNvi">
-                <ref role="37wK5l" node="7lBTIShAiD$" resolve="getCurrentDirection" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="6oEY$y8sLuo" role="3uHU7B">
-              <property role="Xl_RC" value="direction after turn " />
             </node>
           </node>
         </node>
@@ -3941,43 +3876,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="2OK7N8nCqE2" role="3cqZAp" />
-        <node concept="34ab3g" id="2OK7N8nCqE3" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="2OK7N8nCqE4" role="34bqiv">
-            <node concept="2OqwBi" id="2OK7N8nCqE5" role="3uHU7w">
-              <node concept="37vLTw" id="2OK7N8nCqE6" role="2Oq$k0">
-                <ref role="3cqZAo" node="2OK7N8nCqDF" resolve="currentDirectionAndPoint" />
-              </node>
-              <node concept="liA8E" id="2OK7N8nCqE7" role="2OqNvi">
-                <ref role="37wK5l" node="7lBTIShAiD$" resolve="getCurrentDirection" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="2OK7N8nCqE8" role="3uHU7B">
-              <property role="Xl_RC" value="direction " />
-            </node>
-          </node>
-        </node>
-        <node concept="34ab3g" id="2OK7N8nCqE9" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="2OK7N8nCqEa" role="34bqiv">
-            <node concept="37vLTw" id="2OK7N8nCqEb" role="3uHU7w">
-              <ref role="3cqZAo" node="2OK7N8nCqDP" resolve="second_point" />
-            </node>
-            <node concept="3cpWs3" id="2OK7N8nCqEc" role="3uHU7B">
-              <node concept="3cpWs3" id="2OK7N8nCqEd" role="3uHU7B">
-                <node concept="Xl_RD" id="2OK7N8nCqEe" role="3uHU7B">
-                  <property role="Xl_RC" value="first_point " />
-                </node>
-                <node concept="37vLTw" id="2OK7N8nCqEf" role="3uHU7w">
-                  <ref role="3cqZAo" node="2OK7N8nCqDJ" resolve="first_point" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="2OK7N8nCqEg" role="3uHU7w">
-                <property role="Xl_RC" value=" second_point " />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="2OK7N8nCqEh" role="3cqZAp">
           <node concept="2OqwBi" id="2OK7N8nCqEi" role="3clFbG">
             <node concept="37vLTw" id="2OK7N8nCqEj" role="2Oq$k0">

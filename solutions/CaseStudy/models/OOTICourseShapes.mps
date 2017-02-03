@@ -277,8 +277,8 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="true" />
     <property role="1x3Ciu" value="167923608" />
-    <property role="TrG5h" value="Shapes" />
-    <property role="3GE5qa" value="CirclesAndRectangles.Metamodels" />
+    <property role="TrG5h" value="Shape" />
+    <property role="3GE5qa" value="ContainerShapes.Metamodels" />
     <node concept="2oAaYs" id="73GaC057r3G" role="2oAaxa">
       <ref role="3aaZtz" node="73GaC057r9Z" resolve="Position2D" />
     </node>
@@ -307,7 +307,7 @@
         <ref role="3aaZtz" node="73GaC056wRt" resolve="Shape" />
       </node>
       <node concept="2oAaYs" id="3D$xkUul7gI" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shapes" />
+        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shape" />
       </node>
     </node>
     <node concept="1x7eJp" id="3D$xkUul7h4" role="1x79uz">
@@ -356,9 +356,9 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="167923608" />
     <property role="TrG5h" value="Circle" />
-    <property role="3GE5qa" value="CirclesAndRectangles.Metamodels" />
+    <property role="3GE5qa" value="ContainerShapes.Metamodels" />
     <node concept="2oAaYs" id="73GaC057s_I" role="2oAaxa">
-      <ref role="3aaZtz" node="73GaC056rtn" resolve="Shapes" />
+      <ref role="3aaZtz" node="73GaC056rtn" resolve="Shape" />
     </node>
     <node concept="2jq5PB" id="73GaC057s_u" role="2oAaxa" />
     <node concept="2oAaW5" id="73GaC056x0S" role="2oAaxa">
@@ -408,7 +408,7 @@
         <ref role="3aaZtz" node="73GaC056wRt" resolve="Shape" />
       </node>
       <node concept="2oAaYs" id="3D$xkUul7hi" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shapes" />
+        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shape" />
       </node>
     </node>
     <node concept="1x7eJp" id="3D$xkUul7hj" role="1x79uz">
@@ -457,9 +457,9 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="167923608" />
     <property role="TrG5h" value="Rectangle" />
-    <property role="3GE5qa" value="CirclesAndRectangles.Metamodels" />
+    <property role="3GE5qa" value="ContainerShapes.Metamodels" />
     <node concept="2oAaYs" id="73GaC057sgx" role="2oAaxa">
-      <ref role="3aaZtz" node="73GaC056rtn" resolve="Shapes" />
+      <ref role="3aaZtz" node="73GaC056rtn" resolve="Shape" />
     </node>
     <node concept="2jq5PB" id="73GaC057sgk" role="2oAaxa" />
     <node concept="2oAaW5" id="73GaC056x2e" role="2oAaxa">
@@ -522,7 +522,7 @@
         <ref role="3aaZtz" node="73GaC056wRt" resolve="Shape" />
       </node>
       <node concept="2oAaYs" id="3D$xkUul7h$" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shapes" />
+        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shape" />
       </node>
     </node>
     <node concept="1x7eJp" id="3D$xkUul7h_" role="1x79uz">
@@ -617,7 +617,7 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="167923608" />
     <property role="TrG5h" value="Position2D" />
-    <property role="3GE5qa" value="CirclesAndRectangles.Metamodels" />
+    <property role="3GE5qa" value="ContainerShapes.Metamodels" />
     <node concept="2oAaYs" id="73GaC057rbS" role="2oAaxa">
       <ref role="3aaZtz" node="1glZBhimRYb" resolve="MetaModPrimitives" />
     </node>
@@ -1125,8 +1125,8 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="167923608" />
-    <property role="TrG5h" value="CirclesAndRectangles" />
-    <property role="3GE5qa" value="CirclesAndRectangles.Metamodels" />
+    <property role="TrG5h" value="ContainerShapes" />
+    <property role="3GE5qa" value="ContainerShapes.Metamodels" />
     <node concept="2oAaYs" id="73GaC05bIW9" role="2oAaxa">
       <ref role="3aaZtz" node="73GaC056x0R" resolve="Circle" />
     </node>
@@ -1158,7 +1158,7 @@
         <ref role="3aaZtz" node="73GaC05bIWr" resolve="Container" />
       </node>
       <node concept="2oAaYs" id="3D$xkUul7gC" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC05bIW8" resolve="CirclesAndRectangles" />
+        <ref role="3aaZtz" node="73GaC05bIW8" resolve="ContainerShapes" />
       </node>
     </node>
     <node concept="1x7eJp" id="3D$xkUul7hL" role="1x79uz">
@@ -1178,7 +1178,7 @@
         <ref role="3aaZtz" node="73GaC056wRt" resolve="Shape" />
       </node>
       <node concept="2oAaYs" id="3D$xkUul7hQ" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shapes" />
+        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shape" />
       </node>
     </node>
     <node concept="1x7eJp" id="3D$xkUul7hR" role="1x79uz">
@@ -1419,7 +1419,7 @@
   <node concept="1GnNiK" id="73GaC05ctLY">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_Circle_Draw" />
-    <property role="3GE5qa" value="CirclesAndRectangles.ProcessingUnits" />
+    <property role="3GE5qa" value="ContainerShapes.ProcessingUnits" />
     <ref role="1GHRfG" node="73GaC056x0R" resolve="Circle" />
     <node concept="1vbBhR" id="73GaC05ctLZ" role="1ukcCD">
       <property role="TrG5h" value="Draw" />
@@ -1554,7 +1554,7 @@
   <node concept="1GnNiK" id="73GaC05cF_F">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_Rectangle_Draw" />
-    <property role="3GE5qa" value="CirclesAndRectangles.ProcessingUnits" />
+    <property role="3GE5qa" value="ContainerShapes.ProcessingUnits" />
     <ref role="1GHRfG" node="73GaC056x2d" resolve="Rectangle" />
     <node concept="1vbBpf" id="73GaC05cGbT" role="1ukcCD">
       <ref role="1vbBpc" node="73GaC05ctLZ" resolve="Draw" />
@@ -1689,8 +1689,8 @@
   <node concept="1GnNiK" id="73GaC05cIvn">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_Shapes_Draw" />
-    <property role="3GE5qa" value="CirclesAndRectangles.ProcessingUnits" />
-    <ref role="1GHRfG" node="73GaC056rtn" resolve="Shapes" />
+    <property role="3GE5qa" value="ContainerShapes.ProcessingUnits" />
+    <ref role="1GHRfG" node="73GaC056rtn" resolve="Shape" />
     <node concept="1vbBpf" id="73GaC05cIvo" role="1ukcCD">
       <ref role="1vbBpc" node="73GaC05ctLZ" resolve="Draw" />
     </node>
@@ -1700,7 +1700,7 @@
       <node concept="37vLTG" id="73GaC05cIvq" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="73GaC05cIvr" role="1tU5fm">
-          <ref role="1l_bkj" node="73GaC056rtn" resolve="Shapes" />
+          <ref role="1l_bkj" node="73GaC056rtn" resolve="Shape" />
         </node>
       </node>
       <node concept="37vLTG" id="73GaC05cIvs" role="3clF46">
@@ -1733,9 +1733,9 @@
   </node>
   <node concept="1GnNiK" id="73GaC05cJLV">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="TrG5h" value="PU_CirclesAndRectangles_Draw" />
-    <property role="3GE5qa" value="CirclesAndRectangles.ProcessingUnits" />
-    <ref role="1GHRfG" node="73GaC05bIW8" resolve="CirclesAndRectangles" />
+    <property role="TrG5h" value="PU_ContainerShapes_Draw" />
+    <property role="3GE5qa" value="ContainerShapes.ProcessingUnits" />
+    <ref role="1GHRfG" node="73GaC05bIW8" resolve="ContainerShapes" />
     <node concept="1vbBpf" id="73GaC05cJLW" role="1ukcCD">
       <ref role="1vbBpc" node="73GaC05ctLZ" resolve="Draw" />
     </node>
@@ -1746,7 +1746,7 @@
         <property role="TrG5h" value="inputGroup" />
         <property role="3TUv4t" value="true" />
         <node concept="1l_8MK" id="73GaC05cJM0" role="1tU5fm">
-          <ref role="1l_bkj" node="73GaC05bIW8" resolve="CirclesAndRectangles" />
+          <ref role="1l_bkj" node="73GaC05bIW8" resolve="ContainerShapes" />
         </node>
       </node>
       <node concept="3clFbS" id="73GaC05cJM1" role="3clF47">
@@ -1935,7 +1935,7 @@
       <node concept="37vLTG" id="2O_vJMxiRfJ" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="2O_vJMxiRfK" role="1tU5fm">
-          <ref role="1l_bkj" node="73GaC05bIW8" resolve="CirclesAndRectangles" />
+          <ref role="1l_bkj" node="73GaC05bIW8" resolve="ContainerShapes" />
         </node>
       </node>
       <node concept="3clFbS" id="2O_vJMxiRfL" role="3clF47">
@@ -2035,8 +2035,8 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="91743326" />
     <property role="TrG5h" value="ModelCR" />
-    <property role="3GE5qa" value="CirclesAndRectangles.Models" />
-    <ref role="19kf5F" node="73GaC05bIW8" resolve="CirclesAndRectangles" />
+    <property role="3GE5qa" value="ContainerShapes.Models" />
+    <ref role="19kf5F" node="73GaC05bIW8" resolve="ContainerShapes" />
     <node concept="2oAaYs" id="1yIOEAuISra" role="2oAaxa">
       <ref role="3aaZtz" node="1yIOEAuIRoO" resolve="ModelCircle" />
     </node>
@@ -2195,7 +2195,7 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="167923608" />
     <property role="TrG5h" value="Square" />
-    <property role="3GE5qa" value="CirclesAndRectanglesAndSquares.Metamodels" />
+    <property role="3GE5qa" value="ContainerShapesExt.Metamodels" />
     <node concept="2oAaYs" id="1yIOEAuvT$k" role="2oAaxa">
       <ref role="3aaZtz" node="73GaC056x2d" resolve="Rectangle" />
     </node>
@@ -2243,7 +2243,7 @@
         <ref role="3aaZtz" node="73GaC056wRt" resolve="Shape" />
       </node>
       <node concept="2oAaYs" id="3D$xkUul7it" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shapes" />
+        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shape" />
       </node>
     </node>
     <node concept="1x7eJp" id="3D$xkUul7iu" role="1x79uz">
@@ -2291,10 +2291,10 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="167923608" />
-    <property role="TrG5h" value="CirclesAndRectanglesAndSquares" />
-    <property role="3GE5qa" value="CirclesAndRectanglesAndSquares.Metamodels" />
+    <property role="TrG5h" value="ContainerShapesExt" />
+    <property role="3GE5qa" value="ContainerShapesExt.Metamodels" />
     <node concept="2oAaYs" id="1yIOEAuvU2A" role="2oAaxa">
-      <ref role="3aaZtz" node="73GaC05bIW8" resolve="CirclesAndRectangles" />
+      <ref role="3aaZtz" node="73GaC05bIW8" resolve="ContainerShapes" />
     </node>
     <node concept="2oAaYs" id="1yIOEAuvU2F" role="2oAaxa">
       <ref role="3aaZtz" node="1yIOEAuvT$j" resolve="Square" />
@@ -2306,7 +2306,7 @@
         <ref role="3aaZtz" node="73GaC05bIWr" resolve="Container" />
       </node>
       <node concept="2oAaYs" id="3D$xkUul7iG" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC05bIW8" resolve="CirclesAndRectangles" />
+        <ref role="3aaZtz" node="73GaC05bIW8" resolve="ContainerShapes" />
       </node>
     </node>
     <node concept="1x7eJp" id="3D$xkUul7iH" role="1x79uz">
@@ -2326,7 +2326,7 @@
         <ref role="3aaZtz" node="73GaC056wRt" resolve="Shape" />
       </node>
       <node concept="2oAaYs" id="3D$xkUul7iM" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shapes" />
+        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shape" />
       </node>
     </node>
     <node concept="1x7eJp" id="3D$xkUul7iN" role="1x79uz">
@@ -2393,7 +2393,7 @@
   <node concept="1GnNiK" id="1yIOEAuvVve">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="Constraints_Square" />
-    <property role="3GE5qa" value="CirclesAndRectanglesAndSquares.Constraints" />
+    <property role="3GE5qa" value="ContainerShapesExt.Constraints" />
     <ref role="1GHRfG" node="1yIOEAuvT$j" resolve="Square" />
     <node concept="1vbBpf" id="1yIOEAuvVvf" role="1ukcCD">
       <ref role="1vbBpc" node="73GaC05bYUo" resolve="Constraints" />
@@ -2496,10 +2496,10 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="167923608" />
-    <property role="TrG5h" value="CirclesAndRectanglesAndSquaresCol" />
-    <property role="3GE5qa" value="CirclesAndRectanglesAndSquaresCol.Metamodels" />
+    <property role="TrG5h" value="ContainerShapesExtExt" />
+    <property role="3GE5qa" value="ContainerShapesExtExt.Metamodels" />
     <node concept="2oAaYs" id="1yIOEAuvVED" role="2oAaxa">
-      <ref role="3aaZtz" node="1yIOEAuvTYP" resolve="CirclesAndRectanglesAndSquares" />
+      <ref role="3aaZtz" node="1yIOEAuvTYP" resolve="ContainerShapesExt" />
     </node>
     <node concept="2oAaYs" id="1yIOEAuvVEI" role="2oAaxa">
       <ref role="3aaZtz" node="73GaC057tcp" resolve="PredefinedColors" />
@@ -2528,7 +2528,7 @@
         <ref role="3aaZtz" node="73GaC05bIWr" resolve="Container" />
       </node>
       <node concept="2oAaYs" id="3D$xkUul7k9" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC05bIW8" resolve="CirclesAndRectangles" />
+        <ref role="3aaZtz" node="73GaC05bIW8" resolve="ContainerShapes" />
       </node>
     </node>
     <node concept="1x7eJp" id="3D$xkUul7ka" role="1x79uz">
@@ -2548,7 +2548,7 @@
         <ref role="3aaZtz" node="73GaC056wRt" resolve="Shape" />
       </node>
       <node concept="2oAaYs" id="3D$xkUul7kf" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shapes" />
+        <ref role="3aaZtz" node="73GaC056rtn" resolve="Shape" />
       </node>
     </node>
     <node concept="1x7eJp" id="3D$xkUul7kg" role="1x79uz">
@@ -2664,15 +2664,15 @@
   </node>
   <node concept="1GnNiK" id="1yIOEAuvWDD">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="TrG5h" value="PU_CirclesAndRectanglesAndSquaresCol_DrawWithColor" />
-    <property role="3GE5qa" value="CirclesAndRectanglesAndSquaresCol.PU" />
-    <ref role="1GHRfG" node="1yIOEAuvVEC" resolve="CirclesAndRectanglesAndSquaresCol" />
+    <property role="TrG5h" value="PU_ContainerShapesExtExt_DrawWithColor" />
+    <property role="3GE5qa" value="ContainerShapesExtExt.PU" />
+    <ref role="1GHRfG" node="1yIOEAuvVEC" resolve="ContainerShapesExtExt" />
     <node concept="1GnNjC" id="1yIOEAuvYhx" role="CLm5g">
       <property role="TrG5h" value="setColor" />
       <node concept="37vLTG" id="1yIOEAuvYhy" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="1yIOEAuvYhz" role="1tU5fm">
-          <ref role="1l_bkj" node="1yIOEAuvVEC" resolve="CirclesAndRectanglesAndSquaresCol" />
+          <ref role="1l_bkj" node="1yIOEAuvVEC" resolve="ContainerShapesExtExt" />
         </node>
       </node>
       <node concept="37vLTG" id="1yIOEAuvYhT" role="3clF46">
@@ -2729,7 +2729,7 @@
         <property role="TrG5h" value="inputGroup" />
         <property role="3TUv4t" value="true" />
         <node concept="1l_8MK" id="1yIOEAuvX9x" role="1tU5fm">
-          <ref role="1l_bkj" node="1yIOEAuvVEC" resolve="CirclesAndRectanglesAndSquaresCol" />
+          <ref role="1l_bkj" node="1yIOEAuvVEC" resolve="ContainerShapesExtExt" />
         </node>
       </node>
       <node concept="3clFbS" id="1yIOEAuvX9y" role="3clF47">
@@ -2917,7 +2917,7 @@
       <node concept="37vLTG" id="1yIOEAuDj7W" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="1yIOEAuDj7X" role="1tU5fm">
-          <ref role="1l_bkj" node="1yIOEAuvVEC" resolve="CirclesAndRectanglesAndSquaresCol" />
+          <ref role="1l_bkj" node="1yIOEAuvVEC" resolve="ContainerShapesExtExt" />
         </node>
       </node>
       <node concept="3clFbS" id="1yIOEAuDj7Y" role="3clF47">
@@ -3021,9 +3021,9 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="148686163" />
-    <property role="3GE5qa" value="CirclesAndRectanglesAndSquaresCol.Models" />
+    <property role="3GE5qa" value="ContainerShapesExtExt.Models" />
     <property role="TrG5h" value="ModelCRSCol" />
-    <ref role="19kf5F" node="1yIOEAuvVEC" resolve="CirclesAndRectanglesAndSquaresCol" />
+    <ref role="19kf5F" node="1yIOEAuvVEC" resolve="ContainerShapesExtExt" />
     <node concept="2oAaYs" id="1yIOEAuwebd" role="2oAaxa">
       <ref role="3aaZtz" node="1yIOEAuIX2b" resolve="ModelCRS" />
     </node>
@@ -3281,7 +3281,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="212169731" />
-    <property role="3GE5qa" value="CirclesAndRectangles.Models" />
+    <property role="3GE5qa" value="ContainerShapes.Models" />
     <property role="TrG5h" value="ModelCircle" />
     <ref role="19kf5F" node="73GaC056x0R" resolve="Circle" />
     <node concept="2oAaW5" id="1yIOEAuIRsp" role="2oAaxa">
@@ -3436,7 +3436,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="212169731" />
-    <property role="3GE5qa" value="CirclesAndRectangles.Models" />
+    <property role="3GE5qa" value="ContainerShapes.Models" />
     <property role="TrG5h" value="ModelRectangle" />
     <ref role="19kf5F" node="73GaC056x2d" resolve="Rectangle" />
     <node concept="2oAaW5" id="1yIOEAuITjQ" role="2oAaxa">
@@ -3606,7 +3606,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="212169731" />
-    <property role="3GE5qa" value="CirclesAndRectanglesAndSquares.Models" />
+    <property role="3GE5qa" value="ContainerShapesExt.Models" />
     <property role="TrG5h" value="ModelSquare" />
     <ref role="19kf5F" node="1yIOEAuvT$j" resolve="Square" />
     <node concept="2oAaW5" id="1yIOEAuIVQ3" role="2oAaxa">
@@ -3777,8 +3777,8 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="212169731" />
     <property role="TrG5h" value="ModelCRS" />
-    <property role="3GE5qa" value="CirclesAndRectanglesAndSquares.Models" />
-    <ref role="19kf5F" node="1yIOEAuvTYP" resolve="CirclesAndRectanglesAndSquares" />
+    <property role="3GE5qa" value="ContainerShapesExt.Models" />
+    <ref role="19kf5F" node="1yIOEAuvTYP" resolve="ContainerShapesExt" />
     <node concept="2oAaYs" id="1yIOEAuIX2c" role="2oAaxa">
       <ref role="3aaZtz" node="1yIOEAuIRoO" resolve="ModelCircle" />
     </node>
