@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6ae3a954-f68b-468d-8040-14a3930dc6b5(OOTICourseRoute)">
+<model ref="r:6ae3a954-f68b-468d-8040-14a3930dc6b5(Courses.OOTICourseRoute)">
   <persistence version="9" />
   <languages>
     <use id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models" version="-1" />

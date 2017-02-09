@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2f0ba71c-ac9e-4f28-82d6-f3dd1b712cc7(CaseStudy.platoonModel)">
+<model ref="r:2f0ba71c-ac9e-4f28-82d6-f3dd1b712cc7(OldPlatoonStudies.platoonModel)">
   <persistence version="9" />
   <languages>
     <use id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models" version="-1" />
@@ -52,8 +52,8 @@
         <property id="3979997632601093222" name="targetCard" index="2XbFU$" />
         <property id="3979997632601093220" name="sourceCard" index="2XbFUA" />
         <child id="8717972784948764204" name="conformsTo" index="2oAawy" />
-        <child id="8717972784948764201" name="target" index="2oAawB" />
-        <child id="8717972784948764199" name="source" index="2oAawD" />
+        <child id="8717972784948764201" name="tgt" index="2oAawB" />
+        <child id="8717972784948764199" name="src" index="2oAawD" />
       </concept>
       <concept id="8717972784948762801" name="Models.structure.NamedRelation" flags="ng" index="2oAaUZ" />
       <concept id="8717972784948762846" name="Models.structure.NamedGroup" flags="ng" index="2oAaVg" />

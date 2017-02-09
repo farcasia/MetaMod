@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">a1a4fafa-681b-4a34-8c99-b9c9766b6526(CaseStudy)</dependency>
+    <dependency reexport="false">a1a4fafa-681b-4a34-8c99-b9c9766b6526(CaseStudies)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>b6269b38-266c-4c72-855f-f9773fac7a5c(LambdaCalculus)</usedLanguage>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e762600d-3ffd-4ad0-b78f-0b7823f8b2bf(OOTICourseShapes)">
+<model ref="r:e762600d-3ffd-4ad0-b78f-0b7823f8b2bf(Courses.OOTICourseShapes)">
   <persistence version="9" />
   <languages>
     <use id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration" version="-1" />
@@ -14,6 +14,7 @@
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
+    <use id="d437ded3-fd97-4424-9a13-b417804f9877" name="Documentation" version="-1" />
   </languages>
   <imports>
     <import index="wz6r" ref="r:395bdffb-840e-4312-80d8-b18c172eee46(RuntimeClasses.runtime)" />
@@ -179,6 +180,13 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="d437ded3-fd97-4424-9a13-b417804f9877" name="Documentation">
+      <concept id="2755375504740691203" name="Documentation.structure.Documentation" flags="ng" index="1wRa9J">
+        <child id="2755375504740692457" name="documentedM" index="1wRbU5" />
+        <child id="2755375504740692441" name="chapter" index="1wRbUP" />
+      </concept>
+      <concept id="2755375504740690927" name="Documentation.structure.Chapter" flags="ng" index="1wRai3" />
+    </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
       <concept id="1078190884482112898" name="Models.structure.EmptyLine" flags="ng" index="2jq5PB" />
       <concept id="8717972784948764160" name="Models.structure.RefToNamedRelation" flags="ng" index="2oAawe" />
@@ -312,7 +320,7 @@
     <property role="3uBway" value="true" />
     <property role="1x3Ciu" value="-457735916" />
     <property role="TrG5h" value="Shape" />
-    <property role="3GE5qa" value="ContainerShapes.Metamodels" />
+    <property role="3GE5qa" value="Canvas.Metamodels" />
     <node concept="2oAaYs" id="73GaC057r3G" role="2oAaxa">
       <ref role="3aaZtz" node="73GaC057r9Z" resolve="Position2D" />
     </node>
@@ -390,7 +398,7 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-457735916" />
     <property role="TrG5h" value="Circle" />
-    <property role="3GE5qa" value="ContainerShapes.Metamodels" />
+    <property role="3GE5qa" value="Canvas.Metamodels" />
     <node concept="2oAaYs" id="73GaC057s_I" role="2oAaxa">
       <ref role="3aaZtz" node="73GaC056rtn" resolve="Shape" />
     </node>
@@ -491,7 +499,7 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-457735916" />
     <property role="TrG5h" value="Rectangle" />
-    <property role="3GE5qa" value="ContainerShapes.Metamodels" />
+    <property role="3GE5qa" value="Canvas.Metamodels" />
     <node concept="2oAaYs" id="73GaC057sgx" role="2oAaxa">
       <ref role="3aaZtz" node="73GaC056rtn" resolve="Shape" />
     </node>
@@ -651,7 +659,7 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-457735916" />
     <property role="TrG5h" value="Position2D" />
-    <property role="3GE5qa" value="ContainerShapes.Metamodels" />
+    <property role="3GE5qa" value="Canvas.Metamodels" />
     <node concept="2oAaYs" id="73GaC057rbS" role="2oAaxa">
       <ref role="3aaZtz" node="1glZBhimRYb" resolve="MetaModPrimitives" />
     </node>
@@ -1159,8 +1167,8 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-457735916" />
-    <property role="TrG5h" value="ContainerShapesT" />
-    <property role="3GE5qa" value="ContainerShapes.Metamodels" />
+    <property role="TrG5h" value="Canvas" />
+    <property role="3GE5qa" value="Canvas.Metamodels" />
     <node concept="2oAaYs" id="73GaC05bIW9" role="2oAaxa">
       <ref role="3aaZtz" node="73GaC056x0R" resolve="Circle" />
     </node>
@@ -1192,7 +1200,7 @@
         <ref role="3aaZtz" node="73GaC05bIWr" resolve="Canvas" />
       </node>
       <node concept="2oAaYs" id="6kgmPVzd8cd" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC05bIW8" resolve="ContainerShapesT" />
+        <ref role="3aaZtz" node="73GaC05bIW8" resolve="Canvas" />
       </node>
     </node>
     <node concept="1x7eJp" id="6kgmPVzd8dm" role="1x79uz">
@@ -1453,11 +1461,8 @@
   <node concept="1GnNiK" id="73GaC05ctLY">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_Circle_Draw" />
-    <property role="3GE5qa" value="ContainerShapes.ProcessingUnits" />
+    <property role="3GE5qa" value="Canvas.ProcessingUnits" />
     <ref role="1GHRfG" node="73GaC056x0R" resolve="Circle" />
-    <node concept="1vbBhR" id="73GaC05ctLZ" role="1ukcCD">
-      <property role="TrG5h" value="Draw" />
-    </node>
     <node concept="1GnNjC" id="73GaC05ctM1" role="CLm5g">
       <property role="TrG5h" value="drawShape" />
       <property role="1JpQ_q" value="true" />
@@ -1584,11 +1589,14 @@
       </node>
       <node concept="3cqZAl" id="73GaC05ctST" role="3clF45" />
     </node>
+    <node concept="1vbBpf" id="57QhpUiYyMn" role="1ukcCD">
+      <ref role="1vbBpc" node="73GaC05ctLZ" resolve="Draw" />
+    </node>
   </node>
   <node concept="1GnNiK" id="73GaC05cF_F">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_Rectangle_Draw" />
-    <property role="3GE5qa" value="ContainerShapes.ProcessingUnits" />
+    <property role="3GE5qa" value="Canvas.ProcessingUnits" />
     <ref role="1GHRfG" node="73GaC056x2d" resolve="Rectangle" />
     <node concept="1vbBpf" id="73GaC05cGbT" role="1ukcCD">
       <ref role="1vbBpc" node="73GaC05ctLZ" resolve="Draw" />
@@ -1723,11 +1731,8 @@
   <node concept="1GnNiK" id="73GaC05cIvn">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_Shapes_Draw" />
-    <property role="3GE5qa" value="ContainerShapes.ProcessingUnits" />
+    <property role="3GE5qa" value="Canvas.ProcessingUnits" />
     <ref role="1GHRfG" node="73GaC056rtn" resolve="Shape" />
-    <node concept="1vbBpf" id="73GaC05cIvo" role="1ukcCD">
-      <ref role="1vbBpc" node="73GaC05ctLZ" resolve="Draw" />
-    </node>
     <node concept="1GnNjC" id="73GaC05cIvp" role="CLm5g">
       <property role="TrG5h" value="drawShape" />
       <property role="1v5eOH" value="true" />
@@ -1764,12 +1769,15 @@
       </node>
       <node concept="3cqZAl" id="73GaC05cIwf" role="3clF45" />
     </node>
+    <node concept="1vbBhR" id="73GaC05ctLZ" role="1ukcCD">
+      <property role="TrG5h" value="Draw" />
+    </node>
   </node>
   <node concept="1GnNiK" id="73GaC05cJLV">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="TrG5h" value="PU_ContainerShapes_Draw" />
-    <property role="3GE5qa" value="ContainerShapes.ProcessingUnits" />
-    <ref role="1GHRfG" node="73GaC05bIW8" resolve="ContainerShapesT" />
+    <property role="TrG5h" value="PU_Canvas_Draw" />
+    <property role="3GE5qa" value="Canvas.ProcessingUnits" />
+    <ref role="1GHRfG" node="73GaC05bIW8" resolve="Canvas" />
     <node concept="1vbBpf" id="73GaC05cJLW" role="1ukcCD">
       <ref role="1vbBpc" node="73GaC05ctLZ" resolve="Draw" />
     </node>
@@ -1780,7 +1788,7 @@
         <property role="TrG5h" value="inputGroup" />
         <property role="3TUv4t" value="true" />
         <node concept="1l_8MK" id="73GaC05cJM0" role="1tU5fm">
-          <ref role="1l_bkj" node="73GaC05bIW8" resolve="ContainerShapesT" />
+          <ref role="1l_bkj" node="73GaC05bIW8" resolve="Canvas" />
         </node>
       </node>
       <node concept="3clFbS" id="73GaC05cJM1" role="3clF47">
@@ -1969,7 +1977,7 @@
       <node concept="37vLTG" id="2O_vJMxiRfJ" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="2O_vJMxiRfK" role="1tU5fm">
-          <ref role="1l_bkj" node="73GaC05bIW8" resolve="ContainerShapesT" />
+          <ref role="1l_bkj" node="73GaC05bIW8" resolve="Canvas" />
         </node>
       </node>
       <node concept="3clFbS" id="2O_vJMxiRfL" role="3clF47">
@@ -2069,8 +2077,8 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-418876277" />
     <property role="TrG5h" value="ModelCR" />
-    <property role="3GE5qa" value="ContainerShapes.Models" />
-    <ref role="19kf5F" node="73GaC05bIW8" resolve="ContainerShapesT" />
+    <property role="3GE5qa" value="Canvas.Models" />
+    <ref role="19kf5F" node="73GaC05bIW8" resolve="Canvas" />
     <node concept="2oAaYs" id="1yIOEAuISra" role="2oAaxa">
       <ref role="3aaZtz" node="1yIOEAuIRoO" resolve="ModelCircle" />
     </node>
@@ -2229,7 +2237,7 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-457735916" />
     <property role="TrG5h" value="Square" />
-    <property role="3GE5qa" value="ContainerShapesExt.Metamodels" />
+    <property role="3GE5qa" value="CanvasExt.Metamodels" />
     <node concept="2oAaYs" id="1yIOEAuvT$k" role="2oAaxa">
       <ref role="3aaZtz" node="73GaC056x2d" resolve="Rectangle" />
     </node>
@@ -2325,10 +2333,10 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-457735916" />
-    <property role="TrG5h" value="ContainerShapesExt" />
-    <property role="3GE5qa" value="ContainerShapesExt.Metamodels" />
+    <property role="TrG5h" value="CanvasExt" />
+    <property role="3GE5qa" value="CanvasExt.Metamodels" />
     <node concept="2oAaYs" id="1yIOEAuvU2A" role="2oAaxa">
-      <ref role="3aaZtz" node="73GaC05bIW8" resolve="ContainerShapesT" />
+      <ref role="3aaZtz" node="73GaC05bIW8" resolve="Canvas" />
     </node>
     <node concept="2oAaYs" id="1yIOEAuvU2F" role="2oAaxa">
       <ref role="3aaZtz" node="1yIOEAuvT$j" resolve="Square" />
@@ -2340,7 +2348,7 @@
         <ref role="3aaZtz" node="73GaC05bIWr" resolve="Canvas" />
       </node>
       <node concept="2oAaYs" id="6kgmPVzd8eh" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC05bIW8" resolve="ContainerShapesT" />
+        <ref role="3aaZtz" node="73GaC05bIW8" resolve="Canvas" />
       </node>
     </node>
     <node concept="1x7eJp" id="6kgmPVzd8ei" role="1x79uz">
@@ -2427,7 +2435,7 @@
   <node concept="1GnNiK" id="1yIOEAuvVve">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="Constraints_Square" />
-    <property role="3GE5qa" value="ContainerShapesExt.Constraints" />
+    <property role="3GE5qa" value="CanvasExt.Constraints" />
     <ref role="1GHRfG" node="1yIOEAuvT$j" resolve="Square" />
     <node concept="1vbBpf" id="1yIOEAuvVvf" role="1ukcCD">
       <ref role="1vbBpc" node="73GaC05bYUo" resolve="Constraints" />
@@ -2530,10 +2538,10 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-457735916" />
-    <property role="TrG5h" value="ContainerShapesExtExt" />
-    <property role="3GE5qa" value="ContainerShapesExtExt.Metamodels" />
+    <property role="TrG5h" value="CanvasExtExt" />
+    <property role="3GE5qa" value="CanvasExtExt.Metamodels" />
     <node concept="2oAaYs" id="1yIOEAuvVED" role="2oAaxa">
-      <ref role="3aaZtz" node="1yIOEAuvTYP" resolve="ContainerShapesExt" />
+      <ref role="3aaZtz" node="1yIOEAuvTYP" resolve="CanvasExt" />
     </node>
     <node concept="2oAaYs" id="1yIOEAuvVEI" role="2oAaxa">
       <ref role="3aaZtz" node="73GaC057tcp" resolve="PredefinedColors" />
@@ -2562,7 +2570,7 @@
         <ref role="3aaZtz" node="73GaC05bIWr" resolve="Canvas" />
       </node>
       <node concept="2oAaYs" id="6kgmPVzd8fI" role="1_67$s">
-        <ref role="3aaZtz" node="73GaC05bIW8" resolve="ContainerShapesT" />
+        <ref role="3aaZtz" node="73GaC05bIW8" resolve="Canvas" />
       </node>
     </node>
     <node concept="1x7eJp" id="6kgmPVzd8fJ" role="1x79uz">
@@ -2699,14 +2707,14 @@
   <node concept="1GnNiK" id="1yIOEAuvWDD">
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_ContainerShapesExtExt_DrawWithColor" />
-    <property role="3GE5qa" value="ContainerShapesExtExt.PU" />
-    <ref role="1GHRfG" node="1yIOEAuvVEC" resolve="ContainerShapesExtExt" />
+    <property role="3GE5qa" value="CanvasExtExt.PU" />
+    <ref role="1GHRfG" node="1yIOEAuvVEC" resolve="CanvasExtExt" />
     <node concept="1GnNjC" id="1yIOEAuvYhx" role="CLm5g">
       <property role="TrG5h" value="setColor" />
       <node concept="37vLTG" id="1yIOEAuvYhy" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="1yIOEAuvYhz" role="1tU5fm">
-          <ref role="1l_bkj" node="1yIOEAuvVEC" resolve="ContainerShapesExtExt" />
+          <ref role="1l_bkj" node="1yIOEAuvVEC" resolve="CanvasExtExt" />
         </node>
       </node>
       <node concept="37vLTG" id="1yIOEAuvYhT" role="3clF46">
@@ -2763,7 +2771,7 @@
         <property role="TrG5h" value="inputGroup" />
         <property role="3TUv4t" value="true" />
         <node concept="1l_8MK" id="1yIOEAuvX9x" role="1tU5fm">
-          <ref role="1l_bkj" node="1yIOEAuvVEC" resolve="ContainerShapesExtExt" />
+          <ref role="1l_bkj" node="1yIOEAuvVEC" resolve="CanvasExtExt" />
         </node>
       </node>
       <node concept="3clFbS" id="1yIOEAuvX9y" role="3clF47">
@@ -2951,7 +2959,7 @@
       <node concept="37vLTG" id="1yIOEAuDj7W" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="1yIOEAuDj7X" role="1tU5fm">
-          <ref role="1l_bkj" node="1yIOEAuvVEC" resolve="ContainerShapesExtExt" />
+          <ref role="1l_bkj" node="1yIOEAuvVEC" resolve="CanvasExtExt" />
         </node>
       </node>
       <node concept="3clFbS" id="1yIOEAuDj7Y" role="3clF47">
@@ -3055,9 +3063,9 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-402716823" />
-    <property role="3GE5qa" value="ContainerShapesExtExt.Models" />
+    <property role="3GE5qa" value="CanvasExtExt.Models" />
     <property role="TrG5h" value="ModelCRSCol" />
-    <ref role="19kf5F" node="1yIOEAuvVEC" resolve="ContainerShapesExtExt" />
+    <ref role="19kf5F" node="1yIOEAuvVEC" resolve="CanvasExtExt" />
     <node concept="2oAaYs" id="1yIOEAuwebd" role="2oAaxa">
       <ref role="3aaZtz" node="1yIOEAuIX2b" resolve="ModelCRS" />
     </node>
@@ -3315,7 +3323,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-321534805" />
-    <property role="3GE5qa" value="ContainerShapes.Models" />
+    <property role="3GE5qa" value="Canvas.Models" />
     <property role="TrG5h" value="ModelCircle" />
     <ref role="19kf5F" node="73GaC056x0R" resolve="Circle" />
     <node concept="2oAaW5" id="1yIOEAuIRsp" role="2oAaxa">
@@ -3470,7 +3478,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-321534805" />
-    <property role="3GE5qa" value="ContainerShapes.Models" />
+    <property role="3GE5qa" value="Canvas.Models" />
     <property role="TrG5h" value="ModelRectangle" />
     <ref role="19kf5F" node="73GaC056x2d" resolve="Rectangle" />
     <node concept="2oAaW5" id="1yIOEAuITjQ" role="2oAaxa">
@@ -3640,7 +3648,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-321534805" />
-    <property role="3GE5qa" value="ContainerShapesExt.Models" />
+    <property role="3GE5qa" value="CanvasExt.Models" />
     <property role="TrG5h" value="ModelSquare" />
     <ref role="19kf5F" node="1yIOEAuvT$j" resolve="Square" />
     <node concept="2oAaW5" id="1yIOEAuIVQ3" role="2oAaxa">
@@ -3811,8 +3819,8 @@
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-321534805" />
     <property role="TrG5h" value="ModelCRS" />
-    <property role="3GE5qa" value="ContainerShapesExt.Models" />
-    <ref role="19kf5F" node="1yIOEAuvTYP" resolve="ContainerShapesExt" />
+    <property role="3GE5qa" value="CanvasExt.Models" />
+    <ref role="19kf5F" node="1yIOEAuvTYP" resolve="CanvasExt" />
     <node concept="2oAaYs" id="1yIOEAuIX2c" role="2oAaxa">
       <ref role="3aaZtz" node="1yIOEAuIRoO" resolve="ModelCircle" />
     </node>
@@ -4789,6 +4797,13 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1wRa9J" id="57QhpUiY$5z">
+    <property role="TrG5h" value="CanvasLanguage" />
+    <node concept="2oAaYs" id="57QhpUiY$5F" role="1wRbU5">
+      <ref role="3aaZtz" node="1yIOEAuvVEC" resolve="CanvasExtExt" />
+    </node>
+    <node concept="1wRai3" id="57QhpUiY$5I" role="1wRbUP" />
   </node>
 </model>
 

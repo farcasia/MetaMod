@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="CaseStudy" uuid="a1a4fafa-681b-4a34-8c99-b9c9766b6526" compileInMPS="true">
+<solution name="CaseStudies" uuid="a1a4fafa-681b-4a34-8c99-b9c9766b6526" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -31,9 +31,11 @@
     <usedLanguage>c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</usedLanguage>
     <usedLanguage>af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)</usedLanguage>
     <usedLanguage>8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</usedLanguage>
+    <usedLanguage>d437ded3-fd97-4424-9a13-b417804f9877(Documentation)</usedLanguage>
   </usedLanguages>
   <languageVersions>
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" fqName="CodeGeneration" version="0" />
+    <language id="d437ded3-fd97-4424-9a13-b417804f9877" fqName="Documentation" version="0" />
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" fqName="LambdaCalculus" version="0" />
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" fqName="Models" version="0" />
