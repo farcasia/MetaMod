@@ -2258,7 +2258,7 @@
       <node concept="3clFbS" id="7yvC56dAO9q" role="3clF47">
         <node concept="3cpWs8" id="7yvC56dAPDh" role="3cqZAp">
           <node concept="3cpWsn" id="7yvC56dAPDk" role="3cpWs9">
-            <property role="TrG5h" value="leftType" />
+            <property role="TrG5h" value="left" />
             <node concept="3otQA" id="7yvC56dARum" role="33vP2m">
               <ref role="37wK5l" node="2$vcPaA9taO" resolve="typeOf" />
               <node concept="37vLTw" id="7yvC56dARuA" role="37wK5m">
@@ -2286,7 +2286,7 @@
         </node>
         <node concept="3cpWs8" id="7yvC56dARsq" role="3cqZAp">
           <node concept="3cpWsn" id="7yvC56dARst" role="3cpWs9">
-            <property role="TrG5h" value="rightType" />
+            <property role="TrG5h" value="right" />
             <node concept="3otQA" id="7yvC56dARxp" role="33vP2m">
               <ref role="37wK5l" node="2$vcPaA9taO" resolve="typeOf" />
               <node concept="37vLTw" id="7yvC56dATao" role="37wK5m">
@@ -2325,10 +2325,10 @@
                 <ref role="3cqZAo" node="7yvC56dAO9_" resolve="binaryExp" />
               </node>
               <node concept="37vLTw" id="7yvC56dATX6" role="37wK5m">
-                <ref role="3cqZAo" node="7yvC56dAPDk" resolve="leftType" />
+                <ref role="3cqZAo" node="7yvC56dAPDk" resolve="left" />
               </node>
               <node concept="37vLTw" id="7yvC56dATXw" role="37wK5m">
-                <ref role="3cqZAo" node="7yvC56dARst" resolve="rightType" />
+                <ref role="3cqZAo" node="7yvC56dARst" resolve="right" />
               </node>
             </node>
             <node concept="3uibUv" id="35O7LeiNP3j" role="1tU5fm">
@@ -2357,7 +2357,7 @@
           <property role="35gtTG" value="error" />
           <node concept="3cpWs3" id="7yvC56dAXmj" role="34bqiv">
             <node concept="37vLTw" id="7yvC56dAXps" role="3uHU7w">
-              <ref role="3cqZAo" node="7yvC56dARst" resolve="rightType" />
+              <ref role="3cqZAo" node="7yvC56dARst" resolve="right" />
             </node>
             <node concept="3cpWs3" id="7yvC56dAX5H" role="3uHU7B">
               <node concept="3cpWs3" id="7yvC56dAWVT" role="3uHU7B">
@@ -2365,7 +2365,7 @@
                   <property role="Xl_RC" value="Runtime error: binary expression cannot be applied to " />
                 </node>
                 <node concept="37vLTw" id="7yvC56dAWWf" role="3uHU7w">
-                  <ref role="3cqZAo" node="7yvC56dAPDk" resolve="leftType" />
+                  <ref role="3cqZAo" node="7yvC56dAPDk" resolve="left" />
                 </node>
               </node>
               <node concept="Xl_RD" id="7yvC56dAX8C" role="3uHU7w">

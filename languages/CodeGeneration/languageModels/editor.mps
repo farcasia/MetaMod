@@ -225,7 +225,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="6dXtnCWizkQ" role="3EZMnx">
-          <property role="3F0ifm" value="processing unit" />
+          <property role="3F0ifm" value="aspect" />
         </node>
         <node concept="3F1sOY" id="6dXtnCWkKg5" role="3EZMnx">
           <ref role="1NtTu8" to="1o5n:6dXtnCXbrXj" />
