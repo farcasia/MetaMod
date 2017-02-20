@@ -2,11 +2,17 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/AuxiliaryGenerationLanguage/AuxiliaryGenerationLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/CodeGeneration/CodeGeneration.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Constraints/Constraints.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/CopyHelperMethodsGenerationLanguage/CopyHelperMethodsGenerationLanguage.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Diagramatic/Diagramatic.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Documentation/Documentation.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/GroupInterfaces/GroupInterfaces.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Helpers/Helpers.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/LambdaCalculus/LambdaCalculus.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/LanguageConfiguration/LanguageConfiguration.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/MappingChangeableModules/MappingChangeableModules.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ModelConstraints/ModelConstraints.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Models/Models.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Modules/Modules.mpl" folder="" />
