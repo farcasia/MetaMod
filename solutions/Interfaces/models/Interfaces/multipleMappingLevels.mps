@@ -18,6 +18,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <use id="7cbc13ed-9875-4738-a307-276eb1aa9679" name="GroupInterfaces" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="2a4f5bab-551b-46ab-a40c-28d5229d6214" name="Helpers" version="-1" />
     <generationPart ref="659df44c-8ea7-4afd-b3b4-549fcc453b2f(RightCallsGenerationLanguage)" />
     <generationPart ref="9042c6af-2dc7-4f7f-9455-9b2ff7818bf2(CopyHelperMethodsGenerationLanguage)" />
   </languages>
@@ -275,6 +276,7 @@
     <language id="7cbc13ed-9875-4738-a307-276eb1aa9679" name="GroupInterfaces">
       <concept id="5414200760481450709" name="GroupInterfaces.structure.GroupInterface" flags="ng" index="2$1D0M" />
       <concept id="5414200760481809094" name="GroupInterfaces.structure.MethodSignature" flags="ng" index="2$21wx" />
+      <concept id="4942114571720390012" name="GroupInterfaces.structure.EmptyLine" flags="ng" index="3UehTS" />
       <concept id="8042795008363558227" name="GroupInterfaces.structure.StatementListSignature" flags="ig" index="3XlGCx" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -295,7 +297,7 @@
   </registry>
   <node concept="1GnNiK" id="DTk9ZDu2TB">
     <property role="1vYpmj" value="CodeGen" />
-    <property role="TrG5h" value="CodeGen_Statistics_Graph" />
+    <property role="TrG5h" value="PU_GraphCommons_GraphMM" />
     <property role="3GE5qa" value="Graphs" />
     <ref role="1GHRfG" node="1gcKwu1v3hJ" resolve="GraphMM" />
     <node concept="1GnNjC" id="1gcKwu1vaRq" role="CLm5g">
@@ -478,8 +480,8 @@
         </node>
       </node>
     </node>
-    <node concept="1vbBhR" id="705MhtQTdbD" role="1ukcCD">
-      <property role="TrG5h" value="GraphCommons" />
+    <node concept="1vbBpf" id="4ilUKiYJ9ju" role="1ukcCD">
+      <ref role="1vbBpc" node="4ilUKiYJbAc" resolve="GraphCommons" />
     </node>
   </node>
   <node concept="2oAaVg" id="1gcKwu1v3hJ">
@@ -1302,6 +1304,8 @@
         </node>
       </node>
     </node>
+    <node concept="3XncwB" id="4ilUKiYFK08" role="1uv$W3" />
+    <node concept="3XncwB" id="4ilUKiYFK1z" role="1uv$W3" />
     <node concept="1nQ__b" id="6BjpN2ySBpj" role="1nQ__n">
       <ref role="1nQ__e" node="DTk9ZDu1U8" resolve="PetriNet" />
       <ref role="1nQ__8" node="1gcKwu1v3iM" resolve="Graph" />
@@ -1313,8 +1317,8 @@
   </node>
   <node concept="1vbSxi" id="705MhtQTfUJ">
     <property role="1vYpmj" value="CodeGen" />
-    <node concept="1vbBpf" id="705MhtQTfUK" role="1vbB4l">
-      <ref role="1vbBpc" node="705MhtQTdbD" resolve="GraphCommons" />
+    <node concept="1vbBpf" id="4ilUKiYJVGg" role="1vbB4l">
+      <ref role="1vbBpc" node="4ilUKiYJbAc" resolve="GraphCommons" />
     </node>
   </node>
   <node concept="1$M0LO" id="705MhtQTgn$">
@@ -4375,7 +4379,7 @@
   <node concept="1GnNiK" id="2JdoBprGqgD">
     <property role="1vYpmj" value="CodeGen" />
     <property role="3GE5qa" value="StateMachines" />
-    <property role="TrG5h" value="CodeGen_Statistics_StateMachine" />
+    <property role="TrG5h" value="PU_Processing_StateMachineMM" />
     <ref role="1GHRfG" node="1gcKwu1v3i5" resolve="StateMachineMM" />
     <node concept="1GnNjC" id="1jNpnEoIBf2" role="CLm5g">
       <property role="TrG5h" value="simplifyStateMachine" />
@@ -4571,7 +4575,7 @@
     <node concept="1vbBhR" id="3GBB9vA2D4l" role="1ukcCD">
       <property role="TrG5h" value="Processing" />
       <node concept="1vbBpf" id="6cRXBRmuByl" role="1eREs9">
-        <ref role="1vbBpc" node="705MhtQTdbD" resolve="GraphCommons" />
+        <ref role="1vbBpc" node="4ilUKiYJbAc" resolve="GraphCommons" />
       </node>
     </node>
   </node>
@@ -5467,6 +5471,8 @@
         </node>
       </node>
     </node>
+    <node concept="3XncwB" id="4ilUKiYFJnl" role="1uv$W3" />
+    <node concept="3XncwB" id="4ilUKiYFJqz" role="1uv$W3" />
     <node concept="3XncwB" id="2GlsZqag4O3" role="1uv$W3" />
     <node concept="1nQ__b" id="1gcKwu1xf0V" role="1nQ__n">
       <ref role="1nQ__e" node="1gcKwu1v9Va" resolve="StateMachine" />
@@ -5480,9 +5486,9 @@
   <node concept="2$1D0M" id="1QHqpFmk8n6">
     <property role="1vYpmj" value="CodeGen" />
     <property role="3GE5qa" value="Graphs" />
-    <property role="TrG5h" value="Interface_Statistics_Graph" />
+    <property role="TrG5h" value="PU_GraphCommons_GraphMM" />
     <ref role="1GHRfG" node="1gcKwu1v3hJ" resolve="GraphMM" />
-    <node concept="1vbBhR" id="79tvEmmgR7u" role="1ukcCD">
+    <node concept="1vbBhR" id="4ilUKiYJbAc" role="1ukcCD">
       <property role="TrG5h" value="GraphCommons" />
     </node>
     <node concept="2$21wx" id="6YtJRaiNwTa" role="CLm5g">
@@ -5552,11 +5558,25 @@
         </node>
       </node>
     </node>
+    <node concept="3UehTS" id="4ilUKiYFDmR" role="CLm5g">
+      <node concept="37vLTG" id="4ilUKiYFDmS" role="3clF46">
+        <property role="TrG5h" value="group" />
+        <node concept="1l_8MK" id="4ilUKiYFDmT" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="4ilUKiYFDmU" role="3clF47" />
+    </node>
+    <node concept="3UehTS" id="4ilUKiYFDnz" role="CLm5g">
+      <node concept="37vLTG" id="4ilUKiYFDn$" role="3clF46">
+        <property role="TrG5h" value="group" />
+        <node concept="1l_8MK" id="4ilUKiYFDn_" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="4ilUKiYFDnA" role="3clF47" />
+    </node>
   </node>
   <node concept="1GnNiK" id="6R5UssM9NAF">
     <property role="1vYpmj" value="CodeGen" />
     <property role="3GE5qa" value="PetriNetsVis" />
-    <property role="TrG5h" value="CodeGen_Statistics_PetriNetVisMM" />
+    <property role="TrG5h" value="PU_Statistics_PetriNetVisMM" />
     <ref role="1GHRfG" node="_J5chRuCfR" resolve="PetriNetVisMM" />
     <node concept="1GnNjC" id="6R5UssMa93c" role="CLm5g">
       <property role="TrG5h" value="statisticalInformation" />
@@ -5570,7 +5590,7 @@
           <node concept="3cpWs3" id="6R5UssMa93h" role="34bqiv">
             <node concept="3otQA" id="6R5UssMa93i" role="3uHU7w">
               <ref role="37wK5l" node="1gcKwu1vaRq" resolve="noOfNodes" />
-              <node concept="37vLTw" id="6R5UssMa93j" role="37wK5m">
+              <node concept="37vLTw" id="4ilUKiYFMSz" role="37wK5m">
                 <ref role="3cqZAo" node="6R5UssMa93d" resolve="group" />
               </node>
             </node>
@@ -5584,7 +5604,7 @@
           <node concept="3cpWs3" id="6R5UssMa93m" role="34bqiv">
             <node concept="3otQA" id="6R5UssMa93n" role="3uHU7w">
               <ref role="37wK5l" node="1gcKwu1vaRR" resolve="noOfEdges" />
-              <node concept="37vLTw" id="6R5UssMa93o" role="37wK5m">
+              <node concept="37vLTw" id="4ilUKiYFMVl" role="37wK5m">
                 <ref role="3cqZAo" node="6R5UssMa93d" resolve="group" />
               </node>
             </node>
@@ -5596,10 +5616,12 @@
       </node>
       <node concept="3cqZAl" id="6R5UssMa93q" role="3clF45" />
     </node>
+    <node concept="CLx5B" id="4ilUKiYFN1d" role="CLm5g" />
+    <node concept="CLx5B" id="4ilUKiYFN23" role="CLm5g" />
     <node concept="1vbBhR" id="2GlsZqafNZi" role="1ukcCD">
       <property role="TrG5h" value="Statistics" />
-      <node concept="1vbBpf" id="2GlsZqafNZk" role="1eREs9">
-        <ref role="1vbBpc" node="705MhtQTdbD" resolve="GraphCommons" />
+      <node concept="1vbBpf" id="4ilUKiYJcWU" role="1eREs9">
+        <ref role="1vbBpc" node="4ilUKiYJbAc" resolve="GraphCommons" />
       </node>
     </node>
   </node>
@@ -5731,8 +5753,8 @@
         </node>
       </node>
     </node>
-    <node concept="1vbBpf" id="25uxa8ETMBf" role="1ukcCD">
-      <ref role="1vbBpc" node="79tvEmmgR7u" resolve="GraphCommons" />
+    <node concept="1vbBpf" id="4ilUKiYJfTE" role="1ukcCD">
+      <ref role="1vbBpc" node="4ilUKiYJbAc" resolve="GraphCommons" />
     </node>
   </node>
   <node concept="2$1D0M" id="67JuOeGerSI">
@@ -5808,7 +5830,7 @@
       </node>
     </node>
     <node concept="1vbBpf" id="67JuOeGeCqC" role="1ukcCD">
-      <ref role="1vbBpc" node="705MhtQTdbD" resolve="GraphCommons" />
+      <ref role="1vbBpc" node="4ilUKiYJbAc" resolve="GraphCommons" />
     </node>
   </node>
   <node concept="2$1D0M" id="2GlsZqafWKD">
@@ -5883,8 +5905,22 @@
         </node>
       </node>
     </node>
-    <node concept="1vbBpf" id="2GlsZqafWLa" role="1ukcCD">
-      <ref role="1vbBpc" node="705MhtQTdbD" resolve="GraphCommons" />
+    <node concept="3UehTS" id="4ilUKiYJQjF" role="CLm5g">
+      <node concept="37vLTG" id="4ilUKiYJQjG" role="3clF46">
+        <property role="TrG5h" value="group" />
+        <node concept="1l_8MK" id="4ilUKiYJQjH" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="4ilUKiYJQjI" role="3clF47" />
+    </node>
+    <node concept="3UehTS" id="4ilUKiYJQkj" role="CLm5g">
+      <node concept="37vLTG" id="4ilUKiYJQkk" role="3clF46">
+        <property role="TrG5h" value="group" />
+        <node concept="1l_8MK" id="4ilUKiYJQkl" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="4ilUKiYJQkm" role="3clF47" />
+    </node>
+    <node concept="1vbBpf" id="4ilUKiYJakj" role="1ukcCD">
+      <ref role="1vbBpc" node="4ilUKiYJbAc" resolve="GraphCommons" />
     </node>
   </node>
 </model>

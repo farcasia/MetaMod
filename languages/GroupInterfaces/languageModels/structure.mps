@@ -46,6 +46,9 @@
     <property role="TrG5h" value="GroupInterface" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="1o5n:7MhXM5kl9pK" resolve="MethodsContainer" />
+    <node concept="PrWs8" id="4ilUKiYEUwE" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4Gz6IvJaKb6">
     <property role="TrG5h" value="MethodSignature" />
@@ -63,6 +66,10 @@
     <node concept="PrWs8" id="8AYOKVCLcu" role="PzmwI">
       <ref role="PrY4T" to="tpck:8AYOKVCAP5" resolve="IStubForAnotherConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4ilUKiYFflW">
+    <property role="TrG5h" value="EmptyLine" />
+    <ref role="1TJDcQ" to="1o5n:7MhXM5kjFTb" resolve="Method" />
   </node>
 </model>
 

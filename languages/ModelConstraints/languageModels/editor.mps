@@ -60,6 +60,7 @@
       </concept>
       <concept id="1215007897487" name="jetbrains.mps.lang.editor.structure.PaddingRightStyleClassItem" flags="ln" index="3$7jql" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -231,10 +232,11 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7MhXM5kmxDs" role="3EZMnx">
-        <property role="3F0ifm" value="&lt;" />
+        <property role="3F0ifm" value="#" />
         <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
       </node>
       <node concept="1iCGBv" id="7MhXM5kmxD$" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
         <ref role="1NtTu8" to="1o5n:7MhXM5kmxDd" />
         <node concept="1sVBvm" id="7MhXM5kmxDA" role="1sWHZn">
           <node concept="3F0A7n" id="7MhXM5kmxDP" role="2wV5jI">
@@ -250,7 +252,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7MhXM5kmxDZ" role="3EZMnx">
-        <property role="3F0ifm" value="&gt;" />
+        <property role="3F0ifm" value="#" />
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="7MhXM5kmc8e" role="2iSdaV" />
@@ -264,9 +266,21 @@
   </node>
   <node concept="24kQdi" id="1ky6Xl0HE30">
     <property role="3GE5qa" value="Types" />
-    <ref role="1XX52x" to="1o5n:1ky6Xl0HDt_" resolve="ValueModel" />
-    <node concept="PMmxH" id="1ky6Xl0Kh8r" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    <ref role="1XX52x" to="1o5n:1ky6Xl0HDt_" resolve="GroupType" />
+    <node concept="3EZMnI" id="3Fah6_NY7lk" role="2wV5jI">
+      <node concept="3F0ifn" id="3Fah6_NY7ll" role="3EZMnx">
+        <property role="3F0ifm" value="GroupType" />
+        <node concept="3$7jql" id="3Fah6_NY7lm" role="3F10Kt">
+          <property role="3$6WeP" value="0.0" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="3Fah6_NY7lu" role="2iSdaV" />
+      <node concept="Veino" id="3Fah6_NY7lv" role="3F10Kt">
+        <property role="Vb096" value="green" />
+        <node concept="1iSF2X" id="3Fah6_NY7lw" role="VblUZ">
+          <property role="1iTho6" value="66FFFF" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1ky6Xl0JlVt">
@@ -328,17 +342,10 @@
     <ref role="1XX52x" to="1o5n:48EbtxmrRJI" resolve="AsSource" />
     <node concept="3EZMnI" id="48EbtxmrRMg" role="2wV5jI">
       <node concept="3F0ifn" id="48EbtxmtmN8" role="3EZMnx">
-        <property role="3F0ifm" value="asSourceFor" />
+        <property role="3F0ifm" value="@src" />
       </node>
       <node concept="3F0ifn" id="5X829TycDMX" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
-      </node>
-      <node concept="3F0ifn" id="23puUW1k9y5" role="3EZMnx">
-        <property role="3F0ifm" value="RelationType" />
-      </node>
-      <node concept="3F0ifn" id="23puUW1k9_T" role="3EZMnx">
-        <property role="3F0ifm" value="&lt;" />
+        <property role="3F0ifm" value="#" />
         <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
       </node>
       <node concept="1iCGBv" id="48EbtxmrXlB" role="3EZMnx">
@@ -351,11 +358,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="23puUW1k9Af" role="3EZMnx">
-        <property role="3F0ifm" value="&gt;" />
-        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
-      </node>
-      <node concept="3F0ifn" id="5X829TycDNb" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
+        <property role="3F0ifm" value="#" />
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="48EbtxmrRMj" role="2iSdaV" />
@@ -372,17 +375,10 @@
     <ref role="1XX52x" to="1o5n:48EbtxmtnqF" resolve="AsTarget" />
     <node concept="3EZMnI" id="48Ebtxmtnu_" role="2wV5jI">
       <node concept="3F0ifn" id="48EbtxmtnuA" role="3EZMnx">
-        <property role="3F0ifm" value="asTargetFor" />
+        <property role="3F0ifm" value="@tgt" />
       </node>
       <node concept="3F0ifn" id="5X829TycEF5" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
-      </node>
-      <node concept="3F0ifn" id="23puUW1khqU" role="3EZMnx">
-        <property role="3F0ifm" value="RelationType" />
-      </node>
-      <node concept="3F0ifn" id="23puUW1khrc" role="3EZMnx">
-        <property role="3F0ifm" value="&lt;" />
+        <property role="3F0ifm" value="#" />
         <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
       </node>
       <node concept="1iCGBv" id="48EbtxmtnuD" role="3EZMnx">
@@ -395,11 +391,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="23puUW1khrw" role="3EZMnx">
-        <property role="3F0ifm" value="&gt;" />
-        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
-      </node>
-      <node concept="3F0ifn" id="5X829TycEFj" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
+        <property role="3F0ifm" value="#" />
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="48EbtxmtnuG" role="2iSdaV" />
@@ -666,7 +658,7 @@
         <property role="3F0ifm" value="RelationType" />
       </node>
       <node concept="3F0ifn" id="5Qer_$coUJZ" role="3EZMnx">
-        <property role="3F0ifm" value="&lt;" />
+        <property role="3F0ifm" value="#" />
         <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
       </node>
       <node concept="1iCGBv" id="5Qer_$coUK0" role="3EZMnx">
@@ -703,7 +695,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="5Qer_$coUKb" role="3EZMnx">
-        <property role="3F0ifm" value="&gt;" />
+        <property role="3F0ifm" value="#" />
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="5Qer_$coUKc" role="2iSdaV" />

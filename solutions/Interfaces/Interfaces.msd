@@ -32,12 +32,14 @@
     <usedLanguage>7cbc13ed-9875-4738-a307-276eb1aa9679(GroupInterfaces)</usedLanguage>
     <usedLanguage>659df44c-8ea7-4afd-b3b4-549fcc453b2f(RightCallsGenerationLanguage)</usedLanguage>
     <usedLanguage>9042c6af-2dc7-4f7f-9455-9b2ff7818bf2(CopyHelperMethodsGenerationLanguage)</usedLanguage>
+    <usedLanguage>2a4f5bab-551b-46ab-a40c-28d5229d6214(Helpers)</usedLanguage>
   </usedLanguages>
   <languageVersions>
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" fqName="CodeGeneration" version="0" />
     <language id="9042c6af-2dc7-4f7f-9455-9b2ff7818bf2" fqName="CopyHelperMethodsGenerationLanguage" version="0" />
     <language id="8a5ffd84-4b2e-475c-803b-24d3ac9331ee" fqName="GenericGroupMethods" version="0" />
     <language id="7cbc13ed-9875-4738-a307-276eb1aa9679" fqName="GroupInterfaces" version="0" />
+    <language id="2a4f5bab-551b-46ab-a40c-28d5229d6214" fqName="Helpers" version="0" />
     <language id="b6269b38-266c-4c72-855f-f9773fac7a5c" fqName="LambdaCalculus" version="0" />
     <language id="a00bbccc-dbff-45c7-aa54-02d1f94db9b5" fqName="LanguageConfiguration" version="0" />
     <language id="c2a5c46f-9e45-4936-b1a6-b16d77584a24" fqName="MappingChangeableModules" version="0" />

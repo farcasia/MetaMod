@@ -110,7 +110,7 @@
     <node concept="1TJgyj" id="1ky6Xl0HEV6" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="group" />
-      <ref role="20lvS9" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+      <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ky6Xl0JlVl">

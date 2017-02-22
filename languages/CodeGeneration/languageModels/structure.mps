@@ -48,6 +48,9 @@
     <property role="TrG5h" value="CodeGenMethodsContainer" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="1o5n:7MhXM5kl9pK" resolve="MethodsContainer" />
+    <node concept="PrWs8" id="3Fah6_NYR8E" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4X4Jbdc9m4l">
     <property role="TrG5h" value="CodeGenMethodCall" />
