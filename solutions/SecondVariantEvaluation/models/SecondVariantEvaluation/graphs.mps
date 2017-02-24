@@ -176,7 +176,9 @@
         <child id="7169015349702231151" name="facet" index="1vbB4l" />
       </concept>
       <concept id="5319102428749892554" name="CodeGeneration.structure.CodeGenMethodsContainer" flags="ng" index="1GnNiK" />
-      <concept id="5319102428749892498" name="CodeGeneration.structure.CodeGenMethod" flags="ng" index="1GnNjC" />
+      <concept id="5319102428749892498" name="CodeGeneration.structure.CodeGenMethod" flags="ng" index="1GnNjC">
+        <property id="7792737264043439131" name="showOverride" index="1JpQ_q" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1200830824066" name="jetbrains.mps.baseLanguage.closures.structure.YieldStatement" flags="nn" index="2n63Yl">
@@ -7008,10 +7010,10 @@
         </node>
       </node>
     </node>
-    <node concept="CLx5C" id="owiSk5zOaG" role="CLm5g" />
     <node concept="1GnNjC" id="owiSk5x5go" role="CLm5g">
       <property role="TrG5h" value="deadStates" />
       <property role="1cvb0n" value="true" />
+      <property role="1JpQ_q" value="false" />
       <node concept="37vLTG" id="owiSk5x5gp" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
         <node concept="1l_8MK" id="owiSk5x5gq" role="1tU5fm">
@@ -7035,6 +7037,16 @@
         </node>
       </node>
       <node concept="3clFbS" id="owiSk5x6v7" role="1RNXnZ">
+        <node concept="3SKdUt" id="4ilUKiZxxbp" role="3cqZAp">
+          <node concept="3SKdUq" id="4ilUKiZxxbA" role="3SKWNk">
+            <property role="3SKdUp" value="What if we have multiple output groups, what then? Do we really rely on" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4ilUKiZxxbQ" role="3cqZAp">
+          <node concept="3SKdUq" id="4ilUKiZxxc5" role="3SKWNk">
+            <property role="3SKdUp" value="the name outputGroup?" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="owiSk5x6v2" role="3cqZAp">
           <node concept="3cpWsn" id="owiSk5x6v5" role="3cpWs9">
             <property role="TrG5h" value="outputGroup" />
@@ -7074,6 +7086,11 @@
         </node>
       </node>
       <node concept="3clFbS" id="6Tq8_yeQcbd" role="3w_FAf">
+        <node concept="3SKdUt" id="4ilUKiZxxaL" role="3cqZAp">
+          <node concept="3SKdUq" id="4ilUKiZxxbb" role="3SKWNk">
+            <property role="3SKdUp" value="could make this disappear" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="owiSk5xBdP" role="3cqZAp">
           <node concept="3cpWsn" id="owiSk5xBdV" role="3cpWs9">
             <property role="TrG5h" value="retDelegated" />
