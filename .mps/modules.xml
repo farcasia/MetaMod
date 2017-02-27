@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/CodeGeneration/CodeGeneration.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Constraints/Constraints.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Diagramatic/Diagramatic.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Documentation/Documentation.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Helpers/Helpers.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/LambdaCalculus/LambdaCalculus.mpl" folder="" />
