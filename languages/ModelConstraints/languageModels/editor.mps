@@ -1460,5 +1460,26 @@
       <node concept="2iRfu4" id="5CDYCupTmJm" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="74Ncgpb39F2">
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
+    <ref role="1XX52x" to="1o5n:74Ncgpb39hX" resolve="AsGroupType" />
+    <node concept="3EZMnI" id="74Ncgpb39Mx" role="2wV5jI">
+      <node concept="3F0ifn" id="74Ncgpb39My" role="3EZMnx">
+        <property role="3F0ifm" value="castTo" />
+      </node>
+      <node concept="3F0ifn" id="74Ncgpb39Mz" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+      </node>
+      <node concept="3F1sOY" id="74Ncgpb39M$" role="3EZMnx">
+        <ref role="1NtTu8" to="1o5n:74Ncgpb39hY" />
+      </node>
+      <node concept="3F0ifn" id="74Ncgpb39M_" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="2iRfu4" id="74Ncgpb39MA" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

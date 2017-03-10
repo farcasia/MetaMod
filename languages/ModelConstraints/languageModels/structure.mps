@@ -744,5 +744,20 @@
       <ref role="20lvS9" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
     </node>
   </node>
+  <node concept="1TIwiD" id="74Ncgpb39hX">
+    <property role="3GE5qa" value="Operations.NavigationOperations" />
+    <property role="TrG5h" value="AsGroupType" />
+    <property role="34LRSv" value="cast group" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="74Ncgpb39hY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="groupType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1ky6Xl0HDt_" resolve="GroupType" />
+    </node>
+    <node concept="PrWs8" id="74Ncgpb39hZ" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
+    </node>
+  </node>
 </model>
 
