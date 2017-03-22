@@ -65,6 +65,8 @@
   <node concept="1TIwiD" id="7zWtwVwpdxn">
     <property role="TrG5h" value="Group" />
     <property role="19KtqR" value="true" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="9lyo:6oGnPI1dYem" resolve="LambdaTerm" />
     <node concept="1TJgyi" id="3OCrrxNErOq" role="1TKVEl">
       <property role="TrG5h" value="partial" />

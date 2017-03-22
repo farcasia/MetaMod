@@ -627,8 +627,8 @@
                 <node concept="1Q6Npb" id="6oEY$y8$0CT" role="2Oq$k0" />
               </node>
               <node concept="v3k3i" id="6iY9PxzfD_" role="2OqNvi">
-                <node concept="chp4Y" id="6iY9PxzfMz" role="v3oSu">
-                  <ref role="cht4Q" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+                <node concept="chp4Y" id="2NwzbuUXuGO" role="v3oSu">
+                  <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
                 </node>
               </node>
             </node>
