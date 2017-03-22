@@ -41,20 +41,25 @@
         <child id="8717972784948764180" name="conformsTo" index="2oAawq" />
       </concept>
       <concept id="8717972784948762711" name="Models.structure.Group" flags="ng" index="2oAaTp">
+        <property id="113426295452105731" name="version" index="1x3Ciu" />
         <reference id="3458725890902404532" name="metamodel" index="19kf5F" />
         <child id="8717972784948764228" name="contains" index="2oAaxa" />
+        <child id="113426295451184958" name="equivalenceConcepts" index="1x79uz" />
       </concept>
       <concept id="8717972784948762756" name="Models.structure.Relation" flags="ng" index="2oAaUa">
         <property id="3979997632601093222" name="targetCard" index="2XbFU$" />
         <property id="3979997632601093220" name="sourceCard" index="2XbFUA" />
         <child id="8717972784948764204" name="conformsTo" index="2oAawy" />
-        <child id="8717972784948764201" name="target" index="2oAawB" />
-        <child id="8717972784948764199" name="source" index="2oAawD" />
+        <child id="8717972784948764201" name="tgt" index="2oAawB" />
+        <child id="8717972784948764199" name="src" index="2oAawD" />
       </concept>
       <concept id="8717972784948762801" name="Models.structure.NamedRelation" flags="ng" index="2oAaUZ" />
       <concept id="8717972784948762846" name="Models.structure.NamedGroup" flags="ng" index="2oAaVg" />
       <concept id="8717972784948762891" name="Models.structure.NamedConcept" flags="ng" index="2oAaW5" />
-      <concept id="8717972784948762981" name="Models.structure.RefToNamedConcept" flags="ng" index="2oAaXF" />
+      <concept id="8717972784948762981" name="Models.structure.RefToNamedConcept" flags="ng" index="2oAaXF">
+        <property id="113426295489659686" name="prefix" index="1ziRIV" />
+      </concept>
+      <concept id="8717972784948763026" name="Models.structure.RefToNamedGroup" flags="ng" index="2oAaYs" />
       <concept id="2324090206732068954" name="Models.structure.LApplWithFragment" flags="ng" index="2uuBJw">
         <child id="2324090206732069037" name="term" index="2uuBGn" />
       </concept>
@@ -70,6 +75,10 @@
       <concept id="5108334211686838534" name="Models.structure.NamedConceptGen" flags="ng" index="37tsfw" />
       <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
         <reference id="3040834594469888400" name="ref" index="3aaZtz" />
+      </concept>
+      <concept id="113426295451161412" name="Models.structure.EquivalenceConcepts" flags="ng" index="1x7eJp">
+        <child id="113426295451174191" name="concepts" index="1x7bQM" />
+        <child id="113426295518036353" name="allGroups" index="1_67$s" />
       </concept>
       <concept id="2792959664282332062" name="Models.structure.Modulo" flags="ng" index="1Ni7Qq">
         <child id="2792959664282332063" name="left" index="1Ni7Qr" />
@@ -100,6 +109,7 @@
   </registry>
   <node concept="2oAaVg" id="5tyCvAFkSrK">
     <property role="TrG5h" value="TestGroup" />
+    <property role="1x3Ciu" value="1917014122" />
     <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
     <node concept="kds5u" id="4r$sIq1tHm5" role="2oAaxa">
       <property role="TrG5h" value="recPrev" />
@@ -126,6 +136,7 @@
               <node concept="37tsfw" id="4r$sIq1H61$" role="2oAaxa">
                 <property role="TrG5h" value="x" />
                 <node concept="2oAaXF" id="4r$sIq1H6d5" role="2oAawq">
+                  <property role="1ziRIV" value="" />
                   <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
                 </node>
               </node>
@@ -171,6 +182,7 @@
     <node concept="2oAaW5" id="4r$sIq1L208" role="2oAaxa">
       <property role="TrG5h" value="First" />
       <node concept="2oAaXF" id="4r$sIq1L213" role="2oAawq">
+        <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
       </node>
     </node>
@@ -178,6 +190,7 @@
     <node concept="2uuBJw" id="4r$sIq1N0iQ" role="2oAaxa">
       <property role="TrG5h" value="Prev" />
       <node concept="2oAaXF" id="4r$sIq1N0ke" role="3B56nu">
+        <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="4r$sIq1L208" resolve="First" />
       </node>
       <node concept="2uuBJw" id="4r$sIq1N0g$" role="3B56no">
@@ -194,14 +207,17 @@
         <node concept="2oAaW5" id="4r$sIq1N0md" role="2oAaxa">
           <property role="TrG5h" value="BM1180545526" />
           <node concept="2oAaXF" id="4r$sIq1N0mg" role="2oAawq">
+            <property role="1ziRIV" value="" />
             <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
           </node>
         </node>
         <node concept="2oAaUa" id="4r$sIq1N0mh" role="2oAaxa">
           <node concept="2oAaXF" id="4r$sIq1N0mi" role="2oAawD">
+            <property role="1ziRIV" value="" />
             <ref role="3aaZtz" node="4r$sIq1N0md" resolve="BM1180545526" />
           </node>
           <node concept="2oAaXF" id="4r$sIq1N0mj" role="2oAawB">
+            <property role="1ziRIV" value="" />
             <ref role="3aaZtz" node="4r$sIq1L208" resolve="First" />
           </node>
           <node concept="2oAawe" id="4r$sIq1N0mk" role="2oAawy">
@@ -212,14 +228,17 @@
           <node concept="2oAaW5" id="4r$sIq1N0ni" role="2oAaxa">
             <property role="TrG5h" value="BM455729842" />
             <node concept="2oAaXF" id="4r$sIq1N0nl" role="2oAawq">
+              <property role="1ziRIV" value="" />
               <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
             </node>
           </node>
           <node concept="2oAaUa" id="4r$sIq1N0nm" role="2oAaxa">
             <node concept="2oAaXF" id="4r$sIq1N0nn" role="2oAawD">
+              <property role="1ziRIV" value="" />
               <ref role="3aaZtz" node="4r$sIq1N0ni" resolve="BM455729842" />
             </node>
             <node concept="2oAaXF" id="4r$sIq1N0no" role="2oAawB">
+              <property role="1ziRIV" value="" />
               <ref role="3aaZtz" node="4r$sIq1N0md" resolve="BM1180545526" />
             </node>
             <node concept="2oAawe" id="4r$sIq1N0np" role="2oAawy">
@@ -230,14 +249,17 @@
             <node concept="2oAaW5" id="4r$sIq1N0ox" role="2oAaxa">
               <property role="TrG5h" value="BM1191441613" />
               <node concept="2oAaXF" id="4r$sIq1N0o$" role="2oAawq">
+                <property role="1ziRIV" value="" />
                 <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
               </node>
             </node>
             <node concept="2oAaUa" id="4r$sIq1N0o_" role="2oAaxa">
               <node concept="2oAaXF" id="4r$sIq1N0oA" role="2oAawD">
+                <property role="1ziRIV" value="" />
                 <ref role="3aaZtz" node="4r$sIq1N0ox" resolve="BM1191441613" />
               </node>
               <node concept="2oAaXF" id="4r$sIq1N0oB" role="2oAawB">
+                <property role="1ziRIV" value="" />
                 <ref role="3aaZtz" node="4r$sIq1N0ni" resolve="BM455729842" />
               </node>
               <node concept="2oAawe" id="4r$sIq1N0oC" role="2oAawy">
@@ -271,6 +293,7 @@
             <node concept="37tsfw" id="4r$sIq1L29$" role="2oAaxa">
               <property role="TrG5h" value="x" />
               <node concept="2oAaXF" id="4r$sIq1L29_" role="2oAawq">
+                <property role="1ziRIV" value="" />
                 <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
               </node>
             </node>
@@ -307,6 +330,7 @@
         <node concept="2oAaW5" id="4r$sIq1N01W" role="2oAaxa">
           <property role="TrG5h" value="BM19464345" />
           <node concept="2oAaXF" id="4r$sIq1N01Z" role="2oAawq">
+            <property role="1ziRIV" value="" />
             <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
           </node>
         </node>
@@ -314,6 +338,7 @@
           <node concept="2oAaW5" id="4r$sIq1N02q" role="2oAaxa">
             <property role="TrG5h" value="BM1448593117" />
             <node concept="2oAaXF" id="4r$sIq1N02t" role="2oAawq">
+              <property role="1ziRIV" value="" />
               <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
             </node>
           </node>
@@ -321,12 +346,23 @@
             <node concept="2oAaW5" id="4r$sIq1N02Y" role="2oAaxa">
               <property role="TrG5h" value="BM1014373203" />
               <node concept="2oAaXF" id="4r$sIq1N031" role="2oAawq">
+                <property role="1ziRIV" value="" />
                 <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
               </node>
             </node>
             <node concept="2jq5PB" id="4r$sIq1N03B" role="2oAaxa" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="1x7eJp" id="2NwzbuV0VWu" role="1x79uz">
+      <property role="TrG5h" value="First" />
+      <node concept="2oAaXF" id="2NwzbuV0VWv" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="4r$sIq1L208" resolve="First" />
+      </node>
+      <node concept="2oAaYs" id="2NwzbuV0VWw" role="1_67$s">
+        <ref role="3aaZtz" node="5tyCvAFkSrK" resolve="TestGroup" />
       </node>
     </node>
   </node>
@@ -642,6 +678,7 @@
   </node>
   <node concept="2oAaVg" id="5v3N1I1qnA3">
     <property role="TrG5h" value="BasicMetaMod" />
+    <property role="1x3Ciu" value="1887388457" />
     <ref role="19kf5F" node="5v3N1I1qnA3" resolve="BasicMetaMod" />
     <node concept="2oAaUZ" id="3Ky4PoV$GpT" role="2oAaxa">
       <property role="TrG5h" value="Relation" />
@@ -650,6 +687,7 @@
       <node concept="2oAaW5" id="3Ky4PoV$Gqe" role="2oAawB">
         <property role="TrG5h" value="BM" />
         <node concept="2oAaXF" id="57Oty_7kUXy" role="2oAawq">
+          <property role="1ziRIV" value="" />
           <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
         </node>
       </node>
@@ -659,6 +697,7 @@
       <node concept="2oAaW5" id="3Ky4PoV$Gq2" role="2oAawD">
         <property role="TrG5h" value="BM" />
         <node concept="2oAaXF" id="2JwAxCgYRIm" role="2oAawq">
+          <property role="1ziRIV" value="" />
           <ref role="3aaZtz" node="3Ky4PoV$Gq2" resolve="BM" />
         </node>
       </node>

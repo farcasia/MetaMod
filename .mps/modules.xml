@@ -22,12 +22,9 @@
       <modulePath path="$PROJECT_DIR$/languages/Models/Models.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Modules/Modules.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/RuntimeInformation/RuntimeInformation.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/BasicMetaMod/BasicMetaMod.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/BuildCodeGeneration/BuildCodeGeneration.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/CaseStudy/CaseStudy.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/CompleteLanguage/CompleteLanguage.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Ecore/Ecore.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/EvaluationLambdaTerms/EvaluationLambdaTerms.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Expressions/Expressions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/FamiliarDSL/FamiliarDSL.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Interfaces/Interfaces.msd" folder="" />
@@ -36,10 +33,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/KajakAlternate/KajakAlternate.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/LambdaCalculusExperiments/LambdaCalculusExperiments.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/LambdaCalculusLanguage/LambdaCalculusLanguage.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/LambdaCalculusSolution/LambdaCalculusSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/MetaMod/MetaMod.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ModelsSolution/ModelsSolution.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/ModulesSolution/ModulesSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/PhilipsDSL/PhilipsDSL.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/RuntimeClasses/RuntimeClasses.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/SecondVariantEvaluation/SecondVariantEvaluation.msd" folder="" />
