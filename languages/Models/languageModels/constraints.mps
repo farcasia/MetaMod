@@ -1545,18 +1545,13 @@
         <node concept="3clFbS" id="5udWXWXHarm" role="2VODD2">
           <node concept="3SKdUt" id="5udWXWXHarH" role="3cqZAp">
             <node concept="3SKdUq" id="5udWXWXHas3" role="3SKWNk">
-              <property role="3SKdUp" value="We want that the relations that appear here to be the ones that are relevant for one of the ends of the" />
-            </node>
-          </node>
-          <node concept="3SKdUt" id="5udWXWXHawX" role="3cqZAp">
-            <node concept="3SKdUq" id="5udWXWXHaxm" role="3SKWNk">
-              <property role="3SKdUp" value="relations." />
+              <property role="3SKdUp" value="We want the relations to be relevant for one of the ends of the relations." />
             </node>
           </node>
           <node concept="3clFbH" id="2CNdJfw2fhU" role="3cqZAp" />
           <node concept="3SKdUt" id="2CNdJfvY8aR" role="3cqZAp">
             <node concept="3SKdUq" id="2CNdJfvY8Ht" role="3SKWNk">
-              <property role="3SKdUp" value="In this case we are in a documentation file." />
+              <property role="3SKdUp" value="Case: documentation" />
             </node>
           </node>
           <node concept="3clFbJ" id="2CNdJfw24XN" role="3cqZAp">
@@ -1591,6 +1586,11 @@
             </node>
           </node>
           <node concept="3clFbH" id="2CNdJfw23Wl" role="3cqZAp" />
+          <node concept="3SKdUt" id="2NwzbuVfJBt" role="3cqZAp">
+            <node concept="3SKdUq" id="2NwzbuVfKfr" role="3SKWNk">
+              <property role="3SKdUp" value="Case: anything, but documentation" />
+            </node>
+          </node>
           <node concept="3cpWs8" id="6uuPbCA3SIe" role="3cqZAp">
             <node concept="3cpWsn" id="6uuPbCA3SIh" role="3cpWs9">
               <property role="TrG5h" value="metamodel" />
@@ -2349,7 +2349,7 @@
                     </node>
                     <node concept="3cpWs8" id="16zLRPr13ar" role="3cqZAp">
                       <node concept="3cpWsn" id="16zLRPr13au" role="3cpWs9">
-                        <property role="TrG5h" value="nbmWithSuperConcepts" />
+                        <property role="TrG5h" value="nConceptsWithSuperConcepts" />
                         <node concept="2I9FWS" id="16zLRPr13ap" role="1tU5fm">
                           <ref role="2I9WkF" to="v0yp:7zWtwVwpd$b" resolve="NamedConcept" />
                         </node>
@@ -2362,6 +2362,9 @@
                             <node concept="37vLTw" id="58fdlQtRr3j" role="37wK5m">
                               <ref role="3cqZAo" node="6uuPbCA4i8U" resolve="target" />
                             </node>
+                            <node concept="37vLTw" id="2NwzbuV$$FE" role="37wK5m">
+                              <ref role="3cqZAo" node="6uuPbCA3SIh" resolve="metamodel" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -2369,7 +2372,7 @@
                     <node concept="3clFbF" id="16zLRPr14R8" role="3cqZAp">
                       <node concept="2OqwBi" id="16zLRPr15S6" role="3clFbG">
                         <node concept="37vLTw" id="16zLRPr14R6" role="2Oq$k0">
-                          <ref role="3cqZAo" node="16zLRPr13au" resolve="nbmWithSuperConcepts" />
+                          <ref role="3cqZAo" node="16zLRPr13au" resolve="nConceptsWithSuperConcepts" />
                         </node>
                         <node concept="TSZUe" id="16zLRPr1aCb" role="2OqNvi">
                           <node concept="37vLTw" id="58fdlQtRrn8" role="25WWJ7">
@@ -2430,7 +2433,7 @@
                             </node>
                             <node concept="2OqwBi" id="58fdlQtRt_r" role="3uHU7w">
                               <node concept="37vLTw" id="58fdlQtRsns" role="2Oq$k0">
-                                <ref role="3cqZAo" node="16zLRPr13au" resolve="nbmWithSuperConcepts" />
+                                <ref role="3cqZAo" node="16zLRPr13au" resolve="nConceptsWithSuperConcepts" />
                               </node>
                               <node concept="2HwmR7" id="58fdlQtRwjB" role="2OqNvi">
                                 <node concept="1bVj0M" id="58fdlQtRwjD" role="23t8la">
@@ -2522,7 +2525,7 @@
                             </node>
                             <node concept="2OqwBi" id="58fdlQtRHLK" role="3uHU7w">
                               <node concept="37vLTw" id="58fdlQtRHLL" role="2Oq$k0">
-                                <ref role="3cqZAo" node="16zLRPr13au" resolve="nbmWithSuperConcepts" />
+                                <ref role="3cqZAo" node="16zLRPr13au" resolve="nConceptsWithSuperConcepts" />
                               </node>
                               <node concept="2HwmR7" id="58fdlQtRHLM" role="2OqNvi">
                                 <node concept="1bVj0M" id="58fdlQtRHLN" role="23t8la">
