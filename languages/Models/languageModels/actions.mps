@@ -741,12 +741,6 @@
     <node concept="3FOIzC" id="5_PHz$0TSp7" role="3FOPby">
       <ref role="3FOWKa" to="9lyo:6oGnPI1dYep" resolve="LambdaAbstraction" />
     </node>
-    <node concept="3FOIzC" id="5_PHz$0TSFD" role="3FOPby">
-      <ref role="3FOWKa" to="2mcz:20nTeIlLSeL" resolve="LambdaApplication" />
-    </node>
-    <node concept="3FOIzC" id="5_PHz$0TSYj" role="3FOPby">
-      <ref role="3FOWKa" to="9lyo:6oGnPI1dYeo" resolve="LambdaApplication" />
-    </node>
     <node concept="3FOIzC" id="5_PHz$0TTh2" role="3FOPby">
       <ref role="3FOWKa" to="2mcz:egaKAxuyHJ" resolve="LambdaApplicationArg" />
     </node>

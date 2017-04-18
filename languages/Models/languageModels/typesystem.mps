@@ -218,6 +218,12 @@
           <property role="3SKdUp" value="relation in the metamodel hold in the model." />
         </node>
       </node>
+      <node concept="3clFbH" id="3hE51uOsLbb" role="3cqZAp" />
+      <node concept="3SKdUt" id="3hE51uOsQGU" role="3cqZAp">
+        <node concept="3SKdUq" id="3hE51uOsTvB" role="3SKWNk">
+          <property role="3SKdUp" value="We check the top-level group only!" />
+        </node>
+      </node>
       <node concept="3clFbJ" id="3OCrrxNqIDw" role="3cqZAp">
         <node concept="3clFbS" id="3OCrrxNqIDy" role="3clFbx">
           <node concept="3cpWs6" id="3OCrrxNqV5H" role="3cqZAp" />
@@ -233,6 +239,11 @@
         </node>
       </node>
       <node concept="3clFbH" id="3OCrrxNqV5K" role="3cqZAp" />
+      <node concept="3SKdUt" id="3hE51uOsW8O" role="3cqZAp">
+        <node concept="3SKdUq" id="3hE51uOsYUl" role="3SKWNk">
+          <property role="3SKdUp" value="We check the value models only!" />
+        </node>
+      </node>
       <node concept="3clFbJ" id="3OCrrxNqW3Y" role="3cqZAp">
         <node concept="3clFbS" id="3OCrrxNqW40" role="3clFbx">
           <node concept="3cpWs6" id="3OCrrxNqX9U" role="3cqZAp" />
@@ -270,17 +281,17 @@
       </node>
       <node concept="3SKdUt" id="3OCrrxNqXIy" role="3cqZAp">
         <node concept="3SKdUq" id="3OCrrxNqXLl" role="3SKWNk">
-          <property role="3SKdUp" value="We construct a map from a relation in the metmaodel to an array with 2" />
+          <property role="3SKdUp" value="We construct a map from a relation, RT, in the metamodel to a list with 2" />
         </node>
       </node>
       <node concept="3SKdUt" id="3OCrrxNqXNd" role="3cqZAp">
         <node concept="3SKdUq" id="3OCrrxNqXQ2" role="3SKWNk">
-          <property role="3SKdUp" value="maps. One map is a map between the source of the relation instantiation to the targets," />
+          <property role="3SKdUp" value="maps: map0 and map1. Map0 is a map between the source of an instantiation of RT to the targets," />
         </node>
       </node>
       <node concept="3SKdUt" id="3OCrrxNqXRi" role="3cqZAp">
         <node concept="3SKdUq" id="3OCrrxNqXSx" role="3SKWNk">
-          <property role="3SKdUp" value="and the other map is a map between the target of the relation instantiation to the sources." />
+          <property role="3SKdUp" value="and map1 is a map between the target of the instantiation of RT to the sources." />
         </node>
       </node>
       <node concept="3cpWs8" id="3OCrrxNqXyL" role="3cqZAp">
@@ -335,7 +346,7 @@
       </node>
       <node concept="3SKdUt" id="3OCrrxNNEaC" role="3cqZAp">
         <node concept="3SKdUq" id="3OCrrxNNFw8" role="3SKWNk">
-          <property role="3SKdUp" value="List of model concepts' names and the conforming_to' concepts." />
+          <property role="3SKdUp" value="List of names of value concepts and their corresponding type concepts." />
         </node>
       </node>
       <node concept="3cpWs8" id="3OCrrxNNvYY" role="3cqZAp">
@@ -358,6 +369,11 @@
         </node>
       </node>
       <node concept="3clFbH" id="3OCrrxNr4Z1" role="3cqZAp" />
+      <node concept="3SKdUt" id="3hE51uOt240" role="3cqZAp">
+        <node concept="3SKdUq" id="3hE51uOt4Hj" role="3SKWNk">
+          <property role="3SKdUp" value="Populate relsWithMaps!" />
+        </node>
+      </node>
       <node concept="1DcWWT" id="3OCrrxNr574" role="3cqZAp">
         <node concept="3clFbS" id="3OCrrxNr576" role="2LFqv$">
           <node concept="3clFbJ" id="3OCrrxNtsn9" role="3cqZAp">
@@ -832,7 +848,7 @@
                   <node concept="3clFbJ" id="3OCrrxNvC8z" role="3cqZAp">
                     <node concept="3clFbS" id="3OCrrxNvC8_" role="3clFbx">
                       <node concept="2MkqsV" id="3OCrrxNw6kr" role="3cqZAp">
-                        <node concept="3cpWs3" id="3OCrrxNw7Yy" role="2MkJ7o">
+                        <node concept="3cpWs3" id="3hE51uOxv8E" role="2MkJ7o">
                           <node concept="Xl_RD" id="3OCrrxNw8E5" role="3uHU7w">
                             <property role="Xl_RC" value=" is not respected!" />
                           </node>
@@ -845,7 +861,7 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="1YBJjd" id="3OCrrxNw6kE" role="2OEOjV">
+                        <node concept="1YBJjd" id="3hE51uOsG_7" role="2OEOjV">
                           <ref role="1YBMHb" node="6cw$ifhxYLy" resolve="group" />
                         </node>
                       </node>
@@ -987,7 +1003,7 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="1YBJjd" id="3OCrrxNwehG" role="2OEOjV">
+                        <node concept="1YBJjd" id="3hE51uOsINQ" role="2OEOjV">
                           <ref role="1YBMHb" node="6cw$ifhxYLy" resolve="group" />
                         </node>
                       </node>
@@ -1258,8 +1274,8 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="1YBJjd" id="3OCrrxNOC_0" role="2OEOjV">
-                              <ref role="1YBMHb" node="6cw$ifhxYLy" resolve="group" />
+                            <node concept="37vLTw" id="3hE51uOsEbo" role="2OEOjV">
+                              <ref role="3cqZAo" node="3OCrrxNO2VK" resolve="nc" />
                             </node>
                           </node>
                         </node>
@@ -1394,8 +1410,8 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="1YBJjd" id="3OCrrxNOErX" role="2OEOjV">
-                              <ref role="1YBMHb" node="6cw$ifhxYLy" resolve="group" />
+                            <node concept="37vLTw" id="3hE51uOsBWB" role="2OEOjV">
+                              <ref role="3cqZAo" node="3OCrrxNOEsl" resolve="nc" />
                             </node>
                           </node>
                         </node>

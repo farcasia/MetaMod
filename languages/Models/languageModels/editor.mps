@@ -34,6 +34,7 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="2mcz" ref="r:23e4f1fd-a9d1-4b09-a8c1-3a24e82c6a63(Modules.structure)" />
     <import index="biro" ref="r:f8ce7bb2-d2a6-4357-8d19-e78dab5493ac(Documentation.structure)" />
+    <import index="swi3" ref="r:5eabed4f-92f5-4459-b9b3-e2faa24f3467(de.itemis.mps.editor.diagram.styles.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
@@ -779,6 +780,7 @@
         </node>
         <node concept="3F0ifn" id="6iY9PyQuUe" role="3EZMnx">
           <property role="3F0ifm" value="." />
+          <ref role="1k5W1q" to="tpen:hFDnyG9" resolve="Dot" />
         </node>
         <node concept="2iRfu4" id="6iY9PyQuTm" role="2iSdaV" />
         <node concept="pkWqt" id="6iY9PyQZR$" role="pqm2j">
@@ -1195,6 +1197,7 @@
         <node concept="3F1sOY" id="7O7EsH2P5g4" role="3EZMnx">
           <ref role="1NtTu8" to="v0yp:7zWtwVwpdSD" />
         </node>
+        <node concept="35HoNQ" id="3hE51uOlYWz" role="3EZMnx" />
         <node concept="2iRfu4" id="7O7EsH2P5g5" role="2iSdaV" />
       </node>
     </node>
@@ -3082,7 +3085,7 @@
         </node>
         <node concept="2iRfu4" id="3OazD7v2kPt" role="2iSdaV" />
       </node>
-      <node concept="2xQOud" id="17R5xtfDrj4" role="2xQQDV">
+      <node concept="2xQOud" id="HclZviK19N" role="2xQQDV">
         <ref role="2xQOue" to="xcv:4T$0nG3sKX8" resolve="ConceptShape" />
       </node>
     </node>
