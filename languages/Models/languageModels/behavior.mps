@@ -1274,6 +1274,16 @@
               </node>
             </node>
             <node concept="3clFbH" id="6iY9Pzx6xY" role="3cqZAp" />
+            <node concept="3SKdUt" id="HlBmUvipux" role="3cqZAp">
+              <node concept="3SKdUq" id="HlBmUvisFJ" role="3SKWNk">
+                <property role="3SKdUp" value="We do not treat the equivalence classes with concepts that were declared unique" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="HlBmUvivRz" role="3cqZAp">
+              <node concept="3SKdUq" id="HlBmUviz3m" role="3SKWNk">
+                <property role="3SKdUp" value="by this group!" />
+              </node>
+            </node>
             <node concept="3clFbJ" id="6iY9Pz0WBp" role="3cqZAp">
               <node concept="3clFbS" id="6iY9Pz0WBq" role="3clFbx">
                 <node concept="3N13vt" id="6iY9Pz0WBr" role="3cqZAp" />
@@ -1343,11 +1353,26 @@
                 <node concept="10Nm6u" id="6iY9PyZZlg" role="33vP2m" />
               </node>
             </node>
-            <node concept="3clFbH" id="7aCZPg0HQMo" role="3cqZAp" />
+            <node concept="3clFbH" id="HlBmUvjCXn" role="3cqZAp" />
+            <node concept="3SKdUt" id="HlBmUvjJjd" role="3cqZAp">
+              <node concept="3SKdUq" id="HlBmUvjMeL" role="3SKWNk">
+                <property role="3SKdUp" value="Check whether there are equivalence classes that have concepts with the same name." />
+              </node>
+            </node>
             <node concept="3clFbJ" id="6iY9PyZZlk" role="3cqZAp">
               <node concept="3clFbS" id="6iY9PyZZll" role="3clFbx">
                 <node concept="1DcWWT" id="6iY9PyZZlm" role="3cqZAp">
                   <node concept="3clFbS" id="6iY9PyZZln" role="2LFqv$">
+                    <node concept="3SKdUt" id="HlBmUvk6AI" role="3cqZAp">
+                      <node concept="3SKdUq" id="HlBmUvk7nb" role="3SKWNk">
+                        <property role="3SKdUp" value="Check whether the two equivalence classes have the exact same concept." />
+                      </node>
+                    </node>
+                    <node concept="3SKdUt" id="HlBmUvlkCE" role="3cqZAp">
+                      <node concept="3SKdUq" id="HlBmUvllqA" role="3SKWNk">
+                        <property role="3SKdUp" value="This way, an equivalence class with uniques will take priority" />
+                      </node>
+                    </node>
                     <node concept="3clFbJ" id="6iY9PyZZlo" role="3cqZAp">
                       <node concept="3clFbS" id="6iY9PyZZlp" role="3clFbx">
                         <node concept="3clFbJ" id="6iY9PyZZlq" role="3cqZAp">
@@ -1454,6 +1479,11 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="6iY9PyZZlQ" role="3cqZAp" />
+                <node concept="3SKdUt" id="HlBmUviOOW" role="3cqZAp">
+                  <node concept="3SKdUq" id="HlBmUviRgR" role="3SKWNk">
+                    <property role="3SKdUp" value="Equivalence classes contain the exact same concept!" />
+                  </node>
+                </node>
                 <node concept="3clFbJ" id="6iY9PyZZlR" role="3cqZAp">
                   <node concept="3clFbS" id="6iY9PyZZlS" role="3clFbx">
                     <node concept="3clFbF" id="6iY9PyZZlT" role="3cqZAp">
@@ -1592,6 +1622,21 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="6iY9PyZZmA" role="3cqZAp" />
+                <node concept="3SKdUt" id="HlBmUvj3Xz" role="3cqZAp">
+                  <node concept="3SKdUq" id="HlBmUvj6pw" role="3SKWNk">
+                    <property role="3SKdUp" value="The equivalence classes do not contain the exact same concept, but they" />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="HlBmUvj8DW" role="3cqZAp">
+                  <node concept="3SKdUq" id="HlBmUvjb5V" role="3SKWNk">
+                    <property role="3SKdUp" value="have the same name and same prefix ... then they should still end up in the same" />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="HlBmUvjdxX" role="3cqZAp">
+                  <node concept="3SKdUq" id="HlBmUvjfNR" role="3SKWNk">
+                    <property role="3SKdUp" value="equivalence class." />
+                  </node>
+                </node>
                 <node concept="3clFbJ" id="6iY9PyZZmB" role="3cqZAp">
                   <node concept="3clFbS" id="6iY9PyZZmC" role="3clFbx">
                     <node concept="3clFbF" id="6iY9PyZZmD" role="3cqZAp">
@@ -1663,6 +1708,11 @@
               </node>
             </node>
             <node concept="3clFbH" id="6iY9PyZZmR" role="3cqZAp" />
+            <node concept="3SKdUt" id="HlBmUvjp8q" role="3cqZAp">
+              <node concept="3SKdUq" id="HlBmUvjska" role="3SKWNk">
+                <property role="3SKdUp" value="If there is no intersection, we just add the new equivalence class." />
+              </node>
+            </node>
             <node concept="3clFbF" id="6iY9PyZZmS" role="3cqZAp">
               <node concept="2OqwBi" id="6iY9PyZZmT" role="3clFbG">
                 <node concept="2OqwBi" id="6iY9PyZZmU" role="2Oq$k0">
@@ -1707,6 +1757,11 @@
       <property role="TrG5h" value="addEquivalenceConceptsUnique" />
       <node concept="3Tm1VV" id="6iY9PwF8cb" role="1B3o_S" />
       <node concept="3clFbS" id="6iY9PwF8cc" role="3clF47">
+        <node concept="3SKdUt" id="HlBmUvhf2Y" role="3cqZAp">
+          <node concept="3SKdUq" id="HlBmUvhhi_" role="3SKWNk">
+            <property role="3SKdUp" value="We process all equivalence classes of the inner group one by one." />
+          </node>
+        </node>
         <node concept="1DcWWT" id="6iY9PwGZ_T" role="3cqZAp">
           <node concept="3cpWsn" id="6iY9PwGZ_U" role="1Duv9x">
             <property role="TrG5h" value="eqConceptsToAdd" />
@@ -1744,6 +1799,7 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3zACq4" id="HlBmUveiGk" role="3cqZAp" />
                   </node>
                   <node concept="3y3z36" id="6iY9Pz0$Td" role="3clFbw">
                     <node concept="3cmrfG" id="6iY9Pz0_0J" role="3uHU7w">
@@ -1806,6 +1862,11 @@
               </node>
             </node>
             <node concept="3clFbH" id="6iY9Pz0tyc" role="3cqZAp" />
+            <node concept="3SKdUt" id="HlBmUvg7bM" role="3cqZAp">
+              <node concept="3SKdUq" id="HlBmUvg9Pt" role="3SKWNk">
+                <property role="3SKdUp" value="Only process those equivalence classes that contain a concept declared as unique!" />
+              </node>
+            </node>
             <node concept="3clFbJ" id="6iY9Pz0RHf" role="3cqZAp">
               <node concept="3clFbS" id="6iY9Pz0RHh" role="3clFbx">
                 <node concept="3N13vt" id="6iY9Pz0SOa" role="3cqZAp" />
@@ -1876,10 +1937,25 @@
               </node>
             </node>
             <node concept="3clFbH" id="6iY9PzbD7N" role="3cqZAp" />
+            <node concept="3SKdUt" id="HlBmUvgXOR" role="3cqZAp">
+              <node concept="3SKdUq" id="HlBmUvh0ep" role="3SKWNk">
+                <property role="3SKdUp" value="If there are equivalence classes containing concepts with the same name in the current group," />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="HlBmUvh2C0" role="3cqZAp">
+              <node concept="3SKdUq" id="HlBmUvh2Fu" role="3SKWNk">
+                <property role="3SKdUp" value="we need to check whether they need to be merged or not." />
+              </node>
+            </node>
             <node concept="3clFbJ" id="6iY9PwHDg1" role="3cqZAp">
               <node concept="3clFbS" id="6iY9PwHDg3" role="3clFbx">
                 <node concept="1DcWWT" id="6iY9PyRYtr" role="3cqZAp">
                   <node concept="3clFbS" id="6iY9PyRYtt" role="2LFqv$">
+                    <node concept="3SKdUt" id="HlBmUvh5P0" role="3cqZAp">
+                      <node concept="3SKdUq" id="HlBmUvh6AU" role="3SKWNk">
+                        <property role="3SKdUp" value="We check to see whether we can find the exact same concept in both equivalence classes." />
+                      </node>
+                    </node>
                     <node concept="3clFbJ" id="6iY9PyS6It" role="3cqZAp">
                       <node concept="3clFbS" id="6iY9PyS6Iv" role="3clFbx">
                         <node concept="3clFbJ" id="6iY9PyS8SL" role="3cqZAp">
@@ -1986,6 +2062,16 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="6iY9PySmZy" role="3cqZAp" />
+                <node concept="3SKdUt" id="HlBmUvhkER" role="3cqZAp">
+                  <node concept="3SKdUq" id="HlBmUvhmne" role="3SKWNk">
+                    <property role="3SKdUp" value="If there is at least one equivalence class that intersects with the equivalence" />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="HlBmUvhuqe" role="3cqZAp">
+                  <node concept="3SKdUq" id="HlBmUvhus8" role="3SKWNk">
+                    <property role="3SKdUp" value="class to be added, then we merge it with the existing equivalence class." />
+                  </node>
+                </node>
                 <node concept="3clFbJ" id="6iY9PySnpS" role="3cqZAp">
                   <node concept="3clFbS" id="6iY9PySnpU" role="3clFbx">
                     <node concept="3clFbF" id="6iY9PySqit" role="3cqZAp">
@@ -2064,6 +2150,16 @@
                       </node>
                     </node>
                     <node concept="3clFbH" id="6iY9P$VsNJ" role="3cqZAp" />
+                    <node concept="3SKdUt" id="HlBmUvhngn" role="3cqZAp">
+                      <node concept="3SKdUq" id="HlBmUvho4Z" role="3SKWNk">
+                        <property role="3SKdUp" value="Add prefix to the equivalence class if it does not already have a prefix," />
+                      </node>
+                    </node>
+                    <node concept="3SKdUt" id="HlBmUvhoY9" role="3cqZAp">
+                      <node concept="3SKdUq" id="HlBmUvhpLc" role="3SKWNk">
+                        <property role="3SKdUp" value="because this equivalence class is now an equivalenc class with uniques." />
+                      </node>
+                    </node>
                     <node concept="3clFbJ" id="6iY9Pz0CAH" role="3cqZAp">
                       <node concept="3clFbS" id="6iY9Pz0CAJ" role="3clFbx">
                         <node concept="3clFbF" id="6iY9Pz0EC_" role="3cqZAp">
@@ -2151,6 +2247,11 @@
               </node>
             </node>
             <node concept="3clFbH" id="6iY9PySwDu" role="3cqZAp" />
+            <node concept="3SKdUt" id="HlBmUvhyrP" role="3cqZAp">
+              <node concept="3SKdUq" id="HlBmUvh$GU" role="3SKWNk">
+                <property role="3SKdUp" value="In case no merges have occured, we simply add the equivalence class." />
+              </node>
+            </node>
             <node concept="3clFbF" id="6iY9Pz0Lec" role="3cqZAp">
               <node concept="37vLTI" id="6iY9Pz0MS7" role="3clFbG">
                 <node concept="2OqwBi" id="6iY9Pz0Muk" role="37vLTJ">
