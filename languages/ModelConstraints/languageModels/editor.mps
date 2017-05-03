@@ -507,7 +507,7 @@
         <property role="3F0ifm" value="ConceptType" />
       </node>
       <node concept="3F0ifn" id="6VsEH8K_eoh" role="3EZMnx">
-        <property role="3F0ifm" value="&lt;" />
+        <property role="3F0ifm" value="#" />
         <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
       </node>
       <node concept="1iCGBv" id="6VsEH8K_eoB" role="3EZMnx">
@@ -520,7 +520,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6VsEH8K_eor" role="3EZMnx">
-        <property role="3F0ifm" value="&gt;" />
+        <property role="3F0ifm" value="#" />
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
       </node>
       <node concept="2iRfu4" id="6VsEH8K_enZ" role="2iSdaV" />
