@@ -195,7 +195,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-1332743403" />
-    <property role="TrG5h" value="CanvasExtExtN" />
+    <property role="TrG5h" value="CanvasExtension" />
     <node concept="2oAaYs" id="5MDJ1Sebng9" role="2oAaxa">
       <ref role="3aaZtz" node="3iAEHjzo04p" resolve="Canvas" />
       <node concept="gqqVs" id="5MDJ1SebnhM" role="lGtFl">
@@ -300,7 +300,7 @@
         <ref role="3aaZtz" node="3iAEHjzoeab" resolve="Shape" />
       </node>
       <node concept="2oAaYs" id="5MDJ1SecqNG" role="1_67$s">
-        <ref role="3aaZtz" node="3iAEHjzoe9b" resolve="CanvasExtExtN" />
+        <ref role="3aaZtz" node="3iAEHjzoe9b" resolve="CanvasExtension" />
       </node>
       <node concept="2oAaXF" id="5MDJ1SecqNT" role="1x7bQM">
         <property role="1ziRIV" value="" />
@@ -317,7 +317,7 @@
         <ref role="3aaZtz" node="3iAEHjzoeac" resolve="Color" />
       </node>
       <node concept="2oAaYs" id="5MDJ1SecqNJ" role="1_67$s">
-        <ref role="3aaZtz" node="3iAEHjzoe9b" resolve="CanvasExtExtN" />
+        <ref role="3aaZtz" node="3iAEHjzoe9b" resolve="CanvasExtension" />
       </node>
     </node>
     <node concept="1x7eJp" id="5MDJ1SecqNV" role="1x79uz">
@@ -335,7 +335,7 @@
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
     <property role="1x3Ciu" value="-1335436645" />
-    <property role="TrG5h" value="CanvasExtExt" />
+    <property role="TrG5h" value="CanvasExtensionN" />
     <node concept="2oAaW5" id="5MDJ1Sech1u" role="2oAaxa">
       <property role="TrG5h" value="Shape" />
       <node concept="gqqVs" id="5MDJ1Sech1v" role="lGtFl">
@@ -497,7 +497,7 @@
         <ref role="3aaZtz" node="5MDJ1Sech1u" resolve="Shape" />
       </node>
       <node concept="2oAaYs" id="5MDJ1SecqO0" role="1_67$s">
-        <ref role="3aaZtz" node="5MDJ1Seb$0k" resolve="CanvasExtExt" />
+        <ref role="3aaZtz" node="5MDJ1Seb$0k" resolve="CanvasExtensionN" />
       </node>
     </node>
     <node concept="1x7eJp" id="5MDJ1SecqO1" role="1x79uz">
@@ -507,7 +507,7 @@
         <ref role="3aaZtz" node="5MDJ1Sech1w" resolve="Color" />
       </node>
       <node concept="2oAaYs" id="5MDJ1SecqO3" role="1_67$s">
-        <ref role="3aaZtz" node="5MDJ1Seb$0k" resolve="CanvasExtExt" />
+        <ref role="3aaZtz" node="5MDJ1Seb$0k" resolve="CanvasExtensionN" />
       </node>
     </node>
     <node concept="1x7eJp" id="5MDJ1SecqO4" role="1x79uz">
@@ -517,7 +517,7 @@
         <ref role="3aaZtz" node="5MDJ1Sech2T" resolve="Position2D" />
       </node>
       <node concept="2oAaYs" id="5MDJ1SecqO6" role="1_67$s">
-        <ref role="3aaZtz" node="5MDJ1Seb$0k" resolve="CanvasExtExt" />
+        <ref role="3aaZtz" node="5MDJ1Seb$0k" resolve="CanvasExtensionN" />
       </node>
     </node>
   </node>

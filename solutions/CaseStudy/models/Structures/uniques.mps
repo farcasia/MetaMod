@@ -6,6 +6,7 @@
     <use id="b6269b38-266c-4c72-855f-f9773fac7a5c" name="LambdaCalculus" version="0" />
     <use id="ae311dd6-db78-4e5e-a31b-7988fcde0010" name="Modules" version="0" />
     <use id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models" version="1" />
+    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
   <imports />
   <registry>
@@ -35,8 +36,20 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
+      <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
+        <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
+        <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
+        <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
+        <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
+        <property id="4583510071007917016" name="transform" index="TgtnS" />
       </concept>
     </language>
   </registry>
@@ -89,12 +102,26 @@
         <property role="1ziRIV" value="SimpleStateMachine" />
         <ref role="3aaZtz" node="SboDAr82xV" resolve="State" />
       </node>
+      <node concept="gqqVs" id="2TjIliK80Yi" role="lGtFl">
+        <property role="gqqTZ" value="12.0" />
+        <property role="gqqTW" value="23.000100135803223" />
+        <property role="gqqTX" value="294.0" />
+        <property role="gqqTy" value="33.0" />
+        <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+      </node>
     </node>
     <node concept="2oAaYs" id="SboDAr82xK" role="2oAaxa">
       <ref role="3aaZtz" node="SboDAr82t5" resolve="CompositeStateMachine" />
       <node concept="2oAaXF" id="SboDAr82_q" role="1zjFuc">
         <property role="1ziRIV" value="CompositeStateMachine" />
         <ref role="3aaZtz" node="SboDAr82z5" resolve="State" />
+      </node>
+      <node concept="gqqVs" id="2TjIliK80YS" role="lGtFl">
+        <property role="gqqTZ" value="12.0" />
+        <property role="gqqTW" value="79.00029754638672" />
+        <property role="gqqTX" value="330.0" />
+        <property role="gqqTy" value="33.0" />
+        <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
       </node>
     </node>
     <node concept="2jq5PB" id="SboDArdFU5" role="2oAaxa" />
