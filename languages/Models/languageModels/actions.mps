@@ -87,6 +87,12 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
+      </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="1177323996388" name="jetbrains.mps.lang.actions.structure.AddMenuPart" flags="ng" index="tYCnQ" />
@@ -586,49 +592,53 @@
       <ref role="3FOWKa" to="v0yp:7zWtwVwpdxn" resolve="Group" />
       <node concept="1OR9YC" id="6oEY$y8$0ft" role="1ORn1k">
         <node concept="3clFbS" id="6oEY$y8$0fu" role="2VODD2">
-          <node concept="1DcWWT" id="6iY9Pxz8s0" role="3cqZAp">
-            <node concept="3clFbS" id="6iY9Pxz8s4" role="2LFqv$">
-              <node concept="3clFbF" id="6iY9Pxz8s1" role="3cqZAp">
-                <node concept="2OqwBi" id="6iY9PxzaB9" role="3clFbG">
-                  <node concept="37vLTw" id="6iY9Pxzayj" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6iY9Pxz8s5" resolve="topLevelGroup" />
-                  </node>
-                  <node concept="2qgKlT" id="6iY9PxzaOF" role="2OqNvi">
-                    <ref role="37wK5l" to="z64h:6iY9Pw_XZS" resolve="createEquivalenceConcepts" />
-                    <node concept="2OqwBi" id="6iY9Px$Ovo" role="37wK5m">
-                      <node concept="2ShNRf" id="6iY9Pxz_7w" role="2Oq$k0">
-                        <node concept="1pGfFk" id="6iY9Px$NyQ" role="2ShVmc">
-                          <ref role="37wK5l" to="k7g3:~Random.&lt;init&gt;(long)" resolve="Random" />
-                          <node concept="2YIFZM" id="6iY9Px$N_M" role="37wK5m">
-                            <ref role="37wK5l" to="e2lb:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
-                            <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+          <node concept="3SKdUt" id="6jsXC8J3adV" role="3cqZAp">
+            <node concept="3SKWN0" id="6jsXC8J3aef" role="3SKWNk">
+              <node concept="1DcWWT" id="6iY9Pxz8s0" role="3SKWNf">
+                <node concept="3clFbS" id="6iY9Pxz8s4" role="2LFqv$">
+                  <node concept="3clFbF" id="6iY9Pxz8s1" role="3cqZAp">
+                    <node concept="2OqwBi" id="6iY9PxzaB9" role="3clFbG">
+                      <node concept="37vLTw" id="6iY9Pxzayj" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6iY9Pxz8s5" resolve="topLevelGroup" />
+                      </node>
+                      <node concept="2qgKlT" id="6iY9PxzaOF" role="2OqNvi">
+                        <ref role="37wK5l" to="z64h:6iY9Pw_XZS" resolve="createEquivalenceConcepts" />
+                        <node concept="2OqwBi" id="6iY9Px$Ovo" role="37wK5m">
+                          <node concept="2ShNRf" id="6iY9Pxz_7w" role="2Oq$k0">
+                            <node concept="1pGfFk" id="6iY9Px$NyQ" role="2ShVmc">
+                              <ref role="37wK5l" to="k7g3:~Random.&lt;init&gt;(long)" resolve="Random" />
+                              <node concept="2YIFZM" id="6iY9Px$N_M" role="37wK5m">
+                                <ref role="37wK5l" to="e2lb:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+                                <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="6iY9Px$OIu" role="2OqNvi">
+                            <ref role="37wK5l" to="k7g3:~Random.nextInt():int" resolve="nextInt" />
                           </node>
                         </node>
-                      </node>
-                      <node concept="liA8E" id="6iY9Px$OIu" role="2OqNvi">
-                        <ref role="37wK5l" to="k7g3:~Random.nextInt():int" resolve="nextInt" />
                       </node>
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="6iY9Pxz8s5" role="1Duv9x">
-              <property role="TrG5h" value="topLevelGroup" />
-              <node concept="3Tqbb2" id="6iY9Pxz8yz" role="1tU5fm">
-                <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="6iY9PxzbtR" role="1DdaDG">
-              <node concept="2OqwBi" id="6iY9Pxz9c4" role="2Oq$k0">
-                <node concept="3lApI0" id="6iY9Pxz9q$" role="2OqNvi">
-                  <ref role="3lApI3" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+                <node concept="3cpWsn" id="6iY9Pxz8s5" role="1Duv9x">
+                  <property role="TrG5h" value="topLevelGroup" />
+                  <node concept="3Tqbb2" id="6iY9Pxz8yz" role="1tU5fm">
+                    <ref role="ehGHo" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+                  </node>
                 </node>
-                <node concept="1Q6Npb" id="6oEY$y8$0CT" role="2Oq$k0" />
-              </node>
-              <node concept="v3k3i" id="6iY9PxzfD_" role="2OqNvi">
-                <node concept="chp4Y" id="2NwzbuUXuGO" role="v3oSu">
-                  <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+                <node concept="2OqwBi" id="6iY9PxzbtR" role="1DdaDG">
+                  <node concept="2OqwBi" id="6iY9Pxz9c4" role="2Oq$k0">
+                    <node concept="3lApI0" id="6iY9Pxz9q$" role="2OqNvi">
+                      <ref role="3lApI3" to="v0yp:7zWtwVwpdxn" resolve="Group" />
+                    </node>
+                    <node concept="1Q6Npb" id="6oEY$y8$0CT" role="2Oq$k0" />
+                  </node>
+                  <node concept="v3k3i" id="6iY9PxzfD_" role="2OqNvi">
+                    <node concept="chp4Y" id="2NwzbuUXuGO" role="v3oSu">
+                      <ref role="cht4Q" to="v0yp:7zWtwVwpdzu" resolve="NamedGroup" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
