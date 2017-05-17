@@ -159,7 +159,7 @@
   </node>
   <node concept="1TIwiD" id="1ky6Xl0HDt_">
     <property role="TrG5h" value="GroupType" />
-    <property role="34LRSv" value="GroupType&lt;&gt;" />
+    <property role="34LRSv" value="GroupType##" />
     <property role="3GE5qa" value="Types" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyj" id="1ky6Xl0HEV6" role="1TKVEi">
