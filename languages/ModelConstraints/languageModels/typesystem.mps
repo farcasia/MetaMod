@@ -842,6 +842,16 @@
               </node>
             </node>
           </node>
+          <node concept="3SKdUt" id="Fy933wscc8" role="3cqZAp">
+            <node concept="3SKdUq" id="Fy933wsccw" role="3SKWNk">
+              <property role="3SKdUp" value="This addition was made because of the multilevel experiments, where some generated things are" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="Fy933wsdXw" role="3cqZAp">
+            <node concept="3SKdUq" id="Fy933wseMY" role="3SKWNk">
+              <property role="3SKdUp" value="of type node&lt;NamedConcept&gt;." />
+            </node>
+          </node>
           <node concept="3clFbF" id="2NwzbuWPCFL" role="3cqZAp">
             <node concept="2OqwBi" id="2NwzbuWPDMN" role="3clFbG">
               <node concept="37vLTw" id="2NwzbuWPCFJ" role="2Oq$k0">
@@ -890,7 +900,7 @@
           <node concept="3clFbS" id="2$vcPaA6vt$" role="9aQI4">
             <node concept="3SKdUt" id="6iY9P_h4xG" role="3cqZAp">
               <node concept="3SKdUq" id="6iY9P_h5oI" role="3SKWNk">
-                <property role="3SKdUp" value="The ConceptType&lt;&gt; with no named concept is a supertype of any ConceptType&lt;&gt;." />
+                <property role="3SKdUp" value="The ConceptType## with no named concept is a supertype of any ConceptType&lt;&gt;." />
               </node>
             </node>
             <node concept="3clFbF" id="1xqZdIOePfk" role="3cqZAp">
@@ -1031,7 +1041,6 @@
           <node concept="3zZkjj" id="1xqZdIOhHZU" role="2OqNvi">
             <node concept="1bVj0M" id="1xqZdIOhHZW" role="23t8la">
               <node concept="3clFbS" id="1xqZdIOhHZX" role="1bW5cS">
-                <node concept="3clFbH" id="7jr6xHYas0c" role="3cqZAp" />
                 <node concept="1DcWWT" id="7jr6xHY6AFo" role="3cqZAp">
                   <node concept="3cpWsn" id="7jr6xHY6AFp" role="1Duv9x">
                     <property role="TrG5h" value="superConcept" />
