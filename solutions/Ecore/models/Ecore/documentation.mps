@@ -37,9 +37,9 @@
       </concept>
     </language>
     <language id="ce9c9ba2-4d34-47b0-9248-280025ca8256" name="Models">
-      <concept id="8717972784948764160" name="Models.structure.RefToNamedRel" flags="ng" index="2oAawe" />
-      <concept id="8717972784948762981" name="Models.structure.RefToNamedBM" flags="ng" index="2oAaXF" />
-      <concept id="8717972784948763026" name="Models.structure.RefToNamedSM" flags="ng" index="2oAaYs" />
+      <concept id="8717972784948764160" name="Models.structure.RefToNamedRelation" flags="ng" index="2oAawe" />
+      <concept id="8717972784948762981" name="Models.structure.RefToNamedConcept" flags="ng" index="2oAaXF" />
+      <concept id="8717972784948763026" name="Models.structure.RefToNamedGroup" flags="ng" index="2oAaYs" />
       <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
         <reference id="3040834594469888400" name="ref" index="3aaZtz" />
       </concept>
@@ -76,7 +76,7 @@
         <node concept="2oAaXF" id="2sGdL5x9pAU" role="19SJt6">
           <ref role="3aaZtz" to="syf5:VQwemtk51n" resolve="100" />
         </node>
-        <node concept="19SUe$" id="2sGdL5x9pAL" role="19SJt6">
+        <node concept="19SUe$" id="vvAecQimGj" role="19SJt6">
           <property role="19SUeA" value="\nIt seems to be working .. for relations " />
         </node>
         <node concept="2oAawe" id="2JwAxChdxVD" role="19SJt6">

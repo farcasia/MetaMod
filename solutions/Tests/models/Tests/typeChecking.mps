@@ -536,6 +536,11 @@
             <property role="3SKdUp" value="First X is from Subgroup1 and generated X is from Subgroup0" />
           </node>
         </node>
+        <node concept="3SKdUt" id="vvAecQijJH" role="3cqZAp">
+          <node concept="3SKdUq" id="vvAecQijQ0" role="3SKWNk">
+            <property role="3SKdUp" value="Should type check." />
+          </node>
+        </node>
         <node concept="3cpWs8" id="3umQIRnQD2x" role="3cqZAp">
           <node concept="3cpWsn" id="3umQIRnQD2$" role="3cpWs9">
             <property role="TrG5h" value="xs" />
