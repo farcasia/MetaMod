@@ -41,6 +41,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -155,6 +156,7 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
     </language>
   </registry>
   <node concept="2oAaVg" id="3umQIRnCUq7">
@@ -429,7 +431,7 @@
       </node>
       <node concept="3clFbS" id="3umQIRnQAoa" role="3clF47">
         <node concept="3cpWs6" id="3umQIRnQAoG" role="3cqZAp">
-          <node concept="10Nm6u" id="3umQIRnQAoT" role="3cqZAk" />
+          <node concept="10Nm6u" id="3umQIRnVNXJ" role="3cqZAk" />
         </node>
       </node>
       <node concept="CMjq$" id="3umQIRnQAoD" role="3clF45">
@@ -441,6 +443,41 @@
     <property role="1vYpmj" value="CodeGen" />
     <property role="TrG5h" value="PU_TestXY_Group" />
     <ref role="1GHRfG" node="3umQIRnCUvd" resolve="Group" />
+    <node concept="1GnNjC" id="3umQIRnQAt7" role="CLm5g">
+      <property role="1v5eOH" value="false" />
+      <property role="TrG5h" value="testReturnType" />
+      <property role="1JpQ_q" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="37vLTG" id="3umQIRnQAt8" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="3umQIRnQAt9" role="1tU5fm">
+          <ref role="1l_bkj" node="3umQIRnCUvd" resolve="Group" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3umQIRnQAtc" role="3clF47">
+        <node concept="3SKdUt" id="3umQIRnQBpA" role="3cqZAp">
+          <node concept="3SKdUq" id="3umQIRnQBpI" role="3SKWNk">
+            <property role="3SKdUp" value="should type check" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3umQIRnQAT2" role="3cqZAp">
+          <node concept="3cpWsn" id="3umQIRnQAT5" role="3cpWs9">
+            <property role="TrG5h" value="returned" />
+            <node concept="CMjq$" id="3umQIRnQAT1" role="1tU5fm">
+              <ref role="CMYPG" node="3umQIRnCXk7" resolve="A" />
+            </node>
+            <node concept="3otQA" id="3umQIRnQASx" role="33vP2m">
+              <ref role="37wK5l" node="3umQIRnQAo7" resolve="testCovariance" />
+              <node concept="37vLTw" id="3umQIRnQASF" role="37wK5m">
+                <ref role="3cqZAo" node="3umQIRnQAt8" resolve="inputGroup" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3umQIRnQAtn" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="3umQIRnUE0m" role="CLm5g" />
     <node concept="1vbBpf" id="3umQIRnCUy3" role="1ukcCD">
       <ref role="1vbBpc" node="3umQIRnCUvA" resolve="TestXY" />
     </node>
@@ -471,7 +508,30 @@
             <node concept="10Nm6u" id="3umQIRnSJ$0" role="33vP2m" />
           </node>
         </node>
-        <node concept="3SKdUt" id="3umQIRnQFjJ" role="3cqZAp">
+        <node concept="3cpWs8" id="3umQIRnXyLC" role="3cqZAp">
+          <node concept="3cpWsn" id="3umQIRnXyLF" role="3cpWs9">
+            <property role="TrG5h" value="firstX" />
+            <node concept="CMjq$" id="3umQIRnXyLA" role="1tU5fm">
+              <ref role="CMYPG" node="3umQIRnCUuT" resolve="X" />
+            </node>
+            <node concept="2OqwBi" id="3umQIRnXzFk" role="33vP2m">
+              <node concept="2OqwBi" id="3umQIRnXyVm" role="2Oq$k0">
+                <node concept="37vLTw" id="3umQIRnXySg" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3umQIRnQDim" resolve="dummy" />
+                </node>
+                <node concept="khloQ" id="3umQIRnXzbn" role="2OqNvi">
+                  <ref role="khl7h" node="3umQIRnQD5V" resolve="contains" />
+                  <node concept="37vLTw" id="3umQIRnXzm7" role="3hBcjy">
+                    <ref role="3cqZAo" node="3umQIRnCUxV" resolve="inputGroup" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="3umQIRnX_lj" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3umQIRnX_tt" role="3cqZAp" />
+        <node concept="3SKdUt" id="3umQIRnX_$V" role="3cqZAp">
           <node concept="3SKdUq" id="3umQIRnQFpE" role="3SKWNk">
             <property role="3SKdUp" value="First X is from Subgroup1 and generated X is from Subgroup0" />
           </node>
@@ -612,42 +672,6 @@
       </node>
       <node concept="3cqZAl" id="3umQIRnCV6$" role="3clF45" />
     </node>
-    <node concept="CLx5B" id="3umQIRnCV4g" role="CLm5g" />
-    <node concept="1GnNjC" id="3umQIRnQAt7" role="CLm5g">
-      <property role="1v5eOH" value="false" />
-      <property role="TrG5h" value="testReturnType" />
-      <property role="1JpQ_q" value="false" />
-      <property role="IEkAT" value="false" />
-      <node concept="37vLTG" id="3umQIRnQAt8" role="3clF46">
-        <property role="TrG5h" value="inputGroup" />
-        <node concept="1l_8MK" id="3umQIRnQAt9" role="1tU5fm">
-          <ref role="1l_bkj" node="3umQIRnCUvd" resolve="Group" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="3umQIRnQAtc" role="3clF47">
-        <node concept="3SKdUt" id="3umQIRnQBpA" role="3cqZAp">
-          <node concept="3SKdUq" id="3umQIRnQBpI" role="3SKWNk">
-            <property role="3SKdUp" value="should type check" />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3umQIRnQAT2" role="3cqZAp">
-          <node concept="3cpWsn" id="3umQIRnQAT5" role="3cpWs9">
-            <property role="TrG5h" value="returned" />
-            <node concept="CMjq$" id="3umQIRnQAT1" role="1tU5fm">
-              <ref role="CMYPG" node="3umQIRnCXk7" resolve="A" />
-            </node>
-            <node concept="3otQA" id="3umQIRnQASx" role="33vP2m">
-              <ref role="37wK5l" node="3umQIRnQAo7" resolve="testCovariance" />
-              <node concept="37vLTw" id="3umQIRnQASF" role="37wK5m">
-                <ref role="3cqZAo" node="3umQIRnQAt8" resolve="inputGroup" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3cqZAl" id="3umQIRnQAtn" role="3clF45" />
-    </node>
-    <node concept="CLx5B" id="3umQIRnCUT4" role="CLm5g" />
   </node>
 </model>
 

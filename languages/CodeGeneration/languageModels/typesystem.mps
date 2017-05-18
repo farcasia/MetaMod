@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
+    <import index="93in" ref="r:66387152-22f1-400f-a531-d1c947e7589b(GenericGroupMethods.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="1o5n" ref="r:c379e502-b565-4052-bf15-b57b9592fda0(GenericGroupMethods.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -126,8 +127,13 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <reference id="1140138128738" name="concept" index="1PxNhF" />
+        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -163,6 +169,44 @@
     <property role="3GE5qa" value="Operations" />
     <property role="18ip37" value="true" />
     <node concept="3clFbS" id="4X4Jbdca5pu" role="18ibNy">
+      <node concept="3clFbJ" id="3umQIRnW_6n" role="3cqZAp">
+        <node concept="3clFbS" id="3umQIRnW_6p" role="3clFbx">
+          <node concept="3clFbF" id="3umQIRnWAhG" role="3cqZAp">
+            <node concept="2YIFZM" id="3umQIRnWAhZ" role="3clFbG">
+              <ref role="37wK5l" to="93in:3umQIRnOGv8" resolve="setPU" />
+              <ref role="1Pybhc" to="93in:B9nFqe5s3l" resolve="LastContainigPU" />
+              <node concept="2OqwBi" id="3umQIRnWBBI" role="37wK5m">
+                <node concept="1PxgMI" id="3umQIRnWBnS" role="2Oq$k0">
+                  <ref role="1PxNhF" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
+                  <node concept="2OqwBi" id="3umQIRnWAk9" role="1PxMeX">
+                    <node concept="1YBJjd" id="3umQIRnXrFu" role="2Oq$k0">
+                      <ref role="1YBMHb" node="4X4Jbdca5pw" resolve="codeGenMethodCall" />
+                    </node>
+                    <node concept="2Rxl7S" id="3umQIRnWAGf" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="3umQIRnWBUC" role="2OqNvi">
+                  <ref role="3Tt5mk" to="1o5n:4BhfRC_p$Mm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="3umQIRnW_ZI" role="3clFbw">
+          <node concept="2OqwBi" id="3umQIRnW_c3" role="2Oq$k0">
+            <node concept="1YBJjd" id="3umQIRnXrB$" role="2Oq$k0">
+              <ref role="1YBMHb" node="4X4Jbdca5pw" resolve="codeGenMethodCall" />
+            </node>
+            <node concept="2Rxl7S" id="3umQIRnW_P$" role="2OqNvi" />
+          </node>
+          <node concept="1mIQ4w" id="3umQIRnWAg4" role="2OqNvi">
+            <node concept="chp4Y" id="3umQIRnWAg_" role="cj9EA">
+              <ref role="cht4Q" to="anrw:4BhfRC_zwJa" resolve="CodeGenMethodsContainer" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="3umQIRnXrqw" role="3cqZAp" />
       <node concept="3clFbF" id="5bMTuDbXF7y" role="3cqZAp">
         <node concept="2YIFZM" id="5bMTuDbXGD1" role="3clFbG">
           <ref role="37wK5l" to="tpeh:5bMTuDbXbSR" resolve="calculateTypesForStaticMethod" />
