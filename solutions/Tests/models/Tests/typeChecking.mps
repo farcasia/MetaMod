@@ -25,6 +25,7 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -43,11 +44,18 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -56,6 +64,7 @@
       </concept>
     </language>
     <language id="5f140b5b-a1d2-4d50-af71-7c64c190dbb9" name="CodeGeneration">
+      <concept id="5711897705675317525" name="CodeGeneration.structure.CodeGenMethodCall" flags="ng" index="3otQA" />
       <concept id="5319102428749892554" name="CodeGeneration.structure.CodeGenMethodsContainer" flags="ng" index="1GnNiK" />
       <concept id="5319102428749892498" name="CodeGeneration.structure.CodeGenMethod" flags="ng" index="1GnNjC">
         <property id="2362760081174354155" name="multimethod" index="1v5eOH" />
@@ -99,6 +108,7 @@
       <concept id="8717972784948763026" name="Models.structure.RefToNamedGroup" flags="ng" index="2oAaYs">
         <child id="113426295489842961" name="unique" index="1zjFuc" />
       </concept>
+      <concept id="8717972784948763079" name="Models.structure.Subtype" flags="ng" index="2oAaZ9" />
       <concept id="3040834594469887319" name="Models.structure.RefToNamed" flags="ng" index="3aaSI$">
         <reference id="3040834594469888400" name="ref" index="3aaZtz" />
       </concept>
@@ -150,7 +160,7 @@
   <node concept="2oAaVg" id="3umQIRnCUq7">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="1x3Ciu" value="-1949619724" />
+    <property role="1x3Ciu" value="-2050420721" />
     <property role="TrG5h" value="SubGroup0" />
     <node concept="2oAaW5" id="3umQIRnCUup" role="2oAaxa">
       <property role="TrG5h" value="X" />
@@ -158,23 +168,48 @@
     <node concept="2oAaW5" id="3umQIRnCUE7" role="2oAaxa">
       <property role="TrG5h" value="Y" />
     </node>
-    <node concept="1x7eJp" id="3umQIRnCXmE" role="1x79uz">
+    <node concept="2oAaW5" id="3umQIRnQD3q" role="2oAaxa">
+      <property role="TrG5h" value="Z" />
+    </node>
+    <node concept="2jq5PB" id="3umQIRnQD3X" role="2oAaxa" />
+    <node concept="2oAaUZ" id="3umQIRnQD5V" role="2oAaxa">
+      <property role="2XbFUA" value="*" />
+      <property role="2XbFU$" value="*" />
+      <property role="TrG5h" value="contains" />
+      <node concept="2oAaXF" id="3umQIRnQExI" role="2oAawB">
+        <ref role="3aaZtz" node="3umQIRnCUup" resolve="X" />
+      </node>
+      <node concept="2oAaXF" id="3umQIRnQD6z" role="2oAawD">
+        <ref role="3aaZtz" node="3umQIRnQD3q" resolve="Z" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="3umQIRnQD4w" role="1x79uz">
       <property role="TrG5h" value="X" />
-      <node concept="2oAaXF" id="3umQIRnCXmF" role="1x7bQM">
+      <node concept="2oAaXF" id="3umQIRnQD4x" role="1x7bQM">
         <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="3umQIRnCUup" resolve="X" />
       </node>
-      <node concept="2oAaYs" id="3umQIRnCXmG" role="1_67$s">
+      <node concept="2oAaYs" id="3umQIRnQD4y" role="1_67$s">
         <ref role="3aaZtz" node="3umQIRnCUq7" resolve="SubGroup0" />
       </node>
     </node>
-    <node concept="1x7eJp" id="3umQIRnCXmH" role="1x79uz">
+    <node concept="1x7eJp" id="3umQIRnQD4z" role="1x79uz">
       <property role="TrG5h" value="Y" />
-      <node concept="2oAaXF" id="3umQIRnCXmI" role="1x7bQM">
+      <node concept="2oAaXF" id="3umQIRnQD4$" role="1x7bQM">
         <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="3umQIRnCUE7" resolve="Y" />
       </node>
-      <node concept="2oAaYs" id="3umQIRnCXmJ" role="1_67$s">
+      <node concept="2oAaYs" id="3umQIRnQD4_" role="1_67$s">
+        <ref role="3aaZtz" node="3umQIRnCUq7" resolve="SubGroup0" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="3umQIRnQD4A" role="1x79uz">
+      <property role="TrG5h" value="Z" />
+      <node concept="2oAaXF" id="3umQIRnQD4B" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="3umQIRnQD3q" resolve="Z" />
+      </node>
+      <node concept="2oAaYs" id="3umQIRnQD4C" role="1_67$s">
         <ref role="3aaZtz" node="3umQIRnCUq7" resolve="SubGroup0" />
       </node>
     </node>
@@ -182,7 +217,7 @@
   <node concept="2oAaVg" id="3umQIRnCUuS">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="1x3Ciu" value="-1949619724" />
+    <property role="1x3Ciu" value="-2050420721" />
     <property role="TrG5h" value="SubGroup1" />
     <node concept="2oAaW5" id="3umQIRnCUuT" role="2oAaxa">
       <property role="TrG5h" value="X" />
@@ -190,23 +225,23 @@
     <node concept="2oAaW5" id="3umQIRnCUEv" role="2oAaxa">
       <property role="TrG5h" value="Y" />
     </node>
-    <node concept="1x7eJp" id="3umQIRnCXmK" role="1x79uz">
+    <node concept="1x7eJp" id="3umQIRnQD4D" role="1x79uz">
       <property role="TrG5h" value="X" />
-      <node concept="2oAaXF" id="3umQIRnCXmL" role="1x7bQM">
+      <node concept="2oAaXF" id="3umQIRnQD4E" role="1x7bQM">
         <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="3umQIRnCUuT" resolve="X" />
       </node>
-      <node concept="2oAaYs" id="3umQIRnCXmM" role="1_67$s">
+      <node concept="2oAaYs" id="3umQIRnQD4F" role="1_67$s">
         <ref role="3aaZtz" node="3umQIRnCUuS" resolve="SubGroup1" />
       </node>
     </node>
-    <node concept="1x7eJp" id="3umQIRnCXmN" role="1x79uz">
+    <node concept="1x7eJp" id="3umQIRnQD4G" role="1x79uz">
       <property role="TrG5h" value="Y" />
-      <node concept="2oAaXF" id="3umQIRnCXmO" role="1x7bQM">
+      <node concept="2oAaXF" id="3umQIRnQD4H" role="1x7bQM">
         <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="3umQIRnCUEv" resolve="Y" />
       </node>
-      <node concept="2oAaYs" id="3umQIRnCXmP" role="1_67$s">
+      <node concept="2oAaYs" id="3umQIRnQD4I" role="1_67$s">
         <ref role="3aaZtz" node="3umQIRnCUuS" resolve="SubGroup1" />
       </node>
     </node>
@@ -214,7 +249,7 @@
   <node concept="2oAaVg" id="3umQIRnCUvd">
     <property role="1ewt2y" value="false" />
     <property role="3uBway" value="false" />
-    <property role="1x3Ciu" value="-1949619724" />
+    <property role="1x3Ciu" value="-2050420721" />
     <property role="TrG5h" value="Group" />
     <node concept="2oAaYs" id="3umQIRnCUve" role="2oAaxa">
       <ref role="3aaZtz" node="3umQIRnCUuS" resolve="SubGroup1" />
@@ -238,68 +273,104 @@
       <property role="2XbFUA" value="0..1" />
       <property role="2XbFU$" value="*" />
       <property role="TrG5h" value="bs" />
-      <node concept="2oAaXF" id="3umQIRnCXos" role="2oAawB">
+      <node concept="2oAaXF" id="3umQIRnQEtW" role="2oAawB">
         <ref role="3aaZtz" node="3umQIRnCXkT" resolve="B" />
       </node>
       <node concept="2oAaXF" id="3umQIRnCXnV" role="2oAawD">
-        <ref role="3aaZtz" node="3umQIRnCXk7" resolve="A" />
-      </node>
-    </node>
-    <node concept="1x7eJp" id="3umQIRnCXmQ" role="1x79uz">
-      <property role="TrG5h" value="A" />
-      <node concept="2oAaXF" id="3umQIRnCXmR" role="1x7bQM">
         <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="3umQIRnCXk7" resolve="A" />
       </node>
-      <node concept="2oAaYs" id="3umQIRnCXmS" role="1_67$s">
-        <ref role="3aaZtz" node="3umQIRnCUvd" resolve="Group" />
-      </node>
     </node>
-    <node concept="1x7eJp" id="3umQIRnCXmT" role="1x79uz">
-      <property role="TrG5h" value="B" />
-      <node concept="2oAaXF" id="3umQIRnCXmU" role="1x7bQM">
+    <node concept="2jq5PB" id="3umQIRnQAWk" role="2oAaxa" />
+    <node concept="2oAaZ9" id="3umQIRnQAX5" role="2oAaxa">
+      <property role="2XbFUA" value="*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="3umQIRnQAXO" role="2oAawB">
         <property role="1ziRIV" value="" />
-        <ref role="3aaZtz" node="3umQIRnCXkT" resolve="B" />
+        <ref role="3aaZtz" node="3umQIRnCXk7" resolve="A" />
       </node>
-      <node concept="2oAaYs" id="3umQIRnCXmV" role="1_67$s">
-        <ref role="3aaZtz" node="3umQIRnCUvd" resolve="Group" />
-      </node>
-    </node>
-    <node concept="1x7eJp" id="3umQIRnCXmW" role="1x79uz">
-      <property role="TrG5h" value="SubGroup0.Y" />
-      <node concept="2oAaXF" id="3umQIRnCXmX" role="1x7bQM">
-        <property role="1ziRIV" value="SubGroup0" />
-        <ref role="3aaZtz" node="3umQIRnCUE7" resolve="Y" />
-      </node>
-      <node concept="2oAaYs" id="3umQIRnCXmY" role="1_67$s">
-        <ref role="3aaZtz" node="3umQIRnCUq7" resolve="SubGroup0" />
-      </node>
-    </node>
-    <node concept="1x7eJp" id="3umQIRnCXmZ" role="1x79uz">
-      <property role="TrG5h" value="X" />
-      <node concept="2oAaXF" id="3umQIRnCXn0" role="1x7bQM">
+      <node concept="2oAaXF" id="3umQIRnQAX_" role="2oAawD">
         <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="3umQIRnCUuT" resolve="X" />
       </node>
-      <node concept="2oAaYs" id="3umQIRnCXn1" role="1_67$s">
-        <ref role="3aaZtz" node="3umQIRnCUuS" resolve="SubGroup1" />
-      </node>
-      <node concept="2oAaXF" id="3umQIRnCXn8" role="1x7bQM">
+    </node>
+    <node concept="2oAaZ9" id="3umQIRnQBk_" role="2oAaxa">
+      <property role="2XbFUA" value="*" />
+      <property role="2XbFU$" value="0..1" />
+      <node concept="2oAaXF" id="3umQIRnQBln" role="2oAawB">
         <property role="1ziRIV" value="" />
-        <ref role="3aaZtz" node="3umQIRnCUup" resolve="X" />
+        <ref role="3aaZtz" node="3umQIRnCUuT" resolve="X" />
       </node>
-      <node concept="2oAaYs" id="3umQIRnCXn9" role="1_67$s">
+      <node concept="2oAaXF" id="3umQIRnQBl8" role="2oAawD">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="3umQIRnCXkT" resolve="B" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="3umQIRnQD4J" role="1x79uz">
+      <property role="TrG5h" value="A" />
+      <node concept="2oAaXF" id="3umQIRnQD4K" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="3umQIRnCXk7" resolve="A" />
+      </node>
+      <node concept="2oAaYs" id="3umQIRnQD4L" role="1_67$s">
+        <ref role="3aaZtz" node="3umQIRnCUvd" resolve="Group" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="3umQIRnQD4M" role="1x79uz">
+      <property role="TrG5h" value="B" />
+      <node concept="2oAaXF" id="3umQIRnQD4N" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="3umQIRnCXkT" resolve="B" />
+      </node>
+      <node concept="2oAaYs" id="3umQIRnQD4O" role="1_67$s">
+        <ref role="3aaZtz" node="3umQIRnCUvd" resolve="Group" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="3umQIRnQD4P" role="1x79uz">
+      <property role="TrG5h" value="SubGroup0.Y" />
+      <node concept="2oAaXF" id="3umQIRnQD4Q" role="1x7bQM">
+        <property role="1ziRIV" value="SubGroup0" />
+        <ref role="3aaZtz" node="3umQIRnCUE7" resolve="Y" />
+      </node>
+      <node concept="2oAaYs" id="3umQIRnQD4R" role="1_67$s">
         <ref role="3aaZtz" node="3umQIRnCUq7" resolve="SubGroup0" />
       </node>
     </node>
-    <node concept="1x7eJp" id="3umQIRnCXn2" role="1x79uz">
+    <node concept="1x7eJp" id="3umQIRnQD4S" role="1x79uz">
+      <property role="TrG5h" value="X" />
+      <node concept="2oAaXF" id="3umQIRnQD4T" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="3umQIRnCUuT" resolve="X" />
+      </node>
+      <node concept="2oAaYs" id="3umQIRnQD4U" role="1_67$s">
+        <ref role="3aaZtz" node="3umQIRnCUuS" resolve="SubGroup1" />
+      </node>
+      <node concept="2oAaXF" id="3umQIRnQD51" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="3umQIRnCUup" resolve="X" />
+      </node>
+      <node concept="2oAaYs" id="3umQIRnQD52" role="1_67$s">
+        <ref role="3aaZtz" node="3umQIRnCUq7" resolve="SubGroup0" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="3umQIRnQD4V" role="1x79uz">
       <property role="TrG5h" value="Y" />
-      <node concept="2oAaXF" id="3umQIRnCXn3" role="1x7bQM">
+      <node concept="2oAaXF" id="3umQIRnQD4W" role="1x7bQM">
         <property role="1ziRIV" value="" />
         <ref role="3aaZtz" node="3umQIRnCUEv" resolve="Y" />
       </node>
-      <node concept="2oAaYs" id="3umQIRnCXn4" role="1_67$s">
+      <node concept="2oAaYs" id="3umQIRnQD4X" role="1_67$s">
         <ref role="3aaZtz" node="3umQIRnCUuS" resolve="SubGroup1" />
+      </node>
+    </node>
+    <node concept="1x7eJp" id="3umQIRnQD53" role="1x79uz">
+      <property role="TrG5h" value="Z" />
+      <node concept="2oAaXF" id="3umQIRnQD54" role="1x7bQM">
+        <property role="1ziRIV" value="" />
+        <ref role="3aaZtz" node="3umQIRnQD3q" resolve="Z" />
+      </node>
+      <node concept="2oAaYs" id="3umQIRnQD55" role="1_67$s">
+        <ref role="3aaZtz" node="3umQIRnCUq7" resolve="SubGroup0" />
       </node>
     </node>
   </node>
@@ -334,7 +405,9 @@
       <property role="1v5eOH" value="true" />
       <node concept="37vLTG" id="3umQIRnCUHE" role="3clF46">
         <property role="TrG5h" value="inputGroup" />
-        <node concept="1l_8MK" id="3umQIRnCUHF" role="1tU5fm" />
+        <node concept="1l_8MK" id="3umQIRnCUHF" role="1tU5fm">
+          <ref role="1l_bkj" node="3umQIRnCUq7" resolve="SubGroup0" />
+        </node>
       </node>
       <node concept="37vLTG" id="3umQIRnCUI2" role="3clF46">
         <property role="TrG5h" value="y" />
@@ -344,6 +417,24 @@
       </node>
       <node concept="3clFbS" id="3umQIRnCUHG" role="3clF47" />
       <node concept="3cqZAl" id="3umQIRnCUHZ" role="3clF45" />
+    </node>
+    <node concept="CLx5B" id="3umQIRnQAn$" role="CLm5g" />
+    <node concept="1GnNjC" id="3umQIRnQAo7" role="CLm5g">
+      <property role="TrG5h" value="testCovariance" />
+      <node concept="37vLTG" id="3umQIRnQAo8" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="3umQIRnQAo9" role="1tU5fm">
+          <ref role="1l_bkj" node="3umQIRnCUq7" resolve="SubGroup0" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3umQIRnQAoa" role="3clF47">
+        <node concept="3cpWs6" id="3umQIRnQAoG" role="3cqZAp">
+          <node concept="10Nm6u" id="3umQIRnQAoT" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="CMjq$" id="3umQIRnQAoD" role="3clF45">
+        <ref role="CMYPG" node="3umQIRnCUup" resolve="X" />
+      </node>
     </node>
   </node>
   <node concept="1GnNiK" id="3umQIRnCUxS">
@@ -370,12 +461,47 @@
           <ref role="CMYPG" node="3umQIRnCUuT" resolve="X" />
         </node>
       </node>
-      <node concept="3clFbS" id="3umQIRnCUxX" role="3clF47" />
+      <node concept="3clFbS" id="3umQIRnCUxX" role="3clF47">
+        <node concept="3cpWs8" id="3umQIRnQDij" role="3cqZAp">
+          <node concept="3cpWsn" id="3umQIRnQDim" role="3cpWs9">
+            <property role="TrG5h" value="dummy" />
+            <node concept="CMjq$" id="3umQIRnQDih" role="1tU5fm">
+              <ref role="CMYPG" node="3umQIRnQD3q" resolve="Z" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3umQIRnQFjJ" role="3cqZAp">
+          <node concept="3SKdUq" id="3umQIRnQFpE" role="3SKWNk">
+            <property role="3SKdUp" value="First X is from Subgroup1 and generated X is from Subgroup0" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3umQIRnQD2x" role="3cqZAp">
+          <node concept="3cpWsn" id="3umQIRnQD2$" role="3cpWs9">
+            <property role="TrG5h" value="xs" />
+            <node concept="_YKpA" id="3umQIRnQD2v" role="1tU5fm">
+              <node concept="CMjq$" id="3umQIRnQD2J" role="_ZDj9">
+                <ref role="CMYPG" node="3umQIRnCUuT" resolve="X" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3umQIRnQDlX" role="33vP2m">
+              <node concept="37vLTw" id="3umQIRnQDiG" role="2Oq$k0">
+                <ref role="3cqZAo" node="3umQIRnQDim" resolve="dummy" />
+              </node>
+              <node concept="khloQ" id="3umQIRnQDPw" role="2OqNvi">
+                <ref role="khl7h" node="3umQIRnQD5V" resolve="contains" />
+                <node concept="37vLTw" id="3umQIRnQE0n" role="3hBcjy">
+                  <ref role="3cqZAo" node="3umQIRnCUxV" resolve="inputGroup" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3cqZAl" id="3umQIRnCUxY" role="3clF45" />
       <node concept="P$JXv" id="3umQIRnCU_Y" role="lGtFl">
         <node concept="TZ5HA" id="3umQIRnCUDl" role="TZ5H$">
           <node concept="1dT_AC" id="3umQIRnCUDm" role="1dT_Ay">
-            <property role="1dT_AB" value="Type checking for concept X defined in two subgroups ... x should not type check." />
+            <property role="1dT_AB" value="Type checking for concept X defined in two subgroups ... x should type check." />
           </node>
         </node>
       </node>
@@ -458,14 +584,14 @@
       <node concept="3clFbS" id="3umQIRnCV6z" role="3clF47">
         <node concept="3SKdUt" id="3umQIRnCVdW" role="3cqZAp">
           <node concept="3SKdUq" id="3umQIRnCVeH" role="3SKWNk">
-            <property role="3SKdUp" value="We are going to look at how lists type check." />
+            <property role="3SKdUp" value="We are going to look at how lists type check ... should type check." />
           </node>
         </node>
         <node concept="3cpWs8" id="3umQIRnCVeR" role="3cqZAp">
           <node concept="3cpWsn" id="3umQIRnCVeU" role="3cpWs9">
             <property role="TrG5h" value="someList" />
             <node concept="_YKpA" id="3umQIRnCVeN" role="1tU5fm">
-              <node concept="CMjq$" id="3umQIRnCVf7" role="_ZDj9">
+              <node concept="CMjq$" id="3umQIRnQEeV" role="_ZDj9">
                 <ref role="CMYPG" node="3umQIRnCXkT" resolve="B" />
               </node>
             </node>
@@ -486,6 +612,40 @@
       <node concept="3cqZAl" id="3umQIRnCV6$" role="3clF45" />
     </node>
     <node concept="CLx5B" id="3umQIRnCV4g" role="CLm5g" />
+    <node concept="1GnNjC" id="3umQIRnQAt7" role="CLm5g">
+      <property role="1v5eOH" value="false" />
+      <property role="TrG5h" value="testReturnType" />
+      <property role="1JpQ_q" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="37vLTG" id="3umQIRnQAt8" role="3clF46">
+        <property role="TrG5h" value="inputGroup" />
+        <node concept="1l_8MK" id="3umQIRnQAt9" role="1tU5fm">
+          <ref role="1l_bkj" node="3umQIRnCUvd" resolve="Group" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3umQIRnQAtc" role="3clF47">
+        <node concept="3SKdUt" id="3umQIRnQBpA" role="3cqZAp">
+          <node concept="3SKdUq" id="3umQIRnQBpI" role="3SKWNk">
+            <property role="3SKdUp" value="should type check" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3umQIRnQAT2" role="3cqZAp">
+          <node concept="3cpWsn" id="3umQIRnQAT5" role="3cpWs9">
+            <property role="TrG5h" value="returned" />
+            <node concept="CMjq$" id="3umQIRnQAT1" role="1tU5fm">
+              <ref role="CMYPG" node="3umQIRnCXk7" resolve="A" />
+            </node>
+            <node concept="3otQA" id="3umQIRnQASx" role="33vP2m">
+              <ref role="37wK5l" node="3umQIRnQAo7" resolve="testCovariance" />
+              <node concept="37vLTw" id="3umQIRnQASF" role="37wK5m">
+                <ref role="3cqZAo" node="3umQIRnQAt8" resolve="inputGroup" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3umQIRnQAtn" role="3clF45" />
+    </node>
     <node concept="CLx5B" id="3umQIRnCUT4" role="CLm5g" />
   </node>
 </model>

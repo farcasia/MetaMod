@@ -4091,7 +4091,7 @@
       <node concept="3cqZAl" id="5X829TwXq4o" role="3clF45" />
     </node>
     <node concept="13i0hz" id="16zLRPqW6ar" role="13h7CS">
-      <property role="TrG5h" value="getDirectConcepts" />
+      <property role="TrG5h" value="getDirectSuperConcepts" />
       <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="16zLRPqW6as" role="1B3o_S" />
       <node concept="3clFbS" id="16zLRPqW6at" role="3clF47">
@@ -4234,7 +4234,7 @@
                       <ref role="3cqZAo" node="16zLRPqYChm" resolve="subSM" />
                     </node>
                     <node concept="2qgKlT" id="16zLRPr03YB" role="2OqNvi">
-                      <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectConcepts" />
+                      <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectSuperConcepts" />
                       <node concept="37vLTw" id="16zLRPr04d0" role="37wK5m">
                         <ref role="3cqZAo" node="16zLRPqW6go" resolve="namedConcept" />
                       </node>
@@ -4289,7 +4289,7 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="16zLRPr0tWP" role="2OqNvi">
-                      <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectConcepts" />
+                      <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectSuperConcepts" />
                       <node concept="37vLTw" id="16zLRPr0uzO" role="37wK5m">
                         <ref role="3cqZAo" node="16zLRPqW6go" resolve="namedConcept" />
                       </node>
@@ -4356,7 +4356,7 @@
                           <ref role="3cqZAo" node="3DVAlFLpdeA" resolve="structureModel" />
                         </node>
                         <node concept="2qgKlT" id="3DVAlFLpVRf" role="2OqNvi">
-                          <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectConcepts" />
+                          <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectSuperConcepts" />
                           <node concept="37vLTw" id="3DVAlFLq3yf" role="37wK5m">
                             <ref role="3cqZAo" node="16zLRPqW6go" resolve="namedConcept" />
                           </node>
@@ -4434,7 +4434,7 @@
                           <ref role="3cqZAo" node="3DVAlFLpdfh" resolve="structureModel" />
                         </node>
                         <node concept="2qgKlT" id="3DVAlFLq0c_" role="2OqNvi">
-                          <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectConcepts" />
+                          <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectSuperConcepts" />
                           <node concept="37vLTw" id="3DVAlFLq1$d" role="37wK5m">
                             <ref role="3cqZAo" node="16zLRPqW6go" resolve="namedConcept" />
                           </node>
@@ -4614,7 +4614,7 @@
           <node concept="2OqwBi" id="16zLRPqW7WE" role="1DdaDG">
             <node concept="13iPFW" id="16zLRPqW7Ra" role="2Oq$k0" />
             <node concept="2qgKlT" id="16zLRPqW8rX" role="2OqNvi">
-              <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectConcepts" />
+              <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectSuperConcepts" />
               <node concept="37vLTw" id="16zLRPqW9c3" role="37wK5m">
                 <ref role="3cqZAo" node="16zLRPqW6fQ" resolve="namedConcept" />
               </node>
@@ -16456,19 +16456,24 @@
               </node>
             </node>
           </node>
-          <node concept="3y3z36" id="7jr6xHXEUvy" role="3clFbw">
-            <node concept="2OqwBi" id="7jr6xHXEU_G" role="3uHU7w">
-              <node concept="13iPFW" id="7jr6xHXEUwz" role="2Oq$k0" />
-              <node concept="3TrcHB" id="7jr6xHXEUN2" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+          <node concept="3fqX7Q" id="3umQIRnC5ZY" role="3clFbw">
+            <node concept="2OqwBi" id="3umQIRnC600" role="3fr31v">
+              <node concept="2OqwBi" id="3umQIRnC601" role="2Oq$k0">
+                <node concept="37vLTw" id="3umQIRnC602" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7jr6xHXERHv" resolve="concept" />
+                </node>
+                <node concept="3TrcHB" id="3umQIRnC603" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
               </node>
-            </node>
-            <node concept="2OqwBi" id="7jr6xHXEUaF" role="3uHU7B">
-              <node concept="37vLTw" id="7jr6xHXEU82" role="2Oq$k0">
-                <ref role="3cqZAo" node="7jr6xHXERHv" resolve="concept" />
-              </node>
-              <node concept="3TrcHB" id="7jr6xHXEUmX" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="liA8E" id="3umQIRnC604" role="2OqNvi">
+                <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="2OqwBi" id="3umQIRnC605" role="37wK5m">
+                  <node concept="13iPFW" id="3umQIRnC606" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="3umQIRnC607" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -25422,7 +25427,7 @@
     <node concept="13i0hz" id="7rlNOzb5ncm" role="13h7CS">
       <property role="TrG5h" value="getDirectConcepts" />
       <property role="2Ki8OM" value="false" />
-      <ref role="13i0hy" node="16zLRPqW6ar" resolve="getDirectConcepts" />
+      <ref role="13i0hy" node="16zLRPqW6ar" resolve="getDirectSuperConcepts" />
       <node concept="3clFbS" id="7rlNOzb5nco" role="3clF47">
         <node concept="3cpWs8" id="7rlNOzb5zH8" role="3cqZAp">
           <node concept="3cpWsn" id="7rlNOzb5zHb" role="3cpWs9">
@@ -25442,7 +25447,7 @@
               <node concept="2OqwBi" id="7rlNOzb5$3P" role="3cqZAk">
                 <node concept="13iAh5" id="7rlNOzb5$0m" role="2Oq$k0" />
                 <node concept="2qgKlT" id="7rlNOzb5$qT" role="2OqNvi">
-                  <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectConcepts" />
+                  <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectSuperConcepts" />
                   <node concept="37vLTw" id="7rlNOzb5$tY" role="37wK5m">
                     <ref role="3cqZAo" node="7rlNOzb5wI5" resolve="namedBasicModel" />
                   </node>
@@ -25492,7 +25497,7 @@
                     <ref role="3cqZAo" node="7rlNOzb5zHb" resolve="scopeAncestor" />
                   </node>
                   <node concept="2qgKlT" id="7rlNOzb5BMH" role="2OqNvi">
-                    <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectConcepts" />
+                    <ref role="37wK5l" node="16zLRPqW6ar" resolve="getDirectSuperConcepts" />
                     <node concept="37vLTw" id="7rlNOzb5BPZ" role="37wK5m">
                       <ref role="3cqZAo" node="7rlNOzb5wI5" resolve="namedBasicModel" />
                     </node>
