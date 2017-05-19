@@ -1404,7 +1404,7 @@
       </node>
       <node concept="3F0ifn" id="5CDYCupSxzu" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="tpen:hY9fg1G" resolve="LeftParenAfterName" />
+        <ref role="1k5W1q" to="tpen:hFCSAw$" resolve="LeftParen" />
       </node>
       <node concept="3F1sOY" id="5CDYCupSx$4" role="3EZMnx">
         <ref role="1NtTu8" to="1o5n:5CDYCupSxz4" />
