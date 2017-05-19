@@ -4175,5 +4175,40 @@
       <ref role="1YaFvo" to="1o5n:74Ncgpb39hX" resolve="AsGroupType" />
     </node>
   </node>
+  <node concept="1YbPZF" id="vvAecQvSbf">
+    <property role="TrG5h" value="typeof_copy" />
+    <property role="3GE5qa" value="Operations.OperationsOnConceptType" />
+    <node concept="3clFbS" id="vvAecQvSbg" role="18ibNy">
+      <node concept="1Z5TYs" id="vvAecQvSAV" role="3cqZAp">
+        <node concept="mw_s8" id="vvAecQvSAY" role="1ZfhK$">
+          <node concept="1Z2H0r" id="vvAecQvS_$" role="mwGJk">
+            <node concept="1YBJjd" id="vvAecQvS_O" role="1Z2MuG">
+              <ref role="1YBMHb" node="vvAecQvSbi" resolve="copy" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="vvAecQvTjF" role="1ZfhKB">
+          <node concept="2OqwBi" id="vvAecQvTJ$" role="mwGJk">
+            <node concept="1PxgMI" id="vvAecQvTDP" role="2Oq$k0">
+              <ref role="1PxNhF" to="tpee:hqOqwz4" resolve="DotExpression" />
+              <node concept="2OqwBi" id="vvAecQvTlr" role="1PxMeX">
+                <node concept="1YBJjd" id="vvAecQvTjD" role="2Oq$k0">
+                  <ref role="1YBMHb" node="vvAecQvSbi" resolve="copy" />
+                </node>
+                <node concept="1mfA1w" id="vvAecQvTw2" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="vvAecQvUcF" role="2OqNvi">
+              <ref role="37wK5l" to="tpek:7GulAc9z0dN" resolve="getOperandType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="vvAecQvSbi" role="1YuTPh">
+      <property role="TrG5h" value="copy" />
+      <ref role="1YaFvo" to="1o5n:vvAecQsslV" resolve="copy" />
+    </node>
+  </node>
 </model>
 
